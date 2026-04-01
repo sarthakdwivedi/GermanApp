@@ -212,8 +212,18 @@ body {
   animation: cardIn 0.3s ease;
 }
 @keyframes cardIn {
-  from { opacity: 0; transform: translateY(10px); }
-  to   { opacity: 1; transform: translateY(0); }
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.word-card {
+  animation-duration: 0.15s;  /* faster on desktop feels snappier */
+}
+
+@media (min-width: 768px) {
+  .word-card {
+    animation: none;  /* no animation on desktop — instant swap */
+  }
 }
 
 /* ── Card header ── */

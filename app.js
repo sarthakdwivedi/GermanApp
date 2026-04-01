@@ -496,10 +496,8 @@ function renderWordListPanel() {
 }
 
 function selectFromList(index) {
-  const dir = index > currentIndex ? 'left' : index < currentIndex ? 'right' : null;
   currentIndex = index;
-  renderCurrentWord(dir);
-  // Update active row without full re-render
+  renderCurrentWord(null);  // ← no slide on list click, always instant
   document.querySelectorAll('.wlp-row').forEach((r, i) => {
     r.classList.toggle('active', i === index);
   });
