@@ -1,0 +1,186 @@
+[
+  {
+    "id": "Haus",
+    "level": "A1",
+    "type": "nomen",
+    "theme": "home",
+    "german": "Haus",
+    "english": "house",
+    "article": "das",
+    "gender": "neuter",
+    "plural": "Häuser",
+    "pluralPattern": "umlaut-er",
+    "pluralPatternLabel": "Umlaut + -er",
+    "nounGroupRule": "Many monosyllabic neuter nouns → Umlaut + -er",
+    "endingRule": null,
+    "declension": {
+      "sg": { "nom": "das Haus", "akk": "das Haus", "dat": "dem Haus",  "gen": "des Hauses" },
+      "pl": { "nom": "die Häuser","akk": "die Häuser","dat": "den Häusern","gen": "der Häuser" }
+    },
+    "usage": [
+      { "de": "Das Haus ist sehr groß.", "en": "The house is very large." },
+      { "de": "Wir wohnen in einem alten Haus.", "en": "We live in an old house." }
+    ]
+  },
+  {
+    "id": "Zimmer",
+    "level": "A1",
+    "type": "nomen",
+    "theme": "home",
+    "german": "Zimmer",
+    "english": "room",
+    "article": "das",
+    "gender": "neuter",
+    "plural": "Zimmer",
+    "pluralPattern": "same",
+    "pluralPatternLabel": "Unchanged",
+    "nounGroupRule": "Nouns ending in -er/-el/-en (neuter) → plural unchanged",
+    "endingRule": "-er",
+    "declension": {
+      "sg": { "nom": "das Zimmer","akk": "das Zimmer","dat": "dem Zimmer","gen": "des Zimmers" },
+      "pl": { "nom": "die Zimmer","akk": "die Zimmer","dat": "den Zimmern","gen": "der Zimmer" }
+    },
+    "usage": [
+      { "de": "Mein Zimmer ist klein aber gemütlich.", "en": "My room is small but cosy." },
+      { "de": "Die Wohnung hat drei Zimmer.", "en": "The apartment has three rooms." }
+    ]
+  },
+  {
+    "id": "Küche",
+    "level": "A1",
+    "type": "nomen",
+    "theme": "home",
+    "german": "Küche",
+    "english": "kitchen",
+    "article": "die",
+    "gender": "feminine",
+    "plural": "Küchen",
+    "pluralPattern": "-n",
+    "pluralPatternLabel": "+ -n",
+    "nounGroupRule": "Feminine nouns ending in -e → add -n for plural",
+    "endingRule": "-e",
+    "declension": {
+      "sg": { "nom": "die Küche","akk": "die Küche","dat": "der Küche","gen": "der Küche" },
+      "pl": { "nom": "die Küchen","akk": "die Küchen","dat": "den Küchen","gen": "der Küchen" }
+    },
+    "usage": [
+      { "de": "Die Küche ist sehr modern.", "en": "The kitchen is very modern." },
+      { "de": "Er kocht in der Küche.", "en": "He cooks in the kitchen." }
+    ]
+  },
+  {
+    "id": "Tisch",
+    "level": "A1",
+    "type": "nomen",
+    "theme": "home",
+    "german": "Tisch",
+    "english": "table",
+    "article": "der",
+    "gender": "masculine",
+    "plural": "Tische",
+    "pluralPattern": "-e",
+    "pluralPatternLabel": "+ -e",
+    "nounGroupRule": "Many monosyllabic masculine nouns → + -e",
+    "endingRule": null,
+    "declension": {
+      "sg": { "nom": "der Tisch","akk": "den Tisch","dat": "dem Tisch","gen": "des Tisches" },
+      "pl": { "nom": "die Tische","akk": "die Tische","dat": "den Tischen","gen": "der Tische" }
+    },
+    "usage": [
+      { "de": "Das Essen steht auf dem Tisch.", "en": "The food is on the table." },
+      { "de": "Stell die Tasse auf den Tisch.", "en": "Put the cup on the table." }
+    ]
+  },
+  {
+    "id": "Schlüssel",
+    "level": "A2",
+    "type": "nomen",
+    "theme": "home",
+    "german": "Schlüssel",
+    "english": "key",
+    "article": "der",
+    "gender": "masculine",
+    "plural": "Schlüssel",
+    "pluralPattern": "same",
+    "pluralPatternLabel": "Unchanged",
+    "nounGroupRule": "Masculine nouns ending in -el → plural unchanged",
+    "endingRule": "-el",
+    "declension": {
+      "sg": { "nom": "der Schlüssel","akk": "den Schlüssel","dat": "dem Schlüssel","gen": "des Schlüssels" },
+      "pl": { "nom": "die Schlüssel","akk": "die Schlüssel","dat": "den Schlüsseln","gen": "der Schlüssel" }
+    },
+    "usage": [
+      { "de": "Ich habe meinen Schlüssel verloren.", "en": "I have lost my key." },
+      { "de": "Hast du den Schlüssel gesehen?", "en": "Have you seen the key?" }
+    ]
+  },
+  {
+    "id": "Wohnung",
+    "level": "A2",
+    "type": "nomen",
+    "theme": "home",
+    "german": "Wohnung",
+    "english": "apartment / flat",
+    "article": "die",
+    "gender": "feminine",
+    "plural": "Wohnungen",
+    "pluralPattern": "-en",
+    "pluralPatternLabel": "+ -en",
+    "nounGroupRule": "Ending -ung → always die",
+    "endingRule": "-ung",
+    "declension": {
+      "sg": { "nom": "die Wohnung","akk": "die Wohnung","dat": "der Wohnung","gen": "der Wohnung" },
+      "pl": { "nom": "die Wohnungen","akk": "die Wohnungen","dat": "den Wohnungen","gen": "der Wohnungen" }
+    },
+    "usage": [
+      { "de": "Die Wohnung liegt im dritten Stock.", "en": "The apartment is on the third floor." },
+      { "de": "Wir suchen eine neue Wohnung.", "en": "We are looking for a new apartment." }
+    ]
+  },
+  {
+    "id": "Fenster",
+    "level": "A2",
+    "type": "nomen",
+    "theme": "home",
+    "german": "Fenster",
+    "english": "window",
+    "article": "das",
+    "gender": "neuter",
+    "plural": "Fenster",
+    "pluralPattern": "same",
+    "pluralPatternLabel": "Unchanged",
+    "nounGroupRule": "Neuter nouns ending in -er → plural unchanged",
+    "endingRule": "-er",
+    "declension": {
+      "sg": { "nom": "das Fenster","akk": "das Fenster","dat": "dem Fenster","gen": "des Fensters" },
+      "pl": { "nom": "die Fenster","akk": "die Fenster","dat": "den Fenstern","gen": "der Fenster" }
+    },
+    "usage": [
+      { "de": "Mach bitte das Fenster zu.", "en": "Please close the window." },
+      { "de": "Die Sonne scheint durch das Fenster.", "en": "The sun shines through the window." }
+    ]
+  },
+  {
+    "id": "Einrichtung",
+    "level": "B2",
+    "type": "nomen",
+    "theme": "home",
+    "german": "Einrichtung",
+    "english": "furnishings / interior / facility",
+    "article": "die",
+    "gender": "feminine",
+    "plural": "Einrichtungen",
+    "pluralPattern": "-en",
+    "pluralPatternLabel": "+ -en",
+    "nounGroupRule": "Ending -ung → always die",
+    "endingRule": "-ung",
+    "declension": {
+      "sg": { "nom": "die Einrichtung","akk": "die Einrichtung","dat": "der Einrichtung","gen": "der Einrichtung" },
+      "pl": { "nom": "die Einrichtungen","akk": "die Einrichtungen","dat": "den Einrichtungen","gen": "der Einrichtungen" }
+    },
+    "usage": [
+      { "de": "Die Einrichtung der Wohnung ist sehr geschmackvoll.", "en": "The furnishings of the apartment are very tasteful." },
+      { "de": "Öffentliche Einrichtungen müssen barrierefrei sein.", "en": "Public facilities must be accessible." }
+    ]
+  }
+]

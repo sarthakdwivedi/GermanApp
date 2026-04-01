@@ -1,0 +1,270 @@
+[
+  {
+    "id": "und",
+    "level": "A1",
+    "type": "andere",
+    "german": "und",
+    "english": "and",
+    "wordType": "Konjunktion",
+    "wordTypeEN": "Coordinating conjunction",
+    "grammarRule": "No word order change",
+    "grammarRuleDetail": "und simply links two clauses. Verb stays in position 2 in each clause — no inversion.",
+    "structureFormula": "Clause 1, und Clause 2 (V2 in each)",
+    "variants": [],
+    "relatedWords": [
+      { "word": "oder", "meaning": "or" },
+      { "word": "aber", "meaning": "but" },
+      { "word": "denn", "meaning": "because (coord.)" }
+    ],
+    "usage": [
+      { "de": "Ich lerne Deutsch und spreche Englisch.", "en": "I learn German and speak English." },
+      { "de": "Er kam und wir aßen zusammen.", "en": "He came and we ate together." }
+    ]
+  },
+  {
+    "id": "nicht",
+    "level": "A1",
+    "type": "andere",
+    "german": "nicht",
+    "english": "not",
+    "wordType": "Negationspartikel",
+    "wordTypeEN": "Negation particle",
+    "grammarRule": "After verb (and object), before adj/adv/prep",
+    "grammarRuleDetail": "Negates verbs and predicative adjectives. Use kein- to negate nouns with indefinite articles.",
+    "structureFormula": "S + V + (Obj) + nicht + (rest)",
+    "variants": [
+      { "label": "Noun negation", "form": "kein / keine / kein" },
+      { "label": "Contrast", "form": "nicht … sondern" }
+    ],
+    "relatedWords": [
+      { "word": "kein", "meaning": "no / not a" },
+      { "word": "nie", "meaning": "never" },
+      { "word": "niemals", "meaning": "never (emphatic)" }
+    ],
+    "usage": [
+      { "de": "Ich komme heute nicht.", "en": "I am not coming today." },
+      { "de": "Das ist nicht richtig.", "en": "That is not correct." }
+    ]
+  },
+  {
+    "id": "weil",
+    "level": "A2",
+    "type": "andere",
+    "german": "weil",
+    "english": "because",
+    "wordType": "Konjunktion",
+    "wordTypeEN": "Subordinating conjunction",
+    "grammarRule": "Verb moves to end of clause (Verbendstellung)",
+    "grammarRuleDetail": "weil introduces a subordinate clause. The conjugated verb is pushed to the very end. Modal + infinitive: modal goes last.",
+    "structureFormula": "Main clause, weil … [verb-FINAL]",
+    "variants": [
+      { "label": "More formal", "form": "da" },
+      { "label": "Spoken (nonstandard)", "form": "weil + V2" }
+    ],
+    "relatedWords": [
+      { "word": "da", "meaning": "since / because (formal)" },
+      { "word": "denn", "meaning": "because (coordinating)" },
+      { "word": "obwohl", "meaning": "although" }
+    ],
+    "usage": [
+      { "de": "Ich bleibe zu Hause, weil es regnet.", "en": "I stay home because it is raining." },
+      { "de": "Er ist müde, weil er nicht geschlafen hat.", "en": "He is tired because he didn't sleep." }
+    ]
+  },
+  {
+    "id": "aber",
+    "level": "A2",
+    "type": "andere",
+    "german": "aber",
+    "english": "but / however",
+    "wordType": "Konjunktion",
+    "wordTypeEN": "Coordinating conjunction",
+    "grammarRule": "No word order change — verb stays in position 2",
+    "grammarRuleDetail": "Coordinating conjunction: does not occupy position 1, so no inversion occurs.",
+    "structureFormula": "Main clause, aber + Main clause (V2)",
+    "variants": [
+      { "label": "Emphatic / mid-clause", "form": "jedoch" },
+      { "label": "On the other hand", "form": "dagegen" }
+    ],
+    "relatedWords": [
+      { "word": "sondern", "meaning": "but rather (after negation)" },
+      { "word": "jedoch", "meaning": "however" },
+      { "word": "trotzdem", "meaning": "nevertheless" }
+    ],
+    "usage": [
+      { "de": "Ich möchte kommen, aber ich habe keine Zeit.", "en": "I would like to come, but I have no time." },
+      { "de": "Das Wetter ist kalt, aber schön.", "en": "The weather is cold but beautiful." }
+    ]
+  },
+  {
+    "id": "trotzdem",
+    "level": "B1",
+    "type": "andere",
+    "german": "trotzdem",
+    "english": "nevertheless / still / anyway",
+    "wordType": "Konjunktionaladverb",
+    "wordTypeEN": "Conjunctive adverb",
+    "grammarRule": "Position 1 → verb-subject inversion (V2 rule)",
+    "grammarRuleDetail": "As a conjunctive adverb, trotzdem counts as position 1 when it starts a sentence, pushing the verb to position 2 and the subject to position 3.",
+    "structureFormula": "Trotzdem + V + S + …",
+    "variants": [
+      { "label": "More formal", "form": "dennoch" },
+      { "label": "Slightly formal", "form": "jedoch" }
+    ],
+    "relatedWords": [
+      { "word": "dennoch", "meaning": "nonetheless (formal)" },
+      { "word": "obwohl", "meaning": "although (subordinating)" },
+      { "word": "jedoch", "meaning": "however" }
+    ],
+    "usage": [
+      { "de": "Es regnete. Trotzdem gingen wir spazieren.", "en": "It was raining. Nevertheless we went for a walk." },
+      { "de": "Sie war krank, trotzdem kam sie.", "en": "She was sick, yet she came." }
+    ]
+  },
+  {
+    "id": "obwohl",
+    "level": "B1",
+    "type": "andere",
+    "german": "obwohl",
+    "english": "although / even though",
+    "wordType": "Konjunktion",
+    "wordTypeEN": "Subordinating conjunction",
+    "grammarRule": "Verb-final subordinate clause",
+    "grammarRuleDetail": "Like weil, obwohl creates a subordinate clause with verb-final order. Expresses concession — contradiction between clauses.",
+    "structureFormula": "Main clause, obwohl … [verb-FINAL]",
+    "variants": [
+      { "label": "More formal / literary", "form": "obgleich" }
+    ],
+    "relatedWords": [
+      { "word": "trotzdem", "meaning": "nevertheless (main clause)" },
+      { "word": "dennoch", "meaning": "nonetheless" },
+      { "word": "wenngleich", "meaning": "even though (formal)" }
+    ],
+    "usage": [
+      { "de": "Er kam, obwohl er krank war.", "en": "He came although he was sick." },
+      { "de": "Obwohl es teuer ist, kaufe ich es.", "en": "Although it is expensive, I buy it." }
+    ]
+  },
+  {
+    "id": "schnell",
+    "level": "B2",
+    "type": "andere",
+    "german": "schnell",
+    "english": "fast / quickly",
+    "wordType": "Adjektiv/Adverb",
+    "wordTypeEN": "Adjective / Adverb",
+    "grammarRule": "Adjective: add case/gender endings before noun. Adverb: no endings.",
+    "grammarRuleDetail": "Adjective endings depend on article type and case/gender/number. Superlative: am schnellsten.",
+    "structureFormula": "Adverb: V + schnell | Adjective: Art. + schnell[ending] + N",
+    "variants": [
+      { "label": "Komparativ", "form": "schneller" },
+      { "label": "Superlativ", "form": "am schnellsten" },
+      { "label": "Attributive (m. nom.)", "form": "ein schneller Mann" }
+    ],
+    "relatedWords": [
+      { "word": "rasch", "meaning": "swift / brisk" },
+      { "word": "flott", "meaning": "speedy (colloquial)" },
+      { "word": "langsam", "meaning": "slow (antonym)" }
+    ],
+    "usage": [
+      { "de": "Das Auto fährt sehr schnell.", "en": "The car drives very fast. (adverb)" },
+      { "de": "Er ist ein schneller Läufer.", "en": "He is a fast runner. (attributive adj, m nom)" }
+    ]
+  },
+  {
+    "id": "zumal",
+    "level": "B2",
+    "type": "andere",
+    "german": "zumal",
+    "english": "especially since / all the more so",
+    "wordType": "Konjunktion/Partikel",
+    "wordTypeEN": "Subordinating conjunction / particle",
+    "grammarRule": "Verb-final subordinate clause (as conjunction)",
+    "grammarRuleDetail": "zumal (da) creates a reinforcing subordinate reason clause with verb-final order.",
+    "structureFormula": "Main clause, zumal (da) … [verb-FINAL]",
+    "variants": [
+      { "label": "Full form", "form": "zumal da" }
+    ],
+    "relatedWords": [
+      { "word": "besonders", "meaning": "especially" },
+      { "word": "insbesondere", "meaning": "in particular" },
+      { "word": "da", "meaning": "since (causal)" }
+    ],
+    "usage": [
+      { "de": "Das ist riskant, zumal wir wenig Zeit haben.", "en": "That is risky, especially since we have little time." },
+      { "de": "Er sollte aufpassen, zumal da er krank ist.", "en": "He should be careful, all the more so since he is sick." }
+    ]
+  },
+  {
+    "id": "wenngleich",
+    "level": "C1",
+    "type": "andere",
+    "german": "wenngleich",
+    "english": "even though / although (formal)",
+    "wordType": "Konjunktion",
+    "wordTypeEN": "Subordinating conjunction (formal/literary)",
+    "grammarRule": "Verb-final — same structure as obwohl, formal register",
+    "grammarRuleDetail": "Literary/formal equivalent of obwohl. Used in essays and academic writing.",
+    "structureFormula": "Wenngleich … [verb-FINAL], Main clause",
+    "variants": [
+      { "label": "Neutral equivalent", "form": "obwohl" },
+      { "label": "Even more formal", "form": "wiewohl" }
+    ],
+    "relatedWords": [
+      { "word": "obwohl", "meaning": "although (neutral)" },
+      { "word": "obgleich", "meaning": "although (formal)" },
+      { "word": "dennoch", "meaning": "nevertheless" }
+    ],
+    "usage": [
+      { "de": "Wenngleich die Ergebnisse positiv sind, bleibt Skepsis angebracht.", "en": "Even though the results are positive, skepticism remains appropriate." }
+    ]
+  },
+  {
+    "id": "infolgedessen",
+    "level": "C1",
+    "type": "andere",
+    "german": "infolgedessen",
+    "english": "as a result / consequently",
+    "wordType": "Konjunktionaladverb",
+    "wordTypeEN": "Conjunctive adverb (formal)",
+    "grammarRule": "Position 1 → V2 inversion",
+    "grammarRuleDetail": "Formal written connector. Summarises a preceding cause and introduces the consequence. Position 1 triggers inversion.",
+    "structureFormula": "Infolgedessen + V + S + …",
+    "variants": [
+      { "label": "Neutral", "form": "deshalb / daher" },
+      { "label": "Formal synonym", "form": "folglich" }
+    ],
+    "relatedWords": [
+      { "word": "deshalb", "meaning": "therefore" },
+      { "word": "daher", "meaning": "hence / therefore" },
+      { "word": "folglich", "meaning": "consequently" }
+    ],
+    "usage": [
+      { "de": "Der Vertrag wurde nicht unterzeichnet. Infolgedessen scheiterten die Verhandlungen.", "en": "The contract was not signed. As a result, the negotiations failed." }
+    ]
+  },
+  {
+    "id": "nichtsdestoweniger",
+    "level": "C2",
+    "type": "andere",
+    "german": "nichtsdestoweniger",
+    "english": "nonetheless / notwithstanding",
+    "wordType": "Konjunktionaladverb",
+    "wordTypeEN": "Conjunctive adverb (very formal/literary)",
+    "grammarRule": "Position 1 → V2 inversion. Literary register only.",
+    "grammarRuleDetail": "Archaic/literary equivalent of dennoch. Used in academic, legal, and literary texts only. Triggers inversion when in position 1.",
+    "structureFormula": "Nichtsdestoweniger + V + S + …",
+    "variants": [
+      { "label": "Modern equivalent", "form": "dennoch / trotzdem" },
+      { "label": "Less archaic", "form": "nichtsdestotrotz" }
+    ],
+    "relatedWords": [
+      { "word": "dennoch", "meaning": "nonetheless" },
+      { "word": "trotzdem", "meaning": "nevertheless" },
+      { "word": "gleichwohl", "meaning": "nonetheless (formal)" }
+    ],
+    "usage": [
+      { "de": "Die Beweise waren dünn. Nichtsdestoweniger wurde er verurteilt.", "en": "The evidence was thin. Nonetheless he was convicted." }
+    ]
+  }
+]

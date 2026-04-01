@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <title>Wortschatz</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Loading state -->
+  <div id="loading">
+    <div class="spinner"></div>
+    <div>Loading words…</div>
+  </div>
+
+  <!-- App (hidden until data loads) -->
+  <div id="app" style="display:none">
+
+    <div class="header">
+      <div class="logo">Wort<span>schatz</span></div>
+      <div class="stats-pill" id="stats-pill">…</div>
+    </div>
+
+    <!-- Word type tabs -->
+    <div class="type-tabs">
+      <button class="tab verb active"   onclick="switchType('verb')">Verben</button>
+      <button class="tab nomen"         onclick="switchType('nomen')">Nomen</button>
+      <button class="tab andere"        onclick="switchType('andere')">Andere</button>
+    </div>
+
+    <!-- CEFR level filter -->
+    <div class="level-filter">
+      <button class="lvl-btn active" data-lvl="all" onclick="switchLevel('all',this)">All</button>
+      <button class="lvl-btn A1"     data-lvl="A1"  onclick="switchLevel('A1',this)">A1</button>
+      <button class="lvl-btn A2"     data-lvl="A2"  onclick="switchLevel('A2',this)">A2</button>
+      <button class="lvl-btn B1"     data-lvl="B1"  onclick="switchLevel('B1',this)">B1</button>
+      <button class="lvl-btn B2"     data-lvl="B2"  onclick="switchLevel('B2',this)">B2</button>
+      <button class="lvl-btn C1"     data-lvl="C1"  onclick="switchLevel('C1',this)">C1</button>
+      <button class="lvl-btn C2"     data-lvl="C2"  onclick="switchLevel('C2',this)">C2</button>
+    </div>
+
+    <!-- Theme filter (Nomen only — shown/hidden by app.js) -->
+    <div class="theme-filter" id="theme-filter"></div>
+
+    <!-- Word pill selector -->
+    <div class="word-list" id="word-list"></div>
+
+    <!-- Active word card -->
+    <div class="card-container">
+      <div id="card-area"></div>
+    </div>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

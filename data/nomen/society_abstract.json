@@ -1,0 +1,138 @@
+[
+  {
+    "id": "Zeitung",
+    "level": "A2",
+    "type": "nomen",
+    "theme": "society_abstract",
+    "german": "Zeitung",
+    "english": "newspaper",
+    "article": "die",
+    "gender": "feminine",
+    "plural": "Zeitungen",
+    "pluralPattern": "-en",
+    "pluralPatternLabel": "+ -en",
+    "nounGroupRule": "Ending -ung → always die",
+    "endingRule": "-ung",
+    "declension": {
+      "sg": { "nom": "die Zeitung","akk": "die Zeitung","dat": "der Zeitung","gen": "der Zeitung" },
+      "pl": { "nom": "die Zeitungen","akk": "die Zeitungen","dat": "den Zeitungen","gen": "der Zeitungen" }
+    },
+    "usage": [
+      { "de": "Er liest die Zeitung am Morgen.", "en": "He reads the newspaper in the morning." },
+      { "de": "Ich abonniere zwei Zeitungen.", "en": "I subscribe to two newspapers." }
+    ]
+  },
+  {
+    "id": "Verhältnis",
+    "level": "B1",
+    "type": "nomen",
+    "theme": "society_abstract",
+    "german": "Verhältnis",
+    "english": "relationship / ratio / proportion",
+    "article": "das",
+    "gender": "neuter",
+    "plural": "Verhältnisse",
+    "pluralPattern": "-se",
+    "pluralPatternLabel": "+ -se",
+    "nounGroupRule": "Ending -nis (neuter) → plural adds -se",
+    "endingRule": "-nis",
+    "declension": {
+      "sg": { "nom": "das Verhältnis","akk": "das Verhältnis","dat": "dem Verhältnis","gen": "des Verhältnisses" },
+      "pl": { "nom": "die Verhältnisse","akk": "die Verhältnisse","dat": "den Verhältnissen","gen": "der Verhältnisse" }
+    },
+    "usage": [
+      { "de": "Das Verhältnis zwischen den Ländern ist gut.", "en": "The relationship between the countries is good." },
+      { "de": "Im Verhältnis zu früher hat sich viel geändert.", "en": "In proportion to before, a lot has changed." }
+    ]
+  },
+  {
+    "id": "Gesellschaft",
+    "level": "B1",
+    "type": "nomen",
+    "theme": "society_abstract",
+    "german": "Gesellschaft",
+    "english": "society / company",
+    "article": "die",
+    "gender": "feminine",
+    "plural": "Gesellschaften",
+    "pluralPattern": "-en",
+    "pluralPatternLabel": "+ -en",
+    "nounGroupRule": "Ending -schaft → always die",
+    "endingRule": "-schaft",
+    "declension": {
+      "sg": { "nom": "die Gesellschaft","akk": "die Gesellschaft","dat": "der Gesellschaft","gen": "der Gesellschaft" },
+      "pl": { "nom": "die Gesellschaften","akk": "die Gesellschaften","dat": "den Gesellschaften","gen": "der Gesellschaften" }
+    },
+    "usage": [
+      { "de": "Die Gesellschaft verändert sich schnell.", "en": "Society is changing quickly." },
+      { "de": "Er arbeitet für eine internationale Gesellschaft.", "en": "He works for an international company." }
+    ]
+  },
+  {
+    "id": "Auswirkung",
+    "level": "B2",
+    "type": "nomen",
+    "theme": "society_abstract",
+    "german": "Auswirkung",
+    "english": "impact / effect / consequence",
+    "article": "die",
+    "gender": "feminine",
+    "plural": "Auswirkungen",
+    "pluralPattern": "-en",
+    "pluralPatternLabel": "+ -en",
+    "nounGroupRule": "Ending -ung → always die",
+    "endingRule": "-ung",
+    "declension": {
+      "sg": { "nom": "die Auswirkung","akk": "die Auswirkung","dat": "der Auswirkung","gen": "der Auswirkung" },
+      "pl": { "nom": "die Auswirkungen","akk": "die Auswirkungen","dat": "den Auswirkungen","gen": "der Auswirkungen" }
+    },
+    "usage": [
+      { "de": "Die Auswirkungen des Klimawandels sind spürbar.", "en": "The effects of climate change are noticeable." },
+      { "de": "Das hat große Auswirkungen auf die Wirtschaft.", "en": "This has a major impact on the economy." }
+    ]
+  },
+  {
+    "id": "Rechtsprechung",
+    "level": "C1",
+    "type": "nomen",
+    "theme": "society_abstract",
+    "german": "Rechtsprechung",
+    "english": "jurisdiction / case law",
+    "article": "die",
+    "gender": "feminine",
+    "plural": "Rechtsprechungen",
+    "pluralPattern": "-en",
+    "pluralPatternLabel": "+ -en",
+    "nounGroupRule": "Ending -ung → always die",
+    "endingRule": "-ung",
+    "declension": {
+      "sg": { "nom": "die Rechtsprechung","akk": "die Rechtsprechung","dat": "der Rechtsprechung","gen": "der Rechtsprechung" },
+      "pl": { "nom": "die Rechtsprechungen","akk": "die Rechtsprechungen","dat": "den Rechtsprechungen","gen": "der Rechtsprechungen" }
+    },
+    "usage": [
+      { "de": "Laut der aktuellen Rechtsprechung ist das zulässig.", "en": "According to current case law, this is permissible." }
+    ]
+  },
+  {
+    "id": "Unerbittlichkeit",
+    "level": "C2",
+    "type": "nomen",
+    "theme": "society_abstract",
+    "german": "Unerbittlichkeit",
+    "english": "relentlessness / inexorability",
+    "article": "die",
+    "gender": "feminine",
+    "plural": "— (rarely pluralized)",
+    "pluralPattern": "none",
+    "pluralPatternLabel": "No plural",
+    "nounGroupRule": "Ending -keit → always die",
+    "endingRule": "-keit",
+    "declension": {
+      "sg": { "nom": "die Unerbittlichkeit","akk": "die Unerbittlichkeit","dat": "der Unerbittlichkeit","gen": "der Unerbittlichkeit" },
+      "pl": { "nom": "—","akk": "—","dat": "—","gen": "—" }
+    },
+    "usage": [
+      { "de": "Die Unerbittlichkeit der Zeit ist erschreckend.", "en": "The relentlessness of time is frightening." }
+    ]
+  }
+]

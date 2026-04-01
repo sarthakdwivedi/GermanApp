@@ -1,0 +1,140 @@
+[
+  {
+    "id": "Brot",
+    "level": "A1",
+    "type": "nomen",
+    "theme": "food",
+    "german": "Brot",
+    "english": "bread",
+    "article": "das",
+    "gender": "neuter",
+    "plural": "Brote",
+    "pluralPattern": "-e",
+    "pluralPatternLabel": "+ -e",
+    "nounGroupRule": "Many monosyllabic neuter nouns → + -e",
+    "endingRule": null,
+    "declension": {
+      "sg": { "nom": "das Brot","akk": "das Brot","dat": "dem Brot","gen": "des Brotes" },
+      "pl": { "nom": "die Brote","akk": "die Brote","dat": "den Broten","gen": "der Brote" }
+    },
+    "usage": [
+      { "de": "Ich esse morgens ein Brot.", "en": "I eat bread in the morning." },
+      { "de": "Kannst du Brot kaufen?", "en": "Can you buy bread?" }
+    ]
+  },
+  {
+    "id": "Wasser",
+    "level": "A1",
+    "type": "nomen",
+    "theme": "food",
+    "german": "Wasser",
+    "english": "water",
+    "article": "das",
+    "gender": "neuter",
+    "plural": "Wasser",
+    "pluralPattern": "same",
+    "pluralPatternLabel": "Unchanged (or Wässer)",
+    "nounGroupRule": "Neuter nouns ending in -er → plural unchanged",
+    "endingRule": "-er",
+    "declension": {
+      "sg": { "nom": "das Wasser","akk": "das Wasser","dat": "dem Wasser","gen": "des Wassers" },
+      "pl": { "nom": "die Wasser","akk": "die Wasser","dat": "den Wassern","gen": "der Wasser" }
+    },
+    "usage": [
+      { "de": "Ich trinke ein Glas Wasser.", "en": "I drink a glass of water." },
+      { "de": "Das Wasser ist kalt.", "en": "The water is cold." }
+    ]
+  },
+  {
+    "id": "Apfel",
+    "level": "A1",
+    "type": "nomen",
+    "theme": "food",
+    "german": "Apfel",
+    "english": "apple",
+    "article": "der",
+    "gender": "masculine",
+    "plural": "Äpfel",
+    "pluralPattern": "umlaut",
+    "pluralPatternLabel": "Umlaut only",
+    "nounGroupRule": "Some masculine nouns ending in -el → Umlaut only",
+    "endingRule": "-el",
+    "declension": {
+      "sg": { "nom": "der Apfel","akk": "den Apfel","dat": "dem Apfel","gen": "des Apfels" },
+      "pl": { "nom": "die Äpfel","akk": "die Äpfel","dat": "den Äpfeln","gen": "der Äpfel" }
+    },
+    "usage": [
+      { "de": "Ich esse jeden Tag einen Apfel.", "en": "I eat an apple every day." },
+      { "de": "Die Äpfel sind sehr süß.", "en": "The apples are very sweet." }
+    ]
+  },
+  {
+    "id": "Mahlzeit",
+    "level": "A2",
+    "type": "nomen",
+    "theme": "food",
+    "german": "Mahlzeit",
+    "english": "meal",
+    "article": "die",
+    "gender": "feminine",
+    "plural": "Mahlzeiten",
+    "pluralPattern": "-en",
+    "pluralPatternLabel": "+ -en",
+    "nounGroupRule": "Compound ending in -zeit (feminine) → die",
+    "endingRule": "-zeit",
+    "declension": {
+      "sg": { "nom": "die Mahlzeit","akk": "die Mahlzeit","dat": "der Mahlzeit","gen": "der Mahlzeit" },
+      "pl": { "nom": "die Mahlzeiten","akk": "die Mahlzeiten","dat": "den Mahlzeiten","gen": "der Mahlzeiten" }
+    },
+    "usage": [
+      { "de": "Drei Mahlzeiten am Tag sind wichtig.", "en": "Three meals a day are important." },
+      { "de": "Guten Appetit! — Danke, gleichfalls!", "en": "Enjoy your meal! — Thank you, likewise!" }
+    ]
+  },
+  {
+    "id": "Geschmack",
+    "level": "B1",
+    "type": "nomen",
+    "theme": "food",
+    "german": "Geschmack",
+    "english": "taste / flavour",
+    "article": "der",
+    "gender": "masculine",
+    "plural": "Geschmäcker",
+    "pluralPattern": "umlaut-er",
+    "pluralPatternLabel": "Umlaut + -er",
+    "nounGroupRule": "Some masculine nouns → Umlaut + -er",
+    "endingRule": null,
+    "declension": {
+      "sg": { "nom": "der Geschmack","akk": "den Geschmack","dat": "dem Geschmack","gen": "des Geschmacks" },
+      "pl": { "nom": "die Geschmäcker","akk": "die Geschmäcker","dat": "den Geschmäckern","gen": "der Geschmäcker" }
+    },
+    "usage": [
+      { "de": "Das hat einen guten Geschmack.", "en": "That has a good taste." },
+      { "de": "Über Geschmack lässt sich nicht streiten.", "en": "There is no accounting for taste." }
+    ]
+  },
+  {
+    "id": "Ernährung",
+    "level": "B2",
+    "type": "nomen",
+    "theme": "food",
+    "german": "Ernährung",
+    "english": "nutrition / diet",
+    "article": "die",
+    "gender": "feminine",
+    "plural": "Ernährungen",
+    "pluralPattern": "-en",
+    "pluralPatternLabel": "+ -en",
+    "nounGroupRule": "Ending -ung → always die",
+    "endingRule": "-ung",
+    "declension": {
+      "sg": { "nom": "die Ernährung","akk": "die Ernährung","dat": "der Ernährung","gen": "der Ernährung" },
+      "pl": { "nom": "die Ernährungen","akk": "die Ernährungen","dat": "den Ernährungen","gen": "der Ernährungen" }
+    },
+    "usage": [
+      { "de": "Eine gesunde Ernährung ist sehr wichtig.", "en": "A healthy diet is very important." },
+      { "de": "Sie hat ihre Ernährung komplett umgestellt.", "en": "She has completely changed her diet." }
+    ]
+  }
+]

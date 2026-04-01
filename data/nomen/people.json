@@ -1,0 +1,186 @@
+[
+  {
+    "id": "Mann",
+    "level": "A1",
+    "type": "nomen",
+    "theme": "people",
+    "german": "Mann",
+    "english": "man / husband",
+    "article": "der",
+    "gender": "masculine",
+    "plural": "Männer",
+    "pluralPattern": "umlaut-er",
+    "pluralPatternLabel": "Umlaut + -er",
+    "nounGroupRule": "Male persons → der",
+    "endingRule": null,
+    "declension": {
+      "sg": { "nom": "der Mann",  "akk": "den Mann",  "dat": "dem Mann",  "gen": "des Mannes" },
+      "pl": { "nom": "die Männer","akk": "die Männer","dat": "den Männern","gen": "der Männer" }
+    },
+    "usage": [
+      { "de": "Der Mann liest die Zeitung.", "en": "The man reads the newspaper." },
+      { "de": "Ich sehe den Mann.", "en": "I see the man. (Akk)" }
+    ]
+  },
+  {
+    "id": "Frau",
+    "level": "A1",
+    "type": "nomen",
+    "theme": "people",
+    "german": "Frau",
+    "english": "woman / Mrs.",
+    "article": "die",
+    "gender": "feminine",
+    "plural": "Frauen",
+    "pluralPattern": "-en",
+    "pluralPatternLabel": "+ -en",
+    "nounGroupRule": "Female persons → die",
+    "endingRule": null,
+    "declension": {
+      "sg": { "nom": "die Frau",  "akk": "die Frau",  "dat": "der Frau",  "gen": "der Frau"  },
+      "pl": { "nom": "die Frauen","akk": "die Frauen","dat": "den Frauen","gen": "der Frauen" }
+    },
+    "usage": [
+      { "de": "Die Frau arbeitet als Ärztin.", "en": "The woman works as a doctor." },
+      { "de": "Ich helfe der Frau.", "en": "I help the woman. (Dat)" }
+    ]
+  },
+  {
+    "id": "Kind",
+    "level": "A1",
+    "type": "nomen",
+    "theme": "people",
+    "german": "Kind",
+    "english": "child",
+    "article": "das",
+    "gender": "neuter",
+    "plural": "Kinder",
+    "pluralPattern": "-er",
+    "pluralPatternLabel": "+ -er",
+    "nounGroupRule": "Verbal nouns & diminutives → das",
+    "endingRule": null,
+    "declension": {
+      "sg": { "nom": "das Kind",  "akk": "das Kind",  "dat": "dem Kind",  "gen": "des Kindes" },
+      "pl": { "nom": "die Kinder","akk": "die Kinder","dat": "den Kindern","gen": "der Kinder" }
+    },
+    "usage": [
+      { "de": "Das Kind spielt im Garten.", "en": "The child plays in the garden." },
+      { "de": "Sie gibt dem Kind einen Apfel.", "en": "She gives the child an apple. (Dat)" }
+    ]
+  },
+  {
+    "id": "Mutter",
+    "level": "A1",
+    "type": "nomen",
+    "theme": "people",
+    "german": "Mutter",
+    "english": "mother",
+    "article": "die",
+    "gender": "feminine",
+    "plural": "Mütter",
+    "pluralPattern": "umlaut",
+    "pluralPatternLabel": "Umlaut only",
+    "nounGroupRule": "Female family members → die",
+    "endingRule": null,
+    "declension": {
+      "sg": { "nom": "die Mutter",  "akk": "die Mutter",  "dat": "der Mutter",  "gen": "der Mutter"  },
+      "pl": { "nom": "die Mütter","akk": "die Mütter","dat": "den Müttern","gen": "der Mütter" }
+    },
+    "usage": [
+      { "de": "Meine Mutter kocht sehr gut.", "en": "My mother cooks very well." },
+      { "de": "Er ruft seine Mutter an.", "en": "He calls his mother." }
+    ]
+  },
+  {
+    "id": "Vater",
+    "level": "A1",
+    "type": "nomen",
+    "theme": "people",
+    "german": "Vater",
+    "english": "father",
+    "article": "der",
+    "gender": "masculine",
+    "plural": "Väter",
+    "pluralPattern": "umlaut",
+    "pluralPatternLabel": "Umlaut only",
+    "nounGroupRule": "Male family members → der",
+    "endingRule": null,
+    "declension": {
+      "sg": { "nom": "der Vater","akk": "den Vater","dat": "dem Vater","gen": "des Vaters" },
+      "pl": { "nom": "die Väter","akk": "die Väter","dat": "den Vätern","gen": "der Väter" }
+    },
+    "usage": [
+      { "de": "Mein Vater arbeitet als Ingenieur.", "en": "My father works as an engineer." },
+      { "de": "Sie besucht ihren Vater.", "en": "She visits her father." }
+    ]
+  },
+  {
+    "id": "Freund",
+    "level": "A2",
+    "type": "nomen",
+    "theme": "people",
+    "german": "Freund",
+    "english": "friend / boyfriend",
+    "article": "der",
+    "gender": "masculine",
+    "plural": "Freunde",
+    "pluralPattern": "-e",
+    "pluralPatternLabel": "+ -e",
+    "nounGroupRule": "Male persons → der",
+    "endingRule": null,
+    "declension": {
+      "sg": { "nom": "der Freund","akk": "den Freund","dat": "dem Freund","gen": "des Freundes" },
+      "pl": { "nom": "die Freunde","akk": "die Freunde","dat": "den Freunden","gen": "der Freunde" }
+    },
+    "usage": [
+      { "de": "Er ist mein bester Freund.", "en": "He is my best friend." },
+      { "de": "Ich treffe meine Freunde am Wochenende.", "en": "I meet my friends at the weekend." }
+    ]
+  },
+  {
+    "id": "Freundschaft",
+    "level": "B1",
+    "type": "nomen",
+    "theme": "people",
+    "german": "Freundschaft",
+    "english": "friendship",
+    "article": "die",
+    "gender": "feminine",
+    "plural": "Freundschaften",
+    "pluralPattern": "-en",
+    "pluralPatternLabel": "+ -en",
+    "nounGroupRule": "Ending -schaft → always die",
+    "endingRule": "-schaft",
+    "declension": {
+      "sg": { "nom": "die Freundschaft","akk": "die Freundschaft","dat": "der Freundschaft","gen": "der Freundschaft" },
+      "pl": { "nom": "die Freundschaften","akk": "die Freundschaften","dat": "den Freundschaften","gen": "der Freundschaften" }
+    },
+    "usage": [
+      { "de": "Die Freundschaft zwischen ihnen ist sehr stark.", "en": "The friendship between them is very strong." },
+      { "de": "Echte Freundschaften sind selten.", "en": "True friendships are rare." }
+    ]
+  },
+  {
+    "id": "Nachbar",
+    "level": "B1",
+    "type": "nomen",
+    "theme": "people",
+    "german": "Nachbar",
+    "english": "neighbour",
+    "article": "der",
+    "gender": "masculine",
+    "plural": "Nachbarn",
+    "pluralPattern": "-n",
+    "pluralPatternLabel": "+ -n (N-declension)",
+    "nounGroupRule": "Weak masculine (N-declension): adds -n/-en in all cases except nominative singular",
+    "endingRule": "-n (weak masc.)",
+    "declension": {
+      "sg": { "nom": "der Nachbar","akk": "den Nachbarn","dat": "dem Nachbarn","gen": "des Nachbarn" },
+      "pl": { "nom": "die Nachbarn","akk": "die Nachbarn","dat": "den Nachbarn","gen": "der Nachbarn" }
+    },
+    "usage": [
+      { "de": "Mein Nachbar ist sehr nett.", "en": "My neighbour is very nice." },
+      { "de": "Ich helfe dem Nachbarn.", "en": "I help the neighbour. (Dat)" }
+    ]
+  }
+]

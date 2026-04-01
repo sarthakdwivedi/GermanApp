@@ -1,0 +1,185 @@
+[
+  {
+    "id": "Schule",
+    "level": "A1",
+    "type": "nomen",
+    "theme": "work_education",
+    "german": "Schule",
+    "english": "school",
+    "article": "die",
+    "gender": "feminine",
+    "plural": "Schulen",
+    "pluralPattern": "-n",
+    "pluralPatternLabel": "+ -n",
+    "nounGroupRule": "Feminine nouns ending in -e → add -n for plural",
+    "endingRule": "-e",
+    "declension": {
+      "sg": { "nom": "die Schule","akk": "die Schule","dat": "der Schule","gen": "der Schule" },
+      "pl": { "nom": "die Schulen","akk": "die Schulen","dat": "den Schulen","gen": "der Schulen" }
+    },
+    "usage": [
+      { "de": "Ich gehe zur Schule.", "en": "I go to school." },
+      { "de": "Die Schule beginnt um acht Uhr.", "en": "School starts at eight o'clock." }
+    ]
+  },
+  {
+    "id": "Arbeit",
+    "level": "A2",
+    "type": "nomen",
+    "theme": "work_education",
+    "german": "Arbeit",
+    "english": "work / job",
+    "article": "die",
+    "gender": "feminine",
+    "plural": "Arbeiten",
+    "pluralPattern": "-en",
+    "pluralPatternLabel": "+ -en",
+    "nounGroupRule": "Ending -eit / -keit → always die",
+    "endingRule": "-eit",
+    "declension": {
+      "sg": { "nom": "die Arbeit","akk": "die Arbeit","dat": "der Arbeit","gen": "der Arbeit" },
+      "pl": { "nom": "die Arbeiten","akk": "die Arbeiten","dat": "den Arbeiten","gen": "der Arbeiten" }
+    },
+    "usage": [
+      { "de": "Die Arbeit macht mir Spaß.", "en": "I enjoy the work." },
+      { "de": "Er sucht eine neue Arbeit.", "en": "He is looking for a new job." }
+    ]
+  },
+  {
+    "id": "Beruf",
+    "level": "A2",
+    "type": "nomen",
+    "theme": "work_education",
+    "german": "Beruf",
+    "english": "profession / occupation",
+    "article": "der",
+    "gender": "masculine",
+    "plural": "Berufe",
+    "pluralPattern": "-e",
+    "pluralPatternLabel": "+ -e",
+    "nounGroupRule": "Many monosyllabic masculine nouns → + -e",
+    "endingRule": null,
+    "declension": {
+      "sg": { "nom": "der Beruf","akk": "den Beruf","dat": "dem Beruf","gen": "des Berufs" },
+      "pl": { "nom": "die Berufe","akk": "die Berufe","dat": "den Berufen","gen": "der Berufe" }
+    },
+    "usage": [
+      { "de": "Was ist dein Beruf?", "en": "What is your profession?" },
+      { "de": "Sie hat einen interessanten Beruf.", "en": "She has an interesting profession." }
+    ]
+  },
+  {
+    "id": "Büro",
+    "level": "A2",
+    "type": "nomen",
+    "theme": "work_education",
+    "german": "Büro",
+    "english": "office",
+    "article": "das",
+    "gender": "neuter",
+    "plural": "Büros",
+    "pluralPattern": "-s",
+    "pluralPatternLabel": "+ -s",
+    "nounGroupRule": "Loanwords and abbreviations → + -s",
+    "endingRule": "-o (loanword)",
+    "declension": {
+      "sg": { "nom": "das Büro","akk": "das Büro","dat": "dem Büro","gen": "des Büros" },
+      "pl": { "nom": "die Büros","akk": "die Büros","dat": "den Büros","gen": "der Büros" }
+    },
+    "usage": [
+      { "de": "Ich arbeite im Büro.", "en": "I work in the office." },
+      { "de": "Das Büro öffnet um neun.", "en": "The office opens at nine." }
+    ]
+  },
+  {
+    "id": "Zeugnis",
+    "level": "B1",
+    "type": "nomen",
+    "theme": "work_education",
+    "german": "Zeugnis",
+    "english": "school report / certificate / testimony",
+    "article": "das",
+    "gender": "neuter",
+    "plural": "Zeugnisse",
+    "pluralPattern": "-se",
+    "pluralPatternLabel": "+ -se",
+    "nounGroupRule": "Ending -nis (neuter) → plural adds -se",
+    "endingRule": "-nis",
+    "declension": {
+      "sg": { "nom": "das Zeugnis","akk": "das Zeugnis","dat": "dem Zeugnis","gen": "des Zeugnisses" },
+      "pl": { "nom": "die Zeugnisse","akk": "die Zeugnisse","dat": "den Zeugnissen","gen": "der Zeugnisse" }
+    },
+    "usage": [
+      { "de": "Er hat ein sehr gutes Zeugnis bekommen.", "en": "He received a very good school report." },
+      { "de": "Für diese Stelle braucht man ein Arbeitszeugnis.", "en": "For this position you need a work reference." }
+    ]
+  },
+  {
+    "id": "Möglichkeit",
+    "level": "B1",
+    "type": "nomen",
+    "theme": "work_education",
+    "german": "Möglichkeit",
+    "english": "possibility / opportunity",
+    "article": "die",
+    "gender": "feminine",
+    "plural": "Möglichkeiten",
+    "pluralPattern": "-en",
+    "pluralPatternLabel": "+ -en",
+    "nounGroupRule": "Ending -keit → always die",
+    "endingRule": "-keit",
+    "declension": {
+      "sg": { "nom": "die Möglichkeit","akk": "die Möglichkeit","dat": "der Möglichkeit","gen": "der Möglichkeit" },
+      "pl": { "nom": "die Möglichkeiten","akk": "die Möglichkeiten","dat": "den Möglichkeiten","gen": "der Möglichkeiten" }
+    },
+    "usage": [
+      { "de": "Es gibt viele Möglichkeiten.", "en": "There are many possibilities." },
+      { "de": "Ich nutze diese Möglichkeit.", "en": "I am taking this opportunity." }
+    ]
+  },
+  {
+    "id": "Abkommen",
+    "level": "B2",
+    "type": "nomen",
+    "theme": "work_education",
+    "german": "Abkommen",
+    "english": "agreement / treaty",
+    "article": "das",
+    "gender": "neuter",
+    "plural": "Abkommen",
+    "pluralPattern": "same",
+    "pluralPatternLabel": "Unchanged",
+    "nounGroupRule": "Verbal nouns (infinitive used as noun) → das; plural unchanged",
+    "endingRule": "-en (verbal noun)",
+    "declension": {
+      "sg": { "nom": "das Abkommen","akk": "das Abkommen","dat": "dem Abkommen","gen": "des Abkommens" },
+      "pl": { "nom": "die Abkommen","akk": "die Abkommen","dat": "den Abkommen","gen": "der Abkommen" }
+    },
+    "usage": [
+      { "de": "Die Länder schlossen ein Abkommen.", "en": "The countries concluded an agreement." },
+      { "de": "Das Abkommen trat in Kraft.", "en": "The treaty came into force." }
+    ]
+  },
+  {
+    "id": "Beeinträchtigung",
+    "level": "C1",
+    "type": "nomen",
+    "theme": "work_education",
+    "german": "Beeinträchtigung",
+    "english": "impairment / interference",
+    "article": "die",
+    "gender": "feminine",
+    "plural": "Beeinträchtigungen",
+    "pluralPattern": "-en",
+    "pluralPatternLabel": "+ -en",
+    "nounGroupRule": "Ending -ung → always die",
+    "endingRule": "-ung",
+    "declension": {
+      "sg": { "nom": "die Beeinträchtigung","akk": "die Beeinträchtigung","dat": "der Beeinträchtigung","gen": "der Beeinträchtigung" },
+      "pl": { "nom": "die Beeinträchtigungen","akk": "die Beeinträchtigungen","dat": "den Beeinträchtigungen","gen": "der Beeinträchtigungen" }
+    },
+    "usage": [
+      { "de": "Es gab eine erhebliche Beeinträchtigung des Betriebs.", "en": "There was a considerable impairment of operations." }
+    ]
+  }
+]
