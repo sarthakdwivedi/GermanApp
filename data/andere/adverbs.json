@@ -1,0 +1,175 @@
+[
+  {
+    "id": "sehr",
+    "level": "A1",
+    "type": "andere",
+    "wordCategory": "adverb",
+    "german": "sehr",
+    "english": "very",
+    "wordType": "Adverb",
+    "wordTypeEN": "Degree adverb",
+    "grammarRule": "Intensifies adjectives and adverbs — never modifies nouns",
+    "grammarRuleDetail": "sehr is a degree adverb. It always precedes the word it intensifies. It cannot modify nouns directly (use viel for nouns).",
+    "structureFormula": "sehr + Adjektiv/Adverb",
+    "variants": [],
+    "relatedWords": [
+      { "word": "ziemlich", "meaning": "quite / rather" },
+      { "word": "besonders", "meaning": "especially / particularly" },
+      { "word": "zu", "meaning": "too (excessive)" }
+    ],
+    "usage": [
+      { "de": "Das ist sehr interessant.", "en": "That is very interesting." },
+      { "de": "Er arbeitet sehr schnell.", "en": "He works very quickly." }
+    ]
+  },
+  {
+    "id": "gern",
+    "level": "A1",
+    "type": "andere",
+    "wordCategory": "adverb",
+    "german": "gern / gerne",
+    "english": "gladly / with pleasure / to like doing",
+    "wordType": "Adverb",
+    "wordTypeEN": "Modal adverb",
+    "grammarRule": "Used with a verb to express liking — replaces mögen + noun for activities",
+    "grammarRuleDetail": "gern + verb = to like doing sth. Both gern and gerne are correct. Comparative: lieber. Superlative: am liebsten.",
+    "structureFormula": "Ich + V + gern | gern + V (verb second)",
+    "variants": [
+      { "label": "Variant", "form": "gerne (equally correct)" },
+      { "label": "Komparativ", "form": "lieber (prefer)" },
+      { "label": "Superlativ", "form": "am liebsten (like most)" }
+    ],
+    "relatedWords": [
+      { "word": "lieber", "meaning": "rather / prefer (comparative)" },
+      { "word": "am liebsten", "meaning": "most of all (superlative)" },
+      { "word": "ungern", "meaning": "reluctantly / not like" }
+    ],
+    "usage": [
+      { "de": "Ich lese gern Bücher.", "en": "I like reading books." },
+      { "de": "Ich trinke lieber Tee als Kaffee.", "en": "I prefer tea to coffee." }
+    ]
+  },
+  {
+    "id": "leider",
+    "level": "A2",
+    "type": "andere",
+    "wordCategory": "adverb",
+    "german": "leider",
+    "english": "unfortunately / I'm afraid",
+    "wordType": "Adverb",
+    "wordTypeEN": "Modal adverb (sentence adverb)",
+    "grammarRule": "Sentence adverb — can open a clause (triggers V2 inversion) or sit mid-sentence",
+    "grammarRuleDetail": "leider expresses regret. When it opens a sentence it occupies position 1 and triggers verb-subject inversion. It can also sit after the verb.",
+    "structureFormula": "Leider + V + S … | S + V + leider …",
+    "variants": [],
+    "relatedWords": [
+      { "word": "zum Glück", "meaning": "fortunately (antonym)" },
+      { "word": "bedauerlicherweise", "meaning": "regrettably (formal)" },
+      { "word": "leider Gottes", "meaning": "unfortunately (emphatic)" }
+    ],
+    "usage": [
+      { "de": "Leider kann ich nicht kommen.", "en": "Unfortunately I can't come. (pos. 1, inversion)" },
+      { "de": "Ich habe leider keine Zeit.", "en": "I'm afraid I have no time. (mid-sentence)" }
+    ]
+  },
+  {
+    "id": "noch",
+    "level": "A2",
+    "type": "andere",
+    "wordCategory": "adverb",
+    "german": "noch",
+    "english": "still / yet / even / another",
+    "wordType": "Adverb",
+    "wordTypeEN": "Temporal / degree adverb",
+    "grammarRule": "Position varies by meaning — temporal noch follows verb, degree noch precedes the word it modifies",
+    "grammarRuleDetail": "noch has several distinct meanings: (1) still/yet (ongoing action), (2) another/more (quantity), (3) even (degree with comparatives). Negation: noch nicht = not yet.",
+    "structureFormula": "Er schläft noch. | Noch ein Bier. | noch größer",
+    "variants": [
+      { "label": "Negation", "form": "noch nicht (not yet)" },
+      { "label": "With comparative", "form": "noch größer (even bigger)" }
+    ],
+    "relatedWords": [
+      { "word": "schon", "meaning": "already" },
+      { "word": "immer noch", "meaning": "still (emphatic)" },
+      { "word": "nicht mehr", "meaning": "no longer" }
+    ],
+    "usage": [
+      { "de": "Er schläft noch.", "en": "He is still asleep." },
+      { "de": "Ich habe noch keine Zeit gehabt.", "en": "I haven't had time yet." }
+    ]
+  },
+  {
+    "id": "schon",
+    "level": "A2",
+    "type": "andere",
+    "wordCategory": "adverb",
+    "german": "schon",
+    "english": "already / yet / as early as",
+    "wordType": "Adverb",
+    "wordTypeEN": "Temporal adverb / particle",
+    "grammarRule": "Position after verb — can also function as a modal particle",
+    "grammarRuleDetail": "schon has temporal meaning (already) and particle meaning (reassurance: 'it'll be fine'). In questions it means 'yet'. Contrast with noch (still).",
+    "structureFormula": "Ich habe schon gegessen. | Schon um 6 Uhr.",
+    "variants": [
+      { "label": "As particle (reassurance)", "form": "Das wird schon klappen." },
+      { "label": "In question (yet?)", "form": "Hast du schon gegessen?" }
+    ],
+    "relatedWords": [
+      { "word": "noch", "meaning": "still / yet" },
+      { "word": "bereits", "meaning": "already (formal)" },
+      { "word": "endlich", "meaning": "finally / at last" }
+    ],
+    "usage": [
+      { "de": "Ich habe schon gegessen.", "en": "I have already eaten." },
+      { "de": "Er war schon um 6 Uhr hier.", "en": "He was already here at 6 o'clock." }
+    ]
+  },
+  {
+    "id": "fast",
+    "level": "B1",
+    "type": "andere",
+    "wordCategory": "adverb",
+    "german": "fast",
+    "english": "almost / nearly",
+    "wordType": "Adverb",
+    "wordTypeEN": "Degree adverb",
+    "grammarRule": "Precedes the word or phrase it modifies",
+    "grammarRuleDetail": "fast expresses approximation — close to but not quite reaching something. Precedes adjectives, adverbs, or entire verb phrases.",
+    "structureFormula": "fast + Adjektiv/Adverb | fast + VP",
+    "variants": [],
+    "relatedWords": [
+      { "word": "kaum", "meaning": "hardly / barely" },
+      { "word": "beinahe", "meaning": "almost (more literary)" },
+      { "word": "ungefähr", "meaning": "approximately" }
+    ],
+    "usage": [
+      { "de": "Das ist fast fertig.", "en": "That is almost done." },
+      { "de": "Ich habe fast nichts gegessen.", "en": "I ate almost nothing." }
+    ]
+  },
+  {
+    "id": "besonders",
+    "level": "B1",
+    "type": "andere",
+    "wordCategory": "adverb",
+    "german": "besonders",
+    "english": "especially / particularly",
+    "wordType": "Adverb",
+    "wordTypeEN": "Degree adverb",
+    "grammarRule": "Precedes adjectives/adverbs to intensify them",
+    "grammarRuleDetail": "besonders is a stronger intensifier than sehr. It singles out something as remarkable or exceptional.",
+    "structureFormula": "besonders + Adjektiv/Adverb",
+    "variants": [
+      { "label": "As adjective (attributive)", "form": "ein besonderer Anlass" }
+    ],
+    "relatedWords": [
+      { "word": "insbesondere", "meaning": "in particular (formal)" },
+      { "word": "vor allem", "meaning": "above all" },
+      { "word": "hauptsächlich", "meaning": "mainly / primarily" }
+    ],
+    "usage": [
+      { "de": "Das ist besonders wichtig.", "en": "That is especially important." },
+      { "de": "Ich mag besonders gern Schokolade.", "en": "I particularly like chocolate." }
+    ]
+  }
+]

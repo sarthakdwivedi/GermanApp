@@ -1,0 +1,276 @@
+[
+  {
+    "id": "in",
+    "level": "A1",
+    "type": "andere",
+    "wordCategory": "preposition",
+    "german": "in",
+    "english": "in / into",
+    "wordType": "Präposition",
+    "wordTypeEN": "Two-way preposition (Wechselpräposition)",
+    "grammarRule": "Dativ = location (wo?), Akkusativ = direction (wohin?)",
+    "grammarRuleDetail": "Two-way preposition. Use Dativ to say where something IS. Use Akkusativ to say where something is GOING.",
+    "structureFormula": "in + Dat (location) | in + Akk (direction/change)",
+    "cases": ["dativ", "akkusativ"],
+    "meaning_dat": "in (location) — Ich bin in der Küche",
+    "meaning_akk": "into (direction) — Ich gehe in die Küche",
+    "fixedExpressions": [
+      { "expression": "in der Nähe", "meaning": "nearby" },
+      { "expression": "im Moment", "meaning": "at the moment" },
+      { "expression": "in Ordnung", "meaning": "okay / in order" }
+    ],
+    "variants": [],
+    "relatedWords": [
+      { "word": "an", "meaning": "at / on (vertical surface)" },
+      { "word": "auf", "meaning": "on (horizontal surface)" },
+      { "word": "nach", "meaning": "to (cities/countries)" }
+    ],
+    "usage": [
+      { "de": "Ich wohne in Wien. (Dat)", "en": "I live in Vienna." },
+      { "de": "Ich fahre in die Stadt. (Akk)", "en": "I am driving into the city." }
+    ]
+  },
+  {
+    "id": "auf",
+    "level": "A1",
+    "type": "andere",
+    "wordCategory": "preposition",
+    "german": "auf",
+    "english": "on / onto / at",
+    "wordType": "Präposition",
+    "wordTypeEN": "Two-way preposition (Wechselpräposition)",
+    "grammarRule": "Dativ = location (wo?), Akkusativ = direction (wohin?)",
+    "grammarRuleDetail": "Used for horizontal surfaces. auf + Dat = on top of something. auf + Akk = onto something. Also used in many fixed verb combinations.",
+    "structureFormula": "auf + Dat (location) | auf + Akk (direction / verb combinations)",
+    "cases": ["dativ", "akkusativ"],
+    "meaning_dat": "on (location) — Das Buch liegt auf dem Tisch",
+    "meaning_akk": "onto (direction) — Leg das Buch auf den Tisch",
+    "fixedExpressions": [
+      { "expression": "auf Deutsch", "meaning": "in German" },
+      { "expression": "auf jeden Fall", "meaning": "in any case" },
+      { "expression": "auf Wiedersehen", "meaning": "goodbye" }
+    ],
+    "variants": [],
+    "relatedWords": [
+      { "word": "in", "meaning": "in / into" },
+      { "word": "an", "meaning": "at / on (vertical)" },
+      { "word": "über", "meaning": "over / above / about" }
+    ],
+    "usage": [
+      { "de": "Das Buch liegt auf dem Tisch. (Dat)", "en": "The book is on the table." },
+      { "de": "Leg das Buch auf den Tisch. (Akk)", "en": "Put the book on the table." }
+    ]
+  },
+  {
+    "id": "mit",
+    "level": "A1",
+    "type": "andere",
+    "wordCategory": "preposition",
+    "german": "mit",
+    "english": "with / by (transport)",
+    "wordType": "Präposition",
+    "wordTypeEN": "Dative preposition",
+    "grammarRule": "Always Dativ — no exception",
+    "grammarRuleDetail": "mit always takes Dativ. Used for accompaniment (with a person), means of transport, and many fixed verb combinations.",
+    "structureFormula": "mit + Dativ (always)",
+    "cases": ["dativ"],
+    "meaning_dat": "with / by means of",
+    "fixedExpressions": [
+      { "expression": "mit dem Zug", "meaning": "by train" },
+      { "expression": "mit anderen Worten", "meaning": "in other words" },
+      { "expression": "mit Freude", "meaning": "with pleasure" }
+    ],
+    "variants": [],
+    "relatedWords": [
+      { "word": "ohne", "meaning": "without (+ Akk)" },
+      { "word": "bei", "meaning": "at / with (someone's place)" },
+      { "word": "zusammen mit", "meaning": "together with" }
+    ],
+    "usage": [
+      { "de": "Ich fahre mit dem Bus.", "en": "I travel by bus. (Dat)" },
+      { "de": "Kommst du mit mir?", "en": "Are you coming with me? (Dat)" }
+    ]
+  },
+  {
+    "id": "von",
+    "level": "A1",
+    "type": "andere",
+    "wordCategory": "preposition",
+    "german": "von",
+    "english": "from / of / by",
+    "wordType": "Präposition",
+    "wordTypeEN": "Dative preposition",
+    "grammarRule": "Always Dativ — no exception",
+    "grammarRuleDetail": "von always takes Dativ. Expresses origin, authorship, possession (as alternative to Genitiv), and separation.",
+    "structureFormula": "von + Dativ (always)",
+    "cases": ["dativ"],
+    "meaning_dat": "from / of / by",
+    "fixedExpressions": [
+      { "expression": "von … aus", "meaning": "from … (starting point)" },
+      { "expression": "von Beruf", "meaning": "by profession" },
+      { "expression": "von Zeit zu Zeit", "meaning": "from time to time" }
+    ],
+    "variants": [],
+    "relatedWords": [
+      { "word": "aus", "meaning": "from (origin / material)" },
+      { "word": "seit", "meaning": "since / for (time)" },
+      { "word": "bei", "meaning": "at / with" }
+    ],
+    "usage": [
+      { "de": "Ich komme von der Arbeit.", "en": "I am coming from work." },
+      { "de": "Das ist ein Buch von Goethe.", "en": "That is a book by Goethe." }
+    ]
+  },
+  {
+    "id": "zu",
+    "level": "A1",
+    "type": "andere",
+    "wordCategory": "preposition",
+    "german": "zu",
+    "english": "to / at / for",
+    "wordType": "Präposition",
+    "wordTypeEN": "Dative preposition",
+    "grammarRule": "Always Dativ — no exception",
+    "grammarRuleDetail": "zu always takes Dativ. Used for direction to people/places (not countries/cities — use nach for those), purposes, and many fixed expressions.",
+    "structureFormula": "zu + Dativ (always)",
+    "cases": ["dativ"],
+    "meaning_dat": "to / at (people, local places)",
+    "fixedExpressions": [
+      { "expression": "zu Hause", "meaning": "at home" },
+      { "expression": "zum Beispiel (z.B.)", "meaning": "for example" },
+      { "expression": "zu Fuß", "meaning": "on foot" }
+    ],
+    "variants": [],
+    "relatedWords": [
+      { "word": "nach", "meaning": "to (cities / countries / directions)" },
+      { "word": "in", "meaning": "into (buildings)" },
+      { "word": "bei", "meaning": "at (someone's place)" }
+    ],
+    "usage": [
+      { "de": "Ich gehe zum Arzt. (zu + dem)", "en": "I am going to the doctor." },
+      { "de": "Ich bin zu Hause.", "en": "I am at home." }
+    ]
+  },
+  {
+    "id": "für",
+    "level": "A2",
+    "type": "andere",
+    "wordCategory": "preposition",
+    "german": "für",
+    "english": "for",
+    "wordType": "Präposition",
+    "wordTypeEN": "Accusative preposition",
+    "grammarRule": "Always Akkusativ — no exception",
+    "grammarRuleDetail": "für always takes Akkusativ. Expresses purpose, benefit, duration, or exchange.",
+    "structureFormula": "für + Akkusativ (always)",
+    "cases": ["akkusativ"],
+    "meaning_akk": "for (purpose / benefit / duration)",
+    "fixedExpressions": [
+      { "expression": "für immer", "meaning": "forever" },
+      { "expression": "für mich", "meaning": "for me / in my opinion" },
+      { "expression": "dafür sein", "meaning": "to be in favour of it" }
+    ],
+    "variants": [],
+    "relatedWords": [
+      { "word": "gegen", "meaning": "against (+ Akk)" },
+      { "word": "wegen", "meaning": "because of (+ Gen)" },
+      { "word": "zugunsten", "meaning": "in favour of (+ Gen)" }
+    ],
+    "usage": [
+      { "de": "Das ist ein Geschenk für dich.", "en": "This is a gift for you. (Akk)" },
+      { "de": "Ich interessiere mich für Musik.", "en": "I am interested in music." }
+    ]
+  },
+  {
+    "id": "nach",
+    "level": "A1",
+    "type": "andere",
+    "wordCategory": "preposition",
+    "german": "nach",
+    "english": "to (cities/countries) / after / according to",
+    "wordType": "Präposition",
+    "wordTypeEN": "Dative preposition",
+    "grammarRule": "Always Dativ — no exception",
+    "grammarRuleDetail": "nach always takes Dativ. Used for direction to cities, countries, and continents (without article), and for temporal sequence.",
+    "structureFormula": "nach + Dativ (always)",
+    "cases": ["dativ"],
+    "meaning_dat": "to (cities/countries) / after / according to",
+    "fixedExpressions": [
+      { "expression": "nach Hause", "meaning": "home (going home)" },
+      { "expression": "nach wie vor", "meaning": "as before / still" },
+      { "expression": "meiner Meinung nach", "meaning": "in my opinion" }
+    ],
+    "variants": [],
+    "relatedWords": [
+      { "word": "zu", "meaning": "to (people / local places)" },
+      { "word": "in", "meaning": "to (countries with article)" },
+      { "word": "vor", "meaning": "before (time)" }
+    ],
+    "usage": [
+      { "de": "Ich fahre nach Wien.", "en": "I am travelling to Vienna." },
+      { "de": "Nach dem Essen gehe ich spazieren.", "en": "After the meal I go for a walk." }
+    ]
+  },
+  {
+    "id": "wegen",
+    "level": "B1",
+    "type": "andere",
+    "wordCategory": "preposition",
+    "german": "wegen",
+    "english": "because of / due to",
+    "wordType": "Präposition",
+    "wordTypeEN": "Genitive preposition",
+    "grammarRule": "Genitiv — but Dativ accepted in spoken German",
+    "grammarRuleDetail": "wegen governs Genitiv in formal written German. In spoken language, Dativ is widely accepted and used.",
+    "structureFormula": "wegen + Genitiv (formal) | wegen + Dativ (spoken)",
+    "cases": ["genitiv"],
+    "meaning_dat": "because of / due to",
+    "fixedExpressions": [
+      { "expression": "wegen mir (colloquial)", "meaning": "because of me / for all I care" },
+      { "expression": "meinetwegen", "meaning": "because of me / for my sake" }
+    ],
+    "variants": [
+      { "label": "Spoken (Dativ)", "form": "wegen dem / wegen mir" },
+      { "label": "Written (Genitiv)", "form": "wegen des / wegen meiner" }
+    ],
+    "relatedWords": [
+      { "word": "aufgrund", "meaning": "due to (+ Gen, formal)" },
+      { "word": "dank", "meaning": "thanks to (+ Gen/Dat)" },
+      { "word": "trotz", "meaning": "despite (+ Gen)" }
+    ],
+    "usage": [
+      { "de": "Wegen des Regens blieb er zu Hause. (Gen)", "en": "Because of the rain he stayed home." },
+      { "de": "Er kam wegen ihr. (Dat — spoken)", "en": "He came because of her." }
+    ]
+  },
+  {
+    "id": "trotz",
+    "level": "B2",
+    "type": "andere",
+    "wordCategory": "preposition",
+    "german": "trotz",
+    "english": "despite / in spite of",
+    "wordType": "Präposition",
+    "wordTypeEN": "Genitive preposition",
+    "grammarRule": "Genitiv — but Dativ heard in spoken German",
+    "grammarRuleDetail": "trotz governs Genitiv in standard German. Dativ is heard colloquially but considered non-standard in writing.",
+    "structureFormula": "trotz + Genitiv (standard)",
+    "cases": ["genitiv"],
+    "meaning_dat": "despite / in spite of",
+    "fixedExpressions": [
+      { "expression": "trotz alledem", "meaning": "despite everything" }
+    ],
+    "variants": [
+      { "label": "Spoken (Dativ)", "form": "trotz dem (non-standard)" }
+    ],
+    "relatedWords": [
+      { "word": "obwohl", "meaning": "although (conjunction)" },
+      { "word": "trotzdem", "meaning": "nevertheless (adverb)" },
+      { "word": "dennoch", "meaning": "nonetheless" }
+    ],
+    "usage": [
+      { "de": "Trotz des schlechten Wetters gingen wir spazieren.", "en": "Despite the bad weather we went for a walk." },
+      { "de": "Er kam trotz seiner Krankheit.", "en": "He came despite his illness." }
+    ]
+  }
+]

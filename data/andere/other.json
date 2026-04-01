@@ -1,0 +1,134 @@
+[
+  {
+    "id": "bitte",
+    "level": "A1",
+    "type": "andere",
+    "wordCategory": "other",
+    "german": "bitte",
+    "english": "please / you're welcome / pardon?",
+    "wordType": "Partikel / Interjektion",
+    "wordTypeEN": "Polite particle / interjection",
+    "grammarRule": "Multipurpose word — meaning depends entirely on context",
+    "grammarRuleDetail": "bitte has three main uses: (1) 'please' in requests, (2) 'you're welcome' as a response to Danke, (3) 'pardon?' or 'sorry?' when asking for repetition.",
+    "structureFormula": "Bitte + request | Danke → Bitte! | Wie bitte?",
+    "variants": [
+      { "label": "In a request", "form": "Bitte gib mir das." },
+      { "label": "Response to Danke", "form": "Bitte! / Bitte sehr!" },
+      { "label": "Pardon / repeat", "form": "Wie bitte?" }
+    ],
+    "relatedWords": [
+      { "word": "danke", "meaning": "thank you" },
+      { "word": "gern geschehen", "meaning": "you're welcome (formal)" },
+      { "word": "entschuldigung", "meaning": "excuse me / sorry" }
+    ],
+    "usage": [
+      { "de": "Kannst du mir bitte helfen?", "en": "Can you please help me?" },
+      { "de": "– Danke! – Bitte!", "en": "– Thank you! – You're welcome!" }
+    ]
+  },
+  {
+    "id": "es_gibt",
+    "level": "A1",
+    "type": "andere",
+    "wordCategory": "other",
+    "german": "es gibt",
+    "english": "there is / there are",
+    "wordType": "Festausdruck",
+    "wordTypeEN": "Fixed expression",
+    "grammarRule": "Always singular 'gibt' regardless of what follows — takes Akkusativ",
+    "grammarRuleDetail": "es gibt is a fixed impersonal expression. The verb is always gibt (3rd sg.) even when referring to plural things. The noun following always takes Akkusativ.",
+    "structureFormula": "Es gibt + Akkusativ (always singular verb)",
+    "variants": [
+      { "label": "Past", "form": "Es gab …" },
+      { "label": "Future", "form": "Es wird … geben" },
+      { "label": "Negative", "form": "Es gibt kein/e …" }
+    ],
+    "relatedWords": [
+      { "word": "es ist / es sind", "meaning": "it is / they are (specific things)" },
+      { "word": "vorhanden sein", "meaning": "to be available / present" }
+    ],
+    "usage": [
+      { "de": "Es gibt viele Möglichkeiten.", "en": "There are many possibilities. (Akk pl.)" },
+      { "de": "Gibt es hier einen Supermarkt?", "en": "Is there a supermarket here? (Akk sg.)" }
+    ]
+  },
+  {
+    "id": "man",
+    "level": "A2",
+    "type": "andere",
+    "wordCategory": "other",
+    "german": "man",
+    "english": "one / you / people / they (impersonal)",
+    "wordType": "Indefinitpronomen",
+    "wordTypeEN": "Impersonal pronoun",
+    "grammarRule": "Always takes 3rd person singular verb form — same as er/sie/es",
+    "grammarRuleDetail": "man is an impersonal pronoun used to make general statements without specifying who. It always triggers 3rd person singular verb forms. It cannot be used as an object — use einen (Akk) or einem (Dat).",
+    "structureFormula": "Man + V(3sg) … | Das macht man nicht.",
+    "variants": [
+      { "label": "Akkusativ", "form": "einen" },
+      { "label": "Dativ", "form": "einem" }
+    ],
+    "relatedWords": [
+      { "word": "jemand", "meaning": "someone (specific)" },
+      { "word": "alle", "meaning": "everyone" },
+      { "word": "wir", "meaning": "we (alternative to man)" }
+    ],
+    "usage": [
+      { "de": "Man lernt nie aus.", "en": "You never stop learning. (general)" },
+      { "de": "Hier darf man nicht rauchen.", "en": "One is not allowed to smoke here." }
+    ]
+  },
+  {
+    "id": "zwar",
+    "level": "B2",
+    "type": "andere",
+    "wordCategory": "other",
+    "german": "zwar",
+    "english": "admittedly / it's true that / indeed",
+    "wordType": "Abtönungspartikel",
+    "wordTypeEN": "Concessive particle",
+    "grammarRule": "Always paired with aber or doch — zwar … aber = admittedly … but",
+    "grammarRuleDetail": "zwar introduces a concession that is then countered by aber or doch. It cannot stand alone without the contrasting part. Position: after verb or at start of clause (triggers V2).",
+    "structureFormula": "zwar … aber | Das ist zwar teuer, aber gut.",
+    "variants": [
+      { "label": "Full pattern", "form": "zwar … aber (although … but)" },
+      { "label": "With doch", "form": "zwar … doch" }
+    ],
+    "relatedWords": [
+      { "word": "allerdings", "meaning": "admittedly / however" },
+      { "word": "obwohl", "meaning": "although" },
+      { "word": "jedoch", "meaning": "however" }
+    ],
+    "usage": [
+      { "de": "Das ist zwar teuer, aber sehr gut.", "en": "It's admittedly expensive, but very good." },
+      { "de": "Er ist zwar müde, aber er macht weiter.", "en": "He is tired, it's true, but he carries on." }
+    ]
+  },
+  {
+    "id": "überhaupt",
+    "level": "B2",
+    "type": "andere",
+    "wordCategory": "other",
+    "german": "überhaupt",
+    "english": "at all / generally / anyway",
+    "wordType": "Adverb / Partikel",
+    "wordTypeEN": "Adverb / intensifying particle",
+    "grammarRule": "Multiple uses — in negations means 'at all', in questions 'anyway', in affirmations 'in general'",
+    "grammarRuleDetail": "überhaupt strengthens negations (nicht überhaupt = not at all) and questions (Warum überhaupt? = Why even?). In positive sentences it generalises.",
+    "structureFormula": "gar nicht / überhaupt nicht | Warum überhaupt?",
+    "variants": [
+      { "label": "Negation emphasis", "form": "überhaupt nicht (not at all)" },
+      { "label": "Question — why even", "form": "Warum überhaupt?" },
+      { "label": "Generalisation", "form": "überhaupt kein Problem" }
+    ],
+    "relatedWords": [
+      { "word": "gar nicht", "meaning": "not at all (stronger)" },
+      { "word": "sowieso", "meaning": "anyway / in any case" },
+      { "word": "eigentlich", "meaning": "actually / in principle" }
+    ],
+    "usage": [
+      { "de": "Das interessiert mich überhaupt nicht.", "en": "That doesn't interest me at all." },
+      { "de": "Warum bist du überhaupt hier?", "en": "Why are you even here?" }
+    ]
+  }
+]

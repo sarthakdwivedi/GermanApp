@@ -1,0 +1,183 @@
+[
+  {
+    "id": "groß",
+    "level": "A1",
+    "type": "andere",
+    "wordCategory": "adjective",
+    "german": "groß",
+    "english": "big / tall / great",
+    "wordType": "Adjektiv",
+    "wordTypeEN": "Adjective",
+    "grammarRule": "Add case/gender endings before noun. No endings as predicate.",
+    "grammarRuleDetail": "As a predicate (after sein/werden) groß has no ending. As an attributive adjective before a noun, it takes endings depending on article type and case/gender/number.",
+    "structureFormula": "Er ist groß. (predicate) | ein großer Mann (attributive)",
+    "comparative": "größer",
+    "superlative": "am größten",
+    "irregularForms": true,
+    "variants": [
+      { "label": "Komparativ", "form": "größer" },
+      { "label": "Superlativ", "form": "am größten" },
+      { "label": "Attributive m. nom.", "form": "ein großer Mann" },
+      { "label": "Attributive f. nom.", "form": "eine große Frau" },
+      { "label": "Attributive n. nom.", "form": "ein großes Kind" }
+    ],
+    "relatedWords": [
+      { "word": "klein", "meaning": "small (antonym)" },
+      { "word": "riesig", "meaning": "enormous" },
+      { "word": "bedeutend", "meaning": "significant / great" }
+    ],
+    "usage": [
+      { "de": "Er ist sehr groß.", "en": "He is very tall. (predicate)" },
+      { "de": "Das ist ein großes Problem.", "en": "That is a big problem. (attributive, neut. nom.)" }
+    ]
+  },
+  {
+    "id": "gut",
+    "level": "A1",
+    "type": "andere",
+    "wordCategory": "adjective",
+    "german": "gut",
+    "english": "good / well",
+    "wordType": "Adjektiv",
+    "wordTypeEN": "Adjective / Adverb",
+    "grammarRule": "Irregular comparative and superlative",
+    "grammarRuleDetail": "gut has completely irregular forms: gut → besser → am besten. As adverb it means 'well'. As predicate no ending.",
+    "structureFormula": "Das ist gut. | ein guter Freund | gut schlafen",
+    "comparative": "besser",
+    "superlative": "am besten",
+    "irregularForms": true,
+    "variants": [
+      { "label": "Komparativ (irregular)", "form": "besser" },
+      { "label": "Superlativ (irregular)", "form": "am besten" },
+      { "label": "Attributive m. nom.", "form": "ein guter Freund" }
+    ],
+    "relatedWords": [
+      { "word": "schlecht", "meaning": "bad (antonym)" },
+      { "word": "prima", "meaning": "great (colloquial)" },
+      { "word": "hervorragend", "meaning": "excellent" }
+    ],
+    "usage": [
+      { "de": "Das Essen ist sehr gut.", "en": "The food is very good." },
+      { "de": "Er spricht gut Deutsch.", "en": "He speaks German well. (adverb)" }
+    ]
+  },
+  {
+    "id": "schnell",
+    "level": "A2",
+    "type": "andere",
+    "wordCategory": "adjective",
+    "german": "schnell",
+    "english": "fast / quickly",
+    "wordType": "Adjektiv/Adverb",
+    "wordTypeEN": "Adjective / Adverb",
+    "grammarRule": "Adjective: add case/gender endings before noun. Adverb: no endings.",
+    "grammarRuleDetail": "Regular adjective with regular comparative. Works as both attributive adjective and adverb without any change in form.",
+    "structureFormula": "Adverb: V + schnell | Adjective: Art. + schnell[ending] + N",
+    "comparative": "schneller",
+    "superlative": "am schnellsten",
+    "irregularForms": false,
+    "variants": [
+      { "label": "Komparativ", "form": "schneller" },
+      { "label": "Superlativ", "form": "am schnellsten" },
+      { "label": "Attributive m. nom.", "form": "ein schneller Mann" }
+    ],
+    "relatedWords": [
+      { "word": "rasch", "meaning": "swift / brisk" },
+      { "word": "langsam", "meaning": "slow (antonym)" },
+      { "word": "flott", "meaning": "speedy (colloquial)" }
+    ],
+    "usage": [
+      { "de": "Das Auto fährt sehr schnell.", "en": "The car drives very fast. (adverb)" },
+      { "de": "Er ist ein schneller Läufer.", "en": "He is a fast runner. (attributive, m nom)" }
+    ]
+  },
+  {
+    "id": "wichtig",
+    "level": "A2",
+    "type": "andere",
+    "wordCategory": "adjective",
+    "german": "wichtig",
+    "english": "important",
+    "wordType": "Adjektiv",
+    "wordTypeEN": "Adjective",
+    "grammarRule": "Regular adjective — add case/gender endings before noun",
+    "grammarRuleDetail": "Regular adjective. No stem change in comparative. Predicate use (after sein) has no ending.",
+    "structureFormula": "Das ist wichtig. | eine wichtige Frage",
+    "comparative": "wichtiger",
+    "superlative": "am wichtigsten",
+    "irregularForms": false,
+    "variants": [
+      { "label": "Komparativ", "form": "wichtiger" },
+      { "label": "Superlativ", "form": "am wichtigsten" },
+      { "label": "Attributive f. nom.", "form": "eine wichtige Frage" }
+    ],
+    "relatedWords": [
+      { "word": "unwichtig", "meaning": "unimportant (antonym)" },
+      { "word": "bedeutend", "meaning": "significant" },
+      { "word": "wesentlich", "meaning": "essential / considerable" }
+    ],
+    "usage": [
+      { "de": "Das ist sehr wichtig.", "en": "That is very important." },
+      { "de": "Er stellt wichtige Fragen.", "en": "He asks important questions." }
+    ]
+  },
+  {
+    "id": "möglich",
+    "level": "B1",
+    "type": "andere",
+    "wordCategory": "adjective",
+    "german": "möglich",
+    "english": "possible",
+    "wordType": "Adjektiv",
+    "wordTypeEN": "Adjective",
+    "grammarRule": "Regular adjective — add case/gender endings before noun",
+    "grammarRuleDetail": "Often used in fixed expressions. Superlative 'möglichst' is used as an adverb meaning 'as … as possible'.",
+    "structureFormula": "Das ist möglich. | eine mögliche Lösung | möglichst schnell",
+    "comparative": "möglicher",
+    "superlative": "am möglichsten / möglichst",
+    "irregularForms": false,
+    "variants": [
+      { "label": "Adverb form", "form": "möglichst (as … as possible)" },
+      { "label": "Attributive f. nom.", "form": "eine mögliche Lösung" }
+    ],
+    "relatedWords": [
+      { "word": "unmöglich", "meaning": "impossible" },
+      { "word": "wahrscheinlich", "meaning": "probable" },
+      { "word": "eventuell", "meaning": "possibly / perhaps" }
+    ],
+    "usage": [
+      { "de": "Das ist leider nicht möglich.", "en": "Unfortunately that is not possible." },
+      { "de": "Komm bitte möglichst früh.", "en": "Please come as early as possible." }
+    ]
+  },
+  {
+    "id": "eigen",
+    "level": "B2",
+    "type": "andere",
+    "wordCategory": "adjective",
+    "german": "eigen",
+    "english": "own / particular",
+    "wordType": "Adjektiv",
+    "wordTypeEN": "Adjective (attributive only)",
+    "grammarRule": "Only used attributively — never as predicate",
+    "grammarRuleDetail": "eigen is almost never used as a predicate (after sein). It always precedes the noun it modifies, with full case/gender endings.",
+    "structureFormula": "mein eigenes Auto (attributive only)",
+    "comparative": "eigener (rare)",
+    "superlative": "am eigensten (rare)",
+    "irregularForms": false,
+    "variants": [
+      { "label": "m. nom.", "form": "mein eigener Stil" },
+      { "label": "f. nom.", "form": "meine eigene Meinung" },
+      { "label": "n. nom.", "form": "mein eigenes Zimmer" }
+    ],
+    "relatedWords": [
+      { "word": "persönlich", "meaning": "personal" },
+      { "word": "selbst", "meaning": "oneself / itself" },
+      { "word": "individuell", "meaning": "individual" }
+    ],
+    "usage": [
+      { "de": "Er hat sein eigenes Unternehmen gegründet.", "en": "He founded his own company." },
+      { "de": "Sie hat eine eigene Meinung dazu.", "en": "She has her own opinion on it." }
+    ]
+  }
+]

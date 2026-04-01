@@ -1,0 +1,161 @@
+[
+  {
+    "id": "nicht",
+    "level": "A1",
+    "type": "andere",
+    "wordCategory": "particle",
+    "german": "nicht",
+    "english": "not",
+    "wordType": "Negationspartikel",
+    "wordTypeEN": "Negation particle",
+    "grammarRule": "After verb (and object), before adjectives/adverbs/prepositional phrases",
+    "grammarRuleDetail": "nicht negates verbs and predicative adjectives. It comes after the verb and its direct object, but before any adjective, adverb, or prepositional phrase. Use kein- to negate nouns with indefinite articles.",
+    "structureFormula": "S + V + (Obj) + nicht + (rest)",
+    "variants": [
+      { "label": "Noun negation", "form": "kein / keine / kein" },
+      { "label": "Contrast", "form": "nicht … sondern" }
+    ],
+    "relatedWords": [
+      { "word": "kein", "meaning": "no / not a (for nouns)" },
+      { "word": "nie", "meaning": "never" },
+      { "word": "niemals", "meaning": "never (emphatic)" }
+    ],
+    "usage": [
+      { "de": "Ich komme heute nicht.", "en": "I am not coming today." },
+      { "de": "Das ist nicht richtig.", "en": "That is not correct." }
+    ]
+  },
+  {
+    "id": "doch",
+    "level": "A2",
+    "type": "andere",
+    "wordCategory": "particle",
+    "german": "doch",
+    "english": "yes (contradicting negation) / after all / come on",
+    "wordType": "Modalpartikel",
+    "wordTypeEN": "Modal particle / contradiction particle",
+    "grammarRule": "Unstressed: adds tone/nuance mid-sentence. Stressed: contradicts a negative statement.",
+    "grammarRuleDetail": "doch has two main uses: (1) stressed — contradicts a negative (Nein! → Doch!), (2) unstressed modal particle — adds nuance of 'surely', 'after all', or slight impatience.",
+    "structureFormula": "Doch! (stressed) | Das ist doch falsch. (unstressed particle)",
+    "variants": [
+      { "label": "Contradiction (stressed)", "form": "Doch! (yes, contradicting no)" },
+      { "label": "Imperative softener", "form": "Komm doch mit!" },
+      { "label": "Certainty / reminder", "form": "Das weißt du doch." }
+    ],
+    "relatedWords": [
+      { "word": "ja", "meaning": "yes / modal particle (as you know)" },
+      { "word": "aber", "meaning": "but / particle (mild contrast)" },
+      { "word": "schon", "meaning": "already / reassurance particle" }
+    ],
+    "usage": [
+      { "de": "– Hast du kein Geld? – Doch, ich habe Geld.", "en": "– Don't you have money? – Yes I do (contradiction)." },
+      { "de": "Das ist doch interessant!", "en": "That is interesting after all! (particle)" }
+    ]
+  },
+  {
+    "id": "mal",
+    "level": "A2",
+    "type": "andere",
+    "wordCategory": "particle",
+    "german": "mal",
+    "english": "just / once / (softens imperative)",
+    "wordType": "Modalpartikel",
+    "wordTypeEN": "Modal particle",
+    "grammarRule": "Unstressed modal particle — softens requests and imperatives",
+    "grammarRuleDetail": "mal is a colloquial modal particle derived from einmal (once). It softens imperatives and requests, making them sound more casual and friendly. It does not carry strong meaning on its own.",
+    "structureFormula": "V + mal (softened imperative) | Kannst du mal …",
+    "variants": [
+      { "label": "Full form", "form": "einmal" },
+      { "label": "With imperative", "form": "Komm mal her!" },
+      { "label": "With request", "form": "Kannst du mal helfen?" }
+    ],
+    "relatedWords": [
+      { "word": "bitte", "meaning": "please" },
+      { "word": "doch", "meaning": "come on / after all" },
+      { "word": "einmal", "meaning": "once / one time" }
+    ],
+    "usage": [
+      { "de": "Komm mal her!", "en": "Come here a moment! (softened)" },
+      { "de": "Kannst du mir mal helfen?", "en": "Could you help me for a second?" }
+    ]
+  },
+  {
+    "id": "ja",
+    "level": "A1",
+    "type": "andere",
+    "wordCategory": "particle",
+    "german": "ja",
+    "english": "yes / as you know / after all (particle)",
+    "wordType": "Partikel / Modalpartikel",
+    "wordTypeEN": "Yes-word / modal particle",
+    "grammarRule": "As answer: stressed = yes. As modal particle: unstressed = reminds listener of shared knowledge",
+    "grammarRuleDetail": "ja has two uses: (1) as a simple answer 'yes', (2) as an unstressed modal particle meaning 'as you know' or 'after all' — indicating shared knowledge between speaker and listener.",
+    "structureFormula": "Ja! (answer) | Das ist ja interessant. (particle)",
+    "variants": [
+      { "label": "Simple answer", "form": "Ja! (stressed)" },
+      { "label": "Shared knowledge particle", "form": "Das weißt du ja." },
+      { "label": "Surprise / emphasis", "form": "Das ist ja toll!" }
+    ],
+    "relatedWords": [
+      { "word": "nein", "meaning": "no" },
+      { "word": "doch", "meaning": "yes (contradicting)" },
+      { "word": "natürlich", "meaning": "of course" }
+    ],
+    "usage": [
+      { "de": "Ja, das stimmt.", "en": "Yes, that's right." },
+      { "de": "Du weißt ja, dass ich keine Zeit habe.", "en": "You know (of course) that I have no time. (particle)" }
+    ]
+  },
+  {
+    "id": "eigentlich",
+    "level": "B1",
+    "type": "andere",
+    "wordCategory": "particle",
+    "german": "eigentlich",
+    "english": "actually / really / originally",
+    "wordType": "Modalpartikel / Adverb",
+    "wordTypeEN": "Modal particle / adverb",
+    "grammarRule": "As adverb: sentence-level meaning of 'in principle / originally'. As particle: softens or redirects",
+    "grammarRuleDetail": "eigentlich can be an adverb meaning 'actually / in principle' or an unstressed modal particle that softens a statement, implies a correction, or introduces a topic.",
+    "structureFormula": "Eigentlich wollte ich … | Was machst du eigentlich?",
+    "variants": [
+      { "label": "Topic introducer", "form": "Was machst du eigentlich?" },
+      { "label": "Contrast / correction", "form": "Eigentlich ist das falsch." }
+    ],
+    "relatedWords": [
+      { "word": "tatsächlich", "meaning": "actually / in fact (factual)" },
+      { "word": "wirklich", "meaning": "really" },
+      { "word": "grundsätzlich", "meaning": "in principle" }
+    ],
+    "usage": [
+      { "de": "Was machst du eigentlich beruflich?", "en": "What do you actually do for a living? (curious)" },
+      { "de": "Eigentlich wollte ich heute früh schlafen.", "en": "I actually wanted to go to bed early today." }
+    ]
+  },
+  {
+    "id": "halt",
+    "level": "B2",
+    "type": "andere",
+    "wordCategory": "particle",
+    "german": "halt",
+    "english": "just / simply (resigned acceptance)",
+    "wordType": "Modalpartikel",
+    "wordTypeEN": "Modal particle (Southern German / Austrian)",
+    "grammarRule": "Unstressed modal particle — expresses resigned acceptance, unchangeable facts",
+    "grammarRuleDetail": "halt (more common in southern Germany and Austria; eben in northern Germany) signals that something is simply the way it is — the speaker accepts it as unchangeable. Very colloquial.",
+    "structureFormula": "Das ist halt so. | Du musst halt warten.",
+    "variants": [
+      { "label": "Northern German equivalent", "form": "eben" },
+      { "label": "Combined", "form": "Das ist halt nun mal so." }
+    ],
+    "relatedWords": [
+      { "word": "eben", "meaning": "just / simply (Northern German equiv.)" },
+      { "word": "einfach", "meaning": "simply / just" },
+      { "word": "nun mal", "meaning": "just the way it is" }
+    ],
+    "usage": [
+      { "de": "Das ist halt so.", "en": "That's just the way it is. (resigned)" },
+      { "de": "Du musst halt früher aufstehen.", "en": "You simply have to get up earlier." }
+    ]
+  }
+]
