@@ -1010,17 +1010,19 @@ body {
   .search-bar-wrap { margin: 14px 20px 0; }
 
   .main-area {
+    display: block !important;   /* ← force visible */
     grid-area: main;
     min-width: 0;
     overflow-y: auto;
     height: calc(100vh - 61px);
     padding: 24px 40px 60px;
-    position: sticky;
-    top: 61px;
-    align-content: start;
   }
 
-  .card-container { padding-top: 24px; }
+  /* Ensure card-container has no conflicting styles */
+  .card-container {
+    padding: 0;
+    padding-top: 16px;
+  }
   .word-card      { border-radius: 24px; }
   .card-header    { padding: 28px 28px 22px; }
   .section        { padding: 20px 28px; }
