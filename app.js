@@ -7,6 +7,10 @@ const NOMEN_FILES = [
   'people', 'home', 'work_education',
   'food', 'nature_travel', 'society_abstract'
 ];
+const ANDERE_FILES = [
+  'conjunctions', 'prepositions', 'adjectives',
+  'adverbs', 'particles', 'other'
+];
 
 // ── App state ─────────────────────────────────────────────────
 let DB = { verben: [], nomen: [], andere: [] };
@@ -14,6 +18,8 @@ let currentType = 'verb';
 let currentLevel = 'all';
 let currentTheme = 'all';
 let currentPattern = 'all';
+let currentVerbTheme       = 'all';
+let currentAndereCategory  = 'all';
 let currentIndex = 0;
 let searchQuery = '';
 let searchPool = null;   // non-null when search is active
@@ -71,6 +77,33 @@ const THEME_LABELS = {
   work_education: 'Work & Education', food: 'Food',
   nature_travel: 'Nature & Travel', society_abstract: 'Society & Abstract'
 };
+
+const ANDERE_CATEGORY_LABELS = {
+  conjunctions: 'Conjunctions',
+  prepositions: 'Prepositions',
+  adjectives:   'Adjectives',
+  adverbs:      'Adverbs',
+  particles:    'Particles',
+  other:        'Other'
+};
+
+const VERB_THEME_LABELS = {
+  core:          'Core',
+  movement:      'Movement',
+  communication: 'Communication',
+  daily_life:    'Daily Life',
+  education:     'Education',
+  work:          'Work',
+  food:          'Food',
+  shopping:      'Shopping',
+  home:          'Home',
+  leisure:       'Leisure',
+  emotions:      'Emotions',
+  social:        'Social',
+  thinking:      'Thinking',
+  sport:         'Sport',
+  nature:        'Nature'
+};
 const PATTERN_LABELS = {
   weak: 'Weak', strong: 'Strong', mixed_irregular: 'Mixed / Irregular',
   modal: 'Modal', reflexive: 'Reflexive',
@@ -81,30 +114,36 @@ const PATTERN_LABELS = {
 async function loadData() {
   try {
     const responses = await Promise.all([
-      fetch('data/andere.json'),
-      ...VERB_FILES.map(f => fetch(`data/verben/${f}.json`)),
-      ...NOMEN_FILES.map(f => fetch(`data/nomen/${f}.json`))
+      ...VERB_FILES.map(f   => fetch(`data/verben/${f}.json`)),
+      ...NOMEN_FILES.map(f  => fetch(`data/nomen/${f}.json`)),
+      ...ANDERE_FILES.map(f => fetch(`data/andere/${f}.json`))
     ]);
 
     for (const r of responses) {
       if (!r.ok) throw new Error(`404: ${r.url}`);
     }
 
-    const [andereRes, ...allFileResults] = responses;
-    const verbResults = allFileResults.slice(0, VERB_FILES.length);
-    const nomenResults = allFileResults.slice(VERB_FILES.length);
+    const verbResults   = responses.slice(0, VERB_FILES.length);
+    const nomenResults  = responses.slice(VERB_FILES.length, VERB_FILES.length + NOMEN_FILES.length);
+    const andereResults = responses.slice(VERB_FILES.length + NOMEN_FILES.length);
 
-    const verbenArrays = await Promise.all(verbResults.map(r => r.json()));
-    const nomenArrays = await Promise.all(nomenResults.map(r => r.json()));
+    const verbenArrays = await Promise.all(verbResults.map(r  => r.json()));
+    const nomenArrays  = await Promise.all(nomenResults.map(r => r.json()));
+    const andereArrays = await Promise.all(andereResults.map(r => r.json()));
 
     // Tag each verb with its pattern group
     VERB_FILES.forEach((f, i) => {
       verbenArrays[i].forEach(w => { w.verbFile = f; });
     });
 
+    // Tag each andere word with its category file
+    ANDERE_FILES.forEach((f, i) => {
+      andereArrays[i].forEach(w => { w.andereFile = f; });
+    });
+
     DB.verben = verbenArrays.flat();
-    DB.nomen = nomenArrays.flat();
-    DB.andere = await andereRes.json();
+    DB.nomen  = nomenArrays.flat();
+    DB.andere = andereArrays.flat();
 
     initApp();
   } catch (err) {
@@ -147,10 +186,30 @@ function initApp() {
 // ── Filter builders ───────────────────────────────────────────
 function buildPatternFilter() {
   const c = document.getElementById('pattern-filter');
-  c.innerHTML =
+  // Row 1: pattern buttons
+  const patternBtns =
     `<button class="theme-btn active" data-pat="all" onclick="switchPattern('all',this)">All patterns</button>` +
     VERB_FILES.map(f =>
-      `<button class="theme-btn" data-pat="${f}" onclick="switchPattern('${f}',this)">${PATTERN_LABELS[f] || f}</button>`
+      `<button class="theme-btn" data-pat="${f}" onclick="switchPattern('${f}',this)">${PATTERN_LABELS[f]||f}</button>`
+    ).join('');
+  // Row 2: theme buttons
+  const themes = [...new Set(DB.verben.map(w => w.theme).filter(Boolean))].sort();
+  const themeBtns =
+    `<button class="theme-btn active" data-vtheme="all" onclick="switchVerbTheme('all',this)">All themes</button>` +
+    themes.map(t =>
+      `<button class="theme-btn" data-vtheme="${t}" onclick="switchVerbTheme('${t}',this)">${VERB_THEME_LABELS[t]||t}</button>`
+    ).join('');
+  c.innerHTML =
+    `<div class="subfilter-row" id="verb-pattern-row">${patternBtns}</div>
+     <div class="subfilter-row" id="verb-theme-row">${themeBtns}</div>`;
+}
+
+function buildAndereFilter() {
+  const c = document.getElementById('theme-filter'); // reuse for andere
+  c.innerHTML =
+    `<button class="theme-btn active" data-acat="all" onclick="switchAndereCategory('all',this)">All</button>` +
+    ANDERE_FILES.map(f =>
+      `<button class="theme-btn" data-acat="${f}" onclick="switchAndereCategory('${f}',this)">${ANDERE_CATEGORY_LABELS[f]||f}</button>`
     ).join('');
 }
 function updateFavButton() {
@@ -174,16 +233,26 @@ function buildThemeFilter() {
 
 function showContextualFilter() {
   document.getElementById('pattern-filter').classList.toggle('visible', currentType === 'verb');
-  document.getElementById('theme-filter').classList.toggle('visible', currentType === 'nomen');
+  // Reuse theme-filter div for both nomen themes and andere categories
+  const tf = document.getElementById('theme-filter');
+  if (currentType === 'nomen') {
+    buildThemeFilter();
+    tf.classList.add('visible');
+  } else if (currentType === 'andere') {
+    buildAndereFilter();
+    tf.classList.add('visible');
+  } else {
+    tf.classList.remove('visible');
+  }
 }
 
 // ── Pool helpers ──────────────────────────────────────────────
 function getPool() {
   if (searchPool !== null) return searchPool;
 
-  let pool = currentType === 'verb' ? DB.verben
-    : currentType === 'nomen' ? DB.nomen
-      : DB.andere;
+  let pool = currentType === 'verb'  ? DB.verben
+           : currentType === 'nomen' ? DB.nomen
+           : DB.andere;
 
   if (currentLevel !== 'all')
     pool = pool.filter(w => w.level === currentLevel);
@@ -191,6 +260,10 @@ function getPool() {
     pool = pool.filter(w => w.theme === currentTheme);
   if (currentType === 'verb' && currentPattern !== 'all')
     pool = pool.filter(w => w.verbFile === currentPattern);
+  if (currentType === 'verb' && currentVerbTheme !== 'all')
+    pool = pool.filter(w => w.theme === currentVerbTheme);
+  if (currentType === 'andere' && currentAndereCategory !== 'all')
+    pool = pool.filter(w => w.andereFile === currentAndereCategory);
 
   return pool;
 }
@@ -301,6 +374,8 @@ function switchType(type) {
   currentIndex = 0;
   searchPool = null;
   inSearchResult = false;
+  currentVerbTheme      = 'all';
+currentAndereCategory = 'all';
 
   document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
   document.querySelector(`.tab.${type}`).classList.add('active');
@@ -335,6 +410,25 @@ function switchPattern(pattern, btn) {
   document.querySelectorAll('#pattern-filter .theme-btn').forEach(b => b.classList.remove('active'));
   btn.classList.add('active');
   renderCurrentWord();
+  saveState();
+}
+function switchVerbTheme(theme, btn) {
+  currentVerbTheme = theme;
+  currentIndex = 0;
+  document.querySelectorAll('[data-vtheme]').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  renderCurrentWord();
+  renderWordListPanel();
+  saveState();
+}
+
+function switchAndereCategory(cat, btn) {
+  currentAndereCategory = cat;
+  currentIndex = 0;
+  document.querySelectorAll('[data-acat]').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  renderCurrentWord();
+  renderWordListPanel();
   saveState();
 }
 
