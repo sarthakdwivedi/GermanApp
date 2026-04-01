@@ -19,6 +19,15 @@ let searchQuery    = '';
 let searchPool     = null;   // non-null when search is active
 let inSearchResult = false;  // viewing a card opened from search
 const favs = new Set();
+// ── Breakpoints ───────────────────────────────────────────────
+function isDesktop() { return window.innerWidth >= 1024; }
+function isTablet()  { return window.innerWidth >= 600;  }
+
+// Re-render card on resize so conjugation layout updates
+window.addEventListener('resize', () => {
+  if (currentWordId !== undefined) renderCurrentWord();
+});
+
 // ── Persistence ───────────────────────────────────────────────
 function saveState() {
   localStorage.setItem('wortschatz_favs',    JSON.stringify([...favs]));
@@ -477,23 +486,70 @@ function buildVerbCard(w) {
   const tenses   = Object.keys(w.conjugations);
   const favActive = favs.has(w.id);
 
-  const conjPanels = tenses.map((tense, i) => {
-    const rows = Object.entries(w.conjugations[tense]).map(([p, form]) => {
-      const isExc = excSet.has('prasens-all') || excSet.has(`${tense}-all`) ||
-                    excSet.has(`${tense}-${p}`) || excSet.has('all');
-      return `<div class="conj-row">
-        <span class="conj-pronoun">${PRONOUNS[p]}</span>
-        <span class="conj-form${isExc?' exc':''}">${form}</span>
+// ── Responsive conjugation ────────────────────────────────
+  let conjSection = '';
+
+  if (isDesktop()) {
+    // All 4 tenses in a 2×2 grid — no tabs
+    const tenseBlocks = tenses.map(tense => {
+      const rows = Object.entries(w.conjugations[tense]).map(([p, form]) => {
+        const isExc = excSet.has('prasens-all') || excSet.has(`${tense}-all`) ||
+                      excSet.has(`${tense}-${p}`) || excSet.has('all');
+        return `<div class="conj-row">
+          <span class="conj-pronoun">${PRONOUNS[p]}</span>
+          <span class="conj-form${isExc?' exc':''}">${form}</span>
+        </div>`;
+      }).join('');
+      return `<div class="conj-tense-block">
+        <div class="conj-tense-label">${TENSE_LABELS[tense]||tense}</div>
+        <div class="conj-grid">${rows}</div>
       </div>`;
     }).join('');
-    return `<div id="cp-${w.id}-${tense}" class="conj-grid tense-panel"
-      style="${i>0?'display:none':''}">${rows}</div>`;
-  }).join('');
+    conjSection = `<div class="conj-all-grid">${tenseBlocks}</div>`;
 
-  const tenseTabs = tenses.map((t,i) =>
-    `<button class="tense-tab${i===0?' active':''}"
-      onclick="switchTense(this,'${w.id}','${t}')">${TENSE_LABELS[t]||t}</button>`
-  ).join('');
+  } else if (isTablet()) {
+    // First 2 tenses visible, rest tabbed
+    const visibleTenses  = tenses.slice(0, 2);
+    const tabbedTenses   = tenses.slice(2);
+    const allTabs = tenses.map((t,i) =>
+      `<button class="tense-tab${i<2?' active':''}"
+        onclick="switchTense(this,'${w.id}','${t}')">${TENSE_LABELS[t]||t}</button>`
+    ).join('');
+    const panels = tenses.map((tense, i) => {
+      const rows = Object.entries(w.conjugations[tense]).map(([p, form]) => {
+        const isExc = excSet.has('prasens-all') || excSet.has(`${tense}-all`) ||
+                      excSet.has(`${tense}-${p}`) || excSet.has('all');
+        return `<div class="conj-row">
+          <span class="conj-pronoun">${PRONOUNS[p]}</span>
+          <span class="conj-form${isExc?' exc':''}">${form}</span>
+        </div>`;
+      }).join('');
+      return `<div id="cp-${w.id}-${tense}" class="conj-grid tense-panel"
+        style="${i>=2?'display:none':''}">${rows}</div>`;
+    }).join('');
+    conjSection = `<div class="tense-tabs">${allTabs}</div>
+      <div class="conj-tablet-grid">${panels}</div>`;
+
+  } else {
+    // Mobile — original tabbed behaviour
+    const conjPanels = tenses.map((tense, i) => {
+      const rows = Object.entries(w.conjugations[tense]).map(([p, form]) => {
+        const isExc = excSet.has('prasens-all') || excSet.has(`${tense}-all`) ||
+                      excSet.has(`${tense}-${p}`) || excSet.has('all');
+        return `<div class="conj-row">
+          <span class="conj-pronoun">${PRONOUNS[p]}</span>
+          <span class="conj-form${isExc?' exc':''}">${form}</span>
+        </div>`;
+      }).join('');
+      return `<div id="cp-${w.id}-${tense}" class="conj-grid tense-panel"
+        style="${i>0?'display:none':''}">${rows}</div>`;
+    }).join('');
+    const tenseTabs = tenses.map((t,i) =>
+      `<button class="tense-tab${i===0?' active':''}"
+        onclick="switchTense(this,'${w.id}','${t}')">${TENSE_LABELS[t]||t}</button>`
+    ).join('');
+    conjSection = `<div class="tense-tabs">${tenseTabs}</div>${conjPanels}`;
+  }
 
   const excNote = w.exceptions?.length
     ? `<div class="exc-note"><div class="exc-dot">!</div><div>${w.exceptions.join(' · ')}</div></div>` : '';
@@ -553,8 +609,7 @@ function buildVerbCard(w) {
     </div>
     <div class="section">
       <div class="section-label">Konjugation</div>
-      <div class="tense-tabs">${tenseTabs}</div>
-      ${conjPanels}
+      ${conjSection}
       ${excNote}
     </div>
     <div class="section">

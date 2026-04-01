@@ -837,3 +837,148 @@ body {
 .mywords-empty .big { font-size: 32px; margin-bottom: 10px; }
 #mywords-list { padding: 12px 20px 0; }
 #mywords-card { padding: 0 20px; }
+
+   /* ═══════════════════════════════════════════════════════════════
+   RESPONSIVE — append to end of styles.css
+   ═══════════════════════════════════════════════════════════════ */
+
+/* ── Header right group ── */
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* ── Mobile: hide arrows, use swipe only ── */
+@media (max-width: 599px) {
+  .nav-arrow { display: none; }
+}
+
+/* ── Tablet 600–1023px ── */
+@media (min-width: 600px) {
+  body { max-width: 720px; }
+
+  .card-container { padding: 0 24px; }
+  .word-card      { border-radius: 24px; }
+  .word-title     { font-size: 34px; }
+
+  /* Side-by-side conjugation panels on tablet */
+  .conj-tablet-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+  .conj-tablet-grid .tense-panel {
+    display: grid !important;
+  }
+}
+
+/* ── Desktop 1024px+ ── */
+@media (min-width: 1024px) {
+  body {
+    max-width: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 300px 1fr;
+    grid-template-areas:
+      "header  header"
+      "sidebar main";
+    min-height: 100vh;
+    padding-bottom: 0;
+  }
+
+  .header {
+    grid-area: header;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    border-bottom: 1px solid var(--border);
+    padding: 16px 32px;
+  }
+
+  .sidebar {
+    grid-area: sidebar;
+    position: sticky;
+    top: 61px;             /* header height */
+    height: calc(100vh - 61px);
+    overflow-y: auto;
+    border-right: 1px solid var(--border);
+    padding: 20px 0 40px;
+    scrollbar-width: none;
+  }
+  .sidebar::-webkit-scrollbar { display: none; }
+
+  /* Move search bar padding inside sidebar */
+  .sidebar .search-bar-wrap { margin: 0 20px 4px; }
+  .sidebar .type-tabs        { padding: 12px 20px 0; }
+  .sidebar .level-filter     { padding: 10px 20px 0; }
+  .sidebar .theme-filter     { padding: 8px 20px 0; }
+  .sidebar .nav-bar          { padding: 16px 20px 0; }
+
+  .main-area {
+    grid-area: main;
+    overflow-y: auto;
+    padding: 24px 40px 60px;
+    max-width: 760px;
+  }
+
+  /* Wider card on desktop */
+  .word-card      { border-radius: 24px; }
+  .card-header    { padding: 28px 28px 22px; }
+  .section        { padding: 20px 28px; }
+  .word-title     { font-size: 36px; }
+  .card-container { padding: 0; }
+
+  /* All-tenses 2×2 conjugation grid */
+  .conj-all-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+  .conj-tense-block {
+    background: var(--bg3);
+    border-radius: 12px;
+    padding: 12px 14px;
+  }
+  .conj-tense-label {
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--text3);
+    margin-bottom: 10px;
+  }
+
+  /* Overlays become centred modals on desktop */
+  .mywords-panel,
+  .quiz-panel {
+    top: 50%;
+    right: auto;
+    bottom: auto;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    width: 560px;
+    max-height: 80vh;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  .mywords-overlay.open .mywords-panel,
+  .quiz-overlay.open    .quiz-panel {
+    transform: translate(-50%, -50%);
+  }
+  .mywords-panel { transition: transform 0.28s cubic-bezier(0.4,0,0.2,1), opacity 0.25s; }
+  .quiz-panel    { transition: transform 0.28s cubic-bezier(0.4,0,0.2,1), opacity 0.25s; }
+
+  /* Scrollable body inside modal panels */
+  #mywords-list,
+  #mywords-card,
+  #quiz-body {
+    overflow-y: auto;
+    flex: 1;
+  }
+
+  /* Search results inside main area on desktop */
+  #search-results { padding: 0; }
+}
