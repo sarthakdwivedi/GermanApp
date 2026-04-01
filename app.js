@@ -19,6 +19,27 @@ let searchQuery    = '';
 let searchPool     = null;   // non-null when search is active
 let inSearchResult = false;  // viewing a card opened from search
 const favs = new Set();
+// ── Persistence ───────────────────────────────────────────────
+function saveState() {
+  localStorage.setItem('wortschatz_favs',    JSON.stringify([...favs]));
+  localStorage.setItem('wortschatz_type',    currentType);
+  localStorage.setItem('wortschatz_level',   currentLevel);
+  localStorage.setItem('wortschatz_pattern', currentPattern);
+  localStorage.setItem('wortschatz_theme',   currentTheme);
+  localStorage.setItem('wortschatz_index',   currentIndex);
+}
+
+function loadState() {
+  try {
+    const savedFavs = localStorage.getItem('wortschatz_favs');
+    if (savedFavs) JSON.parse(savedFavs).forEach(id => favs.add(id));
+    currentType    = localStorage.getItem('wortschatz_type')    || 'verb';
+    currentLevel   = localStorage.getItem('wortschatz_level')   || 'all';
+    currentPattern = localStorage.getItem('wortschatz_pattern') || 'all';
+    currentTheme   = localStorage.getItem('wortschatz_theme')   || 'all';
+    currentIndex   = parseInt(localStorage.getItem('wortschatz_index')) || 0;
+  } catch(e) { console.warn('Could not load state', e); }
+}
 
 // ── Swipe tracking ────────────────────────────────────────────
 let touchStartX = 0;
@@ -94,10 +115,20 @@ function initApp() {
   const total = DB.verben.length + DB.nomen.length + DB.andere.length;
   document.getElementById('stats-pill').textContent = `${total} words · A1–C2`;
 
+  loadState();              // ← restore saved state
+
   buildPatternFilter();
   buildThemeFilter();
+
+  // Restore active tab UI
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  document.querySelector(`.tab.${currentType}`)?.classList.add('active');
+  document.querySelectorAll('.lvl-btn').forEach(b => b.classList.remove('active'));
+  document.querySelector(`.lvl-btn[data-lvl="${currentLevel}"]`)?.classList.add('active');
+
   showContextualFilter();
   renderCurrentWord();
+  updateFavButton();        // ← reflect saved favs on button
   setupSwipe();
 }
 
@@ -109,6 +140,14 @@ function buildPatternFilter() {
     VERB_FILES.map(f =>
       `<button class="theme-btn" data-pat="${f}" onclick="switchPattern('${f}',this)">${PATTERN_LABELS[f]||f}</button>`
     ).join('');
+}
+function updateFavButton() {
+  const count = favs.size;
+  const btn   = document.getElementById('fav-header-btn');
+  const label = document.getElementById('fav-count');
+  btn.classList.toggle('has-favs', count > 0);
+  btn.childNodes[0].textContent = count > 0 ? '♥ ' : '♡ ';
+  label.textContent = count > 0 ? count : '';
 }
 
 function buildThemeFilter() {
@@ -266,6 +305,7 @@ function switchType(type) {
 
   showContextualFilter();
   renderCurrentWord();
+  saveState();
 }
 
 function switchLevel(level, btn) {
@@ -274,6 +314,7 @@ function switchLevel(level, btn) {
   document.querySelectorAll('.lvl-btn').forEach(b => b.classList.remove('active'));
   btn.classList.add('active');
   renderCurrentWord();
+  saveState();
 }
 
 function switchPattern(pattern, btn) {
@@ -282,6 +323,7 @@ function switchPattern(pattern, btn) {
   document.querySelectorAll('#pattern-filter .theme-btn').forEach(b => b.classList.remove('active'));
   btn.classList.add('active');
   renderCurrentWord();
+  saveState();
 }
 
 function switchTheme(theme, btn) {
@@ -290,6 +332,7 @@ function switchTheme(theme, btn) {
   document.querySelectorAll('#theme-filter .theme-btn').forEach(b => b.classList.remove('active'));
   btn.classList.add('active');
   renderCurrentWord();
+  saveState();
 }
 
 // ── Navigation ────────────────────────────────────────────────
@@ -300,6 +343,7 @@ function navigateWord(dir) {
   if (next < 0 || next >= pool.length) return;
   currentIndex = next;
   renderCurrentWord(dir < 0 ? 'right' : 'left');
+  saveState();
 }
 
 function renderCurrentWord(slideDir) {
@@ -708,6 +752,97 @@ function toggleFav(id, btn) {
   favs.has(id) ? favs.delete(id) : favs.add(id);
   btn.classList.toggle('active');
   btn.textContent = favs.has(id) ? '♥' : '♡';
+  saveState();          // ← persist
+  updateFavButton();    // ← update header count
+  // If we're inside the My Words panel, refresh the list live
+  if (document.getElementById('mywords-overlay').classList.contains('open')) {
+    if (!favs.has(id)) {
+      closeMyWordsCard();
+      renderMyWords();
+    }
+  }
+}
+
+// ── My Words ─────────────────────────────────────────────────
+function openMyWords() {
+  renderMyWords();
+  document.getElementById('mywords-overlay').classList.add('open');
+}
+
+function closeMyWords() {
+  document.getElementById('mywords-overlay').classList.remove('open');
+  document.getElementById('mywords-card').innerHTML = '';
+}
+
+function renderMyWords() {
+  const all = [...DB.verben, ...DB.nomen, ...DB.andere];
+  const words = all
+    .filter(w => favs.has(w.id))
+    .sort((a, b) => a.german.localeCompare(b.german));
+
+  document.getElementById('mywords-count').textContent = `· ${words.length}`;
+
+  const listEl = document.getElementById('mywords-list');
+  document.getElementById('mywords-card').innerHTML = '';
+
+  if (!words.length) {
+    listEl.innerHTML = `<div class="mywords-empty">
+      <div class="big">♡</div>
+      <div>No favourites yet.</div>
+      <div style="font-size:12px;margin-top:6px;color:var(--text3)">
+        Tap ♡ on any word card to save it here.
+      </div>
+    </div>`;
+    return;
+  }
+
+  listEl.innerHTML = words.map(w => {
+    const [lbg, lc] = levelStyle(w.level);
+    const [, gc]    = w.article ? genderStyle(w.article) : [];
+    const articleHtml = w.article
+      ? `<span class="search-result-article" style="color:${gc}">${w.article} </span>` : '';
+    const patLabel = w.verbFile ? PATTERN_LABELS[w.verbFile]
+                   : w.theme    ? THEME_LABELS[w.theme]
+                   : w.wordType || 'Andere';
+    return `<div class="search-result-item" onclick="openMyWordsCard('${w.id}')">
+      <div style="flex:1;min-width:0">
+        <div class="search-result-word">${articleHtml}${w.german}</div>
+        <div class="search-result-meaning">${w.english}</div>
+      </div>
+      <div class="search-result-badges">
+        <span class="search-result-lvl" style="background:${lbg};color:${lc}">${w.level}</span>
+        <span class="search-result-pat">${patLabel}</span>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+function openMyWordsCard(id) {
+  const all = [...DB.verben, ...DB.nomen, ...DB.andere];
+  const w   = all.find(x => x.id === id);
+  if (!w) return;
+
+  document.getElementById('mywords-list').style.display = 'none';
+
+  let html = `<button class="card-back-btn" onclick="closeMyWordsCard()"
+    style="margin-top:14px">
+    <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+      <path d="M9 2L4 7L9 12" stroke="currentColor" stroke-width="1.5"
+        stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    My Words
+  </button>`;
+
+  if (w.type === 'verb')       html += buildVerbCard(w);
+  else if (w.type === 'nomen') html += buildNomenCard(w);
+  else                         html += buildAndereCard(w);
+
+  document.getElementById('mywords-card').innerHTML = html;
+}
+
+function closeMyWordsCard() {
+  document.getElementById('mywords-card').innerHTML = '';
+  document.getElementById('mywords-list').style.display = 'block';
 }
 
 // ── Boot ──────────────────────────────────────────────────────
