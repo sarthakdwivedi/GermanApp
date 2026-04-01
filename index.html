@@ -11,6 +11,8 @@
     href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+
+  <link rel="stylesheet" href="quiz.css">
 </head>
 
 <body>
@@ -30,6 +32,8 @@
       <button class="fav-header-btn" id="fav-header-btn" onclick="openMyWords()">
         ♡ <span id="fav-count"></span>
       </button>
+
+      <button class="quiz-header-btn" onclick="openQuiz()">⚡ Quiz</button>
     </div>
 
     <!-- Search bar -->
@@ -99,7 +103,7 @@
       <div id="card-area"></div>
     </div>
 
-    <!-- ADD before closing </div> of #app: -->
+
     <div class="mywords-overlay" id="mywords-overlay">
       <div class="mywords-panel" id="mywords-panel">
         <div class="mywords-header">
@@ -110,9 +114,20 @@
         <div id="mywords-card"></div>
       </div>
     </div>
+
+    <div class="quiz-overlay" id="quiz-overlay">
+      <div class="quiz-panel">
+        <div class="quiz-panel-header">
+          <div class="quiz-panel-title">Quiz</div>
+          <button class="quiz-close" onclick="closeQuiz()">✕</button>
+        </div>
+        <div id="quiz-body"></div>
+      </div>
+    </div>
   </div>
 
   <script src="app.js"></script>
+  <script src="quiz.js"></script>
 </body>
 
 </html>
