@@ -1,0 +1,200 @@
+[
+  {
+    "id": "anrufen",
+    "level": "A1",
+    "type": "verb",
+    "german": "anrufen",
+    "english": "to call (by phone)",
+    "patternLabel": "Trennbar · stark",
+    "patternColor": "strong",
+    "auxiliary": "haben",
+    "conjugations": {
+      "prasens":     { "ich": "rufe an",    "du": "rufst an",    "er": "ruft an",    "wir": "rufen an",    "ihr": "ruft an",    "sie": "rufen an"    },
+      "prateritum":  { "ich": "rief an",    "du": "riefst an",   "er": "rief an",    "wir": "riefen an",   "ihr": "rieft an",   "sie": "riefen an"   },
+      "perfekt":     { "ich": "habe angerufen",  "du": "hast angerufen",  "er": "hat angerufen",  "wir": "haben angerufen",  "ihr": "habt angerufen",  "sie": "haben angerufen"  },
+      "konjunktiv2": { "ich": "riefe an",   "du": "riefest an",  "er": "riefe an",   "wir": "riefen an",   "ihr": "riefet an",  "sie": "riefen an"   }
+    },
+    "exceptions": [
+      "Prefix an- splits to end in main clause: Ich rufe dich an",
+      "Partizip: ge- inserted between prefix and stem (an-ge-rufen)",
+      "Base verb rufen: strong (ie–ie pattern)"
+    ],
+    "exceptionForms": ["prateritum-all"],
+    "kasus": ["akkusativ"],
+    "reflexiv": false,
+    "preposition": null,
+    "usage": [
+      { "de": "Ich rufe dich morgen an.", "en": "I will call you tomorrow. (an splits)" },
+      { "de": "Hat er dich angerufen?", "en": "Did he call you?" }
+    ]
+  },
+  {
+    "id": "aufmachen",
+    "level": "A1",
+    "type": "verb",
+    "german": "aufmachen",
+    "english": "to open",
+    "patternLabel": "Trennbar · schwach",
+    "patternColor": "weak",
+    "auxiliary": "haben",
+    "conjugations": {
+      "prasens":     { "ich": "mache auf",   "du": "machst auf",   "er": "macht auf",   "wir": "machen auf",   "ihr": "macht auf",   "sie": "machen auf"   },
+      "prateritum":  { "ich": "machte auf",  "du": "machtest auf", "er": "machte auf",  "wir": "machten auf",  "ihr": "machtet auf", "sie": "machten auf"  },
+      "perfekt":     { "ich": "habe aufgemacht",  "du": "hast aufgemacht",  "er": "hat aufgemacht",  "wir": "haben aufgemacht",  "ihr": "habt aufgemacht",  "sie": "haben aufgemacht"  },
+      "konjunktiv2": { "ich": "machte auf",  "du": "machtest auf", "er": "machte auf",  "wir": "machten auf",  "ihr": "machtet auf", "sie": "machten auf"  }
+    },
+    "exceptions": [
+      "Prefix auf- splits to end in main clause",
+      "Partizip: auf-ge-macht",
+      "Contrast: zumachen (to close) — opposite prefix"
+    ],
+    "exceptionForms": [],
+    "kasus": ["akkusativ"],
+    "reflexiv": false,
+    "preposition": null,
+    "usage": [
+      { "de": "Mach bitte das Fenster auf.", "en": "Please open the window. (auf splits)" },
+      { "de": "Das Geschäft macht um neun auf.", "en": "The shop opens at nine." }
+    ]
+  },
+  {
+    "id": "einkaufen",
+    "level": "A2",
+    "type": "verb",
+    "german": "einkaufen",
+    "english": "to go shopping / to buy",
+    "patternLabel": "Trennbar · schwach",
+    "patternColor": "weak",
+    "auxiliary": "haben",
+    "conjugations": {
+      "prasens":     { "ich": "kaufe ein",   "du": "kaufst ein",   "er": "kauft ein",   "wir": "kaufen ein",   "ihr": "kauft ein",   "sie": "kaufen ein"   },
+      "prateritum":  { "ich": "kaufte ein",  "du": "kauftest ein", "er": "kaufte ein",  "wir": "kauften ein",  "ihr": "kauftet ein", "sie": "kauften ein"  },
+      "perfekt":     { "ich": "habe eingekauft",  "du": "hast eingekauft",  "er": "hat eingekauft",  "wir": "haben eingekauft",  "ihr": "habt eingekauft",  "sie": "haben eingekauft"  },
+      "konjunktiv2": { "ich": "kaufte ein",  "du": "kauftest ein", "er": "kaufte ein",  "wir": "kauften ein",  "ihr": "kauftet ein", "sie": "kauften ein"  }
+    },
+    "exceptions": [
+      "Prefix ein- splits to end in main clause",
+      "Partizip: ein-ge-kauft"
+    ],
+    "exceptionForms": [],
+    "kasus": [],
+    "reflexiv": false,
+    "preposition": null,
+    "usage": [
+      { "de": "Ich kaufe heute im Supermarkt ein.", "en": "I am shopping at the supermarket today." },
+      { "de": "Hast du schon eingekauft?", "en": "Have you already done the shopping?" }
+    ]
+  },
+  {
+    "id": "anfangen",
+    "level": "A2",
+    "type": "verb",
+    "german": "anfangen",
+    "english": "to begin / to start",
+    "patternLabel": "Trennbar · stark",
+    "patternColor": "strong",
+    "auxiliary": "haben",
+    "conjugations": {
+      "prasens":     { "ich": "fange an",   "du": "fängst an",  "er": "fängt an",   "wir": "fangen an",   "ihr": "fangt an",   "sie": "fangen an"   },
+      "prateritum":  { "ich": "fing an",    "du": "fingst an",  "er": "fing an",    "wir": "fingen an",   "ihr": "fingt an",   "sie": "fingen an"   },
+      "perfekt":     { "ich": "habe angefangen",  "du": "hast angefangen",  "er": "hat angefangen",  "wir": "haben angefangen",  "ihr": "habt angefangen",  "sie": "haben angefangen"  },
+      "konjunktiv2": { "ich": "finge an",   "du": "fingest an", "er": "finge an",   "wir": "fingen an",   "ihr": "finget an",  "sie": "fingen an"   }
+    },
+    "exceptions": [
+      "du/er Präsens: Umlaut ä (fängst, fängt)",
+      "Präteritum: a→i (fing-)",
+      "Prefix an- splits; ge- inserted in Partizip: an-ge-fangen"
+    ],
+    "exceptionForms": ["prasens-du", "prasens-er", "prateritum-all"],
+    "kasus": [],
+    "reflexiv": false,
+    "preposition": { "prep": "mit", "case": "Dativ", "meaning": "to start with sth." },
+    "usage": [
+      { "de": "Wann fängst du an zu arbeiten?", "en": "When do you start working?" },
+      { "de": "Der Film hat schon angefangen.", "en": "The film has already started." }
+    ]
+  },
+  {
+    "id": "vorstellen",
+    "level": "B1",
+    "type": "verb",
+    "german": "(sich) vorstellen",
+    "english": "to introduce (oneself) / to imagine",
+    "patternLabel": "Trennbar · schwach",
+    "patternColor": "weak",
+    "auxiliary": "haben",
+    "conjugations": {
+      "prasens":     { "ich": "stelle vor",   "du": "stellst vor",   "er": "stellt vor",   "wir": "stellen vor",   "ihr": "stellt vor",   "sie": "stellen vor"   },
+      "prateritum":  { "ich": "stellte vor",  "du": "stelltest vor", "er": "stellte vor",  "wir": "stellten vor",  "ihr": "stelltet vor", "sie": "stellten vor"  },
+      "perfekt":     { "ich": "habe vorgestellt",  "du": "hast vorgestellt",  "er": "hat vorgestellt",  "wir": "haben vorgestellt",  "ihr": "habt vorgestellt",  "sie": "haben vorgestellt"  },
+      "konjunktiv2": { "ich": "stellte vor",  "du": "stelltest vor", "er": "stellte vor",  "wir": "stellten vor",  "ihr": "stelltet vor", "sie": "stellten vor"  }
+    },
+    "exceptions": [
+      "Prefix vor- splits to end in main clause",
+      "Without reflexiv: jdn. vorstellen = to introduce sb.",
+      "With reflexiv (Akk): sich vorstellen = to introduce oneself OR to imagine"
+    ],
+    "exceptionForms": [],
+    "kasus": ["akkusativ"],
+    "reflexiv": false,
+    "preposition": null,
+    "usage": [
+      { "de": "Darf ich mich vorstellen? Ich heiße Maria.", "en": "May I introduce myself? My name is Maria." },
+      { "de": "Ich kann mir das nicht vorstellen.", "en": "I can't imagine that." }
+    ]
+  },
+  {
+    "id": "aufhören",
+    "level": "B1",
+    "type": "verb",
+    "german": "aufhören",
+    "english": "to stop / to quit",
+    "patternLabel": "Trennbar · schwach",
+    "patternColor": "weak",
+    "auxiliary": "haben",
+    "conjugations": {
+      "prasens":     { "ich": "höre auf",   "du": "hörst auf",   "er": "hört auf",   "wir": "hören auf",   "ihr": "hört auf",   "sie": "hören auf"   },
+      "prateritum":  { "ich": "hörte auf",  "du": "hörtest auf", "er": "hörte auf",  "wir": "hörten auf",  "ihr": "hörtet auf", "sie": "hörten auf"  },
+      "perfekt":     { "ich": "habe aufgehört",  "du": "hast aufgehört",  "er": "hat aufgehört",  "wir": "haben aufgehört",  "ihr": "habt aufgehört",  "sie": "haben aufgehört"  },
+      "konjunktiv2": { "ich": "hörte auf",  "du": "hörtest auf", "er": "hörte auf",  "wir": "hörten auf",  "ihr": "hörtet auf", "sie": "hörten auf"  }
+    },
+    "exceptions": ["Prefix auf- splits; ge- inserted: auf-ge-hört"],
+    "exceptionForms": [],
+    "kasus": [],
+    "reflexiv": false,
+    "preposition": { "prep": "mit", "case": "Dativ", "meaning": "to stop doing sth." },
+    "usage": [
+      { "de": "Hör bitte mit dem Lärm auf!", "en": "Please stop the noise!" },
+      { "de": "Er hat aufgehört zu rauchen.", "en": "He has quit smoking." }
+    ]
+  },
+  {
+    "id": "vorhersehen",
+    "level": "C1",
+    "type": "verb",
+    "german": "vorhersehen",
+    "english": "to foresee / to predict",
+    "patternLabel": "Trennbar · stark",
+    "patternColor": "strong",
+    "auxiliary": "haben",
+    "conjugations": {
+      "prasens":     { "ich": "sehe vorher",   "du": "siehst vorher",   "er": "sieht vorher",   "wir": "sehen vorher",   "ihr": "seht vorher",   "sie": "sehen vorher"   },
+      "prateritum":  { "ich": "sah vorher",    "du": "sahst vorher",    "er": "sah vorher",     "wir": "sahen vorher",   "ihr": "saht vorher",    "sie": "sahen vorher"    },
+      "perfekt":     { "ich": "habe vorhergesehen",  "du": "hast vorhergesehen",  "er": "hat vorhergesehen",  "wir": "haben vorhergesehen",  "ihr": "habt vorhergesehen",  "sie": "haben vorhergesehen"  },
+      "konjunktiv2": { "ich": "sähe vorher",   "du": "sähest vorher",   "er": "sähe vorher",    "wir": "sähen vorher",   "ihr": "sähet vorher",   "sie": "sähen vorher"    }
+    },
+    "exceptions": [
+      "du/er Präsens: sehen → siehst / sieht",
+      "Präteritum: sehen → sah-",
+      "Partizip: vorher-ge-sehen (ge- between prefix and stem)"
+    ],
+    "exceptionForms": ["prasens-du", "prasens-er", "prateritum-all"],
+    "kasus": ["akkusativ"],
+    "reflexiv": false,
+    "preposition": null,
+    "usage": [
+      { "de": "Niemand konnte das vorhersehen.", "en": "Nobody could foresee that." },
+      { "de": "Er sieht die Konsequenzen vorher.", "en": "He foresees the consequences." }
+    ]
+  }
+]
