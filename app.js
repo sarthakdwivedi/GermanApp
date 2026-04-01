@@ -8,10 +8,14 @@ const NOMEN_FILES = [
   'nature_travel',
   'society_abstract'
 ];
+const VERB_FILES = [
+  'weak', 'strong', 'mixed_irregular',
+  'modal', 'reflexive', 'separable', 'inseparable'
+];
 
 // ── App state ─────────────────────────────────────────────────
 let DB = { verben: [], nomen: [], andere: [] };
-let currentType  = 'verb';
+let currentType = 'verb';
 let currentLevel = 'all';
 let currentTheme = 'all';
 let currentWordId = null;
@@ -41,12 +45,13 @@ const THEME_LABELS = {
 async function loadData() {
   try {
     const [verbenRes, andereRes, ...nomenResults] = await Promise.all([
-      fetch('data/verben.json'),
+      ...VERB_FILES.map(f => fetch(`data/verben/${f}.json`)),
       fetch('data/andere.json'),
       ...NOMEN_FILES.map(f => fetch(`data/nomen/${f}.json`))
     ]);
 
-    DB.verben = await verbenRes.json();
+    const verbenArrays = await Promise.all(verbResults.map(r => r.json()));
+    DB.verben = verbenArrays.flat();
     DB.andere = await andereRes.json();
 
     const nomenArrays = await Promise.all(nomenResults.map(r => r.json()));
@@ -82,15 +87,15 @@ function buildThemeFilter() {
   container.innerHTML =
     `<button class="theme-btn active" data-theme="all" onclick="switchTheme('all',this)">All themes</button>` +
     themes.map(t =>
-      `<button class="theme-btn" data-theme="${t}" onclick="switchTheme('${t}',this)">${THEME_LABELS[t]||t}</button>`
+      `<button class="theme-btn" data-theme="${t}" onclick="switchTheme('${t}',this)">${THEME_LABELS[t] || t}</button>`
     ).join('');
 }
 
 // ── Pool helpers ───────────────────────────────────────────────
 function getPool() {
-  let pool = currentType === 'verb'   ? DB.verben
-           : currentType === 'nomen'  ? DB.nomen
-           : DB.andere;
+  let pool = currentType === 'verb' ? DB.verben
+    : currentType === 'nomen' ? DB.nomen
+      : DB.andere;
 
   if (currentLevel !== 'all') pool = pool.filter(w => w.level === currentLevel);
   if (currentType === 'nomen' && currentTheme !== 'all')
@@ -101,7 +106,7 @@ function getPool() {
 
 // ── UI: type / level / theme switching ───────────────────────
 function switchType(type) {
-  currentType  = type;
+  currentType = type;
   currentLevel = 'all';
   currentTheme = 'all';
   currentWordId = null;
@@ -141,7 +146,7 @@ function switchTheme(theme, btn) {
 function renderWordList() {
   const pool = getPool();
   const container = document.getElementById('word-list');
-  const cardArea  = document.getElementById('card-area');
+  const cardArea = document.getElementById('card-area');
 
   if (!pool.length) {
     container.innerHTML = '<div class="no-words">No words at this level / theme yet.</div>';
@@ -177,27 +182,27 @@ function renderCard(id) {
   const area = document.getElementById('card-area');
   if (!w) { area.innerHTML = ''; return; }
 
-  if (w.type === 'verb')   area.innerHTML = buildVerbCard(w);
+  if (w.type === 'verb') area.innerHTML = buildVerbCard(w);
   else if (w.type === 'nomen') area.innerHTML = buildNomenCard(w);
-  else                     area.innerHTML = buildAndereCard(w);
+  else area.innerHTML = buildAndereCard(w);
 }
 
 // ── Colour helpers ────────────────────────────────────────────
 function levelStyle(l) {
   const map = {
     A1: ['rgba(105,219,124,0.15)', 'var(--a1)'],
-    A2: ['rgba(169,227,75,0.15)',  'var(--a2)'],
-    B1: ['rgba(74,158,255,0.15)',  'var(--b1)'],
-    B2: ['rgba(116,143,252,0.15)','var(--b2)'],
-    C1: ['rgba(218,119,242,0.15)','var(--c1)'],
-    C2: ['rgba(255,107,107,0.15)','var(--c2)'],
+    A2: ['rgba(169,227,75,0.15)', 'var(--a2)'],
+    B1: ['rgba(74,158,255,0.15)', 'var(--b1)'],
+    B2: ['rgba(116,143,252,0.15)', 'var(--b2)'],
+    C1: ['rgba(218,119,242,0.15)', 'var(--c1)'],
+    C2: ['rgba(255,107,107,0.15)', 'var(--c2)'],
   };
   return map[l] || ['var(--bg3)', 'var(--text2)'];
 }
 function patternStyle(pc) {
-  if (pc === 'weak')   return ['var(--verb-weak-bg)',   'var(--verb-weak)'];
+  if (pc === 'weak') return ['var(--verb-weak-bg)', 'var(--verb-weak)'];
   if (pc === 'strong') return ['var(--verb-strong-bg)', 'var(--verb-strong)'];
-  if (pc === 'mixed')  return ['var(--verb-mixed-bg)',  'var(--verb-mixed)'];
+  if (pc === 'mixed') return ['var(--verb-mixed-bg)', 'var(--verb-mixed)'];
   return ['var(--bg3)', 'var(--text2)'];
 }
 function genderStyle(article) {
@@ -208,23 +213,23 @@ function genderStyle(article) {
 }
 function pluralStyle(pp) {
   if (pp === '-en' || pp === '-n' || pp === '-se') return ['var(--pl-en-bg)', 'var(--pl-en)'];
-  if (pp === '-er' || pp === 'umlaut-er')          return ['var(--pl-er-bg)', 'var(--pl-er)'];
-  if (pp === '-e'  || pp === 'umlaut-e' || pp === 'umlaut') return ['var(--pl-e-bg)',  'var(--pl-e)'];
-  if (pp === '-s')                                 return ['var(--pl-s-bg)',  'var(--pl-s)'];
+  if (pp === '-er' || pp === 'umlaut-er') return ['var(--pl-er-bg)', 'var(--pl-er)'];
+  if (pp === '-e' || pp === 'umlaut-e' || pp === 'umlaut') return ['var(--pl-e-bg)', 'var(--pl-e)'];
+  if (pp === '-s') return ['var(--pl-s-bg)', 'var(--pl-s)'];
   return ['var(--pl-same-bg)', 'var(--pl-same)'];
 }
 
 // ── Card builders ─────────────────────────────────────────────
 function buildVerbCard(w) {
-  const [lbg, lc]  = levelStyle(w.level);
-  const [pbg, pc]  = patternStyle(w.patternColor);
-  const excSet     = new Set(w.exceptionForms || []);
-  const tenses     = Object.keys(w.conjugations);
+  const [lbg, lc] = levelStyle(w.level);
+  const [pbg, pc] = patternStyle(w.patternColor);
+  const excSet = new Set(w.exceptionForms || []);
+  const tenses = Object.keys(w.conjugations);
 
   const conjPanels = tenses.map((tense, i) => {
     const rows = Object.entries(w.conjugations[tense]).map(([p, form]) => {
       const isExc = excSet.has('prasens-all') || excSet.has(`${tense}-all`) ||
-                    excSet.has(`${tense}-${p}`) || excSet.has('all');
+        excSet.has(`${tense}-${p}`) || excSet.has('all');
       return `<div class="conj-row">
         <span class="conj-pronoun">${PRONOUNS[p]}</span>
         <span class="conj-form${isExc ? ' exc' : ''}">${form}</span>
@@ -245,8 +250,8 @@ function buildVerbCard(w) {
   const kasus = w.kasus || [];
   const caseBadges = [
     { k: 'akkusativ', label: 'Akkusativ', cls: 'on-akk', activeColor: 'var(--verb-weak)' },
-    { k: 'dativ',     label: 'Dativ',     cls: 'on-dat', activeColor: 'var(--verb-strong)' },
-    { k: 'reflexiv',  label: 'Reflexiv',  cls: 'on-akk', activeColor: 'var(--verb-weak)' },
+    { k: 'dativ', label: 'Dativ', cls: 'on-dat', activeColor: 'var(--verb-strong)' },
+    { k: 'reflexiv', label: 'Reflexiv', cls: 'on-akk', activeColor: 'var(--verb-weak)' },
   ].map(b => {
     const on = b.k === 'reflexiv' ? w.reflexiv : kasus.includes(b.k);
     return `<div class="case-badge${on ? ' ' + b.cls : ''}">
@@ -318,10 +323,10 @@ function buildVerbCard(w) {
 }
 
 function buildNomenCard(w) {
-  const [lbg, lc]  = levelStyle(w.level);
-  const [gbg, gc]  = genderStyle(w.article);
-  const [pbg, pc]  = pluralStyle(w.pluralPattern);
-  const favActive  = favs.has(w.id);
+  const [lbg, lc] = levelStyle(w.level);
+  const [gbg, gc] = genderStyle(w.article);
+  const [pbg, pc] = pluralStyle(w.pluralPattern);
+  const favActive = favs.has(w.id);
   const themeLabel = w.theme ? THEME_LABELS[w.theme] || w.theme : null;
 
   const endingSection = w.endingRule
