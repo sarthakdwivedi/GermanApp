@@ -22,10 +22,13 @@ const favs = new Set();
 // ── Breakpoints ───────────────────────────────────────────────
 function isDesktop() { return window.innerWidth >= 1024; }
 function isTablet() { return window.innerWidth >= 600; }
+function isLargeScreen() { return window.innerWidth >= 768; }
+
 
 
 window.addEventListener('resize', () => {
   renderCurrentWord();
+  renderWordListPanel();
 });
 
 // ── Persistence ───────────────────────────────────────────────
@@ -398,10 +401,12 @@ function renderCurrentWord(slideDir) {
   cardArea.innerHTML = html + cardHtml;
 
   // Nav bar
-  navBar.style.display = 'flex';
+  
+  navBar.style.display = isLargeScreen() ? 'none' : 'flex';
   updateNavBar(pool, currentIndex);
   document.getElementById('nav-prev').disabled = currentIndex === 0;
   document.getElementById('nav-next').disabled = currentIndex === pool.length - 1;
+  renderWordListPanel();
 }
 
 function updateNavBar(pool, idx) {
@@ -426,6 +431,92 @@ function updateNavBar(pool, idx) {
     const cls = diff === 0 ? 'active' : diff === 1 ? 'nearby' : '';
     return `<div class="nav-dot${cls ? ' ' + cls : ''}"></div>`;
   }).join('');
+}
+
+// ── Word list panel (desktop / tablet) ───────────────────────
+function renderWordListPanel() {
+  const panel = document.getElementById('word-list-panel');
+  if (!panel) return;
+
+  // Only show on large screens
+  if (!isLargeScreen()) {
+    panel.style.display = 'none';
+    return;
+  }
+
+  const pool   = getPool();
+  const scores = loadScores();  // from quiz.js — safe if not loaded yet
+  panel.style.display = 'block';
+
+  if (!pool.length) {
+    panel.innerHTML = `<div class="wlp-empty">No words at this level.</div>`;
+    return;
+  }
+
+  panel.innerHTML = pool.map((w, i) => {
+    const [lbg, lc]  = levelStyle(w.level);
+    const isActive   = i === currentIndex;
+    const article    = w.article ? `<span class="wlp-article" style="color:${genderStyle(w.article)[1]}">${w.article} </span>` : '';
+
+    // Quiz score dot
+    const s = scores?.[w.id];
+    let dotClass = 'wlp-dot-unseen';
+    if (s) {
+      const total = s.correct + s.wrong;
+      const ratio = total ? s.correct / total : 0;
+      dotClass = ratio >= 0.75 ? 'wlp-dot-known'
+               : ratio >= 0.4  ? 'wlp-dot-weak'
+               : 'wlp-dot-unknown';
+    }
+
+    // Fav
+    const isFav = favs.has(w.id);
+
+    return `<div class="wlp-row${isActive?' active':''}" onclick="selectFromList(${i})">
+      <div class="wlp-dot ${dotClass}"></div>
+      <div class="wlp-content">
+        <div class="wlp-word">${article}${w.german}</div>
+        <div class="wlp-meaning">${w.english}</div>
+      </div>
+      <div class="wlp-right">
+        <span class="wlp-level" style="background:${lbg};color:${lc}">${w.level}</span>
+        <button class="wlp-fav${isFav?' active':''}"
+          onclick="event.stopPropagation();toggleFavFromList('${w.id}',this)">
+          ${isFav?'♥':'♡'}
+        </button>
+      </div>
+    </div>`;
+  }).join('');
+
+  // Scroll active row into view
+  setTimeout(() => {
+    const active = panel.querySelector('.wlp-row.active');
+    active?.scrollIntoView({ block:'nearest', behavior:'smooth' });
+  }, 50);
+}
+
+function selectFromList(index) {
+  const dir = index > currentIndex ? 'left' : index < currentIndex ? 'right' : null;
+  currentIndex = index;
+  renderCurrentWord(dir);
+  // Update active row without full re-render
+  document.querySelectorAll('.wlp-row').forEach((r, i) => {
+    r.classList.toggle('active', i === index);
+  });
+  saveState();
+}
+
+function toggleFavFromList(id, btn) {
+  favs.has(id) ? favs.delete(id) : favs.add(id);
+  btn.classList.toggle('active');
+  btn.textContent = favs.has(id) ? '♥' : '♡';
+  saveState();
+  updateFavButton();
+}
+
+function loadScores() {
+  try { return JSON.parse(localStorage.getItem('wortschatz_scores') || '{}'); }
+  catch(e) { return {}; }
 }
 
 // ── Swipe support ─────────────────────────────────────────────

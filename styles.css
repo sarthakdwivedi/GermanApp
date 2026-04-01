@@ -849,6 +849,90 @@ body {
   gap: 8px;
 }
 
+/* ── Word list panel ── */
+#word-list-panel {
+  margin-top: 12px;
+  border-top: 1px solid var(--border);
+  overflow-y: auto;
+  flex: 1;
+  scrollbar-width: none;
+}
+#word-list-panel::-webkit-scrollbar { display: none; }
+
+.wlp-empty {
+  padding: 20px;
+  font-size: 12px;
+  color: var(--text3);
+  text-align: center;
+}
+.wlp-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-left: 3px solid transparent;
+  transition: background 0.15s, border-color 0.15s;
+}
+.wlp-row:hover   { background: var(--bg2); }
+.wlp-row.active  {
+  background: var(--bg2);
+  border-left-color: var(--verb-strong);
+}
+.wlp-dot {
+  width: 7px; height: 7px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.wlp-dot-unseen  { background: var(--bg4); border: 1px solid var(--border2); }
+.wlp-dot-known   { background: var(--a1); }
+.wlp-dot-weak    { background: var(--das); }
+.wlp-dot-unknown { background: var(--c2); }
+
+.wlp-content { flex: 1; min-width: 0; }
+.wlp-word {
+  font-family: 'Playfair Display', serif;
+  font-size: 14px;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.wlp-article { opacity: 0.55; font-weight: 400; }
+.wlp-meaning {
+  font-size: 11px;
+  color: var(--text3);
+  font-style: italic;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.wlp-right {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+}
+.wlp-level {
+  font-size: 9px;
+  font-weight: 500;
+  padding: 2px 6px;
+  border-radius: 8px;
+  letter-spacing: 0.4px;
+}
+.wlp-fav {
+  background: none;
+  border: none;
+  color: var(--text3);
+  font-size: 13px;
+  cursor: pointer;
+  padding: 2px 4px;
+  transition: color 0.2s;
+  line-height: 1;
+}
+.wlp-fav:hover  { color: var(--die); }
+.wlp-fav.active { color: var(--die); }
+
 /* ── Mobile: hide arrows, use swipe only ── */
 @media (max-width: 599px) {
   .nav-arrow { display: none; }
@@ -875,13 +959,14 @@ body {
 
 /* REPLACE your entire @media (min-width: 1024px) block with this: */
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   body {
     max-width: 100%;
     display: block;
     padding-bottom: 0;
   }
-
+  .nav-bar { display: none !important; }
+ 
   #app {
     display: grid;
     grid-template-rows: auto 1fr;
@@ -911,6 +996,8 @@ body {
     border-right: 1px solid var(--border);
     padding: 20px 0 40px;
     scrollbar-width: none;
+    display: flex;
+  flex-direction: column;
   }
   .sidebar::-webkit-scrollbar { display: none; }
 
