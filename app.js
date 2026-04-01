@@ -122,7 +122,7 @@ async function loadData() {
 
 function initApp() {
   document.getElementById('loading').style.display = 'none';
-  document.getElementById('app').style.display = 'block';
+  document.getElementById('app').style.display = '';
 
   const total = DB.verben.length + DB.nomen.length + DB.andere.length;
   document.getElementById('stats-pill').textContent = `${total} words · A1–C2`;
