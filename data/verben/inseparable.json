@@ -3,6 +3,7 @@
     "id": "verstehen",
     "level": "B1",
     "type": "verb",
+    "theme": "communication",
     "german": "verstehen",
     "english": "to understand",
     "patternLabel": "Untrennbar · ver- · stark",
@@ -14,10 +15,7 @@
       "perfekt":     { "ich": "habe verstanden", "du": "hast verstanden", "er": "hat verstanden", "wir": "haben verstanden", "ihr": "habt verstanden", "sie": "haben verstanden" },
       "konjunktiv2": { "ich": "verstünde", "du": "verstündest","er": "verstünde", "wir": "verstünden", "ihr": "verstündet", "sie": "verstünden" }
     },
-    "exceptions": [
-      "Inseparable ver- — never splits, no ge- in Partizip",
-      "Präteritum: e→a (verstand-)"
-    ],
+    "exceptions": ["Inseparable ver- — never splits, no ge- in Partizip", "Präteritum: e→a"],
     "exceptionForms": ["prateritum-all"],
     "kasus": ["akkusativ"],
     "reflexiv": false,
@@ -28,19 +26,20 @@
     ]
   },
   {
-    "id": "erklären",
+    "id": "erklären_ins",
     "level": "B1",
     "type": "verb",
+    "theme": "communication",
     "german": "erklären",
     "english": "to explain",
     "patternLabel": "Untrennbar · er- · schwach",
     "patternColor": "weak",
     "auxiliary": "haben",
     "conjugations": {
-      "prasens":     { "ich": "erkläre",   "du": "erklärst",   "er": "erklärt",   "wir": "erklären",   "ihr": "erklärt",    "sie": "erklären"   },
-      "prateritum":  { "ich": "erklärte",  "du": "erklärtest", "er": "erklärte",  "wir": "erklärten",  "ihr": "erklärtet",  "sie": "erklärten"  },
+      "prasens":     { "ich": "erkläre",  "du": "erklärst",  "er": "erklärt",  "wir": "erklären",  "ihr": "erklärt",   "sie": "erklären"  },
+      "prateritum":  { "ich": "erklärte", "du": "erklärtest","er": "erklärte", "wir": "erklärten", "ihr": "erklärtet", "sie": "erklärten" },
       "perfekt":     { "ich": "habe erklärt",  "du": "hast erklärt",  "er": "hat erklärt",  "wir": "haben erklärt",  "ihr": "habt erklärt",  "sie": "haben erklärt"  },
-      "konjunktiv2": { "ich": "erklärte",  "du": "erklärtest", "er": "erklärte",  "wir": "erklärten",  "ihr": "erklärtet",  "sie": "erklärten"  }
+      "konjunktiv2": { "ich": "erklärte", "du": "erklärtest","er": "erklärte", "wir": "erklärten", "ihr": "erklärtet", "sie": "erklärten" }
     },
     "exceptions": ["Inseparable er- — never splits, no ge- in Partizip"],
     "exceptionForms": [],
@@ -48,7 +47,7 @@
     "reflexiv": false,
     "preposition": null,
     "usage": [
-      { "de": "Er erklärt mir die Grammatik.", "en": "He explains the grammar to me. (Dat + Akk)" },
+      { "de": "Er erklärt mir die Grammatik.", "en": "He explains the grammar to me." },
       { "de": "Kannst du das erklären?", "en": "Can you explain that?" }
     ]
   },
@@ -56,6 +55,7 @@
     "id": "verlieren",
     "level": "B2",
     "type": "verb",
+    "theme": "daily_life",
     "german": "verlieren",
     "english": "to lose",
     "patternLabel": "Untrennbar · ver- · stark",
@@ -81,16 +81,17 @@
     "id": "besuchen",
     "level": "A2",
     "type": "verb",
+    "theme": "social",
     "german": "besuchen",
     "english": "to visit",
     "patternLabel": "Untrennbar · be- · schwach",
     "patternColor": "weak",
     "auxiliary": "haben",
     "conjugations": {
-      "prasens":     { "ich": "besuche",   "du": "besuchst",   "er": "besucht",   "wir": "besuchen",   "ihr": "besucht",    "sie": "besuchen"   },
-      "prateritum":  { "ich": "besuchte",  "du": "besuchtest", "er": "besuchte",  "wir": "besuchten",  "ihr": "besuchtet",  "sie": "besuchten"  },
+      "prasens":     { "ich": "besuche",  "du": "besuchst",  "er": "besucht",  "wir": "besuchen",  "ihr": "besucht",   "sie": "besuchen"  },
+      "prateritum":  { "ich": "besuchte", "du": "besuchtest","er": "besuchte", "wir": "besuchten", "ihr": "besuchtet", "sie": "besuchten" },
       "perfekt":     { "ich": "habe besucht",  "du": "hast besucht",  "er": "hat besucht",  "wir": "haben besucht",  "ihr": "habt besucht",  "sie": "haben besucht"  },
-      "konjunktiv2": { "ich": "besuchte",  "du": "besuchtest", "er": "besuchte",  "wir": "besuchten",  "ihr": "besuchtet",  "sie": "besuchten"  }
+      "konjunktiv2": { "ich": "besuchte", "du": "besuchtest","er": "besuchte", "wir": "besuchten", "ihr": "besuchtet", "sie": "besuchten" }
     },
     "exceptions": ["Inseparable be- — never splits, no ge- in Partizip"],
     "exceptionForms": [],
@@ -106,16 +107,17 @@
     "id": "bekommen",
     "level": "A2",
     "type": "verb",
+    "theme": "daily_life",
     "german": "bekommen",
     "english": "to get / to receive",
     "patternLabel": "Untrennbar · be- · stark",
     "patternColor": "strong",
     "auxiliary": "haben",
     "conjugations": {
-      "prasens":     { "ich": "bekomme",   "du": "bekommst",   "er": "bekommt",   "wir": "bekommen",   "ihr": "bekommt",    "sie": "bekommen"   },
-      "prateritum":  { "ich": "bekam",     "du": "bekamst",    "er": "bekam",     "wir": "bekamen",    "ihr": "bekamt",     "sie": "bekamen"    },
+      "prasens":     { "ich": "bekomme",  "du": "bekommst",  "er": "bekommt",  "wir": "bekommen",  "ihr": "bekommt",   "sie": "bekommen"  },
+      "prateritum":  { "ich": "bekam",    "du": "bekamst",   "er": "bekam",    "wir": "bekamen",   "ihr": "bekamt",    "sie": "bekamen"   },
       "perfekt":     { "ich": "habe bekommen",  "du": "hast bekommen",  "er": "hat bekommen",  "wir": "haben bekommen",  "ihr": "habt bekommen",  "sie": "haben bekommen"  },
-      "konjunktiv2": { "ich": "bekäme",    "du": "bekämest",   "er": "bekäme",    "wir": "bekämen",    "ihr": "bekämet",    "sie": "bekämen"    }
+      "konjunktiv2": { "ich": "bekäme",   "du": "bekämest",  "er": "bekäme",   "wir": "bekämen",   "ihr": "bekämet",   "sie": "bekämen"   }
     },
     "exceptions": [
       "Inseparable be- — no ge- in Partizip",
@@ -135,6 +137,7 @@
     "id": "entscheiden",
     "level": "B1",
     "type": "verb",
+    "theme": "thinking",
     "german": "(sich) entscheiden",
     "english": "to decide",
     "patternLabel": "Untrennbar · ent- · stark",
@@ -148,7 +151,7 @@
     },
     "exceptions": [
       "Inseparable ent- — no ge- in Partizip",
-      "Präteritum: ei→ie (entschied-)",
+      "Präteritum: ei→ie",
       "Often reflexive: sich entscheiden für + Akk."
     ],
     "exceptionForms": ["prateritum-all"],
@@ -161,49 +164,22 @@
     ]
   },
   {
-    "id": "erörtern",
-    "level": "C1",
-    "type": "verb",
-    "german": "erörtern",
-    "english": "to discuss / to deliberate",
-    "patternLabel": "Untrennbar · er- · schwach",
-    "patternColor": "weak",
-    "auxiliary": "haben",
-    "conjugations": {
-      "prasens":     { "ich": "erörtere",   "du": "erörterst",   "er": "erörtert",   "wir": "erörtern",   "ihr": "erörtert",   "sie": "erörtern"   },
-      "prateritum":  { "ich": "erörterte",  "du": "erörtertest", "er": "erörterte",  "wir": "erörterten", "ihr": "erörtertet", "sie": "erörterten" },
-      "perfekt":     { "ich": "habe erörtert", "du": "hast erörtert", "er": "hat erörtert", "wir": "haben erörtert", "ihr": "habt erörtert", "sie": "haben erörtert" },
-      "konjunktiv2": { "ich": "erörterte",  "du": "erörtertest", "er": "erörterte",  "wir": "erörterten", "ihr": "erörtertet", "sie": "erörterten" }
-    },
-    "exceptions": ["Inseparable er- — no ge- in Partizip", "Formal/written register"],
-    "exceptionForms": [],
-    "kasus": ["akkusativ"],
-    "reflexiv": false,
-    "preposition": null,
-    "usage": [
-      { "de": "Wir erörterten die ethischen Fragen.", "en": "We deliberated the ethical questions." },
-      { "de": "Das Problem muss eingehend erörtert werden.", "en": "The problem must be discussed in depth." }
-    ]
-  },
-  {
-    "id": "überzeugend",
+    "id": "überzeugen",
     "level": "B2",
     "type": "verb",
+    "theme": "communication",
     "german": "überzeugen",
     "english": "to convince / to persuade",
     "patternLabel": "Untrennbar · über- · schwach",
     "patternColor": "weak",
     "auxiliary": "haben",
     "conjugations": {
-      "prasens":     { "ich": "überzeuge",   "du": "überzeugst",   "er": "überzeugt",   "wir": "überzeugen",   "ihr": "überzeugt",    "sie": "überzeugen"   },
-      "prateritum":  { "ich": "überzeugte",  "du": "überzeugtest", "er": "überzeugte",  "wir": "überzeugten",  "ihr": "überzeugtet",  "sie": "überzeugten"  },
+      "prasens":     { "ich": "überzeuge",  "du": "überzeugst",  "er": "überzeugt",  "wir": "überzeugen",  "ihr": "überzeugt",   "sie": "überzeugen"  },
+      "prateritum":  { "ich": "überzeugte", "du": "überzeugtest","er": "überzeugte", "wir": "überzeugten", "ihr": "überzeugtet", "sie": "überzeugten" },
       "perfekt":     { "ich": "habe überzeugt",  "du": "hast überzeugt",  "er": "hat überzeugt",  "wir": "haben überzeugt",  "ihr": "habt überzeugt",  "sie": "haben überzeugt"  },
-      "konjunktiv2": { "ich": "überzeugte",  "du": "überzeugtest", "er": "überzeugte",  "wir": "überzeugten",  "ihr": "überzeugtet",  "sie": "überzeugten"  }
+      "konjunktiv2": { "ich": "überzeugte", "du": "überzeugtest","er": "überzeugte", "wir": "überzeugten", "ihr": "überzeugtet", "sie": "überzeugten" }
     },
-    "exceptions": [
-      "Inseparable über- — no ge- in Partizip",
-      "Can be reflexive: sich überzeugen von = to satisfy oneself / verify"
-    ],
+    "exceptions": ["Inseparable über- — no ge- in Partizip"],
     "exceptionForms": [],
     "kasus": ["akkusativ"],
     "reflexiv": false,
@@ -211,6 +187,31 @@
     "usage": [
       { "de": "Er hat mich von seiner Idee überzeugt.", "en": "He convinced me of his idea." },
       { "de": "Das Argument überzeugt mich nicht.", "en": "The argument does not convince me." }
+    ]
+  },
+  {
+    "id": "erörtern_ins",
+    "level": "C1",
+    "type": "verb",
+    "theme": "communication",
+    "german": "erörtern",
+    "english": "to discuss / to deliberate",
+    "patternLabel": "Untrennbar · er- · schwach",
+    "patternColor": "weak",
+    "auxiliary": "haben",
+    "conjugations": {
+      "prasens":     { "ich": "erörtere",  "du": "erörterst",  "er": "erörtert",  "wir": "erörtern",  "ihr": "erörtert",  "sie": "erörtern"  },
+      "prateritum":  { "ich": "erörterte", "du": "erörtertest","er": "erörterte", "wir": "erörterten","ihr": "erörtertet","sie": "erörterten" },
+      "perfekt":     { "ich": "habe erörtert", "du": "hast erörtert", "er": "hat erörtert", "wir": "haben erörtert", "ihr": "habt erörtert", "sie": "haben erörtert" },
+      "konjunktiv2": { "ich": "erörterte", "du": "erörtertest","er": "erörterte", "wir": "erörterten","ihr": "erörtertet","sie": "erörterten" }
+    },
+    "exceptions": ["Inseparable er- — no ge- in Partizip", "Formal/written register"],
+    "exceptionForms": [],
+    "kasus": ["akkusativ"],
+    "reflexiv": false,
+    "preposition": null,
+    "usage": [
+      { "de": "Wir erörterten die ethischen Fragen.", "en": "We deliberated the ethical questions." }
     ]
   }
 ]

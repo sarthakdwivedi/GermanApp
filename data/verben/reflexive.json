@@ -3,6 +3,7 @@
     "id": "sich_freuen",
     "level": "A2",
     "type": "verb",
+    "theme": "emotions",
     "german": "sich freuen",
     "english": "to be happy / to look forward to",
     "patternLabel": "Schwach · reflexiv",
@@ -14,20 +15,21 @@
       "perfekt":     { "ich": "habe mich gefreut",  "du": "hast dich gefreut",  "er": "hat sich gefreut",  "wir": "haben uns gefreut",  "ihr": "habt euch gefreut",  "sie": "haben sich gefreut"  },
       "konjunktiv2": { "ich": "freute mich",  "du": "freutest dich", "er": "freute sich",  "wir": "freuten uns",  "ihr": "freutet euch", "sie": "freuten sich"  }
     },
-    "exceptions": ["Reflexive pronoun (Akk) required: mich/dich/sich/uns/euch/sich"],
+    "exceptions": ["Reflexive Akk. pronoun required: mich/dich/sich/uns/euch/sich"],
     "exceptionForms": ["prasens-all"],
     "kasus": [],
     "reflexiv": true,
-    "preposition": { "prep": "auf / über", "case": "Akkusativ", "meaning": "sich freuen auf = look forward to; sich freuen über = be happy about" },
+    "preposition": { "prep": "auf / über", "case": "Akkusativ", "meaning": "auf = look forward to; über = be happy about" },
     "usage": [
-      { "de": "Ich freue mich auf die Ferien.", "en": "I am looking forward to the holidays. (auf + Akk)" },
-      { "de": "Sie hat sich über das Geschenk gefreut.", "en": "She was happy about the gift. (über + Akk)" }
+      { "de": "Ich freue mich auf die Ferien.", "en": "I am looking forward to the holidays." },
+      { "de": "Sie hat sich über das Geschenk gefreut.", "en": "She was happy about the gift." }
     ]
   },
   {
     "id": "sich_interessieren",
     "level": "A2",
     "type": "verb",
+    "theme": "leisure",
     "german": "sich interessieren",
     "english": "to be interested in",
     "patternLabel": "Schwach · reflexiv",
@@ -53,6 +55,7 @@
     "id": "sich_erinnern",
     "level": "B1",
     "type": "verb",
+    "theme": "thinking",
     "german": "sich erinnern",
     "english": "to remember",
     "patternLabel": "Schwach · reflexiv",
@@ -60,9 +63,9 @@
     "auxiliary": "haben",
     "conjugations": {
       "prasens":     { "ich": "erinnere mich",   "du": "erinnerst dich",   "er": "erinnert sich",   "wir": "erinnern uns",   "ihr": "erinnert euch",   "sie": "erinnern sich"   },
-      "prateritum":  { "ich": "erinnerte mich",  "du": "erinnertest dich", "er": "erinnerte sich",  "wir": "erinnerten uns",  "ihr": "erinnert euch",  "sie": "erinnerten sich"  },
+      "prateritum":  { "ich": "erinnerte mich",  "du": "erinnertest dich", "er": "erinnerte sich",  "wir": "erinnerten uns", "ihr": "erinnert euch",  "sie": "erinnerten sich" },
       "perfekt":     { "ich": "habe mich erinnert",  "du": "hast dich erinnert",  "er": "hat sich erinnert",  "wir": "haben uns erinnert",  "ihr": "habt euch erinnert",  "sie": "haben sich erinnert"  },
-      "konjunktiv2": { "ich": "erinnerte mich",  "du": "erinnertest dich", "er": "erinnerte sich",  "wir": "erinnerten uns",  "ihr": "erinnert euch",  "sie": "erinnerten sich"  }
+      "konjunktiv2": { "ich": "erinnerte mich",  "du": "erinnertest dich", "er": "erinnerte sich",  "wir": "erinnerten uns", "ihr": "erinnert euch",  "sie": "erinnerten sich" }
     },
     "exceptions": ["Inseparable er- prefix — no ge- in Partizip", "Fixed preposition an + Akk.", "Reflexive Akk. pronoun required"],
     "exceptionForms": ["prasens-all"],
@@ -78,6 +81,7 @@
     "id": "sich_gewöhnen",
     "level": "B2",
     "type": "verb",
+    "theme": "daily_life",
     "german": "sich gewöhnen",
     "english": "to get used to",
     "patternLabel": "Schwach · reflexiv",
@@ -103,6 +107,7 @@
     "id": "sich_befassen",
     "level": "B2",
     "type": "verb",
+    "theme": "work",
     "german": "sich befassen",
     "english": "to deal with / to concern oneself with",
     "patternLabel": "Schwach · reflexiv",
@@ -114,11 +119,11 @@
       "perfekt":     { "ich": "habe mich befasst",  "du": "hast dich befasst",  "er": "hat sich befasst",  "wir": "haben uns befasst",  "ihr": "habt euch befasst",  "sie": "haben sich befasst"  },
       "konjunktiv2": { "ich": "befasste mich",  "du": "befasstest dich","er": "befasste sich",  "wir": "befassten uns",  "ihr": "befasstet euch", "sie": "befassten sich"  }
     },
-    "exceptions": ["Inseparable be- prefix — no ge- in Partizip", "Reflexive Akk. pronoun required", "Fixed preposition mit + Dativ"],
+    "exceptions": ["Inseparable be- prefix — no ge- in Partizip", "Fixed preposition mit + Dativ"],
     "exceptionForms": ["prasens-all"],
     "kasus": [],
     "reflexiv": true,
-    "preposition": { "prep": "mit", "case": "Dativ", "meaning": "to deal with / to work on sth." },
+    "preposition": { "prep": "mit", "case": "Dativ", "meaning": "to deal with / work on sth." },
     "usage": [
       { "de": "Der Ausschuss befasst sich mit dem Problem.", "en": "The committee is dealing with the problem." },
       { "de": "Ich habe mich lange mit dem Thema befasst.", "en": "I have been dealing with the topic for a long time." }
@@ -128,25 +133,25 @@
     "id": "sich_anmaßen",
     "level": "C2",
     "type": "verb",
+    "theme": "social",
     "german": "sich anmaßen",
     "english": "to presume / to arrogate",
     "patternLabel": "Schwach · reflexiv + Dativ",
     "patternColor": "weak",
     "auxiliary": "haben",
     "conjugations": {
-      "prasens":     { "ich": "maße mir an",    "du": "maßt dir an",     "er": "maßt sich an",    "wir": "maßen uns an",    "ihr": "maßt euch an",    "sie": "maßen sich an"    },
-      "prateritum":  { "ich": "maßte mir an",   "du": "maßtest dir an",  "er": "maßte sich an",   "wir": "maßten uns an",   "ihr": "maßtet euch an",  "sie": "maßten sich an"   },
+      "prasens":     { "ich": "maße mir an",  "du": "maßt dir an",    "er": "maßt sich an",   "wir": "maßen uns an",   "ihr": "maßt euch an",   "sie": "maßen sich an"   },
+      "prateritum":  { "ich": "maßte mir an", "du": "maßtest dir an", "er": "maßte sich an",  "wir": "maßten uns an",  "ihr": "maßtet euch an", "sie": "maßten sich an"  },
       "perfekt":     { "ich": "habe mir angemaßt",  "du": "hast dir angemaßt",  "er": "hat sich angemaßt",  "wir": "haben uns angemaßt",  "ihr": "habt euch angemaßt",  "sie": "haben sich angemaßt"  },
-      "konjunktiv2": { "ich": "maßte mir an",   "du": "maßtest dir an",  "er": "maßte sich an",   "wir": "maßten uns an",   "ihr": "maßtet euch an",  "sie": "maßten sich an"   }
+      "konjunktiv2": { "ich": "maßte mir an", "du": "maßtest dir an", "er": "maßte sich an",  "wir": "maßten uns an",  "ihr": "maßtet euch an", "sie": "maßten sich an"  }
     },
-    "exceptions": ["Reflexive DAT pronoun (mir/dir) — rarer than Akk.", "Separable an- prefix", "Literary/formal register only"],
+    "exceptions": ["Reflexive DAT pronoun (mir/dir) — rarer than Akk.", "Separable an-", "Literary/formal register only"],
     "exceptionForms": ["prasens-all"],
     "kasus": ["dativ"],
     "reflexiv": true,
     "preposition": null,
     "usage": [
-      { "de": "Er maßt sich das Recht an, zu urteilen.", "en": "He presumes the right to judge." },
-      { "de": "Sie hat sich angemaßt, für alle zu sprechen.", "en": "She arrogated the right to speak for everyone." }
+      { "de": "Er maßt sich das Recht an, zu urteilen.", "en": "He presumes the right to judge." }
     ]
   }
 ]

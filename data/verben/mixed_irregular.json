@@ -3,6 +3,7 @@
     "id": "sein",
     "level": "A1",
     "type": "verb",
+    "theme": "core",
     "german": "sein",
     "english": "to be",
     "patternLabel": "Unregelmäßig · suppletive",
@@ -28,6 +29,7 @@
     "id": "haben",
     "level": "A1",
     "type": "verb",
+    "theme": "core",
     "german": "haben",
     "english": "to have",
     "patternLabel": "Unregelmäßig · haben-type",
@@ -53,16 +55,17 @@
     "id": "gehen",
     "level": "A1",
     "type": "verb",
+    "theme": "movement",
     "german": "gehen",
     "english": "to go",
     "patternLabel": "Unregelmäßig · ging-",
     "patternColor": "mixed",
     "auxiliary": "sein",
     "conjugations": {
-      "prasens":     { "ich": "gehe",   "du": "gehst",   "er": "geht",   "wir": "gehen",   "ihr": "geht",    "sie": "gehen"   },
-      "prateritum":  { "ich": "ging",   "du": "gingst",  "er": "ging",   "wir": "gingen",  "ihr": "gingt",   "sie": "gingen"  },
+      "prasens":     { "ich": "gehe",  "du": "gehst",  "er": "geht",  "wir": "gehen",  "ihr": "geht",   "sie": "gehen"  },
+      "prateritum":  { "ich": "ging",  "du": "gingst", "er": "ging",  "wir": "gingen", "ihr": "gingt",  "sie": "gingen" },
       "perfekt":     { "ich": "bin gegangen",  "du": "bist gegangen",  "er": "ist gegangen",  "wir": "sind gegangen",  "ihr": "seid gegangen",  "sie": "sind gegangen"  },
-      "konjunktiv2": { "ich": "ginge",  "du": "gingest", "er": "ginge",  "wir": "gingen",  "ihr": "ginget",  "sie": "gingen"  }
+      "konjunktiv2": { "ich": "ginge", "du": "gingest","er": "ginge", "wir": "gingen", "ihr": "ginget", "sie": "gingen" }
     },
     "exceptions": ["Präteritum: ging- (completely different stem)", "Auxiliary: sein"],
     "exceptionForms": ["prateritum-all"],
@@ -78,6 +81,7 @@
     "id": "werden",
     "level": "B1",
     "type": "verb",
+    "theme": "core",
     "german": "werden",
     "english": "to become / will (auxiliary)",
     "patternLabel": "Gemischt · werden-type",
@@ -96,13 +100,14 @@
     "preposition": null,
     "usage": [
       { "de": "Er wird Arzt.", "en": "He is becoming a doctor." },
-      { "de": "Sie wird morgen kommen.", "en": "She will come tomorrow. (future aux)" }
+      { "de": "Sie wird morgen kommen.", "en": "She will come tomorrow." }
     ]
   },
   {
     "id": "wissen",
     "level": "A2",
     "type": "verb",
+    "theme": "thinking",
     "german": "wissen",
     "english": "to know (a fact)",
     "patternLabel": "Gemischt · modal-like",
@@ -114,7 +119,7 @@
       "perfekt":     { "ich": "habe gewusst",  "du": "hast gewusst",  "er": "hat gewusst",  "wir": "haben gewusst",  "ihr": "habt gewusst",  "sie": "haben gewusst"  },
       "konjunktiv2": { "ich": "wüsste", "du": "wüsstest","er": "wüsste", "wir": "wüssten", "ihr": "wüsstet", "sie": "wüssten" }
     },
-    "exceptions": ["ich/er use weiß (not *wisse) — behaves like a modal in singular", "⚠ wissen = know a fact; kennen = know a person/place"],
+    "exceptions": ["ich/er use weiß — behaves like a modal in singular", "⚠ wissen = know a fact; kennen = know a person/place"],
     "exceptionForms": ["prasens-ich", "prasens-er"],
     "kasus": ["akkusativ"],
     "reflexiv": false,
@@ -128,6 +133,7 @@
     "id": "bringen",
     "level": "A2",
     "type": "verb",
+    "theme": "daily_life",
     "german": "bringen",
     "english": "to bring",
     "patternLabel": "Gemischt · brachte-type",
@@ -139,7 +145,7 @@
       "perfekt":     { "ich": "habe gebracht",  "du": "hast gebracht",  "er": "hat gebracht",  "wir": "haben gebracht",  "ihr": "habt gebracht",  "sie": "haben gebracht"  },
       "konjunktiv2": { "ich": "brächte", "du": "brächtest","er": "brächte", "wir": "brächten", "ihr": "brächtet", "sie": "brächten" }
     },
-    "exceptions": ["Präteritum: brachte (not *bringte)", "Partizip: gebracht (not *gebringt)", "Same pattern: denken→dachte, kennen→kannte"],
+    "exceptions": ["Präteritum: brachte (not *bringte)", "Partizip: gebracht", "Same pattern: denken→dachte, kennen→kannte"],
     "exceptionForms": ["prateritum-all"],
     "kasus": ["akkusativ", "dativ"],
     "reflexiv": false,
@@ -153,6 +159,7 @@
     "id": "denken",
     "level": "B1",
     "type": "verb",
+    "theme": "thinking",
     "german": "denken",
     "english": "to think",
     "patternLabel": "Gemischt · dachte-type",
@@ -178,6 +185,7 @@
     "id": "kennen",
     "level": "A2",
     "type": "verb",
+    "theme": "social",
     "german": "kennen",
     "english": "to know (a person / place)",
     "patternLabel": "Gemischt · kannte-type",
