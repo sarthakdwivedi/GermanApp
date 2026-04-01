@@ -25,15 +25,30 @@
       <div class="stats-pill" id="stats-pill">…</div>
     </div>
 
+    <!-- Search bar -->
+    <div class="search-bar-wrap">
+      <div class="search-icon">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+          <circle cx="6.5" cy="6.5" r="5" stroke="currentColor" stroke-width="1.5"/>
+          <path d="M10.5 10.5L14 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <input id="search-input" class="search-input" type="search"
+             placeholder="Search German or English…"
+             oninput="onSearch(this.value)"
+             autocomplete="off" autocorrect="off" spellcheck="false">
+      <button id="search-clear" class="search-clear" onclick="clearSearch()" style="display:none">✕</button>
+    </div>
+
     <!-- Word type tabs -->
-    <div class="type-tabs">
+    <div class="type-tabs" id="type-tabs">
       <button class="tab verb active"   onclick="switchType('verb')">Verben</button>
       <button class="tab nomen"         onclick="switchType('nomen')">Nomen</button>
       <button class="tab andere"        onclick="switchType('andere')">Andere</button>
     </div>
 
     <!-- CEFR level filter -->
-    <div class="level-filter">
+    <div class="level-filter" id="level-filter">
       <button class="lvl-btn active" data-lvl="all" onclick="switchLevel('all',this)">All</button>
       <button class="lvl-btn A1"     data-lvl="A1"  onclick="switchLevel('A1',this)">A1</button>
       <button class="lvl-btn A2"     data-lvl="A2"  onclick="switchLevel('A2',this)">A2</button>
@@ -43,11 +58,34 @@
       <button class="lvl-btn C2"     data-lvl="C2"  onclick="switchLevel('C2',this)">C2</button>
     </div>
 
-    <!-- Theme filter (Nomen only — shown/hidden by app.js) -->
+    <!-- Verb pattern filter (shown when type = verb) -->
+    <div class="theme-filter" id="pattern-filter"></div>
+
+    <!-- Nomen theme filter (shown when type = nomen) -->
     <div class="theme-filter" id="theme-filter"></div>
 
-    <!-- Word pill selector -->
-    <div class="word-list" id="word-list"></div>
+    <!-- Search results list (shown when query active) -->
+    <div id="search-results" style="display:none"></div>
+
+    <!-- Progress / nav bar (shown when card visible) -->
+    <div class="nav-bar" id="nav-bar" style="display:none">
+      <button class="nav-arrow" id="nav-prev" onclick="navigateWord(-1)">
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+          <path d="M11 4L6 9L11 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+      <div class="nav-progress-wrap">
+        <div class="nav-progress-bar">
+          <div class="nav-progress-fill" id="nav-progress-fill"></div>
+        </div>
+        <div class="nav-dots" id="nav-dots"></div>
+      </div>
+      <button class="nav-arrow" id="nav-next" onclick="navigateWord(1)">
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+          <path d="M7 4L12 9L7 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+    </div>
 
     <!-- Active word card -->
     <div class="card-container">
