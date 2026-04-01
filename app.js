@@ -10,44 +10,44 @@ const NOMEN_FILES = [
 
 // ── App state ─────────────────────────────────────────────────
 let DB = { verben: [], nomen: [], andere: [] };
-let currentType    = 'verb';
-let currentLevel   = 'all';
-let currentTheme   = 'all';
+let currentType = 'verb';
+let currentLevel = 'all';
+let currentTheme = 'all';
 let currentPattern = 'all';
-let currentIndex   = 0;
-let searchQuery    = '';
-let searchPool     = null;   // non-null when search is active
+let currentIndex = 0;
+let searchQuery = '';
+let searchPool = null;   // non-null when search is active
 let inSearchResult = false;  // viewing a card opened from search
 const favs = new Set();
 // ── Breakpoints ───────────────────────────────────────────────
 function isDesktop() { return window.innerWidth >= 1024; }
-function isTablet()  { return window.innerWidth >= 600;  }
+function isTablet() { return window.innerWidth >= 600; }
 
-// Re-render card on resize so conjugation layout updates
+
 window.addEventListener('resize', () => {
-  if (currentWordId !== undefined) renderCurrentWord();
+  renderCurrentWord();
 });
 
 // ── Persistence ───────────────────────────────────────────────
 function saveState() {
-  localStorage.setItem('wortschatz_favs',    JSON.stringify([...favs]));
-  localStorage.setItem('wortschatz_type',    currentType);
-  localStorage.setItem('wortschatz_level',   currentLevel);
+  localStorage.setItem('wortschatz_favs', JSON.stringify([...favs]));
+  localStorage.setItem('wortschatz_type', currentType);
+  localStorage.setItem('wortschatz_level', currentLevel);
   localStorage.setItem('wortschatz_pattern', currentPattern);
-  localStorage.setItem('wortschatz_theme',   currentTheme);
-  localStorage.setItem('wortschatz_index',   currentIndex);
+  localStorage.setItem('wortschatz_theme', currentTheme);
+  localStorage.setItem('wortschatz_index', currentIndex);
 }
 
 function loadState() {
   try {
     const savedFavs = localStorage.getItem('wortschatz_favs');
     if (savedFavs) JSON.parse(savedFavs).forEach(id => favs.add(id));
-    currentType    = localStorage.getItem('wortschatz_type')    || 'verb';
-    currentLevel   = localStorage.getItem('wortschatz_level')   || 'all';
+    currentType = localStorage.getItem('wortschatz_type') || 'verb';
+    currentLevel = localStorage.getItem('wortschatz_level') || 'all';
     currentPattern = localStorage.getItem('wortschatz_pattern') || 'all';
-    currentTheme   = localStorage.getItem('wortschatz_theme')   || 'all';
-    currentIndex   = parseInt(localStorage.getItem('wortschatz_index')) || 0;
-  } catch(e) { console.warn('Could not load state', e); }
+    currentTheme = localStorage.getItem('wortschatz_theme') || 'all';
+    currentIndex = parseInt(localStorage.getItem('wortschatz_index')) || 0;
+  } catch (e) { console.warn('Could not load state', e); }
 }
 
 // ── Swipe tracking ────────────────────────────────────────────
@@ -56,22 +56,22 @@ let touchStartY = 0;
 
 // ── Constants ─────────────────────────────────────────────────
 const TENSE_LABELS = {
-  prasens:'Präsens', prateritum:'Präteritum',
-  perfekt:'Perfekt', konjunktiv2:'Konjunktiv II'
+  prasens: 'Präsens', prateritum: 'Präteritum',
+  perfekt: 'Perfekt', konjunktiv2: 'Konjunktiv II'
 };
 const PRONOUNS = {
-  ich:'ich', du:'du', er:'er/sie/es',
-  wir:'wir', ihr:'ihr', sie:'sie/Sie'
+  ich: 'ich', du: 'du', er: 'er/sie/es',
+  wir: 'wir', ihr: 'ihr', sie: 'sie/Sie'
 };
 const THEME_LABELS = {
-  people:'People', home:'Home',
-  work_education:'Work & Education', food:'Food',
-  nature_travel:'Nature & Travel', society_abstract:'Society & Abstract'
+  people: 'People', home: 'Home',
+  work_education: 'Work & Education', food: 'Food',
+  nature_travel: 'Nature & Travel', society_abstract: 'Society & Abstract'
 };
 const PATTERN_LABELS = {
-  weak:'Weak', strong:'Strong', mixed_irregular:'Mixed / Irregular',
-  modal:'Modal', reflexive:'Reflexive',
-  separable:'Separable', inseparable:'Inseparable'
+  weak: 'Weak', strong: 'Strong', mixed_irregular: 'Mixed / Irregular',
+  modal: 'Modal', reflexive: 'Reflexive',
+  separable: 'Separable', inseparable: 'Inseparable'
 };
 
 // ── Data loading ──────────────────────────────────────────────
@@ -79,7 +79,7 @@ async function loadData() {
   try {
     const responses = await Promise.all([
       fetch('data/andere.json'),
-      ...VERB_FILES.map(f  => fetch(`data/verben/${f}.json`)),
+      ...VERB_FILES.map(f => fetch(`data/verben/${f}.json`)),
       ...NOMEN_FILES.map(f => fetch(`data/nomen/${f}.json`))
     ]);
 
@@ -88,11 +88,11 @@ async function loadData() {
     }
 
     const [andereRes, ...allFileResults] = responses;
-    const verbResults  = allFileResults.slice(0, VERB_FILES.length);
+    const verbResults = allFileResults.slice(0, VERB_FILES.length);
     const nomenResults = allFileResults.slice(VERB_FILES.length);
 
-    const verbenArrays = await Promise.all(verbResults.map(r  => r.json()));
-    const nomenArrays  = await Promise.all(nomenResults.map(r => r.json()));
+    const verbenArrays = await Promise.all(verbResults.map(r => r.json()));
+    const nomenArrays = await Promise.all(nomenResults.map(r => r.json()));
 
     // Tag each verb with its pattern group
     VERB_FILES.forEach((f, i) => {
@@ -100,7 +100,7 @@ async function loadData() {
     });
 
     DB.verben = verbenArrays.flat();
-    DB.nomen  = nomenArrays.flat();
+    DB.nomen = nomenArrays.flat();
     DB.andere = await andereRes.json();
 
     initApp();
@@ -147,12 +147,12 @@ function buildPatternFilter() {
   c.innerHTML =
     `<button class="theme-btn active" data-pat="all" onclick="switchPattern('all',this)">All patterns</button>` +
     VERB_FILES.map(f =>
-      `<button class="theme-btn" data-pat="${f}" onclick="switchPattern('${f}',this)">${PATTERN_LABELS[f]||f}</button>`
+      `<button class="theme-btn" data-pat="${f}" onclick="switchPattern('${f}',this)">${PATTERN_LABELS[f] || f}</button>`
     ).join('');
 }
 function updateFavButton() {
   const count = favs.size;
-  const btn   = document.getElementById('fav-header-btn');
+  const btn = document.getElementById('fav-header-btn');
   const label = document.getElementById('fav-count');
   btn.classList.toggle('has-favs', count > 0);
   btn.childNodes[0].textContent = count > 0 ? '♥ ' : '♡ ';
@@ -165,7 +165,7 @@ function buildThemeFilter() {
   c.innerHTML =
     `<button class="theme-btn active" data-theme="all" onclick="switchTheme('all',this)">All themes</button>` +
     themes.map(t =>
-      `<button class="theme-btn" data-theme="${t}" onclick="switchTheme('${t}',this)">${THEME_LABELS[t]||t}</button>`
+      `<button class="theme-btn" data-theme="${t}" onclick="switchTheme('${t}',this)">${THEME_LABELS[t] || t}</button>`
     ).join('');
 }
 
@@ -178,9 +178,9 @@ function showContextualFilter() {
 function getPool() {
   if (searchPool !== null) return searchPool;
 
-  let pool = currentType === 'verb'  ? DB.verben
-           : currentType === 'nomen' ? DB.nomen
-           : DB.andere;
+  let pool = currentType === 'verb' ? DB.verben
+    : currentType === 'nomen' ? DB.nomen
+      : DB.andere;
 
   if (currentLevel !== 'all')
     pool = pool.filter(w => w.level === currentLevel);
@@ -199,10 +199,10 @@ function onSearch(query) {
 
   if (!searchQuery) {
     // Restore normal browse mode
-    searchPool     = null;
+    searchPool = null;
     inSearchResult = false;
     document.getElementById('search-results').style.display = 'none';
-    document.getElementById('type-tabs').style.display    = 'flex';
+    document.getElementById('type-tabs').style.display = 'flex';
     document.getElementById('level-filter').style.display = 'flex';
     showContextualFilter();
     currentIndex = 0;
@@ -211,14 +211,14 @@ function onSearch(query) {
   }
 
   // Hide browse chrome during search
-  document.getElementById('type-tabs').style.display    = 'none';
+  document.getElementById('type-tabs').style.display = 'none';
   document.getElementById('level-filter').style.display = 'none';
   document.getElementById('pattern-filter').classList.remove('visible');
   document.getElementById('theme-filter').classList.remove('visible');
-  document.getElementById('nav-bar').style.display  = 'none';
-  document.getElementById('card-area').innerHTML    = '';
+  document.getElementById('nav-bar').style.display = 'none';
+  document.getElementById('card-area').innerHTML = '';
   inSearchResult = false;
-  searchPool     = null;
+  searchPool = null;
 
   const all = [...DB.verben, ...DB.nomen, ...DB.andere];
   const results = all.filter(w =>
@@ -249,12 +249,12 @@ function renderSearchResults(results) {
 
   container.innerHTML = results.map(w => {
     const [lbg, lc] = levelStyle(w.level);
-    const [,gc]     = w.article ? genderStyle(w.article) : [];
+    const [, gc] = w.article ? genderStyle(w.article) : [];
     const articleHtml = w.article
       ? `<span class="search-result-article" style="color:${gc}">${w.article} </span>` : '';
     const patLabel = w.verbFile ? PATTERN_LABELS[w.verbFile] || w.verbFile
-                   : w.theme    ? THEME_LABELS[w.theme] || w.theme
-                   : w.wordType || 'Andere';
+      : w.theme ? THEME_LABELS[w.theme] || w.theme
+        : w.wordType || 'Andere';
     return `<div class="search-result-item" onclick="openSearchResult('${w.id}')">
       <div style="flex:1;min-width:0">
         <div class="search-result-word">${articleHtml}${w.german}</div>
@@ -270,11 +270,11 @@ function renderSearchResults(results) {
 
 function openSearchResult(id) {
   const all = [...DB.verben, ...DB.nomen, ...DB.andere];
-  const w   = all.find(x => x.id === id);
+  const w = all.find(x => x.id === id);
   if (!w) return;
 
-  searchPool     = [w];
-  currentIndex   = 0;
+  searchPool = [w];
+  currentIndex = 0;
   inSearchResult = true;
 
   document.getElementById('search-results').style.display = 'none';
@@ -282,21 +282,21 @@ function openSearchResult(id) {
 }
 
 function exitSearchResult() {
-  searchPool     = null;
+  searchPool = null;
   inSearchResult = false;
-  document.getElementById('card-area').innerHTML  = '';
+  document.getElementById('card-area').innerHTML = '';
   document.getElementById('nav-bar').style.display = 'none';
   document.getElementById('search-results').style.display = 'block';
 }
 
 // ── Type / Level / Pattern / Theme switching ──────────────────
 function switchType(type) {
-  currentType    = type;
-  currentLevel   = 'all';
-  currentTheme   = 'all';
+  currentType = type;
+  currentLevel = 'all';
+  currentTheme = 'all';
   currentPattern = 'all';
-  currentIndex   = 0;
-  searchPool     = null;
+  currentIndex = 0;
+  searchPool = null;
   inSearchResult = false;
 
   document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
@@ -328,7 +328,7 @@ function switchLevel(level, btn) {
 
 function switchPattern(pattern, btn) {
   currentPattern = pattern;
-  currentIndex   = 0;
+  currentIndex = 0;
   document.querySelectorAll('#pattern-filter .theme-btn').forEach(b => b.classList.remove('active'));
   btn.classList.add('active');
   renderCurrentWord();
@@ -356,8 +356,8 @@ function navigateWord(dir) {
 }
 
 function renderCurrentWord(slideDir) {
-  const pool     = getPool();
-  const navBar   = document.getElementById('nav-bar');
+  const pool = getPool();
+  const navBar = document.getElementById('nav-bar');
   const cardArea = document.getElementById('card-area');
 
   if (!pool.length) {
@@ -384,9 +384,9 @@ function renderCurrentWord(slideDir) {
 
   // Build card with slide animation class
   let cardHtml = '';
-  if (w.type === 'verb')       cardHtml = buildVerbCard(w);
+  if (w.type === 'verb') cardHtml = buildVerbCard(w);
   else if (w.type === 'nomen') cardHtml = buildNomenCard(w);
-  else                         cardHtml = buildAndereCard(w);
+  else cardHtml = buildAndereCard(w);
 
   if (slideDir) {
     cardHtml = cardHtml.replace(
@@ -410,21 +410,21 @@ function updateNavBar(pool, idx) {
   document.getElementById('nav-progress-fill').style.width = `${pct}%`;
 
   // Dots — up to 7, centred around current position
-  const total   = pool.length;
+  const total = pool.length;
   const maxDots = 7;
-  const dotsEl  = document.getElementById('nav-dots');
+  const dotsEl = document.getElementById('nav-dots');
 
   if (total <= 1) { dotsEl.innerHTML = ''; return; }
 
   let start = Math.max(0, idx - Math.floor(maxDots / 2));
-  let end   = Math.min(total - 1, start + maxDots - 1);
+  let end = Math.min(total - 1, start + maxDots - 1);
   if (end - start < maxDots - 1) start = Math.max(0, end - maxDots + 1);
 
   dotsEl.innerHTML = Array.from({ length: end - start + 1 }, (_, i) => {
-    const pos  = start + i;
+    const pos = start + i;
     const diff = Math.abs(pos - idx);
-    const cls  = diff === 0 ? 'active' : diff === 1 ? 'nearby' : '';
-    return `<div class="nav-dot${cls?' '+cls:''}"></div>`;
+    const cls = diff === 0 ? 'active' : diff === 1 ? 'nearby' : '';
+    return `<div class="nav-dot${cls ? ' ' + cls : ''}"></div>`;
   }).join('');
 }
 
@@ -449,44 +449,44 @@ function setupSwipe() {
 // ── Colour helpers ────────────────────────────────────────────
 function levelStyle(l) {
   const m = {
-    A1:['rgba(105,219,124,0.15)','var(--a1)'],
-    A2:['rgba(169,227,75,0.15)', 'var(--a2)'],
-    B1:['rgba(74,158,255,0.15)', 'var(--b1)'],
-    B2:['rgba(116,143,252,0.15)','var(--b2)'],
-    C1:['rgba(218,119,242,0.15)','var(--c1)'],
-    C2:['rgba(255,107,107,0.15)','var(--c2)'],
+    A1: ['rgba(105,219,124,0.15)', 'var(--a1)'],
+    A2: ['rgba(169,227,75,0.15)', 'var(--a2)'],
+    B1: ['rgba(74,158,255,0.15)', 'var(--b1)'],
+    B2: ['rgba(116,143,252,0.15)', 'var(--b2)'],
+    C1: ['rgba(218,119,242,0.15)', 'var(--c1)'],
+    C2: ['rgba(255,107,107,0.15)', 'var(--c2)'],
   };
   return m[l] || ['var(--bg3)', 'var(--text2)'];
 }
 function patternStyle(pc) {
-  if (pc==='weak')   return ['var(--verb-weak-bg)',   'var(--verb-weak)'];
-  if (pc==='strong') return ['var(--verb-strong-bg)', 'var(--verb-strong)'];
-  if (pc==='mixed')  return ['var(--verb-mixed-bg)',  'var(--verb-mixed)'];
-  return ['var(--bg3)','var(--text2)'];
+  if (pc === 'weak') return ['var(--verb-weak-bg)', 'var(--verb-weak)'];
+  if (pc === 'strong') return ['var(--verb-strong-bg)', 'var(--verb-strong)'];
+  if (pc === 'mixed') return ['var(--verb-mixed-bg)', 'var(--verb-mixed)'];
+  return ['var(--bg3)', 'var(--text2)'];
 }
 function genderStyle(article) {
-  if (article==='der') return ['var(--der-bg)','var(--der)'];
-  if (article==='die') return ['var(--die-bg)','var(--die)'];
-  if (article==='das') return ['var(--das-bg)','var(--das)'];
-  return ['var(--bg3)','var(--text2)'];
+  if (article === 'der') return ['var(--der-bg)', 'var(--der)'];
+  if (article === 'die') return ['var(--die-bg)', 'var(--die)'];
+  if (article === 'das') return ['var(--das-bg)', 'var(--das)'];
+  return ['var(--bg3)', 'var(--text2)'];
 }
 function pluralStyle(pp) {
-  if (pp==='-en'||pp==='-n'||pp==='-se') return ['var(--pl-en-bg)','var(--pl-en)'];
-  if (pp==='-er'||pp==='umlaut-er')      return ['var(--pl-er-bg)','var(--pl-er)'];
-  if (pp==='-e'||pp==='umlaut-e'||pp==='umlaut') return ['var(--pl-e-bg)','var(--pl-e)'];
-  if (pp==='-s')                         return ['var(--pl-s-bg)', 'var(--pl-s)'];
-  return ['var(--pl-same-bg)','var(--pl-same)'];
+  if (pp === '-en' || pp === '-n' || pp === '-se') return ['var(--pl-en-bg)', 'var(--pl-en)'];
+  if (pp === '-er' || pp === 'umlaut-er') return ['var(--pl-er-bg)', 'var(--pl-er)'];
+  if (pp === '-e' || pp === 'umlaut-e' || pp === 'umlaut') return ['var(--pl-e-bg)', 'var(--pl-e)'];
+  if (pp === '-s') return ['var(--pl-s-bg)', 'var(--pl-s)'];
+  return ['var(--pl-same-bg)', 'var(--pl-same)'];
 }
 
 // ── Card builders ─────────────────────────────────────────────
 function buildVerbCard(w) {
-  const [lbg,lc] = levelStyle(w.level);
-  const [pbg,pc] = patternStyle(w.patternColor);
-  const excSet   = new Set(w.exceptionForms || []);
-  const tenses   = Object.keys(w.conjugations);
+  const [lbg, lc] = levelStyle(w.level);
+  const [pbg, pc] = patternStyle(w.patternColor);
+  const excSet = new Set(w.exceptionForms || []);
+  const tenses = Object.keys(w.conjugations);
   const favActive = favs.has(w.id);
 
-// ── Responsive conjugation ────────────────────────────────
+  // ── Responsive conjugation ────────────────────────────────
   let conjSection = '';
 
   if (isDesktop()) {
@@ -494,14 +494,14 @@ function buildVerbCard(w) {
     const tenseBlocks = tenses.map(tense => {
       const rows = Object.entries(w.conjugations[tense]).map(([p, form]) => {
         const isExc = excSet.has('prasens-all') || excSet.has(`${tense}-all`) ||
-                      excSet.has(`${tense}-${p}`) || excSet.has('all');
+          excSet.has(`${tense}-${p}`) || excSet.has('all');
         return `<div class="conj-row">
           <span class="conj-pronoun">${PRONOUNS[p]}</span>
-          <span class="conj-form${isExc?' exc':''}">${form}</span>
+          <span class="conj-form${isExc ? ' exc' : ''}">${form}</span>
         </div>`;
       }).join('');
       return `<div class="conj-tense-block">
-        <div class="conj-tense-label">${TENSE_LABELS[tense]||tense}</div>
+        <div class="conj-tense-label">${TENSE_LABELS[tense] || tense}</div>
         <div class="conj-grid">${rows}</div>
       </div>`;
     }).join('');
@@ -509,23 +509,23 @@ function buildVerbCard(w) {
 
   } else if (isTablet()) {
     // First 2 tenses visible, rest tabbed
-    const visibleTenses  = tenses.slice(0, 2);
-    const tabbedTenses   = tenses.slice(2);
-    const allTabs = tenses.map((t,i) =>
-      `<button class="tense-tab${i<2?' active':''}"
-        onclick="switchTense(this,'${w.id}','${t}')">${TENSE_LABELS[t]||t}</button>`
+    const visibleTenses = tenses.slice(0, 2);
+    const tabbedTenses = tenses.slice(2);
+    const allTabs = tenses.map((t, i) =>
+      `<button class="tense-tab${i < 2 ? ' active' : ''}"
+        onclick="switchTense(this,'${w.id}','${t}')">${TENSE_LABELS[t] || t}</button>`
     ).join('');
     const panels = tenses.map((tense, i) => {
       const rows = Object.entries(w.conjugations[tense]).map(([p, form]) => {
         const isExc = excSet.has('prasens-all') || excSet.has(`${tense}-all`) ||
-                      excSet.has(`${tense}-${p}`) || excSet.has('all');
+          excSet.has(`${tense}-${p}`) || excSet.has('all');
         return `<div class="conj-row">
           <span class="conj-pronoun">${PRONOUNS[p]}</span>
-          <span class="conj-form${isExc?' exc':''}">${form}</span>
+          <span class="conj-form${isExc ? ' exc' : ''}">${form}</span>
         </div>`;
       }).join('');
       return `<div id="cp-${w.id}-${tense}" class="conj-grid tense-panel"
-        style="${i>=2?'display:none':''}">${rows}</div>`;
+        style="${i >= 2 ? 'display:none' : ''}">${rows}</div>`;
     }).join('');
     conjSection = `<div class="tense-tabs">${allTabs}</div>
       <div class="conj-tablet-grid">${panels}</div>`;
@@ -535,18 +535,18 @@ function buildVerbCard(w) {
     const conjPanels = tenses.map((tense, i) => {
       const rows = Object.entries(w.conjugations[tense]).map(([p, form]) => {
         const isExc = excSet.has('prasens-all') || excSet.has(`${tense}-all`) ||
-                      excSet.has(`${tense}-${p}`) || excSet.has('all');
+          excSet.has(`${tense}-${p}`) || excSet.has('all');
         return `<div class="conj-row">
           <span class="conj-pronoun">${PRONOUNS[p]}</span>
-          <span class="conj-form${isExc?' exc':''}">${form}</span>
+          <span class="conj-form${isExc ? ' exc' : ''}">${form}</span>
         </div>`;
       }).join('');
       return `<div id="cp-${w.id}-${tense}" class="conj-grid tense-panel"
-        style="${i>0?'display:none':''}">${rows}</div>`;
+        style="${i > 0 ? 'display:none' : ''}">${rows}</div>`;
     }).join('');
-    const tenseTabs = tenses.map((t,i) =>
-      `<button class="tense-tab${i===0?' active':''}"
-        onclick="switchTense(this,'${w.id}','${t}')">${TENSE_LABELS[t]||t}</button>`
+    const tenseTabs = tenses.map((t, i) =>
+      `<button class="tense-tab${i === 0 ? ' active' : ''}"
+        onclick="switchTense(this,'${w.id}','${t}')">${TENSE_LABELS[t] || t}</button>`
     ).join('');
     conjSection = `<div class="tense-tabs">${tenseTabs}</div>${conjPanels}`;
   }
@@ -556,15 +556,15 @@ function buildVerbCard(w) {
 
   const kasus = w.kasus || [];
   const caseBadges = [
-    {k:'akkusativ',label:'Akkusativ',cls:'on-akk',color:'var(--verb-weak)'},
-    {k:'dativ',    label:'Dativ',    cls:'on-dat',color:'var(--verb-strong)'},
-    {k:'reflexiv', label:'Reflexiv', cls:'on-akk',color:'var(--verb-weak)'},
+    { k: 'akkusativ', label: 'Akkusativ', cls: 'on-akk', color: 'var(--verb-weak)' },
+    { k: 'dativ', label: 'Dativ', cls: 'on-dat', color: 'var(--verb-strong)' },
+    { k: 'reflexiv', label: 'Reflexiv', cls: 'on-akk', color: 'var(--verb-weak)' },
   ].map(b => {
-    const on = b.k==='reflexiv' ? w.reflexiv : kasus.includes(b.k);
-    return `<div class="case-badge${on?' '+b.cls:''}">
+    const on = b.k === 'reflexiv' ? w.reflexiv : kasus.includes(b.k);
+    return `<div class="case-badge${on ? ' ' + b.cls : ''}">
       <div class="case-badge-label">${b.label}</div>
-      <div class="case-badge-val" style="color:${on?b.color:'var(--text3)'}">
-        ${on?'✓':'—'}
+      <div class="case-badge-val" style="color:${on ? b.color : 'var(--text3)'}">
+        ${on ? '✓' : '—'}
       </div>
     </div>`;
   }).join('');
@@ -594,8 +594,8 @@ function buildVerbCard(w) {
         <div class="badges">
           <span class="level-badge" style="background:${lbg};color:${lc}">${w.level}</span>
           <span class="type-badge">${patBadge}</span>
-          <button class="fav-btn${favActive?' active':''}"
-            onclick="toggleFav('${w.id}',this)">${favActive?'♥':'♡'}</button>
+          <button class="fav-btn${favActive ? ' active' : ''}"
+            onclick="toggleFav('${w.id}',this)">${favActive ? '♥' : '♡'}</button>
         </div>
       </div>
       <div class="pattern-strip">
@@ -620,7 +620,7 @@ function buildVerbCard(w) {
     <div class="section">
       <div class="section-label">Verwendung</div>
       <div class="example-list">
-        ${(w.usage||[]).map(e=>`
+        ${(w.usage || []).map(e => `
           <div class="example-item" style="border-left-color:${pc}">
             <div class="example-de">${e.de}</div>
             <div class="example-en">${e.en}</div>
@@ -631,11 +631,11 @@ function buildVerbCard(w) {
 }
 
 function buildNomenCard(w) {
-  const [lbg,lc] = levelStyle(w.level);
-  const [gbg,gc] = genderStyle(w.article);
-  const [pbg,pc] = pluralStyle(w.pluralPattern);
+  const [lbg, lc] = levelStyle(w.level);
+  const [gbg, gc] = genderStyle(w.article);
+  const [pbg, pc] = pluralStyle(w.pluralPattern);
   const favActive = favs.has(w.id);
-  const themeLabel = w.theme ? THEME_LABELS[w.theme]||w.theme : null;
+  const themeLabel = w.theme ? THEME_LABELS[w.theme] || w.theme : null;
   const d = w.declension;
 
   const endingSection = w.endingRule
@@ -672,15 +672,15 @@ function buildNomenCard(w) {
         <div class="badges">
           <span class="level-badge" style="background:${lbg};color:${lc}">${w.level}</span>
           <span class="type-badge">Nomen</span>
-          ${themeLabel?`<span class="theme-badge">${themeLabel}</span>`:''}
-          <button class="fav-btn${favActive?' active':''}"
-            onclick="toggleFav('${w.id}',this)">${favActive?'♥':'♡'}</button>
+          ${themeLabel ? `<span class="theme-badge">${themeLabel}</span>` : ''}
+          <button class="fav-btn${favActive ? ' active' : ''}"
+            onclick="toggleFav('${w.id}',this)">${favActive ? '♥' : '♡'}</button>
         </div>
       </div>
       <div class="pattern-strip">
         <span class="pattern-chip" style="background:${gbg};color:${gc}">
           <span class="dot" style="background:${gc}"></span>
-          ${w.gender==='masculine'?'Maskulin (der)':w.gender==='feminine'?'Feminin (die)':'Neutrum (das)'}
+          ${w.gender === 'masculine' ? 'Maskulin (der)' : w.gender === 'feminine' ? 'Feminin (die)' : 'Neutrum (das)'}
         </span>
         <span class="pattern-chip" style="background:${pbg};color:${pc}">
           <span class="dot" style="background:${pc}"></span>${w.pluralPatternLabel}
@@ -710,7 +710,7 @@ function buildNomenCard(w) {
     <div class="section">
       <div class="section-label">Verwendung</div>
       <div class="example-list">
-        ${(w.usage||[]).map(e=>`
+        ${(w.usage || []).map(e => `
           <div class="example-item" style="border-left-color:${gc}">
             <div class="example-de">${e.de}</div>
             <div class="example-en">${e.en}</div>
@@ -721,16 +721,16 @@ function buildNomenCard(w) {
 }
 
 function buildAndereCard(w) {
-  const [lbg,lc] = levelStyle(w.level);
+  const [lbg, lc] = levelStyle(w.level);
   const favActive = favs.has(w.id);
-  const c  = 'var(--andere)';
+  const c = 'var(--andere)';
   const bg = 'var(--andere-bg)';
 
   const varSection = w.variants?.length
     ? `<div class="section">
         <div class="section-label">Formen & Varianten</div>
         <div class="variants-list">
-          ${w.variants.map(v=>`
+          ${w.variants.map(v => `
             <div class="variant-row">
               <span class="variant-label">${v.label}</span>
               <span class="variant-form" style="color:${c}">${v.form}</span>
@@ -742,7 +742,7 @@ function buildAndereCard(w) {
     ? `<div class="section">
         <div class="section-label">Verwandte Wörter</div>
         <div class="variants-list">
-          ${w.relatedWords.map(r=>`
+          ${w.relatedWords.map(r => `
             <div class="variant-row">
               <span class="variant-label">${r.meaning}</span>
               <span class="variant-form" style="color:${c}">${r.word}</span>
@@ -760,8 +760,8 @@ function buildAndereCard(w) {
         <div class="badges">
           <span class="level-badge" style="background:${lbg};color:${lc}">${w.level}</span>
           <span class="type-badge">${w.wordType}</span>
-          <button class="fav-btn${favActive?' active':''}"
-            onclick="toggleFav('${w.id}',this)">${favActive?'♥':'♡'}</button>
+          <button class="fav-btn${favActive ? ' active' : ''}"
+            onclick="toggleFav('${w.id}',this)">${favActive ? '♥' : '♡'}</button>
         </div>
       </div>
       <div class="pattern-strip">
@@ -783,7 +783,7 @@ function buildAndereCard(w) {
     <div class="section">
       <div class="section-label">Verwendung</div>
       <div class="example-list">
-        ${(w.usage||[]).map(e=>`
+        ${(w.usage || []).map(e => `
           <div class="example-item" style="border-left-color:${c}">
             <div class="example-de">${e.de}</div>
             <div class="example-en">${e.en}</div>
@@ -853,12 +853,12 @@ function renderMyWords() {
 
   listEl.innerHTML = words.map(w => {
     const [lbg, lc] = levelStyle(w.level);
-    const [, gc]    = w.article ? genderStyle(w.article) : [];
+    const [, gc] = w.article ? genderStyle(w.article) : [];
     const articleHtml = w.article
       ? `<span class="search-result-article" style="color:${gc}">${w.article} </span>` : '';
     const patLabel = w.verbFile ? PATTERN_LABELS[w.verbFile]
-                   : w.theme    ? THEME_LABELS[w.theme]
-                   : w.wordType || 'Andere';
+      : w.theme ? THEME_LABELS[w.theme]
+        : w.wordType || 'Andere';
     return `<div class="search-result-item" onclick="openMyWordsCard('${w.id}')">
       <div style="flex:1;min-width:0">
         <div class="search-result-word">${articleHtml}${w.german}</div>
@@ -874,7 +874,7 @@ function renderMyWords() {
 
 function openMyWordsCard(id) {
   const all = [...DB.verben, ...DB.nomen, ...DB.andere];
-  const w   = all.find(x => x.id === id);
+  const w = all.find(x => x.id === id);
   if (!w) return;
 
   document.getElementById('mywords-list').style.display = 'none';
@@ -888,9 +888,9 @@ function openMyWordsCard(id) {
     My Words
   </button>`;
 
-  if (w.type === 'verb')       html += buildVerbCard(w);
+  if (w.type === 'verb') html += buildVerbCard(w);
   else if (w.type === 'nomen') html += buildNomenCard(w);
-  else                         html += buildAndereCard(w);
+  else html += buildAndereCard(w);
 
   document.getElementById('mywords-card').innerHTML = html;
 }
