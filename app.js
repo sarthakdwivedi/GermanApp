@@ -44,19 +44,22 @@ const THEME_LABELS = {
 // ── Data loading ──────────────────────────────────────────────
 async function loadData() {
   try {
-    const [ andereRes, ...verbResults,...nomenResults] = await Promise.all([
-      
+    const [andereRes, ...allFileResults] = await Promise.all([
       fetch('data/andere.json'),
       ...VERB_FILES.map(f => fetch(`data/verben/${f}.json`)),
       ...NOMEN_FILES.map(f => fetch(`data/nomen/${f}.json`))
     ]);
 
-    const verbenArrays = await Promise.all(verbResults.map(r => r.json()));
-    DB.verben = verbenArrays.flat();
-    DB.andere = await andereRes.json();
+    // Slice by known lengths
+    const verbResults = allFileResults.slice(0, VERB_FILES.length);
+    const nomenResults = allFileResults.slice(VERB_FILES.length);
 
+    const verbenArrays = await Promise.all(verbResults.map(r => r.json()));
     const nomenArrays = await Promise.all(nomenResults.map(r => r.json()));
+
+    DB.verben = verbenArrays.flat();
     DB.nomen = nomenArrays.flat();
+    DB.andere = await andereRes.json();
 
     initApp();
   } catch (err) {
