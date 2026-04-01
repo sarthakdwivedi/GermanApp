@@ -44,9 +44,10 @@ const THEME_LABELS = {
 // ── Data loading ──────────────────────────────────────────────
 async function loadData() {
   try {
-    const [...verbResults, andereRes, ...nomenResults] = await Promise.all([
-      ...VERB_FILES.map(f => fetch(`data/verben/${f}.json`)),
+    const [ andereRes, ...verbResults,...nomenResults] = await Promise.all([
+      
       fetch('data/andere.json'),
+      ...VERB_FILES.map(f => fetch(`data/verben/${f}.json`)),
       ...NOMEN_FILES.map(f => fetch(`data/nomen/${f}.json`))
     ]);
 
