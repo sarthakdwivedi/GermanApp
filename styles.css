@@ -873,8 +873,15 @@ body {
   }
 }
 
-/* ── Desktop 1024px+ ── */
+/* REPLACE your entire @media (min-width: 1024px) block with this: */
+
 @media (min-width: 1024px) {
+  body {
+    max-width: 100%;
+    display: block;
+    padding-bottom: 0;
+  }
+
   #app {
     display: grid;
     grid-template-rows: auto 1fr;
@@ -883,17 +890,6 @@ body {
       "header  header"
       "sidebar main";
     min-height: 100vh;
-  }
-  body {
-    max-width: 100%;
-    display: block;
-    grid-template-rows: auto 1fr;
-    grid-template-columns: 300px 1fr;
-    grid-template-areas:
-      "header  header"
-      "sidebar main";
-    min-height: 100vh;
-    padding-bottom: 0;
   }
 
   .header {
@@ -908,17 +904,16 @@ body {
   .sidebar {
     grid-area: sidebar;
     position: sticky;
-    top: 61px;             /* header height */
+    top: 61px;
     height: calc(100vh - 61px);
     overflow-y: auto;
+    overflow-x: hidden;
     border-right: 1px solid var(--border);
     padding: 20px 0 40px;
     scrollbar-width: none;
-    min-width: 0; overflow-x: hidden; 
   }
   .sidebar::-webkit-scrollbar { display: none; }
 
-  /* Move search bar padding inside sidebar */
   .sidebar .search-bar-wrap { margin: 0 20px 4px; }
   .sidebar .type-tabs        { padding: 12px 20px 0; }
   .sidebar .level-filter     { padding: 10px 20px 0; }
@@ -929,18 +924,18 @@ body {
     grid-area: main;
     min-width: 0;
     overflow-y: auto;
+    height: calc(100vh - 61px);
     padding: 24px 40px 60px;
-    /*max-width: 760px;*/
+    position: sticky;
+    top: 61px;
   }
 
-  /* Wider card on desktop */
+  .card-container { padding: 0; }
   .word-card      { border-radius: 24px; }
   .card-header    { padding: 28px 28px 22px; }
   .section        { padding: 20px 28px; }
   .word-title     { font-size: 36px; }
-  .card-container { padding: 0; }
 
-  /* All-tenses 2×2 conjugation grid */
   .conj-all-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -960,7 +955,6 @@ body {
     margin-bottom: 10px;
   }
 
-  /* Overlays become centred modals on desktop */
   .mywords-panel,
   .quiz-panel {
     top: 50%;
@@ -976,13 +970,10 @@ body {
     flex-direction: column;
   }
   .mywords-overlay.open .mywords-panel,
-  .quiz-overlay.open    .quiz-panel {
+  .quiz-overlay.open .quiz-panel {
     transform: translate(-50%, -50%);
   }
-  .mywords-panel { transition: transform 0.28s cubic-bezier(0.4,0,0.2,1), opacity 0.25s; }
-  .quiz-panel    { transition: transform 0.28s cubic-bezier(0.4,0,0.2,1), opacity 0.25s; }
 
-  /* Scrollable body inside modal panels */
   #mywords-list,
   #mywords-card,
   #quiz-body {
@@ -990,6 +981,5 @@ body {
     flex: 1;
   }
 
-  /* Search results inside main area on desktop */
   #search-results { padding: 0; }
 }
