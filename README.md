@@ -2,7 +2,7 @@
 
 A mobile-optimised German vocabulary app hosted on GitHub Pages.
 
-**Live app:** `https://YOUR-USERNAME.github.io/wortschatz`
+
 
 ---
 
@@ -173,16 +173,7 @@ Remember: valid JSON only — no trailing commas after the last item.
 
 ---
 
-## GitHub Pages setup
 
-1. Create a new repo named `wortschatz`
-2. Push this entire folder to the `main` branch
-3. Go to **Settings → Pages → Source → main branch → / (root)**
-4. Save — your app is live at `https://YOUR-USERNAME.github.io/wortschatz`
-
-Updates go live ~30 seconds after you push or edit a file on GitHub.
-
----
 
 ## Adding a new Nomen theme
 
