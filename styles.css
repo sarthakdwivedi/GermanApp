@@ -935,6 +935,27 @@ body {
 .wlp-fav:hover  { color: var(--die); }
 .wlp-fav.active { color: var(--die); }
 
+
+/* ── Principal parts (verb memory line) ── */
+.principal-parts {
+  font-size: 12px;
+  color: var(--text3);
+  font-family: 'DM Sans', sans-serif;
+  margin-top: 6px;
+  letter-spacing: 0.1px;
+}
+.principal-parts span { color: var(--verb-strong); }
+
+/* ── Word list panel principal parts ── */
+.wlp-parts {
+  font-size: 10px;
+  color: var(--text3);
+  margin-top: 2px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-style: normal;
+}
 /* ══════════════════════════════════════════════
    RESPONSIVE
 ══════════════════════════════════════════════ */

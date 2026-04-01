@@ -401,7 +401,7 @@ function renderCurrentWord(slideDir) {
   cardArea.innerHTML = html + cardHtml;
 
   // Nav bar
-  
+
   navBar.style.display = isLargeScreen() ? 'none' : 'flex';
   updateNavBar(pool, currentIndex);
   document.getElementById('nav-prev').disabled = currentIndex === 0;
@@ -444,7 +444,7 @@ function renderWordListPanel() {
     return;
   }
 
-  const pool   = getPool();
+  const pool = getPool();
   const scores = loadScores();  // from quiz.js — safe if not loaded yet
   panel.style.display = 'block';
 
@@ -454,9 +454,9 @@ function renderWordListPanel() {
   }
 
   panel.innerHTML = pool.map((w, i) => {
-    const [lbg, lc]  = levelStyle(w.level);
-    const isActive   = i === currentIndex;
-    const article    = w.article ? `<span class="wlp-article" style="color:${genderStyle(w.article)[1]}">${w.article} </span>` : '';
+    const [lbg, lc] = levelStyle(w.level);
+    const isActive = i === currentIndex;
+    const article = w.article ? `<span class="wlp-article" style="color:${genderStyle(w.article)[1]}">${w.article} </span>` : '';
 
     // Quiz score dot
     const s = scores?.[w.id];
@@ -465,24 +465,25 @@ function renderWordListPanel() {
       const total = s.correct + s.wrong;
       const ratio = total ? s.correct / total : 0;
       dotClass = ratio >= 0.75 ? 'wlp-dot-known'
-               : ratio >= 0.4  ? 'wlp-dot-weak'
-               : 'wlp-dot-unknown';
+        : ratio >= 0.4 ? 'wlp-dot-weak'
+          : 'wlp-dot-unknown';
     }
 
     // Fav
     const isFav = favs.has(w.id);
 
-    return `<div class="wlp-row${isActive?' active':''}" onclick="selectFromList(${i})">
+    return `<div class="wlp-row${isActive ? ' active' : ''}" onclick="selectFromList(${i})">
       <div class="wlp-dot ${dotClass}"></div>
       <div class="wlp-content">
         <div class="wlp-word">${article}${w.german}</div>
         <div class="wlp-meaning">${w.english}</div>
+${w.type === 'verb' ? `<div class="wlp-parts">${principalParts(w)}</div>` : ''}
       </div>
       <div class="wlp-right">
         <span class="wlp-level" style="background:${lbg};color:${lc}">${w.level}</span>
-        <button class="wlp-fav${isFav?' active':''}"
+        <button class="wlp-fav${isFav ? ' active' : ''}"
           onclick="event.stopPropagation();toggleFavFromList('${w.id}',this)">
-          ${isFav?'♥':'♡'}
+          ${isFav ? '♥' : '♡'}
         </button>
       </div>
     </div>`;
@@ -491,7 +492,7 @@ function renderWordListPanel() {
   // Scroll active row into view
   setTimeout(() => {
     const active = panel.querySelector('.wlp-row.active');
-    active?.scrollIntoView({ block:'nearest', behavior:'smooth' });
+    active?.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
   }, 50);
 }
 
@@ -514,7 +515,7 @@ function toggleFavFromList(id, btn) {
 
 function loadScores() {
   try { return JSON.parse(localStorage.getItem('wortschatz_scores') || '{}'); }
-  catch(e) { return {}; }
+  catch (e) { return {}; }
 }
 
 // ── Swipe support ─────────────────────────────────────────────
@@ -567,6 +568,13 @@ function pluralStyle(pp) {
   return ['var(--pl-same-bg)', 'var(--pl-same)'];
 }
 
+function principalParts(w) {
+  if (w.type !== 'verb') return '';
+  const prasens = w.conjugations?.prasens?.er || '';
+  const prateritum = w.conjugations?.prateritum?.er || '';
+  const perfekt = w.conjugations?.perfekt?.er || '';
+  return `${w.german} · ${prasens} · ${perfekt} · ${prateritum}`;
+}
 // ── Card builders ─────────────────────────────────────────────
 function buildVerbCard(w) {
   const [lbg, lc] = levelStyle(w.level);
@@ -679,6 +687,7 @@ function buildVerbCard(w) {
         <div>
           <div class="word-title">${w.german}</div>
           <div class="meaning">${w.english}</div>
+<div class="principal-parts">${principalParts(w)}</div>
         </div>
         <div class="badges">
           <span class="level-badge" style="background:${lbg};color:${lc}">${w.level}</span>
