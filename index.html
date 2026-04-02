@@ -6,7 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
   <title>Wortschatz</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230f0e11'/><text x='50' y='72' font-size='65' font-family='serif' font-weight='600' fill='%23b47fff' text-anchor='middle'>W</text></svg>">
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230f0e11'/><text x='50' y='72' font-size='65' font-family='serif' font-weight='600' fill='%23b47fff' text-anchor='middle'>W</text></svg>">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap"
@@ -32,6 +33,13 @@
       <div class="header-right">
         <button class="level-pill" id="level-pill" onclick="toggleLevelDropdown()">
           All <span class="level-pill-arrow">▾</span>
+        </button>
+
+        <button class="filter-icon-btn" id="filter-icon-btn" onclick="toggleFilterSheet()">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <path d="M2 4h12M4 8h8M6 12h4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+          </svg>
+          <span class="filter-active-dot" id="filter-active-dot" style="display:none"></span>
         </button>
         <button class="fav-header-btn" id="fav-header-btn" onclick="openMyWords()">
           ♡ <span id="fav-count"></span>
@@ -62,22 +70,20 @@
       <div class="search-bar-wrap">
         <div class="search-icon">
           <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-            <circle cx="6.5" cy="6.5" r="5" stroke="currentColor" stroke-width="1.5"/>
-            <path d="M10.5 10.5L14 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            <circle cx="6.5" cy="6.5" r="5" stroke="currentColor" stroke-width="1.5" />
+            <path d="M10.5 10.5L14 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
           </svg>
         </div>
-        <input id="search-input" class="search-input" type="search"
-               placeholder="Search German or English…"
-               oninput="onSearch(this.value)"
-               autocomplete="off" autocorrect="off" spellcheck="false">
+        <input id="search-input" class="search-input" type="search" placeholder="Search German or English…"
+          oninput="onSearch(this.value)" autocomplete="off" autocorrect="off" spellcheck="false">
         <button id="search-clear" class="search-clear" onclick="clearSearch()" style="display:none">✕</button>
       </div>
 
       <!-- Word type tabs -->
       <div class="type-tabs" id="type-tabs">
         <button class="tab verb active" onclick="switchType('verb')">Verben</button>
-        <button class="tab nomen"       onclick="switchType('nomen')">Nomen</button>
-        <button class="tab andere"      onclick="switchType('andere')">Andere</button>
+        <button class="tab nomen" onclick="switchType('nomen')">Nomen</button>
+        <button class="tab andere" onclick="switchType('andere')">Andere</button>
       </div>
 
 
@@ -105,12 +111,13 @@
         <div class="ctx-pills" id="theme-pills"></div>
       </div>
 
-<div id="word-list-panel" style="display:none"></div>
+      <div id="word-list-panel" style="display:none"></div>
       <!-- Nav bar -->
       <div class="nav-bar" id="nav-bar" style="display:none">
         <button class="nav-arrow" id="nav-prev" onclick="navigateWord(-1)">
           <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
-            <path d="M11 4L6 9L11 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M11 4L6 9L11 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+              stroke-linejoin="round" />
           </svg>
         </button>
         <div class="nav-progress-wrap">
@@ -121,63 +128,97 @@
         </div>
         <button class="nav-arrow" id="nav-next" onclick="navigateWord(1)">
           <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
-            <path d="M7 4L12 9L7 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M7 4L12 9L7 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+              stroke-linejoin="round" />
           </svg>
         </button>
       </div>
     </div><!-- end .sidebar -->
 
-    <div class="main-area">
-      <!-- Search results -->
-      <div id="search-results" style="display:none"></div>
-      <!-- Word card -->
-      <div class="card-container">
-        <div id="card-area"></div>
-      </div>
-    </div><!-- end .main-area -->
+    <!-- ADD between </div><!-- end .sidebar --> and <div class="main-area"> -->
 
+      <!-- Filter sheet backdrop (mobile only) -->
+      <div class="filter-backdrop" id="filter-backdrop" onclick="closeFilterSheet()"></div>
 
-    <!-- Level picker overlay (first-load) -->
-    <div class="level-picker-overlay" id="level-picker-overlay" style="display:none">
-      <div class="level-picker">
-        <div class="level-picker-title">What is your level?</div>
-        <div class="level-picker-sub">You can change this anytime</div>
-        <div class="level-picker-grid">
-          <button class="lpg-btn A1" onclick="pickInitialLevel('A1')">A1<span>Beginner</span></button>
-          <button class="lpg-btn A2" onclick="pickInitialLevel('A2')">A2<span>Elementary</span></button>
-          <button class="lpg-btn B1" onclick="pickInitialLevel('B1')">B1<span>Intermediate</span></button>
-          <button class="lpg-btn B2" onclick="pickInitialLevel('B2')">B2<span>Upper intermediate</span></button>
-          <button class="lpg-btn C1" onclick="pickInitialLevel('C1')">C1<span>Advanced</span></button>
-          <button class="lpg-btn C2" onclick="pickInitialLevel('C2')">C2<span>Proficient</span></button>
+      <!-- Filter sheet -->
+      <div class="filter-sheet" id="filter-sheet">
+        <div class="filter-sheet-handle"></div>
+        <div class="filter-sheet-title">Filters</div>
+
+        <div class="filter-row">
+          <span class="filter-row-label">Pattern / Theme</span>
+          <div class="ctx-dropdown-wrap" style="flex:1;max-width:200px">
+            <button class="ctx-dropdown-btn" id="sheet-ctx-btn" onclick="toggleCtxDropdown('sheet-ctx')">
+              All <span>▾</span>
+            </button>
+            <div class="ctx-dropdown-menu" id="sheet-ctx-dropdown-menu" style="display:none"></div>
+          </div>
         </div>
-        <button class="lpg-all" onclick="pickInitialLevel('all')">Show all levels</button>
+
+        <div class="filter-row">
+          <span class="filter-row-label">Status</span>
+          <div class="filter-status-pills">
+            <button class="fsp-btn active" data-status="all" onclick="pickStatus('all',this)">All</button>
+            <button class="fsp-btn" data-status="unseen" onclick="pickStatus('unseen',this)">Unseen</button>
+            <button class="fsp-btn" data-status="known" onclick="pickStatus('known',this)">Known</button>
+            <button class="fsp-btn" data-status="unknown" onclick="pickStatus('unknown',this)">Unknown</button>
+          </div>
+        </div>
+
+        <button class="filter-reset-btn" onclick="resetFilters()">Reset all filters</button>
+      </div>
+
+      <div class="main-area">
+        <!-- Search results -->
+        <div id="search-results" style="display:none"></div>
+        <!-- Word card -->
+        <div class="card-container">
+          <div id="card-area"></div>
+        </div>
+      </div><!-- end .main-area -->
+
+
+      <!-- Level picker overlay (first-load) -->
+      <div class="level-picker-overlay" id="level-picker-overlay" style="display:none">
+        <div class="level-picker">
+          <div class="level-picker-title">What is your level?</div>
+          <div class="level-picker-sub">You can change this anytime</div>
+          <div class="level-picker-grid">
+            <button class="lpg-btn A1" onclick="pickInitialLevel('A1')">A1<span>Beginner</span></button>
+            <button class="lpg-btn A2" onclick="pickInitialLevel('A2')">A2<span>Elementary</span></button>
+            <button class="lpg-btn B1" onclick="pickInitialLevel('B1')">B1<span>Intermediate</span></button>
+            <button class="lpg-btn B2" onclick="pickInitialLevel('B2')">B2<span>Upper intermediate</span></button>
+            <button class="lpg-btn C1" onclick="pickInitialLevel('C1')">C1<span>Advanced</span></button>
+            <button class="lpg-btn C2" onclick="pickInitialLevel('C2')">C2<span>Proficient</span></button>
+          </div>
+          <button class="lpg-all" onclick="pickInitialLevel('all')">Show all levels</button>
+        </div>
+      </div>
+
+      <div class="mywords-overlay" id="mywords-overlay">
+        <div class="mywords-panel" id="mywords-panel">
+          <div class="mywords-header">
+            <div class="mywords-title">My Words <span id="mywords-count"></span></div>
+            <button class="mywords-close" onclick="closeMyWords()">✕</button>
+          </div>
+          <div id="mywords-list"></div>
+          <div id="mywords-card"></div>
+        </div>
+      </div>
+
+      <div class="quiz-overlay" id="quiz-overlay">
+        <div class="quiz-panel">
+          <div class="quiz-panel-header">
+            <div class="quiz-panel-title">Quiz</div>
+            <button class="quiz-close" onclick="closeQuiz()">✕</button>
+          </div>
+          <div id="quiz-body"></div>
+        </div>
       </div>
     </div>
 
-    <div class="mywords-overlay" id="mywords-overlay">
-      <div class="mywords-panel" id="mywords-panel">
-        <div class="mywords-header">
-          <div class="mywords-title">My Words <span id="mywords-count"></span></div>
-          <button class="mywords-close" onclick="closeMyWords()">✕</button>
-        </div>
-        <div id="mywords-list"></div>
-        <div id="mywords-card"></div>
-      </div>
-    </div>
-
-    <div class="quiz-overlay" id="quiz-overlay">
-      <div class="quiz-panel">
-        <div class="quiz-panel-header">
-          <div class="quiz-panel-title">Quiz</div>
-          <button class="quiz-close" onclick="closeQuiz()">✕</button>
-        </div>
-        <div id="quiz-body"></div>
-      </div>
-    </div>
-  </div>
-
-  <script src="app.js"></script>
-  <script src="quiz.js"></script>
+    <script src="app.js"></script>
+    <script src="quiz.js"></script>
 </body>
 
 </html>

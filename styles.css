@@ -1886,3 +1886,175 @@ body {
   }
 }
 
+/* ══════════════════════════════════════════════
+   FILTER ICON BUTTON
+══════════════════════════════════════════════ */
+.filter-icon-btn {
+  position: relative;
+  background: var(--bg2);
+  border: 1px solid var(--border2);
+  border-radius: 50%;
+  width: 34px; height: 34px;
+  display: flex; align-items: center; justify-content: center;
+  cursor: pointer;
+  color: var(--text2);
+  transition: all 0.2s;
+  flex-shrink: 0;
+}
+.filter-icon-btn:hover { border-color: var(--verb-strong); color: var(--verb-strong); }
+.filter-active-dot {
+  position: absolute;
+  top: 3px; right: 3px;
+  width: 7px; height: 7px;
+  border-radius: 50%;
+  background: var(--die);
+  border: 1.5px solid var(--bg);
+  pointer-events: none;
+}
+
+/* ══════════════════════════════════════════════
+   FILTER SHEET — MOBILE BOTTOM SHEET
+══════════════════════════════════════════════ */
+.filter-backdrop {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  z-index: 150;
+}
+.filter-backdrop.open { display: block; }
+
+.filter-sheet {
+  position: fixed;
+  bottom: 0; left: 0; right: 0;
+  background: var(--bg2);
+  border-radius: 20px 20px 0 0;
+  border-top: 1px solid var(--border2);
+  padding: 12px 20px 40px;
+  z-index: 160;
+  transform: translateY(100%);
+  transition: transform 0.28s cubic-bezier(0.4,0,0.2,1);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.filter-sheet.open { transform: translateY(0); }
+.filter-sheet-handle {
+  width: 36px; height: 4px;
+  background: var(--border2);
+  border-radius: 2px;
+  margin: 0 auto 4px;
+  flex-shrink: 0;
+}
+.filter-sheet-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 18px; font-weight: 600;
+}
+.filter-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+.filter-row-label {
+  font-size: 13px;
+  color: var(--text2);
+  flex-shrink: 0;
+}
+.filter-status-pills { display: flex; gap: 6px; flex-wrap: wrap; }
+.fsp-btn {
+  padding: 5px 12px;
+  border-radius: 12px;
+  font-size: 12px; font-weight: 500;
+  cursor: pointer;
+  border: 1px solid var(--border2);
+  background: transparent;
+  color: var(--text3);
+  font-family: 'DM Sans', sans-serif;
+  transition: all 0.2s;
+}
+.fsp-btn[data-status="all"].active     { background: var(--bg3); color: var(--text); border-color: var(--border2); }
+.fsp-btn[data-status="known"].active   { background: rgba(105,219,124,0.15); color: var(--a1); border-color: var(--a1); }
+.fsp-btn[data-status="unknown"].active { background: rgba(255,107,107,0.15); color: var(--c2); border-color: var(--c2); }
+.fsp-btn[data-status="unseen"].active  { background: var(--bg3); color: var(--text2); border-color: var(--border2); }
+
+.filter-reset-btn {
+  background: none; border: none;
+  color: var(--text3); font-size: 12px;
+  cursor: pointer; font-family: 'DM Sans', sans-serif;
+  text-decoration: underline; padding: 0; text-align: left;
+}
+
+/* ══════════════════════════════════════════════
+   KNOWN / UNKNOWN BUTTONS ON CARD
+══════════════════════════════════════════════ */
+.known-btns {
+  display: flex;
+  gap: 8px;
+  padding: 0 22px 16px;
+}
+.known-btn {
+  flex: 1;
+  padding: 8px 12px;
+  border-radius: 12px;
+  font-size: 12px; font-weight: 500;
+  font-family: 'DM Sans', sans-serif;
+  cursor: pointer;
+  border: 1px solid var(--border2);
+  background: var(--bg3);
+  color: var(--text2);
+  transition: all 0.2s;
+}
+.known-btn-unknown:hover,
+.known-btn-unknown.active {
+  background: rgba(255,107,107,0.15);
+  color: var(--c2); border-color: var(--c2);
+}
+.known-btn-known:hover,
+.known-btn-known.active {
+  background: rgba(105,219,124,0.15);
+  color: var(--a1); border-color: var(--a1);
+}
+
+/* Clickable dot in word list */
+.wlp-dot { cursor: pointer; transition: transform 0.15s; }
+.wlp-dot:hover { transform: scale(1.5); }
+
+/* ══════════════════════════════════════════════
+   DESKTOP — INLINE ACCORDION (in sidebar)
+══════════════════════════════════════════════ */
+@media (min-width: 768px) {
+  .filter-backdrop { display: none !important; }
+
+  .filter-sheet {
+    position: static;
+    transform: none !important;
+    border-radius: 0;
+    border-top: none;
+    border-bottom: 1px solid var(--border);
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.28s ease, padding 0.28s ease;
+    background: var(--bg);
+    z-index: auto;
+  }
+  .filter-sheet.open {
+    max-height: 220px;
+    padding: 14px 20px;
+  }
+  .filter-sheet-handle,
+  .filter-sheet-title { display: none; }
+
+  .filter-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+  .filter-row .ctx-dropdown-wrap {
+    width: 100%;
+    max-width: 100%;
+  }
+  .filter-status-pills { justify-content: flex-start; }
+  .known-btns { padding: 0 28px 16px; }
+}

@@ -21,6 +21,7 @@ let currentPattern = 'all';
 let currentLevelMode = 'cumulative'; // 'cumulative' | 'exact'
 let currentVerbTheme = 'all';
 let currentAndereCategory = 'all';
+let currentStatusFilter = 'all';
 let currentIndex = 0;
 let searchQuery = '';
 let searchPool = null;   // non-null when search is active
@@ -49,6 +50,7 @@ function saveState() {
   localStorage.setItem('wortschatz_index', currentIndex);
   localStorage.setItem('wortschatz_andere_cat', currentAndereCategory);
   localStorage.setItem('wortschatz_verb_theme', currentVerbTheme);
+  localStorage.setItem('wortschatz_status_filter', currentStatusFilter);
 
 }
 
@@ -64,6 +66,7 @@ function loadState() {
     currentIndex = parseInt(localStorage.getItem('wortschatz_index')) || 0;
     currentAndereCategory = localStorage.getItem('wortschatz_andere_cat') || 'all';
     currentVerbTheme = localStorage.getItem('wortschatz_verb_theme') || 'all';
+    currentStatusFilter = localStorage.getItem('wortschatz_status_filter') || 'all';
   } catch (e) { console.warn('Could not load state', e); }
 }
 
@@ -326,8 +329,11 @@ function getPool() {
     pool = pool.filter(w => w.verbFile === currentPattern);
   if (currentType === 'andere' && currentAndereCategory !== 'all')
     pool = pool.filter(w => w.andereFile === currentAndereCategory);
+  if (currentStatusFilter !== 'all') {
+    pool = pool.filter(w => getWordStatus(w.id) === currentStatusFilter);
+  }
 
-return pool;
+  return pool;
 }
 
 // ── Search ────────────────────────────────────────────────────
@@ -716,21 +722,17 @@ function renderWordListPanel() {
     const article = w.article ? `<span class="wlp-article" style="color:${genderStyle(w.article)[1]}">${w.article} </span>` : '';
 
     // Quiz score dot
-    const s = scores?.[w.id];
-    let dotClass = 'wlp-dot-unseen';
-    if (s) {
-      const total = s.correct + s.wrong;
-      const ratio = total ? s.correct / total : 0;
-      dotClass = ratio >= 0.75 ? 'wlp-dot-known'
-        : ratio >= 0.4 ? 'wlp-dot-weak'
-          : 'wlp-dot-unknown';
-    }
+    const wordStatus = getWordStatus(w.id);
+    const dotClass = wordStatus === 'known' ? 'wlp-dot-known'
+      : wordStatus === 'unknown' ? 'wlp-dot-unknown'
+        : 'wlp-dot-unseen';
 
     // Fav
     const isFav = favs.has(w.id);
 
     return `<div class="wlp-row${isActive ? ' active' : ''}" onclick="selectFromList(${i})">
-      <div class="wlp-dot ${dotClass}"></div>
+      <div class="wlp-dot ${dotClass}"
+  onclick="event.stopPropagation();cycleStatusFromList('${w.id}',this)"></div>
       <div class="wlp-content">
         <div class="wlp-word">${article}${w.german}</div>
         <div class="wlp-meaning">${w.english}</div>
@@ -770,11 +772,45 @@ function toggleFavFromList(id, btn) {
   updateFavButton();
 }
 
+function cycleStatusFromList(id, dotEl) {
+  const next = cycleStatus(id);
+  dotEl.className = `wlp-dot wlp-dot-${next}`;
+  updateFilterActiveDot();
+  if (currentStatusFilter !== 'all') {
+    currentIndex = 0;
+    renderCurrentWord();
+    renderWordListPanel();
+  }
+}
+
 function loadScores() {
   try { return JSON.parse(localStorage.getItem('wortschatz_scores') || '{}'); }
   catch (e) { return {}; }
 }
-
+// ── Known / Unknown status ────────────────────────────────────
+function loadKnownStatus() {
+  try { return JSON.parse(localStorage.getItem('wortschatz_known') || '{}'); }
+  catch (e) { return {}; }
+}
+function saveKnownStatus(data) {
+  localStorage.setItem('wortschatz_known', JSON.stringify(data));
+}
+function getWordStatus(id) {
+  return loadKnownStatus()[id] || 'unseen';
+}
+function setWordStatus(id, status) {
+  const data = loadKnownStatus();
+  data[id] = status;
+  saveKnownStatus(data);
+}
+function cycleStatus(id) {
+  const current = getWordStatus(id);
+  const next = current === 'unseen' ? 'known'
+    : current === 'known' ? 'unknown'
+      : 'unseen';
+  setWordStatus(id, next);
+  return next;
+}
 // ── Swipe support ─────────────────────────────────────────────
 function setupSwipe() {
   const area = document.getElementById('card-area');
@@ -973,6 +1009,7 @@ function buildVerbCard(w) {
         </span>
       </div>
     </div>
+    ${buildKnownButtons(w.id)}
     <div class="section">
       <div class="section-label">Konjugation</div>
       ${conjSection}
@@ -1053,6 +1090,7 @@ function buildNomenCard(w) {
         </span>
       </div>
     </div>
+    ${buildKnownButtons(w.id)}
     <div class="section">
       <div class="section-label">Plural</div>
       <div class="plural-display">
@@ -1141,6 +1179,7 @@ function buildDefaultAndereCard(w) {
         </span>
       </div>
     </div>
+    ${buildKnownButtons(w.id)}
     <div class="section">
       <div class="section-label">Grammatikregel</div>
       <div class="grammar-rule">
@@ -1263,6 +1302,7 @@ function buildPrepositionCard(w) {
         </span>
       </div>
     </div>
+    ${buildKnownButtons(w.id)}
     <div class="section">
       <div class="section-label">Kasus</div>
       <div class="prep-case-row">${caseBadges}</div>
@@ -1378,6 +1418,7 @@ function buildAdjectiveCard(w) {
         </span>
       </div>
     </div>
+    ${buildKnownButtons(w.id)}
     <div class="section">
       <div class="section-label">Steigerung</div>
       ${steigerung}
@@ -1412,7 +1453,33 @@ function buildAdjectiveCard(w) {
           </div>`).join('')}
       </div>
     </div>
+    
   </div>`;
+}
+
+function buildKnownButtons(id) {
+  const status = getWordStatus(id);
+  return `<div class="known-btns">
+    <button class="known-btn known-btn-unknown${status==='unknown'?' active':''}"
+      onclick="markFromCard('${id}','unknown',this)">✗ Still learning</button>
+    <button class="known-btn known-btn-known${status==='known'?' active':''}"
+      onclick="markFromCard('${id}','known',this)">✓ Known</button>
+  </div>`;
+}
+
+function markFromCard(id, status, btn) {
+  const current = getWordStatus(id);
+  const next    = current === status ? 'unseen' : status;
+  setWordStatus(id, next);
+  const wrap = btn.closest('.known-btns');
+  wrap.querySelectorAll('.known-btn').forEach(b => b.classList.remove('active'));
+  if (next !== 'unseen') btn.classList.add('active');
+  // Sync dot in word list
+  const pool = getPool();
+  const idx  = pool.findIndex(w => w.id === id);
+  const dots = document.querySelectorAll('.wlp-dot');
+  if (dots[idx]) dots[idx].className = `wlp-dot wlp-dot-${next}`;
+  updateFilterActiveDot();
 }
 // ── Interactions ──────────────────────────────────────────────
 function switchTense(btn, wid, tense) {
@@ -1530,6 +1597,81 @@ function closeMyWordsCard() {
   document.getElementById('mywords-card').innerHTML = '';
   document.getElementById('mywords-list').style.display = 'block';
 }
-
+// ── Filter sheet ──────────────────────────────────────────────
+function toggleFilterSheet() {
+  const sheet = document.getElementById('filter-sheet');
+  sheet.classList.contains('open') ? closeFilterSheet() : openFilterSheet();
+}
+function openFilterSheet() {
+  buildFilterSheetCtx();
+  syncStatusPills();
+  document.getElementById('filter-sheet').classList.add('open');
+  document.getElementById('filter-backdrop').classList.add('open');
+}
+function closeFilterSheet() {
+  document.getElementById('filter-sheet').classList.remove('open');
+  document.getElementById('filter-backdrop').classList.remove('open');
+}
+function buildFilterSheetCtx() {
+  const isVerb   = currentType === 'verb';
+  const isNomen  = currentType === 'nomen';
+  let items = [{val:'all', label:'All'}];
+  if (isVerb) {
+    items = [{val:'all',label:'All patterns'},
+      ...VERB_FILES.map(f => ({val:f, label:PATTERN_LABELS[f]||f}))];
+  } else if (isNomen) {
+    const themes = [...new Set(DB.nomen.map(w=>w.theme).filter(Boolean))];
+    items = [{val:'all',label:'All themes'},
+      ...themes.map(t => ({val:t, label:THEME_LABELS[t]||t}))];
+  } else {
+    items = [{val:'all',label:'All'},
+      ...ANDERE_FILES.map(f => ({val:f, label:ANDERE_CATEGORY_LABELS[f]||f}))];
+  }
+  const currentVal = isVerb ? currentPattern
+                   : isNomen ? currentTheme : currentAndereCategory;
+  const lbl = items.find(i=>i.val===currentVal)?.label || 'All';
+  document.getElementById('sheet-ctx-btn').innerHTML = `${lbl} <span>▾</span>`;
+  document.getElementById('sheet-ctx-dropdown-menu').innerHTML = items.map(item =>
+    `<button class="ctx-menu-item${currentVal===item.val?' active':''}"
+      onclick="pickSheetCtx('${item.val}')">${item.label}</button>`
+  ).join('');
+}
+function syncStatusPills() {
+  document.querySelectorAll('.fsp-btn').forEach(b => {
+    b.classList.toggle('active', b.dataset.status === currentStatusFilter);
+  });
+}
+function pickSheetCtx(val) {
+  document.getElementById('sheet-ctx-dropdown-menu').style.display = 'none';
+  if (currentType === 'verb')       currentPattern = val;
+  else if (currentType === 'nomen') currentTheme = val;
+  else                              currentAndereCategory = val;
+  currentIndex = 0;
+  buildPatternFilter(); buildThemeFilter(); buildFilterSheetCtx();
+  renderCurrentWord(); renderWordListPanel();
+  updateFilterActiveDot(); saveState();
+}
+function pickStatus(status, btn) {
+  currentStatusFilter = status;
+  document.querySelectorAll('.fsp-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  currentIndex = 0;
+  renderCurrentWord(); renderWordListPanel();
+  updateFilterActiveDot(); saveState();
+}
+function resetFilters() {
+  currentPattern = 'all'; currentTheme = 'all';
+  currentAndereCategory = 'all'; currentStatusFilter = 'all';
+  currentIndex = 0;
+  syncStatusPills();
+  buildPatternFilter(); buildThemeFilter(); buildFilterSheetCtx();
+  renderCurrentWord(); renderWordListPanel();
+  updateFilterActiveDot(); closeFilterSheet(); saveState();
+}
+function updateFilterActiveDot() {
+  const active = currentPattern !== 'all' || currentTheme !== 'all' ||
+                 currentAndereCategory !== 'all' || currentStatusFilter !== 'all';
+  document.getElementById('filter-active-dot').style.display = active ? 'block' : 'none';
+}
 // ── Boot ──────────────────────────────────────────────────────
 loadData();
