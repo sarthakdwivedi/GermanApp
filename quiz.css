@@ -34,7 +34,7 @@
   pointer-events: all;
 }
 .quiz-panel {
-  position: absolute;
+  position: fixed;
   top: 0; right: 0; bottom: 0;
   width: min(430px, 100%);
   background: var(--bg);
