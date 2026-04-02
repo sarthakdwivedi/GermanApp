@@ -14,12 +14,28 @@
     "nounGroupRule": "Feminine nouns ending in -e → add -n for plural",
     "endingRule": "-e",
     "declension": {
-      "sg": { "nom": "die Schule","akk": "die Schule","dat": "der Schule","gen": "der Schule" },
-      "pl": { "nom": "die Schulen","akk": "die Schulen","dat": "den Schulen","gen": "der Schulen" }
+      "sg": {
+        "nom": "die Schule",
+        "akk": "die Schule",
+        "dat": "der Schule",
+        "gen": "der Schule"
+      },
+      "pl": {
+        "nom": "die Schulen",
+        "akk": "die Schulen",
+        "dat": "den Schulen",
+        "gen": "der Schulen"
+      }
     },
     "usage": [
-      { "de": "Ich gehe zur Schule.", "en": "I go to school." },
-      { "de": "Die Schule beginnt um acht Uhr.", "en": "School starts at eight o'clock." }
+      {
+        "de": "Ich gehe zur Schule.",
+        "en": "I go to school."
+      },
+      {
+        "de": "Die Schule beginnt um acht Uhr.",
+        "en": "School starts at eight o'clock."
+      }
     ]
   },
   {
@@ -37,12 +53,28 @@
     "nounGroupRule": "Ending -eit / -keit → always die",
     "endingRule": "-eit",
     "declension": {
-      "sg": { "nom": "die Arbeit","akk": "die Arbeit","dat": "der Arbeit","gen": "der Arbeit" },
-      "pl": { "nom": "die Arbeiten","akk": "die Arbeiten","dat": "den Arbeiten","gen": "der Arbeiten" }
+      "sg": {
+        "nom": "die Arbeit",
+        "akk": "die Arbeit",
+        "dat": "der Arbeit",
+        "gen": "der Arbeit"
+      },
+      "pl": {
+        "nom": "die Arbeiten",
+        "akk": "die Arbeiten",
+        "dat": "den Arbeiten",
+        "gen": "der Arbeiten"
+      }
     },
     "usage": [
-      { "de": "Die Arbeit macht mir Spaß.", "en": "I enjoy the work." },
-      { "de": "Er sucht eine neue Arbeit.", "en": "He is looking for a new job." }
+      {
+        "de": "Die Arbeit macht mir Spaß.",
+        "en": "I enjoy the work."
+      },
+      {
+        "de": "Er sucht eine neue Arbeit.",
+        "en": "He is looking for a new job."
+      }
     ]
   },
   {
@@ -60,12 +92,28 @@
     "nounGroupRule": "Many monosyllabic masculine nouns → + -e",
     "endingRule": null,
     "declension": {
-      "sg": { "nom": "der Beruf","akk": "den Beruf","dat": "dem Beruf","gen": "des Berufs" },
-      "pl": { "nom": "die Berufe","akk": "die Berufe","dat": "den Berufen","gen": "der Berufe" }
+      "sg": {
+        "nom": "der Beruf",
+        "akk": "den Beruf",
+        "dat": "dem Beruf",
+        "gen": "des Berufs"
+      },
+      "pl": {
+        "nom": "die Berufe",
+        "akk": "die Berufe",
+        "dat": "den Berufen",
+        "gen": "der Berufe"
+      }
     },
     "usage": [
-      { "de": "Was ist dein Beruf?", "en": "What is your profession?" },
-      { "de": "Sie hat einen interessanten Beruf.", "en": "She has an interesting profession." }
+      {
+        "de": "Was ist dein Beruf?",
+        "en": "What is your profession?"
+      },
+      {
+        "de": "Sie hat einen interessanten Beruf.",
+        "en": "She has an interesting profession."
+      }
     ]
   },
   {
@@ -83,12 +131,28 @@
     "nounGroupRule": "Loanwords and abbreviations → + -s",
     "endingRule": "-o (loanword)",
     "declension": {
-      "sg": { "nom": "das Büro","akk": "das Büro","dat": "dem Büro","gen": "des Büros" },
-      "pl": { "nom": "die Büros","akk": "die Büros","dat": "den Büros","gen": "der Büros" }
+      "sg": {
+        "nom": "das Büro",
+        "akk": "das Büro",
+        "dat": "dem Büro",
+        "gen": "des Büros"
+      },
+      "pl": {
+        "nom": "die Büros",
+        "akk": "die Büros",
+        "dat": "den Büros",
+        "gen": "der Büros"
+      }
     },
     "usage": [
-      { "de": "Ich arbeite im Büro.", "en": "I work in the office." },
-      { "de": "Das Büro öffnet um neun.", "en": "The office opens at nine." }
+      {
+        "de": "Ich arbeite im Büro.",
+        "en": "I work in the office."
+      },
+      {
+        "de": "Das Büro öffnet um neun.",
+        "en": "The office opens at nine."
+      }
     ]
   },
   {
@@ -106,12 +170,28 @@
     "nounGroupRule": "Ending -nis (neuter) → plural adds -se",
     "endingRule": "-nis",
     "declension": {
-      "sg": { "nom": "das Zeugnis","akk": "das Zeugnis","dat": "dem Zeugnis","gen": "des Zeugnisses" },
-      "pl": { "nom": "die Zeugnisse","akk": "die Zeugnisse","dat": "den Zeugnissen","gen": "der Zeugnisse" }
+      "sg": {
+        "nom": "das Zeugnis",
+        "akk": "das Zeugnis",
+        "dat": "dem Zeugnis",
+        "gen": "des Zeugnisses"
+      },
+      "pl": {
+        "nom": "die Zeugnisse",
+        "akk": "die Zeugnisse",
+        "dat": "den Zeugnissen",
+        "gen": "der Zeugnisse"
+      }
     },
     "usage": [
-      { "de": "Er hat ein sehr gutes Zeugnis bekommen.", "en": "He received a very good school report." },
-      { "de": "Für diese Stelle braucht man ein Arbeitszeugnis.", "en": "For this position you need a work reference." }
+      {
+        "de": "Er hat ein sehr gutes Zeugnis bekommen.",
+        "en": "He received a very good school report."
+      },
+      {
+        "de": "Für diese Stelle braucht man ein Arbeitszeugnis.",
+        "en": "For this position you need a work reference."
+      }
     ]
   },
   {
@@ -129,12 +209,28 @@
     "nounGroupRule": "Ending -keit → always die",
     "endingRule": "-keit",
     "declension": {
-      "sg": { "nom": "die Möglichkeit","akk": "die Möglichkeit","dat": "der Möglichkeit","gen": "der Möglichkeit" },
-      "pl": { "nom": "die Möglichkeiten","akk": "die Möglichkeiten","dat": "den Möglichkeiten","gen": "der Möglichkeiten" }
+      "sg": {
+        "nom": "die Möglichkeit",
+        "akk": "die Möglichkeit",
+        "dat": "der Möglichkeit",
+        "gen": "der Möglichkeit"
+      },
+      "pl": {
+        "nom": "die Möglichkeiten",
+        "akk": "die Möglichkeiten",
+        "dat": "den Möglichkeiten",
+        "gen": "der Möglichkeiten"
+      }
     },
     "usage": [
-      { "de": "Es gibt viele Möglichkeiten.", "en": "There are many possibilities." },
-      { "de": "Ich nutze diese Möglichkeit.", "en": "I am taking this opportunity." }
+      {
+        "de": "Es gibt viele Möglichkeiten.",
+        "en": "There are many possibilities."
+      },
+      {
+        "de": "Ich nutze diese Möglichkeit.",
+        "en": "I am taking this opportunity."
+      }
     ]
   },
   {
@@ -152,12 +248,28 @@
     "nounGroupRule": "Verbal nouns (infinitive used as noun) → das; plural unchanged",
     "endingRule": "-en (verbal noun)",
     "declension": {
-      "sg": { "nom": "das Abkommen","akk": "das Abkommen","dat": "dem Abkommen","gen": "des Abkommens" },
-      "pl": { "nom": "die Abkommen","akk": "die Abkommen","dat": "den Abkommen","gen": "der Abkommen" }
+      "sg": {
+        "nom": "das Abkommen",
+        "akk": "das Abkommen",
+        "dat": "dem Abkommen",
+        "gen": "des Abkommens"
+      },
+      "pl": {
+        "nom": "die Abkommen",
+        "akk": "die Abkommen",
+        "dat": "den Abkommen",
+        "gen": "der Abkommen"
+      }
     },
     "usage": [
-      { "de": "Die Länder schlossen ein Abkommen.", "en": "The countries concluded an agreement." },
-      { "de": "Das Abkommen trat in Kraft.", "en": "The treaty came into force." }
+      {
+        "de": "Die Länder schlossen ein Abkommen.",
+        "en": "The countries concluded an agreement."
+      },
+      {
+        "de": "Das Abkommen trat in Kraft.",
+        "en": "The treaty came into force."
+      }
     ]
   },
   {
@@ -175,11 +287,252 @@
     "nounGroupRule": "Ending -ung → always die",
     "endingRule": "-ung",
     "declension": {
-      "sg": { "nom": "die Beeinträchtigung","akk": "die Beeinträchtigung","dat": "der Beeinträchtigung","gen": "der Beeinträchtigung" },
-      "pl": { "nom": "die Beeinträchtigungen","akk": "die Beeinträchtigungen","dat": "den Beeinträchtigungen","gen": "der Beeinträchtigungen" }
+      "sg": {
+        "nom": "die Beeinträchtigung",
+        "akk": "die Beeinträchtigung",
+        "dat": "der Beeinträchtigung",
+        "gen": "der Beeinträchtigung"
+      },
+      "pl": {
+        "nom": "die Beeinträchtigungen",
+        "akk": "die Beeinträchtigungen",
+        "dat": "den Beeinträchtigungen",
+        "gen": "der Beeinträchtigungen"
+      }
     },
     "usage": [
-      { "de": "Es gab eine erhebliche Beeinträchtigung des Betriebs.", "en": "There was a considerable impairment of operations." }
+      {
+        "de": "Es gab eine erhebliche Beeinträchtigung des Betriebs.",
+        "en": "There was a considerable impairment of operations."
+      }
+    ]
+  },
+  {
+    "id": "der_kurs",
+    "level": "A1",
+    "type": "nomen",
+    "theme": "education",
+    "german": "Kurs",
+    "english": "course, class",
+    "article": "der",
+    "gender": "masculine",
+    "plural": "Kurse",
+    "pluralPattern": "-e",
+    "pluralPatternLabel": "+ -e",
+    "nounGroupRule": "Many masculine monosyllabic nouns form the plural with -e.",
+    "declension": {
+      "sg": {
+        "nom": "der Kurs",
+        "akk": "den Kurs",
+        "dat": "dem Kurs",
+        "gen": "des Kurses"
+      },
+      "pl": {
+        "nom": "die Kurse",
+        "akk": "die Kurse",
+        "dat": "den Kursen",
+        "gen": "der Kurse"
+      }
+    },
+    "usage": [
+      {
+        "de": "Sprechen Sie im Kurs.",
+        "en": "Speak in class."
+      },
+      {
+        "de": "Der Kurs beginnt um neun Uhr.",
+        "en": "The course starts at nine o'clock."
+      }
+    ]
+  },
+  {
+    "id": "die_lektion",
+    "level": "A1",
+    "type": "nomen",
+    "theme": "education",
+    "german": "Lektion",
+    "english": "lesson, unit",
+    "article": "die",
+    "gender": "feminine",
+    "plural": "Lektionen",
+    "pluralPattern": "-en",
+    "pluralPatternLabel": "+ -en",
+    "nounGroupRule": "Feminine nouns ending in -ion always form the plural with -en.",
+    "declension": {
+      "sg": {
+        "nom": "die Lektion",
+        "akk": "die Lektion",
+        "dat": "der Lektion",
+        "gen": "der Lektion"
+      },
+      "pl": {
+        "nom": "die Lektionen",
+        "akk": "die Lektionen",
+        "dat": "den Lektionen",
+        "gen": "der Lektionen"
+      }
+    },
+    "usage": [
+      {
+        "de": "Raten Sie Wörter aus der Lektion.",
+        "en": "Guess words from the lesson."
+      },
+      {
+        "de": "Lektion 1 heißt 'Guten Tag'.",
+        "en": "Lesson 1 is called 'Good day'."
+      }
+    ]
+  },
+  {
+    "id": "die_fremdsprache",
+    "level": "A1",
+    "type": "nomen",
+    "theme": "education",
+    "german": "Fremdsprache",
+    "english": "foreign language",
+    "article": "die",
+    "gender": "feminine",
+    "plural": "Fremdsprachen",
+    "pluralPattern": "-n",
+    "pluralPatternLabel": "+ -n",
+    "nounGroupRule": "Feminine nouns ending in -e add -n in the plural.",
+    "declension": {
+      "sg": {
+        "nom": "die Fremdsprache",
+        "akk": "die Fremdsprache",
+        "dat": "der Fremdsprache",
+        "gen": "der Fremdsprache"
+      },
+      "pl": {
+        "nom": "die Fremdsprachen",
+        "akk": "die Fremdsprachen",
+        "dat": "den Fremdsprachen",
+        "gen": "der Fremdsprachen"
+      }
+    },
+    "usage": [
+      {
+        "de": "Ich spreche eine Fremdsprache: Deutsch.",
+        "en": "I speak one foreign language: German."
+      },
+      {
+        "de": "Welche Fremdsprachen lernst du?",
+        "en": "Which foreign languages are you learning?"
+      }
+    ]
+  },
+  {
+    "id": "die_anmeldung",
+    "level": "A1",
+    "type": "nomen",
+    "theme": "education",
+    "german": "Anmeldung",
+    "english": "registration, enrollment",
+    "article": "die",
+    "gender": "feminine",
+    "plural": "Anmeldungen",
+    "pluralPattern": "-en",
+    "pluralPatternLabel": "+ -en",
+    "nounGroupRule": "Feminine nouns ending in -ung always form the plural with -en.",
+    "declension": {
+      "sg": {
+        "nom": "die Anmeldung",
+        "akk": "die Anmeldung",
+        "dat": "der Anmeldung",
+        "gen": "der Anmeldung"
+      },
+      "pl": {
+        "nom": "die Anmeldungen",
+        "akk": "die Anmeldungen",
+        "dat": "den Anmeldungen",
+        "gen": "der Anmeldungen"
+      }
+    },
+    "usage": [
+      {
+        "de": "Das ist die Anmeldung für den Kurs.",
+        "en": "This is the registration for the course."
+      },
+      {
+        "de": "Füllen Sie die Anmeldung aus.",
+        "en": "Fill out the registration form."
+      }
+    ]
+  },
+  {
+    "id": "das_formular",
+    "level": "A1",
+    "type": "nomen",
+    "theme": "education",
+    "german": "Formular",
+    "english": "form (document)",
+    "article": "das",
+    "gender": "neuter",
+    "plural": "Formulare",
+    "pluralPattern": "-e",
+    "pluralPatternLabel": "+ -e",
+    "nounGroupRule": "Many neuter nouns ending in -ar form the plural with -e.",
+    "declension": {
+      "sg": {
+        "nom": "das Formular",
+        "akk": "das Formular",
+        "dat": "dem Formular",
+        "gen": "des Formulars"
+      },
+      "pl": {
+        "nom": "die Formulare",
+        "akk": "die Formulare",
+        "dat": "den Formularen",
+        "gen": "der Formulare"
+      }
+    },
+    "usage": [
+      {
+        "de": "Ergänzen Sie das Formular.",
+        "en": "Fill in the form."
+      },
+      {
+        "de": "Das Formular ist auf Deutsch.",
+        "en": "The form is in German."
+      }
+    ]
+  },
+  {
+    "id": "die_firma",
+    "level": "A1",
+    "type": "nomen",
+    "theme": "education",
+    "german": "Firma",
+    "english": "company, firm",
+    "article": "die",
+    "gender": "feminine",
+    "plural": "Firmen",
+    "pluralPattern": "-en",
+    "pluralPatternLabel": "Firmen (irregular)",
+    "nounGroupRule": "Loanwords ending in -a from Latin/Italian often change -a to -en in the plural.",
+    "declension": {
+      "sg": {
+        "nom": "die Firma",
+        "akk": "die Firma",
+        "dat": "der Firma",
+        "gen": "der Firma"
+      },
+      "pl": {
+        "nom": "die Firmen",
+        "akk": "die Firmen",
+        "dat": "den Firmen",
+        "gen": "der Firmen"
+      }
+    },
+    "usage": [
+      {
+        "de": "Firma Microlab, guten Tag.",
+        "en": "Microlab company, good day."
+      },
+      {
+        "de": "Wie heißt die Firma?",
+        "en": "What is the company called?"
+      }
     ]
   }
 ]

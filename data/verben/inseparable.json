@@ -213,5 +213,55 @@
     "usage": [
       { "de": "Wir erörterten die ethischen Fragen.", "en": "We deliberated the ethical questions." }
     ]
+  },
+  {
+    "id": "verbinden",
+    "level": "A1",
+    "type": "verb",
+    "theme": "classroom",
+    "german": "verbinden",
+    "english": "to connect, to match",
+    "patternLabel": "Untrennbar (inseparable)",
+    "patternColor": "strong",
+    "auxiliary": "haben",
+    "reflexiv": false,
+    "kasus": [],
+    "conjugations": {
+      "prasens":     {"ich":"verbinde","du":"verbindest","er":"verbindet","wir":"verbinden","ihr":"verbindet","sie":"verbinden"},
+      "prateritum":  {"ich":"verband","du":"verbandst","er":"verband","wir":"verbanden","ihr":"verbandet","sie":"verbanden"},
+      "perfekt":     {"ich":"habe verbunden","du":"hast verbunden","er":"hat verbunden","wir":"haben verbunden","ihr":"habt verbunden","sie":"haben verbunden"},
+      "konjunktiv2": {"ich":"verbände","du":"verbändest","er":"verbände","wir":"verbänden","ihr":"verbändet","sie":"verbänden"}
+    },
+    "exceptionForms": [],
+    "exceptions": [],
+    "usage": [
+      {"de": "Hören Sie und verbinden Sie.", "en": "Listen and match."},
+      {"de": "Verbinden Sie die Wörter mit den Bildern.", "en": "Connect the words with the pictures."}
+    ]
+  },
+  {
+    "id": "vergleichen",
+    "level": "A1",
+    "type": "verb",
+    "theme": "classroom",
+    "german": "vergleichen",
+    "english": "to compare",
+    "patternLabel": "Untrennbar (inseparable)",
+    "patternColor": "strong",
+    "auxiliary": "haben",
+    "reflexiv": false,
+    "kasus": [],
+    "conjugations": {
+      "prasens":     {"ich":"vergleiche","du":"vergleichst","er":"vergleicht","wir":"vergleichen","ihr":"vergleicht","sie":"vergleichen"},
+      "prateritum":  {"ich":"verglich","du":"verglichst","er":"verglich","wir":"verglichen","ihr":"verglichet","sie":"verglichen"},
+      "perfekt":     {"ich":"habe verglichen","du":"hast verglichen","er":"hat verglichen","wir":"haben verglichen","ihr":"habt verglichen","sie":"haben verglichen"},
+      "konjunktiv2": {"ich":"vergliche","du":"verglichest","er":"vergliche","wir":"verglichen","ihr":"verglichet","sie":"verglichen"}
+    },
+    "exceptionForms": [],
+    "exceptions": [],
+    "usage": [
+      {"de": "Vergleichen Sie die Antworten.", "en": "Compare the answers."},
+      {"de": "Ich vergleiche die zwei Texte.", "en": "I compare the two texts."}
+    ]
   }
 ]

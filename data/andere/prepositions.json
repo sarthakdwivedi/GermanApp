@@ -1,5 +1,44 @@
 [
   {
+    "id": "bei",
+    "level": "A1",
+    "type": "andere",
+    "wordCategory": "preposition",
+    "german": "bei",
+    "english": "at, with, by",
+    "wordType": "Präposition",
+    "wordTypeEN": "preposition",
+    "grammarRule": "'Bei' always takes the dative case.",
+    "grammarRuleDetail": "Use 'bei' to indicate affiliation (bei einer Firma), location near someone or something, or in set phrases like 'Willkommen bei'. It never takes accusative.",
+    "structureFormula": "bei + [Dativ]",
+    "variants": [],
+    "relatedWords": [{"word":"mit","meaning":"with"}],
+    "usage": [
+      {"de": "Willkommen bei 'Musik international'.", "en": "Welcome to 'Music International'."},
+      {"de": "Firma Microlab, guten Tag.", "en": "Microlab company, good day."}
+    ]
+  },
+  {
+    "id": "aus",
+    "level": "A1",
+    "type": "andere",
+    "wordCategory": "preposition",
+    "german": "aus",
+    "english": "from, out of",
+    "wordType": "Präposition",
+    "wordTypeEN": "preposition",
+    "grammarRule": "'Aus' always takes the dative case.",
+    "grammarRuleDetail": "Use 'aus' to indicate origin (Ich komme aus Deutschland) or the material something is made of. For countries without an article, no article is used: 'aus Deutschland'. For countries with a definite article, the article appears: 'aus der Schweiz'.",
+    "structureFormula": "aus + [Dativ] / kommen + aus + [Land]",
+    "variants": [],
+    "relatedWords": [{"word":"von","meaning":"from, of"}],
+    "usage": [
+      {"de": "Ich komme aus Österreich.", "en": "I come from Austria."},
+      {"de": "Ich bin aus der Ukraine.", "en": "I am from Ukraine."}
+    ]
+  }
+,
+  {
     "id": "in",
     "level": "A1",
     "type": "andere",

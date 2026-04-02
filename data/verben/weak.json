@@ -1,54 +1,946 @@
 [
   {
-    "id": "machen",
+    "id": "hoeren",
     "level": "A1",
     "type": "verb",
-    "theme": "daily_life",
-    "german": "machen",
-    "english": "to make / to do",
+    "theme": "classroom",
+    "german": "hören",
+    "english": "to listen, to hear",
     "patternLabel": "Schwach (weak)",
     "patternColor": "weak",
     "auxiliary": "haben",
-    "conjugations": {
-      "prasens":     { "ich": "mache",  "du": "machst",  "er": "macht",  "wir": "machen",  "ihr": "macht",   "sie": "machen"  },
-      "prateritum":  { "ich": "machte", "du": "machtest","er": "machte", "wir": "machten", "ihr": "machtet", "sie": "machten" },
-      "perfekt":     { "ich": "habe gemacht",  "du": "hast gemacht",  "er": "hat gemacht",  "wir": "haben gemacht",  "ihr": "habt gemacht",  "sie": "haben gemacht"  },
-      "konjunktiv2": { "ich": "machte", "du": "machtest","er": "machte", "wir": "machten", "ihr": "machtet", "sie": "machten" }
-    },
-    "exceptions": [],
-    "exceptionForms": [],
-    "kasus": ["akkusativ"],
     "reflexiv": false,
-    "preposition": null,
+    "kasus": [],
+    "conjugations": {
+      "prasens": {
+        "ich": "höre",
+        "du": "hörst",
+        "er": "hört",
+        "wir": "hören",
+        "ihr": "hört",
+        "sie": "hören"
+      },
+      "prateritum": {
+        "ich": "hörte",
+        "du": "hörtest",
+        "er": "hörte",
+        "wir": "hörten",
+        "ihr": "hörtet",
+        "sie": "hörten"
+      },
+      "perfekt": {
+        "ich": "habe gehört",
+        "du": "hast gehört",
+        "er": "hat gehört",
+        "wir": "haben gehört",
+        "ihr": "habt gehört",
+        "sie": "haben gehört"
+      },
+      "konjunktiv2": {
+        "ich": "hörte",
+        "du": "hörtest",
+        "er": "hörte",
+        "wir": "hörten",
+        "ihr": "hörtet",
+        "sie": "hörten"
+      }
+    },
+    "exceptionForms": [],
+    "exceptions": [],
     "usage": [
-      { "de": "Was machst du heute?", "en": "What are you doing today?" },
-      { "de": "Sie hat das Bett gemacht.", "en": "She made the bed." }
+      {
+        "de": "Hören Sie noch einmal.",
+        "en": "Listen again."
+      },
+      {
+        "de": "Ich höre Musik.",
+        "en": "I listen to music."
+      }
+    ]
+  },
+  {
+    "id": "ergaenzen",
+    "level": "A1",
+    "type": "verb",
+    "theme": "classroom",
+    "german": "ergänzen",
+    "english": "to complete, to fill in",
+    "patternLabel": "Schwach (weak)",
+    "patternColor": "weak",
+    "auxiliary": "haben",
+    "reflexiv": false,
+    "kasus": [],
+    "conjugations": {
+      "prasens": {
+        "ich": "ergänze",
+        "du": "ergänzt",
+        "er": "ergänzt",
+        "wir": "ergänzen",
+        "ihr": "ergänzt",
+        "sie": "ergänzen"
+      },
+      "prateritum": {
+        "ich": "ergänzte",
+        "du": "ergänztest",
+        "er": "ergänzte",
+        "wir": "ergänzten",
+        "ihr": "ergänztet",
+        "sie": "ergänzten"
+      },
+      "perfekt": {
+        "ich": "habe ergänzt",
+        "du": "hast ergänzt",
+        "er": "hat ergänzt",
+        "wir": "haben ergänzt",
+        "ihr": "habt ergänzt",
+        "sie": "haben ergänzt"
+      },
+      "konjunktiv2": {
+        "ich": "ergänzte",
+        "du": "ergänztest",
+        "er": "ergänzte",
+        "wir": "ergänzten",
+        "ihr": "ergänztet",
+        "sie": "ergänzten"
+      }
+    },
+    "exceptionForms": [],
+    "exceptions": [],
+    "usage": [
+      {
+        "de": "Ergänzen Sie die Fragen.",
+        "en": "Complete the questions."
+      },
+      {
+        "de": "Ich ergänze das Formular.",
+        "en": "I fill in the form."
+      }
+    ]
+  },
+  {
+    "id": "machen",
+    "level": "A1",
+    "type": "verb",
+    "theme": "classroom",
+    "german": "machen",
+    "english": "to make, to do",
+    "patternLabel": "Schwach (weak)",
+    "patternColor": "weak",
+    "auxiliary": "haben",
+    "reflexiv": false,
+    "kasus": [],
+    "conjugations": {
+      "prasens": {
+        "ich": "mache",
+        "du": "machst",
+        "er": "macht",
+        "wir": "machen",
+        "ihr": "macht",
+        "sie": "machen"
+      },
+      "prateritum": {
+        "ich": "machte",
+        "du": "machtest",
+        "er": "machte",
+        "wir": "machten",
+        "ihr": "machtet",
+        "sie": "machten"
+      },
+      "perfekt": {
+        "ich": "habe gemacht",
+        "du": "hast gemacht",
+        "er": "hat gemacht",
+        "wir": "haben gemacht",
+        "ihr": "habt gemacht",
+        "sie": "haben gemacht"
+      },
+      "konjunktiv2": {
+        "ich": "machte",
+        "du": "machtest",
+        "er": "machte",
+        "wir": "machten",
+        "ihr": "machtet",
+        "sie": "machten"
+      }
+    },
+    "exceptionForms": [],
+    "exceptions": [],
+    "usage": [
+      {
+        "de": "Machen Sie einen Film.",
+        "en": "Make a film."
+      },
+      {
+        "de": "Was machst du?",
+        "en": "What are you doing?"
+      }
+    ]
+  },
+  {
+    "id": "spielen",
+    "level": "A1",
+    "type": "verb",
+    "theme": "classroom",
+    "german": "spielen",
+    "english": "to play, to act out",
+    "patternLabel": "Schwach (weak)",
+    "patternColor": "weak",
+    "auxiliary": "haben",
+    "reflexiv": false,
+    "kasus": [],
+    "conjugations": {
+      "prasens": {
+        "ich": "spiele",
+        "du": "spielst",
+        "er": "spielt",
+        "wir": "spielen",
+        "ihr": "spielt",
+        "sie": "spielen"
+      },
+      "prateritum": {
+        "ich": "spielte",
+        "du": "spieltest",
+        "er": "spielte",
+        "wir": "spielten",
+        "ihr": "spieltet",
+        "sie": "spielten"
+      },
+      "perfekt": {
+        "ich": "habe gespielt",
+        "du": "hast gespielt",
+        "er": "hat gespielt",
+        "wir": "haben gespielt",
+        "ihr": "habt gespielt",
+        "sie": "haben gespielt"
+      },
+      "konjunktiv2": {
+        "ich": "spielte",
+        "du": "spieltest",
+        "er": "spielte",
+        "wir": "spielten",
+        "ihr": "spieltet",
+        "sie": "spielten"
+      }
+    },
+    "exceptionForms": [],
+    "exceptions": [],
+    "usage": [
+      {
+        "de": "Spielen Sie die Gespräche im Kurs.",
+        "en": "Act out the conversations in class."
+      },
+      {
+        "de": "Wir spielen ein Spiel.",
+        "en": "We play a game."
+      }
+    ]
+  },
+  {
+    "id": "suchen",
+    "level": "A1",
+    "type": "verb",
+    "theme": "classroom",
+    "german": "suchen",
+    "english": "to look for, to search",
+    "patternLabel": "Schwach (weak)",
+    "patternColor": "weak",
+    "auxiliary": "haben",
+    "reflexiv": false,
+    "kasus": [],
+    "conjugations": {
+      "prasens": {
+        "ich": "suche",
+        "du": "suchst",
+        "er": "sucht",
+        "wir": "suchen",
+        "ihr": "sucht",
+        "sie": "suchen"
+      },
+      "prateritum": {
+        "ich": "suchte",
+        "du": "suchtest",
+        "er": "suchte",
+        "wir": "suchten",
+        "ihr": "suchtet",
+        "sie": "suchten"
+      },
+      "perfekt": {
+        "ich": "habe gesucht",
+        "du": "hast gesucht",
+        "er": "hat gesucht",
+        "wir": "haben gesucht",
+        "ihr": "habt gesucht",
+        "sie": "haben gesucht"
+      },
+      "konjunktiv2": {
+        "ich": "suchte",
+        "du": "suchtest",
+        "er": "suchte",
+        "wir": "suchten",
+        "ihr": "suchtet",
+        "sie": "suchten"
+      }
+    },
+    "exceptionForms": [],
+    "exceptions": [],
+    "usage": [
+      {
+        "de": "Suchen Sie die Wörter.",
+        "en": "Look for the words."
+      },
+      {
+        "de": "Ich suche mein Buch.",
+        "en": "I am looking for my book."
+      }
+    ]
+  },
+  {
+    "id": "zeigen",
+    "level": "A1",
+    "type": "verb",
+    "theme": "classroom",
+    "german": "zeigen",
+    "english": "to show, to point to",
+    "patternLabel": "Schwach (weak)",
+    "patternColor": "weak",
+    "auxiliary": "haben",
+    "reflexiv": false,
+    "kasus": [],
+    "conjugations": {
+      "prasens": {
+        "ich": "zeige",
+        "du": "zeigst",
+        "er": "zeigt",
+        "wir": "zeigen",
+        "ihr": "zeigt",
+        "sie": "zeigen"
+      },
+      "prateritum": {
+        "ich": "zeigte",
+        "du": "zeigtest",
+        "er": "zeigte",
+        "wir": "zeigten",
+        "ihr": "zeigtet",
+        "sie": "zeigten"
+      },
+      "perfekt": {
+        "ich": "habe gezeigt",
+        "du": "hast gezeigt",
+        "er": "hat gezeigt",
+        "wir": "haben gezeigt",
+        "ihr": "habt gezeigt",
+        "sie": "haben gezeigt"
+      },
+      "konjunktiv2": {
+        "ich": "zeigte",
+        "du": "zeigtest",
+        "er": "zeigte",
+        "wir": "zeigten",
+        "ihr": "zeigtet",
+        "sie": "zeigten"
+      }
+    },
+    "exceptionForms": [],
+    "exceptions": [],
+    "usage": [
+      {
+        "de": "Zeigen Sie das Bild.",
+        "en": "Show the picture."
+      },
+      {
+        "de": "Er zeigt mir die Adresse.",
+        "en": "He shows me the address."
+      }
+    ]
+  },
+  {
+    "id": "fragen",
+    "level": "A1",
+    "type": "verb",
+    "theme": "classroom",
+    "german": "fragen",
+    "english": "to ask",
+    "patternLabel": "Schwach (weak)",
+    "patternColor": "weak",
+    "auxiliary": "haben",
+    "reflexiv": false,
+    "kasus": [],
+    "conjugations": {
+      "prasens": {
+        "ich": "frage",
+        "du": "fragst",
+        "er": "fragt",
+        "wir": "fragen",
+        "ihr": "fragt",
+        "sie": "fragen"
+      },
+      "prateritum": {
+        "ich": "fragte",
+        "du": "fragtest",
+        "er": "fragte",
+        "wir": "fragten",
+        "ihr": "fragtet",
+        "sie": "fragten"
+      },
+      "perfekt": {
+        "ich": "habe gefragt",
+        "du": "hast gefragt",
+        "er": "hat gefragt",
+        "wir": "haben gefragt",
+        "ihr": "habt gefragt",
+        "sie": "haben gefragt"
+      },
+      "konjunktiv2": {
+        "ich": "fragte",
+        "du": "fragtest",
+        "er": "fragte",
+        "wir": "fragten",
+        "ihr": "fragtet",
+        "sie": "fragten"
+      }
+    },
+    "exceptionForms": [],
+    "exceptions": [],
+    "usage": [
+      {
+        "de": "Fragen Sie im Kurs.",
+        "en": "Ask in class."
+      },
+      {
+        "de": "Ich frage: Wie heißen Sie?",
+        "en": "I ask: What is your name?"
+      }
+    ]
+  },
+  {
+    "id": "markieren",
+    "level": "A1",
+    "type": "verb",
+    "theme": "classroom",
+    "german": "markieren",
+    "english": "to mark, to highlight",
+    "patternLabel": "Schwach (weak)",
+    "patternColor": "weak",
+    "auxiliary": "haben",
+    "reflexiv": false,
+    "kasus": [],
+    "conjugations": {
+      "prasens": {
+        "ich": "markiere",
+        "du": "markierst",
+        "er": "markiert",
+        "wir": "markieren",
+        "ihr": "markiert",
+        "sie": "markieren"
+      },
+      "prateritum": {
+        "ich": "markierte",
+        "du": "markiertest",
+        "er": "markierte",
+        "wir": "markierten",
+        "ihr": "markiertet",
+        "sie": "markierten"
+      },
+      "perfekt": {
+        "ich": "habe markiert",
+        "du": "hast markiert",
+        "er": "hat markiert",
+        "wir": "haben markiert",
+        "ihr": "habt markiert",
+        "sie": "haben markiert"
+      },
+      "konjunktiv2": {
+        "ich": "markierte",
+        "du": "markiertest",
+        "er": "markierte",
+        "wir": "markierten",
+        "ihr": "markiertet",
+        "sie": "markierten"
+      }
+    },
+    "exceptionForms": [],
+    "exceptions": [],
+    "usage": [
+      {
+        "de": "Markieren Sie das Wort.",
+        "en": "Mark the word."
+      },
+      {
+        "de": "Ich markiere die Antwort.",
+        "en": "I highlight the answer."
+      }
+    ]
+  },
+  {
+    "id": "meinen",
+    "level": "A1",
+    "type": "verb",
+    "theme": "classroom",
+    "german": "meinen",
+    "english": "to think, to mean",
+    "patternLabel": "Schwach (weak)",
+    "patternColor": "weak",
+    "auxiliary": "haben",
+    "reflexiv": false,
+    "kasus": [],
+    "conjugations": {
+      "prasens": {
+        "ich": "meine",
+        "du": "meinst",
+        "er": "meint",
+        "wir": "meinen",
+        "ihr": "meint",
+        "sie": "meinen"
+      },
+      "prateritum": {
+        "ich": "meinte",
+        "du": "meintest",
+        "er": "meinte",
+        "wir": "meinten",
+        "ihr": "meintet",
+        "sie": "meinten"
+      },
+      "perfekt": {
+        "ich": "habe gemeint",
+        "du": "hast gemeint",
+        "er": "hat gemeint",
+        "wir": "haben gemeint",
+        "ihr": "habt gemeint",
+        "sie": "haben gemeint"
+      },
+      "konjunktiv2": {
+        "ich": "meinte",
+        "du": "meintest",
+        "er": "meinte",
+        "wir": "meinten",
+        "ihr": "meintet",
+        "sie": "meinten"
+      }
+    },
+    "exceptionForms": [],
+    "exceptions": [],
+    "usage": [
+      {
+        "de": "Was meinen Sie?",
+        "en": "What do you think?"
+      },
+      {
+        "de": "Ich meine, das ist richtig.",
+        "en": "I think that is correct."
+      }
     ]
   },
   {
     "id": "sagen",
     "level": "A1",
     "type": "verb",
-    "theme": "communication",
+    "theme": "classroom",
     "german": "sagen",
-    "english": "to say / to tell",
+    "english": "to say",
     "patternLabel": "Schwach (weak)",
     "patternColor": "weak",
     "auxiliary": "haben",
-    "conjugations": {
-      "prasens":     { "ich": "sage",  "du": "sagst",  "er": "sagt",  "wir": "sagen",  "ihr": "sagt",   "sie": "sagen"  },
-      "prateritum":  { "ich": "sagte", "du": "sagtest","er": "sagte", "wir": "sagten", "ihr": "sagtet", "sie": "sagten" },
-      "perfekt":     { "ich": "habe gesagt",  "du": "hast gesagt",  "er": "hat gesagt",  "wir": "haben gesagt",  "ihr": "habt gesagt",  "sie": "haben gesagt"  },
-      "konjunktiv2": { "ich": "sagte", "du": "sagtest","er": "sagte", "wir": "sagten", "ihr": "sagtet", "sie": "sagten" }
-    },
-    "exceptions": [],
-    "exceptionForms": [],
-    "kasus": ["akkusativ", "dativ"],
     "reflexiv": false,
-    "preposition": null,
+    "kasus": [],
+    "conjugations": {
+      "prasens": {
+        "ich": "sage",
+        "du": "sagst",
+        "er": "sagt",
+        "wir": "sagen",
+        "ihr": "sagt",
+        "sie": "sagen"
+      },
+      "prateritum": {
+        "ich": "sagte",
+        "du": "sagtest",
+        "er": "sagte",
+        "wir": "sagten",
+        "ihr": "sagtet",
+        "sie": "sagten"
+      },
+      "perfekt": {
+        "ich": "habe gesagt",
+        "du": "hast gesagt",
+        "er": "hat gesagt",
+        "wir": "haben gesagt",
+        "ihr": "habt gesagt",
+        "sie": "haben gesagt"
+      },
+      "konjunktiv2": {
+        "ich": "sagte",
+        "du": "sagtest",
+        "er": "sagte",
+        "wir": "sagten",
+        "ihr": "sagtet",
+        "sie": "sagten"
+      }
+    },
+    "exceptionForms": [],
+    "exceptions": [],
     "usage": [
-      { "de": "Was hast du gesagt?", "en": "What did you say?" },
-      { "de": "Er sagt mir die Wahrheit.", "en": "He tells me the truth. (Dat + Akk)" }
+      {
+        "de": "Was sagen die Personen?",
+        "en": "What do the people say?"
+      },
+      {
+        "de": "Ich sage: Guten Tag.",
+        "en": "I say: Good day."
+      }
+    ]
+  },
+  {
+    "id": "notieren",
+    "level": "A1",
+    "type": "verb",
+    "theme": "classroom",
+    "german": "notieren",
+    "english": "to note down, to write down",
+    "patternLabel": "Schwach (weak)",
+    "patternColor": "weak",
+    "auxiliary": "haben",
+    "reflexiv": false,
+    "kasus": [],
+    "conjugations": {
+      "prasens": {
+        "ich": "notiere",
+        "du": "notierst",
+        "er": "notiert",
+        "wir": "notieren",
+        "ihr": "notiert",
+        "sie": "notieren"
+      },
+      "prateritum": {
+        "ich": "notierte",
+        "du": "notiertest",
+        "er": "notierte",
+        "wir": "notierten",
+        "ihr": "notiertet",
+        "sie": "notierten"
+      },
+      "perfekt": {
+        "ich": "habe notiert",
+        "du": "hast notiert",
+        "er": "hat notiert",
+        "wir": "haben notiert",
+        "ihr": "habt notiert",
+        "sie": "haben notiert"
+      },
+      "konjunktiv2": {
+        "ich": "notierte",
+        "du": "notiertest",
+        "er": "notierte",
+        "wir": "notierten",
+        "ihr": "notiertet",
+        "sie": "notierten"
+      }
+    },
+    "exceptionForms": [],
+    "exceptions": [],
+    "usage": [
+      {
+        "de": "Notieren Sie die Adresse.",
+        "en": "Note down the address."
+      },
+      {
+        "de": "Ich notiere den Namen.",
+        "en": "I write down the name."
+      }
+    ]
+  },
+  {
+    "id": "variieren",
+    "level": "A1",
+    "type": "verb",
+    "theme": "classroom",
+    "german": "variieren",
+    "english": "to vary, to change",
+    "patternLabel": "Schwach (weak)",
+    "patternColor": "weak",
+    "auxiliary": "haben",
+    "reflexiv": false,
+    "kasus": [],
+    "conjugations": {
+      "prasens": {
+        "ich": "variiere",
+        "du": "variierst",
+        "er": "variiert",
+        "wir": "variieren",
+        "ihr": "variiert",
+        "sie": "variieren"
+      },
+      "prateritum": {
+        "ich": "variierte",
+        "du": "variiertest",
+        "er": "variierte",
+        "wir": "variierten",
+        "ihr": "variiertet",
+        "sie": "variierten"
+      },
+      "perfekt": {
+        "ich": "habe variiert",
+        "du": "hast variiert",
+        "er": "hat variiert",
+        "wir": "haben variiert",
+        "ihr": "habt variiert",
+        "sie": "haben variiert"
+      },
+      "konjunktiv2": {
+        "ich": "variierte",
+        "du": "variiertest",
+        "er": "variierte",
+        "wir": "variierten",
+        "ihr": "variiertet",
+        "sie": "variierten"
+      }
+    },
+    "exceptionForms": [],
+    "exceptions": [],
+    "usage": [
+      {
+        "de": "Variieren Sie die Gespräche.",
+        "en": "Vary the conversations."
+      },
+      {
+        "de": "Wir variieren den Dialog.",
+        "en": "We change the dialogue."
+      }
+    ]
+  },
+  {
+    "id": "erz%C3%A4hlen",
+    "level": "A1",
+    "type": "verb",
+    "theme": "classroom",
+    "german": "erzählen",
+    "english": "to tell, to narrate",
+    "patternLabel": "Schwach (weak)",
+    "patternColor": "weak",
+    "auxiliary": "haben",
+    "reflexiv": false,
+    "kasus": [],
+    "conjugations": {
+      "prasens": {
+        "ich": "erzähle",
+        "du": "erzählst",
+        "er": "erzählt",
+        "wir": "erzählen",
+        "ihr": "erzählt",
+        "sie": "erzählen"
+      },
+      "prateritum": {
+        "ich": "erzählte",
+        "du": "erzähltest",
+        "er": "erzählte",
+        "wir": "erzählten",
+        "ihr": "erzähltet",
+        "sie": "erzählten"
+      },
+      "perfekt": {
+        "ich": "habe erzählt",
+        "du": "hast erzählt",
+        "er": "hat erzählt",
+        "wir": "haben erzählt",
+        "ihr": "habt erzählt",
+        "sie": "haben erzählt"
+      },
+      "konjunktiv2": {
+        "ich": "erzählte",
+        "du": "erzähltest",
+        "er": "erzählte",
+        "wir": "erzählten",
+        "ihr": "erzähltet",
+        "sie": "erzählten"
+      }
+    },
+    "exceptionForms": [],
+    "exceptions": [],
+    "usage": [
+      {
+        "de": "Erzählen Sie über sich.",
+        "en": "Tell us about yourself."
+      },
+      {
+        "de": "Sie erzählt eine Geschichte.",
+        "en": "She tells a story."
+      }
+    ]
+  },
+  {
+    "id": "arbeiten",
+    "level": "A1",
+    "type": "verb",
+    "theme": "classroom",
+    "german": "arbeiten",
+    "english": "to work",
+    "patternLabel": "Schwach (weak)",
+    "patternColor": "weak",
+    "auxiliary": "haben",
+    "reflexiv": false,
+    "kasus": [],
+    "conjugations": {
+      "prasens": {
+        "ich": "arbeite",
+        "du": "arbeitest",
+        "er": "arbeitet",
+        "wir": "arbeiten",
+        "ihr": "arbeitet",
+        "sie": "arbeiten"
+      },
+      "prateritum": {
+        "ich": "arbeitete",
+        "du": "arbeitetest",
+        "er": "arbeitete",
+        "wir": "arbeiteten",
+        "ihr": "arbeitetet",
+        "sie": "arbeiteten"
+      },
+      "perfekt": {
+        "ich": "habe gearbeitet",
+        "du": "hast gearbeitet",
+        "er": "hat gearbeitet",
+        "wir": "haben gearbeitet",
+        "ihr": "habt gearbeitet",
+        "sie": "haben gearbeitet"
+      },
+      "konjunktiv2": {
+        "ich": "arbeitete",
+        "du": "arbeitetest",
+        "er": "arbeitete",
+        "wir": "arbeiteten",
+        "ihr": "arbeitetet",
+        "sie": "arbeiteten"
+      }
+    },
+    "exceptionForms": [],
+    "exceptions": [],
+    "usage": [
+      {
+        "de": "Arbeiten Sie zu zweit.",
+        "en": "Work in pairs."
+      },
+      {
+        "de": "Ich arbeite im Kurs.",
+        "en": "I work in class."
+      }
+    ]
+  },
+  {
+    "id": "zeichnen",
+    "level": "A1",
+    "type": "verb",
+    "theme": "classroom",
+    "german": "zeichnen",
+    "english": "to draw",
+    "patternLabel": "Schwach (weak)",
+    "patternColor": "weak",
+    "auxiliary": "haben",
+    "reflexiv": false,
+    "kasus": [],
+    "conjugations": {
+      "prasens": {
+        "ich": "zeichne",
+        "du": "zeichnest",
+        "er": "zeichnet",
+        "wir": "zeichnen",
+        "ihr": "zeichnet",
+        "sie": "zeichnen"
+      },
+      "prateritum": {
+        "ich": "zeichnete",
+        "du": "zeichnetest",
+        "er": "zeichnete",
+        "wir": "zeichneten",
+        "ihr": "zeichnetet",
+        "sie": "zeichneten"
+      },
+      "perfekt": {
+        "ich": "habe gezeichnet",
+        "du": "hast gezeichnet",
+        "er": "hat gezeichnet",
+        "wir": "haben gezeichnet",
+        "ihr": "habt gezeichnet",
+        "sie": "haben gezeichnet"
+      },
+      "konjunktiv2": {
+        "ich": "zeichnete",
+        "du": "zeichnetest",
+        "er": "zeichnete",
+        "wir": "zeichneten",
+        "ihr": "zeichnetet",
+        "sie": "zeichneten"
+      }
+    },
+    "exceptionForms": [],
+    "exceptions": [],
+    "usage": [
+      {
+        "de": "Zeichnen Sie ein Bild.",
+        "en": "Draw a picture."
+      },
+      {
+        "de": "Die Kinder zeichnen gern.",
+        "en": "The children like to draw."
+      }
+    ]
+  },
+  {
+    "id": "buchstabieren",
+    "level": "A1",
+    "type": "verb",
+    "theme": "greetings",
+    "german": "buchstabieren",
+    "english": "to spell",
+    "patternLabel": "Schwach (weak)",
+    "patternColor": "weak",
+    "auxiliary": "haben",
+    "reflexiv": false,
+    "kasus": [],
+    "conjugations": {
+      "prasens": {
+        "ich": "buchstabiere",
+        "du": "buchstabierst",
+        "er": "buchstabiert",
+        "wir": "buchstabieren",
+        "ihr": "buchstabiert",
+        "sie": "buchstabieren"
+      },
+      "prateritum": {
+        "ich": "buchstabierte",
+        "du": "buchstabiertest",
+        "er": "buchstabierte",
+        "wir": "buchstabierten",
+        "ihr": "buchstabiertet",
+        "sie": "buchstabierten"
+      },
+      "perfekt": {
+        "ich": "habe buchstabiert",
+        "du": "hast buchstabiert",
+        "er": "hat buchstabiert",
+        "wir": "haben buchstabiert",
+        "ihr": "habt buchstabiert",
+        "sie": "haben buchstabiert"
+      },
+      "konjunktiv2": {
+        "ich": "buchstabierte",
+        "du": "buchstabiertest",
+        "er": "buchstabierte",
+        "wir": "buchstabierten",
+        "ihr": "buchstabiertet",
+        "sie": "buchstabierten"
+      }
+    },
+    "exceptionForms": [],
+    "exceptions": [],
+    "usage": [
+      {
+        "de": "Buchstabieren Sie Ihren Namen, bitte.",
+        "en": "Please spell your name."
+      },
+      {
+        "de": "Ich buchstabiere: K-U-R-S.",
+        "en": "I spell: K-U-R-S."
+      }
     ]
   },
   {
@@ -62,45 +954,55 @@
     "patternColor": "weak",
     "auxiliary": "haben",
     "conjugations": {
-      "prasens":     { "ich": "kaufe",  "du": "kaufst",  "er": "kauft",  "wir": "kaufen",  "ihr": "kauft",   "sie": "kaufen"  },
-      "prateritum":  { "ich": "kaufte", "du": "kauftest","er": "kaufte", "wir": "kauften", "ihr": "kauftet", "sie": "kauften" },
-      "perfekt":     { "ich": "habe gekauft",  "du": "hast gekauft",  "er": "hat gekauft",  "wir": "haben gekauft",  "ihr": "habt gekauft",  "sie": "haben gekauft"  },
-      "konjunktiv2": { "ich": "kaufte", "du": "kauftest","er": "kaufte", "wir": "kauften", "ihr": "kauftet", "sie": "kauften" }
+      "prasens": {
+        "ich": "kaufe",
+        "du": "kaufst",
+        "er": "kauft",
+        "wir": "kaufen",
+        "ihr": "kauft",
+        "sie": "kaufen"
+      },
+      "prateritum": {
+        "ich": "kaufte",
+        "du": "kauftest",
+        "er": "kaufte",
+        "wir": "kauften",
+        "ihr": "kauftet",
+        "sie": "kauften"
+      },
+      "perfekt": {
+        "ich": "habe gekauft",
+        "du": "hast gekauft",
+        "er": "hat gekauft",
+        "wir": "haben gekauft",
+        "ihr": "habt gekauft",
+        "sie": "haben gekauft"
+      },
+      "konjunktiv2": {
+        "ich": "kaufte",
+        "du": "kauftest",
+        "er": "kaufte",
+        "wir": "kauften",
+        "ihr": "kauftet",
+        "sie": "kauften"
+      }
     },
     "exceptions": [],
     "exceptionForms": [],
-    "kasus": ["akkusativ"],
+    "kasus": [
+      "akkusativ"
+    ],
     "reflexiv": false,
     "preposition": null,
     "usage": [
-      { "de": "Ich kaufe ein neues Buch.", "en": "I am buying a new book." },
-      { "de": "Hast du das Hemd gekauft?", "en": "Did you buy the shirt?" }
-    ]
-  },
-  {
-    "id": "spielen",
-    "level": "A1",
-    "type": "verb",
-    "theme": "leisure",
-    "german": "spielen",
-    "english": "to play",
-    "patternLabel": "Schwach (weak)",
-    "patternColor": "weak",
-    "auxiliary": "haben",
-    "conjugations": {
-      "prasens":     { "ich": "spiele",  "du": "spielst",  "er": "spielt",  "wir": "spielen",  "ihr": "spielt",   "sie": "spielen"  },
-      "prateritum":  { "ich": "spielte", "du": "spieltest","er": "spielte", "wir": "spielten", "ihr": "spieltet", "sie": "spielten" },
-      "perfekt":     { "ich": "habe gespielt",  "du": "hast gespielt",  "er": "hat gespielt",  "wir": "haben gespielt",  "ihr": "habt gespielt",  "sie": "haben gespielt"  },
-      "konjunktiv2": { "ich": "spielte", "du": "spieltest","er": "spielte", "wir": "spielten", "ihr": "spieltet", "sie": "spielten" }
-    },
-    "exceptions": [],
-    "exceptionForms": [],
-    "kasus": ["akkusativ"],
-    "reflexiv": false,
-    "preposition": null,
-    "usage": [
-      { "de": "Die Kinder spielen im Garten.", "en": "The children play in the garden." },
-      { "de": "Er spielt jeden Tag Fußball.", "en": "He plays football every day." }
+      {
+        "de": "Ich kaufe ein neues Buch.",
+        "en": "I am buying a new book."
+      },
+      {
+        "de": "Hast du das Hemd gekauft?",
+        "en": "Did you buy the shirt?"
+      }
     ]
   },
   {
@@ -114,19 +1016,55 @@
     "patternColor": "weak",
     "auxiliary": "haben",
     "conjugations": {
-      "prasens":     { "ich": "lerne",  "du": "lernst",  "er": "lernt",  "wir": "lernen",  "ihr": "lernt",   "sie": "lernen"  },
-      "prateritum":  { "ich": "lernte", "du": "lerntest","er": "lernte", "wir": "lernten", "ihr": "lerntet", "sie": "lernten" },
-      "perfekt":     { "ich": "habe gelernt",  "du": "hast gelernt",  "er": "hat gelernt",  "wir": "haben gelernt",  "ihr": "habt gelernt",  "sie": "haben gelernt"  },
-      "konjunktiv2": { "ich": "lernte", "du": "lerntest","er": "lernte", "wir": "lernten", "ihr": "lerntet", "sie": "lernten" }
+      "prasens": {
+        "ich": "lerne",
+        "du": "lernst",
+        "er": "lernt",
+        "wir": "lernen",
+        "ihr": "lernt",
+        "sie": "lernen"
+      },
+      "prateritum": {
+        "ich": "lernte",
+        "du": "lerntest",
+        "er": "lernte",
+        "wir": "lernten",
+        "ihr": "lerntet",
+        "sie": "lernten"
+      },
+      "perfekt": {
+        "ich": "habe gelernt",
+        "du": "hast gelernt",
+        "er": "hat gelernt",
+        "wir": "haben gelernt",
+        "ihr": "habt gelernt",
+        "sie": "haben gelernt"
+      },
+      "konjunktiv2": {
+        "ich": "lernte",
+        "du": "lerntest",
+        "er": "lernte",
+        "wir": "lernten",
+        "ihr": "lerntet",
+        "sie": "lernten"
+      }
     },
     "exceptions": [],
     "exceptionForms": [],
-    "kasus": ["akkusativ"],
+    "kasus": [
+      "akkusativ"
+    ],
     "reflexiv": false,
     "preposition": null,
     "usage": [
-      { "de": "Ich lerne Deutsch.", "en": "I am learning German." },
-      { "de": "Sie hat viel für die Prüfung gelernt.", "en": "She studied a lot for the exam." }
+      {
+        "de": "Ich lerne Deutsch.",
+        "en": "I am learning German."
+      },
+      {
+        "de": "Sie hat viel für die Prüfung gelernt.",
+        "en": "She studied a lot for the exam."
+      }
     ]
   },
   {
@@ -140,45 +1078,57 @@
     "patternColor": "weak",
     "auxiliary": "haben",
     "conjugations": {
-      "prasens":     { "ich": "wohne",  "du": "wohnst",  "er": "wohnt",  "wir": "wohnen",  "ihr": "wohnt",   "sie": "wohnen"  },
-      "prateritum":  { "ich": "wohnte", "du": "wohntest","er": "wohnte", "wir": "wohnten", "ihr": "wohntet", "sie": "wohnten" },
-      "perfekt":     { "ich": "habe gewohnt",  "du": "hast gewohnt",  "er": "hat gewohnt",  "wir": "haben gewohnt",  "ihr": "habt gewohnt",  "sie": "haben gewohnt"  },
-      "konjunktiv2": { "ich": "wohnte", "du": "wohntest","er": "wohnte", "wir": "wohnten", "ihr": "wohntet", "sie": "wohnten" }
+      "prasens": {
+        "ich": "wohne",
+        "du": "wohnst",
+        "er": "wohnt",
+        "wir": "wohnen",
+        "ihr": "wohnt",
+        "sie": "wohnen"
+      },
+      "prateritum": {
+        "ich": "wohnte",
+        "du": "wohntest",
+        "er": "wohnte",
+        "wir": "wohnten",
+        "ihr": "wohntet",
+        "sie": "wohnten"
+      },
+      "perfekt": {
+        "ich": "habe gewohnt",
+        "du": "hast gewohnt",
+        "er": "hat gewohnt",
+        "wir": "haben gewohnt",
+        "ihr": "habt gewohnt",
+        "sie": "haben gewohnt"
+      },
+      "konjunktiv2": {
+        "ich": "wohnte",
+        "du": "wohntest",
+        "er": "wohnte",
+        "wir": "wohnten",
+        "ihr": "wohntet",
+        "sie": "wohnten"
+      }
     },
     "exceptions": [],
     "exceptionForms": [],
     "kasus": [],
     "reflexiv": false,
-    "preposition": { "prep": "in", "case": "Dativ", "meaning": "to live in (a place)" },
-    "usage": [
-      { "de": "Ich wohne in Wien.", "en": "I live in Vienna." },
-      { "de": "Wo wohnst du?", "en": "Where do you live?" }
-    ]
-  },
-  {
-    "id": "arbeiten",
-    "level": "A1",
-    "type": "verb",
-    "theme": "work",
-    "german": "arbeiten",
-    "english": "to work",
-    "patternLabel": "Schwach (weak)",
-    "patternColor": "weak",
-    "auxiliary": "haben",
-    "conjugations": {
-      "prasens":     { "ich": "arbeite",   "du": "arbeitest",   "er": "arbeitet",   "wir": "arbeiten",   "ihr": "arbeitet",   "sie": "arbeiten"   },
-      "prateritum":  { "ich": "arbeitete", "du": "arbeitetest", "er": "arbeitete",  "wir": "arbeiteten", "ihr": "arbeitetet", "sie": "arbeiteten" },
-      "perfekt":     { "ich": "habe gearbeitet", "du": "hast gearbeitet", "er": "hat gearbeitet", "wir": "haben gearbeitet", "ihr": "habt gearbeitet", "sie": "haben gearbeitet" },
-      "konjunktiv2": { "ich": "arbeitete", "du": "arbeitetest", "er": "arbeitete",  "wir": "arbeiteten", "ihr": "arbeitetet", "sie": "arbeiteten" }
+    "preposition": {
+      "prep": "in",
+      "case": "Dativ",
+      "meaning": "to live in (a place)"
     },
-    "exceptions": ["Stem ends in -t: inserts -e- before endings (arbeitest, arbeitet)"],
-    "exceptionForms": ["prasens-du", "prasens-er", "prasens-ihr"],
-    "kasus": [],
-    "reflexiv": false,
-    "preposition": { "prep": "an", "case": "Dativ", "meaning": "to work on sth." },
     "usage": [
-      { "de": "Ich arbeite an einem neuen Projekt.", "en": "I am working on a new project." },
-      { "de": "Sie arbeitet als Ärztin.", "en": "She works as a doctor." }
+      {
+        "de": "Ich wohne in Wien.",
+        "en": "I live in Vienna."
+      },
+      {
+        "de": "Wo wohnst du?",
+        "en": "Where do you live?"
+      }
     ]
   },
   {
@@ -192,45 +1142,55 @@
     "patternColor": "weak",
     "auxiliary": "haben",
     "conjugations": {
-      "prasens":     { "ich": "koche",  "du": "kochst",  "er": "kocht",  "wir": "kochen",  "ihr": "kocht",   "sie": "kochen"  },
-      "prateritum":  { "ich": "kochte", "du": "kochtest","er": "kochte", "wir": "kochten", "ihr": "kochtet", "sie": "kochten" },
-      "perfekt":     { "ich": "habe gekocht",  "du": "hast gekocht",  "er": "hat gekocht",  "wir": "haben gekocht",  "ihr": "habt gekocht",  "sie": "haben gekocht"  },
-      "konjunktiv2": { "ich": "kochte", "du": "kochtest","er": "kochte", "wir": "kochten", "ihr": "kochtet", "sie": "kochten" }
+      "prasens": {
+        "ich": "koche",
+        "du": "kochst",
+        "er": "kocht",
+        "wir": "kochen",
+        "ihr": "kocht",
+        "sie": "kochen"
+      },
+      "prateritum": {
+        "ich": "kochte",
+        "du": "kochtest",
+        "er": "kochte",
+        "wir": "kochten",
+        "ihr": "kochtet",
+        "sie": "kochten"
+      },
+      "perfekt": {
+        "ich": "habe gekocht",
+        "du": "hast gekocht",
+        "er": "hat gekocht",
+        "wir": "haben gekocht",
+        "ihr": "habt gekocht",
+        "sie": "haben gekocht"
+      },
+      "konjunktiv2": {
+        "ich": "kochte",
+        "du": "kochtest",
+        "er": "kochte",
+        "wir": "kochten",
+        "ihr": "kochtet",
+        "sie": "kochten"
+      }
     },
     "exceptions": [],
     "exceptionForms": [],
-    "kasus": ["akkusativ"],
+    "kasus": [
+      "akkusativ"
+    ],
     "reflexiv": false,
     "preposition": null,
     "usage": [
-      { "de": "Er kocht jeden Abend.", "en": "He cooks every evening." },
-      { "de": "Sie hat eine Suppe gekocht.", "en": "She cooked a soup." }
-    ]
-  },
-  {
-    "id": "suchen",
-    "level": "A2",
-    "type": "verb",
-    "theme": "daily_life",
-    "german": "suchen",
-    "english": "to look for / to search",
-    "patternLabel": "Schwach (weak)",
-    "patternColor": "weak",
-    "auxiliary": "haben",
-    "conjugations": {
-      "prasens":     { "ich": "suche",  "du": "suchst",  "er": "sucht",  "wir": "suchen",  "ihr": "sucht",   "sie": "suchen"  },
-      "prateritum":  { "ich": "suchte", "du": "suchtest","er": "suchte", "wir": "suchten", "ihr": "suchtet", "sie": "suchten" },
-      "perfekt":     { "ich": "habe gesucht",  "du": "hast gesucht",  "er": "hat gesucht",  "wir": "haben gesucht",  "ihr": "habt gesucht",  "sie": "haben gesucht"  },
-      "konjunktiv2": { "ich": "suchte", "du": "suchtest","er": "suchte", "wir": "suchten", "ihr": "suchtet", "sie": "suchten" }
-    },
-    "exceptions": [],
-    "exceptionForms": [],
-    "kasus": ["akkusativ"],
-    "reflexiv": false,
-    "preposition": { "prep": "nach", "case": "Dativ", "meaning": "to search for sth." },
-    "usage": [
-      { "de": "Ich suche meinen Schlüssel.", "en": "I am looking for my key." },
-      { "de": "Er sucht nach einer neuen Stelle.", "en": "He is looking for a new job." }
+      {
+        "de": "Er kocht jeden Abend.",
+        "en": "He cooks every evening."
+      },
+      {
+        "de": "Sie hat eine Suppe gekocht.",
+        "en": "She cooked a soup."
+      }
     ]
   },
   {
@@ -244,19 +1204,58 @@
     "patternColor": "weak",
     "auxiliary": "haben",
     "conjugations": {
-      "prasens":     { "ich": "erkläre",  "du": "erklärst",  "er": "erklärt",  "wir": "erklären",  "ihr": "erklärt",   "sie": "erklären"  },
-      "prateritum":  { "ich": "erklärte", "du": "erklärtest","er": "erklärte", "wir": "erklärten", "ihr": "erklärtet", "sie": "erklärten" },
-      "perfekt":     { "ich": "habe erklärt",  "du": "hast erklärt",  "er": "hat erklärt",  "wir": "haben erklärt",  "ihr": "habt erklärt",  "sie": "haben erklärt"  },
-      "konjunktiv2": { "ich": "erklärte", "du": "erklärtest","er": "erklärte", "wir": "erklärten", "ihr": "erklärtet", "sie": "erklärten" }
+      "prasens": {
+        "ich": "erkläre",
+        "du": "erklärst",
+        "er": "erklärt",
+        "wir": "erklären",
+        "ihr": "erklärt",
+        "sie": "erklären"
+      },
+      "prateritum": {
+        "ich": "erklärte",
+        "du": "erklärtest",
+        "er": "erklärte",
+        "wir": "erklärten",
+        "ihr": "erklärtet",
+        "sie": "erklärten"
+      },
+      "perfekt": {
+        "ich": "habe erklärt",
+        "du": "hast erklärt",
+        "er": "hat erklärt",
+        "wir": "haben erklärt",
+        "ihr": "habt erklärt",
+        "sie": "haben erklärt"
+      },
+      "konjunktiv2": {
+        "ich": "erklärte",
+        "du": "erklärtest",
+        "er": "erklärte",
+        "wir": "erklärten",
+        "ihr": "erklärtet",
+        "sie": "erklärten"
+      }
     },
-    "exceptions": ["Inseparable er- prefix — no ge- in Partizip"],
+    "exceptions": [
+      "Inseparable er- prefix — no ge- in Partizip"
+    ],
     "exceptionForms": [],
-    "kasus": ["akkusativ", "dativ"],
+    "kasus": [
+      "akkusativ",
+      "dativ"
+    ],
     "reflexiv": false,
     "preposition": null,
     "usage": [
-      { "de": "Er erklärt mir die Grammatik.", "en": "He explains the grammar to me." },
-      { "de": "Kannst du das erklären?", "en": "Can you explain that?" }
+      {
+        "de": "Er erklärt mir die Grammatik.",
+        "en": "He explains the grammar to me."
+      },
+      {
+        "de": "Kannst du das erklären?",
+        "en": "Can you explain that?"
+      }
     ]
   },
   {
@@ -270,18 +1269,57 @@
     "patternColor": "weak",
     "auxiliary": "haben",
     "conjugations": {
-      "prasens":     { "ich": "behaupte",   "du": "behauptest",   "er": "behauptet",   "wir": "behaupten",   "ihr": "behauptet",   "sie": "behaupten"   },
-      "prateritum":  { "ich": "behauptete", "du": "behauptetest", "er": "behauptete",  "wir": "behaupteten", "ihr": "behauptetet", "sie": "behaupteten" },
-      "perfekt":     { "ich": "habe behauptet", "du": "hast behauptet", "er": "hat behauptet", "wir": "haben behauptet", "ihr": "habt behauptet", "sie": "haben behauptet" },
-      "konjunktiv2": { "ich": "behauptete", "du": "behauptetest", "er": "behauptete",  "wir": "behaupteten", "ihr": "behauptetet", "sie": "behaupteten" }
+      "prasens": {
+        "ich": "behaupte",
+        "du": "behauptest",
+        "er": "behauptet",
+        "wir": "behaupten",
+        "ihr": "behauptet",
+        "sie": "behaupten"
+      },
+      "prateritum": {
+        "ich": "behauptete",
+        "du": "behauptetest",
+        "er": "behauptete",
+        "wir": "behaupteten",
+        "ihr": "behauptetet",
+        "sie": "behaupteten"
+      },
+      "perfekt": {
+        "ich": "habe behauptet",
+        "du": "hast behauptet",
+        "er": "hat behauptet",
+        "wir": "haben behauptet",
+        "ihr": "habt behauptet",
+        "sie": "haben behauptet"
+      },
+      "konjunktiv2": {
+        "ich": "behauptete",
+        "du": "behauptetest",
+        "er": "behauptete",
+        "wir": "behaupteten",
+        "ihr": "behauptetet",
+        "sie": "behaupteten"
+      }
     },
-    "exceptions": ["Stem ends in -t: inserts -e- (behauptest, behauptet)", "Inseparable be- prefix"],
-    "exceptionForms": ["prasens-du", "prasens-er"],
-    "kasus": ["akkusativ"],
+    "exceptions": [
+      "Stem ends in -t: inserts -e- (behauptest, behauptet)",
+      "Inseparable be- prefix"
+    ],
+    "exceptionForms": [
+      "prasens-du",
+      "prasens-er"
+    ],
+    "kasus": [
+      "akkusativ"
+    ],
     "reflexiv": false,
     "preposition": null,
     "usage": [
-      { "de": "Er behauptet, unschuldig zu sein.", "en": "He claims to be innocent." }
+      {
+        "de": "Er behauptet, unschuldig zu sein.",
+        "en": "He claims to be innocent."
+      }
     ]
   },
   {
@@ -295,18 +1333,54 @@
     "patternColor": "weak",
     "auxiliary": "haben",
     "conjugations": {
-      "prasens":     { "ich": "erörtere",  "du": "erörterst",  "er": "erörtert",  "wir": "erörtern",  "ihr": "erörtert",  "sie": "erörtern"  },
-      "prateritum":  { "ich": "erörterte", "du": "erörtertest","er": "erörterte", "wir": "erörterten","ihr": "erörtertet","sie": "erörterten" },
-      "perfekt":     { "ich": "habe erörtert", "du": "hast erörtert", "er": "hat erörtert", "wir": "haben erörtert", "ihr": "habt erörtert", "sie": "haben erörtert" },
-      "konjunktiv2": { "ich": "erörterte", "du": "erörtertest","er": "erörterte", "wir": "erörterten","ihr": "erörtertet","sie": "erörterten" }
+      "prasens": {
+        "ich": "erörtere",
+        "du": "erörterst",
+        "er": "erörtert",
+        "wir": "erörtern",
+        "ihr": "erörtert",
+        "sie": "erörtern"
+      },
+      "prateritum": {
+        "ich": "erörterte",
+        "du": "erörtertest",
+        "er": "erörterte",
+        "wir": "erörterten",
+        "ihr": "erörtertet",
+        "sie": "erörterten"
+      },
+      "perfekt": {
+        "ich": "habe erörtert",
+        "du": "hast erörtert",
+        "er": "hat erörtert",
+        "wir": "haben erörtert",
+        "ihr": "habt erörtert",
+        "sie": "haben erörtert"
+      },
+      "konjunktiv2": {
+        "ich": "erörterte",
+        "du": "erörtertest",
+        "er": "erörterte",
+        "wir": "erörterten",
+        "ihr": "erörtertet",
+        "sie": "erörterten"
+      }
     },
-    "exceptions": ["Inseparable er- prefix — no ge- in Partizip", "Formal/written register"],
+    "exceptions": [
+      "Inseparable er- prefix — no ge- in Partizip",
+      "Formal/written register"
+    ],
     "exceptionForms": [],
-    "kasus": ["akkusativ"],
+    "kasus": [
+      "akkusativ"
+    ],
     "reflexiv": false,
     "preposition": null,
     "usage": [
-      { "de": "Wir erörterten die ethischen Fragen.", "en": "We deliberated the ethical questions." }
+      {
+        "de": "Wir erörterten die ethischen Fragen.",
+        "en": "We deliberated the ethical questions."
+      }
     ]
   },
   {
@@ -320,18 +1394,53 @@
     "patternColor": "weak",
     "auxiliary": "haben",
     "conjugations": {
-      "prasens":     { "ich": "vereinfache",  "du": "vereinfachst",  "er": "vereinfacht",  "wir": "vereinfachen",  "ihr": "vereinfacht",   "sie": "vereinfachen"  },
-      "prateritum":  { "ich": "vereinfachte", "du": "vereinfachtest","er": "vereinfachte", "wir": "vereinfachten", "ihr": "vereinfachtet", "sie": "vereinfachten" },
-      "perfekt":     { "ich": "habe vereinfacht", "du": "hast vereinfacht", "er": "hat vereinfacht", "wir": "haben vereinfacht", "ihr": "habt vereinfacht", "sie": "haben vereinfacht" },
-      "konjunktiv2": { "ich": "vereinfachte", "du": "vereinfachtest","er": "vereinfachte", "wir": "vereinfachten", "ihr": "vereinfachtet", "sie": "vereinfachten" }
+      "prasens": {
+        "ich": "vereinfache",
+        "du": "vereinfachst",
+        "er": "vereinfacht",
+        "wir": "vereinfachen",
+        "ihr": "vereinfacht",
+        "sie": "vereinfachen"
+      },
+      "prateritum": {
+        "ich": "vereinfachte",
+        "du": "vereinfachtest",
+        "er": "vereinfachte",
+        "wir": "vereinfachten",
+        "ihr": "vereinfachtet",
+        "sie": "vereinfachten"
+      },
+      "perfekt": {
+        "ich": "habe vereinfacht",
+        "du": "hast vereinfacht",
+        "er": "hat vereinfacht",
+        "wir": "haben vereinfacht",
+        "ihr": "habt vereinfacht",
+        "sie": "haben vereinfacht"
+      },
+      "konjunktiv2": {
+        "ich": "vereinfachte",
+        "du": "vereinfachtest",
+        "er": "vereinfachte",
+        "wir": "vereinfachten",
+        "ihr": "vereinfachtet",
+        "sie": "vereinfachten"
+      }
     },
-    "exceptions": ["Inseparable ver- prefix — no ge- in Partizip"],
+    "exceptions": [
+      "Inseparable ver- prefix — no ge- in Partizip"
+    ],
     "exceptionForms": [],
-    "kasus": ["akkusativ"],
+    "kasus": [
+      "akkusativ"
+    ],
     "reflexiv": false,
     "preposition": null,
     "usage": [
-      { "de": "Das vereinfacht die Sache erheblich.", "en": "That simplifies the matter considerably." }
+      {
+        "de": "Das vereinfacht die Sache erheblich.",
+        "en": "That simplifies the matter considerably."
+      }
     ]
   }
 ]

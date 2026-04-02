@@ -13,13 +13,28 @@
     "structureFormula": "sehr + Adjektiv/Adverb",
     "variants": [],
     "relatedWords": [
-      { "word": "ziemlich", "meaning": "quite / rather" },
-      { "word": "besonders", "meaning": "especially / particularly" },
-      { "word": "zu", "meaning": "too (excessive)" }
+      {
+        "word": "ziemlich",
+        "meaning": "quite / rather"
+      },
+      {
+        "word": "besonders",
+        "meaning": "especially / particularly"
+      },
+      {
+        "word": "zu",
+        "meaning": "too (excessive)"
+      }
     ],
     "usage": [
-      { "de": "Das ist sehr interessant.", "en": "That is very interesting." },
-      { "de": "Er arbeitet sehr schnell.", "en": "He works very quickly." }
+      {
+        "de": "Das ist sehr interessant.",
+        "en": "That is very interesting."
+      },
+      {
+        "de": "Er arbeitet sehr schnell.",
+        "en": "He works very quickly."
+      }
     ]
   },
   {
@@ -35,18 +50,42 @@
     "grammarRuleDetail": "gern + verb = to like doing sth. Both gern and gerne are correct. Comparative: lieber. Superlative: am liebsten.",
     "structureFormula": "Ich + V + gern | gern + V (verb second)",
     "variants": [
-      { "label": "Variant", "form": "gerne (equally correct)" },
-      { "label": "Komparativ", "form": "lieber (prefer)" },
-      { "label": "Superlativ", "form": "am liebsten (like most)" }
+      {
+        "label": "Variant",
+        "form": "gerne (equally correct)"
+      },
+      {
+        "label": "Komparativ",
+        "form": "lieber (prefer)"
+      },
+      {
+        "label": "Superlativ",
+        "form": "am liebsten (like most)"
+      }
     ],
     "relatedWords": [
-      { "word": "lieber", "meaning": "rather / prefer (comparative)" },
-      { "word": "am liebsten", "meaning": "most of all (superlative)" },
-      { "word": "ungern", "meaning": "reluctantly / not like" }
+      {
+        "word": "lieber",
+        "meaning": "rather / prefer (comparative)"
+      },
+      {
+        "word": "am liebsten",
+        "meaning": "most of all (superlative)"
+      },
+      {
+        "word": "ungern",
+        "meaning": "reluctantly / not like"
+      }
     ],
     "usage": [
-      { "de": "Ich lese gern Bücher.", "en": "I like reading books." },
-      { "de": "Ich trinke lieber Tee als Kaffee.", "en": "I prefer tea to coffee." }
+      {
+        "de": "Ich lese gern Bücher.",
+        "en": "I like reading books."
+      },
+      {
+        "de": "Ich trinke lieber Tee als Kaffee.",
+        "en": "I prefer tea to coffee."
+      }
     ]
   },
   {
@@ -63,13 +102,28 @@
     "structureFormula": "Leider + V + S … | S + V + leider …",
     "variants": [],
     "relatedWords": [
-      { "word": "zum Glück", "meaning": "fortunately (antonym)" },
-      { "word": "bedauerlicherweise", "meaning": "regrettably (formal)" },
-      { "word": "leider Gottes", "meaning": "unfortunately (emphatic)" }
+      {
+        "word": "zum Glück",
+        "meaning": "fortunately (antonym)"
+      },
+      {
+        "word": "bedauerlicherweise",
+        "meaning": "regrettably (formal)"
+      },
+      {
+        "word": "leider Gottes",
+        "meaning": "unfortunately (emphatic)"
+      }
     ],
     "usage": [
-      { "de": "Leider kann ich nicht kommen.", "en": "Unfortunately I can't come. (pos. 1, inversion)" },
-      { "de": "Ich habe leider keine Zeit.", "en": "I'm afraid I have no time. (mid-sentence)" }
+      {
+        "de": "Leider kann ich nicht kommen.",
+        "en": "Unfortunately I can't come. (pos. 1, inversion)"
+      },
+      {
+        "de": "Ich habe leider keine Zeit.",
+        "en": "I'm afraid I have no time. (mid-sentence)"
+      }
     ]
   },
   {
@@ -85,17 +139,38 @@
     "grammarRuleDetail": "noch has several distinct meanings: (1) still/yet (ongoing action), (2) another/more (quantity), (3) even (degree with comparatives). Negation: noch nicht = not yet.",
     "structureFormula": "Er schläft noch. | Noch ein Bier. | noch größer",
     "variants": [
-      { "label": "Negation", "form": "noch nicht (not yet)" },
-      { "label": "With comparative", "form": "noch größer (even bigger)" }
+      {
+        "label": "Negation",
+        "form": "noch nicht (not yet)"
+      },
+      {
+        "label": "With comparative",
+        "form": "noch größer (even bigger)"
+      }
     ],
     "relatedWords": [
-      { "word": "schon", "meaning": "already" },
-      { "word": "immer noch", "meaning": "still (emphatic)" },
-      { "word": "nicht mehr", "meaning": "no longer" }
+      {
+        "word": "schon",
+        "meaning": "already"
+      },
+      {
+        "word": "immer noch",
+        "meaning": "still (emphatic)"
+      },
+      {
+        "word": "nicht mehr",
+        "meaning": "no longer"
+      }
     ],
     "usage": [
-      { "de": "Er schläft noch.", "en": "He is still asleep." },
-      { "de": "Ich habe noch keine Zeit gehabt.", "en": "I haven't had time yet." }
+      {
+        "de": "Er schläft noch.",
+        "en": "He is still asleep."
+      },
+      {
+        "de": "Ich habe noch keine Zeit gehabt.",
+        "en": "I haven't had time yet."
+      }
     ]
   },
   {
@@ -111,17 +186,38 @@
     "grammarRuleDetail": "schon has temporal meaning (already) and particle meaning (reassurance: 'it'll be fine'). In questions it means 'yet'. Contrast with noch (still).",
     "structureFormula": "Ich habe schon gegessen. | Schon um 6 Uhr.",
     "variants": [
-      { "label": "As particle (reassurance)", "form": "Das wird schon klappen." },
-      { "label": "In question (yet?)", "form": "Hast du schon gegessen?" }
+      {
+        "label": "As particle (reassurance)",
+        "form": "Das wird schon klappen."
+      },
+      {
+        "label": "In question (yet?)",
+        "form": "Hast du schon gegessen?"
+      }
     ],
     "relatedWords": [
-      { "word": "noch", "meaning": "still / yet" },
-      { "word": "bereits", "meaning": "already (formal)" },
-      { "word": "endlich", "meaning": "finally / at last" }
+      {
+        "word": "noch",
+        "meaning": "still / yet"
+      },
+      {
+        "word": "bereits",
+        "meaning": "already (formal)"
+      },
+      {
+        "word": "endlich",
+        "meaning": "finally / at last"
+      }
     ],
     "usage": [
-      { "de": "Ich habe schon gegessen.", "en": "I have already eaten." },
-      { "de": "Er war schon um 6 Uhr hier.", "en": "He was already here at 6 o'clock." }
+      {
+        "de": "Ich habe schon gegessen.",
+        "en": "I have already eaten."
+      },
+      {
+        "de": "Er war schon um 6 Uhr hier.",
+        "en": "He was already here at 6 o'clock."
+      }
     ]
   },
   {
@@ -138,13 +234,28 @@
     "structureFormula": "fast + Adjektiv/Adverb | fast + VP",
     "variants": [],
     "relatedWords": [
-      { "word": "kaum", "meaning": "hardly / barely" },
-      { "word": "beinahe", "meaning": "almost (more literary)" },
-      { "word": "ungefähr", "meaning": "approximately" }
+      {
+        "word": "kaum",
+        "meaning": "hardly / barely"
+      },
+      {
+        "word": "beinahe",
+        "meaning": "almost (more literary)"
+      },
+      {
+        "word": "ungefähr",
+        "meaning": "approximately"
+      }
     ],
     "usage": [
-      { "de": "Das ist fast fertig.", "en": "That is almost done." },
-      { "de": "Ich habe fast nichts gegessen.", "en": "I ate almost nothing." }
+      {
+        "de": "Das ist fast fertig.",
+        "en": "That is almost done."
+      },
+      {
+        "de": "Ich habe fast nichts gegessen.",
+        "en": "I ate almost nothing."
+      }
     ]
   },
   {
@@ -160,16 +271,234 @@
     "grammarRuleDetail": "besonders is a stronger intensifier than sehr. It singles out something as remarkable or exceptional.",
     "structureFormula": "besonders + Adjektiv/Adverb",
     "variants": [
-      { "label": "As adjective (attributive)", "form": "ein besonderer Anlass" }
+      {
+        "label": "As adjective (attributive)",
+        "form": "ein besonderer Anlass"
+      }
     ],
     "relatedWords": [
-      { "word": "insbesondere", "meaning": "in particular (formal)" },
-      { "word": "vor allem", "meaning": "above all" },
-      { "word": "hauptsächlich", "meaning": "mainly / primarily" }
+      {
+        "word": "insbesondere",
+        "meaning": "in particular (formal)"
+      },
+      {
+        "word": "vor allem",
+        "meaning": "above all"
+      },
+      {
+        "word": "hauptsächlich",
+        "meaning": "mainly / primarily"
+      }
     ],
     "usage": [
-      { "de": "Das ist besonders wichtig.", "en": "That is especially important." },
-      { "de": "Ich mag besonders gern Schokolade.", "en": "I particularly like chocolate." }
+      {
+        "de": "Das ist besonders wichtig.",
+        "en": "That is especially important."
+      },
+      {
+        "de": "Ich mag besonders gern Schokolade.",
+        "en": "I particularly like chocolate."
+      }
+    ]
+  },
+  {
+    "id": "noch_einmal",
+    "level": "A1",
+    "type": "andere",
+    "wordCategory": "adverb",
+    "german": "noch einmal",
+    "english": "once more, again",
+    "wordType": "Temporaladverb",
+    "wordTypeEN": "temporal adverb",
+    "grammarRule": "Used to indicate repetition of an action.",
+    "grammarRuleDetail": "'Noch einmal' modifies a verb to show that the action happens again. It typically follows the verb or object in the sentence.",
+    "structureFormula": "[Verb] + noch einmal",
+    "variants": [],
+    "relatedWords": [
+      {
+        "word": "wieder",
+        "meaning": "again"
+      }
+    ],
+    "usage": [
+      {
+        "de": "Hören Sie noch einmal.",
+        "en": "Listen once more."
+      },
+      {
+        "de": "Sagen Sie das noch einmal, bitte.",
+        "en": "Say that again, please."
+      }
+    ]
+  },
+  {
+    "id": "ein_bisschen",
+    "level": "A1",
+    "type": "andere",
+    "wordCategory": "adverb",
+    "german": "ein bisschen",
+    "english": "a little, a bit",
+    "wordType": "Gradpartikel",
+    "wordTypeEN": "degree adverb",
+    "grammarRule": "Used before adjectives or verbs to indicate a small amount or degree.",
+    "grammarRuleDetail": "'Ein bisschen' is invariable and does not change form. It can precede adjectives, adverbs, or verbs to soften or qualify a statement.",
+    "structureFormula": "ein bisschen + [Adjektiv/Verb]",
+    "variants": [],
+    "relatedWords": [
+      {
+        "word": "etwas",
+        "meaning": "somewhat, a little"
+      }
+    ],
+    "usage": [
+      {
+        "de": "Ich spreche ein bisschen Spanisch.",
+        "en": "I speak a little Spanish."
+      },
+      {
+        "de": "Das ist ein bisschen schwierig.",
+        "en": "That is a little difficult."
+      }
+    ]
+  },
+  {
+    "id": "woher",
+    "level": "A1",
+    "type": "andere",
+    "wordCategory": "adverb",
+    "german": "woher",
+    "english": "where from, from where",
+    "wordType": "Frageadverb",
+    "wordTypeEN": "interrogative adverb",
+    "grammarRule": "Used to ask about the origin or source of a person or thing.",
+    "grammarRuleDetail": "'Woher' opens a question about place of origin and triggers verb-subject inversion. It is paired with 'kommen' to ask about someone's home country.",
+    "structureFormula": "Woher + [Verb] + [Subjekt]?",
+    "variants": [],
+    "relatedWords": [
+      {
+        "word": "wo",
+        "meaning": "where"
+      }
+    ],
+    "usage": [
+      {
+        "de": "Woher kommst du?",
+        "en": "Where do you come from?"
+      },
+      {
+        "de": "Woher kommt Frau Tufan?",
+        "en": "Where does Ms. Tufan come from?"
+      }
+    ]
+  },
+  {
+    "id": "auch",
+    "level": "A1",
+    "type": "andere",
+    "wordCategory": "adverb",
+    "german": "auch",
+    "english": "also, too, as well",
+    "wordType": "Fokuspartikel",
+    "wordTypeEN": "focus particle / adverb",
+    "grammarRule": "Placed after the verb or before the word it modifies to add information.",
+    "grammarRuleDetail": "'Auch' links additional items or people to what has been stated. It typically appears after the conjugated verb in a main clause.",
+    "structureFormula": "[Subjekt] + [Verb] + auch + [Objekt]",
+    "variants": [],
+    "relatedWords": [
+      {
+        "word": "ebenfalls",
+        "meaning": "likewise, also"
+      }
+    ],
+    "usage": [
+      {
+        "de": "Aha, auch Türkisch.",
+        "en": "Ah, Turkish too."
+      },
+      {
+        "de": "Ich komme auch aus Deutschland.",
+        "en": "I also come from Germany."
+      }
+    ]
+  },
+  {
+    "id": "international",
+    "level": "A1",
+    "type": "andere",
+    "wordCategory": "adjective",
+    "german": "international",
+    "english": "international",
+    "wordType": "Adjektiv",
+    "wordTypeEN": "adjective",
+    "grammarRule": "Used attributively or predicatively without change in this A1 context.",
+    "grammarRuleDetail": "When used as part of a proper name or predicatively, 'international' does not inflect. As an attributive adjective before a noun it takes standard adjective endings.",
+    "structureFormula": "[Nomen] + international / international + [Nomen]",
+    "variants": [],
+    "relatedWords": [],
+    "usage": [
+      {
+        "de": "Willkommen bei 'Musik international'.",
+        "en": "Welcome to 'Music International'."
+      },
+      {
+        "de": "Der Kurs ist international.",
+        "en": "The course is international."
+      }
+    ]
+  },
+  {
+    "id": "toll",
+    "level": "A1",
+    "type": "andere",
+    "wordCategory": "adjective",
+    "german": "toll",
+    "english": "great, fantastic, cool",
+    "wordType": "Adjektiv",
+    "wordTypeEN": "adjective",
+    "grammarRule": "Used predicatively or as an exclamation to express enthusiasm.",
+    "grammarRuleDetail": "As a predicative adjective 'toll' is uninflected. As an attributive adjective before a noun it takes standard adjective endings.",
+    "structureFormula": "Das ist toll! / Ein toller [Nomen]",
+    "variants": [],
+    "relatedWords": [
+      {
+        "word": "super",
+        "meaning": "super, great"
+      }
+    ],
+    "usage": [
+      {
+        "de": "Ah, toll!",
+        "en": "Oh, great!"
+      },
+      {
+        "de": "Das ist wirklich toll.",
+        "en": "That is really fantastic."
+      }
+    ]
+  },
+  {
+    "id": "interessant",
+    "level": "A1",
+    "type": "andere",
+    "wordCategory": "adjective",
+    "german": "interessant",
+    "english": "interesting",
+    "wordType": "Adjektiv",
+    "wordTypeEN": "adjective",
+    "grammarRule": "Used predicatively or attributively to describe something as interesting.",
+    "grammarRuleDetail": "As a predicative adjective 'interessant' is uninflected. As an attributive adjective before a noun it takes standard adjective endings.",
+    "structureFormula": "Das ist interessant. / ein interessanter [Nomen]",
+    "variants": [],
+    "relatedWords": [],
+    "usage": [
+      {
+        "de": "Aus Thailand? Interessant.",
+        "en": "From Thailand? Interesting."
+      },
+      {
+        "de": "Deutsch ist sehr interessant.",
+        "en": "German is very interesting."
+      }
     ]
   }
 ]

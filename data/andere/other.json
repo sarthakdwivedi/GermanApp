@@ -1,31 +1,5 @@
 [
-  {
-    "id": "bitte",
-    "level": "A1",
-    "type": "andere",
-    "wordCategory": "other",
-    "german": "bitte",
-    "english": "please / you're welcome / pardon?",
-    "wordType": "Partikel / Interjektion",
-    "wordTypeEN": "Polite particle / interjection",
-    "grammarRule": "Multipurpose word — meaning depends entirely on context",
-    "grammarRuleDetail": "bitte has three main uses: (1) 'please' in requests, (2) 'you're welcome' as a response to Danke, (3) 'pardon?' or 'sorry?' when asking for repetition.",
-    "structureFormula": "Bitte + request | Danke → Bitte! | Wie bitte?",
-    "variants": [
-      { "label": "In a request", "form": "Bitte gib mir das." },
-      { "label": "Response to Danke", "form": "Bitte! / Bitte sehr!" },
-      { "label": "Pardon / repeat", "form": "Wie bitte?" }
-    ],
-    "relatedWords": [
-      { "word": "danke", "meaning": "thank you" },
-      { "word": "gern geschehen", "meaning": "you're welcome (formal)" },
-      { "word": "entschuldigung", "meaning": "excuse me / sorry" }
-    ],
-    "usage": [
-      { "de": "Kannst du mir bitte helfen?", "en": "Can you please help me?" },
-      { "de": "– Danke! – Bitte!", "en": "– Thank you! – You're welcome!" }
-    ]
-  },
+
   {
     "id": "es_gibt",
     "level": "A1",
@@ -129,6 +103,254 @@
     "usage": [
       { "de": "Das interessiert mich überhaupt nicht.", "en": "That doesn't interest me at all." },
       { "de": "Warum bist du überhaupt hier?", "en": "Why are you even here?" }
+    ]
+  }
+,
+  {
+    "id": "guten_tag",
+    "level": "A1",
+    "type": "andere",
+    "wordCategory": "other",
+    "german": "Guten Tag",
+    "english": "Good day, Hello (formal)",
+    "wordType": "Grußformel",
+    "wordTypeEN": "greeting phrase",
+    "grammarRule": "Fixed greeting phrase used at any time of day in formal contexts.",
+    "grammarRuleDetail": "'Guten Tag' is an accusative fixed phrase (short for 'Ich wünsche Ihnen einen guten Tag'). It is neutral and appropriate from mid-morning to early evening.",
+    "structureFormula": "Guten Tag[, Herr/Frau + Nachname].",
+    "variants": [{"label":"informal","form":"Hallo"}],
+    "relatedWords": [{"word":"Hallo","meaning":"Hi, Hello (informal)"}],
+    "usage": [
+      {"de": "Guten Tag, Herr Díaz.", "en": "Good day, Mr. Díaz."},
+      {"de": "Guten Tag! – Guten Tag!", "en": "Hello! – Hello!"}
+    ]
+  },
+  {
+    "id": "hallo",
+    "level": "A1",
+    "type": "andere",
+    "wordCategory": "other",
+    "german": "Hallo",
+    "english": "Hello, Hi (informal)",
+    "wordType": "Grußformel",
+    "wordTypeEN": "greeting phrase",
+    "grammarRule": "Informal greeting used with friends, family, or peers.",
+    "grammarRuleDetail": "'Hallo' is suitable in informal and semi-formal situations but is generally avoided in very formal professional contexts where 'Guten Tag' is preferred.",
+    "structureFormula": "Hallo[, Name]!",
+    "variants": [],
+    "relatedWords": [{"word":"Guten Tag","meaning":"Good day (formal)"}],
+    "usage": [
+      {"de": "Hallo! Ich bin Lili.", "en": "Hi! I am Lili."},
+      {"de": "Hallo, wie heißt du?", "en": "Hello, what is your name?"}
+    ]
+  },
+  {
+    "id": "auf_wiedersehen",
+    "level": "A1",
+    "type": "andere",
+    "wordCategory": "other",
+    "german": "Auf Wiedersehen",
+    "english": "Goodbye (formal)",
+    "wordType": "Abschiedsformel",
+    "wordTypeEN": "farewell phrase",
+    "grammarRule": "Formal farewell used in professional or polite contexts.",
+    "grammarRuleDetail": "'Auf Wiedersehen' literally means 'until we see each other again'. It is used in face-to-face situations; 'Auf Wiederhören' is the equivalent on the phone.",
+    "structureFormula": "Auf Wiedersehen[, Herr/Frau + Nachname].",
+    "variants": [{"label":"phone","form":"Auf Wiederhören"},{"label":"informal","form":"Tschüs"}],
+    "relatedWords": [{"word":"Tschüs","meaning":"Bye (informal)"}],
+    "usage": [
+      {"de": "Auf Wiedersehen, Frau Fleckenstein.", "en": "Goodbye, Ms. Fleckenstein."},
+      {"de": "Auf Wiedersehen und vielen Dank.", "en": "Goodbye and thank you very much."}
+    ]
+  },
+  {
+    "id": "tschuess",
+    "level": "A1",
+    "type": "andere",
+    "wordCategory": "other",
+    "german": "Tschüs",
+    "english": "Bye (informal)",
+    "wordType": "Abschiedsformel",
+    "wordTypeEN": "farewell phrase",
+    "grammarRule": "Informal farewell used with friends, family, or peers.",
+    "grammarRuleDetail": "'Tschüs' is informal and should not be used in formal professional settings. It is widespread across all German-speaking countries.",
+    "structureFormula": "Tschüs[, Name]!",
+    "variants": [],
+    "relatedWords": [{"word":"Auf Wiedersehen","meaning":"Goodbye (formal)"}],
+    "usage": [
+      {"de": "Tschüs, Kinder!", "en": "Bye, kids!"},
+      {"de": "Tschüs, bis morgen!", "en": "Bye, see you tomorrow!"}
+    ]
+  },
+  {
+    "id": "guten_abend",
+    "level": "A1",
+    "type": "andere",
+    "wordCategory": "other",
+    "german": "Guten Abend",
+    "english": "Good evening",
+    "wordType": "Grußformel",
+    "wordTypeEN": "greeting phrase",
+    "grammarRule": "Formal greeting used in the evening, typically from around 6 pm onwards.",
+    "grammarRuleDetail": "'Guten Abend' follows the same accusative fixed-phrase pattern as 'Guten Tag'. Use it when greeting someone in the evening in formal or polite settings.",
+    "structureFormula": "Guten Abend[, Herr/Frau + Nachname].",
+    "variants": [],
+    "relatedWords": [{"word":"Guten Tag","meaning":"Good day"}],
+    "usage": [
+      {"de": "Guten Abend, meine Damen und Herren.", "en": "Good evening, ladies and gentlemen."},
+      {"de": "Guten Abend! Willkommen.", "en": "Good evening! Welcome."}
+    ]
+  },
+  {
+    "id": "guten_morgen",
+    "level": "A1",
+    "type": "andere",
+    "wordCategory": "other",
+    "german": "Guten Morgen",
+    "english": "Good morning",
+    "wordType": "Grußformel",
+    "wordTypeEN": "greeting phrase",
+    "grammarRule": "Greeting used in the morning, typically until around midday.",
+    "grammarRuleDetail": "'Guten Morgen' follows the same accusative fixed-phrase pattern as 'Guten Tag'. In informal speech it is often shortened to 'Morgen'.",
+    "structureFormula": "Guten Morgen[, Herr/Frau + Nachname].",
+    "variants": [{"label":"informal","form":"Morgen"}],
+    "relatedWords": [{"word":"Guten Tag","meaning":"Good day"}],
+    "usage": [
+      {"de": "Guten Morgen, Frau Fleckenstein.", "en": "Good morning, Ms. Fleckenstein."},
+      {"de": "Guten Morgen! Wie geht es Ihnen?", "en": "Good morning! How are you?"}
+    ]
+  },
+  {
+    "id": "gute_nacht",
+    "level": "A1",
+    "type": "andere",
+    "wordCategory": "other",
+    "german": "Gute Nacht",
+    "english": "Good night",
+    "wordType": "Abschiedsformel",
+    "wordTypeEN": "farewell phrase",
+    "grammarRule": "Farewell phrase used before going to sleep or very late at night.",
+    "grammarRuleDetail": "'Gute Nacht' is an accusative fixed phrase used as a parting greeting at bedtime. It is not used as a general evening greeting — use 'Guten Abend' for that.",
+    "structureFormula": "Gute Nacht[, Name].",
+    "variants": [{"label":"very informal","form":"Nacht"}],
+    "relatedWords": [{"word":"Guten Abend","meaning":"Good evening"}],
+    "usage": [
+      {"de": "Gute Nacht. – Nacht, Papa.", "en": "Good night. – Night, Dad."},
+      {"de": "Gute Nacht und schlaf gut!", "en": "Good night and sleep well!"}
+    ]
+  },
+  {
+    "id": "willkommen",
+    "level": "A1",
+    "type": "andere",
+    "wordCategory": "other",
+    "german": "willkommen",
+    "english": "welcome",
+    "wordType": "Grußformel / Adjektiv",
+    "wordTypeEN": "greeting / adjective",
+    "grammarRule": "Used as a fixed welcome phrase, often followed by 'bei' + dative.",
+    "grammarRuleDetail": "'Willkommen' is typically used predicatively as an interjection. When followed by 'bei', the noun takes the dative case: 'Willkommen bei der Firma'.",
+    "structureFormula": "Willkommen bei + [Dativ]!",
+    "variants": [],
+    "relatedWords": [],
+    "usage": [
+      {"de": "Willkommen bei 'Musik international'.", "en": "Welcome to 'Music International'."},
+      {"de": "Willkommen im Kurs!", "en": "Welcome to the course!"}
+    ]
+  },
+  {
+    "id": "danke",
+    "level": "A1",
+    "type": "andere",
+    "wordCategory": "other",
+    "german": "danke",
+    "english": "thank you, thanks",
+    "wordType": "Interjektion",
+    "wordTypeEN": "interjection",
+    "grammarRule": "Fixed expression of gratitude; used on its own or reinforced with 'sehr' or 'schön'.",
+    "grammarRuleDetail": "'Danke' is an invariable interjection. It can be strengthened to 'Danke schön' or 'Danke sehr'. The formal equivalent in full is 'Vielen Dank'.",
+    "structureFormula": "Danke[schön / sehr]!",
+    "variants": [{"label":"formal","form":"Vielen Dank"},{"label":"stronger","form":"Danke schön"}],
+    "relatedWords": [{"word":"bitte","meaning":"please / you're welcome"}],
+    "usage": [
+      {"de": "Oh, danke!", "en": "Oh, thank you!"},
+      {"de": "Danke schön, Frau Fleckenstein.", "en": "Thank you very much, Ms. Fleckenstein."}
+    ]
+  },
+  {
+    "id": "vielen_dank",
+    "level": "A1",
+    "type": "andere",
+    "wordCategory": "other",
+    "german": "Vielen Dank",
+    "english": "Thank you very much",
+    "wordType": "Höflichkeitsformel",
+    "wordTypeEN": "courtesy phrase",
+    "grammarRule": "Formal fixed expression of gratitude; stronger than 'danke'.",
+    "grammarRuleDetail": "'Vielen Dank' is an accusative fixed phrase (many thanks). It is used in formal written and spoken communication and is interchangeable with 'Herzlichen Dank' in tone.",
+    "structureFormula": "Vielen Dank[, Herr/Frau + Nachname].",
+    "variants": [],
+    "relatedWords": [{"word":"danke","meaning":"thanks"}],
+    "usage": [
+      {"de": "Vielen Dank, Herr Kostadinov.", "en": "Thank you very much, Mr. Kostadinov."},
+      {"de": "Vielen Dank für Ihre Hilfe.", "en": "Thank you very much for your help."}
+    ]
+  },
+  {
+    "id": "auf_wiederhoeren",
+    "level": "A1",
+    "type": "andere",
+    "wordCategory": "other",
+    "german": "Auf Wiederhören",
+    "english": "Goodbye (on the phone)",
+    "wordType": "Abschiedsformel",
+    "wordTypeEN": "farewell phrase (telephone)",
+    "grammarRule": "Farewell phrase used exclusively at the end of phone calls.",
+    "grammarRuleDetail": "'Auf Wiederhören' is the telephone equivalent of 'Auf Wiedersehen'. It literally means 'until we hear each other again' and is the standard formal way to end a phone call.",
+    "structureFormula": "Auf Wiederhören[, Herr/Frau + Nachname].",
+    "variants": [],
+    "relatedWords": [{"word":"Auf Wiedersehen","meaning":"Goodbye (in person)"}],
+    "usage": [
+      {"de": "Auf Wiederhören, Herr Kostadinov.", "en": "Goodbye, Mr. Kostadinov (phone)."},
+      {"de": "Vielen Dank und auf Wiederhören.", "en": "Thank you very much and goodbye."}
+    ]
+  },
+  {
+    "id": "bitte",
+    "level": "A1",
+    "type": "andere",
+    "wordCategory": "other",
+    "german": "bitte",
+    "english": "please / you're welcome",
+    "wordType": "Höflichkeitspartikel",
+    "wordTypeEN": "politeness particle",
+    "grammarRule": "Used to make requests polite or to respond to 'Danke'.",
+    "grammarRuleDetail": "'Bitte' can appear before or after the verb in requests to soften them. As a response to thanks it means 'you're welcome'. It is also used to ask someone to repeat: 'Wie bitte?'",
+    "structureFormula": "[Imperativ], bitte. / Bitte + [Imperativ].",
+    "variants": [{"label":"clarification","form":"Wie bitte?"}],
+    "relatedWords": [{"word":"danke","meaning":"thank you"}],
+    "usage": [
+      {"de": "Buchstabieren Sie, bitte.", "en": "Please spell it."},
+      {"de": "Danke! – Bitte.", "en": "Thank you! – You're welcome."}
+    ]
+  },
+  {
+    "id": "wie_bitte",
+    "level": "A1",
+    "type": "andere",
+    "wordCategory": "other",
+    "german": "Wie bitte?",
+    "english": "Pardon? / Could you repeat that?",
+    "wordType": "Höflichkeitsformel",
+    "wordTypeEN": "clarification phrase",
+    "grammarRule": "Fixed phrase used to ask someone to repeat what they said.",
+    "grammarRuleDetail": "'Wie bitte?' is the polite standard way to ask for repetition in German. It is always used as a complete utterance and is more polite than simply saying 'Was?'.",
+    "structureFormula": "Wie bitte?",
+    "variants": [],
+    "relatedWords": [{"word":"bitte","meaning":"please"}],
+    "usage": [
+      {"de": "Wie bitte? Ich verstehe nicht.", "en": "Pardon? I don't understand."},
+      {"de": "Wie bitte? Können Sie das wiederholen?", "en": "Could you repeat that?"}
     ]
   }
 ]
