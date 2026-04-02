@@ -116,15 +116,6 @@ body {
   color: var(--verb-strong);
 }
 
-.stats-pill {
-  font-size: 11px;
-  color: var(--text3);
-  background: var(--bg3);
-  padding: 4px 10px;
-  border-radius: 12px;
-  border: 1px solid var(--border);
-}
-
 .header-right {
   display: flex;
   align-items: center;
@@ -359,82 +350,6 @@ body {
 }
 
 .subfilter-row::-webkit-scrollbar {
-  display: none;
-}
-
-.level-filter {
-  display: flex;
-  gap: 6px;
-  padding: 12px 20px 0;
-  overflow-x: auto;
-  scrollbar-width: none;
-}
-
-.level-filter::-webkit-scrollbar {
-  display: none;
-}
-
-.lvl-btn {
-  flex-shrink: 0;
-  padding: 4px 12px;
-  border-radius: 12px;
-  font-size: 12px;
-  font-weight: 500;
-  cursor: pointer;
-  border: 1px solid var(--border);
-  background: transparent;
-  color: var(--text3);
-  transition: all 0.2s;
-  font-family: 'DM Sans', sans-serif;
-}
-
-.lvl-btn.active {
-  border-color: transparent;
-}
-
-.lvl-btn.A1.active {
-  background: rgba(105, 219, 124, 0.18);
-  color: var(--a1);
-}
-
-.lvl-btn.A2.active {
-  background: rgba(169, 227, 75, 0.18);
-  color: var(--a2);
-}
-
-.lvl-btn.B1.active {
-  background: rgba(74, 158, 255, 0.18);
-  color: var(--b1);
-}
-
-.lvl-btn.B2.active {
-  background: rgba(116, 143, 252, 0.18);
-  color: var(--b2);
-}
-
-.lvl-btn.C1.active {
-  background: rgba(218, 119, 242, 0.18);
-  color: var(--c1);
-}
-
-.lvl-btn.C2.active {
-  background: rgba(255, 107, 107, 0.18);
-  color: var(--c2);
-}
-
-.theme-filter {
-  display: none;
-  gap: 6px;
-  padding: 10px 20px 0;
-  overflow-x: auto;
-  scrollbar-width: none;
-}
-
-.theme-filter.visible {
-  display: flex;
-}
-
-.theme-filter::-webkit-scrollbar {
   display: none;
 }
 
@@ -1801,13 +1716,19 @@ body {
 
 /* ── Desktop: pills instead of dropdowns ── */
 @media (min-width: 768px) {
+  .level-dropdown {
+    top: 70px;   /* slight breathing room below header */
+    right: 32px; /* matches header padding */
+  }
+  .sidebar .ctx-filter { padding: 10px 20px 0; }
   .ctx-dropdown-wrap { display: none; }
   .ctx-pills {
     display: flex;
     flex-wrap: wrap;
     gap: 6px;
   }
-  .ctx-filter { padding: 10px 20px 0; }
+  .ctx-filter { padding: 10px 20px 0; 
+  position: relative; }
 
   .adj-decl-section { display: block; } 
   body {
@@ -1863,14 +1784,6 @@ body {
 
   .sidebar .type-tabs {
     padding: 12px 20px 0;
-  }
-
-  .sidebar .level-filter {
-    padding: 10px 20px 0;
-  }
-
-  .sidebar .theme-filter {
-    padding: 8px 20px 0;
   }
 
   .main-area {
