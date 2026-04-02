@@ -1723,10 +1723,11 @@ body {
   .sidebar .ctx-filter { padding: 10px 20px 0; }
   .ctx-dropdown-wrap { display: none; }
   .ctx-pills {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 6px;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;     
+  padding-top: 2px;
+}
   .ctx-filter { padding: 10px 20px 0; 
   position: relative; }
 

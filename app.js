@@ -324,8 +324,10 @@ function getPool() {
     pool = pool.filter(w => w.theme === currentTheme);
   if (currentType === 'verb' && currentPattern !== 'all')
     pool = pool.filter(w => w.verbFile === currentPattern);
+  if (currentType === 'andere' && currentAndereCategory !== 'all')
+    pool = pool.filter(w => w.andereFile === currentAndereCategory);
 
-  return pool;
+return pool;
 }
 
 // ── Search ────────────────────────────────────────────────────
