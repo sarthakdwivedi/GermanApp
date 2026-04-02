@@ -18,8 +18,9 @@ let currentType = 'verb';
 let currentLevel = 'all';
 let currentTheme = 'all';
 let currentPattern = 'all';
-let currentVerbTheme       = 'all';
-let currentAndereCategory  = 'all';
+let currentLevelMode = 'cumulative'; // 'cumulative' | 'exact'
+let currentVerbTheme = 'all';
+let currentAndereCategory = 'all';
 let currentIndex = 0;
 let searchQuery = '';
 let searchPool = null;   // non-null when search is active
@@ -42,9 +43,13 @@ function saveState() {
   localStorage.setItem('wortschatz_favs', JSON.stringify([...favs]));
   localStorage.setItem('wortschatz_type', currentType);
   localStorage.setItem('wortschatz_level', currentLevel);
+  localStorage.setItem('wortschatz_level_mode', currentLevelMode);
   localStorage.setItem('wortschatz_pattern', currentPattern);
   localStorage.setItem('wortschatz_theme', currentTheme);
   localStorage.setItem('wortschatz_index', currentIndex);
+  localStorage.setItem('wortschatz_andere_cat', currentAndereCategory);
+  localStorage.setItem('wortschatz_verb_theme', currentVerbTheme);
+
 }
 
 function loadState() {
@@ -53,9 +58,12 @@ function loadState() {
     if (savedFavs) JSON.parse(savedFavs).forEach(id => favs.add(id));
     currentType = localStorage.getItem('wortschatz_type') || 'verb';
     currentLevel = localStorage.getItem('wortschatz_level') || 'all';
+    currentLevelMode = localStorage.getItem('wortschatz_level_mode') || 'cumulative';
     currentPattern = localStorage.getItem('wortschatz_pattern') || 'all';
     currentTheme = localStorage.getItem('wortschatz_theme') || 'all';
     currentIndex = parseInt(localStorage.getItem('wortschatz_index')) || 0;
+    currentAndereCategory = localStorage.getItem('wortschatz_andere_cat') || 'all';
+    currentVerbTheme = localStorage.getItem('wortschatz_verb_theme') || 'all';
   } catch (e) { console.warn('Could not load state', e); }
 }
 
@@ -81,28 +89,28 @@ const THEME_LABELS = {
 const ANDERE_CATEGORY_LABELS = {
   conjunctions: 'Conjunctions',
   prepositions: 'Prepositions',
-  adjectives:   'Adjectives',
-  adverbs:      'Adverbs',
-  particles:    'Particles',
-  other:        'Other'
+  adjectives: 'Adjectives',
+  adverbs: 'Adverbs',
+  particles: 'Particles',
+  other: 'Other'
 };
 
 const VERB_THEME_LABELS = {
-  core:          'Core',
-  movement:      'Movement',
+  core: 'Core',
+  movement: 'Movement',
   communication: 'Communication',
-  daily_life:    'Daily Life',
-  education:     'Education',
-  work:          'Work',
-  food:          'Food',
-  shopping:      'Shopping',
-  home:          'Home',
-  leisure:       'Leisure',
-  emotions:      'Emotions',
-  social:        'Social',
-  thinking:      'Thinking',
-  sport:         'Sport',
-  nature:        'Nature'
+  daily_life: 'Daily Life',
+  education: 'Education',
+  work: 'Work',
+  food: 'Food',
+  shopping: 'Shopping',
+  home: 'Home',
+  leisure: 'Leisure',
+  emotions: 'Emotions',
+  social: 'Social',
+  thinking: 'Thinking',
+  sport: 'Sport',
+  nature: 'Nature'
 };
 const PATTERN_LABELS = {
   weak: 'Weak', strong: 'Strong', mixed_irregular: 'Mixed / Irregular',
@@ -110,12 +118,24 @@ const PATTERN_LABELS = {
   separable: 'Separable', inseparable: 'Inseparable'
 };
 
+const LEVELS = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'];
+
+const TENSES_BY_LEVEL = {
+  A1: ['prasens'],
+  A2: ['prasens', 'perfekt'],
+  B1: ['prasens', 'perfekt', 'prateritum'],
+  B2: ['prasens', 'perfekt', 'prateritum', 'konjunktiv2'],
+  C1: ['prasens', 'perfekt', 'prateritum', 'konjunktiv2'],
+  C2: ['prasens', 'perfekt', 'prateritum', 'konjunktiv2'],
+  all: ['prasens', 'perfekt', 'prateritum', 'konjunktiv2'],
+};
+
 // ── Data loading ──────────────────────────────────────────────
 async function loadData() {
   try {
     const responses = await Promise.all([
-      ...VERB_FILES.map(f   => fetch(`data/verben/${f}.json`)),
-      ...NOMEN_FILES.map(f  => fetch(`data/nomen/${f}.json`)),
+      ...VERB_FILES.map(f => fetch(`data/verben/${f}.json`)),
+      ...NOMEN_FILES.map(f => fetch(`data/nomen/${f}.json`)),
       ...ANDERE_FILES.map(f => fetch(`data/andere/${f}.json`))
     ]);
 
@@ -123,12 +143,12 @@ async function loadData() {
       if (!r.ok) throw new Error(`404: ${r.url}`);
     }
 
-    const verbResults   = responses.slice(0, VERB_FILES.length);
-    const nomenResults  = responses.slice(VERB_FILES.length, VERB_FILES.length + NOMEN_FILES.length);
+    const verbResults = responses.slice(0, VERB_FILES.length);
+    const nomenResults = responses.slice(VERB_FILES.length, VERB_FILES.length + NOMEN_FILES.length);
     const andereResults = responses.slice(VERB_FILES.length + NOMEN_FILES.length);
 
-    const verbenArrays = await Promise.all(verbResults.map(r  => r.json()));
-    const nomenArrays  = await Promise.all(nomenResults.map(r => r.json()));
+    const verbenArrays = await Promise.all(verbResults.map(r => r.json()));
+    const nomenArrays = await Promise.all(nomenResults.map(r => r.json()));
     const andereArrays = await Promise.all(andereResults.map(r => r.json()));
 
     // Tag each verb with its pattern group
@@ -142,7 +162,7 @@ async function loadData() {
     });
 
     DB.verben = verbenArrays.flat();
-    DB.nomen  = nomenArrays.flat();
+    DB.nomen = nomenArrays.flat();
     DB.andere = andereArrays.flat();
 
     initApp();
@@ -163,45 +183,58 @@ function initApp() {
   document.getElementById('loading').style.display = 'none';
   document.getElementById('app').style.display = '';
 
-  const total = DB.verben.length + DB.nomen.length + DB.andere.length;
-  document.getElementById('stats-pill').textContent = `${total} words · A1–C2`;
+  loadState();
 
-  loadState();              // ← restore saved state
+  const total = DB.verben.length + DB.nomen.length + DB.andere.length;
 
   buildPatternFilter();
   buildThemeFilter();
 
-  // Restore active tab UI
+  // Restore UI state
   document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
   document.querySelector(`.tab.${currentType}`)?.classList.add('active');
-  document.querySelectorAll('.lvl-btn').forEach(b => b.classList.remove('active'));
-  document.querySelector(`.lvl-btn[data-lvl="${currentLevel}"]`)?.classList.add('active');
-
+  updateLevelPill();
   showContextualFilter();
   renderCurrentWord();
-  updateFavButton();        // ← reflect saved favs on button
+  updateFavButton();
   setupSwipe();
+
+  // Show level picker on first ever load
+  if (!localStorage.getItem('wortschatz_level_set')) {
+    document.getElementById('level-picker-overlay').style.display = 'flex';
+  }
 }
 
 // ── Filter builders ───────────────────────────────────────────
 function buildPatternFilter() {
-  const c = document.getElementById('pattern-filter');
-  // Row 1: pattern buttons
-  const patternBtns =
-    `<button class="theme-btn active" data-pat="all" onclick="switchPattern('all',this)">All patterns</button>` +
-    VERB_FILES.map(f =>
-      `<button class="theme-btn" data-pat="${f}" onclick="switchPattern('${f}',this)">${PATTERN_LABELS[f]||f}</button>`
-    ).join('');
-  // Row 2: theme buttons
-  const themes = [...new Set(DB.verben.map(w => w.theme).filter(Boolean))].sort();
-  const themeBtns =
-    `<button class="theme-btn active" data-vtheme="all" onclick="switchVerbTheme('all',this)">All themes</button>` +
-    themes.map(t =>
-      `<button class="theme-btn" data-vtheme="${t}" onclick="switchVerbTheme('${t}',this)">${VERB_THEME_LABELS[t]||t}</button>`
-    ).join('');
-  c.innerHTML =
-    `<div class="subfilter-row" id="verb-pattern-row">${patternBtns}</div>
-     <div class="subfilter-row" id="verb-theme-row">${themeBtns}</div>`;
+  const pool = getPool();
+  // Only show patterns that have words in current pool
+  const activeFiles = VERB_FILES.filter(f =>
+    DB.verben.some(w => w.verbFile === f &&
+      (currentLevel === 'all' || (currentLevelMode === 'cumulative'
+        ? LEVELS.indexOf(w.level) <= LEVELS.indexOf(currentLevel)
+        : w.level === currentLevel))
+    )
+  );
+
+  const items = [
+    { val: 'all', label: 'All patterns' },
+    ...activeFiles.map(f => ({ val: f, label: PATTERN_LABELS[f] || f }))
+  ];
+
+  // Dropdown menu
+  document.getElementById('pattern-dropdown-menu').innerHTML = items.map(item =>
+    `<button class="ctx-menu-item${currentPattern === item.val ? ' active' : ''}"
+      onclick="pickPattern('${item.val}')">${item.label}</button>`
+  ).join('');
+
+  // Desktop pills
+  document.getElementById('pattern-pills').innerHTML = items.map(item =>
+    `<button class="theme-btn${currentPattern === item.val ? ' active' : ''}"
+      onclick="pickPattern('${item.val}')">${item.label}</button>`
+  ).join('');
+
+  updateCtxDropdownBtn('pattern');
 }
 
 function buildAndereFilter() {
@@ -209,7 +242,7 @@ function buildAndereFilter() {
   c.innerHTML =
     `<button class="theme-btn active" data-acat="all" onclick="switchAndereCategory('all',this)">All</button>` +
     ANDERE_FILES.map(f =>
-      `<button class="theme-btn" data-acat="${f}" onclick="switchAndereCategory('${f}',this)">${ANDERE_CATEGORY_LABELS[f]||f}</button>`
+      `<button class="theme-btn" data-acat="${f}" onclick="switchAndereCategory('${f}',this)">${ANDERE_CATEGORY_LABELS[f] || f}</button>`
     ).join('');
 }
 function updateFavButton() {
@@ -222,48 +255,75 @@ function updateFavButton() {
 }
 
 function buildThemeFilter() {
-  const themes = [...new Set(DB.nomen.map(w => w.theme).filter(Boolean))];
-  const c = document.getElementById('theme-filter');
-  c.innerHTML =
-    `<button class="theme-btn active" data-theme="all" onclick="switchTheme('all',this)">All themes</button>` +
-    themes.map(t =>
-      `<button class="theme-btn" data-theme="${t}" onclick="switchTheme('${t}',this)">${THEME_LABELS[t] || t}</button>`
-    ).join('');
+  const isNomen = currentType === 'nomen';
+  const isAndere = currentType === 'andere';
+  if (!isNomen && !isAndere) return;
+
+  const sourceDB = isNomen ? DB.nomen : DB.andere;
+  const maxIdx = currentLevel === 'all' ? 99 : LEVELS.indexOf(currentLevel);
+
+  // Only show themes/categories that have words at this level
+  const activeItems = isNomen
+    ? [...new Set(sourceDB
+      .filter(w => currentLevel === 'all' ||
+        (currentLevelMode === 'cumulative'
+          ? LEVELS.indexOf(w.level) <= maxIdx
+          : w.level === currentLevel))
+      .map(w => w.theme).filter(Boolean))]
+      .map(t => ({ val: t, label: THEME_LABELS[t] || t }))
+    : ANDERE_FILES
+      .filter(f => sourceDB.some(w => w.andereFile === f &&
+        (currentLevel === 'all' ||
+          (currentLevelMode === 'cumulative'
+            ? LEVELS.indexOf(w.level) <= maxIdx
+            : w.level === currentLevel))))
+      .map(f => ({ val: f, label: ANDERE_CATEGORY_LABELS[f] || f }));
+
+  const items = [{ val: 'all', label: isNomen ? 'All themes' : 'All' }, ...activeItems];
+  const currentVal = isNomen ? currentTheme : currentAndereCategory;
+
+  document.getElementById('theme-dropdown-menu').innerHTML = items.map(item =>
+    `<button class="ctx-menu-item${currentVal === item.val ? ' active' : ''}"
+      onclick="${isNomen ? `pickTheme('${item.val}')` : `pickAndereCategory('${item.val}')`}">${item.label}</button>`
+  ).join('');
+
+  document.getElementById('theme-pills').innerHTML = items.map(item =>
+    `<button class="theme-btn${currentVal === item.val ? ' active' : ''}"
+      onclick="${isNomen ? `pickTheme('${item.val}')` : `pickAndereCategory('${item.val}')`}">${item.label}</button>`
+  ).join('');
+
+  updateCtxDropdownBtn('theme');
 }
 
 function showContextualFilter() {
-  document.getElementById('pattern-filter').classList.toggle('visible', currentType === 'verb');
-  // Reuse theme-filter div for both nomen themes and andere categories
+  const pf = document.getElementById('pattern-filter');
   const tf = document.getElementById('theme-filter');
-  if (currentType === 'nomen') {
-    buildThemeFilter();
-    tf.classList.add('visible');
-  } else if (currentType === 'andere') {
-    buildAndereFilter();
-    tf.classList.add('visible');
-  } else {
-    tf.classList.remove('visible');
-  }
+  pf.style.display = currentType === 'verb' ? 'block' : 'none';
+  tf.style.display = (currentType === 'nomen' || currentType === 'andere') ? 'block' : 'none';
+  if (currentType === 'nomen' || currentType === 'andere') buildThemeFilter();
+  if (currentType === 'verb') buildPatternFilter();
 }
 
 // ── Pool helpers ──────────────────────────────────────────────
 function getPool() {
   if (searchPool !== null) return searchPool;
 
-  let pool = currentType === 'verb'  ? DB.verben
-           : currentType === 'nomen' ? DB.nomen
-           : DB.andere;
+  let pool = currentType === 'verb' ? DB.verben
+    : currentType === 'nomen' ? DB.nomen
+      : DB.andere;
 
-  if (currentLevel !== 'all')
-    pool = pool.filter(w => w.level === currentLevel);
+  if (currentLevel !== 'all') {
+    if (currentLevelMode === 'cumulative') {
+      const maxIdx = LEVELS.indexOf(currentLevel);
+      pool = pool.filter(w => LEVELS.indexOf(w.level) <= maxIdx);
+    } else {
+      pool = pool.filter(w => w.level === currentLevel);
+    }
+  }
   if (currentType === 'nomen' && currentTheme !== 'all')
     pool = pool.filter(w => w.theme === currentTheme);
   if (currentType === 'verb' && currentPattern !== 'all')
     pool = pool.filter(w => w.verbFile === currentPattern);
-  if (currentType === 'verb' && currentVerbTheme !== 'all')
-    pool = pool.filter(w => w.theme === currentVerbTheme);
-  if (currentType === 'andere' && currentAndereCategory !== 'all')
-    pool = pool.filter(w => w.andereFile === currentAndereCategory);
 
   return pool;
 }
@@ -279,7 +339,7 @@ function onSearch(query) {
     inSearchResult = false;
     document.getElementById('search-results').style.display = 'none';
     document.getElementById('type-tabs').style.display = 'flex';
-    document.getElementById('level-filter').style.display = 'flex';
+    //document.getElementById('level-filter').style.display = 'flex';
     showContextualFilter();
     currentIndex = 0;
     renderCurrentWord();
@@ -288,7 +348,7 @@ function onSearch(query) {
 
   // Hide browse chrome during search
   document.getElementById('type-tabs').style.display = 'none';
-  document.getElementById('level-filter').style.display = 'none';
+  //document.getElementById('level-filter').style.display = 'none';
   document.getElementById('pattern-filter').classList.remove('visible');
   document.getElementById('theme-filter').classList.remove('visible');
   document.getElementById('nav-bar').style.display = 'none';
@@ -368,27 +428,18 @@ function exitSearchResult() {
 // ── Type / Level / Pattern / Theme switching ──────────────────
 function switchType(type) {
   currentType = type;
-  currentLevel = 'all';
+  //currentLevel = 'all';
   currentTheme = 'all';
   currentPattern = 'all';
+  currentVerbTheme = 'all';
+  currentAndereCategory = 'all';
+  // remove the old pf/tf querySelector lines — handled by showContextualFilter now
   currentIndex = 0;
   searchPool = null;
   inSearchResult = false;
-  currentVerbTheme      = 'all';
-currentAndereCategory = 'all';
 
   document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
   document.querySelector(`.tab.${type}`).classList.add('active');
-  document.querySelectorAll('.lvl-btn').forEach(b => b.classList.remove('active'));
-  document.querySelector('.lvl-btn[data-lvl="all"]').classList.add('active');
-
-  // Reset sub-filters
-  const pf = document.getElementById('pattern-filter');
-  const tf = document.getElementById('theme-filter');
-  pf.querySelector('[data-pat="all"]')?.classList.add('active');
-  tf.querySelector('[data-theme="all"]')?.classList.add('active');
-  pf.querySelectorAll('.theme-btn:not([data-pat="all"])').forEach(b => b.classList.remove('active'));
-  tf.querySelectorAll('.theme-btn:not([data-theme="all"])').forEach(b => b.classList.remove('active'));
 
   showContextualFilter();
   renderCurrentWord();
@@ -438,6 +489,116 @@ function switchTheme(theme, btn) {
   document.querySelectorAll('#theme-filter .theme-btn').forEach(b => b.classList.remove('active'));
   btn.classList.add('active');
   renderCurrentWord();
+  saveState();
+}
+
+// ── Level dropdown ─────────────────────────────────────────────
+function toggleLevelDropdown() {
+  const dd = document.getElementById('level-dropdown');
+  dd.style.display = dd.style.display === 'none' ? 'block' : 'none';
+}
+
+function closeLevelDropdown() {
+  document.getElementById('level-dropdown').style.display = 'none';
+}
+
+function setLevelMode(mode) {
+  currentLevelMode = mode;
+  document.getElementById('ldm-cumulative').classList.toggle('active', mode === 'cumulative');
+  document.getElementById('ldm-exact').classList.toggle('active', mode === 'exact');
+  currentIndex = 0;
+  buildPatternFilter();
+  buildThemeFilter();
+  updateLevelPill();
+  renderCurrentWord();
+  renderWordListPanel();
+  saveState();
+}
+
+function pickLevel(level) {
+  currentLevel = level;
+  currentIndex = 0;
+  document.querySelectorAll('.ldo-btn').forEach(b => b.classList.remove('active'));
+  document.querySelector(`.ldo-btn[data-lvl="${level}"]`)?.classList.add('active');
+  closeLevelDropdown();
+  buildPatternFilter();
+  buildThemeFilter();
+  updateLevelPill();
+  renderCurrentWord();
+  renderWordListPanel();
+  saveState();
+}
+
+function updateLevelPill() {
+  const btn = document.getElementById('level-pill');
+  if (!btn) return;
+  if (currentLevel === 'all') {
+    btn.innerHTML = `All <span class="level-pill-arrow">▾</span>`;
+  } else {
+    const prefix = currentLevelMode === 'cumulative' ? '≤ ' : '= ';
+    btn.innerHTML = `${prefix}${currentLevel} <span class="level-pill-arrow">▾</span>`;
+  }
+}
+
+// ── First-load level picker ────────────────────────────────────
+function pickInitialLevel(level) {
+  localStorage.setItem('wortschatz_level_set', '1');
+  document.getElementById('level-picker-overlay').style.display = 'none';
+  pickLevel(level);
+}
+
+// ── Contextual filter dropdowns ───────────────────────────────
+function toggleCtxDropdown(which) {
+  const menuId = `${which}-dropdown-menu`;
+  const menu = document.getElementById(menuId);
+  // Close other first
+  ['pattern', 'theme'].forEach(w => {
+    if (w !== which) document.getElementById(`${w}-dropdown-menu`).style.display = 'none';
+  });
+  menu.style.display = menu.style.display === 'none' ? 'block' : 'none';
+}
+
+function updateCtxDropdownBtn(which) {
+  const btn = document.getElementById(`${which}-dropdown-btn`);
+  if (!btn) return;
+  const currentVal = which === 'pattern' ? currentPattern
+    : currentType === 'nomen' ? currentTheme
+      : currentAndereCategory;
+  const label = which === 'pattern'
+    ? (currentPattern === 'all' ? 'All patterns' : PATTERN_LABELS[currentPattern] || currentPattern)
+    : currentType === 'nomen'
+      ? (currentTheme === 'all' ? 'All themes' : THEME_LABELS[currentTheme] || currentTheme)
+      : (currentAndereCategory === 'all' ? 'All' : ANDERE_CATEGORY_LABELS[currentAndereCategory] || currentAndereCategory);
+  btn.innerHTML = `${label} <span>▾</span>`;
+}
+
+function pickPattern(val) {
+  currentPattern = val;
+  currentIndex = 0;
+  document.getElementById('pattern-dropdown-menu').style.display = 'none';
+  buildPatternFilter();
+  renderCurrentWord();
+  renderWordListPanel();
+  saveState();
+}
+
+function pickTheme(val) {
+  currentTheme = val;
+  currentIndex = 0;
+  document.getElementById('theme-dropdown-menu').style.display = 'none';
+  buildThemeFilter();
+  renderCurrentWord();
+  renderWordListPanel();
+  saveState();
+}
+
+function pickAndereCategory(val) {
+  currentAndereCategory = val;
+  currentIndex = 0;
+  document.getElementById('theme-dropdown-menu').style.display = 'none';
+  buildThemeFilter();
+  renderCurrentWord();
+  renderWordListPanel();
   saveState();
 }
 
@@ -628,6 +789,14 @@ function setupSwipe() {
       navigateWord(dx < 0 ? 1 : -1);
     }
   }, { passive: true });
+
+  // Close dropdowns on outside click
+  document.addEventListener('click', e => {
+    if (!e.target.closest('#level-dropdown') && !e.target.closest('#level-pill'))
+      closeLevelDropdown();
+    if (!e.target.closest('.ctx-dropdown-wrap'))
+      document.querySelectorAll('.ctx-dropdown-menu').forEach(m => m.style.display = 'none');
+  });
 }
 
 // ── Colour helpers ────────────────────────────────────────────
@@ -674,7 +843,10 @@ function buildVerbCard(w) {
   const [lbg, lc] = levelStyle(w.level);
   const [pbg, pc] = patternStyle(w.patternColor);
   const excSet = new Set(w.exceptionForms || []);
-  const tenses = Object.keys(w.conjugations);
+  // REPLACE:
+  const allTenses = Object.keys(w.conjugations);
+  const visibleTenses = TENSES_BY_LEVEL[currentLevel] || TENSES_BY_LEVEL['all'];
+  const tenses = allTenses.filter(t => visibleTenses.includes(t));
   const favActive = favs.has(w.id);
 
   // ── Responsive conjugation ────────────────────────────────
@@ -913,6 +1085,11 @@ function buildNomenCard(w) {
 }
 
 function buildAndereCard(w) {
+  if (w.wordCategory === 'preposition') return buildPrepositionCard(w);
+  if (w.wordCategory === 'adjective') return buildAdjectiveCard(w);
+  return buildDefaultAndereCard(w);
+}
+function buildDefaultAndereCard(w) {
   const [lbg, lc] = levelStyle(w.level);
   const favActive = favs.has(w.id);
   const c = 'var(--andere)';
@@ -984,7 +1161,257 @@ function buildAndereCard(w) {
     </div>
   </div>`;
 }
+function buildPrepositionCard(w) {
+  const [lbg, lc] = levelStyle(w.level);
+  const favActive = favs.has(w.id);
+  const c = 'var(--andere)';
+  const bg = 'var(--andere-bg)';
 
+  // Case badges
+  const caseColors = {
+    akkusativ: 'var(--verb-weak)',
+    dativ: 'var(--verb-strong)',
+    genitiv: 'var(--verb-mixed)'
+  };
+  const caseLabels = { akkusativ: 'Akkusativ', dativ: 'Dativ', genitiv: 'Genitiv' };
+  const cases = w.cases || [];
+
+  const caseBadges = ['akkusativ', 'dativ', 'genitiv'].map(k => {
+    const on = cases.includes(k);
+    const col = caseColors[k];
+    return `<div class="prep-case-badge${on ? ' active' : ''}">
+      <div class="prep-case-name" style="${on ? `color:${col}` : ''}">
+        ${caseLabels[k]}
+      </div>
+      <div class="prep-case-check" style="color:${on ? col : 'var(--text3)'}">
+        ${on ? '✓' : '—'}
+      </div>
+    </div>`;
+  }).join('');
+
+  // Case meaning blocks
+  const meaningBlocks = [];
+  if (w.meaning_akk) meaningBlocks.push(
+    `<div class="prep-meaning-block" style="border-left-color:var(--verb-weak)">
+      <div class="prep-meaning-case" style="color:var(--verb-weak)">+ Akkusativ</div>
+      <div class="prep-meaning-text">${w.meaning_akk}</div>
+    </div>`
+  );
+  if (w.meaning_dat) meaningBlocks.push(
+    `<div class="prep-meaning-block" style="border-left-color:var(--verb-strong)">
+      <div class="prep-meaning-case" style="color:var(--verb-strong)">+ Dativ</div>
+      <div class="prep-meaning-text">${w.meaning_dat}</div>
+    </div>`
+  );
+  if (w.meaning_gen) meaningBlocks.push(
+    `<div class="prep-meaning-block" style="border-left-color:var(--verb-mixed)">
+      <div class="prep-meaning-case" style="color:var(--verb-mixed)">+ Genitiv</div>
+      <div class="prep-meaning-text">${w.meaning_gen}</div>
+    </div>`
+  );
+
+  // Verb combinations
+  const verbCombos = (w.verbCombinations || []).map(vc => {
+    const col = vc.case === 'Akk' ? 'var(--verb-weak)'
+      : vc.case === 'Dat' ? 'var(--verb-strong)'
+        : 'var(--verb-mixed)';
+    return `<div class="prep-verb-row">
+      <span class="prep-verb-phrase">${vc.verb}</span>
+      <span class="prep-verb-case" style="color:${col}">+${vc.case}</span>
+      <span class="prep-verb-meaning">${vc.meaning}</span>
+    </div>`;
+  }).join('');
+
+  const verbSection = w.verbCombinations?.length ? `
+    <div class="section">
+      <div class="section-label">Verb combinations</div>
+      <div class="prep-verb-list">${verbCombos}</div>
+    </div>` : '';
+
+  // Fixed expressions
+  const fixedSection = w.fixedExpressions?.length ? `
+    <div class="section">
+      <div class="section-label">Fixed expressions</div>
+      <div class="variants-list">
+        ${w.fixedExpressions.map(f => `
+          <div class="variant-row">
+            <span class="variant-form" style="color:${c}">${f.expression}</span>
+            <span class="variant-label">${f.meaning}</span>
+          </div>`).join('')}
+      </div>
+    </div>` : '';
+
+  return `<div class="word-card">
+    <div class="card-header">
+      <div class="card-header-top">
+        <div>
+          <div class="word-title">${w.german}</div>
+          <div class="meaning">${w.english}</div>
+        </div>
+        <div class="badges">
+          <span class="level-badge" style="background:${lbg};color:${lc}">${w.level}</span>
+          <span class="type-badge">Präp.</span>
+          <button class="fav-btn${favActive ? ' active' : ''}"
+            onclick="toggleFav('${w.id}',this)">${favActive ? '♥' : '♡'}</button>
+        </div>
+      </div>
+      <div class="pattern-strip">
+        <span class="pattern-chip" style="background:${bg};color:${c}">
+          <span class="dot" style="background:${c}"></span>${w.wordTypeEN}
+        </span>
+      </div>
+    </div>
+    <div class="section">
+      <div class="section-label">Kasus</div>
+      <div class="prep-case-row">${caseBadges}</div>
+      <div class="prep-meanings">${meaningBlocks.join('')}</div>
+    </div>
+    <div class="section">
+      <div class="section-label">Grammatikregel</div>
+      <div class="grammar-rule">
+        <div class="grammar-rule-title">${w.grammarRule}</div>
+        <div class="grammar-rule-desc">${w.grammarRuleDetail}</div>
+        <div class="grammar-rule-formula">${w.structureFormula}</div>
+      </div>
+    </div>
+    ${verbSection}
+    ${fixedSection}
+    <div class="section">
+      <div class="section-label">Verwendung</div>
+      <div class="example-list">
+        ${(w.usage || []).map(e => `
+          <div class="example-item" style="border-left-color:${c}">
+            <div class="example-de">${e.de}</div>
+            <div class="example-en">${e.en}</div>
+          </div>`).join('')}
+      </div>
+    </div>
+  </div>`;
+}
+
+function buildAdjectiveCard(w) {
+  const [lbg, lc] = levelStyle(w.level);
+  const favActive = favs.has(w.id);
+  const c = 'var(--andere)';
+  const bg = 'var(--andere-bg)';
+
+  // Steigerung bar
+  const steigerung = `
+    <div class="adj-steig-row">
+      <div class="adj-steig-cell">
+        <div class="adj-steig-label">Positiv</div>
+        <div class="adj-steig-form">${w.german}</div>
+      </div>
+      <div class="adj-steig-arrow">→</div>
+      <div class="adj-steig-cell">
+        <div class="adj-steig-label">Komparativ</div>
+        <div class="adj-steig-form" style="color:${c}">${w.comparative}</div>
+      </div>
+      <div class="adj-steig-arrow">→</div>
+      <div class="adj-steig-cell">
+        <div class="adj-steig-label">Superlativ</div>
+        <div class="adj-steig-form" style="color:${c}">${w.superlative}</div>
+      </div>
+    </div>`;
+
+  // Opposite
+  const oppositeSection = w.opposite ? `
+    <div class="adj-opposite">
+      <span class="adj-opposite-label">Gegenteil</span>
+      <span class="adj-opposite-word" style="color:${c}">${w.opposite}</span>
+    </div>` : '';
+
+  // Declension table — only on desktop, CSS handles hide/show
+  const d = w.declension;
+  const declSection = d ? `
+    <div class="section adj-decl-section">
+      <div class="section-label">Deklination</div>
+      <div class="adj-decl-tabs">
+        <button class="adj-decl-tab active" onclick="switchDeclTab(this,'${w.id}','strong')">Strong</button>
+        <button class="adj-decl-tab" onclick="switchDeclTab(this,'${w.id}','weak')">Weak</button>
+        <button class="adj-decl-tab" onclick="switchDeclTab(this,'${w.id}','mixed')">Mixed</button>
+      </div>
+      ${['strong', 'weak', 'mixed'].map((type, ti) => `
+        <table class="decl-table adj-decl-table" id="adj-decl-${w.id}-${type}"
+          style="${ti > 0 ? 'display:none' : ''}">
+          <thead>
+            <tr>
+              <th>Kasus</th>
+              <th style="color:var(--der)">Mask.</th>
+              <th style="color:var(--die)">Fem.</th>
+              <th style="color:var(--das)">Neut.</th>
+              <th style="color:var(--text3)">Plural</th>
+            </tr>
+          </thead>
+          <tbody>
+            ${['nom', 'akk', 'dat', 'gen'].map((kasus, ki) => `
+              <tr>
+                <td>${kasus.charAt(0).toUpperCase() + kasus.slice(1)}.</td>
+                ${d[type][kasus].map((ending, ei) =>
+    `<td class="${ki === 0 ? 'sf' : ''}" style="color:${c}">${w.german.replace(/[^a-zA-ZäöüÄÖÜß]/g, '')}${ending}</td>`
+  ).join('')}
+              </tr>`).join('')}
+          </tbody>
+        </table>`).join('')}
+    </div>` : '';
+
+  return `<div class="word-card">
+    <div class="card-header">
+      <div class="card-header-top">
+        <div>
+          <div class="word-title">${w.german}</div>
+          <div class="meaning">${w.english}</div>
+        </div>
+        <div class="badges">
+          <span class="level-badge" style="background:${lbg};color:${lc}">${w.level}</span>
+          <span class="type-badge">Adj.</span>
+          ${w.irregularForms ? `<span class="type-badge" style="color:var(--verb-strong);border-color:rgba(180,127,255,0.3)">irreg.</span>` : ''}
+          <button class="fav-btn${favActive ? ' active' : ''}"
+            onclick="toggleFav('${w.id}',this)">${favActive ? '♥' : '♡'}</button>
+        </div>
+      </div>
+      <div class="pattern-strip">
+        <span class="pattern-chip" style="background:${bg};color:${c}">
+          <span class="dot" style="background:${c}"></span>${w.wordTypeEN}
+        </span>
+      </div>
+    </div>
+    <div class="section">
+      <div class="section-label">Steigerung</div>
+      ${steigerung}
+      ${oppositeSection}
+    </div>
+    <div class="section">
+      <div class="section-label">Grammatikregel</div>
+      <div class="grammar-rule">
+        <div class="grammar-rule-title">${w.grammarRule}</div>
+        <div class="grammar-rule-desc">${w.grammarRuleDetail}</div>
+        <div class="grammar-rule-formula">${w.structureFormula}</div>
+      </div>
+    </div>
+    ${declSection}
+    <div class="section">
+      <div class="section-label">Verwandte Wörter</div>
+      <div class="variants-list">
+        ${(w.relatedWords || []).map(r => `
+          <div class="variant-row">
+            <span class="variant-label">${r.meaning}</span>
+            <span class="variant-form" style="color:${c}">${r.word}</span>
+          </div>`).join('')}
+      </div>
+    </div>
+    <div class="section">
+      <div class="section-label">Verwendung</div>
+      <div class="example-list">
+        ${(w.usage || []).map(e => `
+          <div class="example-item" style="border-left-color:${c}">
+            <div class="example-de">${e.de}</div>
+            <div class="example-en">${e.en}</div>
+          </div>`).join('')}
+      </div>
+    </div>
+  </div>`;
+}
 // ── Interactions ──────────────────────────────────────────────
 function switchTense(btn, wid, tense) {
   const area = document.getElementById('card-area');
@@ -993,6 +1420,16 @@ function switchTense(btn, wid, tense) {
   btn.classList.add('active');
   const panel = document.getElementById(`cp-${wid}-${tense}`);
   if (panel) panel.style.display = 'grid';
+}
+
+function switchDeclTab(btn, wid, type) {
+  const card = document.getElementById('card-area');
+  card.querySelectorAll('.adj-decl-tab').forEach(b => b.classList.remove('active'));
+  ['strong', 'weak', 'mixed'].forEach(t => {
+    const tbl = document.getElementById(`adj-decl-${wid}-${t}`);
+    if (tbl) tbl.style.display = t === type ? '' : 'none';
+  });
+  btn.classList.add('active');
 }
 
 function toggleFav(id, btn) {

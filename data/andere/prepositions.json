@@ -14,6 +14,11 @@
     "cases": ["dativ", "akkusativ"],
     "meaning_dat": "in (location) — Ich bin in der Küche",
     "meaning_akk": "into (direction) — Ich gehe in die Küche",
+    "verbCombinations": [
+      { "verb": "sich verlieben in", "case": "Akk", "meaning": "to fall in love with" },
+      { "verb": "investieren in", "case": "Akk", "meaning": "to invest in" },
+      { "verb": "sich irren in", "case": "Dat", "meaning": "to be mistaken about" }
+    ],
     "fixedExpressions": [
       { "expression": "in der Nähe", "meaning": "nearby" },
       { "expression": "im Moment", "meaning": "at the moment" },
@@ -45,6 +50,14 @@
     "cases": ["dativ", "akkusativ"],
     "meaning_dat": "on (location) — Das Buch liegt auf dem Tisch",
     "meaning_akk": "onto (direction) — Leg das Buch auf den Tisch",
+    "verbCombinations": [
+      { "verb": "warten auf", "case": "Akk", "meaning": "to wait for" },
+      { "verb": "sich freuen auf", "case": "Akk", "meaning": "to look forward to" },
+      { "verb": "sich verlassen auf", "case": "Akk", "meaning": "to rely on" },
+      { "verb": "achten auf", "case": "Akk", "meaning": "to pay attention to" },
+      { "verb": "bestehen auf", "case": "Dat", "meaning": "to insist on" },
+      { "verb": "sich konzentrieren auf", "case": "Akk", "meaning": "to concentrate on" }
+    ],
     "fixedExpressions": [
       { "expression": "auf Deutsch", "meaning": "in German" },
       { "expression": "auf jeden Fall", "meaning": "in any case" },
@@ -71,10 +84,17 @@
     "wordType": "Präposition",
     "wordTypeEN": "Dative preposition",
     "grammarRule": "Always Dativ — no exception",
-    "grammarRuleDetail": "mit always takes Dativ. Used for accompaniment (with a person), means of transport, and many fixed verb combinations.",
+    "grammarRuleDetail": "mit always takes Dativ. Used for accompaniment, means of transport, and many fixed verb combinations.",
     "structureFormula": "mit + Dativ (always)",
     "cases": ["dativ"],
     "meaning_dat": "with / by means of",
+    "verbCombinations": [
+      { "verb": "sprechen mit", "case": "Dat", "meaning": "to speak with" },
+      { "verb": "anfangen mit", "case": "Dat", "meaning": "to begin / start with" },
+      { "verb": "aufhören mit", "case": "Dat", "meaning": "to stop doing" },
+      { "verb": "sich beschäftigen mit", "case": "Dat", "meaning": "to occupy oneself with" },
+      { "verb": "rechnen mit", "case": "Dat", "meaning": "to count on / expect" }
+    ],
     "fixedExpressions": [
       { "expression": "mit dem Zug", "meaning": "by train" },
       { "expression": "mit anderen Worten", "meaning": "in other words" },
@@ -105,6 +125,12 @@
     "structureFormula": "von + Dativ (always)",
     "cases": ["dativ"],
     "meaning_dat": "from / of / by",
+    "verbCombinations": [
+      { "verb": "abhängen von", "case": "Dat", "meaning": "to depend on" },
+      { "verb": "träumen von", "case": "Dat", "meaning": "to dream of" },
+      { "verb": "sprechen von", "case": "Dat", "meaning": "to speak of / about" },
+      { "verb": "überzeugt sein von", "case": "Dat", "meaning": "to be convinced of" }
+    ],
     "fixedExpressions": [
       { "expression": "von … aus", "meaning": "from … (starting point)" },
       { "expression": "von Beruf", "meaning": "by profession" },
@@ -135,6 +161,13 @@
     "structureFormula": "zu + Dativ (always)",
     "cases": ["dativ"],
     "meaning_dat": "to / at (people, local places)",
+    "verbCombinations": [
+      { "verb": "gehören zu", "case": "Dat", "meaning": "to belong to / be part of" },
+      { "verb": "passen zu", "case": "Dat", "meaning": "to suit / match" },
+      { "verb": "beitragen zu", "case": "Dat", "meaning": "to contribute to" },
+      { "verb": "führen zu", "case": "Dat", "meaning": "to lead to" },
+      { "verb": "neigen zu", "case": "Dat", "meaning": "to tend to / be inclined to" }
+    ],
     "fixedExpressions": [
       { "expression": "zu Hause", "meaning": "at home" },
       { "expression": "zum Beispiel (z.B.)", "meaning": "for example" },
@@ -142,7 +175,7 @@
     ],
     "variants": [],
     "relatedWords": [
-      { "word": "nach", "meaning": "to (cities / countries / directions)" },
+      { "word": "nach", "meaning": "to (cities / countries)" },
       { "word": "in", "meaning": "into (buildings)" },
       { "word": "bei", "meaning": "at (someone's place)" }
     ],
@@ -165,6 +198,12 @@
     "structureFormula": "für + Akkusativ (always)",
     "cases": ["akkusativ"],
     "meaning_akk": "for (purpose / benefit / duration)",
+    "verbCombinations": [
+      { "verb": "sich interessieren für", "case": "Akk", "meaning": "to be interested in" },
+      { "verb": "sich entscheiden für", "case": "Akk", "meaning": "to decide on / choose" },
+      { "verb": "sorgen für", "case": "Akk", "meaning": "to care for / provide for" },
+      { "verb": "kämpfen für", "case": "Akk", "meaning": "to fight for" }
+    ],
     "fixedExpressions": [
       { "expression": "für immer", "meaning": "forever" },
       { "expression": "für mich", "meaning": "for me / in my opinion" },
@@ -191,10 +230,16 @@
     "wordType": "Präposition",
     "wordTypeEN": "Dative preposition",
     "grammarRule": "Always Dativ — no exception",
-    "grammarRuleDetail": "nach always takes Dativ. Used for direction to cities, countries, and continents (without article), and for temporal sequence.",
+    "grammarRuleDetail": "nach always takes Dativ. Used for direction to cities, countries, continents (without article), and for temporal sequence.",
     "structureFormula": "nach + Dativ (always)",
     "cases": ["dativ"],
     "meaning_dat": "to (cities/countries) / after / according to",
+    "verbCombinations": [
+      { "verb": "suchen nach", "case": "Dat", "meaning": "to search for / look for" },
+      { "verb": "fragen nach", "case": "Dat", "meaning": "to ask about / inquire" },
+      { "verb": "sich sehnen nach", "case": "Dat", "meaning": "to long for / yearn for" },
+      { "verb": "sich richten nach", "case": "Dat", "meaning": "to follow / go by" }
+    ],
     "fixedExpressions": [
       { "expression": "nach Hause", "meaning": "home (going home)" },
       { "expression": "nach wie vor", "meaning": "as before / still" },
@@ -221,10 +266,11 @@
     "wordType": "Präposition",
     "wordTypeEN": "Genitive preposition",
     "grammarRule": "Genitiv — but Dativ accepted in spoken German",
-    "grammarRuleDetail": "wegen governs Genitiv in formal written German. In spoken language, Dativ is widely accepted and used.",
+    "grammarRuleDetail": "wegen governs Genitiv in formal written German. In spoken language Dativ is widely accepted.",
     "structureFormula": "wegen + Genitiv (formal) | wegen + Dativ (spoken)",
     "cases": ["genitiv"],
-    "meaning_dat": "because of / due to",
+    "meaning_gen": "because of / due to",
+    "verbCombinations": [],
     "fixedExpressions": [
       { "expression": "wegen mir (colloquial)", "meaning": "because of me / for all I care" },
       { "expression": "meinetwegen", "meaning": "because of me / for my sake" }
@@ -256,7 +302,8 @@
     "grammarRuleDetail": "trotz governs Genitiv in standard German. Dativ is heard colloquially but considered non-standard in writing.",
     "structureFormula": "trotz + Genitiv (standard)",
     "cases": ["genitiv"],
-    "meaning_dat": "despite / in spite of",
+    "meaning_gen": "despite / in spite of",
+    "verbCombinations": [],
     "fixedExpressions": [
       { "expression": "trotz alledem", "meaning": "despite everything" }
     ],

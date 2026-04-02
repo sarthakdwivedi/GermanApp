@@ -13,7 +13,29 @@
     "structureFormula": "Er ist groß. (predicate) | ein großer Mann (attributive)",
     "comparative": "größer",
     "superlative": "am größten",
+    "superlativeAttr": "größt-",
     "irregularForms": true,
+    "opposite": "klein",
+    "declension": {
+      "strong": {
+        "nom": ["-er", "-e", "-es", "-e"],
+        "akk": ["-en", "-e", "-es", "-e"],
+        "dat": ["-em", "-er", "-em", "-en"],
+        "gen": ["-en", "-er", "-en", "-er"]
+      },
+      "weak": {
+        "nom": ["-e", "-e", "-e", "-en"],
+        "akk": ["-en", "-e", "-e", "-en"],
+        "dat": ["-en", "-en", "-en", "-en"],
+        "gen": ["-en", "-en", "-en", "-en"]
+      },
+      "mixed": {
+        "nom": ["-er", "-e", "-es", "-en"],
+        "akk": ["-en", "-e", "-es", "-en"],
+        "dat": ["-en", "-en", "-en", "-en"],
+        "gen": ["-en", "-en", "-en", "-en"]
+      }
+    },
     "variants": [
       { "label": "Komparativ", "form": "größer" },
       { "label": "Superlativ", "form": "am größten" },
@@ -45,7 +67,29 @@
     "structureFormula": "Das ist gut. | ein guter Freund | gut schlafen",
     "comparative": "besser",
     "superlative": "am besten",
+    "superlativeAttr": "best-",
     "irregularForms": true,
+    "opposite": "schlecht",
+    "declension": {
+      "strong": {
+        "nom": ["-er", "-e", "-es", "-e"],
+        "akk": ["-en", "-e", "-es", "-e"],
+        "dat": ["-em", "-er", "-em", "-en"],
+        "gen": ["-en", "-er", "-en", "-er"]
+      },
+      "weak": {
+        "nom": ["-e", "-e", "-e", "-en"],
+        "akk": ["-en", "-e", "-e", "-en"],
+        "dat": ["-en", "-en", "-en", "-en"],
+        "gen": ["-en", "-en", "-en", "-en"]
+      },
+      "mixed": {
+        "nom": ["-er", "-e", "-es", "-en"],
+        "akk": ["-en", "-e", "-es", "-en"],
+        "dat": ["-en", "-en", "-en", "-en"],
+        "gen": ["-en", "-en", "-en", "-en"]
+      }
+    },
     "variants": [
       { "label": "Komparativ (irregular)", "form": "besser" },
       { "label": "Superlativ (irregular)", "form": "am besten" },
@@ -70,12 +114,34 @@
     "english": "fast / quickly",
     "wordType": "Adjektiv/Adverb",
     "wordTypeEN": "Adjective / Adverb",
-    "grammarRule": "Adjective: add case/gender endings before noun. Adverb: no endings.",
+    "grammarRule": "Regular. Works unchanged as adverb.",
     "grammarRuleDetail": "Regular adjective with regular comparative. Works as both attributive adjective and adverb without any change in form.",
     "structureFormula": "Adverb: V + schnell | Adjective: Art. + schnell[ending] + N",
     "comparative": "schneller",
     "superlative": "am schnellsten",
+    "superlativeAttr": "schnellst-",
     "irregularForms": false,
+    "opposite": "langsam",
+    "declension": {
+      "strong": {
+        "nom": ["-er", "-e", "-es", "-e"],
+        "akk": ["-en", "-e", "-es", "-e"],
+        "dat": ["-em", "-er", "-em", "-en"],
+        "gen": ["-en", "-er", "-en", "-er"]
+      },
+      "weak": {
+        "nom": ["-e", "-e", "-e", "-en"],
+        "akk": ["-en", "-e", "-e", "-en"],
+        "dat": ["-en", "-en", "-en", "-en"],
+        "gen": ["-en", "-en", "-en", "-en"]
+      },
+      "mixed": {
+        "nom": ["-er", "-e", "-es", "-en"],
+        "akk": ["-en", "-e", "-es", "-en"],
+        "dat": ["-en", "-en", "-en", "-en"],
+        "gen": ["-en", "-en", "-en", "-en"]
+      }
+    },
     "variants": [
       { "label": "Komparativ", "form": "schneller" },
       { "label": "Superlativ", "form": "am schnellsten" },
@@ -105,7 +171,29 @@
     "structureFormula": "Das ist wichtig. | eine wichtige Frage",
     "comparative": "wichtiger",
     "superlative": "am wichtigsten",
+    "superlativeAttr": "wichtigst-",
     "irregularForms": false,
+    "opposite": "unwichtig",
+    "declension": {
+      "strong": {
+        "nom": ["-er", "-e", "-es", "-e"],
+        "akk": ["-en", "-e", "-es", "-e"],
+        "dat": ["-em", "-er", "-em", "-en"],
+        "gen": ["-en", "-er", "-en", "-er"]
+      },
+      "weak": {
+        "nom": ["-e", "-e", "-e", "-en"],
+        "akk": ["-en", "-e", "-e", "-en"],
+        "dat": ["-en", "-en", "-en", "-en"],
+        "gen": ["-en", "-en", "-en", "-en"]
+      },
+      "mixed": {
+        "nom": ["-er", "-e", "-es", "-en"],
+        "akk": ["-en", "-e", "-es", "-en"],
+        "dat": ["-en", "-en", "-en", "-en"],
+        "gen": ["-en", "-en", "-en", "-en"]
+      }
+    },
     "variants": [
       { "label": "Komparativ", "form": "wichtiger" },
       { "label": "Superlativ", "form": "am wichtigsten" },
@@ -135,7 +223,29 @@
     "structureFormula": "Das ist möglich. | eine mögliche Lösung | möglichst schnell",
     "comparative": "möglicher",
     "superlative": "am möglichsten / möglichst",
+    "superlativeAttr": "möglichst-",
     "irregularForms": false,
+    "opposite": "unmöglich",
+    "declension": {
+      "strong": {
+        "nom": ["-er", "-e", "-es", "-e"],
+        "akk": ["-en", "-e", "-es", "-e"],
+        "dat": ["-em", "-er", "-em", "-en"],
+        "gen": ["-en", "-er", "-en", "-er"]
+      },
+      "weak": {
+        "nom": ["-e", "-e", "-e", "-en"],
+        "akk": ["-en", "-e", "-e", "-en"],
+        "dat": ["-en", "-en", "-en", "-en"],
+        "gen": ["-en", "-en", "-en", "-en"]
+      },
+      "mixed": {
+        "nom": ["-er", "-e", "-es", "-en"],
+        "akk": ["-en", "-e", "-es", "-en"],
+        "dat": ["-en", "-en", "-en", "-en"],
+        "gen": ["-en", "-en", "-en", "-en"]
+      }
+    },
     "variants": [
       { "label": "Adverb form", "form": "möglichst (as … as possible)" },
       { "label": "Attributive f. nom.", "form": "eine mögliche Lösung" }
@@ -164,7 +274,29 @@
     "structureFormula": "mein eigenes Auto (attributive only)",
     "comparative": "eigener (rare)",
     "superlative": "am eigensten (rare)",
+    "superlativeAttr": "eigenst-",
     "irregularForms": false,
+    "opposite": "fremd",
+    "declension": {
+      "strong": {
+        "nom": ["-er", "-e", "-es", "-e"],
+        "akk": ["-en", "-e", "-es", "-e"],
+        "dat": ["-em", "-er", "-em", "-en"],
+        "gen": ["-en", "-er", "-en", "-er"]
+      },
+      "weak": {
+        "nom": ["-e", "-e", "-e", "-en"],
+        "akk": ["-en", "-e", "-e", "-en"],
+        "dat": ["-en", "-en", "-en", "-en"],
+        "gen": ["-en", "-en", "-en", "-en"]
+      },
+      "mixed": {
+        "nom": ["-er", "-e", "-es", "-en"],
+        "akk": ["-en", "-e", "-es", "-en"],
+        "dat": ["-en", "-en", "-en", "-en"],
+        "gen": ["-en", "-en", "-en", "-en"]
+      }
+    },
     "variants": [
       { "label": "m. nom.", "form": "mein eigener Stil" },
       { "label": "f. nom.", "form": "meine eigene Meinung" },

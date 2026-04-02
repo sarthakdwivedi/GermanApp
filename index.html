@@ -30,11 +30,30 @@
     <div class="header">
       <div class="logo">Wort<span>schatz</span></div>
       <div class="header-right">
-        <div class="stats-pill" id="stats-pill">…</div>
+        <button class="level-pill" id="level-pill" onclick="toggleLevelDropdown()">
+          All <span class="level-pill-arrow">▾</span>
+        </button>
         <button class="fav-header-btn" id="fav-header-btn" onclick="openMyWords()">
           ♡ <span id="fav-count"></span>
         </button>
         <button class="quiz-header-btn" onclick="openQuiz()">⚡ Quiz</button>
+      </div>
+    </div>
+
+    <!-- Level dropdown (positioned absolute) -->
+    <div class="level-dropdown" id="level-dropdown" style="display:none">
+      <div class="level-dropdown-modes">
+        <button class="ldm-btn active" id="ldm-cumulative" onclick="setLevelMode('cumulative')">≤ Up to</button>
+        <button class="ldm-btn" id="ldm-exact" onclick="setLevelMode('exact')">=</button>
+      </div>
+      <div class="level-dropdown-options">
+        <button class="ldo-btn active" data-lvl="all" onclick="pickLevel('all')">All</button>
+        <button class="ldo-btn A1" data-lvl="A1" onclick="pickLevel('A1')">A1</button>
+        <button class="ldo-btn A2" data-lvl="A2" onclick="pickLevel('A2')">A2</button>
+        <button class="ldo-btn B1" data-lvl="B1" onclick="pickLevel('B1')">B1</button>
+        <button class="ldo-btn B2" data-lvl="B2" onclick="pickLevel('B2')">B2</button>
+        <button class="ldo-btn C1" data-lvl="C1" onclick="pickLevel('C1')">C1</button>
+        <button class="ldo-btn C2" data-lvl="C2" onclick="pickLevel('C2')">C2</button>
       </div>
     </div>
 
@@ -61,22 +80,30 @@
         <button class="tab andere"      onclick="switchType('andere')">Andere</button>
       </div>
 
-      <!-- CEFR level filter -->
-      <div class="level-filter" id="level-filter">
-        <button class="lvl-btn active" data-lvl="all" onclick="switchLevel('all',this)">All</button>
-        <button class="lvl-btn A1"     data-lvl="A1"  onclick="switchLevel('A1',this)">A1</button>
-        <button class="lvl-btn A2"     data-lvl="A2"  onclick="switchLevel('A2',this)">A2</button>
-        <button class="lvl-btn B1"     data-lvl="B1"  onclick="switchLevel('B1',this)">B1</button>
-        <button class="lvl-btn B2"     data-lvl="B2"  onclick="switchLevel('B2',this)">B2</button>
-        <button class="lvl-btn C1"     data-lvl="C1"  onclick="switchLevel('C1',this)">C1</button>
-        <button class="lvl-btn C2"     data-lvl="C2"  onclick="switchLevel('C2',this)">C2</button>
-      </div>
+
 
       <!-- Verb pattern filter -->
-      <div class="theme-filter" id="pattern-filter"></div>
+      <div class="ctx-filter" id="pattern-filter" style="display:none">
+        <div class="ctx-dropdown-wrap">
+          <button class="ctx-dropdown-btn" id="pattern-dropdown-btn" onclick="toggleCtxDropdown('pattern')">
+            All patterns <span>▾</span>
+          </button>
+          <div class="ctx-dropdown-menu" id="pattern-dropdown-menu" style="display:none"></div>
+        </div>
+        <!-- Desktop pills (same div, pills shown via CSS) -->
+        <div class="ctx-pills" id="pattern-pills"></div>
+      </div>
 
       <!-- Nomen theme filter -->
-      <div class="theme-filter" id="theme-filter"></div>
+      <div class="ctx-filter" id="theme-filter" style="display:none">
+        <div class="ctx-dropdown-wrap">
+          <button class="ctx-dropdown-btn" id="theme-dropdown-btn" onclick="toggleCtxDropdown('theme')">
+            All themes <span>▾</span>
+          </button>
+          <div class="ctx-dropdown-menu" id="theme-dropdown-menu" style="display:none"></div>
+        </div>
+        <div class="ctx-pills" id="theme-pills"></div>
+      </div>
 
 <div id="word-list-panel" style="display:none"></div>
       <!-- Nav bar -->
@@ -109,6 +136,23 @@
       </div>
     </div><!-- end .main-area -->
 
+
+    <!-- Level picker overlay (first-load) -->
+    <div class="level-picker-overlay" id="level-picker-overlay" style="display:none">
+      <div class="level-picker">
+        <div class="level-picker-title">What is your level?</div>
+        <div class="level-picker-sub">You can change this anytime</div>
+        <div class="level-picker-grid">
+          <button class="lpg-btn A1" onclick="pickInitialLevel('A1')">A1<span>Beginner</span></button>
+          <button class="lpg-btn A2" onclick="pickInitialLevel('A2')">A2<span>Elementary</span></button>
+          <button class="lpg-btn B1" onclick="pickInitialLevel('B1')">B1<span>Intermediate</span></button>
+          <button class="lpg-btn B2" onclick="pickInitialLevel('B2')">B2<span>Upper intermediate</span></button>
+          <button class="lpg-btn C1" onclick="pickInitialLevel('C1')">C1<span>Advanced</span></button>
+          <button class="lpg-btn C2" onclick="pickInitialLevel('C2')">C2<span>Proficient</span></button>
+        </div>
+        <button class="lpg-all" onclick="pickInitialLevel('all')">Show all levels</button>
+      </div>
+    </div>
 
     <div class="mywords-overlay" id="mywords-overlay">
       <div class="mywords-panel" id="mywords-panel">
