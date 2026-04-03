@@ -34,6 +34,7 @@ function isLargeScreen() { return window.innerWidth >= 768; }
 
 
 
+
 window.addEventListener('resize', () => {
   renderCurrentWord();
   renderWordListPanel();
@@ -86,7 +87,7 @@ const PRONOUNS = {
 const THEME_LABELS = {
   people: 'People', home: 'Home',
   work_education: 'Work & Education', food: 'Food',
-  nature_travel: 'Nature & Travel', society_abstract: 'Society & Abstract'
+  nature_travel: 'Nature & Travel', society_abstract: 'Society & Abstract',furniture: 'Furniture'
 };
 
 const ANDERE_CATEGORY_LABELS = {
@@ -120,7 +121,27 @@ const PATTERN_LABELS = {
   modal: 'Modal', reflexive: 'Reflexive',
   separable: 'Separable', inseparable: 'Inseparable'
 };
-
+// ── Adjective generator ───────────────────────
+const ADJ_DECLENSION = {
+  strong: {
+    nom: ['-er', '-e', '-es', '-e'],
+    akk: ['-en', '-e', '-es', '-e'],
+    dat: ['-em', '-er', '-em', '-en'],
+    gen: ['-en', '-er', '-en', '-er']
+  },
+  weak: {
+    nom: ['-e', '-e', '-e', '-en'],
+    akk: ['-en', '-e', '-e', '-en'],
+    dat: ['-en', '-en', '-en', '-en'],
+    gen: ['-en', '-en', '-en', '-en']
+  },
+  mixed: {
+    nom: ['-er', '-e', '-es', '-en'],
+    akk: ['-en', '-e', '-es', '-en'],
+    dat: ['-en', '-en', '-en', '-en'],
+    gen: ['-en', '-en', '-en', '-en']
+  }
+};
 const LEVELS = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'];
 
 const TENSES_BY_LEVEL = {
@@ -133,6 +154,190 @@ const TENSES_BY_LEVEL = {
   all: ['prasens', 'perfekt', 'prateritum', 'konjunktiv2'],
 };
 
+
+// ══════════════════════════════════════════════
+// CONJUGATION & DECLENSION GENERATORS
+// ══════════════════════════════════════════════
+
+// ── Weak verb conjugation generator ──────────
+function generateWeakConjugations(w) {
+  const inf = w.german
+    .replace('(sich) ', '').replace('sich ', '').trim();
+
+  // Stem
+  let stem;
+  if (inf.endsWith('eln')) stem = inf.slice(0, -3) + 'l';
+  else if (inf.endsWith('ern')) stem = inf.slice(0, -3) + 'r';
+  else stem = inf.slice(0, -2);
+
+  // Separable: strip prefix to get base stem for Partizip II
+  const sep = w.separablePrefix || '';
+  const baseStem = sep ? stem.slice(sep.length) : stem;
+
+  // -e- insertion before endings
+  const needsE = /[td]$|chn$|ffn$|gn$|tm$/.test(stem);
+  const e = needsE ? 'e' : '';
+
+  // Partizip II
+  const noGe = w.inseparable || false;
+  const part2 = sep
+    ? `${sep}ge${baseStem}${e}t`
+    : noGe ? `${stem}${e}t`
+      : `ge${stem}${e}t`;
+
+  const aux = w.auxiliary || 'haben';
+  const AUX = aux === 'sein'
+    ? { ich: 'bin', du: 'bist', er: 'ist', wir: 'sind', ihr: 'seid', sie: 'sind' }
+    : { ich: 'habe', du: 'hast', er: 'hat', wir: 'haben', ihr: 'habt', sie: 'haben' };
+
+  // Use stored Präsens if provided (for irregular du/er forms)
+  const prasens = w.stems?.prasens || {
+    ich: `${stem}e`,
+    du: `${stem}${e}st`,
+    er: `${stem}${e}t`,
+    wir: inf,
+    ihr: `${stem}${e}t`,
+    sie: inf
+  };
+
+  const prätStem = `${stem}${e}te`;
+  const prateritum = {
+    ich: prätStem,
+    du: `${stem}${e}test`,
+    er: prätStem,
+    wir: `${stem}${e}ten`,
+    ihr: `${stem}${e}tet`,
+    sie: `${stem}${e}ten`
+  };
+
+  const perfekt = {};
+  for (const p of ['ich', 'du', 'er', 'wir', 'ihr', 'sie'])
+    perfekt[p] = `${AUX[p]} ${part2}`;
+
+  return {
+    prasens,
+    prateritum,
+    perfekt,
+    konjunktiv2: { ...prateritum } // always identical for weak
+  };
+}
+
+// ── Strong verb conjugation generator ────────
+function generateStrongConjugations(w) {
+  const s = w.stems;
+  const aux = w.auxiliary || 'haben';
+  const AUX = aux === 'sein'
+    ? { ich: 'bin', du: 'bist', er: 'ist', wir: 'sind', ihr: 'seid', sie: 'sind' }
+    : { ich: 'habe', du: 'hast', er: 'hat', wir: 'haben', ihr: 'habt', sie: 'haben' };
+
+  const part2 = s.partizip2;
+  const perfekt = {};
+  for (const p of ['ich', 'du', 'er', 'wir', 'ihr', 'sie'])
+    perfekt[p] = `${AUX[p]} ${part2}`;
+
+  // Präteritum — ich/er stem stored, endings derived
+  const prät = s.prateritum;
+  const duEnding = /[szß]$/.test(prät) ? 't' : 'st';
+  const prateritum = {
+    ich: prät,
+    du: `${prät}${duEnding}`,
+    er: prät,
+    wir: `${prät}en`,
+    ihr: `${prät}t`,
+    sie: `${prät}en`
+  };
+
+  // Konjunktiv II — stem stored explicitly, endings derived
+  const k2 = s.konjunktiv2;
+  const konjunktiv2 = {
+    ich: `${k2}e`,
+    du: `${k2}est`,
+    er: `${k2}e`,
+    wir: `${k2}en`,
+    ihr: `${k2}et`,
+    sie: `${k2}en`
+  };
+
+  // Präsens must be stored in full (vowel changes unpredictable)
+  return { prasens: s.prasens, prateritum, perfekt, konjunktiv2 };
+}
+
+// ── Nomen declension generator ────────────────
+function generateNomenDeclension(w) {
+  const { article, german, plural } = w;
+  if (!article || !plural) return null;
+
+  // No plural words
+  if (w.declensionType === 'no_plural') {
+    const genS = /[szxß]$/.test(german) ? 'es' : 's';
+    const akk = article === 'die' ? `die ${german}`
+      : article === 'der' ? `den ${german}` : `das ${german}`;
+    const dat = article === 'die' ? `der ${german}` : `dem ${german}`;
+    const gen = article === 'die' ? `der ${german}` : `des ${german}${genS}`;
+    return {
+      sg: { nom: `${article} ${german}`, akk, dat, gen },
+      pl: { nom: '—', akk: '—', dat: '—', gen: '—' }
+    };
+  }
+
+  // Weak masculine nouns (der Name, der Herr etc.)
+  if (w.declensionType === 'weak_masc') {
+    const sfx = german.endsWith('e') ? 'n' : 'en';
+    const oblq = `${german}${sfx}`;
+    const plDat = plural.endsWith('n') || plural.endsWith('s')
+      ? plural : `${plural}n`;
+    return {
+      sg: { nom: `der ${german}`, akk: `den ${oblq}`, dat: `dem ${oblq}`, gen: `des ${oblq}` },
+      pl: { nom: `die ${plural}`, akk: `die ${plural}`, dat: `den ${plDat}`, gen: `der ${plural}` }
+    };
+  }
+
+  // Standard declension
+  const genS = /[szxßch]$/.test(german) ? 'es' : 's';
+  const plDat = plural.endsWith('n') || plural.endsWith('s')
+    ? plural : `${plural}n`;
+
+  const sg = {
+    nom: `${article} ${german}`,
+    akk: article === 'die' ? `die ${german}`
+      : article === 'der' ? `den ${german}` : `das ${german}`,
+    dat: article === 'die' ? `der ${german}` : `dem ${german}`,
+    gen: article === 'die' ? `der ${german}` : `des ${german}${genS}`
+  };
+
+  const pl = {
+    nom: `die ${plural}`,
+    akk: `die ${plural}`,
+    dat: `den ${plDat}`,
+    gen: `der ${plural}`
+  };
+
+  return { sg, pl };
+}
+
+function generateAdjectiveForms(w) {
+  if (w.irregularForms) return; // gut, groß etc — keep stored values
+
+  // Comparative — stem + er
+  // Handle stems ending in -el (dunkel → dunkler not dunkleer)
+  const stem = w.german.endsWith('el')
+    ? w.german.slice(0, -2) + 'l'    // dunkel → dunkl
+    : w.german.endsWith('er')
+      ? w.german.slice(0, -2) + 'r'    // teuer → teur
+      : w.german;
+
+  if (!w.comparative) w.comparative = `${stem}er`;
+
+  // Superlative attr stem — handle -t insertion (schnell→schnellst, kurz→kürzest)
+  // Only store custom superlative if provided, else generate
+  if (!w.superlative) {
+    const needsEst = /[szßdt]$/.test(w.german) ? 'est' : 'st';
+    w.superlative = `am ${stem}${needsEst}en`;
+  }
+
+  // Declension — always the same constant table for regular adjectives
+  if (!w.declension) w.declension = ADJ_DECLENSION;
+}
 // ── Data loading ──────────────────────────────────────────────
 async function loadData() {
   try {
@@ -164,10 +369,29 @@ async function loadData() {
       andereArrays[i].forEach(w => { w.andereFile = f; });
     });
 
+
+
     DB.verben = verbenArrays.flat();
     DB.nomen = nomenArrays.flat();
     DB.andere = andereArrays.flat();
 
+    DB.verben.forEach(w => {
+      if (w.conjugations) return;          // already stored — skip
+      if (w.patternColor === 'weak') w.conjugations = generateWeakConjugations(w);
+      else if (w.stems) w.conjugations = generateStrongConjugations(w);
+    });
+
+    // Generate declensions for nouns that don't have them stored
+    DB.nomen.forEach(w => {
+      if (w.declension) return;            // already stored — skip
+      const generated = generateNomenDeclension(w);
+      if (generated) w.declension = generated;
+    });
+
+    // Generate adjective forms
+    DB.andere
+      .filter(w => w.wordCategory === 'adjective')
+      .forEach(w => generateAdjectiveForms(w));
     initApp();
   } catch (err) {
     document.getElementById('loading').innerHTML =
@@ -240,14 +464,7 @@ function buildPatternFilter() {
   updateCtxDropdownBtn('pattern');
 }
 
-function buildAndereFilter() {
-  const c = document.getElementById('theme-filter'); // reuse for andere
-  c.innerHTML =
-    `<button class="theme-btn active" data-acat="all" onclick="switchAndereCategory('all',this)">All</button>` +
-    ANDERE_FILES.map(f =>
-      `<button class="theme-btn" data-acat="${f}" onclick="switchAndereCategory('${f}',this)">${ANDERE_CATEGORY_LABELS[f] || f}</button>`
-    ).join('');
-}
+
 function updateFavButton() {
   const count = favs.size;
   const btn = document.getElementById('fav-header-btn');
@@ -560,8 +777,12 @@ function toggleCtxDropdown(which) {
   const menuId = `${which}-dropdown-menu`;
   const menu = document.getElementById(menuId);
   // Close other first
-  ['pattern', 'theme'].forEach(w => {
-    if (w !== which) document.getElementById(`${w}-dropdown-menu`).style.display = 'none';
+  // REPLACE the forEach inside toggleCtxDropdown:
+  ['pattern', 'theme', 'sheet-ctx'].forEach(w => {
+    if (w !== which) {
+      const el = document.getElementById(`${w}-dropdown-menu`);
+      if (el) el.style.display = 'none';
+    }
   });
   menu.style.display = menu.style.display === 'none' ? 'block' : 'none';
 }
@@ -787,6 +1008,12 @@ function loadScores() {
   try { return JSON.parse(localStorage.getItem('wortschatz_scores') || '{}'); }
   catch (e) { return {}; }
 }
+
+
+
+
+
+
 // ── Known / Unknown status ────────────────────────────────────
 function loadKnownStatus() {
   try { return JSON.parse(localStorage.getItem('wortschatz_known') || '{}'); }
@@ -795,12 +1022,18 @@ function loadKnownStatus() {
 function saveKnownStatus(data) {
   localStorage.setItem('wortschatz_known', JSON.stringify(data));
 }
+let _knownCache = null;
+function getKnownCache() {
+  if (!_knownCache) _knownCache = loadKnownStatus();
+  return _knownCache;
+}
 function getWordStatus(id) {
-  return loadKnownStatus()[id] || 'unseen';
+  return getKnownCache()[id] || 'unseen';
 }
 function setWordStatus(id, status) {
-  const data = loadKnownStatus();
+  const data = getKnownCache();
   data[id] = status;
+  _knownCache = data;
   saveKnownStatus(data);
 }
 function cycleStatus(id) {
@@ -882,7 +1115,9 @@ function buildVerbCard(w) {
   const [pbg, pc] = patternStyle(w.patternColor);
   const excSet = new Set(w.exceptionForms || []);
   // REPLACE:
+  if (!w.conjugations) return `<div class="word-card"><div class="card-header"><div class="word-title">${w.german}</div><div class="meaning">${w.english} — conjugation data missing</div></div></div>`;
   const allTenses = Object.keys(w.conjugations);
+
   const visibleTenses = TENSES_BY_LEVEL[currentLevel] || TENSES_BY_LEVEL['all'];
   const tenses = allTenses.filter(t => visibleTenses.includes(t));
   const favActive = favs.has(w.id);
@@ -1460,23 +1695,23 @@ function buildAdjectiveCard(w) {
 function buildKnownButtons(id) {
   const status = getWordStatus(id);
   return `<div class="known-btns">
-    <button class="known-btn known-btn-unknown${status==='unknown'?' active':''}"
+    <button class="known-btn known-btn-unknown${status === 'unknown' ? ' active' : ''}"
       onclick="markFromCard('${id}','unknown',this)">✗ Still learning</button>
-    <button class="known-btn known-btn-known${status==='known'?' active':''}"
+    <button class="known-btn known-btn-known${status === 'known' ? ' active' : ''}"
       onclick="markFromCard('${id}','known',this)">✓ Known</button>
   </div>`;
 }
 
 function markFromCard(id, status, btn) {
   const current = getWordStatus(id);
-  const next    = current === status ? 'unseen' : status;
+  const next = current === status ? 'unseen' : status;
   setWordStatus(id, next);
   const wrap = btn.closest('.known-btns');
   wrap.querySelectorAll('.known-btn').forEach(b => b.classList.remove('active'));
   if (next !== 'unseen') btn.classList.add('active');
   // Sync dot in word list
   const pool = getPool();
-  const idx  = pool.findIndex(w => w.id === id);
+  const idx = pool.findIndex(w => w.id === id);
   const dots = document.querySelectorAll('.wlp-dot');
   if (dots[idx]) dots[idx].className = `wlp-dot wlp-dot-${next}`;
   updateFilterActiveDot();
@@ -1613,26 +1848,26 @@ function closeFilterSheet() {
   document.getElementById('filter-backdrop').classList.remove('open');
 }
 function buildFilterSheetCtx() {
-  const isVerb   = currentType === 'verb';
-  const isNomen  = currentType === 'nomen';
-  let items = [{val:'all', label:'All'}];
+  const isVerb = currentType === 'verb';
+  const isNomen = currentType === 'nomen';
+  let items = [{ val: 'all', label: 'All' }];
   if (isVerb) {
-    items = [{val:'all',label:'All patterns'},
-      ...VERB_FILES.map(f => ({val:f, label:PATTERN_LABELS[f]||f}))];
+    items = [{ val: 'all', label: 'All patterns' },
+    ...VERB_FILES.map(f => ({ val: f, label: PATTERN_LABELS[f] || f }))];
   } else if (isNomen) {
-    const themes = [...new Set(DB.nomen.map(w=>w.theme).filter(Boolean))];
-    items = [{val:'all',label:'All themes'},
-      ...themes.map(t => ({val:t, label:THEME_LABELS[t]||t}))];
+    const themes = [...new Set(DB.nomen.map(w => w.theme).filter(Boolean))];
+    items = [{ val: 'all', label: 'All themes' },
+    ...themes.map(t => ({ val: t, label: THEME_LABELS[t] || t }))];
   } else {
-    items = [{val:'all',label:'All'},
-      ...ANDERE_FILES.map(f => ({val:f, label:ANDERE_CATEGORY_LABELS[f]||f}))];
+    items = [{ val: 'all', label: 'All' },
+    ...ANDERE_FILES.map(f => ({ val: f, label: ANDERE_CATEGORY_LABELS[f] || f }))];
   }
   const currentVal = isVerb ? currentPattern
-                   : isNomen ? currentTheme : currentAndereCategory;
-  const lbl = items.find(i=>i.val===currentVal)?.label || 'All';
+    : isNomen ? currentTheme : currentAndereCategory;
+  const lbl = items.find(i => i.val === currentVal)?.label || 'All';
   document.getElementById('sheet-ctx-btn').innerHTML = `${lbl} <span>▾</span>`;
   document.getElementById('sheet-ctx-dropdown-menu').innerHTML = items.map(item =>
-    `<button class="ctx-menu-item${currentVal===item.val?' active':''}"
+    `<button class="ctx-menu-item${currentVal === item.val ? ' active' : ''}"
       onclick="pickSheetCtx('${item.val}')">${item.label}</button>`
   ).join('');
 }
@@ -1643,9 +1878,9 @@ function syncStatusPills() {
 }
 function pickSheetCtx(val) {
   document.getElementById('sheet-ctx-dropdown-menu').style.display = 'none';
-  if (currentType === 'verb')       currentPattern = val;
+  if (currentType === 'verb') currentPattern = val;
   else if (currentType === 'nomen') currentTheme = val;
-  else                              currentAndereCategory = val;
+  else currentAndereCategory = val;
   currentIndex = 0;
   buildPatternFilter(); buildThemeFilter(); buildFilterSheetCtx();
   renderCurrentWord(); renderWordListPanel();
@@ -1670,8 +1905,10 @@ function resetFilters() {
 }
 function updateFilterActiveDot() {
   const active = currentPattern !== 'all' || currentTheme !== 'all' ||
-                 currentAndereCategory !== 'all' || currentStatusFilter !== 'all';
+    currentAndereCategory !== 'all' || currentStatusFilter !== 'all';
   document.getElementById('filter-active-dot').style.display = active ? 'block' : 'none';
 }
+
+
 // ── Boot ──────────────────────────────────────────────────────
 loadData();

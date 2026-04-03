@@ -18,39 +18,129 @@
     "opposite": "klein",
     "declension": {
       "strong": {
-        "nom": ["-er", "-e", "-es", "-e"],
-        "akk": ["-en", "-e", "-es", "-e"],
-        "dat": ["-em", "-er", "-em", "-en"],
-        "gen": ["-en", "-er", "-en", "-er"]
+        "nom": [
+          "-er",
+          "-e",
+          "-es",
+          "-e"
+        ],
+        "akk": [
+          "-en",
+          "-e",
+          "-es",
+          "-e"
+        ],
+        "dat": [
+          "-em",
+          "-er",
+          "-em",
+          "-en"
+        ],
+        "gen": [
+          "-en",
+          "-er",
+          "-en",
+          "-er"
+        ]
       },
       "weak": {
-        "nom": ["-e", "-e", "-e", "-en"],
-        "akk": ["-en", "-e", "-e", "-en"],
-        "dat": ["-en", "-en", "-en", "-en"],
-        "gen": ["-en", "-en", "-en", "-en"]
+        "nom": [
+          "-e",
+          "-e",
+          "-e",
+          "-en"
+        ],
+        "akk": [
+          "-en",
+          "-e",
+          "-e",
+          "-en"
+        ],
+        "dat": [
+          "-en",
+          "-en",
+          "-en",
+          "-en"
+        ],
+        "gen": [
+          "-en",
+          "-en",
+          "-en",
+          "-en"
+        ]
       },
       "mixed": {
-        "nom": ["-er", "-e", "-es", "-en"],
-        "akk": ["-en", "-e", "-es", "-en"],
-        "dat": ["-en", "-en", "-en", "-en"],
-        "gen": ["-en", "-en", "-en", "-en"]
+        "nom": [
+          "-er",
+          "-e",
+          "-es",
+          "-en"
+        ],
+        "akk": [
+          "-en",
+          "-e",
+          "-es",
+          "-en"
+        ],
+        "dat": [
+          "-en",
+          "-en",
+          "-en",
+          "-en"
+        ],
+        "gen": [
+          "-en",
+          "-en",
+          "-en",
+          "-en"
+        ]
       }
     },
     "variants": [
-      { "label": "Komparativ", "form": "größer" },
-      { "label": "Superlativ", "form": "am größten" },
-      { "label": "Attributive m. nom.", "form": "ein großer Mann" },
-      { "label": "Attributive f. nom.", "form": "eine große Frau" },
-      { "label": "Attributive n. nom.", "form": "ein großes Kind" }
+      {
+        "label": "Komparativ",
+        "form": "größer"
+      },
+      {
+        "label": "Superlativ",
+        "form": "am größten"
+      },
+      {
+        "label": "Attributive m. nom.",
+        "form": "ein großer Mann"
+      },
+      {
+        "label": "Attributive f. nom.",
+        "form": "eine große Frau"
+      },
+      {
+        "label": "Attributive n. nom.",
+        "form": "ein großes Kind"
+      }
     ],
     "relatedWords": [
-      { "word": "klein", "meaning": "small (antonym)" },
-      { "word": "riesig", "meaning": "enormous" },
-      { "word": "bedeutend", "meaning": "significant / great" }
+      {
+        "word": "klein",
+        "meaning": "small (antonym)"
+      },
+      {
+        "word": "riesig",
+        "meaning": "enormous"
+      },
+      {
+        "word": "bedeutend",
+        "meaning": "significant / great"
+      }
     ],
     "usage": [
-      { "de": "Er ist sehr groß.", "en": "He is very tall. (predicate)" },
-      { "de": "Das ist ein großes Problem.", "en": "That is a big problem. (attributive, neut. nom.)" }
+      {
+        "de": "Er ist sehr groß.",
+        "en": "He is very tall. (predicate)"
+      },
+      {
+        "de": "Das ist ein großes Problem.",
+        "en": "That is a big problem. (attributive, neut. nom.)"
+      }
     ]
   },
   {
@@ -72,37 +162,121 @@
     "opposite": "schlecht",
     "declension": {
       "strong": {
-        "nom": ["-er", "-e", "-es", "-e"],
-        "akk": ["-en", "-e", "-es", "-e"],
-        "dat": ["-em", "-er", "-em", "-en"],
-        "gen": ["-en", "-er", "-en", "-er"]
+        "nom": [
+          "-er",
+          "-e",
+          "-es",
+          "-e"
+        ],
+        "akk": [
+          "-en",
+          "-e",
+          "-es",
+          "-e"
+        ],
+        "dat": [
+          "-em",
+          "-er",
+          "-em",
+          "-en"
+        ],
+        "gen": [
+          "-en",
+          "-er",
+          "-en",
+          "-er"
+        ]
       },
       "weak": {
-        "nom": ["-e", "-e", "-e", "-en"],
-        "akk": ["-en", "-e", "-e", "-en"],
-        "dat": ["-en", "-en", "-en", "-en"],
-        "gen": ["-en", "-en", "-en", "-en"]
+        "nom": [
+          "-e",
+          "-e",
+          "-e",
+          "-en"
+        ],
+        "akk": [
+          "-en",
+          "-e",
+          "-e",
+          "-en"
+        ],
+        "dat": [
+          "-en",
+          "-en",
+          "-en",
+          "-en"
+        ],
+        "gen": [
+          "-en",
+          "-en",
+          "-en",
+          "-en"
+        ]
       },
       "mixed": {
-        "nom": ["-er", "-e", "-es", "-en"],
-        "akk": ["-en", "-e", "-es", "-en"],
-        "dat": ["-en", "-en", "-en", "-en"],
-        "gen": ["-en", "-en", "-en", "-en"]
+        "nom": [
+          "-er",
+          "-e",
+          "-es",
+          "-en"
+        ],
+        "akk": [
+          "-en",
+          "-e",
+          "-es",
+          "-en"
+        ],
+        "dat": [
+          "-en",
+          "-en",
+          "-en",
+          "-en"
+        ],
+        "gen": [
+          "-en",
+          "-en",
+          "-en",
+          "-en"
+        ]
       }
     },
     "variants": [
-      { "label": "Komparativ (irregular)", "form": "besser" },
-      { "label": "Superlativ (irregular)", "form": "am besten" },
-      { "label": "Attributive m. nom.", "form": "ein guter Freund" }
+      {
+        "label": "Komparativ (irregular)",
+        "form": "besser"
+      },
+      {
+        "label": "Superlativ (irregular)",
+        "form": "am besten"
+      },
+      {
+        "label": "Attributive m. nom.",
+        "form": "ein guter Freund"
+      }
     ],
     "relatedWords": [
-      { "word": "schlecht", "meaning": "bad (antonym)" },
-      { "word": "prima", "meaning": "great (colloquial)" },
-      { "word": "hervorragend", "meaning": "excellent" }
+      {
+        "word": "schlecht",
+        "meaning": "bad (antonym)"
+      },
+      {
+        "word": "prima",
+        "meaning": "great (colloquial)"
+      },
+      {
+        "word": "hervorragend",
+        "meaning": "excellent"
+      }
     ],
     "usage": [
-      { "de": "Das Essen ist sehr gut.", "en": "The food is very good." },
-      { "de": "Er spricht gut Deutsch.", "en": "He speaks German well. (adverb)" }
+      {
+        "de": "Das Essen ist sehr gut.",
+        "en": "The food is very good."
+      },
+      {
+        "de": "Er spricht gut Deutsch.",
+        "en": "He speaks German well. (adverb)"
+      }
     ]
   },
   {
@@ -124,37 +298,121 @@
     "opposite": "langsam",
     "declension": {
       "strong": {
-        "nom": ["-er", "-e", "-es", "-e"],
-        "akk": ["-en", "-e", "-es", "-e"],
-        "dat": ["-em", "-er", "-em", "-en"],
-        "gen": ["-en", "-er", "-en", "-er"]
+        "nom": [
+          "-er",
+          "-e",
+          "-es",
+          "-e"
+        ],
+        "akk": [
+          "-en",
+          "-e",
+          "-es",
+          "-e"
+        ],
+        "dat": [
+          "-em",
+          "-er",
+          "-em",
+          "-en"
+        ],
+        "gen": [
+          "-en",
+          "-er",
+          "-en",
+          "-er"
+        ]
       },
       "weak": {
-        "nom": ["-e", "-e", "-e", "-en"],
-        "akk": ["-en", "-e", "-e", "-en"],
-        "dat": ["-en", "-en", "-en", "-en"],
-        "gen": ["-en", "-en", "-en", "-en"]
+        "nom": [
+          "-e",
+          "-e",
+          "-e",
+          "-en"
+        ],
+        "akk": [
+          "-en",
+          "-e",
+          "-e",
+          "-en"
+        ],
+        "dat": [
+          "-en",
+          "-en",
+          "-en",
+          "-en"
+        ],
+        "gen": [
+          "-en",
+          "-en",
+          "-en",
+          "-en"
+        ]
       },
       "mixed": {
-        "nom": ["-er", "-e", "-es", "-en"],
-        "akk": ["-en", "-e", "-es", "-en"],
-        "dat": ["-en", "-en", "-en", "-en"],
-        "gen": ["-en", "-en", "-en", "-en"]
+        "nom": [
+          "-er",
+          "-e",
+          "-es",
+          "-en"
+        ],
+        "akk": [
+          "-en",
+          "-e",
+          "-es",
+          "-en"
+        ],
+        "dat": [
+          "-en",
+          "-en",
+          "-en",
+          "-en"
+        ],
+        "gen": [
+          "-en",
+          "-en",
+          "-en",
+          "-en"
+        ]
       }
     },
     "variants": [
-      { "label": "Komparativ", "form": "schneller" },
-      { "label": "Superlativ", "form": "am schnellsten" },
-      { "label": "Attributive m. nom.", "form": "ein schneller Mann" }
+      {
+        "label": "Komparativ",
+        "form": "schneller"
+      },
+      {
+        "label": "Superlativ",
+        "form": "am schnellsten"
+      },
+      {
+        "label": "Attributive m. nom.",
+        "form": "ein schneller Mann"
+      }
     ],
     "relatedWords": [
-      { "word": "rasch", "meaning": "swift / brisk" },
-      { "word": "langsam", "meaning": "slow (antonym)" },
-      { "word": "flott", "meaning": "speedy (colloquial)" }
+      {
+        "word": "rasch",
+        "meaning": "swift / brisk"
+      },
+      {
+        "word": "langsam",
+        "meaning": "slow (antonym)"
+      },
+      {
+        "word": "flott",
+        "meaning": "speedy (colloquial)"
+      }
     ],
     "usage": [
-      { "de": "Das Auto fährt sehr schnell.", "en": "The car drives very fast. (adverb)" },
-      { "de": "Er ist ein schneller Läufer.", "en": "He is a fast runner. (attributive, m nom)" }
+      {
+        "de": "Das Auto fährt sehr schnell.",
+        "en": "The car drives very fast. (adverb)"
+      },
+      {
+        "de": "Er ist ein schneller Läufer.",
+        "en": "He is a fast runner. (attributive, m nom)"
+      }
     ]
   },
   {
@@ -176,37 +434,121 @@
     "opposite": "unwichtig",
     "declension": {
       "strong": {
-        "nom": ["-er", "-e", "-es", "-e"],
-        "akk": ["-en", "-e", "-es", "-e"],
-        "dat": ["-em", "-er", "-em", "-en"],
-        "gen": ["-en", "-er", "-en", "-er"]
+        "nom": [
+          "-er",
+          "-e",
+          "-es",
+          "-e"
+        ],
+        "akk": [
+          "-en",
+          "-e",
+          "-es",
+          "-e"
+        ],
+        "dat": [
+          "-em",
+          "-er",
+          "-em",
+          "-en"
+        ],
+        "gen": [
+          "-en",
+          "-er",
+          "-en",
+          "-er"
+        ]
       },
       "weak": {
-        "nom": ["-e", "-e", "-e", "-en"],
-        "akk": ["-en", "-e", "-e", "-en"],
-        "dat": ["-en", "-en", "-en", "-en"],
-        "gen": ["-en", "-en", "-en", "-en"]
+        "nom": [
+          "-e",
+          "-e",
+          "-e",
+          "-en"
+        ],
+        "akk": [
+          "-en",
+          "-e",
+          "-e",
+          "-en"
+        ],
+        "dat": [
+          "-en",
+          "-en",
+          "-en",
+          "-en"
+        ],
+        "gen": [
+          "-en",
+          "-en",
+          "-en",
+          "-en"
+        ]
       },
       "mixed": {
-        "nom": ["-er", "-e", "-es", "-en"],
-        "akk": ["-en", "-e", "-es", "-en"],
-        "dat": ["-en", "-en", "-en", "-en"],
-        "gen": ["-en", "-en", "-en", "-en"]
+        "nom": [
+          "-er",
+          "-e",
+          "-es",
+          "-en"
+        ],
+        "akk": [
+          "-en",
+          "-e",
+          "-es",
+          "-en"
+        ],
+        "dat": [
+          "-en",
+          "-en",
+          "-en",
+          "-en"
+        ],
+        "gen": [
+          "-en",
+          "-en",
+          "-en",
+          "-en"
+        ]
       }
     },
     "variants": [
-      { "label": "Komparativ", "form": "wichtiger" },
-      { "label": "Superlativ", "form": "am wichtigsten" },
-      { "label": "Attributive f. nom.", "form": "eine wichtige Frage" }
+      {
+        "label": "Komparativ",
+        "form": "wichtiger"
+      },
+      {
+        "label": "Superlativ",
+        "form": "am wichtigsten"
+      },
+      {
+        "label": "Attributive f. nom.",
+        "form": "eine wichtige Frage"
+      }
     ],
     "relatedWords": [
-      { "word": "unwichtig", "meaning": "unimportant (antonym)" },
-      { "word": "bedeutend", "meaning": "significant" },
-      { "word": "wesentlich", "meaning": "essential / considerable" }
+      {
+        "word": "unwichtig",
+        "meaning": "unimportant (antonym)"
+      },
+      {
+        "word": "bedeutend",
+        "meaning": "significant"
+      },
+      {
+        "word": "wesentlich",
+        "meaning": "essential / considerable"
+      }
     ],
     "usage": [
-      { "de": "Das ist sehr wichtig.", "en": "That is very important." },
-      { "de": "Er stellt wichtige Fragen.", "en": "He asks important questions." }
+      {
+        "de": "Das ist sehr wichtig.",
+        "en": "That is very important."
+      },
+      {
+        "de": "Er stellt wichtige Fragen.",
+        "en": "He asks important questions."
+      }
     ]
   },
   {
@@ -228,36 +570,117 @@
     "opposite": "unmöglich",
     "declension": {
       "strong": {
-        "nom": ["-er", "-e", "-es", "-e"],
-        "akk": ["-en", "-e", "-es", "-e"],
-        "dat": ["-em", "-er", "-em", "-en"],
-        "gen": ["-en", "-er", "-en", "-er"]
+        "nom": [
+          "-er",
+          "-e",
+          "-es",
+          "-e"
+        ],
+        "akk": [
+          "-en",
+          "-e",
+          "-es",
+          "-e"
+        ],
+        "dat": [
+          "-em",
+          "-er",
+          "-em",
+          "-en"
+        ],
+        "gen": [
+          "-en",
+          "-er",
+          "-en",
+          "-er"
+        ]
       },
       "weak": {
-        "nom": ["-e", "-e", "-e", "-en"],
-        "akk": ["-en", "-e", "-e", "-en"],
-        "dat": ["-en", "-en", "-en", "-en"],
-        "gen": ["-en", "-en", "-en", "-en"]
+        "nom": [
+          "-e",
+          "-e",
+          "-e",
+          "-en"
+        ],
+        "akk": [
+          "-en",
+          "-e",
+          "-e",
+          "-en"
+        ],
+        "dat": [
+          "-en",
+          "-en",
+          "-en",
+          "-en"
+        ],
+        "gen": [
+          "-en",
+          "-en",
+          "-en",
+          "-en"
+        ]
       },
       "mixed": {
-        "nom": ["-er", "-e", "-es", "-en"],
-        "akk": ["-en", "-e", "-es", "-en"],
-        "dat": ["-en", "-en", "-en", "-en"],
-        "gen": ["-en", "-en", "-en", "-en"]
+        "nom": [
+          "-er",
+          "-e",
+          "-es",
+          "-en"
+        ],
+        "akk": [
+          "-en",
+          "-e",
+          "-es",
+          "-en"
+        ],
+        "dat": [
+          "-en",
+          "-en",
+          "-en",
+          "-en"
+        ],
+        "gen": [
+          "-en",
+          "-en",
+          "-en",
+          "-en"
+        ]
       }
     },
     "variants": [
-      { "label": "Adverb form", "form": "möglichst (as … as possible)" },
-      { "label": "Attributive f. nom.", "form": "eine mögliche Lösung" }
+      {
+        "label": "Adverb form",
+        "form": "möglichst (as … as possible)"
+      },
+      {
+        "label": "Attributive f. nom.",
+        "form": "eine mögliche Lösung"
+      }
     ],
     "relatedWords": [
-      { "word": "unmöglich", "meaning": "impossible" },
-      { "word": "wahrscheinlich", "meaning": "probable" },
-      { "word": "eventuell", "meaning": "possibly / perhaps" }
+      {
+        "word": "unmöglich",
+        "meaning": "impossible"
+      },
+      {
+        "word": "wahrscheinlich",
+        "meaning": "probable"
+      },
+      {
+        "word": "eventuell",
+        "meaning": "possibly / perhaps"
+      }
     ],
     "usage": [
-      { "de": "Das ist leider nicht möglich.", "en": "Unfortunately that is not possible." },
-      { "de": "Komm bitte möglichst früh.", "en": "Please come as early as possible." }
+      {
+        "de": "Das ist leider nicht möglich.",
+        "en": "Unfortunately that is not possible."
+      },
+      {
+        "de": "Komm bitte möglichst früh.",
+        "en": "Please come as early as possible."
+      }
     ]
   },
   {
@@ -279,37 +702,981 @@
     "opposite": "fremd",
     "declension": {
       "strong": {
-        "nom": ["-er", "-e", "-es", "-e"],
-        "akk": ["-en", "-e", "-es", "-e"],
-        "dat": ["-em", "-er", "-em", "-en"],
-        "gen": ["-en", "-er", "-en", "-er"]
+        "nom": [
+          "-er",
+          "-e",
+          "-es",
+          "-e"
+        ],
+        "akk": [
+          "-en",
+          "-e",
+          "-es",
+          "-e"
+        ],
+        "dat": [
+          "-em",
+          "-er",
+          "-em",
+          "-en"
+        ],
+        "gen": [
+          "-en",
+          "-er",
+          "-en",
+          "-er"
+        ]
       },
       "weak": {
-        "nom": ["-e", "-e", "-e", "-en"],
-        "akk": ["-en", "-e", "-e", "-en"],
-        "dat": ["-en", "-en", "-en", "-en"],
-        "gen": ["-en", "-en", "-en", "-en"]
+        "nom": [
+          "-e",
+          "-e",
+          "-e",
+          "-en"
+        ],
+        "akk": [
+          "-en",
+          "-e",
+          "-e",
+          "-en"
+        ],
+        "dat": [
+          "-en",
+          "-en",
+          "-en",
+          "-en"
+        ],
+        "gen": [
+          "-en",
+          "-en",
+          "-en",
+          "-en"
+        ]
       },
       "mixed": {
-        "nom": ["-er", "-e", "-es", "-en"],
-        "akk": ["-en", "-e", "-es", "-en"],
-        "dat": ["-en", "-en", "-en", "-en"],
-        "gen": ["-en", "-en", "-en", "-en"]
+        "nom": [
+          "-er",
+          "-e",
+          "-es",
+          "-en"
+        ],
+        "akk": [
+          "-en",
+          "-e",
+          "-es",
+          "-en"
+        ],
+        "dat": [
+          "-en",
+          "-en",
+          "-en",
+          "-en"
+        ],
+        "gen": [
+          "-en",
+          "-en",
+          "-en",
+          "-en"
+        ]
       }
     },
     "variants": [
-      { "label": "m. nom.", "form": "mein eigener Stil" },
-      { "label": "f. nom.", "form": "meine eigene Meinung" },
-      { "label": "n. nom.", "form": "mein eigenes Zimmer" }
+      {
+        "label": "m. nom.",
+        "form": "mein eigener Stil"
+      },
+      {
+        "label": "f. nom.",
+        "form": "meine eigene Meinung"
+      },
+      {
+        "label": "n. nom.",
+        "form": "mein eigenes Zimmer"
+      }
     ],
     "relatedWords": [
-      { "word": "persönlich", "meaning": "personal" },
-      { "word": "selbst", "meaning": "oneself / itself" },
-      { "word": "individuell", "meaning": "individual" }
+      {
+        "word": "persönlich",
+        "meaning": "personal"
+      },
+      {
+        "word": "selbst",
+        "meaning": "oneself / itself"
+      },
+      {
+        "word": "individuell",
+        "meaning": "individual"
+      }
     ],
     "usage": [
-      { "de": "Er hat sein eigenes Unternehmen gegründet.", "en": "He founded his own company." },
-      { "de": "Sie hat eine eigene Meinung dazu.", "en": "She has her own opinion on it." }
+      {
+        "de": "Er hat sein eigenes Unternehmen gegründet.",
+        "en": "He founded his own company."
+      },
+      {
+        "de": "Sie hat eine eigene Meinung dazu.",
+        "en": "She has her own opinion on it."
+      }
+    ]
+  },
+  {
+    "id": "alt",
+    "level": "A1",
+    "type": "andere",
+    "wordCategory": "adjective",
+    "german": "alt",
+    "english": "old",
+    "wordType": "Adjektiv",
+    "wordTypeEN": "Adjective",
+    "grammarRule": "Regular — add case endings before noun",
+    "grammarRuleDetail": "Regular comparative with umlaut: alt → älter → am ältesten.",
+    "structureFormula": "Die Lampe ist alt. | eine alte Lampe",
+    "irregularForms": false,
+    "comparative": "älter",
+    "superlative": "am ältesten",
+    "opposite": "neu",
+    "variants": [],
+    "relatedWords": [
+      {
+        "word": "neu",
+        "meaning": "new"
+      }
+    ],
+    "usage": [
+      {
+        "de": "Die Lampe ist alt.",
+        "en": "The lamp is old."
+      },
+      {
+        "de": "Das ist ein altes Haus.",
+        "en": "That is an old house."
+      }
+    ]
+  },
+  {
+    "id": "neu",
+    "level": "A1",
+    "type": "andere",
+    "wordCategory": "adjective",
+    "german": "neu",
+    "english": "new",
+    "wordType": "Adjektiv",
+    "wordTypeEN": "Adjective",
+    "grammarRule": "Regular — add case endings before noun",
+    "grammarRuleDetail": "Regular adjective, no stem change in comparative.",
+    "structureFormula": "Die Lampe ist neu. | eine neue Lampe",
+    "irregularForms": false,
+    "opposite": "alt",
+    "variants": [],
+    "relatedWords": [
+      {
+        "word": "modern",
+        "meaning": "modern"
+      }
+    ],
+    "usage": [
+      {
+        "de": "Die Lampe ist neu.",
+        "en": "The lamp is new."
+      },
+      {
+        "de": "Ich habe einen neuen Computer.",
+        "en": "I have a new computer."
+      }
+    ]
+  },
+  {
+    "id": "klein",
+    "level": "A1",
+    "type": "andere",
+    "wordCategory": "adjective",
+    "german": "klein",
+    "english": "small / little",
+    "wordType": "Adjektiv",
+    "wordTypeEN": "Adjective",
+    "grammarRule": "Regular — add case endings before noun",
+    "grammarRuleDetail": "Regular adjective, no stem change in comparative.",
+    "structureFormula": "Das Bad ist klein. | ein kleines Bad",
+    "irregularForms": false,
+    "opposite": "groß",
+    "variants": [],
+    "relatedWords": [
+      {
+        "word": "groß",
+        "meaning": "large"
+      }
+    ],
+    "usage": [
+      {
+        "de": "Die Toilette ist klein.",
+        "en": "The toilet is small."
+      },
+      {
+        "de": "Das ist ein kleines Zimmer.",
+        "en": "That is a small room."
+      }
+    ]
+  },
+  {
+    "id": "hell",
+    "level": "A1",
+    "type": "andere",
+    "wordCategory": "adjective",
+    "german": "hell",
+    "english": "bright / light",
+    "wordType": "Adjektiv",
+    "wordTypeEN": "Adjective",
+    "grammarRule": "Regular — add case endings before noun",
+    "grammarRuleDetail": "Regular adjective. Also used as prefix: hellrot, hellblau.",
+    "structureFormula": "Das Zimmer ist hell. | ein helles Zimmer",
+    "irregularForms": false,
+    "opposite": "dunkel",
+    "variants": [
+      {
+        "label": "As prefix",
+        "form": "hell- + colour (e.g. hellrot)"
+      }
+    ],
+    "relatedWords": [
+      {
+        "word": "dunkel",
+        "meaning": "dark"
+      }
+    ],
+    "usage": [
+      {
+        "de": "Das Wohnzimmer ist hell.",
+        "en": "The living room is bright."
+      },
+      {
+        "de": "Ich möchte ein helles Zimmer.",
+        "en": "I want a bright room."
+      }
+    ]
+  },
+  {
+    "id": "dunkel",
+    "level": "A1",
+    "type": "andere",
+    "wordCategory": "adjective",
+    "german": "dunkel",
+    "english": "dark",
+    "wordType": "Adjektiv",
+    "wordTypeEN": "Adjective",
+    "grammarRule": "Regular — stem loses -el before endings",
+    "grammarRuleDetail": "Adjectives ending in -el drop the -e before adding endings: dunkel → dunkle, dunkler.",
+    "structureFormula": "Das Zimmer ist dunkel. | ein dunkles Zimmer",
+    "irregularForms": false,
+    "opposite": "hell",
+    "variants": [
+      {
+        "label": "As prefix",
+        "form": "dunkel- + colour (e.g. dunkelrot)"
+      }
+    ],
+    "relatedWords": [
+      {
+        "word": "hell",
+        "meaning": "bright"
+      }
+    ],
+    "usage": [
+      {
+        "de": "Laras Zimmer ist dunkel.",
+        "en": "Lara's room is dark."
+      },
+      {
+        "de": "Ich mag keine dunklen Zimmer.",
+        "en": "I don't like dark rooms."
+      }
+    ]
+  },
+  {
+    "id": "teuer",
+    "level": "A1",
+    "type": "andere",
+    "wordCategory": "adjective",
+    "german": "teuer",
+    "english": "expensive",
+    "wordType": "Adjektiv",
+    "wordTypeEN": "Adjective",
+    "grammarRule": "Regular — stem loses -e before endings",
+    "grammarRuleDetail": "Adjectives ending in -er drop the -e before adding endings: teuer → teure, teurer.",
+    "structureFormula": "Das Zimmer ist teuer. | ein teures Zimmer",
+    "irregularForms": false,
+    "comparative": "teurer",
+    "superlative": "am teuersten",
+    "opposite": "billig",
+    "variants": [],
+    "relatedWords": [
+      {
+        "word": "billig",
+        "meaning": "cheap"
+      }
+    ],
+    "usage": [
+      {
+        "de": "Das Zimmer ist sehr schön, aber es ist teuer.",
+        "en": "The room is very beautiful but it is expensive."
+      },
+      {
+        "de": "Der Kühlschrank ist zu teuer.",
+        "en": "The fridge is too expensive."
+      }
+    ]
+  },
+  {
+    "id": "billig",
+    "level": "A1",
+    "type": "andere",
+    "wordCategory": "adjective",
+    "german": "billig",
+    "english": "cheap / inexpensive",
+    "wordType": "Adjektiv",
+    "wordTypeEN": "Adjective",
+    "grammarRule": "Regular — add case endings before noun",
+    "grammarRuleDetail": "Regular adjective, no stem change.",
+    "structureFormula": "Das Zimmer ist billig. | ein billiges Zimmer",
+    "irregularForms": false,
+    "opposite": "teuer",
+    "variants": [],
+    "relatedWords": [
+      {
+        "word": "günstig",
+        "meaning": "affordable / favourable"
+      }
+    ],
+    "usage": [
+      {
+        "de": "Das Zimmer ist billig.",
+        "en": "The room is cheap."
+      },
+      {
+        "de": "Ich suche ein billiges Apartment.",
+        "en": "I am looking for a cheap apartment."
+      }
+    ]
+  },
+  {
+    "id": "haesslich",
+    "level": "A1",
+    "type": "andere",
+    "wordCategory": "adjective",
+    "german": "hässlich",
+    "english": "ugly",
+    "wordType": "Adjektiv",
+    "wordTypeEN": "Adjective",
+    "grammarRule": "Regular — add case endings before noun",
+    "grammarRuleDetail": "Regular adjective, no stem change.",
+    "structureFormula": "Die Küche ist hässlich. | eine hässliche Küche",
+    "irregularForms": false,
+    "opposite": "schön",
+    "variants": [],
+    "relatedWords": [
+      {
+        "word": "schön",
+        "meaning": "beautiful"
+      }
+    ],
+    "usage": [
+      {
+        "de": "Die Küche ist hässlich.",
+        "en": "The kitchen is ugly."
+      },
+      {
+        "de": "Das ist eine hässliche Farbe.",
+        "en": "That is an ugly colour."
+      }
+    ]
+  },
+  {
+    "id": "schmal",
+    "level": "A2",
+    "type": "andere",
+    "wordCategory": "adjective",
+    "german": "schmal",
+    "english": "narrow / slim",
+    "wordType": "Adjektiv",
+    "wordTypeEN": "Adjective",
+    "grammarRule": "Regular — add case endings before noun",
+    "grammarRuleDetail": "Regular adjective with umlaut in comparative: schmal → schmaler/schmäler.",
+    "structureFormula": "Das Haus ist schmal. | ein schmales Haus",
+    "irregularForms": false,
+    "opposite": "breit",
+    "variants": [],
+    "relatedWords": [
+      {
+        "word": "breit",
+        "meaning": "wide"
+      }
+    ],
+    "usage": [
+      {
+        "de": "Mein Haus ist sehr schmal.",
+        "en": "My house is very narrow."
+      },
+      {
+        "de": "Der Flur ist schmal.",
+        "en": "The hallway is narrow."
+      }
+    ]
+  },
+  {
+    "id": "breit",
+    "level": "A2",
+    "type": "andere",
+    "wordCategory": "adjective",
+    "german": "breit",
+    "english": "wide / broad",
+    "wordType": "Adjektiv",
+    "wordTypeEN": "Adjective",
+    "grammarRule": "Regular — add case endings before noun",
+    "grammarRuleDetail": "Regular adjective, no stem change.",
+    "structureFormula": "Die Straße ist breit. | eine breite Straße",
+    "irregularForms": false,
+    "opposite": "schmal",
+    "variants": [],
+    "relatedWords": [
+      {
+        "word": "schmal",
+        "meaning": "narrow"
+      }
+    ],
+    "usage": [
+      {
+        "de": "Die Straße ist breit.",
+        "en": "The street is wide."
+      },
+      {
+        "de": "Der Tisch ist 60 cm breit.",
+        "en": "The table is 60 cm wide."
+      }
+    ]
+  },
+  {
+    "id": "nett",
+    "level": "A1",
+    "type": "andere",
+    "wordCategory": "adjective",
+    "german": "nett",
+    "english": "nice / kind",
+    "wordType": "Adjektiv",
+    "wordTypeEN": "Adjective",
+    "grammarRule": "Regular — add case endings before noun",
+    "grammarRuleDetail": "Regular adjective, no stem change.",
+    "structureFormula": "Sie ist nett. | ein nettes Ehepaar",
+    "irregularForms": false,
+    "opposite": "unfreundlich",
+    "variants": [],
+    "relatedWords": [
+      {
+        "word": "freundlich",
+        "meaning": "friendly"
+      }
+    ],
+    "usage": [
+      {
+        "de": "Nettes Ehepaar mit Kind sucht eine Wohnung.",
+        "en": "Nice married couple with child looking for a flat."
+      },
+      {
+        "de": "Die Nachbarn sind sehr nett.",
+        "en": "The neighbours are very nice."
+      }
+    ]
+  },
+  {
+    "id": "modern",
+    "level": "A1",
+    "type": "andere",
+    "wordCategory": "adjective",
+    "german": "modern",
+    "english": "modern",
+    "wordType": "Adjektiv",
+    "wordTypeEN": "Adjective",
+    "grammarRule": "Regular — add case endings before noun",
+    "grammarRuleDetail": "Regular adjective, no stem change.",
+    "structureFormula": "Die Lampe ist modern. | eine moderne Lampe",
+    "irregularForms": false,
+    "opposite": "altmodisch",
+    "variants": [],
+    "relatedWords": [
+      {
+        "word": "neu",
+        "meaning": "new"
+      }
+    ],
+    "usage": [
+      {
+        "de": "Die Lampe ist sehr modern.",
+        "en": "The lamp is very modern."
+      },
+      {
+        "de": "Ich möchte eine moderne Wohnung.",
+        "en": "I want a modern flat."
+      }
+    ]
+  },
+  {
+    "id": "moebliert",
+    "level": "A2",
+    "type": "andere",
+    "wordCategory": "adjective",
+    "german": "möbliert",
+    "english": "furnished",
+    "wordType": "Adjektiv",
+    "wordTypeEN": "Adjective (past participle used as adjective)",
+    "grammarRule": "Participle used as adjective — add case endings before noun",
+    "grammarRuleDetail": "From möblieren (to furnish). Used in property listings.",
+    "structureFormula": "Das Zimmer ist möbliert. | ein möbliertes Zimmer",
+    "irregularForms": false,
+    "opposite": "unmöbliert",
+    "variants": [],
+    "relatedWords": [
+      {
+        "word": "die Möbel",
+        "meaning": "furniture"
+      }
+    ],
+    "usage": [
+      {
+        "de": "Das Zimmer ist möbliert.",
+        "en": "The room is furnished."
+      },
+      {
+        "de": "Schöne möblierte 1-Zimmer-Wohnung zu vermieten.",
+        "en": "Beautiful furnished 1-room flat for rent."
+      }
+    ]
+  },
+  {
+    "id": "lang",
+    "level": "A1",
+    "type": "andere",
+    "wordCategory": "adjective",
+    "german": "lang",
+    "english": "long",
+    "wordType": "Adjektiv",
+    "wordTypeEN": "Adjective / Adverb",
+    "grammarRule": "Regular — add case endings before noun",
+    "grammarRuleDetail": "Regular adjective with umlaut in comparative: lang → länger → am längsten.",
+    "structureFormula": "Der Tisch ist lang. | ein langer Tisch",
+    "irregularForms": false,
+    "comparative": "länger",
+    "superlative": "am längsten",
+    "opposite": "kurz",
+    "variants": [],
+    "relatedWords": [
+      {
+        "word": "kurz",
+        "meaning": "short"
+      }
+    ],
+    "usage": [
+      {
+        "de": "Der Tisch ist ungefähr zwei Meter lang.",
+        "en": "The table is approximately two metres long."
+      },
+      {
+        "de": "Wie lang ist er genau?",
+        "en": "How long is it exactly?"
+      }
+    ]
+  },
+  {
+    "id": "hoch",
+    "level": "A2",
+    "type": "andere",
+    "wordCategory": "adjective",
+    "german": "hoch",
+    "english": "high / tall",
+    "wordType": "Adjektiv",
+    "wordTypeEN": "Adjective",
+    "grammarRule": "Irregular — stem changes to hoh- before endings",
+    "grammarRuleDetail": "hoch → hohe/hoher/hohes (drops -ch before endings). Comparative: höher → am höchsten.",
+    "structureFormula": "Der Kühlschrank ist hoch. | ein hoher Kühlschrank",
+    "irregularForms": true,
+    "comparative": "höher",
+    "superlative": "am höchsten",
+    "opposite": "niedrig",
+    "variants": [
+      {
+        "label": "Before noun",
+        "form": "hoh- (e.g. hohe Decke)"
+      }
+    ],
+    "relatedWords": [
+      {
+        "word": "niedrig",
+        "meaning": "low"
+      }
+    ],
+    "usage": [
+      {
+        "de": "Der Kühlschrank ist 85 Zentimeter hoch.",
+        "en": "The fridge is 85 centimetres tall."
+      },
+      {
+        "de": "Die Decke ist sehr hoch.",
+        "en": "The ceiling is very high."
+      }
+    ]
+  },
+  {
+    "id": "mude",
+    "level": "A1",
+    "type": "andere",
+    "wordCategory": "adjective",
+    "german": "müde",
+    "english": "tired",
+    "wordType": "Adjektiv",
+    "wordTypeEN": "Adjective",
+    "grammarRule": "Regular — add case endings before noun",
+    "grammarRuleDetail": "Regular adjective, no stem change.",
+    "structureFormula": "Sofia ist müde. | eine müde Person",
+    "irregularForms": false,
+    "opposite": "wach",
+    "variants": [],
+    "relatedWords": [
+      {
+        "word": "erschöpft",
+        "meaning": "exhausted"
+      }
+    ],
+    "usage": [
+      {
+        "de": "Sofia ist am Abend müde.",
+        "en": "Sofia is tired in the evening."
+      },
+      {
+        "de": "Ich bin sehr müde heute.",
+        "en": "I am very tired today."
+      }
+    ]
+  },
+  {
+    "id": "schwarz",
+    "level": "A1",
+    "type": "andere",
+    "wordCategory": "adjective",
+    "german": "schwarz",
+    "english": "black",
+    "wordType": "Adjektiv",
+    "wordTypeEN": "Colour adjective",
+    "grammarRule": "Regular colour adjective — add case endings before noun",
+    "grammarRuleDetail": "Regular adjective with umlaut in comparative: schwarz → schwärzer.",
+    "structureFormula": "Die Stühle sind schwarz. | schwarze Stühle",
+    "irregularForms": false,
+    "opposite": "weiß",
+    "variants": [],
+    "relatedWords": [
+      {
+        "word": "weiß",
+        "meaning": "white"
+      }
+    ],
+    "usage": [
+      {
+        "de": "Meine Stühle sind schwarz.",
+        "en": "My chairs are black."
+      },
+      {
+        "de": "Er trägt einen schwarzen Mantel.",
+        "en": "He is wearing a black coat."
+      }
+    ]
+  },
+  {
+    "id": "grau",
+    "level": "A1",
+    "type": "andere",
+    "wordCategory": "adjective",
+    "german": "grau",
+    "english": "grey",
+    "wordType": "Adjektiv",
+    "wordTypeEN": "Colour adjective",
+    "grammarRule": "Regular colour adjective — add case endings before noun",
+    "grammarRuleDetail": "Regular adjective, no stem change.",
+    "structureFormula": "Der Kühlschrank ist grau. | ein grauer Kühlschrank",
+    "irregularForms": false,
+    "opposite": "bunt",
+    "variants": [],
+    "relatedWords": [
+      {
+        "word": "weiß",
+        "meaning": "white"
+      }
+    ],
+    "usage": [
+      {
+        "de": "Mein Kühlschrank ist grau.",
+        "en": "My fridge is grey."
+      },
+      {
+        "de": "Der Himmel ist grau.",
+        "en": "The sky is grey."
+      }
+    ]
+  },
+  {
+    "id": "weiss",
+    "level": "A1",
+    "type": "andere",
+    "wordCategory": "adjective",
+    "german": "weiß",
+    "english": "white",
+    "wordType": "Adjektiv",
+    "wordTypeEN": "Colour adjective",
+    "grammarRule": "Regular colour adjective — add case endings before noun",
+    "grammarRuleDetail": "Regular adjective, no stem change.",
+    "structureFormula": "Der Kühlschrank ist weiß. | ein weißer Kühlschrank",
+    "irregularForms": false,
+    "opposite": "schwarz",
+    "variants": [],
+    "relatedWords": [
+      {
+        "word": "hell",
+        "meaning": "light / bright"
+      }
+    ],
+    "usage": [
+      {
+        "de": "Mein Kühlschrank ist weiß.",
+        "en": "My fridge is white."
+      },
+      {
+        "de": "Die Wände sind weiß.",
+        "en": "The walls are white."
+      }
+    ]
+  },
+  {
+    "id": "gruen",
+    "level": "A1",
+    "type": "andere",
+    "wordCategory": "adjective",
+    "german": "grün",
+    "english": "green",
+    "wordType": "Adjektiv",
+    "wordTypeEN": "Colour adjective",
+    "grammarRule": "Regular colour adjective — add case endings before noun",
+    "grammarRuleDetail": "Regular adjective, no stem change.",
+    "structureFormula": "Die Lampe ist grün. | eine grüne Lampe",
+    "irregularForms": false,
+    "opposite": "rot",
+    "variants": [],
+    "relatedWords": [
+      {
+        "word": "der Garten",
+        "meaning": "garden"
+      }
+    ],
+    "usage": [
+      {
+        "de": "Die Lampe ist grün.",
+        "en": "The lamp is green."
+      },
+      {
+        "de": "Der Garten ist sehr grün.",
+        "en": "The garden is very green."
+      }
+    ]
+  },
+  {
+    "id": "braun",
+    "level": "A1",
+    "type": "andere",
+    "wordCategory": "adjective",
+    "german": "braun",
+    "english": "brown",
+    "wordType": "Adjektiv",
+    "wordTypeEN": "Colour adjective",
+    "grammarRule": "Regular colour adjective — add case endings before noun",
+    "grammarRuleDetail": "Regular adjective, no stem change.",
+    "structureFormula": "Die Stühle sind braun. | braune Stühle",
+    "irregularForms": false,
+    "opposite": "weiß",
+    "variants": [],
+    "relatedWords": [
+      {
+        "word": "dunkelbraun",
+        "meaning": "dark brown"
+      }
+    ],
+    "usage": [
+      {
+        "de": "Meine Stühle sind braun.",
+        "en": "My chairs are brown."
+      },
+      {
+        "de": "Der Tisch ist dunkelbraun.",
+        "en": "The table is dark brown."
+      }
+    ]
+  },
+  {
+    "id": "blau",
+    "level": "A1",
+    "type": "andere",
+    "wordCategory": "adjective",
+    "german": "blau",
+    "english": "blue",
+    "wordType": "Adjektiv",
+    "wordTypeEN": "Colour adjective",
+    "grammarRule": "Regular colour adjective — add case endings before noun",
+    "grammarRuleDetail": "Regular adjective, no stem change.",
+    "structureFormula": "Der Kühlschrank ist blau. | ein blauer Kühlschrank",
+    "irregularForms": false,
+    "opposite": "rot",
+    "variants": [],
+    "relatedWords": [
+      {
+        "word": "hellblau",
+        "meaning": "light blue"
+      }
+    ],
+    "usage": [
+      {
+        "de": "Mein Kühlschrank ist blau.",
+        "en": "My fridge is blue."
+      },
+      {
+        "de": "Der Himmel ist blau.",
+        "en": "The sky is blue."
+      }
+    ]
+  },
+  {
+    "id": "rot",
+    "level": "A1",
+    "type": "andere",
+    "wordCategory": "adjective",
+    "german": "rot",
+    "english": "red",
+    "wordType": "Adjektiv",
+    "wordTypeEN": "Colour adjective",
+    "grammarRule": "Regular colour adjective — add case endings before noun",
+    "grammarRuleDetail": "Regular adjective with umlaut in comparative: rot → röter.",
+    "structureFormula": "Der Kühlschrank ist rot. | ein roter Kühlschrank",
+    "irregularForms": false,
+    "opposite": "grün",
+    "variants": [],
+    "relatedWords": [
+      {
+        "word": "dunkelrot",
+        "meaning": "dark red"
+      }
+    ],
+    "usage": [
+      {
+        "de": "Mein Kühlschrank ist rot.",
+        "en": "My fridge is red."
+      },
+      {
+        "de": "Die Lampe ist hellrot.",
+        "en": "The lamp is light red."
+      }
+    ]
+  },
+  {
+    "id": "gelb",
+    "level": "A1",
+    "type": "andere",
+    "wordCategory": "adjective",
+    "german": "gelb",
+    "english": "yellow",
+    "wordType": "Adjektiv",
+    "wordTypeEN": "Colour adjective",
+    "grammarRule": "Regular colour adjective — add case endings before noun",
+    "grammarRuleDetail": "Regular adjective, no stem change.",
+    "structureFormula": "Der Teppich ist gelb. | ein gelber Teppich",
+    "irregularForms": false,
+    "opposite": "blau",
+    "variants": [],
+    "relatedWords": [
+      {
+        "word": "orange",
+        "meaning": "orange"
+      }
+    ],
+    "usage": [
+      {
+        "de": "Der Teppich ist gelb.",
+        "en": "The carpet is yellow."
+      },
+      {
+        "de": "Die Lampe ist gelb.",
+        "en": "The lamp is yellow."
+      }
+    ]
+  },
+  {
+    "id": "richtig",
+    "level": "A1",
+    "type": "andere",
+    "wordCategory": "adjective",
+    "german": "richtig",
+    "english": "correct / right",
+    "wordType": "Adjektiv/Adverb",
+    "wordTypeEN": "Adjective / Adverb",
+    "grammarRule": "Regular — add case endings before noun, unchanged as adverb",
+    "grammarRuleDetail": "Works as both adjective and adverb without change.",
+    "structureFormula": "Ja, richtig. | die richtige Antwort",
+    "irregularForms": false,
+    "opposite": "falsch",
+    "variants": [],
+    "relatedWords": [
+      {
+        "word": "falsch",
+        "meaning": "wrong / incorrect"
+      }
+    ],
+    "usage": [
+      {
+        "de": "Ja, richtig!",
+        "en": "Yes, correct!"
+      },
+      {
+        "de": "Das ist die richtige Antwort.",
+        "en": "That is the correct answer."
+      }
+    ]
+  },
+  {
+    "id": "privat",
+    "level": "A2",
+    "type": "andere",
+    "wordCategory": "adjective",
+    "german": "privat",
+    "english": "private",
+    "wordType": "Adjektiv",
+    "wordTypeEN": "Adjective / Adverb",
+    "grammarRule": "Regular — add case endings before noun",
+    "grammarRuleDetail": "Also used as adverb meaning 'privately / from a private seller'.",
+    "structureFormula": "Von privat. | eine private Wohnung",
+    "irregularForms": false,
+    "opposite": "öffentlich",
+    "variants": [
+      {
+        "label": "In property ads",
+        "form": "von privat (private sale/rental)"
+      }
+    ],
+    "relatedWords": [
+      {
+        "word": "öffentlich",
+        "meaning": "public"
+      }
+    ],
+    "usage": [
+      {
+        "de": "Von privat: helle 4-Zimmer-Wohnung.",
+        "en": "Private rental: bright 4-room flat."
+      },
+      {
+        "de": "Das ist eine private Wohnung.",
+        "en": "That is a private flat."
+      }
     ]
   }
 ]

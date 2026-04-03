@@ -501,4 +501,230 @@
       }
     ]
   }
+,
+  {
+    "id": "hier",
+    "level": "A1", "type": "andere", "wordCategory": "adverb",
+    "german": "hier", "english": "here",
+    "wordType": "Adverb", "wordTypeEN": "Adverb of place",
+    "grammarRule": "Indicates location near the speaker",
+    "grammarRuleDetail": "Contrast: hier (here, near speaker) vs dort (there, away from speaker).",
+    "structureFormula": "Hier ist + [Noun]",
+    "variants": [],
+    "relatedWords": [{"word": "dort", "meaning": "there"}],
+    "usage": [
+      {"de": "Hier ist der Flur.", "en": "Here is the hallway."},
+      {"de": "Hier ist noch ein Schrank.", "en": "Here is another cupboard."}
+    ]
+  },
+  {
+    "id": "dort",
+    "level": "A1", "type": "andere", "wordCategory": "adverb",
+    "german": "dort", "english": "there",
+    "wordType": "Adverb", "wordTypeEN": "Adverb of place",
+    "grammarRule": "Indicates location away from the speaker",
+    "grammarRuleDetail": "Contrast: dort (there, away) vs hier (here, near). da is a common synonym.",
+    "structureFormula": "[Noun] ist dort. | Wie gefällt dir die Lampe dort?",
+    "variants": [{"label": "Synonym", "form": "da (more colloquial)"}],
+    "relatedWords": [{"word": "hier", "meaning": "here"}],
+    "usage": [
+      {"de": "Das Arbeitszimmer ist dort.", "en": "The study is there."},
+      {"de": "Wie gefällt dir die Lampe dort?", "en": "How do you like the lamp there?"}
+    ]
+  },
+  {
+    "id": "ungefaehr",
+    "level": "A2", "type": "andere", "wordCategory": "adverb",
+    "german": "ungefähr", "english": "approximately / about",
+    "wordType": "Adverb", "wordTypeEN": "Adverb of degree",
+    "grammarRule": "Placed directly before the number or quantity it modifies",
+    "grammarRuleDetail": "Synonym: circa / ca. Used for approximate measurements and quantities.",
+    "structureFormula": "ungefähr + [number/quantity]",
+    "variants": [{"label": "Written abbreviation", "form": "ca."}],
+    "relatedWords": [{"word": "genau", "meaning": "exactly"}],
+    "usage": [
+      {"de": "Der Tisch ist ungefähr 60 cm breit.", "en": "The table is approximately 60 cm wide."},
+      {"de": "Die Wohnung hat ungefähr 60 m².", "en": "The flat is approximately 60 square metres."}
+    ]
+  },
+  {
+    "id": "genau",
+    "level": "A2", "type": "andere", "wordCategory": "adverb",
+    "german": "genau", "english": "exactly / precisely",
+    "wordType": "Adverb", "wordTypeEN": "Adverb of degree / response particle",
+    "grammarRule": "Placed before the element it modifies, or stands alone as confirmation",
+    "grammarRuleDetail": "Also used as a standalone response meaning 'exactly!' / 'precisely!'.",
+    "structureFormula": "Wie lang ist er genau? | Genau!",
+    "variants": [{"label": "As response", "form": "Genau! (Exactly! / That's right!)"}],
+    "relatedWords": [{"word": "ungefähr", "meaning": "approximately"}],
+    "usage": [
+      {"de": "Wie lang ist er denn genau?", "en": "How long is it exactly?"},
+      {"de": "Das stimmt genau.", "en": "That is exactly right."}
+    ]
+  },
+  {
+    "id": "sofort",
+    "level": "A2", "type": "andere", "wordCategory": "adverb",
+    "german": "sofort", "english": "immediately / right away",
+    "wordType": "Adverb", "wordTypeEN": "Adverb of time",
+    "grammarRule": "Placed after the verb or at end of clause",
+    "grammarRuleDetail": "Used in property ads: ab sofort = available immediately.",
+    "structureFormula": "ab sofort | sofort verfügbar",
+    "variants": [{"label": "In property ads", "form": "ab sofort (from immediately)"}],
+    "relatedWords": [{"word": "gleich", "meaning": "right away / in a moment"}],
+    "usage": [
+      {"de": "Ich suche ab sofort eine 2-Zimmer-Wohnung.", "en": "I am looking for a 2-room flat immediately."},
+      {"de": "Ich komme sofort.", "en": "I am coming right away."}
+    ]
+  },
+  {
+    "id": "heute",
+    "level": "A1", "type": "andere", "wordCategory": "adverb",
+    "german": "heute", "english": "today",
+    "wordType": "Adverb", "wordTypeEN": "Adverb of time",
+    "grammarRule": "Stands alone or combines with Abend/Morgen/Nacht",
+    "grammarRuleDetail": "heute Abend = tonight, heute Morgen = this morning. Cannot be inflected.",
+    "structureFormula": "heute | heute Abend | heute Morgen",
+    "variants": [{"label": "This evening", "form": "heute Abend"}],
+    "relatedWords": [{"word": "morgen", "meaning": "tomorrow"}],
+    "usage": [
+      {"de": "Sind Sie heute Abend zu Hause?", "en": "Are you at home this evening?"},
+      {"de": "In der Zeitung sind heute Anzeigen.", "en": "There are advertisements in the newspaper today."}
+    ]
+  },
+  {
+    "id": "morgen",
+    "level": "A1", "type": "andere", "wordCategory": "adverb",
+    "german": "morgen", "english": "tomorrow",
+    "wordType": "Adverb", "wordTypeEN": "Adverb of time",
+    "grammarRule": "Stands alone or combines with Morgen/Abend/Mittag",
+    "grammarRuleDetail": "morgen früh = tomorrow morning. Note: der Morgen (morning, noun) is different.",
+    "structureFormula": "morgen | morgen früh | morgen Abend",
+    "variants": [{"label": "Tomorrow morning", "form": "morgen früh"}],
+    "relatedWords": [{"word": "heute", "meaning": "today"}],
+    "usage": [
+      {"de": "Sind Sie morgen zu Hause?", "en": "Are you at home tomorrow?"},
+      {"de": "Ich komme morgen früh.", "en": "I am coming tomorrow morning."}
+    ]
+  },
+  {
+    "id": "ganz",
+    "level": "A1", "type": "andere", "wordCategory": "adverb",
+    "german": "ganz", "english": "quite / fairly / completely",
+    "wordType": "Adverb", "wordTypeEN": "Adverb of degree",
+    "grammarRule": "Placed directly before the adjective or adverb it modifies",
+    "grammarRuleDetail": "ganz gut = quite good (moderate approval). As adjective it means 'whole': die ganze Wohnung.",
+    "structureFormula": "ganz + [adjective] | die ganze + [Noun]",
+    "variants": [{"label": "As adjective", "form": "ganz (whole) — die ganze Wohnung"}],
+    "relatedWords": [{"word": "ziemlich", "meaning": "quite / fairly"}],
+    "usage": [
+      {"de": "Wie gefällt dir die Lampe? — Ganz gut.", "en": "How do you like the lamp? — Quite good."},
+      {"de": "Die ganze Wohnung ist hell.", "en": "The whole flat is bright."}
+    ]
+  },
+  {
+    "id": "nur",
+    "level": "A1", "type": "andere", "wordCategory": "adverb",
+    "german": "nur", "english": "only / just",
+    "wordType": "Adverb", "wordTypeEN": "Adverb of restriction",
+    "grammarRule": "Placed directly before the word it restricts",
+    "grammarRuleDetail": "Restricts to exactly what follows. Position sensitive: nur ich (only I) vs ich nur (I only).",
+    "structureFormula": "nur + [amount/word]",
+    "variants": [],
+    "relatedWords": [{"word": "lediglich", "meaning": "merely / solely (formal)"}],
+    "usage": [
+      {"de": "Sie möchten nur 400 bis 500 Euro Miete bezahlen.", "en": "They want to pay only 400 to 500 euros rent."},
+      {"de": "Ich habe nur ein Zimmer.", "en": "I only have one room."}
+    ]
+  },
+  {
+    "id": "maximal",
+    "level": "A2", "type": "andere", "wordCategory": "adverb",
+    "german": "maximal", "english": "maximum / at most",
+    "wordType": "Adverb", "wordTypeEN": "Adverb of degree",
+    "grammarRule": "Placed before the quantity it limits",
+    "grammarRuleDetail": "Opposite: minimal. Abbreviated as max. in property ads.",
+    "structureFormula": "bis maximal + [amount] | maximal + [number]",
+    "variants": [{"label": "Abbreviation", "form": "max."}],
+    "relatedWords": [{"word": "minimal", "meaning": "at least / minimum"}],
+    "usage": [
+      {"de": "2-Zimmer-Wohnung bis maximal 750 Euro.", "en": "2-room flat up to a maximum of 750 euros."},
+      {"de": "Die Wohnung hat maximal 60 m².", "en": "The flat has a maximum of 60 square metres."}
+    ]
+  },
+  {
+    "id": "circa",
+    "level": "A2", "type": "andere", "wordCategory": "adverb",
+    "german": "circa", "english": "approximately / about",
+    "wordType": "Adverb", "wordTypeEN": "Adverb of approximation",
+    "grammarRule": "Placed directly before numbers and measurements",
+    "grammarRuleDetail": "Written ca. in abbreviation. Synonym of ungefähr, more common in written/formal contexts.",
+    "structureFormula": "ca. + [number]",
+    "variants": [{"label": "Abbreviation", "form": "ca."}],
+    "relatedWords": [{"word": "ungefähr", "meaning": "approximately"}],
+    "usage": [
+      {"de": "3-Zimmer-Wohnung, ca. 60 m².", "en": "3-room flat, approx. 60 square metres."},
+      {"de": "Das kostet circa 500 Euro.", "en": "That costs approximately 500 euros."}
+    ]
+  },
+  {
+    "id": "etwas",
+    "level": "A1", "type": "andere", "wordCategory": "adverb",
+    "german": "etwas", "english": "something / somewhat / a little",
+    "wordType": "Pronomen/Adverb", "wordTypeEN": "Indefinite pronoun / Adverb",
+    "grammarRule": "As pronoun: stands alone. As adverb: before adjective.",
+    "grammarRuleDetail": "etwas Neues (something new — adjective takes neuter strong ending). As adverb: etwas größer (somewhat larger).",
+    "structureFormula": "Wer verkauft etwas? | etwas + [adjective]",
+    "variants": [{"label": "Abbreviated colloquial", "form": "was (in speech)"}],
+    "relatedWords": [{"word": "nichts", "meaning": "nothing"}],
+    "usage": [
+      {"de": "Wer verkauft etwas?", "en": "Who is selling something?"},
+      {"de": "Ich möchte etwas kaufen.", "en": "I would like to buy something."}
+    ]
+  },
+  {
+    "id": "also",
+    "level": "A1", "type": "andere", "wordCategory": "adverb",
+    "german": "also", "english": "so / well / so then",
+    "wordType": "Adverb/Konjunktionaladverb", "wordTypeEN": "Discourse marker / conjunctive adverb",
+    "grammarRule": "At position 1 it triggers V2 inversion. Often used to introduce or summarise.",
+    "grammarRuleDetail": "also ≠ English 'also'. It means 'so/well then'. Used to introduce conclusions or resume after a pause.",
+    "structureFormula": "Also, + V + S + …",
+    "variants": [],
+    "relatedWords": [{"word": "deshalb", "meaning": "therefore"}],
+    "usage": [
+      {"de": "Also, der Tisch ist dunkelbraun.", "en": "Well, the table is dark brown."},
+      {"de": "Also, ich nehme die Wohnung.", "en": "So, I'll take the flat."}
+    ]
+  },
+  {
+    "id": "ab",
+    "level": "A2", "type": "andere", "wordCategory": "adverb",
+    "german": "ab", "english": "from / starting from",
+    "wordType": "Präposition/Adverb", "wordTypeEN": "Preposition of time (+ Dativ)",
+    "grammarRule": "ab + Dativ — indicates starting point in time",
+    "grammarRuleDetail": "Used for time: ab sofort (from now), ab Montag (from Monday). Also separable prefix in verbs.",
+    "structureFormula": "ab + [time/date] | ab sofort",
+    "variants": [{"label": "Most common phrase", "form": "ab sofort (immediately available)"}],
+    "relatedWords": [{"word": "seit", "meaning": "since / for (ongoing)"}],
+    "usage": [
+      {"de": "Ich suche ab sofort eine Wohnung.", "en": "I am looking for a flat starting immediately."},
+      {"de": "Die Wohnung ist ab dem 1. Mai frei.", "en": "The flat is available from 1st May."}
+    ]
+  },
+  {
+    "id": "mal",
+    "level": "A1", "type": "andere", "wordCategory": "adverb",
+    "german": "mal", "english": "times (multiplication) / once",
+    "wordType": "Adverb", "wordTypeEN": "Adverb (multiplication / particle)",
+    "grammarRule": "In measurements: [number] mal [number] = dimensions",
+    "grammarRuleDetail": "60 mal 120 cm = 60 × 120 cm. As particle (doch mal, komm mal) it softens requests.",
+    "structureFormula": "[number] mal [number] | komm mal her",
+    "variants": [{"label": "As softening particle", "form": "doch mal / komm mal"}],
+    "relatedWords": [{"word": "einmal", "meaning": "once / one time"}],
+    "usage": [
+      {"de": "Das Kinderbett ist 60 mal 120 Zentimeter groß.", "en": "The child's bed is 60 by 120 centimetres."},
+      {"de": "Komm mal her!", "en": "Come here for a moment!"}
+    ]
+  }
 ]

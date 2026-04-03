@@ -13,13 +13,28 @@
     "structureFormula": "Clause 1, und Clause 2 (V2 in each)",
     "variants": [],
     "relatedWords": [
-      { "word": "oder", "meaning": "or" },
-      { "word": "aber", "meaning": "but" },
-      { "word": "denn", "meaning": "because (coord.)" }
+      {
+        "word": "oder",
+        "meaning": "or"
+      },
+      {
+        "word": "aber",
+        "meaning": "but"
+      },
+      {
+        "word": "denn",
+        "meaning": "because (coord.)"
+      }
     ],
     "usage": [
-      { "de": "Ich lerne Deutsch und spreche Englisch.", "en": "I learn German and speak English." },
-      { "de": "Er kam und wir aßen zusammen.", "en": "He came and we ate together." }
+      {
+        "de": "Ich lerne Deutsch und spreche Englisch.",
+        "en": "I learn German and speak English."
+      },
+      {
+        "de": "Er kam und wir aßen zusammen.",
+        "en": "He came and we ate together."
+      }
     ]
   },
   {
@@ -35,17 +50,38 @@
     "grammarRuleDetail": "Coordinating conjunction: does not occupy position 1, so no inversion occurs.",
     "structureFormula": "Main clause, aber + Main clause (V2)",
     "variants": [
-      { "label": "Emphatic / mid-clause", "form": "jedoch" },
-      { "label": "On the other hand", "form": "dagegen" }
+      {
+        "label": "Emphatic / mid-clause",
+        "form": "jedoch"
+      },
+      {
+        "label": "On the other hand",
+        "form": "dagegen"
+      }
     ],
     "relatedWords": [
-      { "word": "sondern", "meaning": "but rather (after negation)" },
-      { "word": "jedoch", "meaning": "however" },
-      { "word": "trotzdem", "meaning": "nevertheless" }
+      {
+        "word": "sondern",
+        "meaning": "but rather (after negation)"
+      },
+      {
+        "word": "jedoch",
+        "meaning": "however"
+      },
+      {
+        "word": "trotzdem",
+        "meaning": "nevertheless"
+      }
     ],
     "usage": [
-      { "de": "Ich möchte kommen, aber ich habe keine Zeit.", "en": "I would like to come, but I have no time." },
-      { "de": "Das Wetter ist kalt, aber schön.", "en": "The weather is cold but beautiful." }
+      {
+        "de": "Ich möchte kommen, aber ich habe keine Zeit.",
+        "en": "I would like to come, but I have no time."
+      },
+      {
+        "de": "Das Wetter ist kalt, aber schön.",
+        "en": "The weather is cold but beautiful."
+      }
     ]
   },
   {
@@ -61,17 +97,38 @@
     "grammarRuleDetail": "weil introduces a subordinate clause. The conjugated verb is pushed to the very end. Modal + infinitive: modal goes last.",
     "structureFormula": "Main clause, weil … [verb-FINAL]",
     "variants": [
-      { "label": "More formal", "form": "da" },
-      { "label": "Spoken (nonstandard)", "form": "weil + V2" }
+      {
+        "label": "More formal",
+        "form": "da"
+      },
+      {
+        "label": "Spoken (nonstandard)",
+        "form": "weil + V2"
+      }
     ],
     "relatedWords": [
-      { "word": "da", "meaning": "since / because (formal)" },
-      { "word": "denn", "meaning": "because (coordinating)" },
-      { "word": "obwohl", "meaning": "although" }
+      {
+        "word": "da",
+        "meaning": "since / because (formal)"
+      },
+      {
+        "word": "denn",
+        "meaning": "because (coordinating)"
+      },
+      {
+        "word": "obwohl",
+        "meaning": "although"
+      }
     ],
     "usage": [
-      { "de": "Ich bleibe zu Hause, weil es regnet.", "en": "I stay home because it is raining." },
-      { "de": "Er ist müde, weil er nicht geschlafen hat.", "en": "He is tired because he didn't sleep." }
+      {
+        "de": "Ich bleibe zu Hause, weil es regnet.",
+        "en": "I stay home because it is raining."
+      },
+      {
+        "de": "Er ist müde, weil er nicht geschlafen hat.",
+        "en": "He is tired because he didn't sleep."
+      }
     ]
   },
   {
@@ -87,16 +144,34 @@
     "grammarRuleDetail": "Like weil, obwohl creates a subordinate clause with verb-final order. Expresses concession — contradiction between clauses.",
     "structureFormula": "Main clause, obwohl … [verb-FINAL]",
     "variants": [
-      { "label": "More formal / literary", "form": "obgleich" }
+      {
+        "label": "More formal / literary",
+        "form": "obgleich"
+      }
     ],
     "relatedWords": [
-      { "word": "trotzdem", "meaning": "nevertheless (main clause)" },
-      { "word": "dennoch", "meaning": "nonetheless" },
-      { "word": "wenngleich", "meaning": "even though (formal)" }
+      {
+        "word": "trotzdem",
+        "meaning": "nevertheless (main clause)"
+      },
+      {
+        "word": "dennoch",
+        "meaning": "nonetheless"
+      },
+      {
+        "word": "wenngleich",
+        "meaning": "even though (formal)"
+      }
     ],
     "usage": [
-      { "de": "Er kam, obwohl er krank war.", "en": "He came although he was sick." },
-      { "de": "Obwohl es teuer ist, kaufe ich es.", "en": "Although it is expensive, I buy it." }
+      {
+        "de": "Er kam, obwohl er krank war.",
+        "en": "He came although he was sick."
+      },
+      {
+        "de": "Obwohl es teuer ist, kaufe ich es.",
+        "en": "Although it is expensive, I buy it."
+      }
     ]
   },
   {
@@ -112,17 +187,38 @@
     "grammarRuleDetail": "As a conjunctive adverb, trotzdem counts as position 1, pushing the verb to position 2 and the subject to position 3.",
     "structureFormula": "Trotzdem + V + S + …",
     "variants": [
-      { "label": "More formal", "form": "dennoch" },
-      { "label": "Slightly formal", "form": "jedoch" }
+      {
+        "label": "More formal",
+        "form": "dennoch"
+      },
+      {
+        "label": "Slightly formal",
+        "form": "jedoch"
+      }
     ],
     "relatedWords": [
-      { "word": "dennoch", "meaning": "nonetheless (formal)" },
-      { "word": "obwohl", "meaning": "although (subordinating)" },
-      { "word": "jedoch", "meaning": "however" }
+      {
+        "word": "dennoch",
+        "meaning": "nonetheless (formal)"
+      },
+      {
+        "word": "obwohl",
+        "meaning": "although (subordinating)"
+      },
+      {
+        "word": "jedoch",
+        "meaning": "however"
+      }
     ],
     "usage": [
-      { "de": "Es regnete. Trotzdem gingen wir spazieren.", "en": "It was raining. Nevertheless we went for a walk." },
-      { "de": "Sie war krank, trotzdem kam sie.", "en": "She was sick, yet she came." }
+      {
+        "de": "Es regnete. Trotzdem gingen wir spazieren.",
+        "en": "It was raining. Nevertheless we went for a walk."
+      },
+      {
+        "de": "Sie war krank, trotzdem kam sie.",
+        "en": "She was sick, yet she came."
+      }
     ]
   },
   {
@@ -138,14 +234,26 @@
     "grammarRuleDetail": "zumal (da) creates a reinforcing subordinate reason clause with verb-final order.",
     "structureFormula": "Main clause, zumal (da) … [verb-FINAL]",
     "variants": [
-      { "label": "Full form", "form": "zumal da" }
+      {
+        "label": "Full form",
+        "form": "zumal da"
+      }
     ],
     "relatedWords": [
-      { "word": "besonders", "meaning": "especially" },
-      { "word": "da", "meaning": "since (causal)" }
+      {
+        "word": "besonders",
+        "meaning": "especially"
+      },
+      {
+        "word": "da",
+        "meaning": "since (causal)"
+      }
     ],
     "usage": [
-      { "de": "Das ist riskant, zumal wir wenig Zeit haben.", "en": "That is risky, especially since we have little time." }
+      {
+        "de": "Das ist riskant, zumal wir wenig Zeit haben.",
+        "en": "That is risky, especially since we have little time."
+      }
     ]
   },
   {
@@ -161,15 +269,30 @@
     "grammarRuleDetail": "Literary/formal equivalent of obwohl. Used in essays and academic writing.",
     "structureFormula": "Wenngleich … [verb-FINAL], Main clause",
     "variants": [
-      { "label": "Neutral equivalent", "form": "obwohl" },
-      { "label": "Even more formal", "form": "wiewohl" }
+      {
+        "label": "Neutral equivalent",
+        "form": "obwohl"
+      },
+      {
+        "label": "Even more formal",
+        "form": "wiewohl"
+      }
     ],
     "relatedWords": [
-      { "word": "obwohl", "meaning": "although (neutral)" },
-      { "word": "obgleich", "meaning": "although (formal)" }
+      {
+        "word": "obwohl",
+        "meaning": "although (neutral)"
+      },
+      {
+        "word": "obgleich",
+        "meaning": "although (formal)"
+      }
     ],
     "usage": [
-      { "de": "Wenngleich die Ergebnisse positiv sind, bleibt Skepsis angebracht.", "en": "Even though the results are positive, skepticism remains appropriate." }
+      {
+        "de": "Wenngleich die Ergebnisse positiv sind, bleibt Skepsis angebracht.",
+        "en": "Even though the results are positive, skepticism remains appropriate."
+      }
     ]
   },
   {
@@ -185,15 +308,30 @@
     "grammarRuleDetail": "Formal written connector. Summarises a preceding cause and introduces the consequence.",
     "structureFormula": "Infolgedessen + V + S + …",
     "variants": [
-      { "label": "Neutral", "form": "deshalb / daher" },
-      { "label": "Formal synonym", "form": "folglich" }
+      {
+        "label": "Neutral",
+        "form": "deshalb / daher"
+      },
+      {
+        "label": "Formal synonym",
+        "form": "folglich"
+      }
     ],
     "relatedWords": [
-      { "word": "deshalb", "meaning": "therefore" },
-      { "word": "folglich", "meaning": "consequently" }
+      {
+        "word": "deshalb",
+        "meaning": "therefore"
+      },
+      {
+        "word": "folglich",
+        "meaning": "consequently"
+      }
     ],
     "usage": [
-      { "de": "Der Vertrag wurde nicht unterzeichnet. Infolgedessen scheiterten die Verhandlungen.", "en": "The contract was not signed. As a result, the negotiations failed." }
+      {
+        "de": "Der Vertrag wurde nicht unterzeichnet. Infolgedessen scheiterten die Verhandlungen.",
+        "en": "The contract was not signed. As a result, the negotiations failed."
+      }
     ]
   },
   {
@@ -209,15 +347,60 @@
     "grammarRuleDetail": "Archaic/literary equivalent of dennoch. Used in academic, legal, and literary texts only.",
     "structureFormula": "Nichtsdestoweniger + V + S + …",
     "variants": [
-      { "label": "Modern equivalent", "form": "dennoch / trotzdem" },
-      { "label": "Less archaic", "form": "nichtsdestotrotz" }
+      {
+        "label": "Modern equivalent",
+        "form": "dennoch / trotzdem"
+      },
+      {
+        "label": "Less archaic",
+        "form": "nichtsdestotrotz"
+      }
     ],
     "relatedWords": [
-      { "word": "dennoch", "meaning": "nonetheless" },
-      { "word": "trotzdem", "meaning": "nevertheless" }
+      {
+        "word": "dennoch",
+        "meaning": "nonetheless"
+      },
+      {
+        "word": "trotzdem",
+        "meaning": "nevertheless"
+      }
     ],
     "usage": [
-      { "de": "Die Beweise waren dünn. Nichtsdestoweniger wurde er verurteilt.", "en": "The evidence was thin. Nonetheless he was convicted." }
+      {
+        "de": "Die Beweise waren dünn. Nichtsdestoweniger wurde er verurteilt.",
+        "en": "The evidence was thin. Nonetheless he was convicted."
+      }
+    ]
+  },
+  {
+    "id": "oder",
+    "level": "A1",
+    "type": "andere",
+    "wordCategory": "conjunction",
+    "german": "oder",
+    "english": "or",
+    "wordType": "Konjunktion",
+    "wordTypeEN": "Coordinating conjunction",
+    "grammarRule": "No word order change — verb stays in position 2",
+    "grammarRuleDetail": "Coordinating conjunction like und and aber. Does not occupy position 1.",
+    "structureFormula": "Clause 1, oder Clause 2 (V2 in each)",
+    "variants": [],
+    "relatedWords": [
+      {
+        "word": "entweder … oder",
+        "meaning": "either … or"
+      }
+    ],
+    "usage": [
+      {
+        "de": "Lara geht spazieren oder kauft ein.",
+        "en": "Lara goes for a walk or goes shopping."
+      },
+      {
+        "de": "Möchtest du Kaffee oder Tee?",
+        "en": "Would you like coffee or tea?"
+      }
     ]
   }
 ]

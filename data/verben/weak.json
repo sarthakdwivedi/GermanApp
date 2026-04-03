@@ -1442,5 +1442,358 @@
         "en": "That simplifies the matter considerably."
       }
     ]
+  },
+  {
+    "id": "kosten",
+    "level": "A1",
+    "type": "verb",
+    "theme": "home",
+    "german": "kosten",
+    "english": "to cost",
+    "patternLabel": "Schwach (weak)",
+    "patternColor": "weak",
+    "auxiliary": "haben",
+    "reflexiv": false,
+    "kasus": [],
+    "exceptions": [],
+    "usage": [
+      {
+        "de": "Was kostet das Sofa?",
+        "en": "How much does the sofa cost?"
+      },
+      {
+        "de": "Das Zimmer kostet 350 Euro im Monat.",
+        "en": "The room costs 350 euros per month."
+      }
+    ]
+  },
+  {
+    "id": "vermieten",
+    "level": "A2",
+    "type": "verb",
+    "theme": "home",
+    "german": "vermieten",
+    "english": "to rent out / to let",
+    "patternLabel": "Schwach (weak)",
+    "patternColor": "weak",
+    "auxiliary": "haben",
+    "reflexiv": false,
+    "kasus": [
+      "akkusativ"
+    ],
+    "exceptions": [],
+    "usage": [
+      {
+        "de": "Ich vermiete ein Apartment für 440 Euro.",
+        "en": "I am renting out an apartment for 440 euros."
+      },
+      {
+        "de": "Er vermietet seine Wohnung ab sofort.",
+        "en": "He is renting out his flat immediately."
+      }
+    ]
+  },
+  {
+    "id": "verkaufen",
+    "level": "A2",
+    "type": "verb",
+    "theme": "home",
+    "german": "verkaufen",
+    "english": "to sell",
+    "patternLabel": "Schwach (weak)",
+    "patternColor": "weak",
+    "auxiliary": "haben",
+    "reflexiv": false,
+    "kasus": [
+      "akkusativ"
+    ],
+    "exceptions": [],
+    "usage": [
+      {
+        "de": "Was verkauft er?",
+        "en": "What is he selling?"
+      },
+      {
+        "de": "Sie verkauft einen Schreibtisch.",
+        "en": "She is selling a desk."
+      }
+    ]
+  },
+  {
+    "id": "bezahlen",
+    "level": "A2",
+    "type": "verb",
+    "theme": "home",
+    "german": "bezahlen",
+    "english": "to pay",
+    "patternLabel": "Schwach · inseparable",
+    "patternColor": "weak",
+    "auxiliary": "haben",
+    "inseparable": true,
+    "reflexiv": false,
+    "kasus": [
+      "akkusativ"
+    ],
+    "exceptions": [],
+    "usage": [
+      {
+        "de": "Sie möchten nur 400 Euro Miete bezahlen.",
+        "en": "They want to pay only 400 euros rent."
+      },
+      {
+        "de": "Ich bezahle mit Karte.",
+        "en": "I am paying by card."
+      }
+    ]
+  },
+  {
+    "id": "frühstücken",
+    "level": "A1",
+    "type": "verb",
+    "theme": "daily_routine",
+    "german": "frühstücken",
+    "english": "to have breakfast",
+    "patternLabel": "Schwach (weak)",
+    "patternColor": "weak",
+    "auxiliary": "haben",
+    "reflexiv": false,
+    "kasus": [],
+    "exceptions": [],
+    "usage": [
+      {
+        "de": "Lara, Sofia und Lili frühstücken zusammen.",
+        "en": "Lara, Sofia and Lili have breakfast together."
+      },
+      {
+        "de": "Ich frühstücke um sieben Uhr.",
+        "en": "I have breakfast at seven o'clock."
+      }
+    ]
+  },
+  {
+    "id": "aufraeuemen",
+    "level": "A1",
+    "type": "verb",
+    "theme": "daily_routine",
+    "german": "aufräumen",
+    "english": "to tidy up / to clean up",
+    "patternLabel": "Schwach · trennbar",
+    "patternColor": "weak",
+    "auxiliary": "haben",
+    "separablePrefix": "auf",
+    "reflexiv": false,
+    "kasus": [
+      "akkusativ"
+    ],
+    "exceptions": [],
+    "usage": [
+      {
+        "de": "Lara räumt die Küche auf.",
+        "en": "Lara tidies up the kitchen."
+      },
+      {
+        "de": "Ich räume mein Zimmer auf.",
+        "en": "I tidy up my room."
+      }
+    ]
+  },
+  {
+    "id": "aufstehen",
+    "level": "A1",
+    "type": "verb",
+    "theme": "daily_routine",
+    "german": "aufstehen",
+    "english": "to get up / to stand up",
+    "patternLabel": "Stark · trennbar",
+    "patternColor": "strong",
+    "auxiliary": "sein",
+    "separablePrefix": "auf",
+    "reflexiv": false,
+    "kasus": [],
+    "stems": {
+      "prasens": {
+        "ich": "stehe auf",
+        "du": "stehst auf",
+        "er": "steht auf",
+        "wir": "stehen auf",
+        "ihr": "steht auf",
+        "sie": "stehen auf"
+      },
+      "prateritum": "stand auf",
+      "partizip2": "aufgestanden",
+      "konjunktiv2": "stände auf"
+    },
+    "exceptions": [],
+    "usage": [
+      {
+        "de": "Lara steht um Viertel nach sieben auf.",
+        "en": "Lara gets up at quarter past seven."
+      },
+      {
+        "de": "Wann stehst du auf?",
+        "en": "When do you get up?"
+      }
+    ]
+  },
+  {
+    "id": "spazieren_gehen",
+    "level": "A1",
+    "type": "verb",
+    "theme": "daily_routine",
+    "german": "spazieren gehen",
+    "english": "to go for a walk",
+    "patternLabel": "Stark · trennbar",
+    "patternColor": "strong",
+    "auxiliary": "sein",
+    "separablePrefix": "spazieren",
+    "reflexiv": false,
+    "kasus": [],
+    "stems": {
+      "prasens": {
+        "ich": "gehe spazieren",
+        "du": "gehst spazieren",
+        "er": "geht spazieren",
+        "wir": "gehen spazieren",
+        "ihr": "geht spazieren",
+        "sie": "gehen spazieren"
+      },
+      "prateritum": "ging spazieren",
+      "partizip2": "spazieren gegangen",
+      "konjunktiv2": "ginge spazieren"
+    },
+    "exceptions": [],
+    "usage": [
+      {
+        "de": "Lara geht am Nachmittag spazieren.",
+        "en": "Lara goes for a walk in the afternoon."
+      },
+      {
+        "de": "Wir gehen jeden Abend spazieren.",
+        "en": "We go for a walk every evening."
+      }
+    ]
+  },
+  {
+    "id": "gefallen",
+    "level": "A2",
+    "type": "verb",
+    "theme": "home",
+    "german": "gefallen",
+    "english": "to like / to please (+ Dativ)",
+    "patternLabel": "Stark · inseparable",
+    "patternColor": "strong",
+    "auxiliary": "haben",
+    "inseparable": true,
+    "reflexiv": false,
+    "kasus": [
+      "dativ"
+    ],
+    "stems": {
+      "prasens": {
+        "ich": "gefalle",
+        "du": "gefällst",
+        "er": "gefällt",
+        "wir": "gefallen",
+        "ihr": "gefallt",
+        "sie": "gefallen"
+      },
+      "prateritum": "gefiel",
+      "partizip2": "gefallen",
+      "konjunktiv2": "gefiele"
+    },
+    "exceptions": [
+      "er gefällt — vowel change a→ä in 3rd person singular",
+      "No -ge- in Partizip II — inseparable prefix ge-"
+    ],
+    "usage": [
+      {
+        "de": "Wie gefallen Ihnen die Stühle?",
+        "en": "How do you like the chairs?"
+      },
+      {
+        "de": "Die Lampe gefällt mir sehr gut.",
+        "en": "I like the lamp very much."
+      }
+    ]
+  },
+  {
+    "id": "finden",
+    "level": "A2",
+    "type": "verb",
+    "theme": "home",
+    "german": "finden",
+    "english": "to find / to think (opinion)",
+    "patternLabel": "Stark (strong)",
+    "patternColor": "strong",
+    "auxiliary": "haben",
+    "reflexiv": false,
+    "kasus": [
+      "akkusativ"
+    ],
+    "stems": {
+      "prasens": {
+        "ich": "finde",
+        "du": "findest",
+        "er": "findet",
+        "wir": "finden",
+        "ihr": "findet",
+        "sie": "finden"
+      },
+      "prateritum": "fand",
+      "partizip2": "gefunden",
+      "konjunktiv2": "fände"
+    },
+    "exceptions": [],
+    "usage": [
+      {
+        "de": "Das finde ich auch schön.",
+        "en": "I find that beautiful too."
+      },
+      {
+        "de": "Wie findest du die Wohnung?",
+        "en": "What do you think of the flat?"
+      }
+    ]
+  },
+  {
+    "id": "sehen",
+    "level": "A1",
+    "type": "verb",
+    "theme": "home",
+    "german": "sehen",
+    "english": "to see / to look at",
+    "patternLabel": "Stark (strong)",
+    "patternColor": "strong",
+    "auxiliary": "haben",
+    "reflexiv": false,
+    "kasus": [
+      "akkusativ"
+    ],
+    "stems": {
+      "prasens": {
+        "ich": "sehe",
+        "du": "siehst",
+        "er": "sieht",
+        "wir": "sehen",
+        "ihr": "seht",
+        "sie": "sehen"
+      },
+      "prateritum": "sah",
+      "partizip2": "gesehen",
+      "konjunktiv2": "sähe"
+    },
+    "exceptions": [
+      "du siehst / er sieht — vowel change e→ie"
+    ],
+    "usage": [
+      {
+        "de": "Ich möchte den Tisch gern sehen.",
+        "en": "I would like to see the table."
+      },
+      {
+        "de": "Siehst du den Balkon?",
+        "en": "Do you see the balcony?"
+      }
+    ]
   }
 ]

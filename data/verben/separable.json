@@ -714,4 +714,17 @@
       }
     ]
   }
+,
+  {
+    "id": "einkaufen",
+    "level": "A1", "type": "verb", "theme": "daily_routine",
+    "german": "einkaufen", "english": "to go shopping / to buy",
+    "patternLabel": "Schwach · trennbar", "patternColor": "weak",
+    "auxiliary": "haben", "separablePrefix": "ein", "reflexiv": false, "kasus": [],
+    "exceptions": [],
+    "usage": [
+      {"de": "Lara kauft am Nachmittag ein.", "en": "Lara goes shopping in the afternoon."},
+      {"de": "Ich kaufe jeden Samstag ein.", "en": "I go shopping every Saturday."}
+    ]
+  }
 ]

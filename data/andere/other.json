@@ -353,4 +353,39 @@
       {"de": "Wie bitte? Können Sie das wiederholen?", "en": "Could you repeat that?"}
     ]
   }
+,
+  {
+    "id": "guten_tag",
+    "level": "A1", "type": "andere", "wordCategory": "other",
+    "german": "Guten Tag", "english": "Good day / Hello (formal)",
+    "wordType": "Interjektion", "wordTypeEN": "Greeting (formal)",
+    "grammarRule": "Fixed greeting expression — no grammatical integration",
+    "grammarRuleDetail": "Used from around 10am to 6pm. More formal than Hallo. Austrian variant: Grüß Gott.",
+    "structureFormula": "Guten Tag! | Guten Tag, [Name].",
+    "variants": [{"label": "Austrian", "form": "Grüß Gott"}],
+    "relatedWords": [{"word": "Auf Wiedersehen", "meaning": "goodbye"}],
+    "usage": [
+      {"de": "Guten Tag, Herr Díaz.", "en": "Good day, Mr Díaz."},
+      {"de": "Guten Tag! Wie kann ich helfen?", "en": "Good day! How can I help?"}
+    ]
+  },
+  {
+    "id": "welche",
+    "level": "A1", "type": "andere", "wordCategory": "other",
+    "german": "welche/welcher/welches", "english": "which / what",
+    "wordType": "Fragewort", "wordTypeEN": "Interrogative determiner",
+    "grammarRule": "Declines like definite article — must agree with noun in gender/case",
+    "grammarRuleDetail": "welcher (m) / welche (f) / welches (n) / welche (pl). Always followed by a noun.",
+    "structureFormula": "Welche + [Noun] + V + S?",
+    "variants": [
+      {"label": "Masculine", "form": "welcher Tisch?"},
+      {"label": "Feminine", "form": "welche Farbe?"},
+      {"label": "Neuter", "form": "welches Zimmer?"}
+    ],
+    "relatedWords": [{"word": "was für ein", "meaning": "what kind of"}],
+    "usage": [
+      {"de": "Welche Farbe hat der Tisch?", "en": "What colour is the table?"},
+      {"de": "Welches Zimmer möchten Sie?", "en": "Which room would you like?"}
+    ]
+  }
 ]
