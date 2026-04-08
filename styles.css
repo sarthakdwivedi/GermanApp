@@ -353,6 +353,10 @@ body {
   display: none;
 }
 
+/* Hide nomen theme pills always — dropdown only */
+#theme-filter .ctx-pills { display: none !important; }
+#theme-filter .ctx-dropdown-wrap { display: block !important; }
+
 .theme-btn {
   flex-shrink: 0;
   padding: 4px 12px;
@@ -1721,12 +1725,17 @@ body {
     right: 32px; /* matches header padding */
   }
   .sidebar .ctx-filter { padding: 10px 20px 0; }
+    #pattern-filter .ctx-pills { display: flex; flex-wrap: wrap; gap: 6px; }
+  #pattern-filter .ctx-dropdown-wrap { display: none; }
   .ctx-dropdown-wrap { display: none; }
+
   .ctx-pills {
   display: flex;
   flex-wrap: wrap;
   gap: 5px;     
   padding-top: 2px;
+  
+ 
 }
   .ctx-filter { padding: 10px 20px 0; 
   position: relative; }
