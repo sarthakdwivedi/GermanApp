@@ -87,7 +87,7 @@ const PRONOUNS = {
 const THEME_LABELS = {
   people: 'People', home: 'Home',
   work_education: 'Work & Education', food: 'Food',
-  nature_travel: 'Nature & Travel', society_abstract: 'Society & Abstract',furniture: 'Furniture'
+  nature_travel: 'Nature & Travel', society_abstract: 'Society & Abstract', furniture: 'Furniture'
 };
 
 const ANDERE_CATEGORY_LABELS = {
@@ -341,9 +341,11 @@ function generateAdjectiveForms(w) {
 // ── Data loading ──────────────────────────────────────────────
 async function loadData() {
   try {
+
+    const nomenManifest = await fetch('data/nomen/manifest.json').then(r => r.json());
     const responses = await Promise.all([
       ...VERB_FILES.map(f => fetch(`data/verben/${f}.json`)),
-      ...NOMEN_FILES.map(f => fetch(`data/nomen/${f}.json`)),
+      ...nomenManifest.map(f => fetch(`data/nomen/${f}.json`)),
       ...ANDERE_FILES.map(f => fetch(`data/andere/${f}.json`))
     ]);
 
@@ -352,8 +354,8 @@ async function loadData() {
     }
 
     const verbResults = responses.slice(0, VERB_FILES.length);
-    const nomenResults = responses.slice(VERB_FILES.length, VERB_FILES.length + NOMEN_FILES.length);
-    const andereResults = responses.slice(VERB_FILES.length + NOMEN_FILES.length);
+    const nomenResults = responses.slice(VERB_FILES.length, VERB_FILES.length + nomenManifest.length);
+    const andereResults = responses.slice(VERB_FILES.length + nomenManifest.length);
 
     const verbenArrays = await Promise.all(verbResults.map(r => r.json()));
     const nomenArrays = await Promise.all(nomenResults.map(r => r.json()));
@@ -490,25 +492,25 @@ function buildThemeFilter() {
   // Only show themes/categories that have words at this level
   const activeItems = isNomen
     ? [...new Set(
-        sourceDB
-          .filter(w =>
-            currentLevel === 'all' ||
-            (currentLevelMode === 'cumulative'
-              ? LEVELS.indexOf(w.level) <= maxIdx
-              : w.level === currentLevel)
-          )
-          .flatMap(w => getThemesArray(w))
-      )]
-        .map(t => ({ val: t, label: THEME_LABELS[t] || t }))
+      sourceDB
+        .filter(w =>
+          currentLevel === 'all' ||
+          (currentLevelMode === 'cumulative'
+            ? LEVELS.indexOf(w.level) <= maxIdx
+            : w.level === currentLevel)
+        )
+        .flatMap(w => getThemesArray(w))
+    )]
+      .map(t => ({ val: t, label: THEME_LABELS[t] || t }))
     : ANDERE_FILES
-        .filter(f => sourceDB.some(w =>
-          w.andereFile === f &&
-          (currentLevel === 'all' ||
-            (currentLevelMode === 'cumulative'
-              ? LEVELS.indexOf(w.level) <= maxIdx
-              : w.level === currentLevel))
-        ))
-        .map(f => ({ val: f, label: ANDERE_CATEGORY_LABELS[f] || f }));
+      .filter(f => sourceDB.some(w =>
+        w.andereFile === f &&
+        (currentLevel === 'all' ||
+          (currentLevelMode === 'cumulative'
+            ? LEVELS.indexOf(w.level) <= maxIdx
+            : w.level === currentLevel))
+      ))
+      .map(f => ({ val: f, label: ANDERE_CATEGORY_LABELS[f] || f }));
 
   const items = [{ val: 'all', label: isNomen ? 'All themes' : 'All' }, ...activeItems];
   const currentVal = isNomen ? currentTheme : currentAndereCategory;
@@ -1304,16 +1306,16 @@ function buildNomenCard(w) {
           </div>
         </div>
       </div>`
-    : `<div class="section">
-        <div class="section-label">Gender rule</div>
-        <div class="ending-rule">
-          <div class="ending-bubble" style="background:${gbg};color:${gc}">${w.article}</div>
-          <div>
-            <div class="ending-rule-text" style="color:${gc}">${w.article.toUpperCase()}</div>
-            <div class="ending-rule-sub">${w.nounGroupRule}</div>
-          </div>
-        </div>
-      </div>`;
+    : w.nounGroupRule ? `<div class="section">
+    <div class="section-label">Gender rule</div>
+    <div class="ending-rule">
+      <div class="ending-bubble" style="background:${gbg};color:${gc}">${w.article}</div>
+      <div>
+        <div class="ending-rule-text" style="color:${gc}">${w.article.toUpperCase()}</div>
+        <div class="ending-rule-sub">${w.nounGroupRule}</div>
+      </div>
+    </div>
+  </div>` : '';
 
   return `<div class="word-card">
     <div class="card-header">
@@ -1807,7 +1809,7 @@ function renderMyWords() {
     const articleHtml = w.article
       ? `<span class="search-result-article" style="color:${gc}">${w.article} </span>` : '';
     const patLabel = w.verbFile ? PATTERN_LABELS[w.verbFile]
-      : w.theme ?  getThemesArray(w).map(t => THEME_LABELS[t] || t).join(' · ')
+      : w.theme ? getThemesArray(w).map(t => THEME_LABELS[t] || t).join(' · ')
         : w.wordType || 'Andere';
     return `<div class="search-result-item" onclick="openMyWordsCard('${w.id}')">
       <div style="flex:1;min-width:0">
