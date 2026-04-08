@@ -3,7 +3,9 @@
     "id": "Zeitung",
     "level": "A2",
     "type": "nomen",
-    "theme": "society_abstract",
+    "theme": [
+      "society_abstract"
+    ],
     "german": "Zeitung",
     "english": "newspaper",
     "article": "die",
@@ -42,7 +44,9 @@
     "id": "Verhältnis",
     "level": "B1",
     "type": "nomen",
-    "theme": "society_abstract",
+    "theme": [
+      "society_abstract"
+    ],
     "german": "Verhältnis",
     "english": "relationship / ratio / proportion",
     "article": "das",
@@ -81,7 +85,9 @@
     "id": "Gesellschaft",
     "level": "B1",
     "type": "nomen",
-    "theme": "society_abstract",
+    "theme": [
+      "society_abstract"
+    ],
     "german": "Gesellschaft",
     "english": "society / company",
     "article": "die",
@@ -120,7 +126,9 @@
     "id": "Auswirkung",
     "level": "B2",
     "type": "nomen",
-    "theme": "society_abstract",
+    "theme": [
+      "society_abstract"
+    ],
     "german": "Auswirkung",
     "english": "impact / effect / consequence",
     "article": "die",
@@ -159,7 +167,9 @@
     "id": "Rechtsprechung",
     "level": "C1",
     "type": "nomen",
-    "theme": "society_abstract",
+    "theme": [
+      "society_abstract"
+    ],
     "german": "Rechtsprechung",
     "english": "jurisdiction / case law",
     "article": "die",
@@ -194,7 +204,9 @@
     "id": "Unerbittlichkeit",
     "level": "C2",
     "type": "nomen",
-    "theme": "society_abstract",
+    "theme": [
+      "society_abstract"
+    ],
     "german": "Unerbittlichkeit",
     "english": "relentlessness / inexorability",
     "article": "die",
@@ -229,7 +241,10 @@
     "id": "das_bild",
     "level": "A1",
     "type": "nomen",
-    "theme": "classroom",
+    "theme": [
+      "classroom",
+      "education"
+    ],
     "german": "Bild",
     "english": "picture, image, photo",
     "article": "das",
@@ -267,7 +282,10 @@
     "id": "das_gespraech",
     "level": "A1",
     "type": "nomen",
-    "theme": "classroom",
+    "theme": [
+      "classroom",
+      "education"
+    ],
     "german": "Gespräch",
     "english": "conversation, dialogue",
     "article": "das",
@@ -305,7 +323,10 @@
     "id": "die_frage",
     "level": "A1",
     "type": "nomen",
-    "theme": "classroom",
+    "theme": [
+      "classroom",
+      "education"
+    ],
     "german": "Frage",
     "english": "question",
     "article": "die",
@@ -343,7 +364,10 @@
     "id": "das_wort",
     "level": "A1",
     "type": "nomen",
-    "theme": "classroom",
+    "theme": [
+      "classroom",
+      "education"
+    ],
     "german": "Wort",
     "english": "word",
     "article": "das",
@@ -381,7 +405,10 @@
     "id": "die_antwort",
     "level": "A1",
     "type": "nomen",
-    "theme": "classroom",
+    "theme": [
+      "classroom",
+      "education"
+    ],
     "german": "Antwort",
     "english": "answer",
     "article": "die",
@@ -419,7 +446,9 @@
     "id": "die_sprache",
     "level": "A1",
     "type": "nomen",
-    "theme": "greetings",
+    "theme": [
+      "greetings"
+    ],
     "german": "Sprache",
     "english": "language",
     "article": "die",
@@ -457,7 +486,9 @@
     "id": "der_buchstabe",
     "level": "A1",
     "type": "nomen",
-    "theme": "greetings",
+    "theme": [
+      "greetings"
+    ],
     "german": "Buchstabe",
     "english": "letter (of the alphabet)",
     "article": "der",
@@ -495,7 +526,9 @@
     "id": "das_alphabet",
     "level": "A1",
     "type": "nomen",
-    "theme": "greetings",
+    "theme": [
+      "greetings"
+    ],
     "german": "Alphabet",
     "english": "alphabet",
     "article": "das",
@@ -533,7 +566,9 @@
     "id": "die_adresse",
     "level": "A1",
     "type": "nomen",
-    "theme": "greetings",
+    "theme": [
+      "greetings"
+    ],
     "german": "Adresse",
     "english": "address",
     "article": "die",
@@ -571,7 +606,9 @@
     "id": "die_visitenkarte",
     "level": "A1",
     "type": "nomen",
-    "theme": "greetings",
+    "theme": [
+      "greetings"
+    ],
     "german": "Visitenkarte",
     "english": "business card",
     "article": "die",
@@ -609,7 +646,9 @@
     "id": "die_strasse",
     "level": "A1",
     "type": "nomen",
-    "theme": "greetings",
+    "theme": [
+      "greetings"
+    ],
     "german": "Straße",
     "english": "street, road",
     "article": "die",
@@ -647,7 +686,9 @@
     "id": "die_stadt",
     "level": "A1",
     "type": "nomen",
-    "theme": "greetings",
+    "theme": [
+      "greetings"
+    ],
     "german": "Stadt",
     "english": "city, town",
     "article": "die",
@@ -685,7 +726,9 @@
     "id": "das_land",
     "level": "A1",
     "type": "nomen",
-    "theme": "greetings",
+    "theme": [
+      "greetings"
+    ],
     "german": "Land",
     "english": "country",
     "article": "das",
@@ -723,7 +766,9 @@
     "id": "die_email",
     "level": "A1",
     "type": "nomen",
-    "theme": "greetings",
+    "theme": [
+      "greetings"
+    ],
     "german": "E-Mail",
     "english": "email",
     "article": "die",
@@ -761,7 +806,9 @@
     "id": "das_telefon",
     "level": "A1",
     "type": "nomen",
-    "theme": "greetings",
+    "theme": [
+      "greetings"
+    ],
     "german": "Telefon",
     "english": "telephone, phone",
     "article": "das",
@@ -799,7 +846,9 @@
     "id": "die_postleitzahl",
     "level": "A1",
     "type": "nomen",
-    "theme": "greetings",
+    "theme": [
+      "greetings"
+    ],
     "german": "Postleitzahl",
     "english": "postal code, zip code",
     "article": "die",
@@ -837,7 +886,9 @@
     "id": "die_musik",
     "level": "A1",
     "type": "nomen",
-    "theme": "greetings",
+    "theme": [
+      "greetings"
+    ],
     "german": "Musik",
     "english": "music",
     "article": "die",
@@ -875,7 +926,9 @@
     "id": "das_kind",
     "level": "A1",
     "type": "nomen",
-    "theme": "family",
+    "theme": [
+      "family"
+    ],
     "german": "Kind",
     "english": "child",
     "article": "das",

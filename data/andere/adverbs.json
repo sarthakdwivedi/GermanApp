@@ -1,334 +1,21 @@
 [
   {
-    "id": "sehr",
-    "level": "A1",
-    "type": "andere",
-    "wordCategory": "adverb",
-    "german": "sehr",
-    "english": "very",
-    "wordType": "Adverb",
-    "wordTypeEN": "Degree adverb",
-    "grammarRule": "Intensifies adjectives and adverbs — never modifies nouns",
-    "grammarRuleDetail": "sehr is a degree adverb. It always precedes the word it intensifies. It cannot modify nouns directly (use viel for nouns).",
-    "structureFormula": "sehr + Adjektiv/Adverb",
-    "variants": [],
-    "relatedWords": [
-      {
-        "word": "ziemlich",
-        "meaning": "quite / rather"
-      },
-      {
-        "word": "besonders",
-        "meaning": "especially / particularly"
-      },
-      {
-        "word": "zu",
-        "meaning": "too (excessive)"
-      }
-    ],
-    "usage": [
-      {
-        "de": "Das ist sehr interessant.",
-        "en": "That is very interesting."
-      },
-      {
-        "de": "Er arbeitet sehr schnell.",
-        "en": "He works very quickly."
-      }
-    ]
-  },
-  {
-    "id": "gern",
-    "level": "A1",
-    "type": "andere",
-    "wordCategory": "adverb",
-    "german": "gern / gerne",
-    "english": "gladly / with pleasure / to like doing",
-    "wordType": "Adverb",
-    "wordTypeEN": "Modal adverb",
-    "grammarRule": "Used with a verb to express liking — replaces mögen + noun for activities",
-    "grammarRuleDetail": "gern + verb = to like doing sth. Both gern and gerne are correct. Comparative: lieber. Superlative: am liebsten.",
-    "structureFormula": "Ich + V + gern | gern + V (verb second)",
-    "variants": [
-      {
-        "label": "Variant",
-        "form": "gerne (equally correct)"
-      },
-      {
-        "label": "Komparativ",
-        "form": "lieber (prefer)"
-      },
-      {
-        "label": "Superlativ",
-        "form": "am liebsten (like most)"
-      }
-    ],
-    "relatedWords": [
-      {
-        "word": "lieber",
-        "meaning": "rather / prefer (comparative)"
-      },
-      {
-        "word": "am liebsten",
-        "meaning": "most of all (superlative)"
-      },
-      {
-        "word": "ungern",
-        "meaning": "reluctantly / not like"
-      }
-    ],
-    "usage": [
-      {
-        "de": "Ich lese gern Bücher.",
-        "en": "I like reading books."
-      },
-      {
-        "de": "Ich trinke lieber Tee als Kaffee.",
-        "en": "I prefer tea to coffee."
-      }
-    ]
-  },
-  {
-    "id": "leider",
-    "level": "A2",
-    "type": "andere",
-    "wordCategory": "adverb",
-    "german": "leider",
-    "english": "unfortunately / I'm afraid",
-    "wordType": "Adverb",
-    "wordTypeEN": "Modal adverb (sentence adverb)",
-    "grammarRule": "Sentence adverb — can open a clause (triggers V2 inversion) or sit mid-sentence",
-    "grammarRuleDetail": "leider expresses regret. When it opens a sentence it occupies position 1 and triggers verb-subject inversion. It can also sit after the verb.",
-    "structureFormula": "Leider + V + S … | S + V + leider …",
-    "variants": [],
-    "relatedWords": [
-      {
-        "word": "zum Glück",
-        "meaning": "fortunately (antonym)"
-      },
-      {
-        "word": "bedauerlicherweise",
-        "meaning": "regrettably (formal)"
-      },
-      {
-        "word": "leider Gottes",
-        "meaning": "unfortunately (emphatic)"
-      }
-    ],
-    "usage": [
-      {
-        "de": "Leider kann ich nicht kommen.",
-        "en": "Unfortunately I can't come. (pos. 1, inversion)"
-      },
-      {
-        "de": "Ich habe leider keine Zeit.",
-        "en": "I'm afraid I have no time. (mid-sentence)"
-      }
-    ]
-  },
-  {
-    "id": "noch",
-    "level": "A2",
-    "type": "andere",
-    "wordCategory": "adverb",
-    "german": "noch",
-    "english": "still / yet / even / another",
-    "wordType": "Adverb",
-    "wordTypeEN": "Temporal / degree adverb",
-    "grammarRule": "Position varies by meaning — temporal noch follows verb, degree noch precedes the word it modifies",
-    "grammarRuleDetail": "noch has several distinct meanings: (1) still/yet (ongoing action), (2) another/more (quantity), (3) even (degree with comparatives). Negation: noch nicht = not yet.",
-    "structureFormula": "Er schläft noch. | Noch ein Bier. | noch größer",
-    "variants": [
-      {
-        "label": "Negation",
-        "form": "noch nicht (not yet)"
-      },
-      {
-        "label": "With comparative",
-        "form": "noch größer (even bigger)"
-      }
-    ],
-    "relatedWords": [
-      {
-        "word": "schon",
-        "meaning": "already"
-      },
-      {
-        "word": "immer noch",
-        "meaning": "still (emphatic)"
-      },
-      {
-        "word": "nicht mehr",
-        "meaning": "no longer"
-      }
-    ],
-    "usage": [
-      {
-        "de": "Er schläft noch.",
-        "en": "He is still asleep."
-      },
-      {
-        "de": "Ich habe noch keine Zeit gehabt.",
-        "en": "I haven't had time yet."
-      }
-    ]
-  },
-  {
-    "id": "schon",
-    "level": "A2",
-    "type": "andere",
-    "wordCategory": "adverb",
-    "german": "schon",
-    "english": "already / yet / as early as",
-    "wordType": "Adverb",
-    "wordTypeEN": "Temporal adverb / particle",
-    "grammarRule": "Position after verb — can also function as a modal particle",
-    "grammarRuleDetail": "schon has temporal meaning (already) and particle meaning (reassurance: 'it'll be fine'). In questions it means 'yet'. Contrast with noch (still).",
-    "structureFormula": "Ich habe schon gegessen. | Schon um 6 Uhr.",
-    "variants": [
-      {
-        "label": "As particle (reassurance)",
-        "form": "Das wird schon klappen."
-      },
-      {
-        "label": "In question (yet?)",
-        "form": "Hast du schon gegessen?"
-      }
-    ],
-    "relatedWords": [
-      {
-        "word": "noch",
-        "meaning": "still / yet"
-      },
-      {
-        "word": "bereits",
-        "meaning": "already (formal)"
-      },
-      {
-        "word": "endlich",
-        "meaning": "finally / at last"
-      }
-    ],
-    "usage": [
-      {
-        "de": "Ich habe schon gegessen.",
-        "en": "I have already eaten."
-      },
-      {
-        "de": "Er war schon um 6 Uhr hier.",
-        "en": "He was already here at 6 o'clock."
-      }
-    ]
-  },
-  {
-    "id": "fast",
-    "level": "B1",
-    "type": "andere",
-    "wordCategory": "adverb",
-    "german": "fast",
-    "english": "almost / nearly",
-    "wordType": "Adverb",
-    "wordTypeEN": "Degree adverb",
-    "grammarRule": "Precedes the word or phrase it modifies",
-    "grammarRuleDetail": "fast expresses approximation — close to but not quite reaching something. Precedes adjectives, adverbs, or entire verb phrases.",
-    "structureFormula": "fast + Adjektiv/Adverb | fast + VP",
-    "variants": [],
-    "relatedWords": [
-      {
-        "word": "kaum",
-        "meaning": "hardly / barely"
-      },
-      {
-        "word": "beinahe",
-        "meaning": "almost (more literary)"
-      },
-      {
-        "word": "ungefähr",
-        "meaning": "approximately"
-      }
-    ],
-    "usage": [
-      {
-        "de": "Das ist fast fertig.",
-        "en": "That is almost done."
-      },
-      {
-        "de": "Ich habe fast nichts gegessen.",
-        "en": "I ate almost nothing."
-      }
-    ]
-  },
-  {
-    "id": "besonders",
-    "level": "B1",
-    "type": "andere",
-    "wordCategory": "adverb",
-    "german": "besonders",
-    "english": "especially / particularly",
-    "wordType": "Adverb",
-    "wordTypeEN": "Degree adverb",
-    "grammarRule": "Precedes adjectives/adverbs to intensify them",
-    "grammarRuleDetail": "besonders is a stronger intensifier than sehr. It singles out something as remarkable or exceptional.",
-    "structureFormula": "besonders + Adjektiv/Adverb",
-    "variants": [
-      {
-        "label": "As adjective (attributive)",
-        "form": "ein besonderer Anlass"
-      }
-    ],
-    "relatedWords": [
-      {
-        "word": "insbesondere",
-        "meaning": "in particular (formal)"
-      },
-      {
-        "word": "vor allem",
-        "meaning": "above all"
-      },
-      {
-        "word": "hauptsächlich",
-        "meaning": "mainly / primarily"
-      }
-    ],
-    "usage": [
-      {
-        "de": "Das ist besonders wichtig.",
-        "en": "That is especially important."
-      },
-      {
-        "de": "Ich mag besonders gern Schokolade.",
-        "en": "I particularly like chocolate."
-      }
-    ]
-  },
-  {
     "id": "noch_einmal",
     "level": "A1",
     "type": "andere",
     "wordCategory": "adverb",
     "german": "noch einmal",
-    "english": "once more, again",
-    "wordType": "Temporaladverb",
-    "wordTypeEN": "temporal adverb",
-    "grammarRule": "Used to indicate repetition of an action.",
-    "grammarRuleDetail": "'Noch einmal' modifies a verb to show that the action happens again. It typically follows the verb or object in the sentence.",
-    "structureFormula": "[Verb] + noch einmal",
-    "variants": [],
-    "relatedWords": [
-      {
-        "word": "wieder",
-        "meaning": "again"
-      }
-    ],
+    "english": "again / once again",
+    "wordType": "Adverb",
+    "wordTypeEN": "Adverb",
+    "grammarRule": "Used to indicate repetition",
+    "grammarRuleDetail": "noch einmal means one more time or again. It is common in instructions.",
+    "structureFormula": "Verb + noch einmal",
+    "variants": [{"label": "Short form", "form": "nochmal"}],
+    "relatedWords": [],
     "usage": [
-      {
-        "de": "Hören Sie noch einmal.",
-        "en": "Listen once more."
-      },
-      {
-        "de": "Sagen Sie das noch einmal, bitte.",
-        "en": "Say that again, please."
-      }
+      {"de": "Hören Sie noch einmal.", "en": "Listen again."},
+      {"de": "Lesen Sie den Text noch einmal.", "en": "Read the text once again."}
     ]
   },
   {
@@ -337,28 +24,36 @@
     "type": "andere",
     "wordCategory": "adverb",
     "german": "ein bisschen",
-    "english": "a little, a bit",
-    "wordType": "Gradpartikel",
-    "wordTypeEN": "degree adverb",
-    "grammarRule": "Used before adjectives or verbs to indicate a small amount or degree.",
-    "grammarRuleDetail": "'Ein bisschen' is invariable and does not change form. It can precede adjectives, adverbs, or verbs to soften or qualify a statement.",
-    "structureFormula": "ein bisschen + [Adjektiv/Verb]",
+    "english": "a little",
+    "wordType": "Adverb",
+    "wordTypeEN": "Adverb",
+    "grammarRule": "Used for small quantity or degree",
+    "grammarRuleDetail": "ein bisschen softens statements and expresses a small amount. It is very common in spoken German.",
+    "structureFormula": "ein bisschen + Adj. / N",
     "variants": [],
-    "relatedWords": [
-      {
-        "word": "etwas",
-        "meaning": "somewhat, a little"
-      }
-    ],
+    "relatedWords": [],
     "usage": [
-      {
-        "de": "Ich spreche ein bisschen Spanisch.",
-        "en": "I speak a little Spanish."
-      },
-      {
-        "de": "Das ist ein bisschen schwierig.",
-        "en": "That is a little difficult."
-      }
+      {"de": "Ich spreche ein bisschen Spanisch.", "en": "I speak a little Spanish."},
+      {"de": "Das ist ein bisschen teuer.", "en": "That is a little expensive."}
+    ]
+  },
+  {
+    "id": "wie",
+    "level": "A1",
+    "type": "andere",
+    "wordCategory": "adverb",
+    "german": "wie",
+    "english": "how",
+    "wordType": "Fragewort",
+    "wordTypeEN": "Question adverb",
+    "grammarRule": "Used to ask about manner, state, or degree",
+    "grammarRuleDetail": "wie introduces questions about how something is done or what condition something is in.",
+    "structureFormula": "wie + Verb",
+    "variants": [],
+    "relatedWords": [],
+    "usage": [
+      {"de": "Wie heißen Sie?", "en": "What is your name?"},
+      {"de": "Wie geht's?", "en": "How are you?"}
     ]
   },
   {
@@ -367,28 +62,55 @@
     "type": "andere",
     "wordCategory": "adverb",
     "german": "woher",
-    "english": "where from, from where",
-    "wordType": "Frageadverb",
-    "wordTypeEN": "interrogative adverb",
-    "grammarRule": "Used to ask about the origin or source of a person or thing.",
-    "grammarRuleDetail": "'Woher' opens a question about place of origin and triggers verb-subject inversion. It is paired with 'kommen' to ask about someone's home country.",
-    "structureFormula": "Woher + [Verb] + [Subjekt]?",
+    "english": "from where / where from",
+    "wordType": "Fragewort",
+    "wordTypeEN": "Question adverb",
+    "grammarRule": "Used to ask about origin",
+    "grammarRuleDetail": "woher asks where a person or thing comes from.",
+    "structureFormula": "woher + Verb",
     "variants": [],
-    "relatedWords": [
-      {
-        "word": "wo",
-        "meaning": "where"
-      }
-    ],
+    "relatedWords": [{"word": "aus", "meaning": "from"}],
     "usage": [
-      {
-        "de": "Woher kommst du?",
-        "en": "Where do you come from?"
-      },
-      {
-        "de": "Woher kommt Frau Tufan?",
-        "en": "Where does Ms. Tufan come from?"
-      }
+      {"de": "Woher kommst du?", "en": "Where do you come from?"},
+      {"de": "Woher kommt sie?", "en": "Where does she come from?"}
+    ]
+  },
+  {
+    "id": "aha",
+    "level": "A1",
+    "type": "andere",
+    "wordCategory": "interjection",
+    "german": "aha",
+    "english": "aha / I see",
+    "wordType": "Interjektion",
+    "wordTypeEN": "Interjection",
+    "grammarRule": "Used to show understanding or surprise",
+    "grammarRuleDetail": "aha reacts to new information. It is common in spoken German.",
+    "structureFormula": "Aha!",
+    "variants": [],
+    "relatedWords": [],
+    "usage": [
+      {"de": "Aha, du kommst aus Österreich.", "en": "Aha, you come from Austria."},
+      {"de": "Aha, das ist interessant.", "en": "Aha, that is interesting."}
+    ]
+  },
+  {
+    "id": "was",
+    "level": "A1",
+    "type": "andere",
+    "wordCategory": "adverb",
+    "german": "was",
+    "english": "what",
+    "wordType": "Fragewort",
+    "wordTypeEN": "Question word",
+    "grammarRule": "Used to ask about things or information",
+    "grammarRuleDetail": "was introduces questions about objects, ideas, or actions.",
+    "structureFormula": "was + Verb",
+    "variants": [],
+    "relatedWords": [],
+    "usage": [
+      {"de": "Was sprechen Sie?", "en": "What do you speak?"},
+      {"de": "Was sagen die Personen?", "en": "What are the people saying?"}
     ]
   },
   {
@@ -397,334 +119,1043 @@
     "type": "andere",
     "wordCategory": "adverb",
     "german": "auch",
-    "english": "also, too, as well",
-    "wordType": "Fokuspartikel",
-    "wordTypeEN": "focus particle / adverb",
-    "grammarRule": "Placed after the verb or before the word it modifies to add information.",
-    "grammarRuleDetail": "'Auch' links additional items or people to what has been stated. It typically appears after the conjugated verb in a main clause.",
-    "structureFormula": "[Subjekt] + [Verb] + auch + [Objekt]",
-    "variants": [],
-    "relatedWords": [
-      {
-        "word": "ebenfalls",
-        "meaning": "likewise, also"
-      }
-    ],
-    "usage": [
-      {
-        "de": "Aha, auch Türkisch.",
-        "en": "Ah, Turkish too."
-      },
-      {
-        "de": "Ich komme auch aus Deutschland.",
-        "en": "I also come from Germany."
-      }
-    ]
-  },
-  {
-    "id": "international",
-    "level": "A1",
-    "type": "andere",
-    "wordCategory": "adjective",
-    "german": "international",
-    "english": "international",
-    "wordType": "Adjektiv",
-    "wordTypeEN": "adjective",
-    "grammarRule": "Used attributively or predicatively without change in this A1 context.",
-    "grammarRuleDetail": "When used as part of a proper name or predicatively, 'international' does not inflect. As an attributive adjective before a noun it takes standard adjective endings.",
-    "structureFormula": "[Nomen] + international / international + [Nomen]",
+    "english": "also / too",
+    "wordType": "Adverb",
+    "wordTypeEN": "Adverb",
+    "grammarRule": "Adds an additional person, thing, or idea",
+    "grammarRuleDetail": "auch is used to include something else in the statement. Position may vary depending on emphasis.",
+    "structureFormula": "auch + Satzteil",
     "variants": [],
     "relatedWords": [],
     "usage": [
-      {
-        "de": "Willkommen bei 'Musik international'.",
-        "en": "Welcome to 'Music International'."
-      },
-      {
-        "de": "Der Kurs ist international.",
-        "en": "The course is international."
-      }
+      {"de": "Tim lernt auch Deutsch.", "en": "Tim is also learning German."},
+      {"de": "Ich spreche auch Englisch.", "en": "I also speak English."}
     ]
   },
   {
-    "id": "toll",
+    "id": "bitte",
     "level": "A1",
     "type": "andere",
-    "wordCategory": "adjective",
-    "german": "toll",
-    "english": "great, fantastic, cool",
-    "wordType": "Adjektiv",
-    "wordTypeEN": "adjective",
-    "grammarRule": "Used predicatively or as an exclamation to express enthusiasm.",
-    "grammarRuleDetail": "As a predicative adjective 'toll' is uninflected. As an attributive adjective before a noun it takes standard adjective endings.",
-    "structureFormula": "Das ist toll! / Ein toller [Nomen]",
+    "wordCategory": "interjection",
+    "german": "bitte",
+    "english": "please / you're welcome",
+    "wordType": "Interjektion",
+    "wordTypeEN": "Interjection",
+    "grammarRule": "Used in polite requests and responses",
+    "grammarRuleDetail": "bitte is used both for politeness and as a response to thanks.",
+    "structureFormula": "Bitte + Verb / Bitte!",
     "variants": [],
-    "relatedWords": [
-      {
-        "word": "super",
-        "meaning": "super, great"
-      }
-    ],
+    "relatedWords": [{"word": "danke", "meaning": "thank you"}],
     "usage": [
-      {
-        "de": "Ah, toll!",
-        "en": "Oh, great!"
-      },
-      {
-        "de": "Das ist wirklich toll.",
-        "en": "That is really fantastic."
-      }
+      {"de": "Buchstabieren Sie, bitte.", "en": "Spell it, please."},
+      {"de": "Bitte, hier ist die Karte.", "en": "Please, here is the menu."}
     ]
   },
   {
-    "id": "interessant",
+    "id": "falsch",
     "level": "A1",
     "type": "andere",
-    "wordCategory": "adjective",
-    "german": "interessant",
-    "english": "interesting",
-    "wordType": "Adjektiv",
-    "wordTypeEN": "adjective",
-    "grammarRule": "Used predicatively or attributively to describe something as interesting.",
-    "grammarRuleDetail": "As a predicative adjective 'interessant' is uninflected. As an attributive adjective before a noun it takes standard adjective endings.",
-    "structureFormula": "Das ist interessant. / ein interessanter [Nomen]",
+    "wordCategory": "adverb",
+    "german": "falsch",
+    "english": "wrong / incorrectly",
+    "wordType": "Adverb / Adjective",
+    "wordTypeEN": "Adverb / Adjective",
+    "grammarRule": "Used for mistakes or incorrect answers",
+    "grammarRuleDetail": "falsch can describe something incorrect or function adverbially.",
+    "structureFormula": "sein + falsch | falsch + Verb",
+    "variants": [],
+    "relatedWords": [{"word": "richtig", "meaning": "correct"}],
+    "usage": [
+      {"de": "Nein, falsch.", "en": "No, that's wrong."},
+      {"de": "Du schreibst das falsch.", "en": "You write that incorrectly."}
+    ]
+  },
+  {
+    "id": "zusammen",
+    "level": "A1",
+    "type": "andere",
+    "wordCategory": "adverb",
+    "german": "zusammen",
+    "english": "together",
+    "wordType": "Adverb",
+    "wordTypeEN": "Adverb",
+    "grammarRule": "Indicates joint action or state",
+    "grammarRuleDetail": "zusammen is used when people do something jointly or are together.",
+    "structureFormula": "Verb + zusammen",
     "variants": [],
     "relatedWords": [],
     "usage": [
-      {
-        "de": "Aus Thailand? Interessant.",
-        "en": "From Thailand? Interesting."
-      },
-      {
-        "de": "Deutsch ist sehr interessant.",
-        "en": "German is very interesting."
-      }
+      {"de": "Laras Eltern leben nicht zusammen.", "en": "Lara's parents do not live together."},
+      {"de": "Wir frühstücken zusammen.", "en": "We have breakfast together."}
     ]
-  }
-,
+  },
+  {
+    "id": "jetzt",
+    "level": "A1",
+    "type": "andere",
+    "wordCategory": "adverb",
+    "german": "jetzt",
+    "english": "now",
+    "wordType": "Adverb",
+    "wordTypeEN": "Adverb",
+    "grammarRule": "Refers to the present moment",
+    "grammarRuleDetail": "jetzt is used for things happening at the current time.",
+    "structureFormula": "jetzt + Verb",
+    "variants": [],
+    "relatedWords": [],
+    "usage": [
+      {"de": "Tim wohnt jetzt in München.", "en": "Tim now lives in Munich."},
+      {"de": "Was machst du jetzt?", "en": "What are you doing now?"}
+    ]
+  },
+  {
+    "id": "wo",
+    "level": "A1",
+    "type": "andere",
+    "wordCategory": "adverb",
+    "german": "wo",
+    "english": "where",
+    "wordType": "Fragewort",
+    "wordTypeEN": "Question adverb",
+    "grammarRule": "Used to ask about place",
+    "grammarRuleDetail": "wo asks about location.",
+    "structureFormula": "wo + Verb",
+    "variants": [],
+    "relatedWords": [],
+    "usage": [
+      {"de": "Wo wohnen Sie?", "en": "Where do you live?"},
+      {"de": "Wo ist die Speisekarte?", "en": "Where is the menu?"}
+    ]
+  },
   {
     "id": "hier",
-    "level": "A1", "type": "andere", "wordCategory": "adverb",
-    "german": "hier", "english": "here",
-    "wordType": "Adverb", "wordTypeEN": "Adverb of place",
-    "grammarRule": "Indicates location near the speaker",
-    "grammarRuleDetail": "Contrast: hier (here, near speaker) vs dort (there, away from speaker).",
-    "structureFormula": "Hier ist + [Noun]",
+    "level": "A1",
+    "type": "andere",
+    "wordCategory": "adverb",
+    "german": "hier",
+    "english": "here",
+    "wordType": "Adverb",
+    "wordTypeEN": "Adverb",
+    "grammarRule": "Refers to a place close to the speaker",
+    "grammarRuleDetail": "hier indicates location near the speaker. It is often paired with dort.",
+    "structureFormula": "hier + Verb",
     "variants": [],
     "relatedWords": [{"word": "dort", "meaning": "there"}],
     "usage": [
       {"de": "Hier ist der Flur.", "en": "Here is the hallway."},
-      {"de": "Hier ist noch ein Schrank.", "en": "Here is another cupboard."}
+      {"de": "Komm bitte hierher.", "en": "Please come here."}
     ]
   },
   {
     "id": "dort",
-    "level": "A1", "type": "andere", "wordCategory": "adverb",
-    "german": "dort", "english": "there",
-    "wordType": "Adverb", "wordTypeEN": "Adverb of place",
-    "grammarRule": "Indicates location away from the speaker",
-    "grammarRuleDetail": "Contrast: dort (there, away) vs hier (here, near). da is a common synonym.",
-    "structureFormula": "[Noun] ist dort. | Wie gefällt dir die Lampe dort?",
-    "variants": [{"label": "Synonym", "form": "da (more colloquial)"}],
+    "level": "A1",
+    "type": "andere",
+    "wordCategory": "adverb",
+    "german": "dort",
+    "english": "there",
+    "wordType": "Adverb",
+    "wordTypeEN": "Adverb",
+    "grammarRule": "Refers to a place away from the speaker",
+    "grammarRuleDetail": "dort indicates location at some distance. It is often paired with hier.",
+    "structureFormula": "dort + Verb",
+    "variants": [],
     "relatedWords": [{"word": "hier", "meaning": "here"}],
     "usage": [
       {"de": "Das Arbeitszimmer ist dort.", "en": "The study is there."},
-      {"de": "Wie gefällt dir die Lampe dort?", "en": "How do you like the lamp there?"}
+      {"de": "Die Lampe steht dort.", "en": "The lamp is there."}
     ]
   },
   {
-    "id": "ungefaehr",
-    "level": "A2", "type": "andere", "wordCategory": "adverb",
-    "german": "ungefähr", "english": "approximately / about",
-    "wordType": "Adverb", "wordTypeEN": "Adverb of degree",
-    "grammarRule": "Placed directly before the number or quantity it modifies",
-    "grammarRuleDetail": "Synonym: circa / ca. Used for approximate measurements and quantities.",
-    "structureFormula": "ungefähr + [number/quantity]",
-    "variants": [{"label": "Written abbreviation", "form": "ca."}],
-    "relatedWords": [{"word": "genau", "meaning": "exactly"}],
+    "id": "nicht",
+    "level": "A1",
+    "type": "andere",
+    "wordCategory": "particle",
+    "german": "nicht",
+    "english": "not",
+    "wordType": "Negationspartikel",
+    "wordTypeEN": "Negation particle",
+    "grammarRule": "Used to negate verbs, adjectives, and sentences",
+    "grammarRuleDetail": "nicht usually comes late in the clause. Its position depends on what is being negated.",
+    "structureFormula": "… nicht",
+    "variants": [],
+    "relatedWords": [],
     "usage": [
-      {"de": "Der Tisch ist ungefähr 60 cm breit.", "en": "The table is approximately 60 cm wide."},
-      {"de": "Die Wohnung hat ungefähr 60 m².", "en": "The flat is approximately 60 square metres."}
-    ]
-  },
-  {
-    "id": "genau",
-    "level": "A2", "type": "andere", "wordCategory": "adverb",
-    "german": "genau", "english": "exactly / precisely",
-    "wordType": "Adverb", "wordTypeEN": "Adverb of degree / response particle",
-    "grammarRule": "Placed before the element it modifies, or stands alone as confirmation",
-    "grammarRuleDetail": "Also used as a standalone response meaning 'exactly!' / 'precisely!'.",
-    "structureFormula": "Wie lang ist er genau? | Genau!",
-    "variants": [{"label": "As response", "form": "Genau! (Exactly! / That's right!)"}],
-    "relatedWords": [{"word": "ungefähr", "meaning": "approximately"}],
-    "usage": [
-      {"de": "Wie lang ist er denn genau?", "en": "How long is it exactly?"},
-      {"de": "Das stimmt genau.", "en": "That is exactly right."}
-    ]
-  },
-  {
-    "id": "sofort",
-    "level": "A2", "type": "andere", "wordCategory": "adverb",
-    "german": "sofort", "english": "immediately / right away",
-    "wordType": "Adverb", "wordTypeEN": "Adverb of time",
-    "grammarRule": "Placed after the verb or at end of clause",
-    "grammarRuleDetail": "Used in property ads: ab sofort = available immediately.",
-    "structureFormula": "ab sofort | sofort verfügbar",
-    "variants": [{"label": "In property ads", "form": "ab sofort (from immediately)"}],
-    "relatedWords": [{"word": "gleich", "meaning": "right away / in a moment"}],
-    "usage": [
-      {"de": "Ich suche ab sofort eine 2-Zimmer-Wohnung.", "en": "I am looking for a 2-room flat immediately."},
-      {"de": "Ich komme sofort.", "en": "I am coming right away."}
-    ]
-  },
-  {
-    "id": "heute",
-    "level": "A1", "type": "andere", "wordCategory": "adverb",
-    "german": "heute", "english": "today",
-    "wordType": "Adverb", "wordTypeEN": "Adverb of time",
-    "grammarRule": "Stands alone or combines with Abend/Morgen/Nacht",
-    "grammarRuleDetail": "heute Abend = tonight, heute Morgen = this morning. Cannot be inflected.",
-    "structureFormula": "heute | heute Abend | heute Morgen",
-    "variants": [{"label": "This evening", "form": "heute Abend"}],
-    "relatedWords": [{"word": "morgen", "meaning": "tomorrow"}],
-    "usage": [
-      {"de": "Sind Sie heute Abend zu Hause?", "en": "Are you at home this evening?"},
-      {"de": "In der Zeitung sind heute Anzeigen.", "en": "There are advertisements in the newspaper today."}
-    ]
-  },
-  {
-    "id": "morgen",
-    "level": "A1", "type": "andere", "wordCategory": "adverb",
-    "german": "morgen", "english": "tomorrow",
-    "wordType": "Adverb", "wordTypeEN": "Adverb of time",
-    "grammarRule": "Stands alone or combines with Morgen/Abend/Mittag",
-    "grammarRuleDetail": "morgen früh = tomorrow morning. Note: der Morgen (morning, noun) is different.",
-    "structureFormula": "morgen | morgen früh | morgen Abend",
-    "variants": [{"label": "Tomorrow morning", "form": "morgen früh"}],
-    "relatedWords": [{"word": "heute", "meaning": "today"}],
-    "usage": [
-      {"de": "Sind Sie morgen zu Hause?", "en": "Are you at home tomorrow?"},
-      {"de": "Ich komme morgen früh.", "en": "I am coming tomorrow morning."}
+      {"de": "Das Zimmer ist nicht teuer.", "en": "The room is not expensive."},
+      {"de": "Ich komme heute nicht.", "en": "I am not coming today."}
     ]
   },
   {
     "id": "ganz",
-    "level": "A1", "type": "andere", "wordCategory": "adverb",
-    "german": "ganz", "english": "quite / fairly / completely",
-    "wordType": "Adverb", "wordTypeEN": "Adverb of degree",
-    "grammarRule": "Placed directly before the adjective or adverb it modifies",
-    "grammarRuleDetail": "ganz gut = quite good (moderate approval). As adjective it means 'whole': die ganze Wohnung.",
-    "structureFormula": "ganz + [adjective] | die ganze + [Noun]",
-    "variants": [{"label": "As adjective", "form": "ganz (whole) — die ganze Wohnung"}],
-    "relatedWords": [{"word": "ziemlich", "meaning": "quite / fairly"}],
-    "usage": [
-      {"de": "Wie gefällt dir die Lampe? — Ganz gut.", "en": "How do you like the lamp? — Quite good."},
-      {"de": "Die ganze Wohnung ist hell.", "en": "The whole flat is bright."}
-    ]
-  },
-  {
-    "id": "nur",
-    "level": "A1", "type": "andere", "wordCategory": "adverb",
-    "german": "nur", "english": "only / just",
-    "wordType": "Adverb", "wordTypeEN": "Adverb of restriction",
-    "grammarRule": "Placed directly before the word it restricts",
-    "grammarRuleDetail": "Restricts to exactly what follows. Position sensitive: nur ich (only I) vs ich nur (I only).",
-    "structureFormula": "nur + [amount/word]",
+    "level": "A1",
+    "type": "andere",
+    "wordCategory": "adverb",
+    "german": "ganz",
+    "english": "quite / fairly",
+    "wordType": "Adverb",
+    "wordTypeEN": "Adverb",
+    "grammarRule": "Used to intensify an adjective or statement",
+    "grammarRuleDetail": "ganz often means quite or fairly. It is common in spoken German.",
+    "structureFormula": "ganz + Adj.",
     "variants": [],
-    "relatedWords": [{"word": "lediglich", "meaning": "merely / solely (formal)"}],
+    "relatedWords": [],
     "usage": [
-      {"de": "Sie möchten nur 400 bis 500 Euro Miete bezahlen.", "en": "They want to pay only 400 to 500 euros rent."},
-      {"de": "Ich habe nur ein Zimmer.", "en": "I only have one room."}
-    ]
-  },
-  {
-    "id": "maximal",
-    "level": "A2", "type": "andere", "wordCategory": "adverb",
-    "german": "maximal", "english": "maximum / at most",
-    "wordType": "Adverb", "wordTypeEN": "Adverb of degree",
-    "grammarRule": "Placed before the quantity it limits",
-    "grammarRuleDetail": "Opposite: minimal. Abbreviated as max. in property ads.",
-    "structureFormula": "bis maximal + [amount] | maximal + [number]",
-    "variants": [{"label": "Abbreviation", "form": "max."}],
-    "relatedWords": [{"word": "minimal", "meaning": "at least / minimum"}],
-    "usage": [
-      {"de": "2-Zimmer-Wohnung bis maximal 750 Euro.", "en": "2-room flat up to a maximum of 750 euros."},
-      {"de": "Die Wohnung hat maximal 60 m².", "en": "The flat has a maximum of 60 square metres."}
-    ]
-  },
-  {
-    "id": "circa",
-    "level": "A2", "type": "andere", "wordCategory": "adverb",
-    "german": "circa", "english": "approximately / about",
-    "wordType": "Adverb", "wordTypeEN": "Adverb of approximation",
-    "grammarRule": "Placed directly before numbers and measurements",
-    "grammarRuleDetail": "Written ca. in abbreviation. Synonym of ungefähr, more common in written/formal contexts.",
-    "structureFormula": "ca. + [number]",
-    "variants": [{"label": "Abbreviation", "form": "ca."}],
-    "relatedWords": [{"word": "ungefähr", "meaning": "approximately"}],
-    "usage": [
-      {"de": "3-Zimmer-Wohnung, ca. 60 m².", "en": "3-room flat, approx. 60 square metres."},
-      {"de": "Das kostet circa 500 Euro.", "en": "That costs approximately 500 euros."}
-    ]
-  },
-  {
-    "id": "etwas",
-    "level": "A1", "type": "andere", "wordCategory": "adverb",
-    "german": "etwas", "english": "something / somewhat / a little",
-    "wordType": "Pronomen/Adverb", "wordTypeEN": "Indefinite pronoun / Adverb",
-    "grammarRule": "As pronoun: stands alone. As adverb: before adjective.",
-    "grammarRuleDetail": "etwas Neues (something new — adjective takes neuter strong ending). As adverb: etwas größer (somewhat larger).",
-    "structureFormula": "Wer verkauft etwas? | etwas + [adjective]",
-    "variants": [{"label": "Abbreviated colloquial", "form": "was (in speech)"}],
-    "relatedWords": [{"word": "nichts", "meaning": "nothing"}],
-    "usage": [
-      {"de": "Wer verkauft etwas?", "en": "Who is selling something?"},
-      {"de": "Ich möchte etwas kaufen.", "en": "I would like to buy something."}
-    ]
-  },
-  {
-    "id": "also",
-    "level": "A1", "type": "andere", "wordCategory": "adverb",
-    "german": "also", "english": "so / well / so then",
-    "wordType": "Adverb/Konjunktionaladverb", "wordTypeEN": "Discourse marker / conjunctive adverb",
-    "grammarRule": "At position 1 it triggers V2 inversion. Often used to introduce or summarise.",
-    "grammarRuleDetail": "also ≠ English 'also'. It means 'so/well then'. Used to introduce conclusions or resume after a pause.",
-    "structureFormula": "Also, + V + S + …",
-    "variants": [],
-    "relatedWords": [{"word": "deshalb", "meaning": "therefore"}],
-    "usage": [
-      {"de": "Also, der Tisch ist dunkelbraun.", "en": "Well, the table is dark brown."},
-      {"de": "Also, ich nehme die Wohnung.", "en": "So, I'll take the flat."}
-    ]
-  },
-  {
-    "id": "ab",
-    "level": "A2", "type": "andere", "wordCategory": "adverb",
-    "german": "ab", "english": "from / starting from",
-    "wordType": "Präposition/Adverb", "wordTypeEN": "Preposition of time (+ Dativ)",
-    "grammarRule": "ab + Dativ — indicates starting point in time",
-    "grammarRuleDetail": "Used for time: ab sofort (from now), ab Montag (from Monday). Also separable prefix in verbs.",
-    "structureFormula": "ab + [time/date] | ab sofort",
-    "variants": [{"label": "Most common phrase", "form": "ab sofort (immediately available)"}],
-    "relatedWords": [{"word": "seit", "meaning": "since / for (ongoing)"}],
-    "usage": [
-      {"de": "Ich suche ab sofort eine Wohnung.", "en": "I am looking for a flat starting immediately."},
-      {"de": "Die Wohnung ist ab dem 1. Mai frei.", "en": "The flat is available from 1st May."}
+      {"de": "Die Lampe dort ist ganz gut.", "en": "The lamp there is quite good."},
+      {"de": "Das ist ganz einfach.", "en": "That is quite easy."}
     ]
   },
   {
     "id": "mal",
-    "level": "A1", "type": "andere", "wordCategory": "adverb",
-    "german": "mal", "english": "times (multiplication) / once",
-    "wordType": "Adverb", "wordTypeEN": "Adverb (multiplication / particle)",
-    "grammarRule": "In measurements: [number] mal [number] = dimensions",
-    "grammarRuleDetail": "60 mal 120 cm = 60 × 120 cm. As particle (doch mal, komm mal) it softens requests.",
-    "structureFormula": "[number] mal [number] | komm mal her",
-    "variants": [{"label": "As softening particle", "form": "doch mal / komm mal"}],
-    "relatedWords": [{"word": "einmal", "meaning": "once / one time"}],
+    "level": "A1",
+    "type": "andere",
+    "wordCategory": "particle",
+    "german": "mal",
+    "english": "for once / sometime / times",
+    "wordType": "Partikel / Adverb",
+    "wordTypeEN": "Particle / Adverb",
+    "grammarRule": "Used in measurements, multiplication, or as a softening particle",
+    "grammarRuleDetail": "mal can mean times in math or by in sizes. In spoken German it often softens requests or suggestions.",
+    "structureFormula": "Zahl + mal + Zahl | mal + Verb",
+    "variants": [],
+    "relatedWords": [],
     "usage": [
-      {"de": "Das Kinderbett ist 60 mal 120 Zentimeter groß.", "en": "The child's bed is 60 by 120 centimetres."},
-      {"de": "Komm mal her!", "en": "Come here for a moment!"}
+      {"de": "Das Kinderbett ist 60 mal 120 Zentimeter groß.", "en": "The children's bed is 60 by 120 centimeters."},
+      {"de": "Ich möchte mal wieder ins Kino gehen.", "en": "I would like to go to the cinema again sometime."}
+    ]
+  },
+  {
+    "id": "circa",
+    "level": "A1",
+    "type": "andere",
+    "wordCategory": "adverb",
+    "german": "circa",
+    "english": "approximately / about",
+    "wordType": "Adverb",
+    "wordTypeEN": "Adverb",
+    "grammarRule": "Used to express an approximate number or amount",
+    "grammarRuleDetail": "circa is common in ads, measurements, and prices. The abbreviation ca. is very common.",
+    "structureFormula": "circa + Zahl",
+    "variants": [{"label": "Abbreviation", "form": "ca."}],
+    "relatedWords": [],
+    "usage": [
+      {"de": "Die Wohnung ist circa 60 Quadratmeter groß.", "en": "The apartment is approximately 60 square meters big."},
+      {"de": "Das kostet circa 500 Euro.", "en": "That costs about 500 euros."}
+    ]
+  },
+  {
+    "id": "ab",
+    "level": "A1",
+    "type": "andere",
+    "wordCategory": "adverb",
+    "german": "ab",
+    "english": "from / starting from",
+    "wordType": "Adverb",
+    "wordTypeEN": "Adverb",
+    "grammarRule": "Used to indicate a starting point in time",
+    "grammarRuleDetail": "ab often introduces the time something starts. It is common in schedules and ads.",
+    "structureFormula": "ab + Zeit",
+    "variants": [],
+    "relatedWords": [],
+    "usage": [
+      {"de": "Ich suche ab sofort eine Wohnung.", "en": "I am looking for an apartment from now on."},
+      {"de": "Der Kurs ist ab Montag.", "en": "The course starts from Monday."}
+    ]
+  },
+  {
+    "id": "sofort",
+    "level": "A1",
+    "type": "andere",
+    "wordCategory": "adverb",
+    "german": "sofort",
+    "english": "immediately",
+    "wordType": "Adverb",
+    "wordTypeEN": "Adverb",
+    "grammarRule": "Indicates that something happens without delay",
+    "grammarRuleDetail": "sofort is used for actions that start right away.",
+    "structureFormula": "Verb + sofort",
+    "variants": [],
+    "relatedWords": [],
+    "usage": [
+      {"de": "Ich suche ab sofort eine Wohnung.", "en": "I am looking for an apartment immediately."},
+      {"de": "Bitte kommen Sie sofort.", "en": "Please come immediately."}
+    ]
+  },
+  {
+    "id": "maximal",
+    "level": "A1",
+    "type": "andere",
+    "wordCategory": "adverb",
+    "german": "maximal",
+    "english": "at most / maximum",
+    "wordType": "Adverb",
+    "wordTypeEN": "Adverb",
+    "grammarRule": "Used to indicate an upper limit",
+    "grammarRuleDetail": "maximal is common in prices, sizes, and restrictions. The abbreviation max. is common.",
+    "structureFormula": "maximal + Zahl",
+    "variants": [{"label": "Abbreviation", "form": "max."}],
+    "relatedWords": [],
+    "usage": [
+      {"de": "Die Wohnung kostet maximal 750 Euro.", "en": "The apartment costs at most 750 euros."},
+      {"de": "Das dauert maximal zehn Minuten.", "en": "That takes at most ten minutes."}
+    ]
+  },
+  {
+    "id": "nur",
+    "level": "A1",
+    "type": "andere",
+    "wordCategory": "adverb",
+    "german": "nur",
+    "english": "only",
+    "wordType": "Adverb",
+    "wordTypeEN": "Adverb",
+    "grammarRule": "Limits quantity, degree, or choice",
+    "grammarRuleDetail": "nur expresses restriction. It is very common in everyday German.",
+    "structureFormula": "nur + Satzteil",
+    "variants": [],
+    "relatedWords": [],
+    "usage": [
+      {"de": "Sie brauchen nur Wasser.", "en": "You only need water."},
+      {"de": "Ich habe nur ein Buch.", "en": "I only have one book."}
+    ]
+  },
+  {
+    "id": "etwas",
+    "level": "A1",
+    "type": "andere",
+    "wordCategory": "adverb",
+    "german": "etwas",
+    "english": "something / somewhat",
+    "wordType": "Indefinitwort",
+    "wordTypeEN": "Indefinite word / Adverb",
+    "grammarRule": "Used for an unspecified thing or a small degree",
+    "grammarRuleDetail": "etwas can mean something or somewhat depending on context.",
+    "structureFormula": "etwas + N / Adj.",
+    "variants": [],
+    "relatedWords": [],
+    "usage": [
+      {"de": "Wer verkauft etwas?", "en": "Who is selling something?"},
+      {"de": "Der Tisch ist etwas groß.", "en": "The table is somewhat big."}
+    ]
+  },
+  {
+    "id": "also",
+    "level": "A1",
+    "type": "andere",
+    "wordCategory": "particle",
+    "german": "also",
+    "english": "so / well / then",
+    "wordType": "Partikel",
+    "wordTypeEN": "Discourse particle",
+    "grammarRule": "Used to organize speech or draw a conclusion",
+    "grammarRuleDetail": "also is common in spoken German to introduce a summary, conclusion, or transition.",
+    "structureFormula": "Also, ...",
+    "variants": [],
+    "relatedWords": [],
+    "usage": [
+      {"de": "Also, der Tisch ist dunkelbraun.", "en": "So, the table is dark brown."},
+      {"de": "Also, was machen wir jetzt?", "en": "So, what do we do now?"}
+    ]
+  },
+  {
+    "id": "ungefaehr",
+    "level": "A1",
+    "type": "andere",
+    "wordCategory": "adverb",
+    "german": "ungefähr",
+    "english": "approximately / roughly",
+    "wordType": "Adverb",
+    "wordTypeEN": "Adverb",
+    "grammarRule": "Used for approximate numbers and sizes",
+    "grammarRuleDetail": "ungefähr expresses an estimate. It is common in measurements and time.",
+    "structureFormula": "ungefähr + Zahl",
+    "variants": [],
+    "relatedWords": [],
+    "usage": [
+      {"de": "Der Tisch ist ungefähr 60 Zentimeter breit.", "en": "The table is approximately 60 centimeters wide."},
+      {"de": "Das dauert ungefähr eine Stunde.", "en": "That takes about one hour."}
+    ]
+  },
+  {
+    "id": "genau",
+    "level": "A1",
+    "type": "andere",
+    "wordCategory": "adverb",
+    "german": "genau",
+    "english": "exactly / precisely",
+    "wordType": "Adverb",
+    "wordTypeEN": "Adverb",
+    "grammarRule": "Used for exactness or agreement",
+    "grammarRuleDetail": "genau can indicate precision or agreement with what someone said.",
+    "structureFormula": "genau + Satzteil",
+    "variants": [],
+    "relatedWords": [],
+    "usage": [
+      {"de": "Wie lang ist er denn genau?", "en": "How long is it exactly?"},
+      {"de": "Ja, genau.", "en": "Yes, exactly."}
+    ]
+  },
+  {
+    "id": "oder",
+    "level": "A1",
+    "type": "andere",
+    "wordCategory": "conjunction",
+    "german": "oder",
+    "english": "or",
+    "wordType": "Konjunktion",
+    "wordTypeEN": "Coordinating conjunction",
+    "grammarRule": "Connects alternatives",
+    "grammarRuleDetail": "Word order stays normal after oder. It joins two options or clauses.",
+    "structureFormula": "A oder B",
+    "variants": [],
+    "relatedWords": [],
+    "usage": [
+      {"de": "Lara geht spazieren oder kauft ein.", "en": "Lara goes for a walk or shops."},
+      {"de": "Möchtest du Tee oder Kaffee?", "en": "Would you like tea or coffee?"}
+    ]
+  },
+  {
+    "id": "schon",
+    "level": "A1",
+    "type": "andere",
+    "wordCategory": "particle",
+    "german": "schon",
+    "english": "already",
+    "wordType": "Partikel / Adverb",
+    "wordTypeEN": "Particle / Adverb",
+    "grammarRule": "Used for actions or states that are earlier than expected",
+    "grammarRuleDetail": "schon often means already. It can also soften statements in spoken German.",
+    "structureFormula": "schon + Verb",
+    "variants": [],
+    "relatedWords": [{"word": "erst", "meaning": "only / not until"}],
+    "usage": [
+      {"de": "Ist es schon zwölf?", "en": "Is it already twelve?"},
+      {"de": "Schläfst du schon?", "en": "Are you already sleeping?"}
+    ]
+  },
+  {
+    "id": "erst",
+    "level": "A1",
+    "type": "andere",
+    "wordCategory": "adverb",
+    "german": "erst",
+    "english": "only / not until",
+    "wordType": "Adverb",
+    "wordTypeEN": "Adverb",
+    "grammarRule": "Indicates a later-than-expected point or a small amount",
+    "grammarRuleDetail": "erst often contrasts with schon. It means only or not until.",
+    "structureFormula": "erst + Satzteil",
+    "variants": [],
+    "relatedWords": [{"word": "schon", "meaning": "already"}],
+    "usage": [
+      {"de": "Es ist erst elf.", "en": "It is only eleven."},
+      {"de": "Nein, erst am Dienstag.", "en": "No, not until Tuesday."}
+    ]
+  },
+  {
+    "id": "vor",
+    "level": "A1",
+    "type": "andere",
+    "wordCategory": "adverb",
+    "german": "vor",
+    "english": "before / to",
+    "wordType": "Adverb / Preposition",
+    "wordTypeEN": "Adverb / Preposition",
+    "grammarRule": "Used in time expressions like Viertel vor zwölf",
+    "grammarRuleDetail": "vor can function as a preposition, but in beginner time phrases it often appears adverbially.",
+    "structureFormula": "vor + Uhrzeit",
+    "variants": [],
+    "relatedWords": [{"word": "nach", "meaning": "after / past"}],
+    "usage": [
+      {"de": "Es ist Viertel vor zwölf.", "en": "It is quarter to twelve."},
+      {"de": "Wir kommen vor acht Uhr.", "en": "We come before eight o'clock."}
+    ]
+  },
+  {
+    "id": "nach",
+    "level": "A1",
+    "type": "andere",
+    "wordCategory": "adverb",
+    "german": "nach",
+    "english": "after / past",
+    "wordType": "Adverb / Preposition",
+    "wordTypeEN": "Adverb / Preposition",
+    "grammarRule": "Used in time expressions like Viertel nach eins",
+    "grammarRuleDetail": "nach can function as a preposition, but in beginner time phrases it often appears adverbially.",
+    "structureFormula": "nach + Uhrzeit",
+    "variants": [],
+    "relatedWords": [{"word": "vor", "meaning": "before / to"}],
+    "usage": [
+      {"de": "Es ist Viertel nach eins.", "en": "It is quarter past one."},
+      {"de": "Nach der Schule komme ich nach Hause.", "en": "After school I come home."}
+    ]
+  },
+  {
+    "id": "halb",
+    "level": "A1",
+    "type": "andere",
+    "wordCategory": "adverb",
+    "german": "halb",
+    "english": "half",
+    "wordType": "Adverb",
+    "wordTypeEN": "Adverb",
+    "grammarRule": "Used in German clock time expressions",
+    "grammarRuleDetail": "halb zwei means half to two, not half past two. It is a core time expression in German.",
+    "structureFormula": "halb + Zahl",
+    "variants": [],
+    "relatedWords": [],
+    "usage": [
+      {"de": "Es ist halb zwei.", "en": "It is half past one / half to two."},
+      {"de": "Der Kurs beginnt um halb neun.", "en": "The course starts at half past eight / half to nine."}
+    ]
+  },
+  {
+    "id": "gleich",
+    "level": "A1",
+    "type": "andere",
+    "wordCategory": "adverb",
+    "german": "gleich",
+    "english": "soon / immediately / almost",
+    "wordType": "Adverb",
+    "wordTypeEN": "Adverb",
+    "grammarRule": "Used for actions happening very soon",
+    "grammarRuleDetail": "gleich can mean in a moment or almost, depending on context.",
+    "structureFormula": "gleich + Verb",
+    "variants": [],
+    "relatedWords": [],
+    "usage": [
+      {"de": "Es ist gleich zwölf.", "en": "It is almost twelve."},
+      {"de": "Ich komme gleich.", "en": "I am coming right away."}
+    ]
+  },
+  {
+    "id": "am",
+    "level": "A1",
+    "type": "andere",
+    "wordCategory": "adverb",
+    "german": "am",
+    "english": "on / at (contracted form)",
+    "wordType": "Verschmelzung",
+    "wordTypeEN": "Contraction",
+    "grammarRule": "Used in common time expressions",
+    "grammarRuleDetail": "am is the contraction of an + dem. It appears often in time phrases like am Montag.",
+    "structureFormula": "am + Tag/Zeit",
+    "variants": [{"label": "Full form", "form": "an dem"}],
+    "relatedWords": [],
+    "usage": [
+      {"de": "Am Freitag mache ich eine Party.", "en": "On Friday I am having a party."},
+      {"de": "Am Abend sehe ich fern.", "en": "In the evening I watch TV."}
+    ]
+  },
+  {
+    "id": "von_bis",
+    "level": "A1",
+    "type": "andere",
+    "wordCategory": "fixed_phrase",
+    "german": "von ... bis ...",
+    "english": "from ... to ...",
+    "wordType": "Feste Wendung",
+    "wordTypeEN": "Fixed phrase",
+    "grammarRule": "Used to mark a start and end point",
+    "grammarRuleDetail": "von ... bis ... is common for time ranges and schedules.",
+    "structureFormula": "von X bis Y",
+    "variants": [],
+    "relatedWords": [],
+    "usage": [
+      {"de": "Der Kurs ist von neun bis zwölf.", "en": "The course is from nine to twelve."},
+      {"de": "Das Geschäft ist von acht bis dreizehn Uhr geöffnet.", "en": "The shop is open from eight to one."}
+    ]
+  },
+  {
+    "id": "naechste_woche",
+    "level": "A1",
+    "type": "andere",
+    "wordCategory": "fixed_phrase",
+    "german": "nächste Woche",
+    "english": "next week",
+    "wordType": "Feste Wendung",
+    "wordTypeEN": "Fixed phrase",
+    "grammarRule": "Used for future time reference",
+    "grammarRuleDetail": "nächste Woche refers to the week after the current one.",
+    "structureFormula": "nächste Woche + Verb",
+    "variants": [],
+    "relatedWords": [],
+    "usage": [
+      {"de": "Der Terminkalender ist für nächste Woche.", "en": "The schedule is for next week."},
+      {"de": "Nächste Woche habe ich einen Kurs.", "en": "Next week I have a course."}
+    ]
+  },
+  {
+    "id": "doch",
+    "level": "A1",
+    "type": "andere",
+    "wordCategory": "particle",
+    "german": "doch",
+    "english": "yes (after a negative question) / after all",
+    "wordType": "Partikel",
+    "wordTypeEN": "Particle",
+    "grammarRule": "Used to contradict a negative statement or question",
+    "grammarRuleDetail": "doch is a key response particle in German. It is used when the expected answer is negative but the speaker says the opposite.",
+    "structureFormula": "Doch.",
+    "variants": [],
+    "relatedWords": [],
+    "usage": [
+      {"de": "Haben wir den Käse nicht dabei? – Doch.", "en": "Don't we have the cheese with us? – Yes, we do."},
+      {"de": "Nein, doch!", "en": "No, actually yes!"}
+    ]
+  },
+  {
+    "id": "lieber",
+    "level": "A1",
+    "type": "andere",
+    "wordCategory": "adverb",
+    "german": "lieber",
+    "english": "preferably / rather",
+    "wordType": "Adverb",
+    "wordTypeEN": "Adverb",
+    "grammarRule": "Used to express preference",
+    "grammarRuleDetail": "lieber compares choices and means rather or preferably.",
+    "structureFormula": "lieber + Verb/N",
+    "variants": [],
+    "relatedWords": [],
+    "usage": [
+      {"de": "Ich möchte lieber Käse.", "en": "I would rather have cheese."},
+      {"de": "Ich bleibe lieber zu Hause.", "en": "I prefer to stay at home."}
+    ]
+  },
+  {
+    "id": "warum",
+    "level": "A1",
+    "type": "andere",
+    "wordCategory": "adverb",
+    "german": "warum",
+    "english": "why",
+    "wordType": "Fragewort",
+    "wordTypeEN": "Question adverb",
+    "grammarRule": "Used to ask for reasons",
+    "grammarRuleDetail": "warum introduces questions asking for explanation or cause.",
+    "structureFormula": "warum + Verb",
+    "variants": [],
+    "relatedWords": [],
+    "usage": [
+      {"de": "Warum nicht?", "en": "Why not?"},
+      {"de": "Warum kommst du nicht?", "en": "Why are you not coming?"}
+    ]
+  },
+  {
+    "id": "oft",
+    "level": "A1",
+    "type": "andere",
+    "wordCategory": "adverb",
+    "german": "oft",
+    "english": "often",
+    "wordType": "Adverb",
+    "wordTypeEN": "Adverb",
+    "grammarRule": "Expresses frequency (high but not always)",
+    "grammarRuleDetail": "oft is used for repeated actions. It is less frequent than immer.",
+    "structureFormula": "oft + Verb",
+    "variants": [],
+    "relatedWords": [{"word": "immer", "meaning": "always"}],
+    "usage": [
+      {"de": "Im Frühling ist das Wetter oft schön.", "en": "In spring the weather is often nice."},
+      {"de": "Ich spiele oft Fußball.", "en": "I often play football."}
+    ]
+  },
+  {
+    "id": "viel",
+    "level": "A1",
+    "type": "andere",
+    "wordCategory": "adverb",
+    "german": "viel",
+    "english": "a lot / much",
+    "wordType": "Adverb",
+    "wordTypeEN": "Adverb",
+    "grammarRule": "Expresses a large quantity or degree",
+    "grammarRuleDetail": "viel is used with verbs and nouns to indicate a lot.",
+    "structureFormula": "viel + Verb/N",
+    "variants": [],
+    "relatedWords": [{"word": "wenig", "meaning": "little"}],
+    "usage": [
+      {"de": "Es gibt viele Wolken.", "en": "There are many clouds."},
+      {"de": "Im Herbst regnet es viel.", "en": "In autumn it rains a lot."}
+    ]
+  },
+  {
+    "id": "ueberall",
+    "level": "A1",
+    "type": "andere",
+    "wordCategory": "adverb",
+    "german": "überall",
+    "english": "everywhere",
+    "wordType": "Adverb",
+    "wordTypeEN": "Adverb",
+    "grammarRule": "Refers to all places in a broad area",
+    "grammarRuleDetail": "überall means in every place. It is common in descriptions.",
+    "structureFormula": "Verb + überall",
+    "variants": [],
+    "relatedWords": [],
+    "usage": [
+      {"de": "In der Mitte Deutschlands scheint überall die Sonne.", "en": "In central Germany the sun is shining everywhere."},
+      {"de": "Es sind überall Menschen.", "en": "There are people everywhere."}
+    ]
+  },
+  {
+    "id": "plus",
+    "level": "A1",
+    "type": "andere",
+    "wordCategory": "adverb",
+    "german": "plus",
+    "english": "plus",
+    "wordType": "Adverb",
+    "wordTypeEN": "Adverb",
+    "grammarRule": "Used in temperature and arithmetic expressions",
+    "grammarRuleDetail": "plus is common in weather reports and numbers.",
+    "structureFormula": "plus + Zahl",
+    "variants": [],
+    "relatedWords": [{"word": "minus", "meaning": "minus"}],
+    "usage": [
+      {"de": "Es sind plus fünf Grad.", "en": "It is plus five degrees."},
+      {"de": "Zwei plus zwei ist vier.", "en": "Two plus two is four."}
+    ]
+  },
+  {
+    "id": "minus",
+    "level": "A1",
+    "type": "andere",
+    "wordCategory": "adverb",
+    "german": "minus",
+    "english": "minus",
+    "wordType": "Adverb",
+    "wordTypeEN": "Adverb",
+    "grammarRule": "Used in temperature and arithmetic expressions",
+    "grammarRuleDetail": "minus is common in weather reports and numbers.",
+    "structureFormula": "minus + Zahl",
+    "variants": [],
+    "relatedWords": [{"word": "plus", "meaning": "plus"}],
+    "usage": [
+      {"de": "Es ist minus ein Grad.", "en": "It is minus one degree."},
+      {"de": "Fünf minus drei ist zwei.", "en": "Five minus three is two."}
+    ]
+  },
+  {
+    "id": "geradeaus",
+    "level": "A1",
+    "type": "andere",
+    "wordCategory": "adverb",
+    "german": "geradeaus",
+    "english": "straight ahead",
+    "wordType": "Adverb",
+    "wordTypeEN": "Adverb",
+    "grammarRule": "Used for directions",
+    "grammarRuleDetail": "geradeaus indicates moving forward without turning. It is common in giving directions.",
+    "structureFormula": "Verb + geradeaus",
+    "variants": [],
+    "relatedWords": [],
+    "usage": [
+      {"de": "Gehen Sie geradeaus.", "en": "Go straight ahead."},
+      {"de": "Fahren Sie geradeaus bis zur Ampel.", "en": "Drive straight ahead to the traffic light."}
+    ]
+  },
+  {
+    "id": "links",
+    "level": "A1",
+    "type": "andere",
+    "wordCategory": "adverb",
+    "german": "links",
+    "english": "left",
+    "wordType": "Adverb",
+    "wordTypeEN": "Adverb",
+    "grammarRule": "Used for direction or position",
+    "grammarRuleDetail": "links indicates the left side or direction. Often used in navigation.",
+    "structureFormula": "Verb + links",
+    "variants": [],
+    "relatedWords": [{"word": "rechts", "meaning": "right"}],
+    "usage": [
+      {"de": "Biegen Sie links ab.", "en": "Turn left."},
+      {"de": "Die Bank ist links.", "en": "The bank is on the left."}
+    ]
+  },
+  {
+    "id": "rechts",
+    "level": "A1",
+    "type": "andere",
+    "wordCategory": "adverb",
+    "german": "rechts",
+    "english": "right",
+    "wordType": "Adverb",
+    "wordTypeEN": "Adverb",
+    "grammarRule": "Used for direction or position",
+    "grammarRuleDetail": "rechts indicates the right side or direction. Often used in navigation.",
+    "structureFormula": "Verb + rechts",
+    "variants": [],
+    "relatedWords": [{"word": "links", "meaning": "left"}],
+    "usage": [
+      {"de": "Biegen Sie rechts ab.", "en": "Turn right."},
+      {"de": "Das Café ist rechts.", "en": "The café is on the right."}
+    ]
+  },
+  {
+    "id": "dort_hinten",
+    "level": "A1",
+    "type": "andere",
+    "wordCategory": "adverb",
+    "german": "dort hinten",
+    "english": "back there",
+    "wordType": "Adverb phrase",
+    "wordTypeEN": "Adverb phrase",
+    "grammarRule": "Indicates distant position",
+    "grammarRuleDetail": "dort hinten refers to a place further away. It is often used in spoken directions.",
+    "structureFormula": "Verb + dort hinten",
+    "variants": [],
+    "relatedWords": [],
+    "usage": [
+      {"de": "Das Museum ist dort hinten.", "en": "The museum is back there."},
+      {"de": "Die Bank ist dort hinten.", "en": "The bank is back there."}
+    ]
+  },
+  {
+    "id": "gern",
+    "level": "A1",
+    "type": "andere",
+    "wordCategory": "adverb",
+    "german": "gern",
+    "english": "gladly / like to",
+    "wordType": "Adverb",
+    "wordTypeEN": "Adverb",
+    "grammarRule": "Expresses liking or preference",
+    "grammarRuleDetail": "gern is used with verbs to show enjoyment. It does not change form.",
+    "structureFormula": "Verb + gern",
+    "variants": [],
+    "relatedWords": [{"word": "lieber", "meaning": "preferably / rather"}],
+    "usage": [
+      {"de": "Ich helfe dir gern.", "en": "I gladly help you."},
+      {"de": "Ich trinke gern Kaffee.", "en": "I like to drink coffee."}
+    ]
+  },
+  {
+    "id": "mehr",
+    "level": "A1",
+    "type": "andere",
+    "wordCategory": "adverb",
+    "german": "mehr",
+    "english": "more",
+    "wordType": "Adverb",
+    "wordTypeEN": "Adverb",
+    "grammarRule": "Expresses a greater amount or degree",
+    "grammarRuleDetail": "mehr is used with nouns, adjectives, and verbs. It is the common form for more.",
+    "structureFormula": "mehr + N / Verb",
+    "variants": [],
+    "relatedWords": [],
+    "usage": [
+      {"de": "Ich hätte gern mehr Zeit für mich.", "en": "I would like more time for myself."},
+      {"de": "Ich möchte mehr lesen.", "en": "I would like to read more."}
+    ]
+  },
+  {
+    "id": "wieder",
+    "level": "A1",
+    "type": "andere",
+    "wordCategory": "adverb",
+    "german": "wieder",
+    "english": "again",
+    "wordType": "Adverb",
+    "wordTypeEN": "Adverb",
+    "grammarRule": "Indicates repetition",
+    "grammarRuleDetail": "wieder is used when something happens another time. It is common in everyday speech.",
+    "structureFormula": "Verb + wieder",
+    "variants": [],
+    "relatedWords": [{"word": "noch_einmal", "meaning": "once again"}],
+    "usage": [
+      {"de": "Ich möchte mal wieder ins Kino gehen.", "en": "I would like to go to the cinema again sometime."},
+      {"de": "Komm bitte wieder.", "en": "Please come again."}
+    ]
+  },
+  {
+    "id": "zum_beispiel",
+    "level": "A1",
+    "type": "andere",
+    "wordCategory": "fixed_phrase",
+    "german": "zum Beispiel",
+    "english": "for example",
+    "wordType": "Feste Wendung",
+    "wordTypeEN": "Fixed phrase",
+    "grammarRule": "Used to introduce an example",
+    "grammarRuleDetail": "zum Beispiel can stand at the start or middle of a sentence. The abbreviation is z. B.",
+    "structureFormula": "zum Beispiel + Satzteil",
+    "variants": [{"label": "Abbreviation", "form": "z. B."}],
+    "relatedWords": [],
+    "usage": [
+      {"de": "Zum Beispiel möchte ich mal wieder ins Kino gehen.", "en": "For example, I would like to go to the cinema again sometime."},
+      {"de": "Ich lerne Sprachen, zum Beispiel Deutsch.", "en": "I study languages, for example German."}
+    ]
+  },
+  {
+    "id": "heute",
+    "level": "A1",
+    "type": "andere",
+    "wordCategory": "adverb",
+    "german": "heute",
+    "english": "today",
+    "wordType": "Adverb",
+    "wordTypeEN": "Adverb",
+    "grammarRule": "Refers to the current day",
+    "grammarRuleDetail": "heute is used for present-day actions or plans. It is very common in daily speech.",
+    "structureFormula": "heute + Verb",
+    "variants": [],
+    "relatedWords": [{"word": "morgen", "meaning": "tomorrow"}],
+    "usage": [
+      {"de": "Ich habe heute keine Zeit.", "en": "I do not have time today."},
+      {"de": "Heute ist Samstag.", "en": "Today is Saturday."}
+    ]
+  },
+  {
+    "id": "leider",
+    "level": "A1",
+    "type": "andere",
+    "wordCategory": "adverb",
+    "german": "leider",
+    "english": "unfortunately",
+    "wordType": "Adverb",
+    "wordTypeEN": "Adverb",
+    "grammarRule": "Expresses regret or something unfavorable",
+    "grammarRuleDetail": "leider often appears near the beginning of a sentence or clause.",
+    "structureFormula": "leider + Satz",
+    "variants": [],
+    "relatedWords": [],
+    "usage": [
+      {"de": "Leider gibt es ein Problem.", "en": "Unfortunately there is a problem."},
+      {"de": "Ich habe leider keine Zeit.", "en": "Unfortunately I do not have time."}
+    ]
+  },
+  {
+    "id": "immer",
+    "level": "A1",
+    "type": "andere",
+    "wordCategory": "adverb",
+    "german": "immer",
+    "english": "always",
+    "wordType": "Adverb",
+    "wordTypeEN": "Adverb",
+    "grammarRule": "Expresses frequency (100%)",
+    "grammarRuleDetail": "immer is used for actions that happen all the time. It is common in daily routines.",
+    "structureFormula": "immer + Verb",
+    "variants": [],
+    "relatedWords": [{"word": "oft", "meaning": "often"}],
+    "usage": [
+      {"de": "Das Backgammon-Spiel habe ich immer mit dabei.", "en": "I always have the backgammon game with me."},
+      {"de": "Ich komme immer pünktlich.", "en": "I always arrive on time."}
+    ]
+  },
+  {
+    "id": "vielleicht",
+    "level": "A1",
+    "type": "andere",
+    "wordCategory": "adverb",
+    "german": "vielleicht",
+    "english": "maybe / perhaps",
+    "wordType": "Adverb",
+    "wordTypeEN": "Adverb",
+    "grammarRule": "Expresses possibility or uncertainty",
+    "grammarRuleDetail": "vielleicht is common in spoken and written German for uncertain statements.",
+    "structureFormula": "vielleicht + Satz",
+    "variants": [],
+    "relatedWords": [],
+    "usage": [
+      {"de": "Oder vielleicht doch?", "en": "Or maybe after all?"},
+      {"de": "Vielleicht kommt er morgen.", "en": "Maybe he will come tomorrow."}
+    ]
+  },
+  {
+    "id": "einfach",
+    "level": "A1",
+    "type": "andere",
+    "wordCategory": "adverb",
+    "german": "einfach",
+    "english": "simply / easily",
+    "wordType": "Adverb / Adjective",
+    "wordTypeEN": "Adverb / Adjective",
+    "grammarRule": "Used for low difficulty or simplicity",
+    "grammarRuleDetail": "einfach can function as adverb or adjective. It is common in explanations.",
+    "structureFormula": "sein + einfach | einfach + Verb",
+    "variants": [],
+    "relatedWords": [],
+    "usage": [
+      {"de": "Ach, das ist ganz einfach.", "en": "Oh, that is very easy."},
+      {"de": "Ich erkläre es einfach.", "en": "I explain it simply."}
+    ]
+  },
+  {
+    "id": "schnell",
+    "level": "A1",
+    "type": "andere",
+    "wordCategory": "adverb",
+    "german": "schnell",
+    "english": "quickly / fast",
+    "wordType": "Adverb / Adjective",
+    "wordTypeEN": "Adverb / Adjective",
+    "grammarRule": "Works as both adjective and adverb without change",
+    "grammarRuleDetail": "schnell can modify verbs directly or describe nouns and things.",
+    "structureFormula": "Verb + schnell | schnell[ending] + N",
+    "variants": [],
+    "relatedWords": [],
+    "usage": [
+      {"de": "Das lernst du schnell.", "en": "You learn that quickly."},
+      {"de": "Das Auto fährt schnell.", "en": "The car drives fast."}
+    ]
+  },
+  {
+    "id": "nach_hause",
+    "level": "A1",
+    "type": "andere",
+    "wordCategory": "fixed_phrase",
+    "german": "nach Hause",
+    "english": "home",
+    "wordType": "Feste Wendung",
+    "wordTypeEN": "Fixed phrase",
+    "grammarRule": "Used for movement toward home",
+    "grammarRuleDetail": "nach Hause expresses direction toward home. Compare with zu Hause for location.",
+    "structureFormula": "Verb + nach Hause",
+    "variants": [{"label": "Location phrase", "form": "zu Hause"}],
+    "relatedWords": [{"word": "zu_hause", "meaning": "at home"}],
+    "usage": [
+      {"de": "Am Nachmittag kommt Lili nach Hause.", "en": "In the afternoon Lili comes home."},
+      {"de": "Ich gehe jetzt nach Hause.", "en": "I am going home now."}
+    ]
+  },
+  {
+    "id": "endlich",
+    "level": "A1",
+    "type": "andere",
+    "wordCategory": "adverb",
+    "german": "endlich",
+    "english": "finally",
+    "wordType": "Adverb",
+    "wordTypeEN": "Adverb",
+    "grammarRule": "Expresses relief or something happening after waiting",
+    "grammarRuleDetail": "endlich often conveys impatience or relief.",
+    "structureFormula": "endlich + Satz",
+    "variants": [],
+    "relatedWords": [],
+    "usage": [
+      {"de": "Willst du nicht endlich aufstehen?", "en": "Don't you finally want to get up?"},
+      {"de": "Endlich ist Freitag.", "en": "Finally it is Friday."}
+    ]
+  },
+  {
+    "id": "schade",
+    "level": "A1",
+    "type": "andere",
+    "wordCategory": "interjection",
+    "german": "schade",
+    "english": "what a pity / that's a shame",
+    "wordType": "Interjektion",
+    "wordTypeEN": "Interjection",
+    "grammarRule": "Used to react to something unfortunate",
+    "grammarRuleDetail": "schade expresses regret or disappointment.",
+    "structureFormula": "Schade!",
+    "variants": [],
+    "relatedWords": [],
+    "usage": [
+      {"de": "Ich habe heute keine Zeit. – Schade!", "en": "I do not have time today. – That's a shame!"},
+      {"de": "Schade, ich kann nicht kommen.", "en": "What a pity, I cannot come."}
     ]
   }
 ]

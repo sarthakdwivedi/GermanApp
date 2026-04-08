@@ -1,291 +1,16 @@
-[
-  {
-    "id": "kommen",
+[{
+    "id": "schreiben",
     "level": "A1",
     "type": "verb",
-    "theme": "movement",
-    "german": "kommen",
-    "english": "to come",
-    "patternLabel": "Stark · o–a–o",
-    "patternColor": "strong",
-    "auxiliary": "sein",
-    "conjugations": {
-      "prasens": {
-        "ich": "komme",
-        "du": "kommst",
-        "er": "kommt",
-        "wir": "kommen",
-        "ihr": "kommt",
-        "sie": "kommen"
-      },
-      "prateritum": {
-        "ich": "kam",
-        "du": "kamst",
-        "er": "kam",
-        "wir": "kamen",
-        "ihr": "kamt",
-        "sie": "kamen"
-      },
-      "perfekt": {
-        "ich": "bin gekommen",
-        "du": "bist gekommen",
-        "er": "ist gekommen",
-        "wir": "sind gekommen",
-        "ihr": "seid gekommen",
-        "sie": "sind gekommen"
-      },
-      "konjunktiv2": {
-        "ich": "käme",
-        "du": "kämest",
-        "er": "käme",
-        "wir": "kämen",
-        "ihr": "kämet",
-        "sie": "kämen"
-      }
-    },
-    "exceptions": [
-      "Auxiliary: sein (motion verb)",
-      "Präteritum vowel: o→a"
-    ],
-    "exceptionForms": [
-      "prateritum-all",
-      "perfekt-aux"
-    ],
-    "kasus": [],
-    "reflexiv": false,
-    "preposition": null,
-    "usage": [
-      {
-        "de": "Woher kommst du?",
-        "en": "Where do you come from?"
-      },
-      {
-        "de": "Er ist gestern angekommen.",
-        "en": "He arrived yesterday."
-      }
-    ]
-  },
-  {
-    "id": "sprechen",
-    "level": "A2",
-    "type": "verb",
-    "theme": "communication",
-    "german": "sprechen",
-    "english": "to speak",
-    "patternLabel": "Stark · e–i–o",
-    "patternColor": "strong",
-    "auxiliary": "haben",
-    "conjugations": {
-      "prasens": {
-        "ich": "spreche",
-        "du": "sprichst",
-        "er": "spricht",
-        "wir": "sprechen",
-        "ihr": "sprecht",
-        "sie": "sprechen"
-      },
-      "prateritum": {
-        "ich": "sprach",
-        "du": "sprachst",
-        "er": "sprach",
-        "wir": "sprachen",
-        "ihr": "spracht",
-        "sie": "sprachen"
-      },
-      "perfekt": {
-        "ich": "habe gesprochen",
-        "du": "hast gesprochen",
-        "er": "hat gesprochen",
-        "wir": "haben gesprochen",
-        "ihr": "habt gesprochen",
-        "sie": "haben gesprochen"
-      },
-      "konjunktiv2": {
-        "ich": "spräche",
-        "du": "sprächest",
-        "er": "spräche",
-        "wir": "sprächen",
-        "ihr": "sprächet",
-        "sie": "sprächen"
-      }
-    },
-    "exceptions": [
-      "du/er: e→i (sprich-)",
-      "Präteritum: a-stem (sprach-)"
-    ],
-    "exceptionForms": [
-      "prasens-du",
-      "prasens-er",
-      "prateritum-all"
-    ],
-    "kasus": [
-      "akkusativ"
-    ],
-    "reflexiv": false,
-    "preposition": {
-      "prep": "über",
-      "case": "Akkusativ",
-      "meaning": "to speak about sth."
-    },
-    "usage": [
-      {
-        "de": "Sie spricht sehr gut Deutsch.",
-        "en": "She speaks German very well."
-      },
-      {
-        "de": "Wir sprechen über das Problem.",
-        "en": "We are speaking about the problem."
-      }
-    ]
-  },
-  {
-    "id": "lesen",
-    "level": "A2",
-    "type": "verb",
-    "theme": "leisure",
-    "german": "lesen",
-    "english": "to read",
-    "patternLabel": "Stark · e–ie–a",
-    "patternColor": "strong",
-    "auxiliary": "haben",
-    "conjugations": {
-      "prasens": {
-        "ich": "lese",
-        "du": "liest",
-        "er": "liest",
-        "wir": "lesen",
-        "ihr": "lest",
-        "sie": "lesen"
-      },
-      "prateritum": {
-        "ich": "las",
-        "du": "last",
-        "er": "las",
-        "wir": "lasen",
-        "ihr": "last",
-        "sie": "lasen"
-      },
-      "perfekt": {
-        "ich": "habe gelesen",
-        "du": "hast gelesen",
-        "er": "hat gelesen",
-        "wir": "haben gelesen",
-        "ihr": "habt gelesen",
-        "sie": "haben gelesen"
-      },
-      "konjunktiv2": {
-        "ich": "läse",
-        "du": "läsest",
-        "er": "läse",
-        "wir": "läsen",
-        "ihr": "läset",
-        "sie": "läsen"
-      }
-    },
-    "exceptions": [
-      "du/er: e→ie (liest)",
-      "Präteritum: a-stem"
-    ],
-    "exceptionForms": [
-      "prasens-du",
-      "prasens-er",
-      "prateritum-all"
-    ],
-    "kasus": [
-      "akkusativ"
-    ],
-    "reflexiv": false,
-    "preposition": null,
-    "usage": [
-      {
-        "de": "Er liest jeden Abend ein Buch.",
-        "en": "He reads a book every evening."
-      },
-      {
-        "de": "Ich habe den Artikel gelesen.",
-        "en": "I read the article."
-      }
-    ]
-  },
-  {
-    "id": "helfen",
-    "level": "A2",
-    "type": "verb",
-    "theme": "social",
-    "german": "helfen",
-    "english": "to help",
-    "patternLabel": "Stark · e–i–o",
-    "patternColor": "strong",
-    "auxiliary": "haben",
-    "conjugations": {
-      "prasens": {
-        "ich": "helfe",
-        "du": "hilfst",
-        "er": "hilft",
-        "wir": "helfen",
-        "ihr": "helft",
-        "sie": "helfen"
-      },
-      "prateritum": {
-        "ich": "half",
-        "du": "halfst",
-        "er": "half",
-        "wir": "halfen",
-        "ihr": "halft",
-        "sie": "halfen"
-      },
-      "perfekt": {
-        "ich": "habe geholfen",
-        "du": "hast geholfen",
-        "er": "hat geholfen",
-        "wir": "haben geholfen",
-        "ihr": "habt geholfen",
-        "sie": "haben geholfen"
-      },
-      "konjunktiv2": {
-        "ich": "hülfe",
-        "du": "hülfest",
-        "er": "hülfe",
-        "wir": "hülfen",
-        "ihr": "hülfet",
-        "sie": "hülfen"
-      }
-    },
-    "exceptions": [
-      "du/er: e→i (hilf-)",
-      "⚠ Takes DATIV object — not Akkusativ"
-    ],
-    "exceptionForms": [
-      "prasens-du",
-      "prasens-er"
-    ],
-    "kasus": [
-      "dativ"
-    ],
-    "reflexiv": false,
-    "preposition": null,
-    "usage": [
-      {
-        "de": "Kannst du mir helfen?",
-        "en": "Can you help me? (Dat: mir)"
-      },
-      {
-        "de": "Er hilft seiner Mutter.",
-        "en": "He helps his mother. (Dat)"
-      }
-    ]
-  },
-  {
-    "id": "schreiben",
-    "level": "B1",
-    "type": "verb",
-    "theme": "communication",
+    "theme": ["education", "communication"],
     "german": "schreiben",
     "english": "to write",
-    "patternLabel": "Stark · ei–ie–ie",
+    "patternLabel": "Stark (strong)",
     "patternColor": "strong",
     "auxiliary": "haben",
-    "conjugations": {
+    "reflexiv": false,
+    "kasus": ["akkusativ"],
+    "stems": {
       "prasens": {
         "ich": "schreibe",
         "du": "schreibst",
@@ -294,472 +19,636 @@
         "ihr": "schreibt",
         "sie": "schreiben"
       },
-      "prateritum": {
-        "ich": "schrieb",
-        "du": "schriebst",
-        "er": "schrieb",
-        "wir": "schrieben",
-        "ihr": "schriebt",
-        "sie": "schrieben"
-      },
-      "perfekt": {
-        "ich": "habe geschrieben",
-        "du": "hast geschrieben",
-        "er": "hat geschrieben",
-        "wir": "haben geschrieben",
-        "ihr": "habt geschrieben",
-        "sie": "haben geschrieben"
-      },
-      "konjunktiv2": {
-        "ich": "schriebe",
-        "du": "schriebest",
-        "er": "schriebe",
-        "wir": "schrieben",
-        "ihr": "schriebet",
-        "sie": "schrieben"
-      }
+      "prateritum": "schrieb",
+      "partizip2": "geschrieben",
+      "konjunktiv2": "schriebe"
     },
-    "exceptions": [
-      "Präteritum: ei→ie",
-      "Partizip: geschrieben"
-    ],
-    "exceptionForms": [
-      "prateritum-all"
-    ],
-    "kasus": [
-      "akkusativ"
-    ],
-    "reflexiv": false,
-    "preposition": null,
+    "exceptionForms": [],
+    "exceptions": [],
     "usage": [
-      {
-        "de": "Ich schreibe einen Brief.",
-        "en": "I am writing a letter."
-      },
-      {
-        "de": "Er hat den ganzen Abend geschrieben.",
-        "en": "He was writing all evening."
-      }
+      {"de": "Schreiben Sie Gespräche.", "en": "Write dialogues."},
+      {"de": "Ich schreibe einen Brief.", "en": "I am writing a letter."}
     ]
   },
   {
-    "id": "geben",
-    "level": "B1",
+    "id": "sprechen",
+    "level": "A1",
     "type": "verb",
-    "theme": "social",
-    "german": "geben",
-    "english": "to give",
-    "patternLabel": "Stark · e–a–e",
+    "theme": [
+      "communication",
+      "introductions"
+    ],
+    "german": "sprechen",
+    "english": "to speak",
+    "patternLabel": "Stark (strong)",
     "patternColor": "strong",
     "auxiliary": "haben",
-    "conjugations": {
-      "prasens": {
-        "ich": "gebe",
-        "du": "gibst",
-        "er": "gibt",
-        "wir": "geben",
-        "ihr": "gebt",
-        "sie": "geben"
-      },
-      "prateritum": {
-        "ich": "gab",
-        "du": "gabst",
-        "er": "gab",
-        "wir": "gaben",
-        "ihr": "gabt",
-        "sie": "gaben"
-      },
-      "perfekt": {
-        "ich": "habe gegeben",
-        "du": "hast gegeben",
-        "er": "hat gegeben",
-        "wir": "haben gegeben",
-        "ihr": "habt gegeben",
-        "sie": "haben gegeben"
-      },
-      "konjunktiv2": {
-        "ich": "gäbe",
-        "du": "gäbest",
-        "er": "gäbe",
-        "wir": "gäben",
-        "ihr": "gäbet",
-        "sie": "gäben"
-      }
-    },
-    "exceptions": [
-      "du/er: e→i (gibst, gibt)"
+    "reflexiv": false,
+    "kasus": [
+      "akkusativ"
     ],
+    "stems": {
+      "prasens": {
+        "ich": "spreche",
+        "du": "sprichst",
+        "er": "spricht",
+        "wir": "sprechen",
+        "ihr": "sprecht",
+        "sie": "sprechen"
+      },
+      "prateritum": "sprach",
+      "partizip2": "gesprochen",
+      "konjunktiv2": "spräche"
+    },
     "exceptionForms": [
       "prasens-du",
       "prasens-er"
     ],
+    "exceptions": [
+      "Vowel change e→i in Präsens (du/er/sie/es)."
+    ],
+    "usage": [
+      {
+        "de": "Ich spreche Deutsch.",
+        "en": "I speak German."
+      },
+      {
+        "de": "Sie sprechen Englisch.",
+        "en": "They speak English."
+      }
+    ]
+  },
+  {
+    "id": "lesen",
+    "level": "A1",
+    "type": "verb",
+    "theme": [
+      "education",
+      "learning_actions"
+    ],
+    "german": "lesen",
+    "english": "to read",
+    "patternLabel": "Stark (strong)",
+    "patternColor": "strong",
+    "auxiliary": "haben",
+    "reflexiv": false,
     "kasus": [
-      "akkusativ",
+      "akkusativ"
+    ],
+    "stems": {
+      "prasens": {
+        "ich": "lese",
+        "du": "liest",
+        "er": "liest",
+        "wir": "lesen",
+        "ihr": "lest",
+        "sie": "lesen"
+      },
+      "prateritum": "las",
+      "partizip2": "gelesen",
+      "konjunktiv2": "läse"
+    },
+    "exceptionForms": [
+      "prasens-du",
+      "prasens-er"
+    ],
+    "exceptions": [
+      "Vowel change e→ie in Präsens (du/er/sie/es)."
+    ],
+    "usage": [
+      {
+        "de": "Ich lese die Zeitung.",
+        "en": "I read the newspaper."
+      },
+      {
+        "de": "Er liest ein Buch.",
+        "en": "He reads a book."
+      }
+    ]
+  },
+  {
+    "id": "finden",
+    "level": "A1",
+    "type": "verb",
+    "theme": [
+      "daily_life",
+      "shopping"
+    ],
+    "german": "finden",
+    "english": "to find",
+    "patternLabel": "Stark (strong)",
+    "patternColor": "strong",
+    "auxiliary": "haben",
+    "reflexiv": false,
+    "kasus": [
+      "akkusativ"
+    ],
+    "stems": {
+      "prasens": {
+        "ich": "finde",
+        "du": "findest",
+        "er": "findet",
+        "wir": "finden",
+        "ihr": "findet",
+        "sie": "finden"
+      },
+      "prateritum": "fand",
+      "partizip2": "gefunden",
+      "konjunktiv2": "fände"
+    },
+    "exceptionForms": [],
+    "exceptions": [],
+    "usage": [
+      {
+        "de": "Wo finde ich Spinat?",
+        "en": "Where can I find spinach?"
+      },
+      {
+        "de": "Ich finde den Laden schnell.",
+        "en": "I find the shop quickly."
+      }
+    ]
+  },
+  {
+    "id": "gefallen",
+    "level": "A1",
+    "type": "verb",
+    "theme": [
+      "home",
+      "opinions"
+    ],
+    "german": "gefallen",
+    "english": "to please / to like",
+    "patternLabel": "Stark (strong)",
+    "patternColor": "strong",
+    "auxiliary": "haben",
+    "reflexiv": false,
+    "kasus": [
       "dativ"
     ],
-    "reflexiv": false,
-    "preposition": null,
-    "usage": [
-      {
-        "de": "Sie gibt mir das Buch.",
-        "en": "She gives me the book. (Dat + Akk)"
-      },
-      {
-        "de": "Gib mir bitte die Karte.",
-        "en": "Please give me the map."
-      }
-    ]
-  },
-  {
-    "id": "verlieren",
-    "level": "B2",
-    "type": "verb",
-    "theme": "daily_life",
-    "german": "verlieren",
-    "english": "to lose",
-    "patternLabel": "Stark · ie–o–o",
-    "patternColor": "strong",
-    "auxiliary": "haben",
-    "conjugations": {
+    "stems": {
       "prasens": {
-        "ich": "verliere",
-        "du": "verlierst",
-        "er": "verliert",
-        "wir": "verlieren",
-        "ihr": "verliert",
-        "sie": "verlieren"
+        "ich": "gefalle",
+        "du": "gefällst",
+        "er": "gefällt",
+        "wir": "gefallen",
+        "ihr": "gefallt",
+        "sie": "gefallen"
       },
-      "prateritum": {
-        "ich": "verlor",
-        "du": "verlorst",
-        "er": "verlor",
-        "wir": "verloren",
-        "ihr": "verlort",
-        "sie": "verloren"
-      },
-      "perfekt": {
-        "ich": "habe verloren",
-        "du": "hast verloren",
-        "er": "hat verloren",
-        "wir": "haben verloren",
-        "ihr": "habt verloren",
-        "sie": "haben verloren"
-      },
-      "konjunktiv2": {
-        "ich": "verlöre",
-        "du": "verlörest",
-        "er": "verlöre",
-        "wir": "verlören",
-        "ihr": "verlöret",
-        "sie": "verlören"
-      }
+      "prateritum": "gefiel",
+      "partizip2": "gefallen",
+      "konjunktiv2": "gefiele"
     },
-    "exceptions": [
-      "Präteritum: ie→o",
-      "Inseparable ver- — no ge- in Partizip"
-    ],
-    "exceptionForms": [
-      "prateritum-all"
-    ],
-    "kasus": [
-      "akkusativ"
-    ],
-    "reflexiv": false,
-    "preposition": null,
-    "usage": [
-      {
-        "de": "Ich habe meinen Schlüssel verloren.",
-        "en": "I have lost my key."
-      },
-      {
-        "de": "Das Team verlor das Spiel.",
-        "en": "The team lost the game."
-      }
-    ]
-  },
-  {
-    "id": "verstehen",
-    "level": "B1",
-    "type": "verb",
-    "theme": "communication",
-    "german": "verstehen",
-    "english": "to understand",
-    "patternLabel": "Stark · e–a–a",
-    "patternColor": "strong",
-    "auxiliary": "haben",
-    "conjugations": {
-      "prasens": {
-        "ich": "verstehe",
-        "du": "verstehst",
-        "er": "versteht",
-        "wir": "verstehen",
-        "ihr": "versteht",
-        "sie": "verstehen"
-      },
-      "prateritum": {
-        "ich": "verstand",
-        "du": "verstandst",
-        "er": "verstand",
-        "wir": "verstanden",
-        "ihr": "verstandet",
-        "sie": "verstanden"
-      },
-      "perfekt": {
-        "ich": "habe verstanden",
-        "du": "hast verstanden",
-        "er": "hat verstanden",
-        "wir": "haben verstanden",
-        "ihr": "habt verstanden",
-        "sie": "haben verstanden"
-      },
-      "konjunktiv2": {
-        "ich": "verstünde",
-        "du": "verstündest",
-        "er": "verstünde",
-        "wir": "verstünden",
-        "ihr": "verstündet",
-        "sie": "verstünden"
-      }
-    },
-    "exceptions": [
-      "Inseparable ver- — no ge- in Partizip",
-      "Präteritum: e→a"
-    ],
-    "exceptionForms": [
-      "prateritum-all"
-    ],
-    "kasus": [
-      "akkusativ"
-    ],
-    "reflexiv": false,
-    "preposition": null,
-    "usage": [
-      {
-        "de": "Ich verstehe die Aufgabe nicht.",
-        "en": "I don't understand the task."
-      },
-      {
-        "de": "Hast du mich verstanden?",
-        "en": "Did you understand me?"
-      }
-    ]
-  },
-  {
-    "id": "tragen",
-    "level": "B1",
-    "type": "verb",
-    "theme": "daily_life",
-    "german": "tragen",
-    "english": "to carry / to wear",
-    "patternLabel": "Stark · a–u–a",
-    "patternColor": "strong",
-    "auxiliary": "haben",
-    "conjugations": {
-      "prasens": {
-        "ich": "trage",
-        "du": "trägst",
-        "er": "trägt",
-        "wir": "tragen",
-        "ihr": "tragt",
-        "sie": "tragen"
-      },
-      "prateritum": {
-        "ich": "trug",
-        "du": "trugst",
-        "er": "trug",
-        "wir": "trugen",
-        "ihr": "trugt",
-        "sie": "trugen"
-      },
-      "perfekt": {
-        "ich": "habe getragen",
-        "du": "hast getragen",
-        "er": "hat getragen",
-        "wir": "haben getragen",
-        "ihr": "habt getragen",
-        "sie": "haben getragen"
-      },
-      "konjunktiv2": {
-        "ich": "trüge",
-        "du": "trügest",
-        "er": "trüge",
-        "wir": "trügen",
-        "ihr": "trüget",
-        "sie": "trügen"
-      }
-    },
-    "exceptions": [
-      "du/er Präsens: Umlaut ä (trägst, trägt)",
-      "Präteritum: a→u"
-    ],
     "exceptionForms": [
       "prasens-du",
-      "prasens-er",
-      "prateritum-all"
+      "prasens-er"
     ],
-    "kasus": [
-      "akkusativ"
+    "exceptions": [
+      "Vowel change a→ä in Präsens (du/er/sie/es). Often used with dative."
     ],
-    "reflexiv": false,
-    "preposition": null,
     "usage": [
       {
-        "de": "Er trägt eine schwere Tasche.",
-        "en": "He is carrying a heavy bag."
+        "de": "Der Teppich gefällt mir.",
+        "en": "I like the carpet."
       },
       {
-        "de": "Sie trägt heute ein rotes Kleid.",
-        "en": "She is wearing a red dress today."
+        "de": "Wie gefällt dir die Lampe?",
+        "en": "How do you like the lamp?"
       }
     ]
   },
   {
-    "id": "werfen",
-    "level": "B2",
+    "id": "fahren",
+    "level": "A1",
     "type": "verb",
-    "theme": "sport",
-    "german": "werfen",
-    "english": "to throw",
-    "patternLabel": "Stark · e–i–a",
-    "patternColor": "strong",
-    "auxiliary": "haben",
-    "conjugations": {
-      "prasens": {
-        "ich": "werfe",
-        "du": "wirfst",
-        "er": "wirft",
-        "wir": "werfen",
-        "ihr": "werft",
-        "sie": "werfen"
-      },
-      "prateritum": {
-        "ich": "warf",
-        "du": "warfst",
-        "er": "warf",
-        "wir": "warfen",
-        "ihr": "warft",
-        "sie": "warfen"
-      },
-      "perfekt": {
-        "ich": "habe geworfen",
-        "du": "hast geworfen",
-        "er": "hat geworfen",
-        "wir": "haben geworfen",
-        "ihr": "habt geworfen",
-        "sie": "haben geworfen"
-      },
-      "konjunktiv2": {
-        "ich": "würfe",
-        "du": "würfest",
-        "er": "würfe",
-        "wir": "würfen",
-        "ihr": "würfet",
-        "sie": "würfen"
-      }
-    },
-    "exceptions": [
-      "du/er: e→i (wirfst, wirft)",
-      "Präteritum: e→a"
+    "theme": [
+      "transport",
+      "daily_routine"
     ],
+    "german": "fahren",
+    "english": "to drive / go by transport",
+    "patternLabel": "Stark (strong)",
+    "patternColor": "strong",
+    "auxiliary": "sein",
+    "reflexiv": false,
+    "kasus": [],
+    "stems": {
+      "prasens": {
+        "ich": "fahre",
+        "du": "fährst",
+        "er": "fährt",
+        "wir": "fahren",
+        "ihr": "fahrt",
+        "sie": "fahren"
+      },
+      "prateritum": "fuhr",
+      "partizip2": "gefahren",
+      "konjunktiv2": "führe"
+    },
     "exceptionForms": [
       "prasens-du",
-      "prasens-er",
-      "prateritum-all"
+      "prasens-er"
     ],
-    "kasus": [
-      "akkusativ"
+    "exceptions": [
+      "Vowel change a→ä in Präsens (du/er/sie/es). Uses sein in Perfekt."
     ],
-    "reflexiv": false,
-    "preposition": null,
     "usage": [
       {
-        "de": "Er wirft den Ball.",
-        "en": "He throws the ball."
+        "de": "Ich fahre zur Arbeit.",
+        "en": "I go to work."
       },
       {
-        "de": "Sie hat einen Blick auf ihn geworfen.",
-        "en": "She threw a glance at him."
+        "de": "Er fährt mit dem Bus.",
+        "en": "He goes by bus."
       }
     ]
   },
   {
-    "id": "ziehen",
-    "level": "B2",
+    "id": "gehen",
+    "level": "A1",
     "type": "verb",
-    "theme": "movement",
-    "german": "ziehen",
-    "english": "to pull / to move (house)",
-    "patternLabel": "Stark · ie–o–o",
+    "theme": [
+      "movement",
+      "daily_routine"
+    ],
+    "german": "gehen",
+    "english": "to go",
+    "patternLabel": "Stark (strong)",
     "patternColor": "strong",
-    "auxiliary": "haben / sein",
-    "conjugations": {
+    "auxiliary": "sein",
+    "reflexiv": false,
+    "kasus": [],
+    "stems": {
       "prasens": {
-        "ich": "ziehe",
-        "du": "ziehst",
-        "er": "zieht",
-        "wir": "ziehen",
-        "ihr": "zieht",
-        "sie": "ziehen"
+        "ich": "gehe",
+        "du": "gehst",
+        "er": "geht",
+        "wir": "gehen",
+        "ihr": "geht",
+        "sie": "gehen"
       },
-      "prateritum": {
-        "ich": "zog",
-        "du": "zogst",
-        "er": "zog",
-        "wir": "zogen",
-        "ihr": "zogt",
-        "sie": "zogen"
-      },
-      "perfekt": {
-        "ich": "habe gezogen / bin gezogen",
-        "du": "hast gezogen / bist gezogen",
-        "er": "hat gezogen / ist gezogen",
-        "wir": "haben gezogen / sind gezogen",
-        "ihr": "habt gezogen / seid gezogen",
-        "sie": "haben gezogen / sind gezogen"
-      },
-      "konjunktiv2": {
-        "ich": "zöge",
-        "du": "zögest",
-        "er": "zöge",
-        "wir": "zögen",
-        "ihr": "zöget",
-        "sie": "zögen"
-      }
+      "prateritum": "ging",
+      "partizip2": "gegangen",
+      "konjunktiv2": "ginge"
     },
+    "exceptionForms": [],
     "exceptions": [
-      "Präteritum: ie→o",
-      "Dual auxiliary: haben (to pull) / sein (to move house)"
+      "Uses sein in Perfekt."
     ],
-    "exceptionForms": [
-      "prateritum-all"
+    "usage": [
+      {
+        "de": "Ich gehe zur Arbeit.",
+        "en": "I go to work."
+      },
+      {
+        "de": "Wir gehen ins Kino.",
+        "en": "We go to the cinema."
+      }
+    ]
+  },
+  {
+    "id": "kommen",
+    "level": "A1",
+    "type": "verb",
+    "theme": [
+      "movement",
+      "introductions"
     ],
+    "german": "kommen",
+    "english": "to come",
+    "patternLabel": "Stark (strong)",
+    "patternColor": "strong",
+    "auxiliary": "sein",
+    "reflexiv": false,
+    "kasus": [],
+    "stems": {
+      "prasens": {
+        "ich": "komme",
+        "du": "kommst",
+        "er": "kommt",
+        "wir": "kommen",
+        "ihr": "kommt",
+        "sie": "kommen"
+      },
+      "prateritum": "kam",
+      "partizip2": "gekommen",
+      "konjunktiv2": "käme"
+    },
+    "exceptionForms": [],
+    "exceptions": [
+      "Uses sein in Perfekt."
+    ],
+    "usage": [
+      {
+        "de": "Ich komme aus Deutschland.",
+        "en": "I come from Germany."
+      },
+      {
+        "de": "Er kommt morgen.",
+        "en": "He comes tomorrow."
+      }
+    ]
+  },
+  {
+    "id": "nehmen",
+    "level": "A1",
+    "type": "verb",
+    "theme": [
+      "daily_life",
+      "transport"
+    ],
+    "german": "nehmen",
+    "english": "to take",
+    "patternLabel": "Stark (strong)",
+    "patternColor": "strong",
+    "auxiliary": "haben",
+    "reflexiv": false,
     "kasus": [
       "akkusativ"
     ],
-    "reflexiv": false,
-    "preposition": null,
+    "stems": {
+      "prasens": {
+        "ich": "nehme",
+        "du": "nimmst",
+        "er": "nimmt",
+        "wir": "nehmen",
+        "ihr": "nehmt",
+        "sie": "nehmen"
+      },
+      "prateritum": "nahm",
+      "partizip2": "genommen",
+      "konjunktiv2": "nähme"
+    },
+    "exceptionForms": [
+      "prasens-du",
+      "prasens-er"
+    ],
+    "exceptions": [
+      "Vowel change e→i in Präsens (du/er/sie/es)."
+    ],
     "usage": [
       {
-        "de": "Zieh die Tür zu!",
-        "en": "Pull the door shut!"
+        "de": "Ich nehme den Bus.",
+        "en": "I take the bus."
       },
       {
-        "de": "Wir sind nach Berlin gezogen.",
-        "en": "We moved to Berlin. (sein)"
+        "de": "Sie nimmt ein Taxi.",
+        "en": "She takes a taxi."
+      }
+    ]
+  },
+  {
+    "id": "helfen",
+    "level": "A1",
+    "type": "verb",
+    "theme": [
+      "communication",
+      "daily_life"
+    ],
+    "german": "helfen",
+    "english": "to help",
+    "patternLabel": "Stark (strong)",
+    "patternColor": "strong",
+    "auxiliary": "haben",
+    "reflexiv": false,
+    "kasus": [
+      "dativ"
+    ],
+    "stems": {
+      "prasens": {
+        "ich": "helfe",
+        "du": "hilfst",
+        "er": "hilft",
+        "wir": "helfen",
+        "ihr": "helft",
+        "sie": "helfen"
+      },
+      "prateritum": "half",
+      "partizip2": "geholfen",
+      "konjunktiv2": "hülfe"
+    },
+    "exceptionForms": [
+      "prasens-du",
+      "prasens-er"
+    ],
+    "exceptions": [
+      "Vowel change e→i in Präsens (du/er/sie/es). Takes dative object."
+    ],
+    "usage": [
+      {
+        "de": "Ich helfe dir gern.",
+        "en": "I help you gladly."
+      },
+      {
+        "de": "Kann ich Ihnen helfen?",
+        "en": "Can I help you?"
+      }
+    ]
+  },
+  {
+    "id": "treffen",
+    "level": "A1",
+    "type": "verb",
+    "theme": [
+      "social",
+      "leisure"
+    ],
+    "german": "treffen",
+    "english": "to meet",
+    "patternLabel": "Stark (strong)",
+    "patternColor": "strong",
+    "auxiliary": "haben",
+    "reflexiv": false,
+    "kasus": [
+      "akkusativ"
+    ],
+    "stems": {
+      "prasens": {
+        "ich": "treffe",
+        "du": "triffst",
+        "er": "trifft",
+        "wir": "treffen",
+        "ihr": "trefft",
+        "sie": "treffen"
+      },
+      "prateritum": "traf",
+      "partizip2": "getroffen",
+      "konjunktiv2": "träfe"
+    },
+    "exceptionForms": [
+      "prasens-du",
+      "prasens-er"
+    ],
+    "exceptions": [
+      "Vowel change e→i in Präsens (du/er/sie/es)."
+    ],
+    "usage": [
+      {
+        "de": "Ich treffe meine Freunde.",
+        "en": "I meet my friends."
+      },
+      {
+        "de": "Wir treffen uns am Abend.",
+        "en": "We meet in the evening."
+      }
+    ]
+  },
+  {
+    "id": "essen",
+    "level": "A1",
+    "type": "verb",
+    "theme": [
+      "food",
+      "daily_routine"
+    ],
+    "german": "essen",
+    "english": "to eat",
+    "patternLabel": "Stark (strong)",
+    "patternColor": "strong",
+    "auxiliary": "haben",
+    "reflexiv": false,
+    "kasus": [
+      "akkusativ"
+    ],
+    "stems": {
+      "prasens": {
+        "ich": "esse",
+        "du": "isst",
+        "er": "isst",
+        "wir": "essen",
+        "ihr": "esst",
+        "sie": "essen"
+      },
+      "prateritum": "aß",
+      "partizip2": "gegessen",
+      "konjunktiv2": "äße"
+    },
+    "exceptionForms": [
+      "prasens-du",
+      "prasens-er"
+    ],
+    "exceptions": [
+      "Vowel change e→i in Präsens (du/er/sie/es)."
+    ],
+    "usage": [
+      {
+        "de": "Sofia isst mit Lara und Lili.",
+        "en": "Sofia eats with Lara and Lili."
+      },
+      {
+        "de": "Ich esse gern Pizza.",
+        "en": "I like eating pizza."
+      }
+    ]
+  },
+  {
+    "id": "sehen",
+    "level": "A1",
+    "type": "verb",
+    "theme": [
+      "daily_life",
+      "media"
+    ],
+    "german": "sehen",
+    "english": "to see",
+    "patternLabel": "Stark (strong)",
+    "patternColor": "strong",
+    "auxiliary": "haben",
+    "reflexiv": false,
+    "kasus": [
+      "akkusativ"
+    ],
+    "stems": {
+      "prasens": {
+        "ich": "sehe",
+        "du": "siehst",
+        "er": "sieht",
+        "wir": "sehen",
+        "ihr": "seht",
+        "sie": "sehen"
+      },
+      "prateritum": "sah",
+      "partizip2": "gesehen",
+      "konjunktiv2": "sähe"
+    },
+    "exceptionForms": [
+      "prasens-du",
+      "prasens-er"
+    ],
+    "exceptions": [
+      "Vowel change e→ie in Präsens (du/er/sie/es)."
+    ],
+    "usage": [
+      {
+        "de": "Sie sieht fern.",
+        "en": "She watches TV."
+      },
+      {
+        "de": "Ich sehe das Haus.",
+        "en": "I see the house."
+      }
+    ]
+  },
+  {
+    "id": "schlafen",
+    "level": "A1",
+    "type": "verb",
+    "theme": [
+      "daily_routine"
+    ],
+    "german": "schlafen",
+    "english": "to sleep",
+    "patternLabel": "Stark (strong)",
+    "patternColor": "strong",
+    "auxiliary": "haben",
+    "reflexiv": false,
+    "kasus": [],
+    "stems": {
+      "prasens": {
+        "ich": "schlafe",
+        "du": "schläfst",
+        "er": "schläft",
+        "wir": "schlafen",
+        "ihr": "schlaft",
+        "sie": "schlafen"
+      },
+      "prateritum": "schlief",
+      "partizip2": "geschlafen",
+      "konjunktiv2": "schliefe"
+    },
+    "exceptionForms": [
+      "prasens-du",
+      "prasens-er"
+    ],
+    "exceptions": [
+      "Vowel change a→ä in Präsens (du/er/sie/es)."
+    ],
+    "usage": [
+      {
+        "de": "Schläfst du schon?",
+        "en": "Are you already sleeping?"
+      },
+      {
+        "de": "Ich schlafe am Wochenende lange.",
+        "en": "I sleep a long time at the weekend."
       }
     ]
   },
   {
     "id": "scheinen",
-    "level": "B2",
+    "level": "A1",
     "type": "verb",
-    "theme": "nature",
+    "theme": [
+      "weather"
+    ],
     "german": "scheinen",
-    "english": "to shine / to seem",
-    "patternLabel": "Stark · ei–ie–ie",
+    "english": "to shine",
+    "patternLabel": "Stark (strong)",
     "patternColor": "strong",
     "auxiliary": "haben",
-    "conjugations": {
+    "reflexiv": false,
+    "kasus": [],
+    "stems": {
       "prasens": {
         "ich": "scheine",
         "du": "scheinst",
@@ -768,49 +657,106 @@
         "ihr": "scheint",
         "sie": "scheinen"
       },
-      "prateritum": {
-        "ich": "schien",
-        "du": "schienst",
-        "er": "schien",
-        "wir": "schienen",
-        "ihr": "schient",
-        "sie": "schienen"
-      },
-      "perfekt": {
-        "ich": "habe geschienen",
-        "du": "hast geschienen",
-        "er": "hat geschienen",
-        "wir": "haben geschienen",
-        "ihr": "habt geschienen",
-        "sie": "haben geschienen"
-      },
-      "konjunktiv2": {
-        "ich": "schiene",
-        "du": "schienest",
-        "er": "schiene",
-        "wir": "schienen",
-        "ihr": "schienet",
-        "sie": "schienen"
-      }
+      "prateritum": "schien",
+      "partizip2": "geschienen",
+      "konjunktiv2": "schiene"
     },
-    "exceptions": [
-      "Präteritum: ei→ie",
-      "Same pattern as schreiben, bleiben"
-    ],
-    "exceptionForms": [
-      "prateritum-all"
-    ],
-    "kasus": [],
-    "reflexiv": false,
-    "preposition": null,
+    "exceptionForms": [],
+    "exceptions": [],
     "usage": [
       {
-        "de": "Die Sonne scheint heute.",
-        "en": "The sun is shining today."
+        "de": "Die Sonne scheint.",
+        "en": "The sun is shining."
       },
       {
-        "de": "Es scheint, dass er krank ist.",
-        "en": "It seems that he is sick."
+        "de": "Heute scheint die Sonne überall.",
+        "en": "Today the sun shines everywhere."
+      }
+    ]
+  },
+  {
+    "id": "steigen",
+    "level": "A1",
+    "type": "verb",
+    "theme": [
+      "weather",
+      "measurements"
+    ],
+    "german": "steigen",
+    "english": "to rise / increase",
+    "patternLabel": "Stark (strong)",
+    "patternColor": "strong",
+    "auxiliary": "sein",
+    "reflexiv": false,
+    "kasus": [],
+    "stems": {
+      "prasens": {
+        "ich": "steige",
+        "du": "steigst",
+        "er": "steigt",
+        "wir": "steigen",
+        "ihr": "steigt",
+        "sie": "steigen"
+      },
+      "prateritum": "stieg",
+      "partizip2": "gestiegen",
+      "konjunktiv2": "stiege"
+    },
+    "exceptionForms": [],
+    "exceptions": [
+      "Uses sein in Perfekt."
+    ],
+    "usage": [
+      {
+        "de": "Die Temperaturen steigen auf 20 Grad.",
+        "en": "The temperatures rise to 20 degrees."
+      },
+      {
+        "de": "Die Preise steigen.",
+        "en": "The prices are rising."
+      }
+    ]
+  },
+  {
+    "id": "schwimmen",
+    "level": "A1",
+    "type": "verb",
+    "theme": [
+      "sports",
+      "leisure"
+    ],
+    "german": "schwimmen",
+    "english": "to swim",
+    "patternLabel": "Stark (strong)",
+    "patternColor": "strong",
+    "auxiliary": "sein",
+    "reflexiv": false,
+    "kasus": [],
+    "stems": {
+      "prasens": {
+        "ich": "schwimme",
+        "du": "schwimmst",
+        "er": "schwimmt",
+        "wir": "schwimmen",
+        "ihr": "schwimmt",
+        "sie": "schwimmen"
+      },
+      "prateritum": "schwamm",
+      "partizip2": "geschwommen",
+      "konjunktiv2": "schwömme"
+    },
+    "exceptionForms": [],
+    "exceptions": [
+      "Uses sein in Perfekt."
+    ],
+    "usage": [
+      {
+        "de": "Ich schwimme viel.",
+        "en": "I swim a lot."
+      },
+      {
+        "de": "Wir schwimmen im Sommer im See.",
+        "en": "We swim in the lake in summer."
       }
     ]
   },
@@ -818,15 +764,20 @@
     "id": "raten",
     "level": "A1",
     "type": "verb",
-    "theme": "classroom",
+    "theme": [
+      "education",
+      "learning_actions"
+    ],
     "german": "raten",
     "english": "to guess",
     "patternLabel": "Stark (strong)",
     "patternColor": "strong",
     "auxiliary": "haben",
     "reflexiv": false,
-    "kasus": [],
-    "conjugations": {
+    "kasus": [
+      "akkusativ"
+    ],
+    "stems": {
       "prasens": {
         "ich": "rate",
         "du": "rätst",
@@ -835,105 +786,25 @@
         "ihr": "ratet",
         "sie": "raten"
       },
-      "prateritum": {
-        "ich": "riet",
-        "du": "rietest",
-        "er": "riet",
-        "wir": "rieten",
-        "ihr": "rietet",
-        "sie": "rieten"
-      },
-      "perfekt": {
-        "ich": "habe geraten",
-        "du": "hast geraten",
-        "er": "hat geraten",
-        "wir": "haben geraten",
-        "ihr": "habt geraten",
-        "sie": "haben geraten"
-      },
-      "konjunktiv2": {
-        "ich": "riete",
-        "du": "rietest",
-        "er": "riete",
-        "wir": "rieten",
-        "ihr": "rietet",
-        "sie": "rieten"
-      }
+      "prateritum": "riet",
+      "partizip2": "geraten",
+      "konjunktiv2": "riete"
     },
     "exceptionForms": [
-      "rätst",
-      "rät"
+      "prasens-du",
+      "prasens-er"
     ],
     "exceptions": [
-      "a→ä umlaut in 2nd and 3rd person singular present"
+      "Vowel change a→ä in Präsens (du/er/sie/es)."
     ],
     "usage": [
+      {
+        "de": "Raten Sie.",
+        "en": "Guess."
+      },
       {
         "de": "Raten Sie Wörter aus der Lektion.",
         "en": "Guess words from the lesson."
-      },
-      {
-        "de": "Ich rate: Das ist ein Bild.",
-        "en": "I guess: That is a picture."
-      }
-    ]
-  },
-  {
-    "id": "heissen",
-    "level": "A1",
-    "type": "verb",
-    "theme": "greetings",
-    "german": "heißen",
-    "english": "to be called, to be named",
-    "patternLabel": "Stark (strong)",
-    "patternColor": "strong",
-    "auxiliary": "haben",
-    "reflexiv": false,
-    "kasus": [],
-    "conjugations": {
-      "prasens": {
-        "ich": "heiße",
-        "du": "heißt",
-        "er": "heißt",
-        "wir": "heißen",
-        "ihr": "heißt",
-        "sie": "heißen"
-      },
-      "prateritum": {
-        "ich": "hieß",
-        "du": "hießt",
-        "er": "hieß",
-        "wir": "hießen",
-        "ihr": "hießt",
-        "sie": "hießen"
-      },
-      "perfekt": {
-        "ich": "habe geheißen",
-        "du": "hast geheißen",
-        "er": "hat geheißen",
-        "wir": "haben geheißen",
-        "ihr": "habt geheißen",
-        "sie": "haben geheißen"
-      },
-      "konjunktiv2": {
-        "ich": "hieße",
-        "du": "hießest",
-        "er": "hieße",
-        "wir": "hießen",
-        "ihr": "hießet",
-        "sie": "hießen"
-      }
-    },
-    "exceptionForms": [],
-    "exceptions": [],
-    "usage": [
-      {
-        "de": "Ich heiße Lara Nowak.",
-        "en": "My name is Lara Nowak."
-      },
-      {
-        "de": "Wie heißen Sie?",
-        "en": "What is your name?"
       }
     ]
   }

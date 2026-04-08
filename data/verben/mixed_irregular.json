@@ -3,208 +3,371 @@
     "id": "sein",
     "level": "A1",
     "type": "verb",
-    "theme": "core",
+    "theme": ["basic_verbs"],
     "german": "sein",
     "english": "to be",
-    "patternLabel": "Unregelmäßig · suppletive",
+    "patternLabel": "Irregular",
     "patternColor": "mixed",
     "auxiliary": "sein",
-    "conjugations": {
-      "prasens":     { "ich": "bin",    "du": "bist",   "er": "ist",    "wir": "sind",   "ihr": "seid",   "sie": "sind"   },
-      "prateritum":  { "ich": "war",    "du": "warst",  "er": "war",    "wir": "waren",  "ihr": "wart",   "sie": "waren"  },
-      "perfekt":     { "ich": "bin gewesen",  "du": "bist gewesen",  "er": "ist gewesen",  "wir": "sind gewesen",  "ihr": "seid gewesen",  "sie": "sind gewesen"  },
-      "konjunktiv2": { "ich": "wäre",   "du": "wärst",  "er": "wäre",   "wir": "wären",  "ihr": "wäret",  "sie": "wären"  }
-    },
-    "exceptions": ["Completely suppletive — sein / war / gewesen are three unrelated stems"],
-    "exceptionForms": ["prasens-all", "prateritum-all"],
-    "kasus": [],
     "reflexiv": false,
-    "preposition": null,
+    "kasus": [],
+    "conjugations": {
+      "prasens": {
+        "ich": "bin",
+        "du": "bist",
+        "er": "ist",
+        "wir": "sind",
+        "ihr": "seid",
+        "sie": "sind"
+      },
+      "prateritum": {
+        "ich": "war",
+        "du": "warst",
+        "er": "war",
+        "wir": "waren",
+        "ihr": "wart",
+        "sie": "waren"
+      },
+      "perfekt": {
+        "ich": "bin gewesen",
+        "du": "bist gewesen",
+        "er": "ist gewesen",
+        "wir": "sind gewesen",
+        "ihr": "seid gewesen",
+        "sie": "sind gewesen"
+      },
+      "konjunktiv2": {
+        "ich": "wäre",
+        "du": "wärst",
+        "er": "wäre",
+        "wir": "wären",
+        "ihr": "wärt",
+        "sie": "wären"
+      }
+    },
+    "exceptionForms": ["all"],
+    "exceptions": ["Highly irregular verb — must be memorized."],
     "usage": [
-      { "de": "Ich bin müde.", "en": "I am tired." },
-      { "de": "Er war gestern hier.", "en": "He was here yesterday." }
+      {"de": "Ich bin Student.", "en": "I am a student."},
+      {"de": "Wir sind ein Team.", "en": "We are a team."}
     ]
   },
   {
     "id": "haben",
     "level": "A1",
     "type": "verb",
-    "theme": "core",
+    "theme": ["basic_verbs"],
     "german": "haben",
     "english": "to have",
-    "patternLabel": "Unregelmäßig · haben-type",
+    "patternLabel": "Irregular",
     "patternColor": "mixed",
     "auxiliary": "haben",
-    "conjugations": {
-      "prasens":     { "ich": "habe",   "du": "hast",    "er": "hat",    "wir": "haben",  "ihr": "habt",   "sie": "haben"  },
-      "prateritum":  { "ich": "hatte",  "du": "hattest", "er": "hatte",  "wir": "hatten", "ihr": "hattet", "sie": "hatten" },
-      "perfekt":     { "ich": "habe gehabt",  "du": "hast gehabt",  "er": "hat gehabt",  "wir": "haben gehabt",  "ihr": "habt gehabt",  "sie": "haben gehabt"  },
-      "konjunktiv2": { "ich": "hätte",  "du": "hättest", "er": "hätte",  "wir": "hätten", "ihr": "hättet", "sie": "hätten" }
-    },
-    "exceptions": ["du/er: hab→ha (hast, hat)", "Präteritum: hatte (not *habte)"],
-    "exceptionForms": ["prasens-du", "prasens-er"],
+    "reflexiv": false,
     "kasus": ["akkusativ"],
-    "reflexiv": false,
-    "preposition": null,
-    "usage": [
-      { "de": "Ich habe einen Hund.", "en": "I have a dog." },
-      { "de": "Sie hatte keine Zeit.", "en": "She had no time." }
-    ]
-  },
-  {
-    "id": "gehen",
-    "level": "A1",
-    "type": "verb",
-    "theme": "movement",
-    "german": "gehen",
-    "english": "to go",
-    "patternLabel": "Unregelmäßig · ging-",
-    "patternColor": "mixed",
-    "auxiliary": "sein",
     "conjugations": {
-      "prasens":     { "ich": "gehe",  "du": "gehst",  "er": "geht",  "wir": "gehen",  "ihr": "geht",   "sie": "gehen"  },
-      "prateritum":  { "ich": "ging",  "du": "gingst", "er": "ging",  "wir": "gingen", "ihr": "gingt",  "sie": "gingen" },
-      "perfekt":     { "ich": "bin gegangen",  "du": "bist gegangen",  "er": "ist gegangen",  "wir": "sind gegangen",  "ihr": "seid gegangen",  "sie": "sind gegangen"  },
-      "konjunktiv2": { "ich": "ginge", "du": "gingest","er": "ginge", "wir": "gingen", "ihr": "ginget", "sie": "gingen" }
+      "prasens": {
+        "ich": "habe",
+        "du": "hast",
+        "er": "hat",
+        "wir": "haben",
+        "ihr": "habt",
+        "sie": "haben"
+      },
+      "prateritum": {
+        "ich": "hatte",
+        "du": "hattest",
+        "er": "hatte",
+        "wir": "hatten",
+        "ihr": "hattet",
+        "sie": "hatten"
+      },
+      "perfekt": {
+        "ich": "habe gehabt",
+        "du": "hast gehabt",
+        "er": "hat gehabt",
+        "wir": "haben gehabt",
+        "ihr": "habt gehabt",
+        "sie": "haben gehabt"
+      },
+      "konjunktiv2": {
+        "ich": "hätte",
+        "du": "hättest",
+        "er": "hätte",
+        "wir": "hätten",
+        "ihr": "hättet",
+        "sie": "hätten"
+      }
     },
-    "exceptions": ["Präteritum: ging- (completely different stem)", "Auxiliary: sein"],
-    "exceptionForms": ["prateritum-all"],
-    "kasus": [],
-    "reflexiv": false,
-    "preposition": null,
+    "exceptionForms": ["prasens-du", "prasens-er"],
+    "exceptions": ["du hast, er hat — irregular Präsens."],
     "usage": [
-      { "de": "Ich gehe in die Schule.", "en": "I go to school." },
-      { "de": "Wir sind spazieren gegangen.", "en": "We went for a walk." }
+      {"de": "Ich habe Zeit.", "en": "I have time."},
+      {"de": "Wir haben ein Problem.", "en": "We have a problem."}
     ]
   },
   {
     "id": "werden",
-    "level": "B1",
+    "level": "A1",
     "type": "verb",
-    "theme": "core",
+    "theme": ["basic_verbs"],
     "german": "werden",
-    "english": "to become / will (auxiliary)",
-    "patternLabel": "Gemischt · werden-type",
+    "english": "to become",
+    "patternLabel": "Irregular",
     "patternColor": "mixed",
     "auxiliary": "sein",
-    "conjugations": {
-      "prasens":     { "ich": "werde",  "du": "wirst",   "er": "wird",   "wir": "werden",  "ihr": "werdet",  "sie": "werden"  },
-      "prateritum":  { "ich": "wurde",  "du": "wurdest", "er": "wurde",  "wir": "wurden",  "ihr": "wurdet",  "sie": "wurden"  },
-      "perfekt":     { "ich": "bin geworden",  "du": "bist geworden",  "er": "ist geworden",  "wir": "sind geworden",  "ihr": "seid geworden",  "sie": "sind geworden"  },
-      "konjunktiv2": { "ich": "würde",  "du": "würdest", "er": "würde",  "wir": "würden",  "ihr": "würdet",  "sie": "würden"  }
-    },
-    "exceptions": ["du/er irregular: wirst, wird", "Auxiliary: sein", "Konjunktiv II: würde — basis for all Conditional forms"],
-    "exceptionForms": ["prasens-du", "prasens-er"],
-    "kasus": [],
     "reflexiv": false,
-    "preposition": null,
+    "kasus": [],
+    "conjugations": {
+      "prasens": {
+        "ich": "werde",
+        "du": "wirst",
+        "er": "wird",
+        "wir": "werden",
+        "ihr": "werdet",
+        "sie": "werden"
+      },
+      "prateritum": {
+        "ich": "wurde",
+        "du": "wurdest",
+        "er": "wurde",
+        "wir": "wurden",
+        "ihr": "wurdet",
+        "sie": "wurden"
+      },
+      "perfekt": {
+        "ich": "bin geworden",
+        "du": "bist geworden",
+        "er": "ist geworden",
+        "wir": "sind geworden",
+        "ihr": "seid geworden",
+        "sie": "sind geworden"
+      },
+      "konjunktiv2": {
+        "ich": "würde",
+        "du": "würdest",
+        "er": "würde",
+        "wir": "würden",
+        "ihr": "würdet",
+        "sie": "würden"
+      }
+    },
+    "exceptionForms": ["prasens-du", "prasens-er"],
+    "exceptions": ["du wirst, er wird — irregular Präsens."],
     "usage": [
-      { "de": "Er wird Arzt.", "en": "He is becoming a doctor." },
-      { "de": "Sie wird morgen kommen.", "en": "She will come tomorrow." }
+      {"de": "Es wird kalt.", "en": "It becomes cold."},
+      {"de": "Er wird Arzt.", "en": "He becomes a doctor."}
     ]
   },
   {
     "id": "wissen",
-    "level": "A2",
+    "level": "A1",
     "type": "verb",
-    "theme": "thinking",
+    "theme": ["knowledge"],
     "german": "wissen",
     "english": "to know (a fact)",
-    "patternLabel": "Gemischt · modal-like",
+    "patternLabel": "Mixed",
     "patternColor": "mixed",
     "auxiliary": "haben",
-    "conjugations": {
-      "prasens":     { "ich": "weiß",   "du": "weißt",   "er": "weiß",   "wir": "wissen",  "ihr": "wisst",   "sie": "wissen"  },
-      "prateritum":  { "ich": "wusste", "du": "wusstest","er": "wusste", "wir": "wussten", "ihr": "wusstet", "sie": "wussten" },
-      "perfekt":     { "ich": "habe gewusst",  "du": "hast gewusst",  "er": "hat gewusst",  "wir": "haben gewusst",  "ihr": "habt gewusst",  "sie": "haben gewusst"  },
-      "konjunktiv2": { "ich": "wüsste", "du": "wüsstest","er": "wüsste", "wir": "wüssten", "ihr": "wüsstet", "sie": "wüssten" }
-    },
-    "exceptions": ["ich/er use weiß — behaves like a modal in singular", "⚠ wissen = know a fact; kennen = know a person/place"],
-    "exceptionForms": ["prasens-ich", "prasens-er"],
+    "reflexiv": false,
     "kasus": ["akkusativ"],
-    "reflexiv": false,
-    "preposition": null,
-    "usage": [
-      { "de": "Ich weiß die Antwort nicht.", "en": "I don't know the answer." },
-      { "de": "Weißt du, wo er wohnt?", "en": "Do you know where he lives?" }
-    ]
-  },
-  {
-    "id": "bringen",
-    "level": "A2",
-    "type": "verb",
-    "theme": "daily_life",
-    "german": "bringen",
-    "english": "to bring",
-    "patternLabel": "Gemischt · brachte-type",
-    "patternColor": "mixed",
-    "auxiliary": "haben",
     "conjugations": {
-      "prasens":     { "ich": "bringe",  "du": "bringst",  "er": "bringt",  "wir": "bringen",  "ihr": "bringt",   "sie": "bringen"  },
-      "prateritum":  { "ich": "brachte", "du": "brachtest","er": "brachte", "wir": "brachten", "ihr": "brachtet", "sie": "brachten" },
-      "perfekt":     { "ich": "habe gebracht",  "du": "hast gebracht",  "er": "hat gebracht",  "wir": "haben gebracht",  "ihr": "habt gebracht",  "sie": "haben gebracht"  },
-      "konjunktiv2": { "ich": "brächte", "du": "brächtest","er": "brächte", "wir": "brächten", "ihr": "brächtet", "sie": "brächten" }
+      "prasens": {
+        "ich": "weiß",
+        "du": "weißt",
+        "er": "weiß",
+        "wir": "wissen",
+        "ihr": "wisst",
+        "sie": "wissen"
+      },
+      "prateritum": {
+        "ich": "wusste",
+        "du": "wusstest",
+        "er": "wusste",
+        "wir": "wussten",
+        "ihr": "wusstet",
+        "sie": "wussten"
+      },
+      "perfekt": {
+        "ich": "habe gewusst",
+        "du": "hast gewusst",
+        "er": "hat gewusst",
+        "wir": "haben gewusst",
+        "ihr": "habt gewusst",
+        "sie": "haben gewusst"
+      },
+      "konjunktiv2": {
+        "ich": "wüsste",
+        "du": "wüsstest",
+        "er": "wüsste",
+        "wir": "wüssten",
+        "ihr": "wüsstet",
+        "sie": "wüssten"
+      }
     },
-    "exceptions": ["Präteritum: brachte (not *bringte)", "Partizip: gebracht", "Same pattern: denken→dachte, kennen→kannte"],
-    "exceptionForms": ["prateritum-all"],
-    "kasus": ["akkusativ", "dativ"],
-    "reflexiv": false,
-    "preposition": null,
+    "exceptionForms": ["prasens-ich", "prasens-er"],
+    "exceptions": ["ich/er weiß — strong vowel change in Präsens."],
     "usage": [
-      { "de": "Er bringt mir einen Kaffee.", "en": "He brings me a coffee. (Dat + Akk)" },
-      { "de": "Sie hat die Bücher mitgebracht.", "en": "She brought the books along." }
-    ]
-  },
-  {
-    "id": "denken",
-    "level": "B1",
-    "type": "verb",
-    "theme": "thinking",
-    "german": "denken",
-    "english": "to think",
-    "patternLabel": "Gemischt · dachte-type",
-    "patternColor": "mixed",
-    "auxiliary": "haben",
-    "conjugations": {
-      "prasens":     { "ich": "denke",  "du": "denkst",  "er": "denkt",  "wir": "denken",  "ihr": "denkt",   "sie": "denken"  },
-      "prateritum":  { "ich": "dachte", "du": "dachtest","er": "dachte", "wir": "dachten", "ihr": "dachtet", "sie": "dachten" },
-      "perfekt":     { "ich": "habe gedacht",  "du": "hast gedacht",  "er": "hat gedacht",  "wir": "haben gedacht",  "ihr": "habt gedacht",  "sie": "haben gedacht"  },
-      "konjunktiv2": { "ich": "dächte", "du": "dächtest","er": "dächte", "wir": "dächten", "ihr": "dächtet", "sie": "dächten" }
-    },
-    "exceptions": ["Präteritum: dachte (not *denkte)", "Same pattern: bringen→brachte, kennen→kannte"],
-    "exceptionForms": ["prateritum-all"],
-    "kasus": [],
-    "reflexiv": false,
-    "preposition": { "prep": "an", "case": "Akkusativ", "meaning": "to think about sth./sb." },
-    "usage": [
-      { "de": "Ich denke an dich.", "en": "I am thinking about you." },
-      { "de": "Er dachte lange nach.", "en": "He thought for a long time." }
+      {"de": "Ich weiß das.", "en": "I know that."},
+      {"de": "Weißt du die Antwort?", "en": "Do you know the answer?"}
     ]
   },
   {
     "id": "kennen",
-    "level": "A2",
+    "level": "A1",
     "type": "verb",
-    "theme": "social",
+    "theme": ["people", "social"],
     "german": "kennen",
     "english": "to know (a person / place)",
-    "patternLabel": "Gemischt · kannte-type",
+    "patternLabel": "Mixed",
     "patternColor": "mixed",
     "auxiliary": "haben",
-    "conjugations": {
-      "prasens":     { "ich": "kenne",  "du": "kennst",  "er": "kennt",  "wir": "kennen",  "ihr": "kennt",   "sie": "kennen"  },
-      "prateritum":  { "ich": "kannte", "du": "kanntest","er": "kannte", "wir": "kannten", "ihr": "kanntet", "sie": "kannten" },
-      "perfekt":     { "ich": "habe gekannt",  "du": "hast gekannt",  "er": "hat gekannt",  "wir": "haben gekannt",  "ihr": "habt gekannt",  "sie": "haben gekannt"  },
-      "konjunktiv2": { "ich": "kennte", "du": "kenntest","er": "kennte", "wir": "kennten", "ihr": "kenntet", "sie": "kennten" }
-    },
-    "exceptions": ["Präteritum: kannte (not *kennte)", "⚠ kennen = know a person/place; wissen = know a fact"],
-    "exceptionForms": ["prateritum-all"],
-    "kasus": ["akkusativ"],
     "reflexiv": false,
-    "preposition": null,
+    "kasus": ["akkusativ"],
+    "conjugations": {
+      "prasens": {
+        "ich": "kenne",
+        "du": "kennst",
+        "er": "kennt",
+        "wir": "kennen",
+        "ihr": "kennt",
+        "sie": "kennen"
+      },
+      "prateritum": {
+        "ich": "kannte",
+        "du": "kanntest",
+        "er": "kannte",
+        "wir": "kannten",
+        "ihr": "kanntet",
+        "sie": "kannten"
+      },
+      "perfekt": {
+        "ich": "habe gekannt",
+        "du": "hast gekannt",
+        "er": "hat gekannt",
+        "wir": "haben gekannt",
+        "ihr": "habt gekannt",
+        "sie": "haben gekannt"
+      },
+      "konjunktiv2": {
+        "ich": "kennte",
+        "du": "kenntest",
+        "er": "kennte",
+        "wir": "kennten",
+        "ihr": "kenntet",
+        "sie": "kennten"
+      }
+    },
+    "exceptionForms": [],
+    "exceptions": [],
     "usage": [
-      { "de": "Kennst du diesen Mann?", "en": "Do you know this man?" },
-      { "de": "Ich kenne Berlin gut.", "en": "I know Berlin well." }
+      {"de": "Ich kenne ihn.", "en": "I know him."},
+      {"de": "Kennst du Wien?", "en": "Do you know Vienna?"}
+    ]
+  },
+  {
+    "id": "denken",
+    "level": "A1",
+    "type": "verb",
+    "theme": ["thinking"],
+    "german": "denken",
+    "english": "to think",
+    "patternLabel": "Mixed",
+    "patternColor": "mixed",
+    "auxiliary": "haben",
+    "reflexiv": false,
+    "kasus": ["akkusativ"],
+    "conjugations": {
+      "prasens": {
+        "ich": "denke",
+        "du": "denkst",
+        "er": "denkt",
+        "wir": "denken",
+        "ihr": "denkt",
+        "sie": "denken"
+      },
+      "prateritum": {
+        "ich": "dachte",
+        "du": "dachtest",
+        "er": "dachte",
+        "wir": "dachten",
+        "ihr": "dachtet",
+        "sie": "dachten"
+      },
+      "perfekt": {
+        "ich": "habe gedacht",
+        "du": "hast gedacht",
+        "er": "hat gedacht",
+        "wir": "haben gedacht",
+        "ihr": "habt gedacht",
+        "sie": "haben gedacht"
+      },
+      "konjunktiv2": {
+        "ich": "dächte",
+        "du": "dächtest",
+        "er": "dächte",
+        "wir": "dächten",
+        "ihr": "dächtet",
+        "sie": "dächten"
+      }
+    },
+    "exceptionForms": ["prateritum"],
+    "exceptions": ["dachte — vowel change + -te (mixed verb)."],
+    "usage": [
+      {"de": "Ich denke das auch.", "en": "I think that too."},
+      {"de": "Was denkst du?", "en": "What do you think?"}
+    ]
+  },
+  {
+    "id": "bringen",
+    "level": "A1",
+    "type": "verb",
+    "theme": ["daily_life"],
+    "german": "bringen",
+    "english": "to bring",
+    "patternLabel": "Mixed",
+    "patternColor": "mixed",
+    "auxiliary": "haben",
+    "reflexiv": false,
+    "kasus": ["akkusativ", "dativ"],
+    "conjugations": {
+      "prasens": {
+        "ich": "bringe",
+        "du": "bringst",
+        "er": "bringt",
+        "wir": "bringen",
+        "ihr": "bringt",
+        "sie": "bringen"
+      },
+      "prateritum": {
+        "ich": "brachte",
+        "du": "brachtest",
+        "er": "brachte",
+        "wir": "brachten",
+        "ihr": "brachtet",
+        "sie": "brachten"
+      },
+      "perfekt": {
+        "ich": "habe gebracht",
+        "du": "hast gebracht",
+        "er": "hat gebracht",
+        "wir": "haben gebracht",
+        "ihr": "habt gebracht",
+        "sie": "haben gebracht"
+      },
+      "konjunktiv2": {
+        "ich": "brächte",
+        "du": "brächtest",
+        "er": "brächte",
+        "wir": "brächten",
+        "ihr": "brächtet",
+        "sie": "brächten"
+      }
+    },
+    "exceptionForms": ["prateritum"],
+    "exceptions": ["brachte — mixed verb (stem change + -te)."],
+    "usage": [
+      {"de": "Ich bringe dir das Buch.", "en": "I bring you the book."},
+      {"de": "Er bringt seiner Freundin Blumen.", "en": "He brings his girlfriend flowers."}
     ]
   }
 ]

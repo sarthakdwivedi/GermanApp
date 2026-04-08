@@ -432,6 +432,11 @@ function initApp() {
   }
 }
 
+function getThemesArray(w) {
+  if (!w || !w.theme) return [];
+  return Array.isArray(w.theme) ? w.theme.filter(Boolean) : [w.theme];
+}
+
 // ── Filter builders ───────────────────────────────────────────
 function buildPatternFilter() {
   const pool = getPool();
@@ -484,20 +489,26 @@ function buildThemeFilter() {
 
   // Only show themes/categories that have words at this level
   const activeItems = isNomen
-    ? [...new Set(sourceDB
-      .filter(w => currentLevel === 'all' ||
-        (currentLevelMode === 'cumulative'
-          ? LEVELS.indexOf(w.level) <= maxIdx
-          : w.level === currentLevel))
-      .map(w => w.theme).filter(Boolean))]
-      .map(t => ({ val: t, label: THEME_LABELS[t] || t }))
+    ? [...new Set(
+        sourceDB
+          .filter(w =>
+            currentLevel === 'all' ||
+            (currentLevelMode === 'cumulative'
+              ? LEVELS.indexOf(w.level) <= maxIdx
+              : w.level === currentLevel)
+          )
+          .flatMap(w => getThemesArray(w))
+      )]
+        .map(t => ({ val: t, label: THEME_LABELS[t] || t }))
     : ANDERE_FILES
-      .filter(f => sourceDB.some(w => w.andereFile === f &&
-        (currentLevel === 'all' ||
-          (currentLevelMode === 'cumulative'
-            ? LEVELS.indexOf(w.level) <= maxIdx
-            : w.level === currentLevel))))
-      .map(f => ({ val: f, label: ANDERE_CATEGORY_LABELS[f] || f }));
+        .filter(f => sourceDB.some(w =>
+          w.andereFile === f &&
+          (currentLevel === 'all' ||
+            (currentLevelMode === 'cumulative'
+              ? LEVELS.indexOf(w.level) <= maxIdx
+              : w.level === currentLevel))
+        ))
+        .map(f => ({ val: f, label: ANDERE_CATEGORY_LABELS[f] || f }));
 
   const items = [{ val: 'all', label: isNomen ? 'All themes' : 'All' }, ...activeItems];
   const currentVal = isNomen ? currentTheme : currentAndereCategory;
@@ -525,6 +536,7 @@ function showContextualFilter() {
 }
 
 // ── Pool helpers ──────────────────────────────────────────────
+
 function getPool() {
   if (searchPool !== null) return searchPool;
 
@@ -540,12 +552,17 @@ function getPool() {
       pool = pool.filter(w => w.level === currentLevel);
     }
   }
-  if (currentType === 'nomen' && currentTheme !== 'all')
-    pool = pool.filter(w => w.theme === currentTheme);
+
+  if (currentType === 'nomen' && currentTheme !== 'all') {
+    pool = pool.filter(w => getThemesArray(w).includes(currentTheme));
+  }
+
   if (currentType === 'verb' && currentPattern !== 'all')
     pool = pool.filter(w => w.verbFile === currentPattern);
+
   if (currentType === 'andere' && currentAndereCategory !== 'all')
     pool = pool.filter(w => w.andereFile === currentAndereCategory);
+
   if (currentStatusFilter !== 'all') {
     pool = pool.filter(w => getWordStatus(w.id) === currentStatusFilter);
   }
@@ -1273,7 +1290,7 @@ function buildNomenCard(w) {
   const [gbg, gc] = genderStyle(w.article);
   const [pbg, pc] = pluralStyle(w.pluralPattern);
   const favActive = favs.has(w.id);
-  const themeLabel = w.theme ? THEME_LABELS[w.theme] || w.theme : null;
+  const themeLabels = getThemesArray(w).map(t => THEME_LABELS[t] || t);
   const d = w.declension;
 
   const endingSection = w.endingRule
@@ -1310,7 +1327,7 @@ function buildNomenCard(w) {
         <div class="badges">
           <span class="level-badge" style="background:${lbg};color:${lc}">${w.level}</span>
           <span class="type-badge">Nomen</span>
-          ${themeLabel ? `<span class="theme-badge">${themeLabel}</span>` : ''}
+          ${themeLabels.map(label => `<span class="theme-badge">${label}</span>`).join('')}
           <button class="fav-btn${favActive ? ' active' : ''}"
             onclick="toggleFav('${w.id}',this)">${favActive ? '♥' : '♡'}</button>
         </div>
@@ -1851,19 +1868,28 @@ function buildFilterSheetCtx() {
   const isVerb = currentType === 'verb';
   const isNomen = currentType === 'nomen';
   let items = [{ val: 'all', label: 'All' }];
+
   if (isVerb) {
-    items = [{ val: 'all', label: 'All patterns' },
-    ...VERB_FILES.map(f => ({ val: f, label: PATTERN_LABELS[f] || f }))];
+    items = [
+      { val: 'all', label: 'All patterns' },
+      ...VERB_FILES.map(f => ({ val: f, label: PATTERN_LABELS[f] || f }))
+    ];
   } else if (isNomen) {
-    const themes = [...new Set(DB.nomen.map(w => w.theme).filter(Boolean))];
-    items = [{ val: 'all', label: 'All themes' },
-    ...themes.map(t => ({ val: t, label: THEME_LABELS[t] || t }))];
+    const themes = [...new Set(DB.nomen.flatMap(w => getThemesArray(w)))];
+    items = [
+      { val: 'all', label: 'All themes' },
+      ...themes.map(t => ({ val: t, label: THEME_LABELS[t] || t }))
+    ];
   } else {
-    items = [{ val: 'all', label: 'All' },
-    ...ANDERE_FILES.map(f => ({ val: f, label: ANDERE_CATEGORY_LABELS[f] || f }))];
+    items = [
+      { val: 'all', label: 'All' },
+      ...ANDERE_FILES.map(f => ({ val: f, label: ANDERE_CATEGORY_LABELS[f] || f }))
+    ];
   }
+
   const currentVal = isVerb ? currentPattern
     : isNomen ? currentTheme : currentAndereCategory;
+
   const lbl = items.find(i => i.val === currentVal)?.label || 'All';
   document.getElementById('sheet-ctx-btn').innerHTML = `${lbl} <span>▾</span>`;
   document.getElementById('sheet-ctx-dropdown-menu').innerHTML = items.map(item =>

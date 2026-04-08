@@ -3,7 +3,9 @@
     "id": "Schule",
     "level": "A1",
     "type": "nomen",
-    "theme": "work_education",
+    "theme": [
+      "work_education"
+    ],
     "german": "Schule",
     "english": "school",
     "article": "die",
@@ -42,7 +44,9 @@
     "id": "Arbeit",
     "level": "A2",
     "type": "nomen",
-    "theme": "work_education",
+    "theme": [
+      "work_education"
+    ],
     "german": "Arbeit",
     "english": "work / job",
     "article": "die",
@@ -81,7 +85,9 @@
     "id": "Beruf",
     "level": "A2",
     "type": "nomen",
-    "theme": "work_education",
+    "theme": [
+      "work_education"
+    ],
     "german": "Beruf",
     "english": "profession / occupation",
     "article": "der",
@@ -120,7 +126,9 @@
     "id": "Büro",
     "level": "A2",
     "type": "nomen",
-    "theme": "work_education",
+    "theme": [
+      "work_education"
+    ],
     "german": "Büro",
     "english": "office",
     "article": "das",
@@ -159,7 +167,9 @@
     "id": "Zeugnis",
     "level": "B1",
     "type": "nomen",
-    "theme": "work_education",
+    "theme": [
+      "work_education"
+    ],
     "german": "Zeugnis",
     "english": "school report / certificate / testimony",
     "article": "das",
@@ -198,7 +208,9 @@
     "id": "Möglichkeit",
     "level": "B1",
     "type": "nomen",
-    "theme": "work_education",
+    "theme": [
+      "work_education"
+    ],
     "german": "Möglichkeit",
     "english": "possibility / opportunity",
     "article": "die",
@@ -237,7 +249,9 @@
     "id": "Abkommen",
     "level": "B2",
     "type": "nomen",
-    "theme": "work_education",
+    "theme": [
+      "work_education"
+    ],
     "german": "Abkommen",
     "english": "agreement / treaty",
     "article": "das",
@@ -276,7 +290,9 @@
     "id": "Beeinträchtigung",
     "level": "C1",
     "type": "nomen",
-    "theme": "work_education",
+    "theme": [
+      "work_education"
+    ],
     "german": "Beeinträchtigung",
     "english": "impairment / interference",
     "article": "die",
@@ -311,7 +327,9 @@
     "id": "der_kurs",
     "level": "A1",
     "type": "nomen",
-    "theme": "education",
+    "theme": [
+      "education"
+    ],
     "german": "Kurs",
     "english": "course, class",
     "article": "der",
@@ -349,7 +367,9 @@
     "id": "die_lektion",
     "level": "A1",
     "type": "nomen",
-    "theme": "education",
+    "theme": [
+      "education"
+    ],
     "german": "Lektion",
     "english": "lesson, unit",
     "article": "die",
@@ -387,7 +407,9 @@
     "id": "die_fremdsprache",
     "level": "A1",
     "type": "nomen",
-    "theme": "education",
+    "theme": [
+      "education"
+    ],
     "german": "Fremdsprache",
     "english": "foreign language",
     "article": "die",
@@ -425,7 +447,9 @@
     "id": "die_anmeldung",
     "level": "A1",
     "type": "nomen",
-    "theme": "education",
+    "theme": [
+      "education"
+    ],
     "german": "Anmeldung",
     "english": "registration, enrollment",
     "article": "die",
@@ -463,7 +487,9 @@
     "id": "das_formular",
     "level": "A1",
     "type": "nomen",
-    "theme": "education",
+    "theme": [
+      "education"
+    ],
     "german": "Formular",
     "english": "form (document)",
     "article": "das",
@@ -501,7 +527,9 @@
     "id": "die_firma",
     "level": "A1",
     "type": "nomen",
-    "theme": "education",
+    "theme": [
+      "education"
+    ],
     "german": "Firma",
     "english": "company, firm",
     "article": "die",

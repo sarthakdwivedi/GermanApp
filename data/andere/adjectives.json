@@ -1678,5 +1678,60 @@
         "en": "That is a private flat."
       }
     ]
+  },{
+    "id": "geoeffnet",
+    "level": "A1", "type": "andere", "wordCategory": "adjective",
+    "german": "geöffnet", "english": "open (of a business)",
+    "wordType": "Adjektiv", "wordTypeEN": "Adjective (past participle)",
+    "grammarRule": "Participle used as adjective — add case endings before noun",
+    "grammarRuleDetail": "From öffnen. Opposite: geschlossen. Used for business/opening hours.",
+    "structureFormula": "Das Geschäft ist geöffnet. | geöffnete Bibliothek",
+    "irregularForms": false,
+    "opposite": "geschlossen",
+    "variants": [],
+    "relatedWords": [{"word": "geschlossen", "meaning": "closed"}],
+    "usage": [
+      {"de": "Die Bibliothek ist bis 17 Uhr geöffnet.", "en": "The library is open until 5pm."},
+      {"de": "Ist das Geschäft heute geöffnet?", "en": "Is the shop open today?"}
+    ]
+  },
+  {
+    "id": "geschlossen",
+    "level": "A1", "type": "andere", "wordCategory": "adjective",
+    "german": "geschlossen", "english": "closed",
+    "wordType": "Adjektiv", "wordTypeEN": "Adjective (past participle)",
+    "grammarRule": "Participle used as adjective — add case endings before noun",
+    "grammarRuleDetail": "From schließen. Opposite: geöffnet / offen.",
+    "structureFormula": "Das Geschäft ist geschlossen. | an gesetzlichen Feiertagen geschlossen",
+    "irregularForms": false,
+    "opposite": "geöffnet",
+    "variants": [],
+    "relatedWords": [{"word": "geöffnet", "meaning": "open"}],
+    "usage": [
+      {"de": "An Feiertagen ist die Bibliothek geschlossen.", "en": "The library is closed on public holidays."},
+      {"de": "Das Geschäft ist am Sonntag geschlossen.", "en": "The shop is closed on Sunday."}
+    ]
+  }
+,
+  {
+    "id": "international",
+    "level": "A1",
+    "type": "andere",
+    "wordCategory": "adjective",
+    "german": "international",
+    "english": "international",
+    "wordType": "Adjektiv",
+    "wordTypeEN": "Adjective",
+    "grammarRule": "Regular — add case endings before noun, unchanged as predicate",
+    "grammarRuleDetail": "The form stays international in predicate use. Before a noun, normal adjective endings are added.",
+    "structureFormula": "sein + international | international[ending] + N",
+    "irregularForms": false,
+    "opposite": "",
+    "variants": [],
+    "relatedWords": [],
+    "usage": [
+      {"de": "Die Musik ist international.", "en": "The music is international."},
+      {"de": "Das ist ein internationales Team.", "en": "That is an international team."}
+    ]
   }
 ]

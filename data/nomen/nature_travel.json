@@ -3,7 +3,9 @@
     "id": "Baum",
     "level": "A1",
     "type": "nomen",
-    "theme": "nature_travel",
+    "theme": [
+      "nature_travel"
+    ],
     "german": "Baum",
     "english": "tree",
     "article": "der",
@@ -14,19 +16,37 @@
     "nounGroupRule": "Many monosyllabic masculine nouns → Umlaut + -e",
     "endingRule": null,
     "declension": {
-      "sg": { "nom": "der Baum","akk": "den Baum","dat": "dem Baum","gen": "des Baumes" },
-      "pl": { "nom": "die Bäume","akk": "die Bäume","dat": "den Bäumen","gen": "der Bäume" }
+      "sg": {
+        "nom": "der Baum",
+        "akk": "den Baum",
+        "dat": "dem Baum",
+        "gen": "des Baumes"
+      },
+      "pl": {
+        "nom": "die Bäume",
+        "akk": "die Bäume",
+        "dat": "den Bäumen",
+        "gen": "der Bäume"
+      }
     },
     "usage": [
-      { "de": "Der Baum ist sehr alt.", "en": "The tree is very old." },
-      { "de": "Die Kinder spielen unter dem Baum.", "en": "The children play under the tree." }
+      {
+        "de": "Der Baum ist sehr alt.",
+        "en": "The tree is very old."
+      },
+      {
+        "de": "Die Kinder spielen unter dem Baum.",
+        "en": "The children play under the tree."
+      }
     ]
   },
   {
     "id": "Wetter",
     "level": "A1",
     "type": "nomen",
-    "theme": "nature_travel",
+    "theme": [
+      "nature_travel"
+    ],
     "german": "Wetter",
     "english": "weather",
     "article": "das",
@@ -37,19 +57,37 @@
     "nounGroupRule": "Neuter nouns ending in -er → plural unchanged (but Wetter has no plural)",
     "endingRule": "-er",
     "declension": {
-      "sg": { "nom": "das Wetter","akk": "das Wetter","dat": "dem Wetter","gen": "des Wetters" },
-      "pl": { "nom": "—","akk": "—","dat": "—","gen": "—" }
+      "sg": {
+        "nom": "das Wetter",
+        "akk": "das Wetter",
+        "dat": "dem Wetter",
+        "gen": "des Wetters"
+      },
+      "pl": {
+        "nom": "—",
+        "akk": "—",
+        "dat": "—",
+        "gen": "—"
+      }
     },
     "usage": [
-      { "de": "Das Wetter ist heute schön.", "en": "The weather is nice today." },
-      { "de": "Bei diesem Wetter gehe ich nicht raus.", "en": "In this weather I am not going out." }
+      {
+        "de": "Das Wetter ist heute schön.",
+        "en": "The weather is nice today."
+      },
+      {
+        "de": "Bei diesem Wetter gehe ich nicht raus.",
+        "en": "In this weather I am not going out."
+      }
     ]
   },
   {
     "id": "Reise",
     "level": "A2",
     "type": "nomen",
-    "theme": "nature_travel",
+    "theme": [
+      "nature_travel"
+    ],
     "german": "Reise",
     "english": "journey / trip",
     "article": "die",
@@ -60,19 +98,37 @@
     "nounGroupRule": "Feminine nouns ending in -e → add -n for plural",
     "endingRule": "-e",
     "declension": {
-      "sg": { "nom": "die Reise","akk": "die Reise","dat": "der Reise","gen": "der Reise" },
-      "pl": { "nom": "die Reisen","akk": "die Reisen","dat": "den Reisen","gen": "der Reisen" }
+      "sg": {
+        "nom": "die Reise",
+        "akk": "die Reise",
+        "dat": "der Reise",
+        "gen": "der Reise"
+      },
+      "pl": {
+        "nom": "die Reisen",
+        "akk": "die Reisen",
+        "dat": "den Reisen",
+        "gen": "der Reisen"
+      }
     },
     "usage": [
-      { "de": "Die Reise nach Wien war wunderschön.", "en": "The trip to Vienna was wonderful." },
-      { "de": "Gute Reise!", "en": "Have a good journey!" }
+      {
+        "de": "Die Reise nach Wien war wunderschön.",
+        "en": "The trip to Vienna was wonderful."
+      },
+      {
+        "de": "Gute Reise!",
+        "en": "Have a good journey!"
+      }
     ]
   },
   {
     "id": "Zug",
     "level": "A2",
     "type": "nomen",
-    "theme": "nature_travel",
+    "theme": [
+      "nature_travel"
+    ],
     "german": "Zug",
     "english": "train / draught / pull",
     "article": "der",
@@ -83,19 +139,37 @@
     "nounGroupRule": "Many monosyllabic masculine nouns → Umlaut + -e",
     "endingRule": null,
     "declension": {
-      "sg": { "nom": "der Zug","akk": "den Zug","dat": "dem Zug","gen": "des Zuges" },
-      "pl": { "nom": "die Züge","akk": "die Züge","dat": "den Zügen","gen": "der Züge" }
+      "sg": {
+        "nom": "der Zug",
+        "akk": "den Zug",
+        "dat": "dem Zug",
+        "gen": "des Zuges"
+      },
+      "pl": {
+        "nom": "die Züge",
+        "akk": "die Züge",
+        "dat": "den Zügen",
+        "gen": "der Züge"
+      }
     },
     "usage": [
-      { "de": "Der Zug fährt um 8 Uhr ab.", "en": "The train departs at 8 o'clock." },
-      { "de": "Ich nehme den Zug nach Berlin.", "en": "I am taking the train to Berlin." }
+      {
+        "de": "Der Zug fährt um 8 Uhr ab.",
+        "en": "The train departs at 8 o'clock."
+      },
+      {
+        "de": "Ich nehme den Zug nach Berlin.",
+        "en": "I am taking the train to Berlin."
+      }
     ]
   },
   {
     "id": "Flugzeug",
     "level": "A2",
     "type": "nomen",
-    "theme": "nature_travel",
+    "theme": [
+      "nature_travel"
+    ],
     "german": "Flugzeug",
     "english": "aeroplane",
     "article": "das",
@@ -106,19 +180,37 @@
     "nounGroupRule": "Many compound neuter nouns → + -e",
     "endingRule": null,
     "declension": {
-      "sg": { "nom": "das Flugzeug","akk": "das Flugzeug","dat": "dem Flugzeug","gen": "des Flugzeugs" },
-      "pl": { "nom": "die Flugzeuge","akk": "die Flugzeuge","dat": "den Flugzeugen","gen": "der Flugzeuge" }
+      "sg": {
+        "nom": "das Flugzeug",
+        "akk": "das Flugzeug",
+        "dat": "dem Flugzeug",
+        "gen": "des Flugzeugs"
+      },
+      "pl": {
+        "nom": "die Flugzeuge",
+        "akk": "die Flugzeuge",
+        "dat": "den Flugzeugen",
+        "gen": "der Flugzeuge"
+      }
     },
     "usage": [
-      { "de": "Das Flugzeug landet in einer Stunde.", "en": "The plane lands in one hour." },
-      { "de": "Ich fliege lieber mit dem Flugzeug.", "en": "I prefer to travel by plane." }
+      {
+        "de": "Das Flugzeug landet in einer Stunde.",
+        "en": "The plane lands in one hour."
+      },
+      {
+        "de": "Ich fliege lieber mit dem Flugzeug.",
+        "en": "I prefer to travel by plane."
+      }
     ]
   },
   {
     "id": "Umwelt",
     "level": "B1",
     "type": "nomen",
-    "theme": "nature_travel",
+    "theme": [
+      "nature_travel"
+    ],
     "german": "Umwelt",
     "english": "environment",
     "article": "die",
@@ -129,19 +221,37 @@
     "nounGroupRule": "Compound ending in -welt → die",
     "endingRule": null,
     "declension": {
-      "sg": { "nom": "die Umwelt","akk": "die Umwelt","dat": "der Umwelt","gen": "der Umwelt" },
-      "pl": { "nom": "—","akk": "—","dat": "—","gen": "—" }
+      "sg": {
+        "nom": "die Umwelt",
+        "akk": "die Umwelt",
+        "dat": "der Umwelt",
+        "gen": "der Umwelt"
+      },
+      "pl": {
+        "nom": "—",
+        "akk": "—",
+        "dat": "—",
+        "gen": "—"
+      }
     },
     "usage": [
-      { "de": "Wir müssen die Umwelt schützen.", "en": "We must protect the environment." },
-      { "de": "Der Klimawandel schadet der Umwelt.", "en": "Climate change harms the environment." }
+      {
+        "de": "Wir müssen die Umwelt schützen.",
+        "en": "We must protect the environment."
+      },
+      {
+        "de": "Der Klimawandel schadet der Umwelt.",
+        "en": "Climate change harms the environment."
+      }
     ]
   },
   {
     "id": "Landschaft",
     "level": "B1",
     "type": "nomen",
-    "theme": "nature_travel",
+    "theme": [
+      "nature_travel"
+    ],
     "german": "Landschaft",
     "english": "landscape / scenery",
     "article": "die",
@@ -152,12 +262,28 @@
     "nounGroupRule": "Ending -schaft → always die",
     "endingRule": "-schaft",
     "declension": {
-      "sg": { "nom": "die Landschaft","akk": "die Landschaft","dat": "der Landschaft","gen": "der Landschaft" },
-      "pl": { "nom": "die Landschaften","akk": "die Landschaften","dat": "den Landschaften","gen": "der Landschaften" }
+      "sg": {
+        "nom": "die Landschaft",
+        "akk": "die Landschaft",
+        "dat": "der Landschaft",
+        "gen": "der Landschaft"
+      },
+      "pl": {
+        "nom": "die Landschaften",
+        "akk": "die Landschaften",
+        "dat": "den Landschaften",
+        "gen": "der Landschaften"
+      }
     },
     "usage": [
-      { "de": "Die Landschaft in Österreich ist atemberaubend.", "en": "The landscape in Austria is breathtaking." },
-      { "de": "Wir fahren durch verschiedene Landschaften.", "en": "We drive through different landscapes." }
+      {
+        "de": "Die Landschaft in Österreich ist atemberaubend.",
+        "en": "The landscape in Austria is breathtaking."
+      },
+      {
+        "de": "Wir fahren durch verschiedene Landschaften.",
+        "en": "We drive through different landscapes."
+      }
     ]
   }
 ]

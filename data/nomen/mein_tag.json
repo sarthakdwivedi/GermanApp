@@ -1,0 +1,963 @@
+[
+  {
+    "id": "supermarkt",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "daily_routine",
+      "home"
+    ],
+    "german": "Supermarkt",
+    "english": "supermarket",
+    "article": "der",
+    "gender": "masculine",
+    "plural": "Supermärkte",
+    "pluralPattern": "umlaut-e",
+    "pluralPatternLabel": "Umlaut + -e",
+    "nounGroupRule": "Compound nouns follow the plural of their final noun (Markt → Märkte)",
+    "usage": [
+      {
+        "de": "Sie kauft im Supermarkt ein.",
+        "en": "She goes shopping at the supermarket."
+      },
+      {
+        "de": "Der Supermarkt öffnet um 8 Uhr.",
+        "en": "The supermarket opens at 8 o'clock."
+      }
+    ]
+  },
+  {
+    "id": "intensivkurs",
+    "level": "A2",
+    "type": "nomen",
+    "theme": [
+      "work_education"
+    ],
+    "german": "Intensivkurs",
+    "english": "intensive course",
+    "article": "der",
+    "gender": "masculine",
+    "plural": "Intensivkurse",
+    "pluralPattern": "-e",
+    "pluralPatternLabel": "+ -e",
+    "nounGroupRule": "Compound nouns follow the plural of their final noun (Kurs → Kurse)",
+    "usage": [
+      {
+        "de": "Ich mache einen Intensivkurs.",
+        "en": "I am doing an intensive course."
+      },
+      {
+        "de": "Der Intensivkurs dauert zwei Wochen.",
+        "en": "The intensive course lasts two weeks."
+      }
+    ]
+  },
+  {
+    "id": "montag",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "daily_routine",
+      "home"
+    ],
+    "german": "Montag",
+    "english": "Monday",
+    "article": "der",
+    "gender": "masculine",
+    "plural": "Montage",
+    "pluralPattern": "-e",
+    "pluralPatternLabel": "+ -e",
+    "nounGroupRule": "Days of the week are masculine and take -e in plural",
+    "usage": [
+      {
+        "de": "Fangen die Kurse am Montag an?",
+        "en": "Do the courses start on Monday?"
+      },
+      {
+        "de": "Am Montag habe ich Deutschkurs.",
+        "en": "On Monday I have German class."
+      }
+    ]
+  },
+  {
+    "id": "dienstag",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "daily_routine",
+      "home"
+    ],
+    "german": "Dienstag",
+    "english": "Tuesday",
+    "article": "der",
+    "gender": "masculine",
+    "plural": "Dienstage",
+    "pluralPattern": "-e",
+    "pluralPatternLabel": "+ -e",
+    "nounGroupRule": "Days of the week are masculine and take -e in plural",
+    "usage": [
+      {
+        "de": "Nein, erst am Dienstag.",
+        "en": "No, not until Tuesday."
+      },
+      {
+        "de": "Ich arbeite jeden Dienstag.",
+        "en": "I work every Tuesday."
+      }
+    ]
+  },
+  {
+    "id": "mittwoch",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "daily_routine",
+      "home"
+    ],
+    "german": "Mittwoch",
+    "english": "Wednesday",
+    "article": "der",
+    "gender": "masculine",
+    "plural": "Mittwoche",
+    "pluralPattern": "-e",
+    "pluralPatternLabel": "+ -e",
+    "nounGroupRule": "Days of the week are masculine and take -e in plural",
+    "usage": [
+      {
+        "de": "Was macht Tim am Mittwoch?",
+        "en": "What is Tim doing on Wednesday?"
+      },
+      {
+        "de": "Am Mittwoch gehe ich ins Kino.",
+        "en": "On Wednesday I am going to the cinema."
+      }
+    ]
+  },
+  {
+    "id": "donnerstag",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "daily_routine",
+      "home"
+    ],
+    "german": "Donnerstag",
+    "english": "Thursday",
+    "article": "der",
+    "gender": "masculine",
+    "plural": "Donnerstage",
+    "pluralPattern": "-e",
+    "pluralPatternLabel": "+ -e",
+    "nounGroupRule": "Days of the week are masculine and take -e in plural",
+    "usage": [
+      {
+        "de": "Was machst du am Donnerstag?",
+        "en": "What are you doing on Thursday?"
+      },
+      {
+        "de": "Am Donnerstag habe ich keine Zeit.",
+        "en": "On Thursday I have no time."
+      }
+    ]
+  },
+  {
+    "id": "freitag",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "daily_routine",
+      "home"
+    ],
+    "german": "Freitag",
+    "english": "Friday",
+    "article": "der",
+    "gender": "masculine",
+    "plural": "Freitage",
+    "pluralPattern": "-e",
+    "pluralPatternLabel": "+ -e",
+    "nounGroupRule": "Days of the week are masculine and take -e in plural",
+    "usage": [
+      {
+        "de": "Was machst du am Freitag?",
+        "en": "What are you doing on Friday?"
+      },
+      {
+        "de": "Am Freitag mache ich eine Party.",
+        "en": "On Friday I am having a party."
+      }
+    ]
+  },
+  {
+    "id": "samstag",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "daily_routine",
+      "home"
+    ],
+    "german": "Samstag",
+    "english": "Saturday",
+    "article": "der",
+    "gender": "masculine",
+    "plural": "Samstage",
+    "pluralPattern": "-e",
+    "pluralPatternLabel": "+ -e",
+    "nounGroupRule": "Days of the week are masculine and take -e in plural",
+    "usage": [
+      {
+        "de": "Heute ist Samstag.",
+        "en": "Today is Saturday."
+      },
+      {
+        "de": "Am Samstag schlafe ich lange.",
+        "en": "On Saturday I sleep in."
+      }
+    ]
+  },
+  {
+    "id": "sonntag",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "daily_routine",
+      "home"
+    ],
+    "german": "Sonntag",
+    "english": "Sunday",
+    "article": "der",
+    "gender": "masculine",
+    "plural": "Sonntage",
+    "pluralPattern": "-e",
+    "pluralPatternLabel": "+ -e",
+    "nounGroupRule": "Days of the week are masculine and take -e in plural",
+    "usage": [
+      {
+        "de": "Am Sonntag bin ich zu Hause.",
+        "en": "On Sunday I am at home."
+      },
+      {
+        "de": "Das Geschäft ist am Sonntag geschlossen.",
+        "en": "The shop is closed on Sunday."
+      }
+    ]
+  },
+  {
+    "id": "party",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "leisure"
+    ],
+    "german": "Party",
+    "english": "party",
+    "article": "die",
+    "gender": "feminine",
+    "plural": "Partys",
+    "pluralPattern": "-s",
+    "pluralPatternLabel": "+ -s",
+    "nounGroupRule": "English loanwords take -s in plural",
+    "usage": [
+      {
+        "de": "Ich mache am Freitag eine Party.",
+        "en": "I am having a party on Friday."
+      },
+      {
+        "de": "Die Party beginnt um 20 Uhr.",
+        "en": "The party starts at 8pm."
+      }
+    ]
+  },
+  {
+    "id": "zeit",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "daily_routine",
+      "home"
+    ],
+    "german": "Zeit",
+    "english": "time",
+    "article": "die",
+    "gender": "feminine",
+    "plural": "Zeiten",
+    "pluralPattern": "-en",
+    "pluralPatternLabel": "+ -en",
+    "declensionType": "no_plural",
+    "nounGroupRule": "In the sense of 'free time / available time' Zeit is used without plural",
+    "usage": [
+      {
+        "de": "Hast du Zeit?",
+        "en": "Do you have time?"
+      },
+      {
+        "de": "Ich hätte gern mehr Zeit für mich.",
+        "en": "I would like to have more time for myself."
+      }
+    ]
+  },
+  {
+    "id": "fussball",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "leisure"
+    ],
+    "german": "Fußball",
+    "english": "football / soccer",
+    "article": "der",
+    "gender": "masculine",
+    "plural": "—",
+    "pluralPattern": "-",
+    "pluralPatternLabel": "no plural",
+    "declensionType": "no_plural",
+    "nounGroupRule": "Sport names used as activities are uncountable",
+    "usage": [
+      {
+        "de": "Ich spiele Fußball.",
+        "en": "I play football."
+      },
+      {
+        "de": "Am Abend spielt er Fußball.",
+        "en": "He plays football in the evening."
+      }
+    ]
+  },
+  {
+    "id": "hausaufgabe",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "work_education"
+    ],
+    "german": "Hausaufgabe",
+    "english": "homework",
+    "article": "die",
+    "gender": "feminine",
+    "plural": "Hausaufgaben",
+    "pluralPattern": "-n",
+    "pluralPatternLabel": "+ -n",
+    "nounGroupRule": "Feminine nouns ending in -e add -n in plural",
+    "usage": [
+      {
+        "de": "Sina macht Hausaufgaben.",
+        "en": "Sina is doing homework."
+      },
+      {
+        "de": "Ich mache jeden Abend Hausaufgaben.",
+        "en": "I do homework every evening."
+      }
+    ]
+  },
+  {
+    "id": "mama",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "people"
+    ],
+    "german": "Mama",
+    "english": "mum / mom",
+    "article": "die",
+    "gender": "feminine",
+    "plural": "Mamas",
+    "pluralPattern": "-s",
+    "pluralPatternLabel": "+ -s",
+    "nounGroupRule": "Informal family terms take -s in plural",
+    "usage": [
+      {
+        "de": "Wann ruft Tim Mama an?",
+        "en": "When does Tim call mum?"
+      },
+      {
+        "de": "Mama kommt um 18 Uhr.",
+        "en": "Mum is coming at 6pm."
+      }
+    ]
+  },
+  {
+    "id": "wochenende",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "daily_routine",
+      "home"
+    ],
+    "german": "Wochenende",
+    "english": "weekend",
+    "article": "das",
+    "gender": "neuter",
+    "plural": "Wochenenden",
+    "pluralPattern": "-n",
+    "pluralPatternLabel": "+ -n",
+    "nounGroupRule": "Neuter nouns ending in -e add -n in plural",
+    "usage": [
+      {
+        "de": "Julia steht am Wochenende früh auf.",
+        "en": "Julia gets up early at the weekend."
+      },
+      {
+        "de": "Was machst du am Wochenende?",
+        "en": "What are you doing at the weekend?"
+      }
+    ]
+  },
+  {
+    "id": "woche",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "daily_routine",
+      "home"
+    ],
+    "german": "Woche",
+    "english": "week",
+    "article": "die",
+    "gender": "feminine",
+    "plural": "Wochen",
+    "pluralPattern": "-n",
+    "pluralPatternLabel": "+ -n",
+    "nounGroupRule": "Feminine nouns ending in -e add -n in plural",
+    "usage": [
+      {
+        "de": "Der Terminkalender für nächste Woche.",
+        "en": "The schedule for next week."
+      },
+      {
+        "de": "Ich arbeite fünf Tage in der Woche.",
+        "en": "I work five days a week."
+      }
+    ]
+  },
+  {
+    "id": "mittag",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "daily_routine",
+      "home"
+    ],
+    "german": "Mittag",
+    "english": "midday / noon",
+    "article": "der",
+    "gender": "masculine",
+    "plural": "Mittage",
+    "pluralPattern": "-e",
+    "pluralPatternLabel": "+ -e",
+    "nounGroupRule": "Many masculine nouns take -e in plural",
+    "usage": [
+      {
+        "de": "Am Mittag isst er mit Nina.",
+        "en": "At midday he eats with Nina."
+      },
+      {
+        "de": "Ich esse zu Mittag.",
+        "en": "I eat lunch."
+      }
+    ]
+  },
+  {
+    "id": "morgen_noun",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "daily_routine",
+      "home"
+    ],
+    "german": "Morgen",
+    "english": "morning",
+    "article": "der",
+    "gender": "masculine",
+    "plural": "Morgen",
+    "pluralPattern": "-",
+    "pluralPatternLabel": "no change",
+    "nounGroupRule": "Masculine nouns ending in -en often have no plural change",
+    "usage": [
+      {
+        "de": "Am Morgen frühstückt Robert.",
+        "en": "In the morning Robert has breakfast."
+      },
+      {
+        "de": "Jeden Morgen trinke ich Kaffee.",
+        "en": "Every morning I drink coffee."
+      }
+    ]
+  },
+  {
+    "id": "abend",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "daily_routine",
+      "home"
+    ],
+    "german": "Abend",
+    "english": "evening",
+    "article": "der",
+    "gender": "masculine",
+    "plural": "Abende",
+    "pluralPattern": "-e",
+    "pluralPatternLabel": "+ -e",
+    "nounGroupRule": "Many masculine nouns take -e in plural",
+    "usage": [
+      {
+        "de": "Am Abend spielt er Fußball.",
+        "en": "In the evening he plays football."
+      },
+      {
+        "de": "Guten Abend!",
+        "en": "Good evening!"
+      }
+    ]
+  },
+  {
+    "id": "nachmittag",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "daily_routine",
+      "home"
+    ],
+    "german": "Nachmittag",
+    "english": "afternoon",
+    "article": "der",
+    "gender": "masculine",
+    "plural": "Nachmittage",
+    "pluralPattern": "-e",
+    "pluralPatternLabel": "+ -e",
+    "nounGroupRule": "Compound nouns follow the plural of their final noun",
+    "usage": [
+      {
+        "de": "Am Nachmittag macht er Sport.",
+        "en": "In the afternoon he does sport."
+      },
+      {
+        "de": "Ich lerne am Nachmittag Deutsch.",
+        "en": "I study German in the afternoon."
+      }
+    ]
+  },
+  {
+    "id": "vormittag",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "daily_routine",
+      "home"
+    ],
+    "german": "Vormittag",
+    "english": "morning / late morning (before noon)",
+    "article": "der",
+    "gender": "masculine",
+    "plural": "Vormittage",
+    "pluralPattern": "-e",
+    "pluralPatternLabel": "+ -e",
+    "nounGroupRule": "Compound nouns follow the plural of their final noun",
+    "usage": [
+      {
+        "de": "Am Vormittag räumt er auf.",
+        "en": "In the late morning he tidies up."
+      },
+      {
+        "de": "Ich habe am Vormittag Kurs.",
+        "en": "I have class in the morning."
+      }
+    ]
+  },
+  {
+    "id": "nacht",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "daily_routine",
+      "home"
+    ],
+    "german": "Nacht",
+    "english": "night",
+    "article": "die",
+    "gender": "feminine",
+    "plural": "Nächte",
+    "pluralPattern": "umlaut-e",
+    "pluralPatternLabel": "Umlaut + -e",
+    "nounGroupRule": "Many monosyllabic feminine nouns take umlaut + -e in plural",
+    "usage": [
+      {
+        "de": "In der Nacht geht er spazieren.",
+        "en": "He goes for a walk at night."
+      },
+      {
+        "de": "Gute Nacht!",
+        "en": "Good night!"
+      }
+    ]
+  },
+  {
+    "id": "kino",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "leisure"
+    ],
+    "german": "Kino",
+    "english": "cinema / movie theater",
+    "article": "das",
+    "gender": "neuter",
+    "plural": "Kinos",
+    "pluralPattern": "-s",
+    "pluralPatternLabel": "+ -s",
+    "nounGroupRule": "Loanwords ending in a vowel often take -s in plural",
+    "usage": [
+      {
+        "de": "Am Abend geht er ins Kino.",
+        "en": "In the evening he goes to the cinema."
+      },
+      {
+        "de": "Möchtest du ins Kino gehen?",
+        "en": "Would you like to go to the cinema?"
+      }
+    ]
+  },
+  {
+    "id": "sport",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "leisure"
+    ],
+    "german": "Sport",
+    "english": "sport / exercise",
+    "article": "der",
+    "gender": "masculine",
+    "plural": "—",
+    "pluralPattern": "-",
+    "pluralPatternLabel": "no plural",
+    "declensionType": "no_plural",
+    "nounGroupRule": "Sport as activity is uncountable",
+    "usage": [
+      {
+        "de": "Am Nachmittag macht Robert Sport.",
+        "en": "Robert does sport in the afternoon."
+      },
+      {
+        "de": "Ich treibe gern Sport.",
+        "en": "I like doing sport."
+      }
+    ]
+  },
+  {
+    "id": "pizza",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "food"
+    ],
+    "german": "Pizza",
+    "english": "pizza",
+    "article": "die",
+    "gender": "feminine",
+    "plural": "Pizzen",
+    "pluralPattern": "-en",
+    "pluralPatternLabel": "+ -en",
+    "nounGroupRule": "Italian loanwords in -a often take -en in German plural",
+    "usage": [
+      {
+        "de": "Er isst eine Pizza.",
+        "en": "He is eating a pizza."
+      },
+      {
+        "de": "Ich esse gern Pizza.",
+        "en": "I like eating pizza."
+      }
+    ]
+  },
+  {
+    "id": "termin",
+    "level": "A2",
+    "type": "nomen",
+    "theme": [
+      "daily_routine",
+      "home"
+    ],
+    "german": "Termin",
+    "english": "appointment / date",
+    "article": "der",
+    "gender": "masculine",
+    "plural": "Termine",
+    "pluralPattern": "-e",
+    "pluralPatternLabel": "+ -e",
+    "nounGroupRule": "Many masculine nouns take -e in plural",
+    "usage": [
+      {
+        "de": "Der Termin ist um 17 Uhr.",
+        "en": "The appointment is at 5pm."
+      },
+      {
+        "de": "Ich habe morgen einen Termin.",
+        "en": "I have an appointment tomorrow."
+      }
+    ]
+  },
+  {
+    "id": "kindergarten",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "work_education"
+    ],
+    "german": "Kindergarten",
+    "english": "kindergarten / nursery school",
+    "article": "der",
+    "gender": "masculine",
+    "plural": "Kindergärten",
+    "pluralPattern": "umlaut-e",
+    "pluralPatternLabel": "Umlaut + -e",
+    "nounGroupRule": "Compound nouns follow the plural of their final noun (Garten → Gärten)",
+    "usage": [
+      {
+        "de": "Der Kindergarten ist bis 17 Uhr geöffnet.",
+        "en": "The kindergarten is open until 5pm."
+      },
+      {
+        "de": "Tom geht in den Kindergarten.",
+        "en": "Tom goes to kindergarten."
+      }
+    ]
+  },
+  {
+    "id": "geschaeft",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "daily_routine",
+      "home"
+    ],
+    "german": "Geschäft",
+    "english": "shop / store / business",
+    "article": "das",
+    "gender": "neuter",
+    "plural": "Geschäfte",
+    "pluralPattern": "-e",
+    "pluralPatternLabel": "+ -e",
+    "nounGroupRule": "Many neuter nouns take -e in plural",
+    "usage": [
+      {
+        "de": "Am Samstag ist das Geschäft von 8:30 bis 13 Uhr geöffnet.",
+        "en": "On Saturday the shop is open from 8:30 to 1pm."
+      },
+      {
+        "de": "Das Geschäft ist am Sonntag geschlossen.",
+        "en": "The shop is closed on Sunday."
+      }
+    ]
+  },
+  {
+    "id": "bibliothek",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "work_education"
+    ],
+    "german": "Bibliothek",
+    "english": "library",
+    "article": "die",
+    "gender": "feminine",
+    "plural": "Bibliotheken",
+    "pluralPattern": "-en",
+    "pluralPatternLabel": "+ -en",
+    "nounGroupRule": "Feminine nouns ending in -ek take -en in plural",
+    "usage": [
+      {
+        "de": "Die Bibliothek ist von Montag bis Freitag geöffnet.",
+        "en": "The library is open from Monday to Friday."
+      },
+      {
+        "de": "Ich gehe in die Bibliothek.",
+        "en": "I am going to the library."
+      }
+    ]
+  },
+  {
+    "id": "praxis",
+    "level": "A2",
+    "type": "nomen",
+    "theme": [
+      "work_education"
+    ],
+    "german": "Praxis",
+    "english": "practice / surgery (doctor's office)",
+    "article": "die",
+    "gender": "feminine",
+    "plural": "Praxen",
+    "pluralPattern": "-en",
+    "pluralPatternLabel": "+ -en",
+    "nounGroupRule": "Latin-origin nouns in -is take -en in plural",
+    "usage": [
+      {
+        "de": "Die Praxis schließt um 16 Uhr 30.",
+        "en": "The practice closes at 4:30pm."
+      },
+      {
+        "de": "Ich habe einen Termin in der Praxis.",
+        "en": "I have an appointment at the practice."
+      }
+    ]
+  },
+  {
+    "id": "tag",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "daily_routine",
+      "home"
+    ],
+    "german": "Tag",
+    "english": "day",
+    "article": "der",
+    "gender": "masculine",
+    "plural": "Tage",
+    "pluralPattern": "-e",
+    "pluralPatternLabel": "+ -e",
+    "nounGroupRule": "Many monosyllabic masculine nouns take -e in plural",
+    "usage": [
+      {
+        "de": "Ich habe die Kinder den ganzen Tag.",
+        "en": "I have the children all day."
+      },
+      {
+        "de": "Guten Tag!",
+        "en": "Good day!"
+      }
+    ]
+  },
+  {
+    "id": "kita",
+    "level": "A2",
+    "type": "nomen",
+    "theme": [
+      "work_education"
+    ],
+    "german": "Kita",
+    "english": "daycare centre / nursery",
+    "article": "die",
+    "gender": "feminine",
+    "plural": "Kitas",
+    "pluralPattern": "-s",
+    "pluralPatternLabel": "+ -s",
+    "nounGroupRule": "Abbreviations and short words take -s in plural",
+    "usage": [
+      {
+        "de": "Tom und Luka gehen in die Kita.",
+        "en": "Tom and Luka go to the daycare."
+      },
+      {
+        "de": "Die Kita öffnet um 7 Uhr.",
+        "en": "The daycare opens at 7 o'clock."
+      }
+    ]
+  },
+  {
+    "id": "beispiel",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "society_abstract"
+    ],
+    "german": "Beispiel",
+    "english": "example",
+    "article": "das",
+    "gender": "neuter",
+    "plural": "Beispiele",
+    "pluralPattern": "-e",
+    "pluralPatternLabel": "+ -e",
+    "nounGroupRule": "Many neuter nouns take -e in plural",
+    "usage": [
+      {
+        "de": "Zum Beispiel möchte ich ins Kino gehen.",
+        "en": "For example I would like to go to the cinema."
+      },
+      {
+        "de": "Nennen Sie ein Beispiel.",
+        "en": "Give an example."
+      }
+    ]
+  },
+  {
+    "id": "freund",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "people"
+    ],
+    "german": "Freund / Freundin",
+    "english": "friend / boyfriend / girlfriend",
+    "article": "der",
+    "gender": "masculine",
+    "plural": "Freunde",
+    "pluralPattern": "-e",
+    "pluralPatternLabel": "+ -e",
+    "nounGroupRule": "Many masculine nouns take -e in plural",
+    "usage": [
+      {
+        "de": "Meine Freundinnen fragen: 'Wann hast du Zeit?'",
+        "en": "My friends ask: 'When do you have time?'"
+      },
+      {
+        "de": "Ich treffe einen Freund.",
+        "en": "I am meeting a friend."
+      }
+    ]
+  },
+  {
+    "id": "uhr",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "daily_routine",
+      "home"
+    ],
+    "german": "Uhr",
+    "english": "clock / watch / o'clock",
+    "article": "die",
+    "gender": "feminine",
+    "plural": "Uhren",
+    "pluralPattern": "-en",
+    "pluralPatternLabel": "+ -en",
+    "nounGroupRule": "Feminine monosyllabic nouns often take -en in plural",
+    "usage": [
+      {
+        "de": "Es ist ein Uhr.",
+        "en": "It is one o'clock."
+      },
+      {
+        "de": "Um wie viel Uhr fängt der Kurs an?",
+        "en": "At what time does the course start?"
+      }
+    ]
+  },
+  {
+    "id": "viertel",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "daily_routine",
+      "home"
+    ],
+    "german": "Viertel",
+    "english": "quarter (of an hour)",
+    "article": "das",
+    "gender": "neuter",
+    "plural": "Viertel",
+    "pluralPattern": "-",
+    "pluralPatternLabel": "no change",
+    "nounGroupRule": "Neuter nouns ending in -el often have no plural change",
+    "usage": [
+      {
+        "de": "Es ist Viertel vor zwölf.",
+        "en": "It is quarter to twelve."
+      },
+      {
+        "de": "Es ist Viertel nach eins.",
+        "en": "It is quarter past one."
+      }
+    ]
+  }
+]

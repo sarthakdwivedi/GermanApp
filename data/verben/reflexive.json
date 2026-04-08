@@ -1,157 +1,52 @@
 [
   {
+    "id": "sich_treffen",
+    "level": "A1",
+    "type": "verb",
+    "theme": ["social", "leisure"],
+    "german": "sich treffen",
+    "english": "to meet (each other)",
+    "patternLabel": "Stark · reflexiv",
+    "patternColor": "strong",
+    "auxiliary": "haben",
+    "reflexiv": true,
+    "kasus": ["akkusativ"],
+    "stems": {
+      "prasens": {
+        "ich": "treffe mich",
+        "du": "triffst dich",
+        "er": "trifft sich",
+        "wir": "treffen uns",
+        "ihr": "trefft euch",
+        "sie": "treffen sich"
+      },
+      "prateritum": "traf mich",
+      "partizip2": "getroffen",
+      "konjunktiv2": "träfe mich"
+    },
+    "exceptionForms": ["prasens-du", "prasens-er"],
+    "exceptions": ["Based on strong verb treffen (e→i change)."],
+    "usage": [
+      {"de": "Wir treffen uns am Abend.", "en": "We meet in the evening."},
+      {"de": "Ich treffe mich mit Freunden.", "en": "I meet with friends."}
+    ]
+  },
+  {
     "id": "sich_freuen",
-    "level": "A2",
+    "level": "A1",
     "type": "verb",
-    "theme": "emotions",
+    "theme": ["feelings"],
     "german": "sich freuen",
-    "english": "to be happy / to look forward to",
+    "english": "to be happy / to look forward",
     "patternLabel": "Schwach · reflexiv",
     "patternColor": "weak",
     "auxiliary": "haben",
-    "conjugations": {
-      "prasens":     { "ich": "freue mich",   "du": "freust dich",   "er": "freut sich",   "wir": "freuen uns",   "ihr": "freut euch",   "sie": "freuen sich"   },
-      "prateritum":  { "ich": "freute mich",  "du": "freutest dich", "er": "freute sich",  "wir": "freuten uns",  "ihr": "freutet euch", "sie": "freuten sich"  },
-      "perfekt":     { "ich": "habe mich gefreut",  "du": "hast dich gefreut",  "er": "hat sich gefreut",  "wir": "haben uns gefreut",  "ihr": "habt euch gefreut",  "sie": "haben sich gefreut"  },
-      "konjunktiv2": { "ich": "freute mich",  "du": "freutest dich", "er": "freute sich",  "wir": "freuten uns",  "ihr": "freutet euch", "sie": "freuten sich"  }
-    },
-    "exceptions": ["Reflexive Akk. pronoun required: mich/dich/sich/uns/euch/sich"],
-    "exceptionForms": ["prasens-all"],
-    "kasus": [],
     "reflexiv": true,
-    "preposition": { "prep": "auf / über", "case": "Akkusativ", "meaning": "auf = look forward to; über = be happy about" },
+    "kasus": ["akkusativ"],
+    "exceptions": [],
     "usage": [
-      { "de": "Ich freue mich auf die Ferien.", "en": "I am looking forward to the holidays." },
-      { "de": "Sie hat sich über das Geschenk gefreut.", "en": "She was happy about the gift." }
-    ]
-  },
-  {
-    "id": "sich_interessieren",
-    "level": "A2",
-    "type": "verb",
-    "theme": "leisure",
-    "german": "sich interessieren",
-    "english": "to be interested in",
-    "patternLabel": "Schwach · reflexiv",
-    "patternColor": "weak",
-    "auxiliary": "haben",
-    "conjugations": {
-      "prasens":     { "ich": "interessiere mich",   "du": "interessierst dich",   "er": "interessiert sich",   "wir": "interessieren uns",   "ihr": "interessiert euch",   "sie": "interessieren sich"   },
-      "prateritum":  { "ich": "interessierte mich",  "du": "interessiertest dich", "er": "interessierte sich",  "wir": "interessierten uns",  "ihr": "interessiertet euch", "sie": "interessierten sich"  },
-      "perfekt":     { "ich": "habe mich interessiert",  "du": "hast dich interessiert",  "er": "hat sich interessiert",  "wir": "haben uns interessiert",  "ihr": "habt euch interessiert",  "sie": "haben sich interessiert"  },
-      "konjunktiv2": { "ich": "interessierte mich",  "du": "interessiertest dich", "er": "interessierte sich",  "wir": "interessierten uns",  "ihr": "interessiertet euch", "sie": "interessierten sich"  }
-    },
-    "exceptions": ["Reflexive Akk. pronoun required", "Fixed preposition für + Akk."],
-    "exceptionForms": ["prasens-all"],
-    "kasus": [],
-    "reflexiv": true,
-    "preposition": { "prep": "für", "case": "Akkusativ", "meaning": "to be interested in sth." },
-    "usage": [
-      { "de": "Ich interessiere mich für Musik.", "en": "I am interested in music." },
-      { "de": "Wofür interessierst du dich?", "en": "What are you interested in?" }
-    ]
-  },
-  {
-    "id": "sich_erinnern",
-    "level": "B1",
-    "type": "verb",
-    "theme": "thinking",
-    "german": "sich erinnern",
-    "english": "to remember",
-    "patternLabel": "Schwach · reflexiv",
-    "patternColor": "weak",
-    "auxiliary": "haben",
-    "conjugations": {
-      "prasens":     { "ich": "erinnere mich",   "du": "erinnerst dich",   "er": "erinnert sich",   "wir": "erinnern uns",   "ihr": "erinnert euch",   "sie": "erinnern sich"   },
-      "prateritum":  { "ich": "erinnerte mich",  "du": "erinnertest dich", "er": "erinnerte sich",  "wir": "erinnerten uns", "ihr": "erinnert euch",  "sie": "erinnerten sich" },
-      "perfekt":     { "ich": "habe mich erinnert",  "du": "hast dich erinnert",  "er": "hat sich erinnert",  "wir": "haben uns erinnert",  "ihr": "habt euch erinnert",  "sie": "haben sich erinnert"  },
-      "konjunktiv2": { "ich": "erinnerte mich",  "du": "erinnertest dich", "er": "erinnerte sich",  "wir": "erinnerten uns", "ihr": "erinnert euch",  "sie": "erinnerten sich" }
-    },
-    "exceptions": ["Inseparable er- prefix — no ge- in Partizip", "Fixed preposition an + Akk.", "Reflexive Akk. pronoun required"],
-    "exceptionForms": ["prasens-all"],
-    "kasus": [],
-    "reflexiv": true,
-    "preposition": { "prep": "an", "case": "Akkusativ", "meaning": "to remember sth./sb." },
-    "usage": [
-      { "de": "Ich erinnere mich an meinen ersten Schultag.", "en": "I remember my first day at school." },
-      { "de": "Erinnerst du dich an ihn?", "en": "Do you remember him?" }
-    ]
-  },
-  {
-    "id": "sich_gewöhnen",
-    "level": "B2",
-    "type": "verb",
-    "theme": "daily_life",
-    "german": "sich gewöhnen",
-    "english": "to get used to",
-    "patternLabel": "Schwach · reflexiv",
-    "patternColor": "weak",
-    "auxiliary": "haben",
-    "conjugations": {
-      "prasens":     { "ich": "gewöhne mich",   "du": "gewöhnst dich",   "er": "gewöhnt sich",   "wir": "gewöhnen uns",   "ihr": "gewöhnt euch",   "sie": "gewöhnen sich"   },
-      "prateritum":  { "ich": "gewöhnte mich",  "du": "gewöhntest dich", "er": "gewöhnte sich",  "wir": "gewöhnten uns",  "ihr": "gewöhntet euch", "sie": "gewöhnten sich"  },
-      "perfekt":     { "ich": "habe mich gewöhnt",  "du": "hast dich gewöhnt",  "er": "hat sich gewöhnt",  "wir": "haben uns gewöhnt",  "ihr": "habt euch gewöhnt",  "sie": "haben sich gewöhnt"  },
-      "konjunktiv2": { "ich": "gewöhnte mich",  "du": "gewöhntest dich", "er": "gewöhnte sich",  "wir": "gewöhnten uns",  "ihr": "gewöhntet euch", "sie": "gewöhnten sich"  }
-    },
-    "exceptions": ["Reflexive Akk. pronoun required", "Fixed preposition an + Akk."],
-    "exceptionForms": ["prasens-all"],
-    "kasus": [],
-    "reflexiv": true,
-    "preposition": { "prep": "an", "case": "Akkusativ", "meaning": "to get used to sth." },
-    "usage": [
-      { "de": "Ich gewöhne mich an das Wetter.", "en": "I am getting used to the weather." },
-      { "de": "Er hat sich schnell daran gewöhnt.", "en": "He got used to it quickly." }
-    ]
-  },
-  {
-    "id": "sich_befassen",
-    "level": "B2",
-    "type": "verb",
-    "theme": "work",
-    "german": "sich befassen",
-    "english": "to deal with / to concern oneself with",
-    "patternLabel": "Schwach · reflexiv",
-    "patternColor": "weak",
-    "auxiliary": "haben",
-    "conjugations": {
-      "prasens":     { "ich": "befasse mich",   "du": "befasst dich",   "er": "befasst sich",   "wir": "befassen uns",   "ihr": "befasst euch",   "sie": "befassen sich"   },
-      "prateritum":  { "ich": "befasste mich",  "du": "befasstest dich","er": "befasste sich",  "wir": "befassten uns",  "ihr": "befasstet euch", "sie": "befassten sich"  },
-      "perfekt":     { "ich": "habe mich befasst",  "du": "hast dich befasst",  "er": "hat sich befasst",  "wir": "haben uns befasst",  "ihr": "habt euch befasst",  "sie": "haben sich befasst"  },
-      "konjunktiv2": { "ich": "befasste mich",  "du": "befasstest dich","er": "befasste sich",  "wir": "befassten uns",  "ihr": "befasstet euch", "sie": "befassten sich"  }
-    },
-    "exceptions": ["Inseparable be- prefix — no ge- in Partizip", "Fixed preposition mit + Dativ"],
-    "exceptionForms": ["prasens-all"],
-    "kasus": [],
-    "reflexiv": true,
-    "preposition": { "prep": "mit", "case": "Dativ", "meaning": "to deal with / work on sth." },
-    "usage": [
-      { "de": "Der Ausschuss befasst sich mit dem Problem.", "en": "The committee is dealing with the problem." },
-      { "de": "Ich habe mich lange mit dem Thema befasst.", "en": "I have been dealing with the topic for a long time." }
-    ]
-  },
-  {
-    "id": "sich_anmaßen",
-    "level": "C2",
-    "type": "verb",
-    "theme": "social",
-    "german": "sich anmaßen",
-    "english": "to presume / to arrogate",
-    "patternLabel": "Schwach · reflexiv + Dativ",
-    "patternColor": "weak",
-    "auxiliary": "haben",
-    "conjugations": {
-      "prasens":     { "ich": "maße mir an",  "du": "maßt dir an",    "er": "maßt sich an",   "wir": "maßen uns an",   "ihr": "maßt euch an",   "sie": "maßen sich an"   },
-      "prateritum":  { "ich": "maßte mir an", "du": "maßtest dir an", "er": "maßte sich an",  "wir": "maßten uns an",  "ihr": "maßtet euch an", "sie": "maßten sich an"  },
-      "perfekt":     { "ich": "habe mir angemaßt",  "du": "hast dir angemaßt",  "er": "hat sich angemaßt",  "wir": "haben uns angemaßt",  "ihr": "habt euch angemaßt",  "sie": "haben sich angemaßt"  },
-      "konjunktiv2": { "ich": "maßte mir an", "du": "maßtest dir an", "er": "maßte sich an",  "wir": "maßten uns an",  "ihr": "maßtet euch an", "sie": "maßten sich an"  }
-    },
-    "exceptions": ["Reflexive DAT pronoun (mir/dir) — rarer than Akk.", "Separable an-", "Literary/formal register only"],
-    "exceptionForms": ["prasens-all"],
-    "kasus": ["dativ"],
-    "reflexiv": true,
-    "preposition": null,
-    "usage": [
-      { "de": "Er maßt sich das Recht an, zu urteilen.", "en": "He presumes the right to judge." }
+      {"de": "Ich freue mich.", "en": "I am happy."},
+      {"de": "Ich freue mich auf den Ausflug.", "en": "I look forward to the trip."}
     ]
   }
 ]

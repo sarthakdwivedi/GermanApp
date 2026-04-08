@@ -3,7 +3,9 @@
     "id": "Mann",
     "level": "A1",
     "type": "nomen",
-    "theme": "people",
+    "theme": [
+      "people"
+    ],
     "german": "Mann",
     "english": "man / husband",
     "article": "der",
@@ -42,7 +44,9 @@
     "id": "Frau",
     "level": "A1",
     "type": "nomen",
-    "theme": "people",
+    "theme": [
+      "people"
+    ],
     "german": "Frau",
     "english": "woman / Mrs.",
     "article": "die",
@@ -81,7 +85,9 @@
     "id": "Kind",
     "level": "A1",
     "type": "nomen",
-    "theme": "people",
+    "theme": [
+      "people"
+    ],
     "german": "Kind",
     "english": "child",
     "article": "das",
@@ -120,7 +126,9 @@
     "id": "Mutter",
     "level": "A1",
     "type": "nomen",
-    "theme": "people",
+    "theme": [
+      "people"
+    ],
     "german": "Mutter",
     "english": "mother",
     "article": "die",
@@ -159,7 +167,9 @@
     "id": "Vater",
     "level": "A1",
     "type": "nomen",
-    "theme": "people",
+    "theme": [
+      "people"
+    ],
     "german": "Vater",
     "english": "father",
     "article": "der",
@@ -198,7 +208,9 @@
     "id": "Freund",
     "level": "A2",
     "type": "nomen",
-    "theme": "people",
+    "theme": [
+      "people"
+    ],
     "german": "Freund",
     "english": "friend / boyfriend",
     "article": "der",
@@ -237,7 +249,9 @@
     "id": "Freundschaft",
     "level": "B1",
     "type": "nomen",
-    "theme": "people",
+    "theme": [
+      "people"
+    ],
     "german": "Freundschaft",
     "english": "friendship",
     "article": "die",
@@ -276,7 +290,9 @@
     "id": "Nachbar",
     "level": "B1",
     "type": "nomen",
-    "theme": "people",
+    "theme": [
+      "people"
+    ],
     "german": "Nachbar",
     "english": "neighbour",
     "article": "der",
@@ -315,7 +331,9 @@
     "id": "der_name",
     "level": "A1",
     "type": "nomen",
-    "theme": "greetings",
+    "theme": [
+      "greetings"
+    ],
     "german": "Name",
     "english": "name",
     "article": "der",
@@ -353,7 +371,9 @@
     "id": "der_herr",
     "level": "A1",
     "type": "nomen",
-    "theme": "greetings",
+    "theme": [
+      "greetings"
+    ],
     "german": "Herr",
     "english": "Mr., gentleman",
     "article": "der",
@@ -391,7 +411,9 @@
     "id": "die_dame",
     "level": "A1",
     "type": "nomen",
-    "theme": "greetings",
+    "theme": [
+      "greetings"
+    ],
     "german": "Dame",
     "english": "lady, madam",
     "article": "die",
@@ -429,7 +451,9 @@
     "id": "der_papa",
     "level": "A1",
     "type": "nomen",
-    "theme": "family",
+    "theme": [
+      "family"
+    ],
     "german": "Papa",
     "english": "dad, daddy",
     "article": "der",
@@ -467,7 +491,9 @@
     "id": "die_entschuldigung",
     "level": "A1",
     "type": "nomen",
-    "theme": "greetings",
+    "theme": [
+      "greetings"
+    ],
     "german": "Entschuldigung",
     "english": "excuse me, apology",
     "article": "die",
@@ -505,7 +531,9 @@
     "id": "der_vorname",
     "level": "A1",
     "type": "nomen",
-    "theme": "greetings",
+    "theme": [
+      "greetings"
+    ],
     "german": "Vorname",
     "english": "first name",
     "article": "der",
@@ -543,7 +571,9 @@
     "id": "der_familienname",
     "level": "A1",
     "type": "nomen",
-    "theme": "greetings",
+    "theme": [
+      "greetings"
+    ],
     "german": "Familienname",
     "english": "surname, family name",
     "article": "der",

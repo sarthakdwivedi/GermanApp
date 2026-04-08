@@ -1,182 +1,214 @@
 [
   {
-    "id": "können",
+    "id": "moechten",
     "level": "A1",
     "type": "verb",
-    "theme": "core",
+    "theme": ["shopping", "food"],
+    "german": "möchten",
+    "english": "would like",
+    "patternLabel": "Modal",
+    "patternColor": "mixed",
+    "auxiliary": "haben",
+    "reflexiv": false,
+    "kasus": ["akkusativ"],
+    "conjugations": {
+      "prasens": {
+        "ich": "möchte",
+        "du": "möchtest",
+        "er": "möchte",
+        "wir": "möchten",
+        "ihr": "möchtet",
+        "sie": "möchten"
+      },
+      "prateritum": {
+        "ich": "mochte",
+        "du": "mochtest",
+        "er": "mochte",
+        "wir": "mochten",
+        "ihr": "mochtet",
+        "sie": "mochten"
+      },
+      "perfekt": {
+        "ich": "habe gemocht",
+        "du": "hast gemocht",
+        "er": "hat gemocht",
+        "wir": "haben gemocht",
+        "ihr": "habt gemocht",
+        "sie": "haben gemocht"
+      },
+      "konjunktiv2": {
+        "ich": "möchte",
+        "du": "möchtest",
+        "er": "möchte",
+        "wir": "möchten",
+        "ihr": "möchtet",
+        "sie": "möchten"
+      }
+    },
+    "exceptionForms": ["prasens-all", "konjunktiv2-all"],
+    "exceptions": ["Used mainly as the polite Konjunktiv II form of mögen."],
+    "usage": [
+      {"de": "Ich möchte Birnen.", "en": "I would like pears."},
+      {"de": "Sie möchten Obst kaufen.", "en": "They would like to buy fruit."}
+    ]
+  },
+  {
+    "id": "moegen",
+    "level": "A1",
+    "type": "verb",
+    "theme": ["preferences", "leisure"],
+    "german": "mögen",
+    "english": "to like",
+    "patternLabel": "Modal",
+    "patternColor": "mixed",
+    "auxiliary": "haben",
+    "reflexiv": false,
+    "kasus": ["akkusativ"],
+    "conjugations": {
+      "prasens": {
+        "ich": "mag",
+        "du": "magst",
+        "er": "mag",
+        "wir": "mögen",
+        "ihr": "mögt",
+        "sie": "mögen"
+      },
+      "prateritum": {
+        "ich": "mochte",
+        "du": "mochtest",
+        "er": "mochte",
+        "wir": "mochten",
+        "ihr": "mochtet",
+        "sie": "mochten"
+      },
+      "perfekt": {
+        "ich": "habe gemocht",
+        "du": "hast gemocht",
+        "er": "hat gemocht",
+        "wir": "haben gemocht",
+        "ihr": "habt gemocht",
+        "sie": "haben gemocht"
+      },
+      "konjunktiv2": {
+        "ich": "möchte",
+        "du": "möchtest",
+        "er": "möchte",
+        "wir": "möchten",
+        "ihr": "möchtet",
+        "sie": "möchten"
+      }
+    },
+    "exceptionForms": ["prasens-ich", "prasens-er"],
+    "exceptions": ["Irregular stem in Präsens: ich/er mag."],
+    "usage": [
+      {"de": "Ich mag Kaffee.", "en": "I like coffee."},
+      {"de": "Wir mögen Musik.", "en": "We like music."}
+    ]
+  },
+  {
+    "id": "koennen",
+    "level": "A1",
+    "type": "verb",
+    "theme": ["abilities", "education"],
     "german": "können",
     "english": "can / to be able to",
-    "patternLabel": "Modal · können",
+    "patternLabel": "Modal",
     "patternColor": "mixed",
     "auxiliary": "haben",
-    "conjugations": {
-      "prasens":     { "ich": "kann",   "du": "kannst",   "er": "kann",   "wir": "können",  "ihr": "könnt",   "sie": "können"  },
-      "prateritum":  { "ich": "konnte", "du": "konntest", "er": "konnte", "wir": "konnten", "ihr": "konntet", "sie": "konnten" },
-      "perfekt":     { "ich": "habe gekonnt / können",  "du": "hast gekonnt / können",  "er": "hat gekonnt / können",  "wir": "haben gekonnt / können",  "ihr": "habt gekonnt / können",  "sie": "haben gekonnt / können"  },
-      "konjunktiv2": { "ich": "könnte", "du": "könntest", "er": "könnte", "wir": "könnten", "ihr": "könntet", "sie": "könnten" }
-    },
-    "exceptions": [
-      "ich/er identical in Präsens (kann) — no -t ending",
-      "Double infinitive in Perfekt when used with another verb",
-      "Konjunktiv II: könnte — very frequent in polite requests"
-    ],
-    "exceptionForms": ["prasens-ich", "prasens-er"],
-    "kasus": [],
     "reflexiv": false,
-    "preposition": null,
-    "usage": [
-      { "de": "Ich kann Deutsch sprechen.", "en": "I can speak German." },
-      { "de": "Könntest du mir helfen?", "en": "Could you help me? (polite)" }
-    ]
-  },
-  {
-    "id": "müssen",
-    "level": "A1",
-    "type": "verb",
-    "theme": "core",
-    "german": "müssen",
-    "english": "must / to have to",
-    "patternLabel": "Modal · müssen",
-    "patternColor": "mixed",
-    "auxiliary": "haben",
-    "conjugations": {
-      "prasens":     { "ich": "muss",   "du": "musst",    "er": "muss",   "wir": "müssen",  "ihr": "müsst",   "sie": "müssen"  },
-      "prateritum":  { "ich": "musste", "du": "musstest", "er": "musste", "wir": "mussten", "ihr": "musstet", "sie": "mussten" },
-      "perfekt":     { "ich": "habe gemusst / müssen",  "du": "hast gemusst / müssen",  "er": "hat gemusst / müssen",  "wir": "haben gemusst / müssen",  "ihr": "habt gemusst / müssen",  "sie": "haben gemusst / müssen"  },
-      "konjunktiv2": { "ich": "müsste", "du": "müsstest", "er": "müsste", "wir": "müssten", "ihr": "müsstet", "sie": "müssten" }
-    },
-    "exceptions": [
-      "ich/er identical in Präsens (muss)",
-      "⚠ müssen nicht ≠ must not — means 'don't have to'; use dürfen nicht for prohibition",
-      "Double infinitive in Perfekt with another verb"
-    ],
-    "exceptionForms": ["prasens-ich", "prasens-er"],
     "kasus": [],
-    "reflexiv": false,
-    "preposition": null,
-    "usage": [
-      { "de": "Ich muss jetzt gehen.", "en": "I have to go now." },
-      { "de": "Du musst das nicht machen.", "en": "You don't have to do that." }
-    ]
-  },
-  {
-    "id": "dürfen",
-    "level": "A2",
-    "type": "verb",
-    "theme": "core",
-    "german": "dürfen",
-    "english": "may / to be allowed to",
-    "patternLabel": "Modal · dürfen",
-    "patternColor": "mixed",
-    "auxiliary": "haben",
     "conjugations": {
-      "prasens":     { "ich": "darf",   "du": "darfst",   "er": "darf",   "wir": "dürfen",  "ihr": "dürft",   "sie": "dürfen"  },
-      "prateritum":  { "ich": "durfte", "du": "durftest", "er": "durfte", "wir": "durften", "ihr": "durftet", "sie": "durften" },
-      "perfekt":     { "ich": "habe gedurft / dürfen",  "du": "hast gedurft / dürfen",  "er": "hat gedurft / dürfen",  "wir": "haben gedurft / dürfen",  "ihr": "habt gedurft / dürfen",  "sie": "haben gedurft / dürfen"  },
-      "konjunktiv2": { "ich": "dürfte", "du": "dürftest", "er": "dürfte", "wir": "dürften", "ihr": "dürftet", "sie": "dürften" }
+      "prasens": {
+        "ich": "kann",
+        "du": "kannst",
+        "er": "kann",
+        "wir": "können",
+        "ihr": "könnt",
+        "sie": "können"
+      },
+      "prateritum": {
+        "ich": "konnte",
+        "du": "konntest",
+        "er": "konnte",
+        "wir": "konnten",
+        "ihr": "konntet",
+        "sie": "konnten"
+      },
+      "perfekt": {
+        "ich": "habe gekonnt",
+        "du": "hast gekonnt",
+        "er": "hat gekonnt",
+        "wir": "haben gekonnt",
+        "ihr": "habt gekonnt",
+        "sie": "haben gekonnt"
+      },
+      "konjunktiv2": {
+        "ich": "könnte",
+        "du": "könntest",
+        "er": "könnte",
+        "wir": "könnten",
+        "ihr": "könntet",
+        "sie": "könnten"
+      }
     },
-    "exceptions": [
-      "ich/er identical in Präsens (darf)",
-      "dürfen nicht = must not / prohibited",
-      "Konjunktiv II dürfte = may well (epistemic)"
-    ],
     "exceptionForms": ["prasens-ich", "prasens-er"],
-    "kasus": [],
-    "reflexiv": false,
-    "preposition": null,
+    "exceptions": ["ich/er identical in Präsens (kann) — no -t ending."],
     "usage": [
-      { "de": "Hier darf man nicht rauchen.", "en": "One is not allowed to smoke here." },
-      { "de": "Darf ich kurz stören?", "en": "May I interrupt briefly?" }
+      {"de": "Ich kann Deutsch sprechen.", "en": "I can speak German."},
+      {"de": "Kannst du gut Klavier spielen?", "en": "Can you play the piano well?"}
     ]
   },
   {
     "id": "wollen",
-    "level": "A2",
+    "level": "A1",
     "type": "verb",
-    "theme": "core",
+    "theme": ["intentions", "education"],
     "german": "wollen",
-    "english": "to want to",
-    "patternLabel": "Modal · wollen",
+    "english": "to want",
+    "patternLabel": "Modal",
     "patternColor": "mixed",
     "auxiliary": "haben",
-    "conjugations": {
-      "prasens":     { "ich": "will",   "du": "willst",   "er": "will",   "wir": "wollen",  "ihr": "wollt",   "sie": "wollen"  },
-      "prateritum":  { "ich": "wollte", "du": "wolltest", "er": "wollte", "wir": "wollten", "ihr": "wolltet", "sie": "wollten" },
-      "perfekt":     { "ich": "habe gewollt / wollen",  "du": "hast gewollt / wollen",  "er": "hat gewollt / wollen",  "wir": "haben gewollt / wollen",  "ihr": "habt gewollt / wollen",  "sie": "haben gewollt / wollen"  },
-      "konjunktiv2": { "ich": "wollte", "du": "wolltest", "er": "wollte", "wir": "wollten", "ihr": "wolltet", "sie": "wollten" }
-    },
-    "exceptions": [
-      "ich/er identical in Präsens (will)",
-      "Konjunktiv II = Präteritum (wollte) — no umlaut",
-      "⚠ ich will is blunt; ich möchte is the polite form"
-    ],
-    "exceptionForms": ["prasens-ich", "prasens-er"],
+    "reflexiv": false,
     "kasus": [],
-    "reflexiv": false,
-    "preposition": null,
-    "usage": [
-      { "de": "Ich will Deutsch lernen.", "en": "I want to learn German." },
-      { "de": "Er wollte nicht kommen.", "en": "He didn't want to come." }
-    ]
-  },
-  {
-    "id": "sollen",
-    "level": "A2",
-    "type": "verb",
-    "theme": "core",
-    "german": "sollen",
-    "english": "should / to be supposed to",
-    "patternLabel": "Modal · sollen",
-    "patternColor": "mixed",
-    "auxiliary": "haben",
     "conjugations": {
-      "prasens":     { "ich": "soll",   "du": "sollst",   "er": "soll",   "wir": "sollen",  "ihr": "sollt",   "sie": "sollen"  },
-      "prateritum":  { "ich": "sollte", "du": "solltest", "er": "sollte", "wir": "sollten", "ihr": "solltet", "sie": "sollten" },
-      "perfekt":     { "ich": "habe gesollt / sollen",  "du": "hast gesollt / sollen",  "er": "hat gesollt / sollen",  "wir": "haben gesollt / sollen",  "ihr": "habt gesollt / sollen",  "sie": "haben gesollt / sollen"  },
-      "konjunktiv2": { "ich": "sollte", "du": "solltest", "er": "sollte", "wir": "sollten", "ihr": "solltet", "sie": "sollten" }
+      "prasens": {
+        "ich": "will",
+        "du": "willst",
+        "er": "will",
+        "wir": "wollen",
+        "ihr": "wollt",
+        "sie": "wollen"
+      },
+      "prateritum": {
+        "ich": "wollte",
+        "du": "wolltest",
+        "er": "wollte",
+        "wir": "wollten",
+        "ihr": "wolltet",
+        "sie": "wollten"
+      },
+      "perfekt": {
+        "ich": "habe gewollt",
+        "du": "hast gewollt",
+        "er": "hat gewollt",
+        "wir": "haben gewollt",
+        "ihr": "habt gewollt",
+        "sie": "haben gewollt"
+      },
+      "konjunktiv2": {
+        "ich": "wollte",
+        "du": "wolltest",
+        "er": "wollte",
+        "wir": "wollten",
+        "ihr": "wolltet",
+        "sie": "wollten"
+      }
     },
-    "exceptions": [
-      "ich/er identical in Präsens (soll)",
-      "Konjunktiv II = Präteritum (sollte) — no umlaut",
-      "Expresses external obligation or reported speech"
-    ],
     "exceptionForms": ["prasens-ich", "prasens-er"],
-    "kasus": [],
-    "reflexiv": false,
-    "preposition": null,
+    "exceptions": ["Irregular Präsens stem: ich/er will."],
     "usage": [
-      { "de": "Du sollst nicht lügen.", "en": "You shall not lie." },
-      { "de": "Er soll sehr reich sein.", "en": "He is said to be very rich." }
-    ]
-  },
-  {
-    "id": "mögen",
-    "level": "A2",
-    "type": "verb",
-    "theme": "core",
-    "german": "mögen",
-    "english": "to like / may (epistemic)",
-    "patternLabel": "Modal · mögen",
-    "patternColor": "mixed",
-    "auxiliary": "haben",
-    "conjugations": {
-      "prasens":     { "ich": "mag",    "du": "magst",    "er": "mag",    "wir": "mögen",   "ihr": "mögt",    "sie": "mögen"   },
-      "prateritum":  { "ich": "mochte", "du": "mochtest", "er": "mochte", "wir": "mochten", "ihr": "mochtet", "sie": "mochten" },
-      "perfekt":     { "ich": "habe gemocht / mögen",  "du": "hast gemocht / mögen",  "er": "hat gemocht / mögen",  "wir": "haben gemocht / mögen",  "ihr": "habt gemocht / mögen",  "sie": "haben gemocht / mögen"  },
-      "konjunktiv2": { "ich": "möchte", "du": "möchtest", "er": "möchte", "wir": "möchten", "ihr": "möchtet", "sie": "möchten" }
-    },
-    "exceptions": [
-      "ich/er identical in Präsens (mag)",
-      "Konjunktiv II: möchte — standard polite 'I would like'",
-      "Präteritum: mochte (vowel change, no umlaut)"
-    ],
-    "exceptionForms": ["prasens-ich", "prasens-er", "prateritum-all"],
-    "kasus": ["akkusativ"],
-    "reflexiv": false,
-    "preposition": null,
-    "usage": [
-      { "de": "Ich mag Schokolade.", "en": "I like chocolate." },
-      { "de": "Ich möchte einen Kaffee, bitte.", "en": "I would like a coffee, please." }
+      {"de": "Ich will nicht zu spät kommen.", "en": "I do not want to come too late."},
+      {"de": "Ich will viele Texte lesen.", "en": "I want to read many texts."}
     ]
   }
 ]
