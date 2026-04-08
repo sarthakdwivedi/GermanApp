@@ -631,7 +631,7 @@ function renderSearchResults(results) {
     const articleHtml = w.article
       ? `<span class="search-result-article" style="color:${gc}">${w.article} </span>` : '';
     const patLabel = w.verbFile ? PATTERN_LABELS[w.verbFile] || w.verbFile
-      : w.theme ? THEME_LABELS[w.theme] || w.theme
+      : w.theme ? getThemesArray(w).map(t => THEME_LABELS[t] || t).join(' · ')
         : w.wordType || 'Andere';
     return `<div class="search-result-item" onclick="openSearchResult('${w.id}')">
       <div style="flex:1;min-width:0">
@@ -1807,7 +1807,7 @@ function renderMyWords() {
     const articleHtml = w.article
       ? `<span class="search-result-article" style="color:${gc}">${w.article} </span>` : '';
     const patLabel = w.verbFile ? PATTERN_LABELS[w.verbFile]
-      : w.theme ? THEME_LABELS[w.theme]
+      : w.theme ?  getThemesArray(w).map(t => THEME_LABELS[t] || t).join(' · ')
         : w.wordType || 'Andere';
     return `<div class="search-result-item" onclick="openMyWordsCard('${w.id}')">
       <div style="flex:1;min-width:0">
