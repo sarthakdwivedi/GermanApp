@@ -121,6 +121,92 @@ const PATTERN_LABELS = {
   modal: 'Modal', reflexive: 'Reflexive',
   separable: 'Separable', inseparable: 'Inseparable'
 };
+
+// ══════════════════════════════════════════════
+// GENDER & PLURAL DETECTION ENGINE
+// ══════════════════════════════════════════════
+
+const GENDER_ENDING_RULES = [
+  { pattern: /ung$/,        gender: 'die', rule: 'Nouns ending in -ung are always feminine' },
+  { pattern: /heit$|keit$/, gender: 'die', rule: 'Nouns ending in -heit/-keit are always feminine' },
+  { pattern: /schaft$/,     gender: 'die', rule: 'Nouns ending in -schaft are always feminine' },
+  { pattern: /tion$|ion$/,  gender: 'die', rule: 'Nouns ending in -tion/-ion are always feminine' },
+  { pattern: /tät$|ität$/,  gender: 'die', rule: 'Nouns ending in -tät are always feminine' },
+  { pattern: /ik$/,         gender: 'die', rule: 'Nouns ending in -ik are always feminine' },
+  { pattern: /enz$|anz$/,   gender: 'die', rule: 'Nouns ending in -enz/-anz are always feminine' },
+  { pattern: /ie$/,         gender: 'die', rule: 'Nouns ending in -ie are always feminine' },
+  { pattern: /ur$/,         gender: 'die', rule: 'Nouns ending in -ur are always feminine' },
+  { pattern: /chen$|lein$/, gender: 'das', rule: 'Diminutives in -chen/-lein are always neuter' },
+  { pattern: /ment$/,       gender: 'das', rule: 'Nouns ending in -ment are usually neuter' },
+  { pattern: /um$/,         gender: 'das', rule: 'Nouns ending in -um are usually neuter' },
+  { pattern: /nis$/,        gender: 'das', rule: 'Nouns ending in -nis are usually neuter' },
+  { pattern: /tum$/,        gender: 'das', rule: 'Nouns ending in -tum are usually neuter' },
+  { pattern: /ling$/,       gender: 'der', rule: 'Nouns ending in -ling are always masculine' },
+  { pattern: /ismus$/,      gender: 'der', rule: 'Nouns ending in -ismus are always masculine' },
+  { pattern: /ist$/,        gender: 'der', rule: 'Nouns ending in -ist are usually masculine' },
+  { pattern: /or$/,         gender: 'der', rule: 'Nouns ending in -or are usually masculine' },
+  { pattern: /ig$/,         gender: 'der', rule: 'Nouns ending in -ig are usually masculine' },
+];
+
+const GENDER_SEMANTIC_GROUPS = {
+  male_people:             { gender: 'der', rule: 'Male persons are always masculine' },
+  female_people:           { gender: 'die', rule: 'Female persons are always feminine' },
+  days_months_seasons:     { gender: 'der', rule: 'Days, months and seasons are always masculine' },
+  compass_weather:         { gender: 'der', rule: 'Weather phenomena are usually masculine' },
+  alcoholic_drinks:        { gender: 'der', rule: 'Alcoholic drinks are usually masculine' },
+  car_brands:              { gender: 'der', rule: 'Car brands are always masculine' },
+  numbers_as_nouns:        { gender: 'die', rule: 'Numbers used as nouns are feminine' },
+  ships_aircraft:          { gender: 'die', rule: 'Ships and aircraft are usually feminine' },
+  trees_flowers:           { gender: 'die', rule: 'Most trees and flowers are feminine' },
+  metals_elements:         { gender: 'das', rule: 'Metals and chemical elements are usually neuter' },
+  languages:               { gender: 'das', rule: 'Languages used as nouns are always neuter' },
+  infinitives_as_nouns:    { gender: 'das', rule: 'Infinitives used as nouns are always neuter' },
+  young_animals:           { gender: 'das', rule: 'Young animals are usually neuter' },
+  countries_cities:        { gender: 'das', rule: 'Most countries and cities are neuter (no article in normal use)' },
+};
+
+const PLURAL_ENDING_RULES = [
+  { test: w => /ung$|heit$|keit$|schaft$|tion$|ion$|tät$/.test(w.german.toLowerCase()),
+    predict: w => w.german + 'en', pattern: '-en',
+    rule: 'Feminine nouns with these endings always take -en in plural' },
+  { test: w => w.article === 'die' && /e$/.test(w.german),
+    predict: w => w.german + 'n', pattern: '-n',
+    rule: 'Feminine nouns ending in -e add -n in plural' },
+  { test: w => /chen$|lein$/.test(w.german.toLowerCase()),
+    predict: w => w.german, pattern: '-',
+    rule: 'Diminutives are always unchanged in plural' },
+  { test: w => w.article !== 'die' && /er$|el$|en$/.test(w.german.toLowerCase()),
+    predict: w => w.german, pattern: '-',
+    rule: 'Masculine/neuter nouns ending in -er/-el/-en are usually unchanged in plural' },
+  { test: w => /ment$/.test(w.german.toLowerCase()),
+    predict: w => w.german + 's', pattern: '-s',
+    rule: 'Nouns ending in -ment usually take -s in plural' },
+  { test: w => /um$/.test(w.german.toLowerCase()),
+    predict: w => w.german.replace(/um$/, 'en'), pattern: '-en',
+    rule: 'Nouns ending in -um usually take -en in plural (Datum → Daten)' },
+];
+
+// ── Verb analysis ─────────────────────────────
+const SEIN_VERBS_HINTS = [
+  'gehen', 'kommen', 'fahren', 'fliegen', 'laufen', 'rennen',
+  'schwimmen', 'reisen', 'wandern', 'fallen', 'steigen', 'steigen',
+  'aufstehen', 'einschlafen', 'aufwachen', 'ankommen', 'abfahren',
+  'werden', 'sein', 'bleiben', 'passieren', 'geschehen', 'wachsen'
+];
+
+const STRONG_ABLAUT_CLASSES = [
+  { name: 'Class I — ei → ie/i → ie/i',   pattern: /^ei/, prät: /ie$|i$/, },
+  { name: 'Class II — ie/ü → o → o',      pattern: /^(ie|ü)/, prät: /o$/ },
+  { name: 'Class III — i/e → a → u/o',    pattern: /^(i|e)/, prät: /a$/ },
+  { name: 'Class IV — e → a → e/o',       pattern: /^e/, prät: /a$/ },
+  { name: 'Class V — a → u → a',          pattern: /^a/, prät: /u$/ },
+  { name: 'Class VI — a → ie → a',        pattern: /^a/, prät: /ie$/ },
+];
+
+const INSEPARABLE_PREFIXES = ['be','ge','er','ver','zer','ent','emp','miss'];
+const SEPARABLE_PREFIXES   = ['ab','an','auf','aus','bei','ein','los','mit',
+                               'nach','vor','weg','zu','zurück','zusammen',
+                               'fern','spazieren','statt'];
 // ── Adjective generator ───────────────────────
 const ADJ_DECLENSION = {
   strong: {
@@ -338,6 +424,161 @@ function generateAdjectiveForms(w) {
   // Declension — always the same constant table for regular adjectives
   if (!w.declension) w.declension = ADJ_DECLENSION;
 }
+
+// ── Gender & Plural detection ─────────────────
+function detectNounGender(w) {
+  const lower = w.german.toLowerCase();
+
+  // 1. Semantic group — highest confidence
+  if (w.semanticGroup) {
+    const sg = GENDER_SEMANTIC_GROUPS[w.semanticGroup];
+    if (sg) return { predictedArticle: sg.gender, rule: sg.rule, source: 'semantic' };
+  }
+
+  // 2. Ending rules — medium confidence
+  for (const rule of GENDER_ENDING_RULES) {
+    if (rule.pattern.test(lower)) {
+      return { predictedArticle: rule.gender, rule: rule.rule, source: 'ending' };
+    }
+  }
+
+  return null; // no rule — unknown
+}
+
+function detectNounPlural(w) {
+  for (const rule of PLURAL_ENDING_RULES) {
+    if (rule.test(w)) {
+      return {
+        predictedPlural: rule.predict(w),
+        pattern: rule.pattern,
+        rule: rule.rule
+      };
+    }
+  }
+  return null;
+}
+
+function analyseNoun(w) {
+  // Gender analysis
+  const genderResult = detectNounGender(w);
+  if (genderResult) {
+    if (genderResult.predictedArticle === w.article) {
+      w._genderRule    = genderResult.rule;
+      w._genderSource  = genderResult.source;
+      w._genderMatch   = true;
+    } else {
+      w._genderMatch     = false;
+      w._genderRule      = genderResult.rule;
+      w._genderException = `Rule predicts ${genderResult.predictedArticle} (${genderResult.rule}) — but is ${w.article}. Memorise this exception.`;
+    }
+  }
+
+  // Plural analysis
+  const pluralResult = detectNounPlural(w);
+  if (pluralResult) {
+    if (pluralResult.predictedPlural === w.plural) {
+      w._pluralRule  = pluralResult.rule;
+      w._pluralMatch = true;
+    } else {
+      w._pluralMatch     = false;
+      w._pluralRule      = pluralResult.rule;
+      w._pluralException = `Rule predicts "${pluralResult.predictedPlural}" — but plural is "${w.plural}". Memorise this exception.`;
+    }
+  }
+}
+
+function analyseVerb(w) {
+  if (!w.conjugations) return;
+
+  // ── 1. Weak verb exception detection ─────────
+  if (w.patternColor === 'weak') {
+    const generated = generateWeakConjugations(w);
+    const exceptions = [];
+
+    for (const tense of ['prasens', 'prateritum', 'perfekt']) {
+      if (!w.conjugations[tense] || !generated[tense]) continue;
+      for (const pronoun of ['ich','du','er','wir','ihr','sie']) {
+        const actual    = w.conjugations[tense][pronoun];
+        const expected  = generated[tense][pronoun];
+        if (actual && expected && actual !== expected) {
+          exceptions.push({
+            tense: TENSE_LABELS[tense] || tense,
+            pronoun: PRONOUNS[pronoun] || pronoun,
+            expected,
+            actual
+          });
+        }
+      }
+    }
+
+    if (exceptions.length) {
+      w._conjugationExceptions = exceptions;
+      w._verbRule = 'Weak verb — but has irregular forms (see exceptions below)';
+    } else {
+      w._verbRule = 'Regular weak verb — all forms follow standard pattern';
+      w._verbFollowsRule = true;
+    }
+  }
+
+  // ── 2. Strong verb — identify ablaut class ───
+  if (w.patternColor === 'strong' && w.stems) {
+    const inf   = w.german.toLowerCase().replace(/^(sich |auf|an|ab|ein|aus|zu|mit|vor|nach|fern)/, '');
+    const prät  = (w.stems.prateritum || '').toLowerCase();
+
+    const infVowel  = inf.match(/[aeiouäöü]+/)?.[0] || '';
+    const prätVowel = prät.match(/[aeiouäöü]+/)?.[0] || '';
+    const part2Vowel = w.stems.partizip2?.match(/[aeiouäöü]+/)?.[0] || '?';
+
+    const foundClass = STRONG_ABLAUT_CLASSES.find(cls =>
+      cls.pattern.test(inf) && cls.prät.test(prät)
+    );
+    if (foundClass) w._ablautClass = foundClass.name;
+
+    if (infVowel && prätVowel) {
+      w._ablautPattern = `${infVowel} → ${prätVowel} → ${part2Vowel}`;
+      w._verbRule = `Strong verb — ablaut pattern: ${w._ablautPattern}` +
+        (w._ablautClass ? ` (${w._ablautClass})` : '');
+    }
+
+    const k2 = w.stems.konjunktiv2 || '';
+    const hasUmlaut = /[äöü]/.test(k2);
+    if (!hasUmlaut && /[aou]/.test(prät)) {
+      w._konjunktiv2Note = 'Konjunktiv II has no umlaut — memorise this form';
+    }
+  }
+
+  // ── 3. Auxiliary check ───────────────────────
+  if (w.auxiliary === 'sein') {
+    const inf = w.german.toLowerCase();
+    const expectedSein = SEIN_VERBS_HINTS.some(v => inf.includes(v));
+    if (!expectedSein) {
+      w._auxiliaryNote = `Uses sein — check: does this verb express movement or change of state?`;
+    }
+  } else if (w.auxiliary === 'haben') {
+    const inf = w.german.toLowerCase();
+    const isSeinVerb = SEIN_VERBS_HINTS.some(v => inf === v || inf.endsWith(v));
+    if (isSeinVerb) {
+      w._auxiliaryException = `Expected sein (motion/change verb) — but uses haben. Memorise.`;
+    }
+  }
+
+  // ── 4. Prefix validation ─────────────────────
+  const inf = w.german.toLowerCase();
+  if (w.separablePrefix) {
+    if (!SEPARABLE_PREFIXES.includes(w.separablePrefix)) {
+      w._prefixNote = `Prefix "${w.separablePrefix}" — verify separability`;
+    }
+  } else if (!w.inseparable) {
+    const matchedInsep = INSEPARABLE_PREFIXES.find(p => inf.startsWith(p));
+    const matchedSep   = SEPARABLE_PREFIXES.find(p => inf.startsWith(p));
+    if (matchedInsep) {
+      w._prefixNote = `Starts with inseparable prefix "${matchedInsep}" — no -ge- in Partizip II`;
+    } else if (matchedSep) {
+      w._prefixNote = `Starts with separable prefix "${matchedSep}" — check if separable`;
+    }
+  }
+}
+
 // ── Data loading ──────────────────────────────────────────────
 async function loadData() {
   try {
@@ -389,6 +630,12 @@ async function loadData() {
       const generated = generateNomenDeclension(w);
       if (generated) w.declension = generated;
     });
+
+    // Analyse gender and plural patterns
+    DB.nomen.forEach(w => analyseNoun(w));
+
+    // Analyse verb patterns and exceptions
+    DB.verben.forEach(w => analyseVerb(w));
 
     // Generate adjective forms
     DB.andere
@@ -1239,6 +1486,61 @@ function buildVerbCard(w) {
 
   const patBadge = w.verbFile ? PATTERN_LABELS[w.verbFile] || 'Verb' : 'Verb';
 
+  // ── Verb rule / exception block ───────────────
+  let verbRuleSection = '';
+
+  if (w._verbRule) {
+    const followsRule = w._verbFollowsRule;
+    verbRuleSection = `<div class="section">
+      <div class="section-label">Verb pattern</div>
+      <div class="ending-rule">
+        <div class="ending-bubble${followsRule ? '' : ' exc-bubble'}"
+          style="background:${followsRule ? pbg : 'rgba(105,219,124,0.15)'};color:${followsRule ? pc : 'var(--a1)'}">
+          ${followsRule ? '✓' : '~'}
+        </div>
+        <div>
+          <div class="ending-rule-text" style="color:${followsRule ? pc : 'var(--text)'}">
+            ${w._verbRule}
+          </div>
+          ${w._ablautPattern
+            ? `<div class="ending-rule-sub">Ablaut: ${w._ablautPattern}${w._ablautClass ? ` · ${w._ablautClass}` : ''}</div>`
+            : ''}
+          ${w._konjunktiv2Note
+            ? `<div class="ending-rule-sub">${w._konjunktiv2Note}</div>`
+            : ''}
+        </div>
+      </div>
+      ${w._conjugationExceptions?.length
+        ? `<div class="exc-note" style="margin-top:8px">
+            <div class="exc-dot">!</div>
+            <div>
+              <div style="font-weight:500;margin-bottom:4px">Irregular forms:</div>
+              ${w._conjugationExceptions.map(e =>
+                `<div style="font-size:12px;margin-top:2px">
+                  ${e.tense} · ${e.pronoun}: 
+                  <span style="color:var(--text3);text-decoration:line-through">${e.expected}</span>
+                  → <span style="color:var(--verb-strong)">${e.actual}</span>
+                </div>`
+              ).join('')}
+            </div>
+          </div>`
+        : ''}
+    </div>`;
+  }
+
+  const auxNote = w._auxiliaryException
+    ? `<div class="exc-note" style="margin-top:6px">
+        <div class="exc-dot">!</div>
+        <div>${w._auxiliaryException}</div>
+      </div>`
+    : w._auxiliaryNote
+      ? `<div class="rule-note">${w._auxiliaryNote}</div>`
+      : '';
+
+  const prefixNote = w._prefixNote
+    ? `<div class="rule-note">${w._prefixNote}</div>`
+    : '';
+
   return `<div class="word-card">
     <div class="card-header">
       <div class="card-header-top">
@@ -1264,6 +1566,7 @@ function buildVerbCard(w) {
       </div>
     </div>
     ${buildKnownButtons(w.id)}
+    ${verbRuleSection}
     <div class="section">
       <div class="section-label">Konjugation</div>
       ${conjSection}
@@ -1272,6 +1575,8 @@ function buildVerbCard(w) {
     <div class="section">
       <div class="section-label">Kasus</div>
       <div class="case-row">${caseBadges}</div>
+      ${auxNote}
+      ${prefixNote}
     </div>
     ${prepSection}
     <div class="section">
@@ -1295,27 +1600,68 @@ function buildNomenCard(w) {
   const themeLabels = getThemesArray(w).map(t => THEME_LABELS[t] || t);
   const d = w.declension;
 
-  const endingSection = w.endingRule
-    ? `<div class="section">
-        <div class="section-label">Noun group rule</div>
-        <div class="ending-rule">
-          <div class="ending-bubble" style="background:${gbg};color:${gc}">${w.endingRule}</div>
-          <div>
-            <div class="ending-rule-text">Ending <strong style="color:${gc}">${w.endingRule}</strong> → always <em>${w.article}</em></div>
-            <div class="ending-rule-sub">${w.nounGroupRule}</div>
-          </div>
+  let endingSection = '';
+
+  if (w.endingRule) {
+    // Manually stored rule (old format)
+    endingSection = `<div class="section">
+      <div class="section-label">Noun group rule</div>
+      <div class="ending-rule">
+        <div class="ending-bubble" style="background:${gbg};color:${gc}">${w.endingRule}</div>
+        <div>
+          <div class="ending-rule-text">Ending <strong style="color:${gc}">${w.endingRule}</strong> → always <em>${w.article}</em></div>
+          <div class="ending-rule-sub">${w.nounGroupRule || ''}</div>
         </div>
-      </div>`
-    : w.nounGroupRule ? `<div class="section">
-    <div class="section-label">Gender rule</div>
-    <div class="ending-rule">
-      <div class="ending-bubble" style="background:${gbg};color:${gc}">${w.article}</div>
-      <div>
-        <div class="ending-rule-text" style="color:${gc}">${w.article.toUpperCase()}</div>
-        <div class="ending-rule-sub">${w.nounGroupRule}</div>
       </div>
-    </div>
-  </div>` : '';
+    </div>`;
+
+  } else if (w._genderMatch === false) {
+    // Gender exception
+    endingSection = `<div class="section">
+      <div class="section-label">Gender rule</div>
+      <div class="ending-rule">
+        <div class="ending-bubble exc-bubble" style="background:rgba(255,107,107,0.15);color:var(--c2)">!</div>
+        <div>
+          <div class="ending-rule-text" style="color:var(--c2)">Exception</div>
+          <div class="ending-rule-sub">${w._genderException}</div>
+        </div>
+      </div>
+    </div>`;
+
+  } else if (w._genderRule) {
+    // Gender follows rule
+    const icon = w._genderSource === 'semantic' ? '📚' : '';
+    endingSection = `<div class="section">
+      <div class="section-label">Gender rule</div>
+      <div class="ending-rule">
+        <div class="ending-bubble" style="background:${gbg};color:${gc}">${w.article}</div>
+        <div>
+          <div class="ending-rule-text" style="color:${gc}">${icon} ${w._genderRule}</div>
+        </div>
+      </div>
+    </div>`;
+
+  } else if (w.nounGroupRule) {
+    // Manually stored rule, no ending bubble
+    endingSection = `<div class="section">
+      <div class="section-label">Gender rule</div>
+      <div class="ending-rule">
+        <div class="ending-bubble" style="background:${gbg};color:${gc}">${w.article}</div>
+        <div>
+          <div class="ending-rule-sub">${w.nounGroupRule}</div>
+        </div>
+      </div>
+    </div>`;
+  }
+
+  const pluralNote = w._pluralMatch === false
+    ? `<div class="exc-note" style="margin-top:8px">
+        <div class="exc-dot">!</div>
+        <div>${w._pluralException}</div>
+      </div>`
+    : w._pluralRule && w._pluralMatch
+      ? `<div class="rule-note" style="margin-top:8px;font-size:12px;color:var(--text3)">${w._pluralRule}</div>`
+      : '';
 
   return `<div class="word-card">
     <div class="card-header">
@@ -1351,6 +1697,7 @@ function buildNomenCard(w) {
         <div class="plural-word">${w.plural}</div>
         <span class="plural-pill" style="background:${pbg};color:${pc}">${w.pluralPatternLabel}</span>
       </div>
+      ${pluralNote}
     </div>
     ${endingSection}
     <div class="section">
