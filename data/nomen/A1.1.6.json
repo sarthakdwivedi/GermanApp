@@ -1,0 +1,1140 @@
+[
+  {
+    "id": "ausflug",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "leisure",
+      "travel"
+    ],
+    "german": "Ausflug",
+    "english": "trip / outing",
+    "article": "der",
+    "plural": "Ausflüge",
+    "pluralPattern": "umlaut-e",
+    "pluralPatternLabel": "Umlaut + -e",
+    "usage": [
+      {
+        "de": "Familie Baumann macht einen Ausflug.",
+        "en": "The Baumann family is going on an outing."
+      },
+      {
+        "de": "Die Ausflüge sind im Sommer schön.",
+        "en": "The outings are nice in summer."
+      }
+    ]
+  },
+  {
+    "id": "auto",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "transport"
+    ],
+    "german": "Auto",
+    "english": "car",
+    "article": "das",
+    "plural": "Autos",
+    "pluralPattern": "-s",
+    "pluralPatternLabel": "-s",
+    "usage": [
+      {
+        "de": "Sofia fährt gern Auto.",
+        "en": "Sofia likes driving."
+      },
+      {
+        "de": "Die Autos stehen vor dem Haus.",
+        "en": "The cars are parked in front of the house."
+      }
+    ]
+  },
+  {
+    "id": "picknick",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "leisure",
+      "food"
+    ],
+    "german": "Picknick",
+    "english": "picnic",
+    "article": "das",
+    "plural": "Picknicks",
+    "pluralPattern": "-s",
+    "pluralPatternLabel": "-s",
+    "usage": [
+      {
+        "de": "Sie machen ein Picknick.",
+        "en": "They are having a picnic."
+      },
+      {
+        "de": "Die Picknicks sind im Park schön.",
+        "en": "Picnics in the park are nice."
+      }
+    ]
+  },
+  {
+    "id": "gitarre",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "music",
+      "leisure"
+    ],
+    "german": "Gitarre",
+    "english": "guitar",
+    "article": "die",
+    "plural": "Gitarren",
+    "pluralPattern": "-n",
+    "pluralPatternLabel": "-n",
+    "usage": [
+      {
+        "de": "Walter spielt Gitarre.",
+        "en": "Walter plays the guitar."
+      },
+      {
+        "de": "Die Gitarren sind im Wohnzimmer.",
+        "en": "The guitars are in the living room."
+      }
+    ]
+  },
+  {
+    "id": "wetter",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "weather"
+    ],
+    "german": "Wetter",
+    "english": "weather",
+    "article": "das",
+    "plural": "—",
+    "declensionType": "no_plural",
+    "nounGroupRule": "Weather noun used as a singular concept",
+    "usage": [
+      {
+        "de": "Das Wetter ist nicht so gut.",
+        "en": "The weather is not so good."
+      },
+      {
+        "de": "Das Wetter ist heute schön.",
+        "en": "The weather is nice today."
+      }
+    ]
+  },
+  {
+    "id": "sonne",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "weather"
+    ],
+    "german": "Sonne",
+    "english": "sun",
+    "article": "die",
+    "plural": "Sonnen",
+    "pluralPattern": "-n",
+    "pluralPatternLabel": "-n",
+    "usage": [
+      {
+        "de": "Die Sonne scheint.",
+        "en": "The sun is shining."
+      },
+      {
+        "de": "Die Sonnen auf den Bildern sind gelb.",
+        "en": "The suns in the pictures are yellow."
+      }
+    ]
+  },
+  {
+    "id": "wolke",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "weather"
+    ],
+    "german": "Wolke",
+    "english": "cloud",
+    "article": "die",
+    "plural": "Wolken",
+    "pluralPattern": "-n",
+    "pluralPatternLabel": "-n",
+    "usage": [
+      {
+        "de": "Es gibt viele Wolken.",
+        "en": "There are many clouds."
+      },
+      {
+        "de": "Die Wolken sind grau.",
+        "en": "The clouds are gray."
+      }
+    ]
+  },
+  {
+    "id": "durst",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "food",
+      "feelings"
+    ],
+    "german": "Durst",
+    "english": "thirst",
+    "article": "der",
+    "plural": "—",
+    "declensionType": "no_plural",
+    "nounGroupRule": "Abstract noun with no plural in general use",
+    "usage": [
+      {
+        "de": "Hast du keinen Durst?",
+        "en": "Aren't you thirsty?"
+      },
+      {
+        "de": "Nach dem Sport habe ich Durst.",
+        "en": "After sports I am thirsty."
+      }
+    ]
+  },
+  {
+    "id": "grad",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "weather",
+      "measurements"
+    ],
+    "german": "Grad",
+    "english": "degree",
+    "article": "das",
+    "plural": "Grad",
+    "pluralPattern": "-",
+    "pluralPatternLabel": "—",
+    "nounGroupRule": "Zero plural in temperature expressions",
+    "usage": [
+      {
+        "de": "Es sind 25 Grad.",
+        "en": "It is 25 degrees."
+      },
+      {
+        "de": "Heute hat es nur fünf Grad.",
+        "en": "Today it is only five degrees."
+      }
+    ]
+  },
+  {
+    "id": "wetterbericht",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "weather",
+      "media"
+    ],
+    "german": "Wetterbericht",
+    "english": "weather report / forecast",
+    "article": "der",
+    "plural": "Wetterberichte",
+    "pluralPattern": "-e",
+    "pluralPatternLabel": "-e",
+    "usage": [
+      {
+        "de": "Hier kommt der Wetterbericht für morgen.",
+        "en": "Here comes the weather report for tomorrow."
+      },
+      {
+        "de": "Die Wetterberichte sind im Radio.",
+        "en": "The weather reports are on the radio."
+      }
+    ]
+  },
+  {
+    "id": "mitte",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "geography",
+      "locations"
+    ],
+    "german": "Mitte",
+    "english": "middle / center",
+    "article": "die",
+    "plural": "Mitten",
+    "pluralPattern": "-n",
+    "pluralPatternLabel": "-n",
+    "usage": [
+      {
+        "de": "In der Mitte Deutschlands scheint die Sonne.",
+        "en": "In the middle of Germany the sun is shining."
+      },
+      {
+        "de": "Die Mitten der Kreise sind markiert.",
+        "en": "The centers of the circles are marked."
+      }
+    ]
+  },
+  {
+    "id": "temperatur",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "weather"
+    ],
+    "german": "Temperatur",
+    "english": "temperature",
+    "article": "die",
+    "plural": "Temperaturen",
+    "pluralPattern": "-en",
+    "pluralPatternLabel": "-en",
+    "usage": [
+      {
+        "de": "Die Temperaturen steigen auf 20 Grad.",
+        "en": "The temperatures rise to 20 degrees."
+      },
+      {
+        "de": "Die Temperaturen sind heute hoch.",
+        "en": "The temperatures are high today."
+      }
+    ]
+  },
+  {
+    "id": "regen",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "weather"
+    ],
+    "german": "Regen",
+    "english": "rain",
+    "article": "der",
+    "plural": "—",
+    "declensionType": "no_plural",
+    "nounGroupRule": "Weather noun used as a mass concept",
+    "usage": [
+      {
+        "de": "Ich finde Regen gut.",
+        "en": "I like rain."
+      },
+      {
+        "de": "Der Regen ist stark.",
+        "en": "The rain is strong."
+      }
+    ]
+  },
+  {
+    "id": "schnee",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "weather"
+    ],
+    "german": "Schnee",
+    "english": "snow",
+    "article": "der",
+    "plural": "—",
+    "declensionType": "no_plural",
+    "nounGroupRule": "Weather noun used as a mass concept",
+    "usage": [
+      {
+        "de": "Ich mag Schnee.",
+        "en": "I like snow."
+      },
+      {
+        "de": "Der Schnee ist kalt.",
+        "en": "The snow is cold."
+      }
+    ]
+  },
+  {
+    "id": "radio",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "media"
+    ],
+    "german": "Radio",
+    "english": "radio",
+    "article": "das",
+    "plural": "Radios",
+    "pluralPattern": "-s",
+    "pluralPatternLabel": "-s",
+    "usage": [
+      {
+        "de": "Im Radio kommt der Wetterbericht.",
+        "en": "The weather report is on the radio."
+      },
+      {
+        "de": "Die Radios sind im Regal.",
+        "en": "The radios are on the shelf."
+      }
+    ]
+  },
+  {
+    "id": "internet",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "media",
+      "technology"
+    ],
+    "german": "Internet",
+    "english": "internet",
+    "article": "das",
+    "plural": "—",
+    "declensionType": "no_plural",
+    "nounGroupRule": "System term used as a singular concept",
+    "usage": [
+      {
+        "de": "Der Wetterbericht ist im Internet.",
+        "en": "The weather report is on the internet."
+      },
+      {
+        "de": "Das Internet ist heute langsam.",
+        "en": "The internet is slow today."
+      }
+    ]
+  },
+  {
+    "id": "sommer",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "seasons",
+      "weather"
+    ],
+    "german": "Sommer",
+    "english": "summer",
+    "article": "der",
+    "plural": "Sommer",
+    "pluralPattern": "-",
+    "pluralPatternLabel": "—",
+    "usage": [
+      {
+        "de": "Im Sommer ist das Wetter sehr gut.",
+        "en": "In summer the weather is very good."
+      },
+      {
+        "de": "Die Sommer sind hier heiß.",
+        "en": "The summers are hot here."
+      }
+    ]
+  },
+  {
+    "id": "fruehling",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "seasons",
+      "weather"
+    ],
+    "german": "Frühling",
+    "english": "spring",
+    "article": "der",
+    "plural": "Frühlinge",
+    "pluralPattern": "-e",
+    "pluralPatternLabel": "-e",
+    "usage": [
+      {
+        "de": "Im Frühling ist das Wetter oft schön.",
+        "en": "In spring the weather is often nice."
+      },
+      {
+        "de": "Die Frühlinge sind mild.",
+        "en": "The springs are mild."
+      }
+    ]
+  },
+  {
+    "id": "herbst",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "seasons",
+      "weather"
+    ],
+    "german": "Herbst",
+    "english": "autumn / fall",
+    "article": "der",
+    "plural": "Herbste",
+    "pluralPattern": "-e",
+    "pluralPatternLabel": "-e",
+    "usage": [
+      {
+        "de": "Im Herbst regnet es viel.",
+        "en": "In autumn it rains a lot."
+      },
+      {
+        "de": "Die Herbste sind oft windig.",
+        "en": "Autumns are often windy."
+      }
+    ]
+  },
+  {
+    "id": "winter",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "seasons",
+      "weather"
+    ],
+    "german": "Winter",
+    "english": "winter",
+    "article": "der",
+    "plural": "Winter",
+    "pluralPattern": "-",
+    "pluralPatternLabel": "—",
+    "usage": [
+      {
+        "de": "Im Winter ist es kalt.",
+        "en": "In winter it is cold."
+      },
+      {
+        "de": "Die Winter sind lang.",
+        "en": "The winters are long."
+      }
+    ]
+  },
+  {
+    "id": "wind",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "weather"
+    ],
+    "german": "Wind",
+    "english": "wind",
+    "article": "der",
+    "plural": "Winde",
+    "pluralPattern": "-e",
+    "pluralPatternLabel": "-e",
+    "usage": [
+      {
+        "de": "Ich finde Wind gut.",
+        "en": "I like wind."
+      },
+      {
+        "de": "Die Winde sind heute stark.",
+        "en": "The winds are strong today."
+      }
+    ]
+  },
+  {
+    "id": "speisekarte",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "restaurant",
+      "food"
+    ],
+    "german": "Speisekarte",
+    "english": "menu",
+    "article": "die",
+    "plural": "Speisekarten",
+    "pluralPattern": "-n",
+    "pluralPatternLabel": "-n",
+    "usage": [
+      {
+        "de": "Wo ist die Speisekarte?",
+        "en": "Where is the menu?"
+      },
+      {
+        "de": "Die Speisekarten liegen auf dem Tisch.",
+        "en": "The menus are on the table."
+      }
+    ]
+  },
+  {
+    "id": "hamburger",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "food",
+      "restaurant"
+    ],
+    "german": "Hamburger",
+    "english": "hamburger",
+    "article": "der",
+    "plural": "Hamburger",
+    "pluralPattern": "-",
+    "pluralPatternLabel": "—",
+    "usage": [
+      {
+        "de": "Ich möchte einen Hamburger.",
+        "en": "I would like a hamburger."
+      },
+      {
+        "de": "Die Hamburger sind groß.",
+        "en": "The hamburgers are big."
+      }
+    ]
+  },
+  {
+    "id": "speise",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "food",
+      "restaurant"
+    ],
+    "german": "Speise",
+    "english": "dish / meal",
+    "article": "die",
+    "plural": "Speisen",
+    "pluralPattern": "-n",
+    "pluralPatternLabel": "-n",
+    "usage": [
+      {
+        "de": "Kleine Speisen stehen auf der Karte.",
+        "en": "Small dishes are on the menu."
+      },
+      {
+        "de": "Die Speisen sind lecker.",
+        "en": "The dishes are delicious."
+      }
+    ]
+  },
+  {
+    "id": "pommes_frites",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "food",
+      "restaurant"
+    ],
+    "german": "Pommes frites",
+    "english": "French fries",
+    "article": "die",
+    "gender": "plural",
+    "plural": "Pommes frites",
+    "declensionType": "plural_only",
+    "nounGroupRule": "Plural-only food noun",
+    "usage": [
+      {
+        "de": "Ich möchte bitte Pommes frites.",
+        "en": "I would like French fries, please."
+      },
+      {
+        "de": "Die Pommes frites sind heiß.",
+        "en": "The French fries are hot."
+      }
+    ]
+  },
+  {
+    "id": "portion",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "food",
+      "restaurant"
+    ],
+    "german": "Portion",
+    "english": "portion",
+    "article": "die",
+    "plural": "Portionen",
+    "pluralPattern": "-en",
+    "pluralPatternLabel": "-en",
+    "usage": [
+      {
+        "de": "Ich möchte eine Portion Pommes.",
+        "en": "I would like one portion of fries."
+      },
+      {
+        "de": "Die Portionen sind groß.",
+        "en": "The portions are large."
+      }
+    ]
+  },
+  {
+    "id": "ketchup",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "food",
+      "restaurant"
+    ],
+    "german": "Ketchup",
+    "english": "ketchup",
+    "article": "der / das",
+    "plural": "Ketchups",
+    "pluralPattern": "-s",
+    "pluralPatternLabel": "-s",
+    "nounGroupRule": "Two common article forms are used",
+    "usage": [
+      {
+        "de": "Ich möchte Pommes mit Ketchup.",
+        "en": "I would like fries with ketchup."
+      },
+      {
+        "de": "Die Ketchups stehen auf dem Tisch.",
+        "en": "The ketchups are on the table."
+      }
+    ]
+  },
+  {
+    "id": "salat",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "food",
+      "restaurant"
+    ],
+    "german": "Salat",
+    "english": "salad",
+    "article": "der",
+    "plural": "Salate",
+    "pluralPattern": "-e",
+    "pluralPatternLabel": "-e",
+    "usage": [
+      {
+        "de": "Ich möchte einen Salat.",
+        "en": "I would like a salad."
+      },
+      {
+        "de": "Die Salate sind frisch.",
+        "en": "The salads are fresh."
+      }
+    ]
+  },
+  {
+    "id": "schinken",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "food"
+    ],
+    "german": "Schinken",
+    "english": "ham",
+    "article": "der",
+    "plural": "Schinken",
+    "pluralPattern": "-",
+    "pluralPatternLabel": "—",
+    "usage": [
+      {
+        "de": "Ich möchte einen Salat mit Schinken.",
+        "en": "I would like a salad with ham."
+      },
+      {
+        "de": "Die Schinken liegen im Kühlschrank.",
+        "en": "The hams are in the fridge."
+      }
+    ]
+  },
+  {
+    "id": "getraenk",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "drinks",
+      "restaurant"
+    ],
+    "german": "Getränk",
+    "english": "drink",
+    "article": "das",
+    "plural": "Getränke",
+    "pluralPattern": "-e",
+    "pluralPatternLabel": "-e",
+    "usage": [
+      {
+        "de": "Papa kauft die Getränke.",
+        "en": "Dad buys the drinks."
+      },
+      {
+        "de": "Die Getränke sind kalt.",
+        "en": "The drinks are cold."
+      }
+    ]
+  },
+  {
+    "id": "cola",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "drinks",
+      "restaurant"
+    ],
+    "german": "Cola",
+    "english": "cola",
+    "article": "die",
+    "plural": "Colas",
+    "pluralPattern": "-s",
+    "pluralPatternLabel": "-s",
+    "usage": [
+      {
+        "de": "Ich möchte eine Cola.",
+        "en": "I would like a cola."
+      },
+      {
+        "de": "Die Colas sind im Kühlschrank.",
+        "en": "The colas are in the fridge."
+      }
+    ]
+  },
+  {
+    "id": "hund",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "animals",
+      "daily_life"
+    ],
+    "german": "Hund",
+    "english": "dog",
+    "article": "der",
+    "plural": "Hunde",
+    "pluralPattern": "-e",
+    "pluralPatternLabel": "-e",
+    "usage": [
+      {
+        "de": "Hast du einen Hund?",
+        "en": "Do you have a dog?"
+      },
+      {
+        "de": "Die Hunde spielen im Park.",
+        "en": "The dogs are playing in the park."
+      }
+    ]
+  },
+  {
+    "id": "eis",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "food"
+    ],
+    "german": "Eis",
+    "english": "ice cream",
+    "article": "das",
+    "plural": "—",
+    "declensionType": "no_plural",
+    "nounGroupRule": "Food noun often used without plural in general use",
+    "usage": [
+      {
+        "de": "Ich möchte ein Eis.",
+        "en": "I would like an ice cream."
+      },
+      {
+        "de": "Das Eis ist kalt.",
+        "en": "The ice cream is cold."
+      }
+    ]
+  },
+  {
+    "id": "fahrrad",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "transport",
+      "leisure"
+    ],
+    "german": "Fahrrad",
+    "english": "bicycle",
+    "article": "das",
+    "plural": "Fahrräder",
+    "pluralPattern": "umlaut-er",
+    "pluralPatternLabel": "Umlaut + -er",
+    "usage": [
+      {
+        "de": "Ich finde Fahrrad fahren super.",
+        "en": "I think cycling is great."
+      },
+      {
+        "de": "Die Fahrräder stehen vor dem Haus.",
+        "en": "The bicycles are in front of the house."
+      }
+    ]
+  },
+  {
+    "id": "freizeit",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "leisure"
+    ],
+    "german": "Freizeit",
+    "english": "free time",
+    "article": "die",
+    "plural": "—",
+    "declensionType": "no_plural",
+    "nounGroupRule": "Abstract noun with no plural in general use",
+    "usage": [
+      {
+        "de": "Was machst du gern in der Freizeit?",
+        "en": "What do you like doing in your free time?"
+      },
+      {
+        "de": "In meiner Freizeit lese ich.",
+        "en": "In my free time I read."
+      }
+    ]
+  },
+  {
+    "id": "hobby",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "leisure"
+    ],
+    "german": "Hobby",
+    "english": "hobby",
+    "article": "das",
+    "plural": "Hobbys",
+    "pluralPattern": "-s",
+    "pluralPatternLabel": "-s",
+    "usage": [
+      {
+        "de": "Was sind deine Hobbys?",
+        "en": "What are your hobbies?"
+      },
+      {
+        "de": "Meine Hobbys sind Musik und Sport.",
+        "en": "My hobbies are music and sport."
+      }
+    ]
+  },
+  {
+    "id": "krimi",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "media",
+      "leisure"
+    ],
+    "german": "Krimi",
+    "english": "crime novel / thriller",
+    "article": "der",
+    "plural": "Krimis",
+    "pluralPattern": "-s",
+    "pluralPatternLabel": "-s",
+    "usage": [
+      {
+        "de": "Ich finde Krimis gut.",
+        "en": "I like crime stories."
+      },
+      {
+        "de": "Die Krimis sind spannend.",
+        "en": "The thrillers are exciting."
+      }
+    ]
+  },
+  {
+    "id": "film",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "media",
+      "leisure"
+    ],
+    "german": "Film",
+    "english": "film / movie",
+    "article": "der",
+    "plural": "Filme",
+    "pluralPattern": "-e",
+    "pluralPatternLabel": "-e",
+    "usage": [
+      {
+        "de": "Mein Lieblingsfilm ist Skyfall.",
+        "en": "My favorite movie is Skyfall."
+      },
+      {
+        "de": "Die Filme sind interessant.",
+        "en": "The movies are interesting."
+      }
+    ]
+  },
+  {
+    "id": "grill",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "leisure",
+      "food"
+    ],
+    "german": "Grill",
+    "english": "grill / barbecue",
+    "article": "der",
+    "plural": "Grills",
+    "pluralPattern": "-s",
+    "pluralPatternLabel": "-s",
+    "usage": [
+      {
+        "de": "Das ist wichtig: der Grill.",
+        "en": "That is important: the grill."
+      },
+      {
+        "de": "Die Grills stehen im Garten.",
+        "en": "The grills are in the garden."
+      }
+    ]
+  },
+  {
+    "id": "beruf",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "work"
+    ],
+    "german": "Beruf",
+    "english": "job / profession",
+    "article": "der",
+    "plural": "Berufe",
+    "pluralPattern": "-e",
+    "pluralPatternLabel": "-e",
+    "usage": [
+      {
+        "de": "Was ist dein Beruf?",
+        "en": "What is your job?"
+      },
+      {
+        "de": "Die Berufe sind sehr verschieden.",
+        "en": "The professions are very different."
+      }
+    ]
+  },
+  {
+    "id": "foto",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "media",
+      "leisure"
+    ],
+    "german": "Foto",
+    "english": "photo",
+    "article": "das",
+    "plural": "Fotos",
+    "pluralPattern": "-s",
+    "pluralPatternLabel": "-s",
+    "usage": [
+      {
+        "de": "Das Foto gefällt mir sehr.",
+        "en": "I like the photo very much."
+      },
+      {
+        "de": "Die Fotos sind schön.",
+        "en": "The photos are beautiful."
+      }
+    ]
+  },
+  {
+    "id": "spass",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "leisure",
+      "feelings"
+    ],
+    "german": "Spaß",
+    "english": "fun",
+    "article": "der",
+    "plural": "—",
+    "declensionType": "no_plural",
+    "nounGroupRule": "Abstract noun with no plural in general use",
+    "usage": [
+      {
+        "de": "Das macht Spaß.",
+        "en": "That is fun."
+      },
+      {
+        "de": "Wir haben viel Spaß.",
+        "en": "We have a lot of fun."
+      }
+    ]
+  },
+  {
+    "id": "smartphone",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "technology",
+      "communication"
+    ],
+    "german": "Smartphone",
+    "english": "smartphone",
+    "article": "das",
+    "plural": "Smartphones",
+    "pluralPattern": "-s",
+    "pluralPatternLabel": "-s",
+    "usage": [
+      {
+        "de": "Ich brauche nur mein Smartphone.",
+        "en": "I only need my smartphone."
+      },
+      {
+        "de": "Die Smartphones liegen auf dem Tisch.",
+        "en": "The smartphones are on the table."
+      }
+    ]
+  },
+  {
+    "id": "wuerfel",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "games",
+      "leisure"
+    ],
+    "german": "Würfel",
+    "english": "dice / die",
+    "article": "der",
+    "plural": "Würfel",
+    "pluralPattern": "-",
+    "pluralPatternLabel": "—",
+    "usage": [
+      {
+        "de": "Du meinst das Würfelspiel?",
+        "en": "Do you mean the dice game?"
+      },
+      {
+        "de": "Die Würfel liegen auf dem Tisch.",
+        "en": "The dice are on the table."
+      }
+    ]
+  },
+  {
+    "id": "spiel",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "games",
+      "leisure"
+    ],
+    "german": "Spiel",
+    "english": "game",
+    "article": "das",
+    "plural": "Spiele",
+    "pluralPattern": "-e",
+    "pluralPatternLabel": "-e",
+    "usage": [
+      {
+        "de": "Hast du kein Backgammon-Spiel?",
+        "en": "Don’t you have a backgammon game?"
+      },
+      {
+        "de": "Die Spiele sind interessant.",
+        "en": "The games are interesting."
+      }
+    ]
+  },
+  {
+    "id": "problem",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "daily_life"
+    ],
+    "german": "Problem",
+    "english": "problem",
+    "article": "das",
+    "plural": "Probleme",
+    "pluralPattern": "-e",
+    "pluralPatternLabel": "-e",
+    "usage": [
+      {
+        "de": "Da gibt es leider ein Problem.",
+        "en": "Unfortunately there is a problem."
+      },
+      {
+        "de": "Die Probleme sind nicht groß.",
+        "en": "The problems are not big."
+      }
+    ]
+  }
+]

@@ -1,0 +1,1157 @@
+[
+  {
+    "id": "preis",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "shopping",
+      "money"
+    ],
+    "german": "Preis",
+    "english": "price",
+    "article": "der",
+    "plural": "Preise",
+    "pluralPattern": "-e",
+    "pluralPatternLabel": "-e",
+    "usage": [
+      {
+        "de": "Der Preis ist 2,45 Euro.",
+        "en": "The price is 2.45 euros."
+      },
+      {
+        "de": "Die Preise sind heute gut.",
+        "en": "The prices are good today."
+      }
+    ]
+  },
+  {
+    "id": "cent",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "shopping",
+      "money"
+    ],
+    "german": "Cent",
+    "english": "cent",
+    "article": "der",
+    "plural": "Cent",
+    "pluralPattern": "-",
+    "pluralPatternLabel": "—",
+    "nounGroupRule": "Zero plural in everyday price expressions",
+    "usage": [
+      {
+        "de": "Das kostet 45 Cent.",
+        "en": "That costs 45 cents."
+      },
+      {
+        "de": "Ein Liter Milch kostet 75 Cent.",
+        "en": "A liter of milk costs 75 cents."
+      }
+    ]
+  },
+  {
+    "id": "prospekt",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "shopping"
+    ],
+    "german": "Prospekt",
+    "english": "leaflet / brochure",
+    "article": "der",
+    "plural": "Prospekte",
+    "pluralPattern": "-e",
+    "pluralPatternLabel": "-e",
+    "usage": [
+      {
+        "de": "Sehen Sie den Prospekt an.",
+        "en": "Look at the leaflet."
+      },
+      {
+        "de": "Die Prospekte liegen auf dem Tisch.",
+        "en": "The brochures are on the table."
+      }
+    ]
+  },
+  {
+    "id": "sonderangebot",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "shopping"
+    ],
+    "german": "Sonderangebot",
+    "english": "special offer",
+    "article": "das",
+    "plural": "Sonderangebote",
+    "pluralPattern": "-e",
+    "pluralPatternLabel": "-e",
+    "usage": [
+      {
+        "de": "Heute ist das im Sonderangebot.",
+        "en": "Today it is on special offer."
+      },
+      {
+        "de": "Die Sonderangebote sind sehr günstig.",
+        "en": "The special offers are very cheap."
+      }
+    ]
+  },
+  {
+    "id": "broetchen",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "food",
+      "shopping"
+    ],
+    "german": "Brötchen",
+    "english": "bread roll",
+    "article": "das",
+    "plural": "Brötchen",
+    "pluralPattern": "-",
+    "pluralPatternLabel": "—",
+    "usage": [
+      {
+        "de": "Ein Brötchen kostet 30 Cent.",
+        "en": "A bread roll costs 30 cents."
+      },
+      {
+        "de": "Ich kaufe zwei Brötchen.",
+        "en": "I buy two bread rolls."
+      }
+    ]
+  },
+  {
+    "id": "apfelkuchen",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "food"
+    ],
+    "german": "Apfelkuchen",
+    "english": "apple cake",
+    "article": "der",
+    "plural": "Apfelkuchen",
+    "pluralPattern": "-",
+    "pluralPatternLabel": "—",
+    "nounGroupRule": "Zero plural",
+    "usage": [
+      {
+        "de": "Der Apfelkuchen kostet 1,39 Euro.",
+        "en": "The apple cake costs 1.39 euros."
+      },
+      {
+        "de": "Ich mag Apfelkuchen sehr gern.",
+        "en": "I like apple cake very much."
+      }
+    ]
+  },
+  {
+    "id": "lebensmittel",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "food",
+      "shopping"
+    ],
+    "german": "Lebensmittel",
+    "english": "food / groceries",
+    "article": "das",
+    "plural": "Lebensmittel",
+    "pluralPattern": "-",
+    "pluralPatternLabel": "—",
+    "nounGroupRule": "Zero plural",
+    "usage": [
+      {
+        "de": "Milch und Brot sind Lebensmittel.",
+        "en": "Milk and bread are foods."
+      },
+      {
+        "de": "Ich kaufe Lebensmittel im Supermarkt.",
+        "en": "I buy groceries in the supermarket."
+      }
+    ]
+  },
+  {
+    "id": "kilo",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "shopping",
+      "quantities"
+    ],
+    "german": "Kilo",
+    "english": "kilo / kilogram",
+    "article": "das",
+    "plural": "Kilo",
+    "pluralPattern": "-",
+    "pluralPatternLabel": "—",
+    "nounGroupRule": "Zero plural in measure expressions",
+    "usage": [
+      {
+        "de": "Ein Kilo Orangen kostet wenig.",
+        "en": "A kilo of oranges costs little."
+      },
+      {
+        "de": "Ich brauche zwei Kilo Äpfel.",
+        "en": "I need two kilos of apples."
+      }
+    ]
+  },
+  {
+    "id": "gramm",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "shopping",
+      "quantities"
+    ],
+    "german": "Gramm",
+    "english": "gram",
+    "article": "das",
+    "plural": "Gramm",
+    "pluralPattern": "-",
+    "pluralPatternLabel": "—",
+    "nounGroupRule": "Zero plural in measure expressions",
+    "usage": [
+      {
+        "de": "100 Gramm Käse kosten wenig.",
+        "en": "100 grams of cheese cost little."
+      },
+      {
+        "de": "Ich nehme 200 Gramm Wurst.",
+        "en": "I’ll take 200 grams of sausage."
+      }
+    ]
+  },
+  {
+    "id": "pfund",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "shopping",
+      "quantities"
+    ],
+    "german": "Pfund",
+    "english": "pound",
+    "article": "das",
+    "plural": "Pfund",
+    "pluralPattern": "-",
+    "pluralPatternLabel": "—",
+    "nounGroupRule": "Zero plural in measure expressions",
+    "usage": [
+      {
+        "de": "Ein Pfund Äpfel kostet nicht viel.",
+        "en": "A pound of apples does not cost much."
+      },
+      {
+        "de": "Ich kaufe ein Pfund Spinat.",
+        "en": "I buy a pound of spinach."
+      }
+    ]
+  },
+  {
+    "id": "liter",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "shopping",
+      "quantities"
+    ],
+    "german": "Liter",
+    "english": "liter",
+    "article": "der",
+    "plural": "Liter",
+    "pluralPattern": "-",
+    "pluralPatternLabel": "—",
+    "nounGroupRule": "Zero plural in measure expressions",
+    "usage": [
+      {
+        "de": "Ein Liter Milch kostet 75 Cent.",
+        "en": "A liter of milk costs 75 cents."
+      },
+      {
+        "de": "Ich brauche zwei Liter Saft.",
+        "en": "I need two liters of juice."
+      }
+    ]
+  },
+  {
+    "id": "flasche",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "shopping",
+      "food"
+    ],
+    "german": "Flasche",
+    "english": "bottle",
+    "article": "die",
+    "plural": "Flaschen",
+    "pluralPattern": "-n",
+    "pluralPatternLabel": "-n",
+    "usage": [
+      {
+        "de": "Eine Flasche Saft kostet 1,09 Euro.",
+        "en": "A bottle of juice costs 1.09 euros."
+      },
+      {
+        "de": "Ich kaufe zwei Flaschen Wasser.",
+        "en": "I buy two bottles of water."
+      }
+    ]
+  },
+  {
+    "id": "dose",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "shopping",
+      "food"
+    ],
+    "german": "Dose",
+    "english": "can / tin",
+    "article": "die",
+    "plural": "Dosen",
+    "pluralPattern": "-n",
+    "pluralPatternLabel": "-n",
+    "usage": [
+      {
+        "de": "Eine Dose Tomaten kostet 49 Cent.",
+        "en": "A can of tomatoes costs 49 cents."
+      },
+      {
+        "de": "Die Dosen stehen im Regal.",
+        "en": "The cans are on the shelf."
+      }
+    ]
+  },
+  {
+    "id": "sahne",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "food",
+      "ingredients"
+    ],
+    "german": "Sahne",
+    "english": "cream",
+    "article": "die",
+    "plural": "—",
+    "declensionType": "no_plural",
+    "nounGroupRule": "Food/mass noun with no plural in general use",
+    "usage": [
+      {
+        "de": "Ein Becher Sahne kostet 39 Cent.",
+        "en": "A cup of cream costs 39 cents."
+      },
+      {
+        "de": "Ich brauche Sahne für den Kuchen.",
+        "en": "I need cream for the cake."
+      }
+    ]
+  },
+  {
+    "id": "wurst",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "food"
+    ],
+    "german": "Wurst",
+    "english": "sausage / cold cuts",
+    "article": "die",
+    "plural": "Würste",
+    "pluralPattern": "umlaut-e",
+    "pluralPatternLabel": "Umlaut + -e",
+    "usage": [
+      {
+        "de": "100 Gramm Wurst kosten 2,29 Euro.",
+        "en": "100 grams of sausage cost 2.29 euros."
+      },
+      {
+        "de": "Ich esse gern Würste.",
+        "en": "I like eating sausages."
+      }
+    ]
+  },
+  {
+    "id": "hackfleisch",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "food",
+      "ingredients"
+    ],
+    "german": "Hackfleisch",
+    "english": "minced meat / ground meat",
+    "article": "das",
+    "plural": "—",
+    "declensionType": "no_plural",
+    "nounGroupRule": "Food/mass noun with no plural in general use",
+    "usage": [
+      {
+        "de": "Wie viel kostet ein Kilo Hackfleisch?",
+        "en": "How much does a kilo of minced meat cost?"
+      },
+      {
+        "de": "Ich brauche Hackfleisch für das Essen.",
+        "en": "I need minced meat for the meal."
+      }
+    ]
+  },
+  {
+    "id": "verkaeufer",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "shopping",
+      "jobs"
+    ],
+    "german": "Verkäufer",
+    "english": "salesman / shop assistant",
+    "article": "der",
+    "plural": "Verkäufer",
+    "pluralPattern": "-",
+    "pluralPatternLabel": "—",
+    "usage": [
+      {
+        "de": "Ich bin Verkäufer.",
+        "en": "I am a shop assistant."
+      },
+      {
+        "de": "Die Verkäufer helfen den Kunden.",
+        "en": "The salespeople help the customers."
+      }
+    ]
+  },
+  {
+    "id": "verkaeuferin",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "shopping",
+      "jobs"
+    ],
+    "german": "Verkäuferin",
+    "english": "saleswoman / shop assistant",
+    "article": "die",
+    "plural": "Verkäuferinnen",
+    "pluralPattern": "-nen",
+    "pluralPatternLabel": "-nen",
+    "nounGroupRule": "Feminine person noun in -in",
+    "usage": [
+      {
+        "de": "Die Verkäuferin ist freundlich.",
+        "en": "The saleswoman is friendly."
+      },
+      {
+        "de": "Ich frage die Verkäuferin.",
+        "en": "I ask the saleswoman."
+      }
+    ]
+  },
+  {
+    "id": "kunde",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "shopping",
+      "people"
+    ],
+    "german": "Kunde",
+    "english": "customer",
+    "article": "der",
+    "plural": "Kunden",
+    "pluralPattern": "-n",
+    "pluralPatternLabel": "-n",
+    "declensionType": "weak_masc",
+    "nounGroupRule": "Weak masculine — all cases except Nom.sg add -n/-en",
+    "usage": [
+      {
+        "de": "Ich bin Kunde.",
+        "en": "I am a customer."
+      },
+      {
+        "de": "Der Kunde kauft Obst.",
+        "en": "The customer buys fruit."
+      }
+    ]
+  },
+  {
+    "id": "kundin",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "shopping",
+      "people"
+    ],
+    "german": "Kundin",
+    "english": "female customer",
+    "article": "die",
+    "plural": "Kundinnen",
+    "pluralPattern": "-nen",
+    "pluralPatternLabel": "-nen",
+    "nounGroupRule": "Feminine person noun in -in",
+    "usage": [
+      {
+        "de": "Die Kundin möchte Birnen.",
+        "en": "The female customer would like pears."
+      },
+      {
+        "de": "Ich helfe der Kundin.",
+        "en": "I help the female customer."
+      }
+    ]
+  },
+  {
+    "id": "laden",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "shopping",
+      "places"
+    ],
+    "german": "Laden",
+    "english": "shop",
+    "article": "der",
+    "plural": "Läden",
+    "pluralPattern": "umlaut-e",
+    "pluralPatternLabel": "Umlaut + -e",
+    "nounGroupRule": "Irregular plural",
+    "usage": [
+      {
+        "de": "Der Laden ist heute offen.",
+        "en": "The shop is open today."
+      },
+      {
+        "de": "In der Stadt gibt es viele Läden.",
+        "en": "There are many shops in the city."
+      }
+    ]
+  },
+  {
+    "id": "obst",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "food",
+      "shopping"
+    ],
+    "german": "Obst",
+    "english": "fruit",
+    "article": "das",
+    "plural": "—",
+    "declensionType": "no_plural",
+    "nounGroupRule": "Collective food noun with no plural in general use",
+    "usage": [
+      {
+        "de": "Ich kaufe Obst.",
+        "en": "I buy fruit."
+      },
+      {
+        "de": "Obst ist gesund.",
+        "en": "Fruit is healthy."
+      }
+    ]
+  },
+  {
+    "id": "gemuese",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "food",
+      "shopping"
+    ],
+    "german": "Gemüse",
+    "english": "vegetables",
+    "article": "das",
+    "plural": "—",
+    "declensionType": "no_plural",
+    "nounGroupRule": "Collective food noun with no plural in general use",
+    "usage": [
+      {
+        "de": "Sie möchten Gemüse kaufen.",
+        "en": "They would like to buy vegetables."
+      },
+      {
+        "de": "Gemüse ist wichtig für die Gesundheit.",
+        "en": "Vegetables are important for health."
+      }
+    ]
+  },
+  {
+    "id": "baeckerei",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "shopping",
+      "places"
+    ],
+    "german": "Bäckerei",
+    "english": "bakery",
+    "article": "die",
+    "plural": "Bäckereien",
+    "pluralPattern": "-en",
+    "pluralPatternLabel": "-en",
+    "usage": [
+      {
+        "de": "In der Bäckerei kostet ein Brötchen 30 Cent.",
+        "en": "In the bakery a bread roll costs 30 cents."
+      },
+      {
+        "de": "Die Bäckerei ist gleich um die Ecke.",
+        "en": "The bakery is just around the corner."
+      }
+    ]
+  },
+  {
+    "id": "rezept",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "food",
+      "recipes"
+    ],
+    "german": "Rezept",
+    "english": "recipe",
+    "article": "das",
+    "plural": "Rezepte",
+    "pluralPattern": "-e",
+    "pluralPatternLabel": "-e",
+    "usage": [
+      {
+        "de": "Hier ist mein Rezept für Maultaschen.",
+        "en": "Here is my recipe for Maultaschen."
+      },
+      {
+        "de": "Ich lese gern neue Rezepte.",
+        "en": "I like reading new recipes."
+      }
+    ]
+  },
+  {
+    "id": "wasser",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "food",
+      "ingredients"
+    ],
+    "german": "Wasser",
+    "english": "water",
+    "article": "das",
+    "plural": "—",
+    "declensionType": "no_plural",
+    "nounGroupRule": "Material/mass noun with no plural in general use",
+    "usage": [
+      {
+        "de": "Sie brauchen nur 100 ml Wasser.",
+        "en": "You only need 100 ml of water."
+      },
+      {
+        "de": "Ich trinke viel Wasser.",
+        "en": "I drink a lot of water."
+      }
+    ]
+  },
+  {
+    "id": "pfeffer",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "food",
+      "ingredients"
+    ],
+    "german": "Pfeffer",
+    "english": "pepper",
+    "article": "der",
+    "plural": "—",
+    "declensionType": "no_plural",
+    "nounGroupRule": "Spice/mass noun with no plural in general use",
+    "usage": [
+      {
+        "de": "Sie brauchen Salz und Pfeffer.",
+        "en": "You need salt and pepper."
+      },
+      {
+        "de": "Ich mag Pfeffer im Essen.",
+        "en": "I like pepper in food."
+      }
+    ]
+  },
+  {
+    "id": "schokolade",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "food",
+      "ingredients"
+    ],
+    "german": "Schokolade",
+    "english": "chocolate",
+    "article": "die",
+    "plural": "—",
+    "declensionType": "no_plural",
+    "nounGroupRule": "Food/mass noun with no plural in general use",
+    "usage": [
+      {
+        "de": "Ich esse gern Schokolade.",
+        "en": "I like eating chocolate."
+      },
+      {
+        "de": "Die Schokolade ist süß.",
+        "en": "The chocolate is sweet."
+      }
+    ]
+  },
+  {
+    "id": "banane",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "food"
+    ],
+    "german": "Banane",
+    "english": "banana",
+    "article": "die",
+    "plural": "Bananen",
+    "pluralPattern": "-n",
+    "pluralPatternLabel": "-n",
+    "usage": [
+      {
+        "de": "Ich kaufe eine Banane.",
+        "en": "I buy a banana."
+      },
+      {
+        "de": "Die Bananen sind gelb.",
+        "en": "The bananas are yellow."
+      }
+    ]
+  },
+  {
+    "id": "milch",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "food",
+      "ingredients"
+    ],
+    "german": "Milch",
+    "english": "milk",
+    "article": "die",
+    "plural": "—",
+    "declensionType": "no_plural",
+    "nounGroupRule": "Food/mass noun with no plural in general use",
+    "usage": [
+      {
+        "de": "Ich trinke Milch.",
+        "en": "I drink milk."
+      },
+      {
+        "de": "Die Milch ist im Kühlschrank.",
+        "en": "The milk is in the fridge."
+      }
+    ]
+  },
+  {
+    "id": "brot",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "food"
+    ],
+    "german": "Brot",
+    "english": "bread / loaf of bread",
+    "article": "das",
+    "plural": "Brote",
+    "pluralPattern": "-e",
+    "pluralPatternLabel": "-e",
+    "usage": [
+      {
+        "de": "Ich kaufe ein Brot.",
+        "en": "I buy a loaf of bread."
+      },
+      {
+        "de": "Die Brote sind frisch.",
+        "en": "The breads are fresh."
+      }
+    ]
+  },
+  {
+    "id": "kaese",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "food",
+      "ingredients"
+    ],
+    "german": "Käse",
+    "english": "cheese",
+    "article": "der",
+    "plural": "—",
+    "declensionType": "no_plural",
+    "nounGroupRule": "Food/mass noun with no plural in general use",
+    "usage": [
+      {
+        "de": "Was kosten 100 Gramm Käse?",
+        "en": "How much do 100 grams of cheese cost?"
+      },
+      {
+        "de": "Ich esse gern Käse.",
+        "en": "I like eating cheese."
+      }
+    ]
+  },
+  {
+    "id": "apfel",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "food"
+    ],
+    "german": "Apfel",
+    "english": "apple",
+    "article": "der",
+    "plural": "Äpfel",
+    "pluralPattern": "umlaut",
+    "pluralPatternLabel": "Umlaut",
+    "nounGroupRule": "Irregular plural (umlaut only)",
+    "usage": [
+      {
+        "de": "Ich esse einen Apfel.",
+        "en": "I eat an apple."
+      },
+      {
+        "de": "Die Äpfel sind im Korb.",
+        "en": "The apples are in the basket."
+      }
+    ]
+  },
+  {
+    "id": "kuchen",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "food"
+    ],
+    "german": "Kuchen",
+    "english": "cake",
+    "article": "der",
+    "plural": "Kuchen",
+    "pluralPattern": "-",
+    "pluralPatternLabel": "—",
+    "nounGroupRule": "Zero plural",
+    "usage": [
+      {
+        "de": "Der Kuchen ist sehr gut.",
+        "en": "The cake is very good."
+      },
+      {
+        "de": "Ich backe oft Kuchen.",
+        "en": "I often bake cakes."
+      }
+    ]
+  },
+  {
+    "id": "orange",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "food"
+    ],
+    "german": "Orange",
+    "english": "orange",
+    "article": "die",
+    "plural": "Orangen",
+    "pluralPattern": "-n",
+    "pluralPatternLabel": "-n",
+    "usage": [
+      {
+        "de": "Ich kaufe eine Orange.",
+        "en": "I buy an orange."
+      },
+      {
+        "de": "Die Orangen sind süß.",
+        "en": "The oranges are sweet."
+      }
+    ]
+  },
+  {
+    "id": "kartoffel",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "food",
+      "ingredients"
+    ],
+    "german": "Kartoffel",
+    "english": "potato",
+    "article": "die",
+    "plural": "Kartoffeln",
+    "pluralPattern": "-n",
+    "pluralPatternLabel": "-n",
+    "usage": [
+      {
+        "de": "Ich brauche Kartoffeln für das Essen.",
+        "en": "I need potatoes for the meal."
+      },
+      {
+        "de": "Die Kartoffeln sind frisch.",
+        "en": "The potatoes are fresh."
+      }
+    ]
+  },
+  {
+    "id": "zwiebel",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "food",
+      "ingredients"
+    ],
+    "german": "Zwiebel",
+    "english": "onion",
+    "article": "die",
+    "plural": "Zwiebeln",
+    "pluralPattern": "-n",
+    "pluralPatternLabel": "-n",
+    "usage": [
+      {
+        "de": "Ich schneide eine Zwiebel.",
+        "en": "I cut an onion."
+      },
+      {
+        "de": "Die Zwiebeln sind billig.",
+        "en": "The onions are cheap."
+      }
+    ]
+  },
+  {
+    "id": "butter",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "food",
+      "ingredients"
+    ],
+    "german": "Butter",
+    "english": "butter",
+    "article": "die",
+    "plural": "—",
+    "declensionType": "no_plural",
+    "nounGroupRule": "Food/mass noun with no plural in general use",
+    "exceptions": [
+      "Gender does not follow the usual -er pattern."
+    ],
+    "usage": [
+      {
+        "de": "Ich brauche Butter für den Kuchen.",
+        "en": "I need butter for the cake."
+      },
+      {
+        "de": "Die Butter ist im Kühlschrank.",
+        "en": "The butter is in the fridge."
+      }
+    ]
+  },
+  {
+    "id": "ei",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "food",
+      "ingredients"
+    ],
+    "german": "Ei",
+    "english": "egg",
+    "article": "das",
+    "plural": "Eier",
+    "pluralPattern": "-er",
+    "pluralPatternLabel": "-er",
+    "usage": [
+      {
+        "de": "Ich brauche ein Ei.",
+        "en": "I need an egg."
+      },
+      {
+        "de": "Die Eier sind frisch.",
+        "en": "The eggs are fresh."
+      }
+    ]
+  },
+  {
+    "id": "fisch",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "food"
+    ],
+    "german": "Fisch",
+    "english": "fish",
+    "article": "der",
+    "plural": "Fische",
+    "pluralPattern": "-e",
+    "pluralPatternLabel": "-e",
+    "usage": [
+      {
+        "de": "Ich esse gern Fisch.",
+        "en": "I like eating fish."
+      },
+      {
+        "de": "Die Fische sind teuer.",
+        "en": "The fish are expensive."
+      }
+    ]
+  },
+  {
+    "id": "fleisch",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "food"
+    ],
+    "german": "Fleisch",
+    "english": "meat",
+    "article": "das",
+    "plural": "—",
+    "declensionType": "no_plural",
+    "nounGroupRule": "Food/mass noun with no plural in general use",
+    "usage": [
+      {
+        "de": "Ich esse wenig Fleisch.",
+        "en": "I eat little meat."
+      },
+      {
+        "de": "Das Fleisch ist frisch.",
+        "en": "The meat is fresh."
+      }
+    ]
+  },
+  {
+    "id": "birne",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "food"
+    ],
+    "german": "Birne",
+    "english": "pear",
+    "article": "die",
+    "plural": "Birnen",
+    "pluralPattern": "-n",
+    "pluralPatternLabel": "-n",
+    "usage": [
+      {
+        "de": "Ich möchte eine Birne.",
+        "en": "I would like a pear."
+      },
+      {
+        "de": "Die Birnen kosten 1,40 Euro.",
+        "en": "The pears cost 1.40 euros."
+      }
+    ]
+  },
+  {
+    "id": "saft",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "food",
+      "drinks"
+    ],
+    "german": "Saft",
+    "english": "juice",
+    "article": "der",
+    "plural": "Säfte",
+    "pluralPattern": "umlaut-e",
+    "pluralPatternLabel": "Umlaut + -e",
+    "usage": [
+      {
+        "de": "Eine Flasche Saft kostet 1,09 Euro.",
+        "en": "A bottle of juice costs 1.09 euros."
+      },
+      {
+        "de": "Die Säfte sind im Regal.",
+        "en": "The juices are on the shelf."
+      }
+    ]
+  },
+  {
+    "id": "joghurt",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "food"
+    ],
+    "german": "Joghurt",
+    "english": "yogurt",
+    "article": "der / das",
+    "plural": "Joghurts",
+    "pluralPattern": "-s",
+    "pluralPatternLabel": "-s",
+    "nounGroupRule": "Two common article forms are used",
+    "usage": [
+      {
+        "de": "Ich esse gern Joghurt.",
+        "en": "I like eating yogurt."
+      },
+      {
+        "de": "Die Joghurts sind im Kühlschrank.",
+        "en": "The yogurts are in the fridge."
+      }
+    ]
+  },
+  {
+    "id": "tomate",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "food",
+      "ingredients"
+    ],
+    "german": "Tomate",
+    "english": "tomato",
+    "article": "die",
+    "plural": "Tomaten",
+    "pluralPattern": "-n",
+    "pluralPatternLabel": "-n",
+    "usage": [
+      {
+        "de": "Ich kaufe eine Tomate.",
+        "en": "I buy a tomato."
+      },
+      {
+        "de": "Die Tomaten sind rot.",
+        "en": "The tomatoes are red."
+      }
+    ]
+  },
+  {
+    "id": "mineralwasser",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "drinks",
+      "food"
+    ],
+    "german": "Mineralwasser",
+    "english": "mineral water",
+    "article": "das",
+    "plural": "—",
+    "declensionType": "no_plural",
+    "nounGroupRule": "Drink/mass noun with no plural in general use",
+    "usage": [
+      {
+        "de": "Ich trinke Mineralwasser.",
+        "en": "I drink mineral water."
+      },
+      {
+        "de": "Das Mineralwasser ist kalt.",
+        "en": "The mineral water is cold."
+      }
+    ]
+  }
+]

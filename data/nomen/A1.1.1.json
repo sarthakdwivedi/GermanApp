@@ -1,204 +1,15 @@
 [
   {
-    "id": "bild",
-    "level": "A1",
-    "type": "nomen",
-    "theme": [
-      "learning_actions",
-      "education"
-    ],
-    "german": "Bild",
-    "english": "picture",
-    "article": "das",
-    "gender": "neuter",
-    "plural": "Bilder",
-    "pluralPattern": "-er",
-    "pluralPatternLabel": "-er",
-    "nounGroupRule": "Many neuter nouns form plural with -er",
-    "usage": [
-      {
-        "de": "Das Bild ist schön.",
-        "en": "The picture is beautiful."
-      },
-      {
-        "de": "Ich sehe viele Bilder.",
-        "en": "I see many pictures."
-      }
-    ]
-  },
-  {
-    "id": "kurs",
-    "level": "A1",
-    "type": "nomen",
-    "theme": [
-      "learning_actions",
-      "education"
-    ],
-    "german": "Kurs",
-    "english": "course",
-    "article": "der",
-    "gender": "masculine",
-    "plural": "Kurse",
-    "pluralPattern": "-e",
-    "pluralPatternLabel": "-e",
-    "nounGroupRule": "Many masculine nouns take -e",
-    "usage": [
-      {
-        "de": "Der Kurs ist interessant.",
-        "en": "The course is interesting."
-      },
-      {
-        "de": "Ich mache einen Kurs.",
-        "en": "I am taking a course."
-      }
-    ]
-  },
-  {
-    "id": "gespraech",
-    "level": "A1",
-    "type": "nomen",
-    "theme": [
-      "learning_actions",
-      "education"
-    ],
-    "german": "Gespräch",
-    "english": "conversation",
-    "article": "das",
-    "gender": "neuter",
-    "plural": "Gespräche",
-    "pluralPattern": "umlaut-e",
-    "pluralPatternLabel": "Umlaut + -e",
-    "nounGroupRule": "Many neuter nouns form plural with umlaut + -e",
-    "usage": [
-      {
-        "de": "Das Gespräch ist kurz.",
-        "en": "The conversation is short."
-      },
-      {
-        "de": "Wir lesen die Gespräche.",
-        "en": "We read the conversations."
-      }
-    ]
-  },
-  {
-    "id": "frage",
-    "level": "A1",
-    "type": "nomen",
-    "theme": [
-      "learning_actions",
-      "education"
-    ],
-    "german": "Frage",
-    "english": "question",
-    "article": "die",
-    "gender": "feminine",
-    "plural": "Fragen",
-    "pluralPattern": "-n",
-    "pluralPatternLabel": "-n",
-    "nounGroupRule": "Feminine nouns often take -n",
-    "usage": [
-      {
-        "de": "Ich habe eine Frage.",
-        "en": "I have a question."
-      },
-      {
-        "de": "Die Fragen sind leicht.",
-        "en": "The questions are easy."
-      }
-    ]
-  },
-  {
-    "id": "wort",
-    "level": "A1",
-    "type": "nomen",
-    "theme": [
-      "learning_actions",
-      "education"
-    ],
-    "german": "Wort",
-    "english": "word",
-    "article": "das",
-    "gender": "neuter",
-    "plural": "Wörter",
-    "pluralPattern": "umlaut-er",
-    "pluralPatternLabel": "Umlaut + -er",
-    "nounGroupRule": "Many monosyllabic neuter nouns",
-    "usage": [
-      {
-        "de": "Das Wort ist neu.",
-        "en": "The word is new."
-      },
-      {
-        "de": "Ich lerne viele Wörter.",
-        "en": "I learn many words."
-      }
-    ]
-  },
-  {
-    "id": "lektion",
-    "level": "A1",
-    "type": "nomen",
-    "theme": [
-      "learning_actions",
-      "education"
-    ],
-    "german": "Lektion",
-    "english": "lesson",
-    "article": "die",
-    "gender": "feminine",
-    "plural": "Lektionen",
-    "pluralPattern": "-en",
-    "pluralPatternLabel": "-en",
-    "nounGroupRule": "Many feminine nouns take -en",
-    "usage": [
-      {
-        "de": "Die Lektion ist neu.",
-        "en": "The lesson is new."
-      },
-      {
-        "de": "Ich lerne die Lektion.",
-        "en": "I study the lesson."
-      }
-    ]
-  },
-  {
-    "id": "antwort",
-    "level": "A1",
-    "type": "nomen",
-    "theme": [
-      "learning_actions",
-      "education"
-    ],
-    "german": "Antwort",
-    "english": "answer",
-    "article": "die",
-    "gender": "feminine",
-    "plural": "Antworten",
-    "pluralPattern": "-en",
-    "pluralPatternLabel": "-en",
-    "nounGroupRule": "Many feminine nouns take -en",
-    "usage": [
-      {
-        "de": "Die Antwort ist richtig.",
-        "en": "The answer is correct."
-      },
-      {
-        "de": "Ich schreibe die Antworten.",
-        "en": "I write the answers."
-      }
-    ]
-  },
-  {
     "id": "name",
     "level": "A1",
     "type": "nomen",
     "theme": [
-      "introductions"
+      "introductions",
+      "personal_information"
     ],
     "german": "Name",
     "english": "name",
     "article": "der",
-    "gender": "masculine",
     "plural": "Namen",
     "pluralPattern": "-n",
     "pluralPatternLabel": "-n",
@@ -220,24 +31,21 @@
     "level": "A1",
     "type": "nomen",
     "theme": [
+      "countries",
       "introductions"
     ],
     "german": "Deutschland",
     "english": "Germany",
     "article": "—",
-    "gender": "neuter",
     "plural": "—",
-    "pluralPattern": "-",
-    "pluralPatternLabel": "—",
     "declensionType": "no_plural",
-    "nounGroupRule": "Most country names are used without an article and have no plural",
     "usage": [
       {
         "de": "Ich komme aus Deutschland.",
         "en": "I come from Germany."
       },
       {
-        "de": "Deutschland ist in Europa.",
+        "de": "Deutschland liegt in Europa.",
         "en": "Germany is in Europe."
       }
     ]
@@ -247,17 +55,15 @@
     "level": "A1",
     "type": "nomen",
     "theme": [
-      "introductions"
+      "introductions",
+      "education"
     ],
     "german": "Deutsch",
     "english": "German",
     "article": "das",
-    "gender": "neuter",
     "plural": "—",
-    "pluralPattern": "-",
-    "pluralPatternLabel": "—",
     "declensionType": "no_plural",
-    "nounGroupRule": "Language names used as nouns are usually neuter and have no plural",
+    "nounGroupRule": "Language name used as a noun with no plural",
     "usage": [
       {
         "de": "Ich spreche Deutsch.",
@@ -274,16 +80,17 @@
     "level": "A1",
     "type": "nomen",
     "theme": [
-      "introductions"
+      "introductions",
+      "people"
     ],
     "german": "Herr",
     "english": "Mr. / gentleman",
     "article": "der",
-    "gender": "masculine",
     "plural": "Herren",
     "pluralPattern": "-en",
     "pluralPatternLabel": "-en",
-    "nounGroupRule": "Many masculine nouns take -en in plural",
+    "declensionType": "weak_masc",
+    "nounGroupRule": "Weak masculine — all cases except Nom.sg add -n/-en",
     "usage": [
       {
         "de": "Guten Tag, Herr Müller.",
@@ -300,16 +107,15 @@
     "level": "A1",
     "type": "nomen",
     "theme": [
-      "introductions"
+      "introductions",
+      "people"
     ],
     "german": "Kind",
     "english": "child",
     "article": "das",
-    "gender": "neuter",
     "plural": "Kinder",
     "pluralPattern": "-er",
     "pluralPatternLabel": "-er",
-    "nounGroupRule": "Many neuter nouns form plural with -er",
     "usage": [
       {
         "de": "Das Kind heißt Lili.",
@@ -326,16 +132,15 @@
     "level": "A1",
     "type": "nomen",
     "theme": [
-      "introductions"
+      "introductions",
+      "people"
     ],
     "german": "Dame",
     "english": "lady",
     "article": "die",
-    "gender": "feminine",
     "plural": "Damen",
     "pluralPattern": "-n",
     "pluralPatternLabel": "-n",
-    "nounGroupRule": "Feminine nouns often take -n",
     "usage": [
       {
         "de": "Guten Abend, meine Damen.",
@@ -352,17 +157,15 @@
     "level": "A1",
     "type": "nomen",
     "theme": [
-      "introductions"
+      "introductions",
+      "leisure"
     ],
     "german": "Musik",
     "english": "music",
     "article": "die",
-    "gender": "feminine",
     "plural": "—",
-    "pluralPattern": "-",
-    "pluralPatternLabel": "—",
     "declensionType": "no_plural",
-    "nounGroupRule": "Abstract nouns often have no plural",
+    "nounGroupRule": "Abstract noun with no plural in general use",
     "usage": [
       {
         "de": "Ich höre gern Musik.",
@@ -379,16 +182,15 @@
     "level": "A1",
     "type": "nomen",
     "theme": [
-      "introductions"
+      "introductions",
+      "people"
     ],
     "german": "Frau",
     "english": "woman / Mrs.",
     "article": "die",
-    "gender": "feminine",
     "plural": "Frauen",
     "pluralPattern": "-en",
     "pluralPatternLabel": "-en",
-    "nounGroupRule": "Many feminine nouns take -en",
     "usage": [
       {
         "de": "Guten Morgen, Frau Meier.",
@@ -405,16 +207,14 @@
     "level": "A1",
     "type": "nomen",
     "theme": [
-      "introductions"
+      "family"
     ],
     "german": "Papa",
     "english": "dad",
     "article": "der",
-    "gender": "masculine",
     "plural": "Papas",
     "pluralPattern": "-s",
     "pluralPatternLabel": "-s",
-    "nounGroupRule": "Family words and informal nouns sometimes take -s",
     "usage": [
       {
         "de": "Gute Nacht, Papa.",
@@ -425,543 +225,725 @@
         "en": "My dad is nice."
       }
     ]
-  }
-,
+  },
   {
     "id": "entschuldigung",
     "level": "A1",
     "type": "nomen",
-    "theme": ["communication", "introductions"],
+    "theme": [
+      "introductions",
+      "communication"
+    ],
     "german": "Entschuldigung",
     "english": "excuse me / apology",
     "article": "die",
-    "gender": "feminine",
     "plural": "Entschuldigungen",
     "pluralPattern": "-en",
     "pluralPatternLabel": "-en",
-    "nounGroupRule": "Many feminine nouns take -en",
     "usage": [
-      {"de": "Entschuldigung, wie heißen Sie?", "en": "Excuse me, what is your name?"},
-      {"de": "Das ist nur eine kleine Entschuldigung.", "en": "That is only a small apology."}
+      {
+        "de": "Entschuldigung, wie heißen Sie?",
+        "en": "Excuse me, what is your name?"
+      },
+      {
+        "de": "Das ist nur eine kleine Entschuldigung.",
+        "en": "That is only a small apology."
+      }
     ]
   },
   {
     "id": "oesterreich",
     "level": "A1",
     "type": "nomen",
-    "theme": ["introductions", "countries"],
+    "theme": [
+      "countries",
+      "introductions"
+    ],
     "german": "Österreich",
     "english": "Austria",
     "article": "—",
-    "gender": "neuter",
     "plural": "—",
-    "pluralPattern": "-",
-    "pluralPatternLabel": "—",
     "declensionType": "no_plural",
-    "nounGroupRule": "Most country names are used without an article and have no plural",
     "usage": [
-      {"de": "Ich komme aus Österreich.", "en": "I come from Austria."},
-      {"de": "Österreich ist sehr schön.", "en": "Austria is very beautiful."}
+      {
+        "de": "Ich komme aus Österreich.",
+        "en": "I come from Austria."
+      },
+      {
+        "de": "Österreich ist sehr schön.",
+        "en": "Austria is very beautiful."
+      }
     ]
   },
   {
     "id": "schweiz",
     "level": "A1",
     "type": "nomen",
-    "theme": ["introductions", "countries"],
+    "theme": [
+      "countries",
+      "introductions"
+    ],
     "german": "Schweiz",
     "english": "Switzerland",
     "article": "die",
-    "gender": "feminine",
     "plural": "—",
-    "pluralPattern": "-",
-    "pluralPatternLabel": "—",
     "declensionType": "no_plural",
-    "nounGroupRule": "Some country names take an article and have no plural",
+    "nounGroupRule": "Country name used with article and no plural",
     "usage": [
-      {"de": "Ich komme aus der Schweiz.", "en": "I come from Switzerland."},
-      {"de": "Die Schweiz liegt in Europa.", "en": "Switzerland is in Europe."}
+      {
+        "de": "Ich komme aus der Schweiz.",
+        "en": "I come from Switzerland."
+      },
+      {
+        "de": "Die Schweiz liegt in Europa.",
+        "en": "Switzerland is in Europe."
+      }
     ]
   },
   {
     "id": "sprache",
     "level": "A1",
     "type": "nomen",
-    "theme": ["communication", "introductions"],
+    "theme": [
+      "introductions",
+      "education"
+    ],
     "german": "Sprache",
     "english": "language",
     "article": "die",
-    "gender": "feminine",
     "plural": "Sprachen",
     "pluralPattern": "-n",
     "pluralPatternLabel": "-n",
-    "nounGroupRule": "Feminine nouns often take -n",
     "usage": [
-      {"de": "Deutsch ist eine Sprache.", "en": "German is a language."},
-      {"de": "Ich spreche zwei Sprachen.", "en": "I speak two languages."}
+      {
+        "de": "Deutsch ist eine Sprache.",
+        "en": "German is a language."
+      },
+      {
+        "de": "Ich spreche zwei Sprachen.",
+        "en": "I speak two languages."
+      }
     ]
   },
   {
     "id": "buchstabe",
     "level": "A1",
     "type": "nomen",
-    "theme": ["spelling", "education"],
+    "theme": [
+      "introductions",
+      "education"
+    ],
     "german": "Buchstabe",
     "english": "letter",
     "article": "der",
-    "gender": "masculine",
     "plural": "Buchstaben",
     "pluralPattern": "-n",
     "pluralPatternLabel": "-n",
-    "nounGroupRule": "Many masculine nouns ending in -e take -n in plural",
     "usage": [
-      {"de": "A ist ein Buchstabe.", "en": "A is a letter."},
-      {"de": "Das Wort hat acht Buchstaben.", "en": "The word has eight letters."}
+      {
+        "de": "A ist ein Buchstabe.",
+        "en": "A is a letter."
+      },
+      {
+        "de": "Das Wort hat acht Buchstaben.",
+        "en": "The word has eight letters."
+      }
     ]
   },
   {
     "id": "alphabet",
     "level": "A1",
     "type": "nomen",
-    "theme": ["spelling", "education"],
+    "theme": [
+      "introductions",
+      "education"
+    ],
     "german": "Alphabet",
     "english": "alphabet",
     "article": "das",
-    "gender": "neuter",
     "plural": "—",
-    "pluralPattern": "-",
-    "pluralPatternLabel": "—",
     "declensionType": "no_plural",
-    "nounGroupRule": "Abstract system terms often have no plural",
+    "nounGroupRule": "System term used as a singular concept",
     "usage": [
-      {"de": "Das Alphabet beginnt mit A.", "en": "The alphabet begins with A."},
-      {"de": "Wir lernen das deutsche Alphabet.", "en": "We learn the German alphabet."}
+      {
+        "de": "Das Alphabet beginnt mit A.",
+        "en": "The alphabet begins with A."
+      },
+      {
+        "de": "Wir lernen das deutsche Alphabet.",
+        "en": "We learn the German alphabet."
+      }
     ]
   },
   {
     "id": "firma",
     "level": "A1",
     "type": "nomen",
-    "theme": ["work", "contact_information"],
+    "theme": [
+      "introductions",
+      "work"
+    ],
     "german": "Firma",
     "english": "company",
     "article": "die",
-    "gender": "feminine",
     "plural": "Firmen",
     "pluralPattern": "-n",
     "pluralPatternLabel": "-n",
-    "nounGroupRule": "Feminine nouns often take -n",
     "usage": [
-      {"de": "Die Firma heißt Microlab.", "en": "The company is called Microlab."},
-      {"de": "Er arbeitet in einer Firma.", "en": "He works in a company."}
+      {
+        "de": "Die Firma heißt Microlab.",
+        "en": "The company is called Microlab."
+      },
+      {
+        "de": "Er arbeitet in einer Firma.",
+        "en": "He works in a company."
+      }
     ]
   },
   {
     "id": "adresse",
     "level": "A1",
     "type": "nomen",
-    "theme": ["contact_information", "communication"],
+    "theme": [
+      "introductions",
+      "personal_information"
+    ],
     "german": "Adresse",
     "english": "address",
     "article": "die",
-    "gender": "feminine",
     "plural": "Adressen",
     "pluralPattern": "-n",
     "pluralPatternLabel": "-n",
-    "nounGroupRule": "Feminine nouns often take -n",
     "usage": [
-      {"de": "Wie ist Ihre Adresse?", "en": "What is your address?"},
-      {"de": "Ich schreibe meine Adresse auf.", "en": "I write down my address."}
+      {
+        "de": "Wie ist Ihre Adresse?",
+        "en": "What is your address?"
+      },
+      {
+        "de": "Ich schreibe meine Adresse auf.",
+        "en": "I write down my address."
+      }
     ]
   },
   {
     "id": "visitenkarte",
     "level": "A1",
     "type": "nomen",
-    "theme": ["contact_information", "work"],
+    "theme": [
+      "introductions",
+      "work"
+    ],
     "german": "Visitenkarte",
     "english": "business card",
     "article": "die",
-    "gender": "feminine",
     "plural": "Visitenkarten",
     "pluralPattern": "-n",
     "pluralPatternLabel": "-n",
-    "nounGroupRule": "Feminine nouns often take -n",
     "usage": [
-      {"de": "Das ist meine Visitenkarte.", "en": "This is my business card."},
-      {"de": "Er gibt mir seine Visitenkarte.", "en": "He gives me his business card."}
+      {
+        "de": "Das ist meine Visitenkarte.",
+        "en": "This is my business card."
+      },
+      {
+        "de": "Er gibt mir seine Visitenkarte.",
+        "en": "He gives me his business card."
+      }
     ]
-  }
-,
+  },
   {
     "id": "vorname",
     "level": "A1",
     "type": "nomen",
-    "theme": ["personal_information", "introductions"],
+    "theme": [
+      "personal_information",
+      "introductions"
+    ],
     "german": "Vorname",
     "english": "first name",
     "article": "der",
-    "gender": "masculine",
     "plural": "Vornamen",
     "pluralPattern": "-n",
     "pluralPatternLabel": "-n",
     "declensionType": "weak_masc",
     "nounGroupRule": "Weak masculine — all cases except Nom.sg add -n/-en",
     "usage": [
-      {"de": "Mein Vorname ist Anna.", "en": "My first name is Anna."},
-      {"de": "Wie ist Ihr Vorname?", "en": "What is your first name?"}
+      {
+        "de": "Mein Vorname ist Anna.",
+        "en": "My first name is Anna."
+      },
+      {
+        "de": "Wie ist Ihr Vorname?",
+        "en": "What is your first name?"
+      }
     ]
   },
   {
     "id": "familienname",
     "level": "A1",
     "type": "nomen",
-    "theme": ["personal_information", "introductions"],
+    "theme": [
+      "personal_information",
+      "introductions"
+    ],
     "german": "Familienname",
     "english": "last name / family name",
     "article": "der",
-    "gender": "masculine",
     "plural": "Familiennamen",
     "pluralPattern": "-n",
     "pluralPatternLabel": "-n",
     "declensionType": "weak_masc",
     "nounGroupRule": "Weak masculine — all cases except Nom.sg add -n/-en",
     "usage": [
-      {"de": "Mein Familienname ist Meier.", "en": "My last name is Meier."},
-      {"de": "Wie schreibt man Ihren Familiennamen?", "en": "How do you spell your last name?"}
+      {
+        "de": "Mein Familienname ist Meier.",
+        "en": "My last name is Meier."
+      },
+      {
+        "de": "Wie schreibt man Ihren Familiennamen?",
+        "en": "How do you spell your last name?"
+      }
     ]
   },
   {
     "id": "strasse",
     "level": "A1",
     "type": "nomen",
-    "theme": ["personal_information", "contact_information"],
+    "theme": [
+      "personal_information",
+      "city"
+    ],
     "german": "Straße",
     "english": "street",
     "article": "die",
-    "gender": "feminine",
     "plural": "Straßen",
     "pluralPattern": "-n",
     "pluralPatternLabel": "-n",
-    "nounGroupRule": "Feminine nouns often take -n",
     "usage": [
-      {"de": "Ich wohne in der Bahnhofstraße.", "en": "I live on Bahnhofstraße."},
-      {"de": "Diese Straße ist lang.", "en": "This street is long."}
+      {
+        "de": "Ich wohne in der Bahnhofstraße.",
+        "en": "I live on Bahnhofstraße."
+      },
+      {
+        "de": "Diese Straße ist lang.",
+        "en": "This street is long."
+      }
     ]
   },
   {
     "id": "stadt",
     "level": "A1",
     "type": "nomen",
-    "theme": ["personal_information", "places"],
+    "theme": [
+      "personal_information",
+      "city"
+    ],
     "german": "Stadt",
     "english": "city",
     "article": "die",
-    "gender": "feminine",
     "plural": "Städte",
     "pluralPattern": "umlaut-e",
     "pluralPatternLabel": "Umlaut + -e",
-    "nounGroupRule": "Many feminine nouns form plural with umlaut + -e",
     "usage": [
-      {"de": "Wien ist eine schöne Stadt.", "en": "Vienna is a beautiful city."},
-      {"de": "Ich kenne viele Städte.", "en": "I know many cities."}
+      {
+        "de": "Wien ist eine schöne Stadt.",
+        "en": "Vienna is a beautiful city."
+      },
+      {
+        "de": "Ich kenne viele Städte.",
+        "en": "I know many cities."
+      }
     ]
   },
   {
     "id": "land",
     "level": "A1",
     "type": "nomen",
-    "theme": ["countries", "places"],
+    "theme": [
+      "personal_information",
+      "countries"
+    ],
     "german": "Land",
     "english": "country",
     "article": "das",
-    "gender": "neuter",
     "plural": "Länder",
     "pluralPattern": "umlaut-er",
     "pluralPatternLabel": "Umlaut + -er",
-    "nounGroupRule": "Many monosyllabic neuter nouns",
     "usage": [
-      {"de": "Deutschland ist ein Land in Europa.", "en": "Germany is a country in Europe."},
-      {"de": "Ich kenne viele Länder.", "en": "I know many countries."}
+      {
+        "de": "Deutschland ist ein Land in Europa.",
+        "en": "Germany is a country in Europe."
+      },
+      {
+        "de": "Ich kenne viele Länder.",
+        "en": "I know many countries."
+      }
     ]
   },
   {
     "id": "e_mail",
     "level": "A1",
     "type": "nomen",
-    "theme": ["contact_information", "communication"],
+    "theme": [
+      "personal_information",
+      "communication"
+    ],
     "german": "E-Mail",
     "english": "email",
     "article": "die",
-    "gender": "feminine",
     "plural": "E-Mails",
     "pluralPattern": "-s",
     "pluralPatternLabel": "-s",
-    "nounGroupRule": "Many modern loanwords take -s",
     "usage": [
-      {"de": "Ich schreibe eine E-Mail.", "en": "I write an email."},
-      {"de": "Hast du meine E-Mail?", "en": "Do you have my email?"}
+      {
+        "de": "Ich schreibe eine E-Mail.",
+        "en": "I write an email."
+      },
+      {
+        "de": "Hast du meine E-Mail?",
+        "en": "Do you have my email?"
+      }
     ]
   },
   {
     "id": "telefon",
     "level": "A1",
     "type": "nomen",
-    "theme": ["contact_information", "communication"],
+    "theme": [
+      "personal_information",
+      "communication"
+    ],
     "german": "Telefon",
     "english": "telephone / phone",
     "article": "das",
-    "gender": "neuter",
     "plural": "Telefone",
     "pluralPattern": "-e",
     "pluralPatternLabel": "-e",
-    "nounGroupRule": "Many neuter nouns take -e",
     "usage": [
-      {"de": "Das Telefon ist auf dem Tisch.", "en": "The telephone is on the table."},
-      {"de": "Ich habe zwei Telefone.", "en": "I have two telephones."}
+      {
+        "de": "Das Telefon ist auf dem Tisch.",
+        "en": "The telephone is on the table."
+      },
+      {
+        "de": "Ich habe zwei Telefone.",
+        "en": "I have two telephones."
+      }
     ]
   },
   {
     "id": "formular",
     "level": "A1",
     "type": "nomen",
-    "theme": ["personal_information", "education"],
+    "theme": [
+      "personal_information",
+      "education"
+    ],
     "german": "Formular",
     "english": "form",
     "article": "das",
-    "gender": "neuter",
     "plural": "Formulare",
     "pluralPattern": "-e",
     "pluralPatternLabel": "-e",
-    "nounGroupRule": "Many neuter nouns take -e",
     "usage": [
-      {"de": "Bitte ergänzen Sie das Formular.", "en": "Please fill in the form."},
-      {"de": "Das Formular ist einfach.", "en": "The form is simple."}
+      {
+        "de": "Bitte ergänzen Sie das Formular.",
+        "en": "Please fill in the form."
+      },
+      {
+        "de": "Das Formular ist einfach.",
+        "en": "The form is simple."
+      }
     ]
   },
   {
     "id": "fremdsprache",
     "level": "A1",
     "type": "nomen",
-    "theme": ["education", "communication"],
+    "theme": [
+      "personal_information",
+      "education"
+    ],
     "german": "Fremdsprache",
     "english": "foreign language",
     "article": "die",
-    "gender": "feminine",
     "plural": "Fremdsprachen",
     "pluralPattern": "-n",
     "pluralPatternLabel": "-n",
-    "nounGroupRule": "Feminine nouns often take -n",
     "usage": [
-      {"de": "Deutsch ist für mich eine Fremdsprache.", "en": "German is a foreign language for me."},
-      {"de": "Ich lerne zwei Fremdsprachen.", "en": "I am learning two foreign languages."}
+      {
+        "de": "Deutsch ist für mich eine Fremdsprache.",
+        "en": "German is a foreign language for me."
+      },
+      {
+        "de": "Ich lerne zwei Fremdsprachen.",
+        "en": "I am learning two foreign languages."
+      }
     ]
   },
   {
     "id": "anmeldung",
     "level": "A1",
     "type": "nomen",
-    "theme": ["education", "administration"],
+    "theme": [
+      "personal_information",
+      "education"
+    ],
     "german": "Anmeldung",
     "english": "registration",
     "article": "die",
-    "gender": "feminine",
     "plural": "Anmeldungen",
     "pluralPattern": "-en",
     "pluralPatternLabel": "-en",
-    "nounGroupRule": "Many feminine nouns take -en",
     "usage": [
-      {"de": "Die Anmeldung ist online.", "en": "The registration is online."},
-      {"de": "Ich mache die Anmeldung für den Kurs.", "en": "I do the registration for the course."}
+      {
+        "de": "Die Anmeldung ist online.",
+        "en": "The registration is online."
+      },
+      {
+        "de": "Ich mache die Anmeldung für den Kurs.",
+        "en": "I do the registration for the course."
+      }
     ]
   },
   {
     "id": "postleitzahl",
     "level": "A1",
     "type": "nomen",
-    "theme": ["contact_information", "personal_information"],
+    "theme": [
+      "personal_information",
+      "city"
+    ],
     "german": "Postleitzahl",
     "english": "postal code / ZIP code",
     "article": "die",
-    "gender": "feminine",
     "plural": "Postleitzahlen",
     "pluralPattern": "-en",
     "pluralPatternLabel": "-en",
-    "nounGroupRule": "Many feminine nouns take -en",
     "usage": [
-      {"de": "Die Postleitzahl ist 50676.", "en": "The postal code is 50676."},
-      {"de": "Wie lautet Ihre Postleitzahl?", "en": "What is your postal code?"}
+      {
+        "de": "Die Postleitzahl ist 50676.",
+        "en": "The postal code is 50676."
+      },
+      {
+        "de": "Wie lautet Ihre Postleitzahl?",
+        "en": "What is your postal code?"
+      }
     ]
   },
   {
     "id": "polen",
     "level": "A1",
     "type": "nomen",
-    "theme": ["countries", "introductions"],
+    "theme": [
+      "countries",
+      "introductions"
+    ],
     "german": "Polen",
     "english": "Poland",
     "article": "—",
-    "gender": "neuter",
     "plural": "—",
-    "pluralPattern": "-",
-    "pluralPatternLabel": "—",
     "declensionType": "no_plural",
-    "nounGroupRule": "Most country names are used without an article and have no plural",
     "usage": [
-      {"de": "Ich komme aus Polen.", "en": "I come from Poland."},
-      {"de": "Polen liegt in Europa.", "en": "Poland is in Europe."}
+      {
+        "de": "Ich komme aus Polen.",
+        "en": "I come from Poland."
+      },
+      {
+        "de": "Polen liegt in Europa.",
+        "en": "Poland is in Europe."
+      }
     ]
   },
   {
     "id": "tuerkei",
     "level": "A1",
     "type": "nomen",
-    "theme": ["countries", "introductions"],
+    "theme": [
+      "countries",
+      "introductions"
+    ],
     "german": "Türkei",
     "english": "Turkey",
     "article": "die",
-    "gender": "feminine",
     "plural": "—",
-    "pluralPattern": "-",
-    "pluralPatternLabel": "—",
     "declensionType": "no_plural",
-    "nounGroupRule": "Some country names take an article and have no plural",
+    "nounGroupRule": "Country name used with article and no plural",
     "usage": [
-      {"de": "Sie kommt aus der Türkei.", "en": "She comes from Turkey."},
-      {"de": "Die Türkei ist groß.", "en": "Turkey is large."}
+      {
+        "de": "Sie kommt aus der Türkei.",
+        "en": "She comes from Turkey."
+      },
+      {
+        "de": "Die Türkei ist groß.",
+        "en": "Turkey is large."
+      }
     ]
   },
   {
     "id": "spanien",
     "level": "A1",
     "type": "nomen",
-    "theme": ["countries", "introductions"],
+    "theme": [
+      "countries",
+      "introductions"
+    ],
     "german": "Spanien",
     "english": "Spain",
     "article": "—",
-    "gender": "neuter",
     "plural": "—",
-    "pluralPattern": "-",
-    "pluralPatternLabel": "—",
     "declensionType": "no_plural",
-    "nounGroupRule": "Most country names are used without an article and have no plural",
     "usage": [
-      {"de": "Er kommt aus Spanien.", "en": "He comes from Spain."},
-      {"de": "Spanien ist ein schönes Land.", "en": "Spain is a beautiful country."}
+      {
+        "de": "Er kommt aus Spanien.",
+        "en": "He comes from Spain."
+      },
+      {
+        "de": "Spanien ist ein schönes Land.",
+        "en": "Spain is a beautiful country."
+      }
     ]
   },
   {
     "id": "ungarn",
     "level": "A1",
     "type": "nomen",
-    "theme": ["countries", "introductions"],
+    "theme": [
+      "countries",
+      "introductions"
+    ],
     "german": "Ungarn",
     "english": "Hungary",
     "article": "—",
-    "gender": "neuter",
     "plural": "—",
-    "pluralPattern": "-",
-    "pluralPatternLabel": "—",
     "declensionType": "no_plural",
-    "nounGroupRule": "Most country names are used without an article and have no plural",
     "usage": [
-      {"de": "Wir kommen aus Ungarn.", "en": "We come from Hungary."},
-      {"de": "Ungarn liegt in Europa.", "en": "Hungary is in Europe."}
+      {
+        "de": "Wir kommen aus Ungarn.",
+        "en": "We come from Hungary."
+      },
+      {
+        "de": "Ungarn liegt in Europa.",
+        "en": "Hungary is in Europe."
+      }
     ]
   },
   {
     "id": "rumaenien",
     "level": "A1",
     "type": "nomen",
-    "theme": ["countries", "introductions"],
+    "theme": [
+      "countries",
+      "introductions"
+    ],
     "german": "Rumänien",
     "english": "Romania",
     "article": "—",
-    "gender": "neuter",
     "plural": "—",
-    "pluralPattern": "-",
-    "pluralPatternLabel": "—",
     "declensionType": "no_plural",
-    "nounGroupRule": "Most country names are used without an article and have no plural",
     "usage": [
-      {"de": "Sie kommt aus Rumänien.", "en": "She comes from Romania."},
-      {"de": "Rumänien ist in Europa.", "en": "Romania is in Europe."}
+      {
+        "de": "Sie kommt aus Rumänien.",
+        "en": "She comes from Romania."
+      },
+      {
+        "de": "Rumänien ist in Europa.",
+        "en": "Romania is in Europe."
+      }
     ]
   },
   {
     "id": "syrien",
     "level": "A1",
     "type": "nomen",
-    "theme": ["countries", "introductions"],
+    "theme": [
+      "countries",
+      "introductions"
+    ],
     "german": "Syrien",
     "english": "Syria",
     "article": "—",
-    "gender": "neuter",
     "plural": "—",
-    "pluralPattern": "-",
-    "pluralPatternLabel": "—",
     "declensionType": "no_plural",
-    "nounGroupRule": "Most country names are used without an article and have no plural",
     "usage": [
-      {"de": "Er kommt aus Syrien.", "en": "He comes from Syria."},
-      {"de": "Syrien liegt in Vorderasien.", "en": "Syria is in Western Asia."}
+      {
+        "de": "Er kommt aus Syrien.",
+        "en": "He comes from Syria."
+      },
+      {
+        "de": "Syrien liegt in Vorderasien.",
+        "en": "Syria is in Western Asia."
+      }
     ]
   },
   {
     "id": "bulgarien",
     "level": "A1",
     "type": "nomen",
-    "theme": ["countries", "introductions"],
+    "theme": [
+      "countries",
+      "introductions"
+    ],
     "german": "Bulgarien",
     "english": "Bulgaria",
     "article": "—",
-    "gender": "neuter",
     "plural": "—",
-    "pluralPattern": "-",
-    "pluralPatternLabel": "—",
     "declensionType": "no_plural",
-    "nounGroupRule": "Most country names are used without an article and have no plural",
     "usage": [
-      {"de": "Ich komme aus Bulgarien.", "en": "I come from Bulgaria."},
-      {"de": "Bulgarien ist ein Land in Europa.", "en": "Bulgaria is a country in Europe."}
+      {
+        "de": "Ich komme aus Bulgarien.",
+        "en": "I come from Bulgaria."
+      },
+      {
+        "de": "Bulgarien ist ein Land in Europa.",
+        "en": "Bulgaria is a country in Europe."
+      }
     ]
   },
   {
     "id": "italien",
     "level": "A1",
     "type": "nomen",
-    "theme": ["countries", "introductions"],
+    "theme": [
+      "countries",
+      "introductions"
+    ],
     "german": "Italien",
     "english": "Italy",
     "article": "—",
-    "gender": "neuter",
     "plural": "—",
-    "pluralPattern": "-",
-    "pluralPatternLabel": "—",
     "declensionType": "no_plural",
-    "nounGroupRule": "Most country names are used without an article and have no plural",
     "usage": [
-      {"de": "Meine Freundin kommt aus Italien.", "en": "My friend comes from Italy."},
-      {"de": "Italien ist sehr bekannt.", "en": "Italy is very well known."}
+      {
+        "de": "Meine Freundin kommt aus Italien.",
+        "en": "My friend comes from Italy."
+      },
+      {
+        "de": "Italien ist sehr bekannt.",
+        "en": "Italy is very well known."
+      }
     ]
   },
   {
     "id": "griechenland",
     "level": "A1",
     "type": "nomen",
-    "theme": ["countries", "introductions"],
+    "theme": [
+      "countries",
+      "introductions"
+    ],
     "german": "Griechenland",
     "english": "Greece",
     "article": "—",
-    "gender": "neuter",
     "plural": "—",
-    "pluralPattern": "-",
-    "pluralPatternLabel": "—",
     "declensionType": "no_plural",
-    "nounGroupRule": "Most country names are used without an article and have no plural",
     "usage": [
-      {"de": "Sie reisen nach Griechenland.", "en": "They travel to Greece."},
-      {"de": "Griechenland ist ein schönes Land.", "en": "Greece is a beautiful country."}
+      {
+        "de": "Sie reisen nach Griechenland.",
+        "en": "They travel to Greece."
+      },
+      {
+        "de": "Griechenland ist ein schönes Land.",
+        "en": "Greece is a beautiful country."
+      }
     ]
   }
 ]

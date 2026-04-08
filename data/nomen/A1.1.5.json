@@ -1,0 +1,820 @@
+[
+  {
+    "id": "praesentation",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "education",
+      "work"
+    ],
+    "german": "Präsentation",
+    "english": "presentation",
+    "article": "die",
+    "plural": "Präsentationen",
+    "pluralPattern": "-en",
+    "pluralPatternLabel": "-en",
+    "usage": [
+      {
+        "de": "Lara macht eine Präsentation.",
+        "en": "Lara is making a presentation."
+      },
+      {
+        "de": "Die Präsentationen sind interessant.",
+        "en": "The presentations are interesting."
+      }
+    ]
+  },
+  {
+    "id": "regal",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "home",
+      "furniture"
+    ],
+    "german": "Regal",
+    "english": "shelf",
+    "article": "das",
+    "plural": "Regale",
+    "pluralPattern": "-e",
+    "pluralPatternLabel": "-e",
+    "usage": [
+      {
+        "de": "Das Regal ist neu.",
+        "en": "The shelf is new."
+      },
+      {
+        "de": "Die Regale sind weiß.",
+        "en": "The shelves are white."
+      }
+    ]
+  },
+  {
+    "id": "stuhl",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "home",
+      "furniture"
+    ],
+    "german": "Stuhl",
+    "english": "chair",
+    "article": "der",
+    "plural": "Stühle",
+    "pluralPattern": "umlaut-e",
+    "pluralPatternLabel": "Umlaut + -e",
+    "usage": [
+      {
+        "de": "Der Stuhl ist braun.",
+        "en": "The chair is brown."
+      },
+      {
+        "de": "Die Stühle sind bequem.",
+        "en": "The chairs are comfortable."
+      }
+    ]
+  },
+  {
+    "id": "supermarkt",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "shopping",
+      "places"
+    ],
+    "german": "Supermarkt",
+    "english": "supermarket",
+    "article": "der",
+    "plural": "Supermärkte",
+    "pluralPattern": "umlaut-e",
+    "pluralPatternLabel": "Umlaut + -e",
+    "usage": [
+      {
+        "de": "Sie kauft im Supermarkt ein.",
+        "en": "She shops in the supermarket."
+      },
+      {
+        "de": "Die Supermärkte sind am Abend offen.",
+        "en": "The supermarkets are open in the evening."
+      }
+    ]
+  },
+  {
+    "id": "viertel",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "time_expressions"
+    ],
+    "german": "Viertel",
+    "english": "quarter",
+    "article": "das",
+    "plural": "Viertel",
+    "pluralPattern": "-",
+    "pluralPatternLabel": "—",
+    "usage": [
+      {
+        "de": "Es ist Viertel vor zwölf.",
+        "en": "It is quarter to twelve."
+      },
+      {
+        "de": "Drei Viertel sind viel.",
+        "en": "Three quarters are a lot."
+      }
+    ]
+  },
+  {
+    "id": "uhr",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "time_expressions"
+    ],
+    "german": "Uhr",
+    "english": "clock / o'clock",
+    "article": "die",
+    "plural": "Uhren",
+    "pluralPattern": "-en",
+    "pluralPatternLabel": "-en",
+    "usage": [
+      {
+        "de": "Es ist ein Uhr.",
+        "en": "It is one o'clock."
+      },
+      {
+        "de": "Die Uhren gehen richtig.",
+        "en": "The clocks are running correctly."
+      }
+    ]
+  },
+  {
+    "id": "intensivkurs",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "education"
+    ],
+    "german": "Intensivkurs",
+    "english": "intensive course",
+    "article": "der",
+    "plural": "Intensivkurse",
+    "pluralPattern": "-e",
+    "pluralPatternLabel": "-e",
+    "usage": [
+      {
+        "de": "Ich mache einen Intensivkurs.",
+        "en": "I am taking an intensive course."
+      },
+      {
+        "de": "Die Intensivkurse fangen am Montag an.",
+        "en": "The intensive courses start on Monday."
+      }
+    ]
+  },
+  {
+    "id": "montag",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "calendar",
+      "time_expressions"
+    ],
+    "german": "Montag",
+    "english": "Monday",
+    "article": "der",
+    "plural": "Montage",
+    "pluralPattern": "-e",
+    "pluralPatternLabel": "-e",
+    "usage": [
+      {
+        "de": "Am Montag fängt der Kurs an.",
+        "en": "The course starts on Monday."
+      },
+      {
+        "de": "Die Montage sind oft stressig.",
+        "en": "Mondays are often stressful."
+      }
+    ]
+  },
+  {
+    "id": "freitag",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "calendar",
+      "time_expressions"
+    ],
+    "german": "Freitag",
+    "english": "Friday",
+    "article": "der",
+    "plural": "Freitage",
+    "pluralPattern": "-e",
+    "pluralPatternLabel": "-e",
+    "usage": [
+      {
+        "de": "Am Freitag mache ich einen Intensivkurs.",
+        "en": "On Friday I am taking an intensive course."
+      },
+      {
+        "de": "Die Freitage sind schön.",
+        "en": "Fridays are nice."
+      }
+    ]
+  },
+  {
+    "id": "donnerstag",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "calendar",
+      "time_expressions"
+    ],
+    "german": "Donnerstag",
+    "english": "Thursday",
+    "article": "der",
+    "plural": "Donnerstage",
+    "pluralPattern": "-e",
+    "pluralPatternLabel": "-e",
+    "usage": [
+      {
+        "de": "Was machst du am Donnerstag?",
+        "en": "What are you doing on Thursday?"
+      },
+      {
+        "de": "Die Donnerstage sind voll.",
+        "en": "Thursdays are busy."
+      }
+    ]
+  },
+  {
+    "id": "mittwoch",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "calendar",
+      "time_expressions"
+    ],
+    "german": "Mittwoch",
+    "english": "Wednesday",
+    "article": "der",
+    "plural": "Mittwoche",
+    "pluralPattern": "-e",
+    "pluralPatternLabel": "-e",
+    "usage": [
+      {
+        "de": "Was macht Tim am Mittwoch?",
+        "en": "What is Tim doing on Wednesday?"
+      },
+      {
+        "de": "Die Mittwoche sind lang.",
+        "en": "Wednesdays are long."
+      }
+    ]
+  },
+  {
+    "id": "dienstag",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "calendar",
+      "time_expressions"
+    ],
+    "german": "Dienstag",
+    "english": "Tuesday",
+    "article": "der",
+    "plural": "Dienstage",
+    "pluralPattern": "-e",
+    "pluralPatternLabel": "-e",
+    "usage": [
+      {
+        "de": "Nein, erst am Dienstag.",
+        "en": "No, not until Tuesday."
+      },
+      {
+        "de": "Die Dienstage sind ruhig.",
+        "en": "Tuesdays are calm."
+      }
+    ]
+  },
+  {
+    "id": "party",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "leisure",
+      "social"
+    ],
+    "german": "Party",
+    "english": "party",
+    "article": "die",
+    "plural": "Partys",
+    "pluralPattern": "-s",
+    "pluralPatternLabel": "-s",
+    "usage": [
+      {
+        "de": "Ich mache am Freitag eine Party.",
+        "en": "I am having a party on Friday."
+      },
+      {
+        "de": "Die Partys sind laut.",
+        "en": "The parties are loud."
+      }
+    ]
+  },
+  {
+    "id": "zeit",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "time_expressions"
+    ],
+    "german": "Zeit",
+    "english": "time",
+    "article": "die",
+    "plural": "—",
+    "declensionType": "no_plural",
+    "nounGroupRule": "Abstract noun with no plural in general use",
+    "usage": [
+      {
+        "de": "Hast du Zeit?",
+        "en": "Do you have time?"
+      },
+      {
+        "de": "Ich habe heute keine Zeit.",
+        "en": "I do not have time today."
+      }
+    ]
+  },
+  {
+    "id": "fussball",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "sports",
+      "leisure"
+    ],
+    "german": "Fußball",
+    "english": "football / soccer",
+    "article": "der",
+    "plural": "—",
+    "declensionType": "no_plural",
+    "nounGroupRule": "Sport noun often used without plural",
+    "usage": [
+      {
+        "de": "Ich spiele Fußball.",
+        "en": "I play football."
+      },
+      {
+        "de": "Fußball ist sehr beliebt.",
+        "en": "Football is very popular."
+      }
+    ]
+  },
+  {
+    "id": "samstag",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "calendar",
+      "time_expressions"
+    ],
+    "german": "Samstag",
+    "english": "Saturday",
+    "article": "der",
+    "plural": "Samstage",
+    "pluralPattern": "-e",
+    "pluralPatternLabel": "-e",
+    "usage": [
+      {
+        "de": "Heute ist Samstag.",
+        "en": "Today is Saturday."
+      },
+      {
+        "de": "Die Samstage sind frei.",
+        "en": "Saturdays are free."
+      }
+    ]
+  },
+  {
+    "id": "sonntag",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "calendar",
+      "time_expressions"
+    ],
+    "german": "Sonntag",
+    "english": "Sunday",
+    "article": "der",
+    "plural": "Sonntage",
+    "pluralPattern": "-e",
+    "pluralPatternLabel": "-e",
+    "usage": [
+      {
+        "de": "Am Sonntag gehe ich ins Kino.",
+        "en": "On Sunday I go to the cinema."
+      },
+      {
+        "de": "Die Sonntage sind ruhig.",
+        "en": "Sundays are quiet."
+      }
+    ]
+  },
+  {
+    "id": "hausaufgabe",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "education"
+    ],
+    "german": "Hausaufgabe",
+    "english": "homework",
+    "article": "die",
+    "plural": "Hausaufgaben",
+    "pluralPattern": "-n",
+    "pluralPatternLabel": "-n",
+    "usage": [
+      {
+        "de": "Sina macht Hausaufgaben.",
+        "en": "Sina is doing homework."
+      },
+      {
+        "de": "Die Hausaufgaben sind schwer.",
+        "en": "The homework assignments are difficult."
+      }
+    ]
+  },
+  {
+    "id": "mama",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "family"
+    ],
+    "german": "Mama",
+    "english": "mom",
+    "article": "die",
+    "plural": "Mamas",
+    "pluralPattern": "-s",
+    "pluralPatternLabel": "-s",
+    "usage": [
+      {
+        "de": "Wann ruft Tim Mama an?",
+        "en": "When does Tim call Mom?"
+      },
+      {
+        "de": "Die Mamas warten draußen.",
+        "en": "The moms are waiting outside."
+      }
+    ]
+  },
+  {
+    "id": "wochenende",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "time_expressions",
+      "leisure"
+    ],
+    "german": "Wochenende",
+    "english": "weekend",
+    "article": "das",
+    "plural": "Wochenenden",
+    "pluralPattern": "-n",
+    "pluralPatternLabel": "-n",
+    "usage": [
+      {
+        "de": "Julia steht am Wochenende früh auf.",
+        "en": "Julia gets up early at the weekend."
+      },
+      {
+        "de": "Die Wochenenden sind kurz.",
+        "en": "The weekends are short."
+      }
+    ]
+  },
+  {
+    "id": "woche",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "time_expressions"
+    ],
+    "german": "Woche",
+    "english": "week",
+    "article": "die",
+    "plural": "Wochen",
+    "pluralPattern": "-n",
+    "pluralPatternLabel": "-n",
+    "usage": [
+      {
+        "de": "Der Terminkalender ist für nächste Woche.",
+        "en": "The schedule is for next week."
+      },
+      {
+        "de": "Die Wochen gehen schnell vorbei.",
+        "en": "The weeks go by quickly."
+      }
+    ]
+  },
+  {
+    "id": "mittag",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "time_expressions",
+      "daily_routine"
+    ],
+    "german": "Mittag",
+    "english": "midday / noon",
+    "article": "der",
+    "plural": "Mittage",
+    "pluralPattern": "-e",
+    "pluralPatternLabel": "-e",
+    "usage": [
+      {
+        "de": "Am Mittag isst er mit Nina.",
+        "en": "At midday he eats with Nina."
+      },
+      {
+        "de": "Die Mittage sind im Sommer heiß.",
+        "en": "Middays are hot in summer."
+      }
+    ]
+  },
+  {
+    "id": "morgen",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "time_expressions",
+      "daily_routine"
+    ],
+    "german": "Morgen",
+    "english": "morning",
+    "article": "der",
+    "plural": "Morgen",
+    "pluralPattern": "-",
+    "pluralPatternLabel": "—",
+    "usage": [
+      {
+        "de": "Am Morgen frühstückt Robert.",
+        "en": "In the morning Robert has breakfast."
+      },
+      {
+        "de": "Die Morgen sind im Winter dunkel.",
+        "en": "The mornings are dark in winter."
+      }
+    ]
+  },
+  {
+    "id": "abend",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "time_expressions",
+      "daily_routine"
+    ],
+    "german": "Abend",
+    "english": "evening",
+    "article": "der",
+    "plural": "Abende",
+    "pluralPattern": "-e",
+    "pluralPatternLabel": "-e",
+    "usage": [
+      {
+        "de": "Am Abend spielt er Fußball.",
+        "en": "In the evening he plays football."
+      },
+      {
+        "de": "Die Abende sind ruhig.",
+        "en": "The evenings are quiet."
+      }
+    ]
+  },
+  {
+    "id": "nachmittag",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "time_expressions",
+      "daily_routine"
+    ],
+    "german": "Nachmittag",
+    "english": "afternoon",
+    "article": "der",
+    "plural": "Nachmittage",
+    "pluralPattern": "-e",
+    "pluralPatternLabel": "-e",
+    "usage": [
+      {
+        "de": "Am Nachmittag macht er Sport.",
+        "en": "In the afternoon he does sports."
+      },
+      {
+        "de": "Die Nachmittage sind frei.",
+        "en": "The afternoons are free."
+      }
+    ]
+  },
+  {
+    "id": "vormittag",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "time_expressions",
+      "daily_routine"
+    ],
+    "german": "Vormittag",
+    "english": "late morning",
+    "article": "der",
+    "plural": "Vormittage",
+    "pluralPattern": "-e",
+    "pluralPatternLabel": "-e",
+    "usage": [
+      {
+        "de": "Am Vormittag räumt er auf.",
+        "en": "In the late morning he tidies up."
+      },
+      {
+        "de": "Die Vormittage sind oft ruhig.",
+        "en": "The late mornings are often quiet."
+      }
+    ]
+  },
+  {
+    "id": "nacht",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "time_expressions",
+      "daily_routine"
+    ],
+    "german": "Nacht",
+    "english": "night",
+    "article": "die",
+    "plural": "Nächte",
+    "pluralPattern": "umlaut-e",
+    "pluralPatternLabel": "Umlaut + -e",
+    "usage": [
+      {
+        "de": "In der Nacht geht er spazieren.",
+        "en": "At night he goes for a walk."
+      },
+      {
+        "de": "Die Nächte sind lang.",
+        "en": "The nights are long."
+      }
+    ]
+  },
+  {
+    "id": "kino",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "leisure",
+      "places"
+    ],
+    "german": "Kino",
+    "english": "cinema",
+    "article": "das",
+    "plural": "Kinos",
+    "pluralPattern": "-s",
+    "pluralPatternLabel": "-s",
+    "usage": [
+      {
+        "de": "Am Abend geht er ins Kino.",
+        "en": "In the evening he goes to the cinema."
+      },
+      {
+        "de": "Die Kinos sind am Wochenende voll.",
+        "en": "The cinemas are full at the weekend."
+      }
+    ]
+  },
+  {
+    "id": "sport",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "sports",
+      "daily_routine"
+    ],
+    "german": "Sport",
+    "english": "sport / exercise",
+    "article": "der",
+    "plural": "—",
+    "declensionType": "no_plural",
+    "nounGroupRule": "Activity noun often used without plural",
+    "usage": [
+      {
+        "de": "Am Nachmittag macht Robert Sport.",
+        "en": "In the afternoon Robert does sports."
+      },
+      {
+        "de": "Sport ist wichtig.",
+        "en": "Sport is important."
+      }
+    ]
+  },
+  {
+    "id": "pizza",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "food"
+    ],
+    "german": "Pizza",
+    "english": "pizza",
+    "article": "die",
+    "plural": "Pizzen",
+    "pluralPattern": "-en",
+    "pluralPatternLabel": "-en",
+    "usage": [
+      {
+        "de": "Er isst eine Pizza.",
+        "en": "He eats a pizza."
+      },
+      {
+        "de": "Die Pizzen sind lecker.",
+        "en": "The pizzas are tasty."
+      }
+    ]
+  },
+  {
+    "id": "termin",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "time_expressions",
+      "daily_routine"
+    ],
+    "german": "Termin",
+    "english": "appointment",
+    "article": "der",
+    "plural": "Termine",
+    "pluralPattern": "-e",
+    "pluralPatternLabel": "-e",
+    "usage": [
+      {
+        "de": "Der Termin ist um 17 Uhr.",
+        "en": "The appointment is at 5 o'clock."
+      },
+      {
+        "de": "Die Termine stehen im Kalender.",
+        "en": "The appointments are in the calendar."
+      }
+    ]
+  },
+  {
+    "id": "kindergarten",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "education",
+      "places"
+    ],
+    "german": "Kindergarten",
+    "english": "kindergarten",
+    "article": "der",
+    "plural": "Kindergärten",
+    "pluralPattern": "umlaut",
+    "pluralPatternLabel": "Umlaut",
+    "nounGroupRule": "Irregular plural (umlaut only)",
+    "usage": [
+      {
+        "de": "Der Kindergarten ist bis 17 Uhr geöffnet.",
+        "en": "The kindergarten is open until 5 p.m."
+      },
+      {
+        "de": "Die Kindergärten sind heute geschlossen.",
+        "en": "The kindergartens are closed today."
+      }
+    ]
+  },
+  {
+    "id": "geschaeft",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "shopping",
+      "places"
+    ],
+    "german": "Geschäft",
+    "english": "shop / business",
+    "article": "das",
+    "plural": "Geschäfte",
+    "pluralPattern": "umlaut-e",
+    "pluralPatternLabel": "Umlaut + -e",
+    "usage": [
+      {
+        "de": "Am Samstag ist das Geschäft geöffnet.",
+        "en": "On Saturday the shop is open."
+      },
+      {
+        "de": "Die Geschäfte schließen früh.",
+        "en": "The shops close early."
+      }
+    ]
+  }
+]

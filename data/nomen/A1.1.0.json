@@ -1,0 +1,266 @@
+[
+  {
+    "id": "haus",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "home"
+    ],
+    "german": "Haus",
+    "english": "house",
+    "article": "das",
+    "plural": "Häuser",
+    "pluralPattern": "umlaut-er",
+    "pluralPatternLabel": "Umlaut + -er",
+    "usage": [
+      {
+        "de": "Das Haus ist groß.",
+        "en": "The house is big."
+      },
+      {
+        "de": "Die Häuser sind neu.",
+        "en": "The houses are new."
+      }
+    ]
+  },
+  {
+    "id": "zimmer",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "home"
+    ],
+    "german": "Zimmer",
+    "english": "room",
+    "article": "das",
+    "plural": "Zimmer",
+    "pluralPattern": "-",
+    "pluralPatternLabel": "No change",
+    "usage": [
+      {
+        "de": "Das Zimmer ist hell.",
+        "en": "The room is bright."
+      },
+      {
+        "de": "Die Zimmer sind sauber.",
+        "en": "The rooms are clean."
+      }
+    ]
+  },
+  {
+    "id": "tuer",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "home"
+    ],
+    "german": "Tür",
+    "english": "door",
+    "article": "die",
+    "plural": "Türen",
+    "pluralPattern": "-en",
+    "pluralPatternLabel": "-en",
+    "usage": [
+      {
+        "de": "Die Tür ist zu.",
+        "en": "The door is closed."
+      },
+      {
+        "de": "Die Türen sind alt.",
+        "en": "The doors are old."
+      }
+    ]
+  },
+  {
+    "id": "fenster",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "home"
+    ],
+    "german": "Fenster",
+    "english": "window",
+    "article": "das",
+    "plural": "Fenster",
+    "pluralPattern": "-",
+    "pluralPatternLabel": "No change",
+    "usage": [
+      {
+        "de": "Das Fenster ist offen.",
+        "en": "The window is open."
+      },
+      {
+        "de": "Die Fenster sind groß.",
+        "en": "The windows are big."
+      }
+    ]
+  },
+  {
+    "id": "tisch",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "home"
+    ],
+    "german": "Tisch",
+    "english": "table",
+    "article": "der",
+    "plural": "Tische",
+    "pluralPattern": "-e",
+    "pluralPatternLabel": "-e",
+    "usage": [
+      {
+        "de": "Der Tisch ist rund.",
+        "en": "The table is round."
+      },
+      {
+        "de": "Die Tische sind neu.",
+        "en": "The tables are new."
+      }
+    ]
+  },
+  {
+    "id": "stuhl",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "home"
+    ],
+    "german": "Stuhl",
+    "english": "chair",
+    "article": "der",
+    "plural": "Stühle",
+    "pluralPattern": "umlaut-e",
+    "pluralPatternLabel": "Umlaut + -e",
+    "usage": [
+      {
+        "de": "Der Stuhl ist bequem.",
+        "en": "The chair is comfortable."
+      },
+      {
+        "de": "Die Stühle sind alt.",
+        "en": "The chairs are old."
+      }
+    ]
+  },
+  {
+    "id": "buch",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "education"
+    ],
+    "german": "Buch",
+    "english": "book",
+    "article": "das",
+    "plural": "Bücher",
+    "pluralPattern": "umlaut-er",
+    "pluralPatternLabel": "Umlaut + -er",
+    "usage": [
+      {
+        "de": "Ich lese ein Buch.",
+        "en": "I read a book."
+      },
+      {
+        "de": "Die Bücher sind interessant.",
+        "en": "The books are interesting."
+      }
+    ]
+  },
+  {
+    "id": "heft",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "education"
+    ],
+    "german": "Heft",
+    "english": "notebook",
+    "article": "das",
+    "plural": "Hefte",
+    "pluralPattern": "-e",
+    "pluralPatternLabel": "-e",
+    "usage": [
+      {
+        "de": "Das Heft ist neu.",
+        "en": "The notebook is new."
+      },
+      {
+        "de": "Die Hefte sind auf dem Tisch.",
+        "en": "The notebooks are on the table."
+      }
+    ]
+  },
+  {
+    "id": "stift",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "education"
+    ],
+    "german": "Stift",
+    "english": "pen",
+    "article": "der",
+    "plural": "Stifte",
+    "pluralPattern": "-e",
+    "pluralPatternLabel": "-e",
+    "usage": [
+      {
+        "de": "Der Stift ist blau.",
+        "en": "The pen is blue."
+      },
+      {
+        "de": "Die Stifte liegen hier.",
+        "en": "The pens are here."
+      }
+    ]
+  },
+  {
+    "id": "tasche",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "daily_life"
+    ],
+    "german": "Tasche",
+    "english": "bag",
+    "article": "die",
+    "plural": "Taschen",
+    "pluralPattern": "-n",
+    "pluralPatternLabel": "-n",
+    "usage": [
+      {
+        "de": "Die Tasche ist schwer.",
+        "en": "The bag is heavy."
+      },
+      {
+        "de": "Die Taschen sind neu.",
+        "en": "The bags are new."
+      }
+    ]
+  },
+  {
+    "id": "auto",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "transport"
+    ],
+    "german": "Auto",
+    "english": "car",
+    "article": "das",
+    "plural": "Autos",
+    "pluralPattern": "-s",
+    "pluralPatternLabel": "-s",
+    "usage": [
+      {
+        "de": "Das Auto ist schnell.",
+        "en": "The car is fast."
+      },
+      {
+        "de": "Die Autos sind teuer.",
+        "en": "The cars are expensive."
+      }
+    ]
+  }
+]

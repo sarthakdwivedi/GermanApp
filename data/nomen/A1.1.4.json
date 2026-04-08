@@ -1,0 +1,1034 @@
+[
+  {
+    "id": "wohnung",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "housing",
+      "home"
+    ],
+    "german": "Wohnung",
+    "english": "apartment / flat",
+    "article": "die",
+    "plural": "Wohnungen",
+    "pluralPattern": "-en",
+    "pluralPatternLabel": "-en",
+    "usage": [
+      {
+        "de": "Sie sind in Laras Wohnung.",
+        "en": "They are in Lara's apartment."
+      },
+      {
+        "de": "Die Wohnungen sind teuer.",
+        "en": "The apartments are expensive."
+      }
+    ]
+  },
+  {
+    "id": "lampe",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "home",
+      "furniture"
+    ],
+    "german": "Lampe",
+    "english": "lamp",
+    "article": "die",
+    "plural": "Lampen",
+    "pluralPattern": "-n",
+    "pluralPatternLabel": "-n",
+    "usage": [
+      {
+        "de": "Walter hat eine Lampe für Lara.",
+        "en": "Walter has a lamp for Lara."
+      },
+      {
+        "de": "Die Lampen sind modern.",
+        "en": "The lamps are modern."
+      }
+    ]
+  },
+  {
+    "id": "zimmer",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "housing",
+      "rooms"
+    ],
+    "german": "Zimmer",
+    "english": "room",
+    "article": "das",
+    "plural": "Zimmer",
+    "pluralPattern": "-",
+    "pluralPatternLabel": "—",
+    "usage": [
+      {
+        "de": "Das ist Laras Zimmer.",
+        "en": "That is Lara's room."
+      },
+      {
+        "de": "Die Zimmer sind groß.",
+        "en": "The rooms are big."
+      }
+    ]
+  },
+  {
+    "id": "kueche",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "home",
+      "rooms"
+    ],
+    "german": "Küche",
+    "english": "kitchen",
+    "article": "die",
+    "plural": "Küchen",
+    "pluralPattern": "-n",
+    "pluralPatternLabel": "-n",
+    "usage": [
+      {
+        "de": "Das ist die Küche.",
+        "en": "That is the kitchen."
+      },
+      {
+        "de": "Die Küchen sind klein.",
+        "en": "The kitchens are small."
+      }
+    ]
+  },
+  {
+    "id": "bad",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "home",
+      "rooms"
+    ],
+    "german": "Bad",
+    "english": "bathroom",
+    "article": "das",
+    "plural": "Bäder",
+    "pluralPattern": "umlaut-er",
+    "pluralPatternLabel": "Umlaut + -er",
+    "usage": [
+      {
+        "de": "Das ist das Bad.",
+        "en": "That is the bathroom."
+      },
+      {
+        "de": "Die Bäder sind hell.",
+        "en": "The bathrooms are bright."
+      }
+    ]
+  },
+  {
+    "id": "flur",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "home",
+      "rooms"
+    ],
+    "german": "Flur",
+    "english": "hallway",
+    "article": "der",
+    "plural": "Flure",
+    "pluralPattern": "-e",
+    "pluralPatternLabel": "-e",
+    "usage": [
+      {
+        "de": "Der Flur ist groß.",
+        "en": "The hallway is big."
+      },
+      {
+        "de": "Die Flure sind dunkel.",
+        "en": "The hallways are dark."
+      }
+    ]
+  },
+  {
+    "id": "toilette",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "home",
+      "rooms"
+    ],
+    "german": "Toilette",
+    "english": "toilet",
+    "article": "die",
+    "plural": "Toiletten",
+    "pluralPattern": "-n",
+    "pluralPatternLabel": "-n",
+    "usage": [
+      {
+        "de": "Die Toilette ist klein.",
+        "en": "The toilet is small."
+      },
+      {
+        "de": "Wo sind die Toiletten?",
+        "en": "Where are the toilets?"
+      }
+    ]
+  },
+  {
+    "id": "balkon",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "housing",
+      "home"
+    ],
+    "german": "Balkon",
+    "english": "balcony",
+    "article": "der",
+    "plural": "Balkone",
+    "pluralPattern": "-e",
+    "pluralPatternLabel": "-e",
+    "usage": [
+      {
+        "de": "Der Balkon ist schön.",
+        "en": "The balcony is nice."
+      },
+      {
+        "de": "Die Balkone sind groß.",
+        "en": "The balconies are big."
+      }
+    ]
+  },
+  {
+    "id": "wohnzimmer",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "home",
+      "rooms"
+    ],
+    "german": "Wohnzimmer",
+    "english": "living room",
+    "article": "das",
+    "plural": "Wohnzimmer",
+    "pluralPattern": "-",
+    "pluralPatternLabel": "—",
+    "usage": [
+      {
+        "de": "Das Wohnzimmer ist hell.",
+        "en": "The living room is bright."
+      },
+      {
+        "de": "Die Wohnzimmer sind modern.",
+        "en": "The living rooms are modern."
+      }
+    ]
+  },
+  {
+    "id": "haus",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "housing",
+      "home"
+    ],
+    "german": "Haus",
+    "english": "house",
+    "article": "das",
+    "plural": "Häuser",
+    "pluralPattern": "umlaut-er",
+    "pluralPatternLabel": "Umlaut + -er",
+    "nounGroupRule": "Irregular plural",
+    "exceptions": [
+      "Plural is Häuser."
+    ],
+    "usage": [
+      {
+        "de": "Das ist das Haus.",
+        "en": "That is the house."
+      },
+      {
+        "de": "Die Häuser sind neu.",
+        "en": "The houses are new."
+      }
+    ]
+  },
+  {
+    "id": "monat",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "time",
+      "housing"
+    ],
+    "german": "Monat",
+    "english": "month",
+    "article": "der",
+    "plural": "Monate",
+    "pluralPattern": "-e",
+    "pluralPatternLabel": "-e",
+    "usage": [
+      {
+        "de": "Mein Zimmer kostet 350 Euro im Monat.",
+        "en": "My room costs 350 euros per month."
+      },
+      {
+        "de": "Ein Jahr hat zwölf Monate.",
+        "en": "A year has twelve months."
+      }
+    ]
+  },
+  {
+    "id": "schrank",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "furniture",
+      "home"
+    ],
+    "german": "Schrank",
+    "english": "cupboard / cabinet",
+    "article": "der",
+    "plural": "Schränke",
+    "pluralPattern": "umlaut-e",
+    "pluralPatternLabel": "Umlaut + -e",
+    "usage": [
+      {
+        "de": "Hier ist noch ein Schrank.",
+        "en": "Here is another cupboard."
+      },
+      {
+        "de": "Die Schränke sind groß.",
+        "en": "The cupboards are big."
+      }
+    ]
+  },
+  {
+    "id": "kuehlschrank",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "appliances",
+      "home"
+    ],
+    "german": "Kühlschrank",
+    "english": "refrigerator / fridge",
+    "article": "der",
+    "plural": "Kühlschränke",
+    "pluralPattern": "umlaut-e",
+    "pluralPatternLabel": "Umlaut + -e",
+    "usage": [
+      {
+        "de": "Was kostet der Kühlschrank?",
+        "en": "How much does the refrigerator cost?"
+      },
+      {
+        "de": "Die Kühlschränke sind weiß.",
+        "en": "The refrigerators are white."
+      }
+    ]
+  },
+  {
+    "id": "sofa",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "furniture",
+      "home"
+    ],
+    "german": "Sofa",
+    "english": "sofa",
+    "article": "das",
+    "plural": "Sofas",
+    "pluralPattern": "-s",
+    "pluralPatternLabel": "-s",
+    "usage": [
+      {
+        "de": "Was kostet das Sofa?",
+        "en": "How much does the sofa cost?"
+      },
+      {
+        "de": "Die Sofas sind modern.",
+        "en": "The sofas are modern."
+      }
+    ]
+  },
+  {
+    "id": "tisch",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "furniture",
+      "home"
+    ],
+    "german": "Tisch",
+    "english": "table",
+    "article": "der",
+    "plural": "Tische",
+    "pluralPattern": "-e",
+    "pluralPatternLabel": "-e",
+    "usage": [
+      {
+        "de": "Der Tisch ist sehr groß.",
+        "en": "The table is very big."
+      },
+      {
+        "de": "Die Tische sind braun.",
+        "en": "The tables are brown."
+      }
+    ]
+  },
+  {
+    "id": "fernseher",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "appliances",
+      "home"
+    ],
+    "german": "Fernseher",
+    "english": "television / TV set",
+    "article": "der",
+    "plural": "Fernseher",
+    "pluralPattern": "-",
+    "pluralPatternLabel": "—",
+    "usage": [
+      {
+        "de": "Wie viel kostet der Fernseher?",
+        "en": "How much does the television cost?"
+      },
+      {
+        "de": "Die Fernseher sind neu.",
+        "en": "The televisions are new."
+      }
+    ]
+  },
+  {
+    "id": "dusche",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "home",
+      "rooms"
+    ],
+    "german": "Dusche",
+    "english": "shower",
+    "article": "die",
+    "plural": "Duschen",
+    "pluralPattern": "-n",
+    "pluralPatternLabel": "-n",
+    "usage": [
+      {
+        "de": "In der Wohnung ist ein Bad mit Dusche.",
+        "en": "There is a bathroom with a shower in the apartment."
+      },
+      {
+        "de": "Die Duschen sind modern.",
+        "en": "The showers are modern."
+      }
+    ]
+  },
+  {
+    "id": "herd",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "appliances",
+      "kitchen"
+    ],
+    "german": "Herd",
+    "english": "stove",
+    "article": "der",
+    "plural": "Herde",
+    "pluralPattern": "-e",
+    "pluralPatternLabel": "-e",
+    "usage": [
+      {
+        "de": "Hier ist der Herd.",
+        "en": "Here is the stove."
+      },
+      {
+        "de": "Die Herde sind neu.",
+        "en": "The stoves are new."
+      }
+    ]
+  },
+  {
+    "id": "badewanne",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "home",
+      "rooms"
+    ],
+    "german": "Badewanne",
+    "english": "bathtub",
+    "article": "die",
+    "plural": "Badewannen",
+    "pluralPattern": "-n",
+    "pluralPatternLabel": "-n",
+    "usage": [
+      {
+        "de": "In der Wohnung ist ein Bad mit Badewanne.",
+        "en": "There is a bathroom with a bathtub in the apartment."
+      },
+      {
+        "de": "Die Badewannen sind groß.",
+        "en": "The bathtubs are big."
+      }
+    ]
+  },
+  {
+    "id": "teppich",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "furniture",
+      "home"
+    ],
+    "german": "Teppich",
+    "english": "carpet / rug",
+    "article": "der",
+    "plural": "Teppiche",
+    "pluralPattern": "-e",
+    "pluralPatternLabel": "-e",
+    "usage": [
+      {
+        "de": "Der Teppich ist schön.",
+        "en": "The carpet is beautiful."
+      },
+      {
+        "de": "Die Teppiche sind gelb.",
+        "en": "The carpets are yellow."
+      }
+    ]
+  },
+  {
+    "id": "sessel",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "furniture",
+      "home"
+    ],
+    "german": "Sessel",
+    "english": "armchair",
+    "article": "der",
+    "plural": "Sessel",
+    "pluralPattern": "-",
+    "pluralPatternLabel": "—",
+    "usage": [
+      {
+        "de": "Der Sessel ist schön.",
+        "en": "The armchair is beautiful."
+      },
+      {
+        "de": "Die Sessel sind bequem.",
+        "en": "The armchairs are comfortable."
+      }
+    ]
+  },
+  {
+    "id": "moebel",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "furniture",
+      "home"
+    ],
+    "german": "Möbel",
+    "english": "furniture",
+    "article": "die",
+    "gender": "plural",
+    "plural": "Möbel",
+    "declensionType": "plural_only",
+    "nounGroupRule": "Plural-only collective noun",
+    "usage": [
+      {
+        "de": "Die Möbel sind sehr schön.",
+        "en": "The furniture is very beautiful."
+      },
+      {
+        "de": "Wir kaufen neue Möbel.",
+        "en": "We are buying new furniture."
+      }
+    ]
+  },
+  {
+    "id": "geraet",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "appliances",
+      "home"
+    ],
+    "german": "Gerät",
+    "english": "device / appliance",
+    "article": "das",
+    "plural": "Geräte",
+    "pluralPattern": "-e",
+    "pluralPatternLabel": "-e",
+    "usage": [
+      {
+        "de": "Der Kühlschrank ist ein Gerät.",
+        "en": "The refrigerator is an appliance."
+      },
+      {
+        "de": "Die Geräte sind modern.",
+        "en": "The appliances are modern."
+      }
+    ]
+  },
+  {
+    "id": "farbe",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "colors",
+      "home"
+    ],
+    "german": "Farbe",
+    "english": "color",
+    "article": "die",
+    "plural": "Farben",
+    "pluralPattern": "-n",
+    "pluralPatternLabel": "-n",
+    "usage": [
+      {
+        "de": "Die Farbe ist sehr schön.",
+        "en": "The color is very beautiful."
+      },
+      {
+        "de": "Welche Farben magst du?",
+        "en": "Which colors do you like?"
+      }
+    ]
+  },
+  {
+    "id": "zentimeter",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "measurements",
+      "housing"
+    ],
+    "german": "Zentimeter",
+    "english": "centimeter",
+    "article": "der",
+    "plural": "Zentimeter",
+    "pluralPattern": "-",
+    "pluralPatternLabel": "—",
+    "usage": [
+      {
+        "de": "Der Tisch ist 60 Zentimeter breit.",
+        "en": "The table is 60 centimeters wide."
+      },
+      {
+        "de": "Die Zentimeter sind auf dem Maßband.",
+        "en": "The centimeters are on the measuring tape."
+      }
+    ]
+  },
+  {
+    "id": "handy",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "communication",
+      "personal_information"
+    ],
+    "german": "Handy",
+    "english": "mobile phone / cell phone",
+    "article": "das",
+    "plural": "Handys",
+    "pluralPattern": "-s",
+    "pluralPatternLabel": "-s",
+    "usage": [
+      {
+        "de": "Meine Handynummer ist neu.",
+        "en": "My mobile number is new."
+      },
+      {
+        "de": "Die Handys liegen auf dem Tisch.",
+        "en": "The mobile phones are on the table."
+      }
+    ]
+  },
+  {
+    "id": "arbeit",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "work"
+    ],
+    "german": "Arbeit",
+    "english": "work",
+    "article": "die",
+    "plural": "—",
+    "declensionType": "no_plural",
+    "nounGroupRule": "Abstract noun with no plural in general use",
+    "usage": [
+      {
+        "de": "Meine Nummer bei der Arbeit ist neu.",
+        "en": "My number at work is new."
+      },
+      {
+        "de": "Ich bin heute bei der Arbeit.",
+        "en": "I am at work today."
+      }
+    ]
+  },
+  {
+    "id": "anzeige",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "housing",
+      "apartment_search"
+    ],
+    "german": "Anzeige",
+    "english": "ad / advertisement",
+    "article": "die",
+    "plural": "Anzeigen",
+    "pluralPattern": "-n",
+    "pluralPatternLabel": "-n",
+    "usage": [
+      {
+        "de": "In der Zeitung sind heute Anzeigen.",
+        "en": "There are ads in the newspaper today."
+      },
+      {
+        "de": "Ich lese die Anzeige für die Wohnung.",
+        "en": "I read the ad for the apartment."
+      }
+    ]
+  },
+  {
+    "id": "ehepaar",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "family",
+      "relationships"
+    ],
+    "german": "Ehepaar",
+    "english": "married couple",
+    "article": "das",
+    "plural": "Ehepaare",
+    "pluralPattern": "-e",
+    "pluralPatternLabel": "-e",
+    "usage": [
+      {
+        "de": "Das Ehepaar hat ein Kind.",
+        "en": "The married couple has a child."
+      },
+      {
+        "de": "Die Ehepaare wohnen im Haus.",
+        "en": "The married couples live in the house."
+      }
+    ]
+  },
+  {
+    "id": "garten",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "housing",
+      "home"
+    ],
+    "german": "Garten",
+    "english": "garden",
+    "article": "der",
+    "plural": "Gärten",
+    "pluralPattern": "umlaut-en",
+    "pluralPatternLabel": "Umlaut + -en",
+    "nounGroupRule": "Irregular plural",
+    "usage": [
+      {
+        "de": "Die Wohnung hat einen Garten.",
+        "en": "The apartment has a garden."
+      },
+      {
+        "de": "Die Gärten sind sehr schön.",
+        "en": "The gardens are very beautiful."
+      }
+    ]
+  },
+  {
+    "id": "apartment",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "housing",
+      "apartment_search"
+    ],
+    "german": "Apartment",
+    "english": "apartment / studio flat",
+    "article": "das",
+    "plural": "Apartments",
+    "pluralPattern": "-s",
+    "pluralPatternLabel": "-s",
+    "usage": [
+      {
+        "de": "Das Apartment kostet 440 Euro im Monat.",
+        "en": "The apartment costs 440 euros per month."
+      },
+      {
+        "de": "Die Apartments sind möbliert.",
+        "en": "The apartments are furnished."
+      }
+    ]
+  },
+  {
+    "id": "raum",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "housing",
+      "rooms"
+    ],
+    "german": "Raum",
+    "english": "room / space",
+    "article": "der",
+    "plural": "Räume",
+    "pluralPattern": "umlaut-e",
+    "pluralPatternLabel": "Umlaut + -e",
+    "usage": [
+      {
+        "de": "Der Raum ist groß.",
+        "en": "The room is big."
+      },
+      {
+        "de": "Die Räume sind hell.",
+        "en": "The rooms are bright."
+      }
+    ]
+  },
+  {
+    "id": "stock",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "housing",
+      "buildings"
+    ],
+    "german": "Stock",
+    "english": "floor / storey",
+    "article": "der",
+    "plural": "Stockwerke",
+    "pluralPattern": "-e",
+    "pluralPatternLabel": "-e",
+    "nounGroupRule": "Common full plural form is Stockwerke in housing context",
+    "exceptions": [
+      "In housing, floor is often expressed as 1. Stock; plural commonly appears as Stockwerke."
+    ],
+    "usage": [
+      {
+        "de": "Ich suche eine Wohnung im ersten Stock.",
+        "en": "I am looking for an apartment on the first floor."
+      },
+      {
+        "de": "Das Haus hat drei Stockwerke.",
+        "en": "The house has three storeys."
+      }
+    ]
+  },
+  {
+    "id": "anruf",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "communication"
+    ],
+    "german": "Anruf",
+    "english": "phone call",
+    "article": "der",
+    "plural": "Anrufe",
+    "pluralPattern": "-e",
+    "pluralPatternLabel": "-e",
+    "usage": [
+      {
+        "de": "Ich freue mich auf Ihren Anruf.",
+        "en": "I look forward to your call."
+      },
+      {
+        "de": "Die Anrufe kommen am Abend.",
+        "en": "The calls come in the evening."
+      }
+    ]
+  },
+  {
+    "id": "tv",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "appliances",
+      "home"
+    ],
+    "german": "TV",
+    "english": "TV",
+    "article": "das",
+    "plural": "TVs",
+    "pluralPattern": "-s",
+    "pluralPatternLabel": "-s",
+    "usage": [
+      {
+        "de": "Die Wohnung hat einen Balkon und TV.",
+        "en": "The apartment has a balcony and a TV."
+      },
+      {
+        "de": "Die TVs sind neu.",
+        "en": "The TVs are new."
+      }
+    ]
+  },
+  {
+    "id": "garage",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "housing",
+      "buildings"
+    ],
+    "german": "Garage",
+    "english": "garage",
+    "article": "die",
+    "plural": "Garagen",
+    "pluralPattern": "-n",
+    "pluralPatternLabel": "-n",
+    "usage": [
+      {
+        "de": "Sie möchten eine Wohnung mit Garage.",
+        "en": "They would like an apartment with a garage."
+      },
+      {
+        "de": "Die Garagen sind klein.",
+        "en": "The garages are small."
+      }
+    ]
+  },
+  {
+    "id": "quadratmeter",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "measurements",
+      "housing"
+    ],
+    "german": "Quadratmeter",
+    "english": "square meter",
+    "article": "der",
+    "plural": "Quadratmeter",
+    "pluralPattern": "-",
+    "pluralPatternLabel": "—",
+    "usage": [
+      {
+        "de": "Das Zimmer ist 21 Quadratmeter groß.",
+        "en": "The room is 21 square meters big."
+      },
+      {
+        "de": "Die Quadratmeter sind im Plan notiert.",
+        "en": "The square meters are noted in the plan."
+      }
+    ]
+  },
+  {
+    "id": "miete",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "housing",
+      "money"
+    ],
+    "german": "Miete",
+    "english": "rent",
+    "article": "die",
+    "plural": "Mieten",
+    "pluralPattern": "-n",
+    "pluralPatternLabel": "-n",
+    "usage": [
+      {
+        "de": "Sie möchten 400 bis 500 Euro Miete bezahlen.",
+        "en": "They would like to pay 400 to 500 euros rent."
+      },
+      {
+        "de": "Die Mieten sind hoch.",
+        "en": "The rents are high."
+      }
+    ]
+  },
+  {
+    "id": "computer",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "technology",
+      "home"
+    ],
+    "german": "Computer",
+    "english": "computer",
+    "article": "der",
+    "plural": "Computer",
+    "pluralPattern": "-",
+    "pluralPatternLabel": "—",
+    "usage": [
+      {
+        "de": "Sie verkauft einen Computer.",
+        "en": "She sells a computer."
+      },
+      {
+        "de": "Die Computer sind modern.",
+        "en": "The computers are modern."
+      }
+    ]
+  },
+  {
+    "id": "schreibtisch",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "furniture",
+      "home"
+    ],
+    "german": "Schreibtisch",
+    "english": "desk",
+    "article": "der",
+    "plural": "Schreibtische",
+    "pluralPattern": "-e",
+    "pluralPatternLabel": "-e",
+    "usage": [
+      {
+        "de": "Er verkauft einen Schreibtisch.",
+        "en": "He sells a desk."
+      },
+      {
+        "de": "Die Schreibtische sind groß.",
+        "en": "The desks are big."
+      }
+    ]
+  },
+  {
+    "id": "meter",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "measurements"
+    ],
+    "german": "Meter",
+    "english": "meter",
+    "article": "der",
+    "plural": "Meter",
+    "pluralPattern": "-",
+    "pluralPatternLabel": "—",
+    "usage": [
+      {
+        "de": "Der Tisch ist zwei Meter lang.",
+        "en": "The table is two meters long."
+      },
+      {
+        "de": "Die Meter stehen im Plan.",
+        "en": "The meters are shown in the plan."
+      }
+    ]
+  }
+]

@@ -1,0 +1,322 @@
+[
+  {
+    "id": "tag",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "time",
+      "daily_routine"
+    ],
+    "german": "Tag",
+    "english": "day",
+    "article": "der",
+    "plural": "Tage",
+    "pluralPattern": "-e",
+    "pluralPatternLabel": "-e",
+    "usage": [
+      {
+        "de": "Der Tag ist lang.",
+        "en": "The day is long."
+      },
+      {
+        "de": "Die Tage sind warm.",
+        "en": "The days are warm."
+      }
+    ]
+  },
+  {
+    "id": "morgen",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "time"
+    ],
+    "german": "Morgen",
+    "english": "morning",
+    "article": "der",
+    "plural": "Morgen",
+    "pluralPattern": "-",
+    "pluralPatternLabel": "No change",
+    "usage": [
+      {
+        "de": "Am Morgen trinke ich Kaffee.",
+        "en": "In the morning I drink coffee."
+      },
+      {
+        "de": "Die Morgen sind kalt.",
+        "en": "The mornings are cold."
+      }
+    ]
+  },
+  {
+    "id": "abend",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "time"
+    ],
+    "german": "Abend",
+    "english": "evening",
+    "article": "der",
+    "plural": "Abende",
+    "pluralPattern": "-e",
+    "pluralPatternLabel": "-e",
+    "usage": [
+      {
+        "de": "Am Abend lese ich ein Buch.",
+        "en": "In the evening I read a book."
+      },
+      {
+        "de": "Die Abende sind ruhig.",
+        "en": "The evenings are quiet."
+      }
+    ]
+  },
+  {
+    "id": "nacht",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "time"
+    ],
+    "german": "Nacht",
+    "english": "night",
+    "article": "die",
+    "plural": "Nächte",
+    "pluralPattern": "umlaut-e",
+    "pluralPatternLabel": "Umlaut + -e",
+    "usage": [
+      {
+        "de": "Die Nacht ist ruhig.",
+        "en": "The night is quiet."
+      },
+      {
+        "de": "Die Nächte sind lang.",
+        "en": "The nights are long."
+      }
+    ]
+  },
+  {
+    "id": "uhr",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "time"
+    ],
+    "german": "Uhr",
+    "english": "clock / o'clock",
+    "article": "die",
+    "plural": "Uhren",
+    "pluralPattern": "-en",
+    "pluralPatternLabel": "-en",
+    "usage": [
+      {
+        "de": "Es ist acht Uhr.",
+        "en": "It is eight o'clock."
+      },
+      {
+        "de": "Die Uhren sind neu.",
+        "en": "The clocks are new."
+      }
+    ]
+  },
+  {
+    "id": "woche",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "time"
+    ],
+    "german": "Woche",
+    "english": "week",
+    "article": "die",
+    "plural": "Wochen",
+    "pluralPattern": "-n",
+    "pluralPatternLabel": "-n",
+    "usage": [
+      {
+        "de": "Die Woche ist kurz.",
+        "en": "The week is short."
+      },
+      {
+        "de": "Die Wochen gehen schnell.",
+        "en": "The weeks go quickly."
+      }
+    ]
+  },
+  {
+    "id": "montag",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "time",
+      "calendar"
+    ],
+    "german": "Montag",
+    "english": "Monday",
+    "article": "der",
+    "plural": "Montage",
+    "pluralPattern": "-e",
+    "pluralPatternLabel": "-e",
+    "usage": [
+      {
+        "de": "Am Montag arbeite ich.",
+        "en": "On Monday I work."
+      },
+      {
+        "de": "Die Montage sind stressig.",
+        "en": "Mondays are stressful."
+      }
+    ]
+  },
+  {
+    "id": "dienstag",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "time",
+      "calendar"
+    ],
+    "german": "Dienstag",
+    "english": "Tuesday",
+    "article": "der",
+    "plural": "Dienstage",
+    "pluralPattern": "-e",
+    "pluralPatternLabel": "-e",
+    "usage": [
+      {
+        "de": "Am Dienstag habe ich frei.",
+        "en": "On Tuesday I am free."
+      },
+      {
+        "de": "Die Dienstage sind ruhig.",
+        "en": "Tuesdays are calm."
+      }
+    ]
+  },
+  {
+    "id": "mittwoch",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "time",
+      "calendar"
+    ],
+    "german": "Mittwoch",
+    "english": "Wednesday",
+    "article": "der",
+    "plural": "Mittwoche",
+    "pluralPattern": "-e",
+    "pluralPatternLabel": "-e",
+    "usage": [
+      {
+        "de": "Am Mittwoch gehe ich ins Kino.",
+        "en": "On Wednesday I go to the cinema."
+      },
+      {
+        "de": "Die Mittwoche sind lang.",
+        "en": "Wednesdays are long."
+      }
+    ]
+  },
+  {
+    "id": "donnerstag",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "time",
+      "calendar"
+    ],
+    "german": "Donnerstag",
+    "english": "Thursday",
+    "article": "der",
+    "plural": "Donnerstage",
+    "pluralPattern": "-e",
+    "pluralPatternLabel": "-e",
+    "usage": [
+      {
+        "de": "Am Donnerstag lerne ich Deutsch.",
+        "en": "On Thursday I learn German."
+      },
+      {
+        "de": "Die Donnerstage sind voll.",
+        "en": "Thursdays are busy."
+      }
+    ]
+  },
+  {
+    "id": "freitag",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "time",
+      "calendar"
+    ],
+    "german": "Freitag",
+    "english": "Friday",
+    "article": "der",
+    "plural": "Freitage",
+    "pluralPattern": "-e",
+    "pluralPatternLabel": "-e",
+    "usage": [
+      {
+        "de": "Am Freitag gehe ich aus.",
+        "en": "On Friday I go out."
+      },
+      {
+        "de": "Die Freitage sind schön.",
+        "en": "Fridays are nice."
+      }
+    ]
+  },
+  {
+    "id": "samstag",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "time",
+      "calendar"
+    ],
+    "german": "Samstag",
+    "english": "Saturday",
+    "article": "der",
+    "plural": "Samstage",
+    "pluralPattern": "-e",
+    "pluralPatternLabel": "-e",
+    "usage": [
+      {
+        "de": "Am Samstag schlafe ich lange.",
+        "en": "On Saturday I sleep long."
+      },
+      {
+        "de": "Die Samstage sind frei.",
+        "en": "Saturdays are free."
+      }
+    ]
+  },
+  {
+    "id": "sonntag",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "time",
+      "calendar"
+    ],
+    "german": "Sonntag",
+    "english": "Sunday",
+    "article": "der",
+    "plural": "Sonntage",
+    "pluralPattern": "-e",
+    "pluralPatternLabel": "-e",
+    "usage": [
+      {
+        "de": "Am Sonntag ruhe ich mich aus.",
+        "en": "On Sunday I rest."
+      },
+      {
+        "de": "Die Sonntage sind ruhig.",
+        "en": "Sundays are quiet."
+      }
+    ]
+  }
+]

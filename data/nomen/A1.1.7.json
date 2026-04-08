@@ -1,0 +1,628 @@
+[
+  {
+    "id": "team",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "school",
+      "people"
+    ],
+    "german": "Team",
+    "english": "team",
+    "article": "das",
+    "plural": "Teams",
+    "pluralPattern": "-s",
+    "pluralPatternLabel": "-s",
+    "usage": [
+      {
+        "de": "Wir sind ein prima Team.",
+        "en": "We are a great team."
+      },
+      {
+        "de": "Die Teams arbeiten zusammen.",
+        "en": "The teams work together."
+      }
+    ]
+  },
+  {
+    "id": "fruehstueck",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "food",
+      "daily_routine"
+    ],
+    "german": "Frühstück",
+    "english": "breakfast",
+    "article": "das",
+    "plural": "Frühstücke",
+    "pluralPattern": "-e",
+    "pluralPatternLabel": "-e",
+    "usage": [
+      {
+        "de": "Das Frühstück ist fertig.",
+        "en": "Breakfast is ready."
+      },
+      {
+        "de": "Die Frühstücke sind im Hotel gut.",
+        "en": "The breakfasts in the hotel are good."
+      }
+    ]
+  },
+  {
+    "id": "mathematik",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "school",
+      "education"
+    ],
+    "german": "Mathematik",
+    "english": "mathematics",
+    "article": "die",
+    "plural": "—",
+    "declensionType": "no_plural",
+    "nounGroupRule": "School subject used as a singular concept",
+    "usage": [
+      {
+        "de": "Lara lernt mit Lili Mathe.",
+        "en": "Lara studies math with Lili."
+      },
+      {
+        "de": "Mathematik ist wichtig.",
+        "en": "Mathematics is important."
+      }
+    ]
+  },
+  {
+    "id": "test",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "school",
+      "education"
+    ],
+    "german": "Test",
+    "english": "test",
+    "article": "der",
+    "plural": "Tests",
+    "pluralPattern": "-s",
+    "pluralPatternLabel": "-s",
+    "usage": [
+      {
+        "de": "Lili schreibt einen Test.",
+        "en": "Lili is writing a test."
+      },
+      {
+        "de": "Die Tests sind schwer.",
+        "en": "The tests are difficult."
+      }
+    ]
+  },
+  {
+    "id": "schule",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "school",
+      "places"
+    ],
+    "german": "Schule",
+    "english": "school",
+    "article": "die",
+    "plural": "Schulen",
+    "pluralPattern": "-n",
+    "pluralPatternLabel": "-n",
+    "usage": [
+      {
+        "de": "Lili geht in die Schule.",
+        "en": "Lili goes to school."
+      },
+      {
+        "de": "Die Schulen sind heute offen.",
+        "en": "The schools are open today."
+      }
+    ]
+  },
+  {
+    "id": "arzt",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "health",
+      "jobs"
+    ],
+    "german": "Arzt",
+    "english": "doctor",
+    "article": "der",
+    "plural": "Ärzte",
+    "pluralPattern": "umlaut-e",
+    "pluralPatternLabel": "Umlaut + -e",
+    "usage": [
+      {
+        "de": "Kannst du mit Jonas zum Arzt gehen?",
+        "en": "Can you go to the doctor with Jonas?"
+      },
+      {
+        "de": "Die Ärzte arbeiten viel.",
+        "en": "The doctors work a lot."
+      }
+    ]
+  },
+  {
+    "id": "aerztin",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "health",
+      "jobs"
+    ],
+    "german": "Ärztin",
+    "english": "female doctor",
+    "article": "die",
+    "plural": "Ärztinnen",
+    "pluralPattern": "-nen",
+    "pluralPatternLabel": "-nen",
+    "nounGroupRule": "Feminine person noun in -in",
+    "usage": [
+      {
+        "de": "Die Ärztin ist nett.",
+        "en": "The female doctor is nice."
+      },
+      {
+        "de": "Die Ärztinnen arbeiten im Krankenhaus.",
+        "en": "The female doctors work in the hospital."
+      }
+    ]
+  },
+  {
+    "id": "klavier",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "music",
+      "education"
+    ],
+    "german": "Klavier",
+    "english": "piano",
+    "article": "das",
+    "plural": "Klaviere",
+    "pluralPattern": "-e",
+    "pluralPatternLabel": "-e",
+    "usage": [
+      {
+        "de": "Kannst du gut Klavier spielen?",
+        "en": "Can you play the piano well?"
+      },
+      {
+        "de": "Die Klaviere sind im Musikraum.",
+        "en": "The pianos are in the music room."
+      }
+    ]
+  },
+  {
+    "id": "ski",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "sports",
+      "leisure"
+    ],
+    "german": "Ski",
+    "english": "ski",
+    "article": "der",
+    "plural": "Skier",
+    "pluralPattern": "-er",
+    "pluralPatternLabel": "-er",
+    "usage": [
+      {
+        "de": "Kannst du gut Ski fahren?",
+        "en": "Can you ski well?"
+      },
+      {
+        "de": "Die Skier stehen im Keller.",
+        "en": "The skis are in the basement."
+      }
+    ]
+  },
+  {
+    "id": "tennis",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "sports",
+      "leisure"
+    ],
+    "german": "Tennis",
+    "english": "tennis",
+    "article": "das",
+    "plural": "—",
+    "declensionType": "no_plural",
+    "nounGroupRule": "Sport noun often used without plural",
+    "usage": [
+      {
+        "de": "Kannst du gut Tennis spielen?",
+        "en": "Can you play tennis well?"
+      },
+      {
+        "de": "Tennis macht Spaß.",
+        "en": "Tennis is fun."
+      }
+    ]
+  },
+  {
+    "id": "lied",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "music"
+    ],
+    "german": "Lied",
+    "english": "song",
+    "article": "das",
+    "plural": "Lieder",
+    "pluralPattern": "-er",
+    "pluralPatternLabel": "-er",
+    "usage": [
+      {
+        "de": "Ich will Lieder singen.",
+        "en": "I want to sing songs."
+      },
+      {
+        "de": "Die Lieder sind schön.",
+        "en": "The songs are beautiful."
+      }
+    ]
+  },
+  {
+    "id": "text",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "education"
+    ],
+    "german": "Text",
+    "english": "text",
+    "article": "der",
+    "plural": "Texte",
+    "pluralPattern": "-e",
+    "pluralPatternLabel": "-e",
+    "usage": [
+      {
+        "de": "Ich will viele Texte lesen.",
+        "en": "I want to read many texts."
+      },
+      {
+        "de": "Die Texte sind einfach.",
+        "en": "The texts are easy."
+      }
+    ]
+  },
+  {
+    "id": "uebung",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "education"
+    ],
+    "german": "Übung",
+    "english": "exercise",
+    "article": "die",
+    "plural": "Übungen",
+    "pluralPattern": "-en",
+    "pluralPatternLabel": "-en",
+    "usage": [
+      {
+        "de": "Ich will viele Übungen machen.",
+        "en": "I want to do many exercises."
+      },
+      {
+        "de": "Die Übungen sind wichtig.",
+        "en": "The exercises are important."
+      }
+    ]
+  },
+  {
+    "id": "brief",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "communication"
+    ],
+    "german": "Brief",
+    "english": "letter",
+    "article": "der",
+    "plural": "Briefe",
+    "pluralPattern": "-e",
+    "pluralPatternLabel": "-e",
+    "usage": [
+      {
+        "de": "Ich will Briefe schreiben.",
+        "en": "I want to write letters."
+      },
+      {
+        "de": "Die Briefe liegen auf dem Tisch.",
+        "en": "The letters are on the table."
+      }
+    ]
+  },
+  {
+    "id": "diktat",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "education",
+      "school"
+    ],
+    "german": "Diktat",
+    "english": "dictation",
+    "article": "das",
+    "plural": "Diktate",
+    "pluralPattern": "-e",
+    "pluralPatternLabel": "-e",
+    "usage": [
+      {
+        "de": "Ich will kein Diktat schreiben.",
+        "en": "I do not want to write a dictation."
+      },
+      {
+        "de": "Die Diktate sind schwer.",
+        "en": "The dictations are difficult."
+      }
+    ]
+  },
+  {
+    "id": "buch",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "education",
+      "leisure"
+    ],
+    "german": "Buch",
+    "english": "book",
+    "article": "das",
+    "plural": "Bücher",
+    "pluralPattern": "umlaut-er",
+    "pluralPatternLabel": "Umlaut + -er",
+    "usage": [
+      {
+        "de": "Ich habe ein Buch gelesen.",
+        "en": "I have read a book."
+      },
+      {
+        "de": "Die Bücher sind interessant.",
+        "en": "The books are interesting."
+      }
+    ]
+  },
+  {
+    "id": "kilometer",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "measurements",
+      "transport"
+    ],
+    "german": "Kilometer",
+    "english": "kilometer",
+    "article": "der",
+    "plural": "Kilometer",
+    "pluralPattern": "-",
+    "pluralPatternLabel": "—",
+    "usage": [
+      {
+        "de": "Bist du schon einmal 100 Kilometer Fahrrad gefahren?",
+        "en": "Have you ever cycled 100 kilometers?"
+      },
+      {
+        "de": "Die Kilometer stehen auf der Karte.",
+        "en": "The kilometers are shown on the map."
+      }
+    ]
+  },
+  {
+    "id": "kommunikation",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "communication"
+    ],
+    "german": "Kommunikation",
+    "english": "communication",
+    "article": "die",
+    "plural": "—",
+    "declensionType": "no_plural",
+    "nounGroupRule": "Abstract noun used as a singular concept",
+    "usage": [
+      {
+        "de": "Sprechen ist Kommunikation.",
+        "en": "Speaking is communication."
+      },
+      {
+        "de": "Kommunikation ist wichtig.",
+        "en": "Communication is important."
+      }
+    ]
+  },
+  {
+    "id": "maedchen",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "people",
+      "school"
+    ],
+    "german": "Mädchen",
+    "english": "girl",
+    "article": "das",
+    "plural": "Mädchen",
+    "pluralPattern": "-",
+    "pluralPatternLabel": "—",
+    "exceptions": [
+      "Gender follows the -chen rule and is neuter."
+    ],
+    "usage": [
+      {
+        "de": "Die Mädchen machen einen Ausflug.",
+        "en": "The girls are going on an outing."
+      },
+      {
+        "de": "Das Mädchen ist pünktlich.",
+        "en": "The girl is punctual."
+      }
+    ]
+  },
+  {
+    "id": "junge",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "people",
+      "school"
+    ],
+    "german": "Junge",
+    "english": "boy",
+    "article": "der",
+    "plural": "Jungen",
+    "pluralPattern": "-n",
+    "pluralPatternLabel": "-n",
+    "declensionType": "weak_masc",
+    "nounGroupRule": "Weak masculine — all cases except Nom.sg add -n/-en",
+    "usage": [
+      {
+        "de": "Die Mädchen und Jungen machen einen Ausflug.",
+        "en": "The girls and boys are going on an outing."
+      },
+      {
+        "de": "Der Junge geht in die Schule.",
+        "en": "The boy goes to school."
+      }
+    ]
+  },
+  {
+    "id": "klasse",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "school",
+      "education"
+    ],
+    "german": "Klasse",
+    "english": "class",
+    "article": "die",
+    "plural": "Klassen",
+    "pluralPattern": "-n",
+    "pluralPatternLabel": "-n",
+    "usage": [
+      {
+        "de": "Mein Sohn Tobias geht in die Klasse von Frau Meikert.",
+        "en": "My son Tobias is in Ms. Meikert's class."
+      },
+      {
+        "de": "Die Klassen sind heute klein.",
+        "en": "The classes are small today."
+      }
+    ]
+  },
+  {
+    "id": "schwimmbad",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "places",
+      "leisure"
+    ],
+    "german": "Schwimmbad",
+    "english": "swimming pool",
+    "article": "das",
+    "plural": "Schwimmbäder",
+    "pluralPattern": "umlaut-er",
+    "pluralPatternLabel": "Umlaut + -er",
+    "usage": [
+      {
+        "de": "Die Lehrerin will mit den Kindern ins Schwimmbad fahren.",
+        "en": "The teacher wants to go to the swimming pool with the children."
+      },
+      {
+        "de": "Die Schwimmbäder sind im Sommer voll.",
+        "en": "The swimming pools are full in summer."
+      }
+    ]
+  },
+  {
+    "id": "eintritt",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "money",
+      "leisure"
+    ],
+    "german": "Eintritt",
+    "english": "admission / entrance fee",
+    "article": "der",
+    "plural": "—",
+    "declensionType": "no_plural",
+    "nounGroupRule": "Fee noun often used without plural in general use",
+    "usage": [
+      {
+        "de": "Der Eintritt kostet 7,50 Euro.",
+        "en": "Admission costs 7.50 euros."
+      },
+      {
+        "de": "Der Eintritt ist heute frei.",
+        "en": "Admission is free today."
+      }
+    ]
+  },
+  {
+    "id": "grundschule",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "school",
+      "education"
+    ],
+    "german": "Grundschule",
+    "english": "primary school",
+    "article": "die",
+    "plural": "Grundschulen",
+    "pluralPattern": "-n",
+    "pluralPatternLabel": "-n",
+    "usage": [
+      {
+        "de": "Mein Sohn geht in die Grundschule.",
+        "en": "My son goes to primary school."
+      },
+      {
+        "de": "Die Grundschulen sind in der Nähe.",
+        "en": "The primary schools are nearby."
+      }
+    ]
+  },
+  {
+    "id": "unterricht",
+    "level": "A1",
+    "type": "nomen",
+    "theme": [
+      "school",
+      "education"
+    ],
+    "german": "Unterricht",
+    "english": "class / lessons",
+    "article": "der",
+    "plural": "—",
+    "declensionType": "no_plural",
+    "nounGroupRule": "School subject/activity noun used as a singular concept",
+    "usage": [
+      {
+        "de": "Ich kann heute nicht zum Unterricht kommen.",
+        "en": "I cannot come to class today."
+      },
+      {
+        "de": "Der Unterricht beginnt um acht Uhr.",
+        "en": "Class starts at eight o'clock."
+      }
+    ]
+  }
+]
