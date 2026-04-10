@@ -1810,9 +1810,9 @@ function buildNomenCard(w) {
       <div class="pattern-strip">
         <span class="pattern-chip" style="background:${gbg};color:${gc}">
           <span class="dot" style="background:${gc}"></span>
-          w.article === 'der' ? 'Maskulin (der)'
-: w.article === 'die' ? 'Feminin (die)'
-: 'Neutrum (das)'
+          ${w.article === 'der' ? 'Maskulin (der)'
+      : w.article === 'die' ? 'Feminin (die)'
+        : 'Neutrum (das)'}
         </span>
         <span class="pattern-chip" style="background:${pbg};color:${pc}">
           <span class="dot" style="background:${pc}"></span>${w.pluralPatternLabel}
