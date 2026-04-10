@@ -127,163 +127,175 @@ const PATTERN_LABELS = {
 // ══════════════════════════════════════════════
 
 const GENDER_ENDING_RULES = [
-  { pattern: /ung$/,        gender: 'die', rule: 'Nouns ending in -ung are always feminine' },
+  { pattern: /ung$/, gender: 'die', rule: 'Nouns ending in -ung are always feminine' },
   { pattern: /heit$|keit$/, gender: 'die', rule: 'Nouns ending in -heit/-keit are always feminine' },
-  { pattern: /schaft$/,     gender: 'die', rule: 'Nouns ending in -schaft are always feminine' },
-  { pattern: /tion$|ion$/,  gender: 'die', rule: 'Nouns ending in -tion/-ion are always feminine' },
-  { pattern: /tät$|ität$/,  gender: 'die', rule: 'Nouns ending in -tät are always feminine' },
-  { pattern: /ik$/,         gender: 'die', rule: 'Nouns ending in -ik are always feminine' },
-  { pattern: /enz$|anz$/,   gender: 'die', rule: 'Nouns ending in -enz/-anz are always feminine' },
-  { pattern: /ie$/,         gender: 'die', rule: 'Nouns ending in -ie are always feminine' },
-  { pattern: /ur$/,         gender: 'die', rule: 'Nouns ending in -ur are always feminine' },
+  { pattern: /schaft$/, gender: 'die', rule: 'Nouns ending in -schaft are always feminine' },
+  { pattern: /tion$|ion$/, gender: 'die', rule: 'Nouns ending in -tion/-ion are always feminine' },
+  { pattern: /tät$|ität$/, gender: 'die', rule: 'Nouns ending in -tät are always feminine' },
+  { pattern: /ik$/, gender: 'die', rule: 'Nouns ending in -ik are always feminine' },
+  { pattern: /enz$|anz$/, gender: 'die', rule: 'Nouns ending in -enz/-anz are always feminine' },
+  { pattern: /ie$/, gender: 'die', rule: 'Nouns ending in -ie are always feminine' },
+  { pattern: /ur$/, gender: 'die', rule: 'Nouns ending in -ur are always feminine' },
   { pattern: /chen$|lein$/, gender: 'das', rule: 'Diminutives in -chen/-lein are always neuter' },
-  { pattern: /ment$/,       gender: 'das', rule: 'Nouns ending in -ment are usually neuter' },
-  { pattern: /um$/,         gender: 'das', rule: 'Nouns ending in -um are usually neuter' },
-  { pattern: /nis$/,        gender: 'das', rule: 'Nouns ending in -nis are usually neuter' },
-  { pattern: /tum$/,        gender: 'das', rule: 'Nouns ending in -tum are usually neuter' },
-  { pattern: /ling$/,       gender: 'der', rule: 'Nouns ending in -ling are always masculine' },
-  { pattern: /ismus$/,      gender: 'der', rule: 'Nouns ending in -ismus are always masculine' },
-  { pattern: /ist$/,        gender: 'der', rule: 'Nouns ending in -ist are usually masculine' },
-  { pattern: /or$/,         gender: 'der', rule: 'Nouns ending in -or are usually masculine' },
-  { pattern: /ig$/,         gender: 'der', rule: 'Nouns ending in -ig are usually masculine' },
+  { pattern: /ment$/, gender: 'das', rule: 'Nouns ending in -ment are usually neuter' },
+  { pattern: /um$/, gender: 'das', rule: 'Nouns ending in -um are usually neuter' },
+  { pattern: /nis$/, gender: 'das', rule: 'Nouns ending in -nis are usually neuter' },
+  { pattern: /tum$/, gender: 'das', rule: 'Nouns ending in -tum are usually neuter' },
+  { pattern: /ling$/, gender: 'der', rule: 'Nouns ending in -ling are always masculine' },
+  { pattern: /ismus$/, gender: 'der', rule: 'Nouns ending in -ismus are always masculine' },
+  { pattern: /ist$/, gender: 'der', rule: 'Nouns ending in -ist are usually masculine' },
+  { pattern: /or$/, gender: 'der', rule: 'Nouns ending in -or are usually masculine' },
+  { pattern: /ig$/, gender: 'der', rule: 'Nouns ending in -ig are usually masculine' },
 ];
 
 const THEME_GENDER_MAP = {
   // MASCULINE
-  animals:              'der',
-  cars:                 'der',
-  currency:             'der',
-  calendar:             'der',
-  days_months_seasons:  'der',
-  seasons:              'der',
-  months:               'der',
-  directions:           'der',
-  alcoholic_drinks:     'der',
-  plant_drinks:         'der',
-  male_people:          'der',
-  mountains:            'der',
-  rivers_non_german:    'der',
-  outer_space:          'der',
-  rocks_minerals:       'der',
-  weather:              'der',
+  animals: 'der',
+  cars: 'der',
+  currency: 'der',
+  calendar: 'der',
+  days_months_seasons: 'der',
+  seasons: 'der',
+  months: 'der',
+  directions: 'der',
+  alcoholic_drinks: 'der',
+  plant_drinks: 'der',
+  male_people: 'der',
+  mountains: 'der',
+  rivers_non_german: 'der',
+  outer_space: 'der',
+  rocks_minerals: 'der',
+  weather: 'der',
   // FEMININE
-  female_people:        'die',
-  ships_aircraft:       'die',
-  motorcycles:          'die',
-  trees_flowers:        'die',
-  fruits:               'die',
-  german_rivers:        'die',
-  numbers_as_nouns:     'die',
+  female_people: 'die',
+  ships_aircraft: 'die',
+  motorcycles: 'die',
+  trees_flowers: 'die',
+  fruits: 'die',
+  german_rivers: 'die',
+  numbers_as_nouns: 'die',
   // NEUTER
-  languages:            'das',
-  colors_as_nouns:      'das',
+  languages: 'das',
+  colors_as_nouns: 'das',
   infinitives_as_nouns: 'das',
-  metals_elements:      'das',
-  scientific_units:     'das',
-  young_animals:        'das',
-  young_people:         'das',
-  countries_cities:     'das',
-  continents:           'das',
-  letters_notes:        'das',
-  hotels_restaurants:   'das',
+  metals_elements: 'das',
+  scientific_units: 'das',
+  young_animals: 'das',
+  young_people: 'das',
+  countries_cities: 'das',
+  continents: 'das',
+  letters_notes: 'das',
+  hotels_restaurants: 'das',
 };
 
 const THEME_GENDER_RULES = {
-  animals:              'Most animals are masculine — exceptions: die Katze, das Pferd, das Schaf',
-  cars:                 'Car brands and types are always masculine',
-  currency:             'Currency units are always masculine (der Euro, der Dollar, der Cent)',
-  calendar:             'Days, months and seasons are always masculine',
-  days_months_seasons:  'Days, months and seasons are always masculine',
-  seasons:              'Seasons are always masculine (der Frühling, der Sommer)',
-  months:               'Months are always masculine (der Januar, der März)',
-  directions:           'Compass directions are always masculine (der Norden, der Süden)',
-  alcoholic_drinks:     'Alcoholic drinks are usually masculine (der Wein, der Whisky)',
-  plant_drinks:         'Plant-based drinks are usually masculine (der Kaffee, der Tee)',
-  male_people:          'Male persons are always masculine',
-  mountains:            'Mountains and mountain ranges are usually masculine',
-  rivers_non_german:    'Non-German rivers are usually masculine (der Nil, der Amazonas)',
-  outer_space:          'Celestial bodies are usually masculine (der Mond, der Stern)',
-  rocks_minerals:       'Rocks and minerals are usually masculine (der Stein, der Granit)',
-  weather:              'Weather phenomena are usually masculine (der Regen, der Schnee, der Wind)',
-  female_people:        'Female persons are always feminine',
-  ships_aircraft:       'Airplane, motorcycle and ship makes/models are always feminine',
-  motorcycles:          'Motorcycle brands are always feminine',
-  trees_flowers:        'Most trees, fruits and flowers are feminine (die Rose, die Eiche)',
-  fruits:               'Most fruits are feminine — exceptions: der Apfel, das Obst',
-  german_rivers:        'Rivers in Germany, Austria and Switzerland are always feminine (die Donau)',
-  numbers_as_nouns:     'Numerals used as nouns are feminine (die Eins, die Million)',
-  languages:            'Languages used as nouns are always neuter (das Deutsch, das Englisch)',
-  colors_as_nouns:      'Colours used as nouns are always neuter (das Rot, das Blau)',
+  animals: 'Most animals are masculine — exceptions: die Katze, das Pferd, das Schaf',
+  cars: 'Car brands and types are always masculine',
+  currency: 'Currency units are always masculine (der Euro, der Dollar, der Cent)',
+  calendar: 'Days, months and seasons are always masculine',
+  days_months_seasons: 'Days, months and seasons are always masculine',
+  seasons: 'Seasons are always masculine (der Frühling, der Sommer)',
+  months: 'Months are always masculine (der Januar, der März)',
+  directions: 'Compass directions are always masculine (der Norden, der Süden)',
+  alcoholic_drinks: 'Alcoholic drinks are usually masculine (der Wein, der Whisky)',
+  plant_drinks: 'Plant-based drinks are usually masculine (der Kaffee, der Tee)',
+  male_people: 'Male persons are always masculine',
+  mountains: 'Mountains and mountain ranges are usually masculine',
+  rivers_non_german: 'Non-German rivers are usually masculine (der Nil, der Amazonas)',
+  outer_space: 'Celestial bodies are usually masculine (der Mond, der Stern)',
+  rocks_minerals: 'Rocks and minerals are usually masculine (der Stein, der Granit)',
+  weather: 'Weather phenomena are usually masculine (der Regen, der Schnee, der Wind)',
+  female_people: 'Female persons are always feminine',
+  ships_aircraft: 'Airplane, motorcycle and ship makes/models are always feminine',
+  motorcycles: 'Motorcycle brands are always feminine',
+  trees_flowers: 'Most trees, fruits and flowers are feminine (die Rose, die Eiche)',
+  fruits: 'Most fruits are feminine — exceptions: der Apfel, das Obst',
+  german_rivers: 'Rivers in Germany, Austria and Switzerland are always feminine (die Donau)',
+  numbers_as_nouns: 'Numerals used as nouns are feminine (die Eins, die Million)',
+  languages: 'Languages used as nouns are always neuter (das Deutsch, das Englisch)',
+  colors_as_nouns: 'Colours used as nouns are always neuter (das Rot, das Blau)',
   infinitives_as_nouns: 'Gerunds and infinitives used as nouns are always neuter (das Essen)',
-  metals_elements:      'Metals and chemical elements are usually neuter (das Gold, das Eisen)',
-  scientific_units:     'Scientific units are usually neuter (das Gramm, das Watt) — exception: der Meter',
-  young_animals:        'Young and baby animals are always neuter (das Kalb, das Küken)',
-  young_people:         'Young persons are always neuter (das Kind, das Baby, das Mädchen)',
-  countries_cities:     'Continents, cities and most countries are neuter — no article in normal use',
-  continents:           'Continents are always neuter — no article in normal use',
-  letters_notes:        'Alphabet letters and music notes are always neuter (das A, das B)',
-  hotels_restaurants:   'Hotels, cafes and restaurants are usually neuter (das Hilton, das Ritz)',
+  metals_elements: 'Metals and chemical elements are usually neuter (das Gold, das Eisen)',
+  scientific_units: 'Scientific units are usually neuter (das Gramm, das Watt) — exception: der Meter',
+  young_animals: 'Young and baby animals are always neuter (das Kalb, das Küken)',
+  young_people: 'Young persons are always neuter (das Kind, das Baby, das Mädchen)',
+  countries_cities: 'Continents, cities and most countries are neuter — no article in normal use',
+  continents: 'Continents are always neuter — no article in normal use',
+  letters_notes: 'Alphabet letters and music notes are always neuter (das A, das B)',
+  hotels_restaurants: 'Hotels, cafes and restaurants are usually neuter (das Hilton, das Ritz)',
 };
 
 const THEME_GENDER_CONFIDENCE = {
   // High
-  male_people:          'high',
-  female_people:        'high',
-  languages:            'high',
-  days_months_seasons:  'high',
-  calendar:             'high',
-  seasons:              'high',
-  months:               'high',
-  directions:           'high',
+  male_people: 'high',
+  female_people: 'high',
+  languages: 'high',
+  days_months_seasons: 'high',
+  calendar: 'high',
+  seasons: 'high',
+  months: 'high',
+  directions: 'high',
   infinitives_as_nouns: 'high',
-  young_people:         'high',
-  letters_notes:        'high',
-  colors_as_nouns:      'high',
-  german_rivers:        'high',
-  rivers_non_german:    'high',
-  ships_aircraft:       'high',
-  motorcycles:          'high',
-  numbers_as_nouns:     'high',
-  continents:           'high',
-  countries_cities:     'high',
+  young_people: 'high',
+  letters_notes: 'high',
+  colors_as_nouns: 'high',
+  german_rivers: 'high',
+  rivers_non_german: 'high',
+  ships_aircraft: 'high',
+  motorcycles: 'high',
+  numbers_as_nouns: 'high',
+  continents: 'high',
+  countries_cities: 'high',
   // Medium
-  currency:             'medium',
-  weather:              'medium',
-  rocks_minerals:       'medium',
-  outer_space:          'medium',
-  metals_elements:      'medium',
-  scientific_units:     'medium',
-  young_animals:        'medium',
-  trees_flowers:        'medium',
-  hotels_restaurants:   'medium',
-  mountains:            'medium',
-  alcoholic_drinks:     'medium',
-  plant_drinks:         'medium',
+  currency: 'medium',
+  weather: 'medium',
+  rocks_minerals: 'medium',
+  outer_space: 'medium',
+  metals_elements: 'medium',
+  scientific_units: 'medium',
+  young_animals: 'medium',
+  trees_flowers: 'medium',
+  hotels_restaurants: 'medium',
+  mountains: 'medium',
+  alcoholic_drinks: 'medium',
+  plant_drinks: 'medium',
   // Low — show rule but never flag exception
-  animals:              'low',
-  fruits:               'low',
-  cars:                 'low',
+  animals: 'low',
+  fruits: 'low',
+  cars: 'low',
 };
 
 const PLURAL_ENDING_RULES = [
-  { test: w => /ung$|heit$|keit$|schaft$|tion$|ion$|tät$/.test(w.german.toLowerCase()),
+  {
+    test: w => /ung$|heit$|keit$|schaft$|tion$|ion$|tät$/.test(w.german.toLowerCase()),
     predict: w => w.german + 'en', pattern: '-en',
-    rule: 'Feminine nouns with these endings always take -en in plural' },
-  { test: w => w.article === 'die' && /e$/.test(w.german),
+    rule: 'Feminine nouns with these endings always take -en in plural'
+  },
+  {
+    test: w => w.article === 'die' && /e$/.test(w.german),
     predict: w => w.german + 'n', pattern: '-n',
-    rule: 'Feminine nouns ending in -e add -n in plural' },
-  { test: w => /chen$|lein$/.test(w.german.toLowerCase()),
+    rule: 'Feminine nouns ending in -e add -n in plural'
+  },
+  {
+    test: w => /chen$|lein$/.test(w.german.toLowerCase()),
     predict: w => w.german, pattern: '-',
-    rule: 'Diminutives are always unchanged in plural' },
-  { test: w => w.article !== 'die' && /er$|el$|en$/.test(w.german.toLowerCase()),
+    rule: 'Diminutives are always unchanged in plural'
+  },
+  {
+    test: w => w.article !== 'die' && /er$|el$|en$/.test(w.german.toLowerCase()),
     predict: w => w.german, pattern: '-',
-    rule: 'Masculine/neuter nouns ending in -er/-el/-en are usually unchanged in plural' },
-  { test: w => /ment$/.test(w.german.toLowerCase()),
+    rule: 'Masculine/neuter nouns ending in -er/-el/-en are usually unchanged in plural'
+  },
+  {
+    test: w => /ment$/.test(w.german.toLowerCase()),
     predict: w => w.german + 's', pattern: '-s',
-    rule: 'Nouns ending in -ment usually take -s in plural' },
-  { test: w => /um$/.test(w.german.toLowerCase()),
+    rule: 'Nouns ending in -ment usually take -s in plural'
+  },
+  {
+    test: w => /um$/.test(w.german.toLowerCase()),
     predict: w => w.german.replace(/um$/, 'en'), pattern: '-en',
-    rule: 'Nouns ending in -um usually take -en in plural (Datum → Daten)' },
+    rule: 'Nouns ending in -um usually take -en in plural (Datum → Daten)'
+  },
 ];
 
 // ── Verb analysis ─────────────────────────────
@@ -295,18 +307,18 @@ const SEIN_VERBS_HINTS = [
 ];
 
 const STRONG_ABLAUT_CLASSES = [
-  { name: 'Class I — ei → ie/i → ie/i',   pattern: /^ei/, prät: /ie$|i$/, },
-  { name: 'Class II — ie/ü → o → o',      pattern: /^(ie|ü)/, prät: /o$/ },
-  { name: 'Class III — i/e → a → u/o',    pattern: /^(i|e)/, prät: /a$/ },
-  { name: 'Class IV — e → a → e/o',       pattern: /^e/, prät: /a$/ },
-  { name: 'Class V — a → u → a',          pattern: /^a/, prät: /u$/ },
-  { name: 'Class VI — a → ie → a',        pattern: /^a/, prät: /ie$/ },
+  { name: 'Class I — ei → ie/i → ie/i', pattern: /^ei/, prät: /ie$|i$/, },
+  { name: 'Class II — ie/ü → o → o', pattern: /^(ie|ü)/, prät: /o$/ },
+  { name: 'Class III — i/e → a → u/o', pattern: /^(i|e)/, prät: /a$/ },
+  { name: 'Class IV — e → a → e/o', pattern: /^e/, prät: /a$/ },
+  { name: 'Class V — a → u → a', pattern: /^a/, prät: /u$/ },
+  { name: 'Class VI — a → ie → a', pattern: /^a/, prät: /ie$/ },
 ];
 
-const INSEPARABLE_PREFIXES = ['be','ge','er','ver','zer','ent','emp','miss'];
-const SEPARABLE_PREFIXES   = ['ab','an','auf','aus','bei','ein','los','mit',
-                               'nach','vor','weg','zu','zurück','zusammen',
-                               'fern','spazieren','statt'];
+const INSEPARABLE_PREFIXES = ['be', 'ge', 'er', 'ver', 'zer', 'ent', 'emp', 'miss'];
+const SEPARABLE_PREFIXES = ['ab', 'an', 'auf', 'aus', 'bei', 'ein', 'los', 'mit',
+  'nach', 'vor', 'weg', 'zu', 'zurück', 'zusammen',
+  'fern', 'spazieren', 'statt'];
 // ── Adjective generator ───────────────────────
 const ADJ_DECLENSION = {
   strong: {
@@ -575,19 +587,19 @@ function analyseNoun(w) {
   if (genderResult) {
     if (genderResult.predictedArticle === w.article) {
       // Matches rule
-      w._genderRule    = genderResult.rule;
-      w._genderSource  = genderResult.source;
-      w._genderMatch   = true;
+      w._genderRule = genderResult.rule;
+      w._genderSource = genderResult.source;
+      w._genderMatch = true;
     } else {
       // Mismatch
       if (genderResult.confidence === 'low') {
         // Low confidence — show rule but don't flag exception
-        w._genderRule   = genderResult.rule;
-        w._genderMatch  = true; // informational only
+        w._genderRule = genderResult.rule;
+        w._genderMatch = true; // informational only
       } else {
         // Medium or high — flag as exception
-        w._genderMatch     = false;
-        w._genderRule      = genderResult.rule;
+        w._genderMatch = false;
+        w._genderRule = genderResult.rule;
         w._genderException = `Rule predicts ${genderResult.predictedArticle} — but is ${w.article}. Memorise this exception.`;
         if (genderResult.confidence === 'medium') {
           w._genderException += ' (rule has some exceptions)';
@@ -600,11 +612,11 @@ function analyseNoun(w) {
   const pluralResult = detectNounPlural(w);
   if (pluralResult) {
     if (pluralResult.predictedPlural === w.plural) {
-      w._pluralRule  = pluralResult.rule;
+      w._pluralRule = pluralResult.rule;
       w._pluralMatch = true;
     } else {
-      w._pluralMatch     = false;
-      w._pluralRule      = pluralResult.rule;
+      w._pluralMatch = false;
+      w._pluralRule = pluralResult.rule;
       w._pluralException = `Rule predicts "${pluralResult.predictedPlural}" — but plural is "${w.plural}". Memorise this exception.`;
     }
   }
@@ -620,9 +632,9 @@ function analyseVerb(w) {
 
     for (const tense of ['prasens', 'prateritum', 'perfekt']) {
       if (!w.conjugations[tense] || !generated[tense]) continue;
-      for (const pronoun of ['ich','du','er','wir','ihr','sie']) {
-        const actual    = w.conjugations[tense][pronoun];
-        const expected  = generated[tense][pronoun];
+      for (const pronoun of ['ich', 'du', 'er', 'wir', 'ihr', 'sie']) {
+        const actual = w.conjugations[tense][pronoun];
+        const expected = generated[tense][pronoun];
         if (actual && expected && actual !== expected) {
           exceptions.push({
             tense: TENSE_LABELS[tense] || tense,
@@ -638,17 +650,17 @@ function analyseVerb(w) {
       w._conjugationExceptions = exceptions;
       w._verbRule = 'Weak verb — but has irregular forms (see below)';
     } else {
-      w._verbRule        = 'Regular weak verb — all forms follow standard pattern';
+      w._verbRule = 'Regular weak verb — all forms follow standard pattern';
       w._verbFollowsRule = true;
     }
   }
 
   // ── 2. Strong verb — identify ablaut class ───
   if (w.patternColor === 'strong' && w.stems) {
-    const inf   = w.german.toLowerCase().replace(/^(sich |auf|an|ab|ein|aus|zu|mit|vor|nach|fern)/, '');
-    const prät  = (w.stems.prateritum || '').toLowerCase();
+    const inf = w.german.toLowerCase().replace(/^(sich |auf|an|ab|ein|aus|zu|mit|vor|nach|fern)/, '');
+    const prät = (w.stems.prateritum || '').toLowerCase();
 
-    const infVowel  = inf.match(/[aeiouäöü]+/)?.[0] || '';
+    const infVowel = inf.match(/[aeiouäöü]+/)?.[0] || '';
     const prätVowel = prät.match(/[aeiouäöü]+/)?.[0] || '';
     const part2Vowel = w.stems.partizip2?.match(/[aeiouäöü]+/)?.[0] || '?';
 
@@ -688,7 +700,7 @@ function analyseVerb(w) {
   const inf = w.german.toLowerCase();
   if (!w.separablePrefix && !w.inseparable) {
     const matchedInsep = INSEPARABLE_PREFIXES.find(p => inf.startsWith(p));
-    const matchedSep   = SEPARABLE_PREFIXES.find(p => inf.startsWith(p));
+    const matchedSep = SEPARABLE_PREFIXES.find(p => inf.startsWith(p));
     if (matchedInsep) {
       w._prefixNote = `Inseparable prefix "${matchedInsep}" — no -ge- in Partizip II`;
     } else if (matchedSep) {
@@ -1621,11 +1633,11 @@ function buildVerbCard(w) {
             ${w._verbRule}
           </div>
           ${w._ablautPattern
-            ? `<div class="ending-rule-sub">Ablaut: ${w._ablautPattern}${w._ablautClass ? ` · ${w._ablautClass}` : ''}</div>`
-            : ''}
+        ? `<div class="ending-rule-sub">Ablaut: ${w._ablautPattern}${w._ablautClass ? ` · ${w._ablautClass}` : ''}</div>`
+        : ''}
           ${w._konjunktiv2Note
-            ? `<div class="ending-rule-sub">${w._konjunktiv2Note}</div>`
-            : ''}
+        ? `<div class="ending-rule-sub">${w._konjunktiv2Note}</div>`
+        : ''}
         </div>
       </div>
       ${w._conjugationExceptions?.length
@@ -1634,12 +1646,12 @@ function buildVerbCard(w) {
             <div>
               <div style="font-weight:500;margin-bottom:4px">Irregular forms:</div>
               ${w._conjugationExceptions.map(e =>
-                `<div style="font-size:12px;margin-top:2px">
+          `<div style="font-size:12px;margin-top:2px">
                   ${e.tense} · ${e.pronoun}: 
                   <span style="color:var(--text3);text-decoration:line-through">${e.expected}</span>
                   → <span style="color:var(--verb-strong)">${e.actual}</span>
                 </div>`
-              ).join('')}
+        ).join('')}
             </div>
           </div>`
         : ''}
@@ -1798,7 +1810,9 @@ function buildNomenCard(w) {
       <div class="pattern-strip">
         <span class="pattern-chip" style="background:${gbg};color:${gc}">
           <span class="dot" style="background:${gc}"></span>
-          ${w.gender === 'masculine' ? 'Maskulin (der)' : w.gender === 'feminine' ? 'Feminin (die)' : 'Neutrum (das)'}
+          w.article === 'der' ? 'Maskulin (der)'
+: w.article === 'die' ? 'Feminin (die)'
+: 'Neutrum (das)'
         </span>
         <span class="pattern-chip" style="background:${pbg};color:${pc}">
           <span class="dot" style="background:${pc}"></span>${w.pluralPatternLabel}
