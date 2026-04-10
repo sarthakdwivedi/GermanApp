@@ -3,10 +3,7 @@
     "id": "name",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "introductions",
-      "personal_information"
-    ],
+    "theme": ["personal_information"],
     "german": "Name",
     "english": "name",
     "article": "der",
@@ -14,7 +11,6 @@
     "pluralPattern": "-n",
     "pluralPatternLabel": "-n",
     "declensionType": "weak_masc",
-    "nounGroupRule": "Weak masculine — all cases except Nom.sg add -n/-en",
     "usage": [
       {
         "de": "Mein Name ist Anna.",
@@ -30,10 +26,7 @@
     "id": "deutschland",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "countries",
-      "introductions"
-    ],
+    "theme": ["countries_cities"],
     "german": "Deutschland",
     "english": "Germany",
     "article": "—",
@@ -54,16 +47,12 @@
     "id": "deutsch",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "introductions",
-      "education"
-    ],
+    "theme": ["languages"],
     "german": "Deutsch",
     "english": "German",
     "article": "das",
     "plural": "—",
     "declensionType": "no_plural",
-    "nounGroupRule": "Language name used as a noun with no plural",
     "usage": [
       {
         "de": "Ich spreche Deutsch.",
@@ -79,10 +68,7 @@
     "id": "herr",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "introductions",
-      "people"
-    ],
+    "theme": ["male_people"],
     "german": "Herr",
     "english": "Mr. / gentleman",
     "article": "der",
@@ -90,7 +76,6 @@
     "pluralPattern": "-en",
     "pluralPatternLabel": "-en",
     "declensionType": "weak_masc",
-    "nounGroupRule": "Weak masculine — all cases except Nom.sg add -n/-en",
     "usage": [
       {
         "de": "Guten Tag, Herr Müller.",
@@ -106,10 +91,7 @@
     "id": "kind",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "introductions",
-      "people"
-    ],
+    "theme": ["young_people"],
     "german": "Kind",
     "english": "child",
     "article": "das",
@@ -131,10 +113,7 @@
     "id": "dame",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "introductions",
-      "people"
-    ],
+    "theme": ["female_people"],
     "german": "Dame",
     "english": "lady",
     "article": "die",
@@ -156,16 +135,12 @@
     "id": "musik",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "introductions",
-      "leisure"
-    ],
+    "theme": ["music"],
     "german": "Musik",
     "english": "music",
     "article": "die",
     "plural": "—",
     "declensionType": "no_plural",
-    "nounGroupRule": "Abstract noun with no plural in general use",
     "usage": [
       {
         "de": "Ich höre gern Musik.",
@@ -181,10 +156,7 @@
     "id": "frau",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "introductions",
-      "people"
-    ],
+    "theme": ["female_people"],
     "german": "Frau",
     "english": "woman / Mrs.",
     "article": "die",
@@ -206,9 +178,7 @@
     "id": "papa",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "family"
-    ],
+    "theme": ["male_people"],
     "german": "Papa",
     "english": "dad",
     "article": "der",
@@ -230,10 +200,7 @@
     "id": "entschuldigung",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "introductions",
-      "communication"
-    ],
+    "theme": ["communication"],
     "german": "Entschuldigung",
     "english": "excuse me / apology",
     "article": "die",
@@ -255,10 +222,7 @@
     "id": "oesterreich",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "countries",
-      "introductions"
-    ],
+    "theme": ["countries_cities"],
     "german": "Österreich",
     "english": "Austria",
     "article": "—",
@@ -279,16 +243,13 @@
     "id": "schweiz",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "countries",
-      "introductions"
-    ],
+    "theme": ["countries_cities"],
     "german": "Schweiz",
     "english": "Switzerland",
     "article": "die",
     "plural": "—",
     "declensionType": "no_plural",
-    "nounGroupRule": "Country name used with article and no plural",
+    "nounGroupRule": "Exception — most countries_cities nouns are das, but this is die. Memorise.",
     "usage": [
       {
         "de": "Ich komme aus der Schweiz.",
@@ -304,10 +265,7 @@
     "id": "sprache",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "introductions",
-      "education"
-    ],
+    "theme": ["languages", "education"],
     "german": "Sprache",
     "english": "language",
     "article": "die",
@@ -329,10 +287,7 @@
     "id": "buchstabe",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "introductions",
-      "education"
-    ],
+    "theme": ["letters_notes", "education"],
     "german": "Buchstabe",
     "english": "letter",
     "article": "der",
@@ -354,16 +309,12 @@
     "id": "alphabet",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "introductions",
-      "education"
-    ],
+    "theme": ["education"],
     "german": "Alphabet",
     "english": "alphabet",
     "article": "das",
     "plural": "—",
     "declensionType": "no_plural",
-    "nounGroupRule": "System term used as a singular concept",
     "usage": [
       {
         "de": "Das Alphabet beginnt mit A.",
@@ -379,10 +330,7 @@
     "id": "firma",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "introductions",
-      "work"
-    ],
+    "theme": ["work"],
     "german": "Firma",
     "english": "company",
     "article": "die",
@@ -404,10 +352,7 @@
     "id": "adresse",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "introductions",
-      "personal_information"
-    ],
+    "theme": ["personal_information"],
     "german": "Adresse",
     "english": "address",
     "article": "die",
@@ -429,10 +374,7 @@
     "id": "visitenkarte",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "introductions",
-      "work"
-    ],
+    "theme": ["work", "communication"],
     "german": "Visitenkarte",
     "english": "business card",
     "article": "die",
@@ -454,10 +396,7 @@
     "id": "vorname",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "personal_information",
-      "introductions"
-    ],
+    "theme": ["personal_information"],
     "german": "Vorname",
     "english": "first name",
     "article": "der",
@@ -465,7 +404,6 @@
     "pluralPattern": "-n",
     "pluralPatternLabel": "-n",
     "declensionType": "weak_masc",
-    "nounGroupRule": "Weak masculine — all cases except Nom.sg add -n/-en",
     "usage": [
       {
         "de": "Mein Vorname ist Anna.",
@@ -481,10 +419,7 @@
     "id": "familienname",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "personal_information",
-      "introductions"
-    ],
+    "theme": ["personal_information"],
     "german": "Familienname",
     "english": "last name / family name",
     "article": "der",
@@ -492,7 +427,6 @@
     "pluralPattern": "-n",
     "pluralPatternLabel": "-n",
     "declensionType": "weak_masc",
-    "nounGroupRule": "Weak masculine — all cases except Nom.sg add -n/-en",
     "usage": [
       {
         "de": "Mein Familienname ist Meier.",
@@ -508,10 +442,7 @@
     "id": "strasse",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "personal_information",
-      "city"
-    ],
+    "theme": ["personal_information"],
     "german": "Straße",
     "english": "street",
     "article": "die",
@@ -533,10 +464,7 @@
     "id": "stadt",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "personal_information",
-      "city"
-    ],
+    "theme": ["countries_cities"],
     "german": "Stadt",
     "english": "city",
     "article": "die",
@@ -558,10 +486,7 @@
     "id": "land",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "personal_information",
-      "countries"
-    ],
+    "theme": ["countries_cities"],
     "german": "Land",
     "english": "country",
     "article": "das",
@@ -583,10 +508,7 @@
     "id": "e_mail",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "personal_information",
-      "communication"
-    ],
+    "theme": ["communication", "personal_information"],
     "german": "E-Mail",
     "english": "email",
     "article": "die",
@@ -608,10 +530,7 @@
     "id": "telefon",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "personal_information",
-      "communication"
-    ],
+    "theme": ["communication", "personal_information"],
     "german": "Telefon",
     "english": "telephone / phone",
     "article": "das",
@@ -633,10 +552,7 @@
     "id": "formular",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "personal_information",
-      "education"
-    ],
+    "theme": ["education", "personal_information"],
     "german": "Formular",
     "english": "form",
     "article": "das",
@@ -658,10 +574,7 @@
     "id": "fremdsprache",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "personal_information",
-      "education"
-    ],
+    "theme": ["languages", "education"],
     "german": "Fremdsprache",
     "english": "foreign language",
     "article": "die",
@@ -683,10 +596,7 @@
     "id": "anmeldung",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "personal_information",
-      "education"
-    ],
+    "theme": ["education", "personal_information"],
     "german": "Anmeldung",
     "english": "registration",
     "article": "die",
@@ -708,10 +618,7 @@
     "id": "postleitzahl",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "personal_information",
-      "city"
-    ],
+    "theme": ["personal_information"],
     "german": "Postleitzahl",
     "english": "postal code / ZIP code",
     "article": "die",
@@ -733,10 +640,7 @@
     "id": "polen",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "countries",
-      "introductions"
-    ],
+    "theme": ["countries_cities"],
     "german": "Polen",
     "english": "Poland",
     "article": "—",
@@ -757,16 +661,13 @@
     "id": "tuerkei",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "countries",
-      "introductions"
-    ],
+    "theme": ["countries_cities"],
     "german": "Türkei",
     "english": "Turkey",
     "article": "die",
     "plural": "—",
     "declensionType": "no_plural",
-    "nounGroupRule": "Country name used with article and no plural",
+    "nounGroupRule": "Exception — most countries_cities nouns are das, but this is die. Memorise.",
     "usage": [
       {
         "de": "Sie kommt aus der Türkei.",
@@ -782,10 +683,7 @@
     "id": "spanien",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "countries",
-      "introductions"
-    ],
+    "theme": ["countries_cities"],
     "german": "Spanien",
     "english": "Spain",
     "article": "—",
@@ -806,10 +704,7 @@
     "id": "ungarn",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "countries",
-      "introductions"
-    ],
+    "theme": ["countries_cities"],
     "german": "Ungarn",
     "english": "Hungary",
     "article": "—",
@@ -830,10 +725,7 @@
     "id": "rumaenien",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "countries",
-      "introductions"
-    ],
+    "theme": ["countries_cities"],
     "german": "Rumänien",
     "english": "Romania",
     "article": "—",
@@ -854,10 +746,7 @@
     "id": "syrien",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "countries",
-      "introductions"
-    ],
+    "theme": ["countries_cities"],
     "german": "Syrien",
     "english": "Syria",
     "article": "—",
@@ -878,10 +767,7 @@
     "id": "bulgarien",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "countries",
-      "introductions"
-    ],
+    "theme": ["countries_cities"],
     "german": "Bulgarien",
     "english": "Bulgaria",
     "article": "—",
@@ -902,10 +788,7 @@
     "id": "italien",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "countries",
-      "introductions"
-    ],
+    "theme": ["countries_cities"],
     "german": "Italien",
     "english": "Italy",
     "article": "—",
@@ -926,10 +809,7 @@
     "id": "griechenland",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "countries",
-      "introductions"
-    ],
+    "theme": ["countries_cities"],
     "german": "Griechenland",
     "english": "Greece",
     "article": "—",

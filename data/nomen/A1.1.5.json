@@ -3,10 +3,7 @@
     "id": "praesentation",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "education",
-      "work"
-    ],
+    "theme": ["education", "work"],
     "german": "Präsentation",
     "english": "presentation",
     "article": "die",
@@ -28,10 +25,7 @@
     "id": "regal",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "home",
-      "furniture"
-    ],
+    "theme": ["home"],
     "german": "Regal",
     "english": "shelf",
     "article": "das",
@@ -53,10 +47,7 @@
     "id": "stuhl",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "home",
-      "furniture"
-    ],
+    "theme": ["home"],
     "german": "Stuhl",
     "english": "chair",
     "article": "der",
@@ -78,10 +69,7 @@
     "id": "supermarkt",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "shopping",
-      "places"
-    ],
+    "theme": ["shopping"],
     "german": "Supermarkt",
     "english": "supermarket",
     "article": "der",
@@ -103,9 +91,7 @@
     "id": "viertel",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "time_expressions"
-    ],
+    "theme": ["time"],
     "german": "Viertel",
     "english": "quarter",
     "article": "das",
@@ -127,9 +113,7 @@
     "id": "uhr",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "time_expressions"
-    ],
+    "theme": ["time"],
     "german": "Uhr",
     "english": "clock / o'clock",
     "article": "die",
@@ -151,9 +135,7 @@
     "id": "intensivkurs",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "education"
-    ],
+    "theme": ["education"],
     "german": "Intensivkurs",
     "english": "intensive course",
     "article": "der",
@@ -175,10 +157,7 @@
     "id": "montag",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "calendar",
-      "time_expressions"
-    ],
+    "theme": ["days_months_seasons"],
     "german": "Montag",
     "english": "Monday",
     "article": "der",
@@ -200,10 +179,7 @@
     "id": "freitag",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "calendar",
-      "time_expressions"
-    ],
+    "theme": ["days_months_seasons"],
     "german": "Freitag",
     "english": "Friday",
     "article": "der",
@@ -225,10 +201,7 @@
     "id": "donnerstag",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "calendar",
-      "time_expressions"
-    ],
+    "theme": ["days_months_seasons"],
     "german": "Donnerstag",
     "english": "Thursday",
     "article": "der",
@@ -250,10 +223,7 @@
     "id": "mittwoch",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "calendar",
-      "time_expressions"
-    ],
+    "theme": ["days_months_seasons"],
     "german": "Mittwoch",
     "english": "Wednesday",
     "article": "der",
@@ -275,10 +245,7 @@
     "id": "dienstag",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "calendar",
-      "time_expressions"
-    ],
+    "theme": ["days_months_seasons"],
     "german": "Dienstag",
     "english": "Tuesday",
     "article": "der",
@@ -300,10 +267,7 @@
     "id": "party",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "leisure",
-      "social"
-    ],
+    "theme": ["leisure"],
     "german": "Party",
     "english": "party",
     "article": "die",
@@ -325,15 +289,12 @@
     "id": "zeit",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "time_expressions"
-    ],
+    "theme": ["time"],
     "german": "Zeit",
     "english": "time",
     "article": "die",
     "plural": "—",
     "declensionType": "no_plural",
-    "nounGroupRule": "Abstract noun with no plural in general use",
     "usage": [
       {
         "de": "Hast du Zeit?",
@@ -349,16 +310,12 @@
     "id": "fussball",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "sports",
-      "leisure"
-    ],
+    "theme": ["sports"],
     "german": "Fußball",
     "english": "football / soccer",
     "article": "der",
     "plural": "—",
     "declensionType": "no_plural",
-    "nounGroupRule": "Sport noun often used without plural",
     "usage": [
       {
         "de": "Ich spiele Fußball.",
@@ -374,10 +331,7 @@
     "id": "samstag",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "calendar",
-      "time_expressions"
-    ],
+    "theme": ["days_months_seasons"],
     "german": "Samstag",
     "english": "Saturday",
     "article": "der",
@@ -399,10 +353,7 @@
     "id": "sonntag",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "calendar",
-      "time_expressions"
-    ],
+    "theme": ["days_months_seasons"],
     "german": "Sonntag",
     "english": "Sunday",
     "article": "der",
@@ -424,9 +375,7 @@
     "id": "hausaufgabe",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "education"
-    ],
+    "theme": ["education"],
     "german": "Hausaufgabe",
     "english": "homework",
     "article": "die",
@@ -448,9 +397,7 @@
     "id": "mama",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "family"
-    ],
+    "theme": ["female_people"],
     "german": "Mama",
     "english": "mom",
     "article": "die",
@@ -472,10 +419,7 @@
     "id": "wochenende",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "time_expressions",
-      "leisure"
-    ],
+    "theme": ["time", "leisure"],
     "german": "Wochenende",
     "english": "weekend",
     "article": "das",
@@ -497,9 +441,7 @@
     "id": "woche",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "time_expressions"
-    ],
+    "theme": ["time"],
     "german": "Woche",
     "english": "week",
     "article": "die",
@@ -521,10 +463,7 @@
     "id": "mittag",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "time_expressions",
-      "daily_routine"
-    ],
+    "theme": ["time"],
     "german": "Mittag",
     "english": "midday / noon",
     "article": "der",
@@ -546,10 +485,7 @@
     "id": "morgen",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "time_expressions",
-      "daily_routine"
-    ],
+    "theme": ["time"],
     "german": "Morgen",
     "english": "morning",
     "article": "der",
@@ -571,10 +507,7 @@
     "id": "abend",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "time_expressions",
-      "daily_routine"
-    ],
+    "theme": ["time"],
     "german": "Abend",
     "english": "evening",
     "article": "der",
@@ -596,10 +529,7 @@
     "id": "nachmittag",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "time_expressions",
-      "daily_routine"
-    ],
+    "theme": ["time"],
     "german": "Nachmittag",
     "english": "afternoon",
     "article": "der",
@@ -621,10 +551,7 @@
     "id": "vormittag",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "time_expressions",
-      "daily_routine"
-    ],
+    "theme": ["time"],
     "german": "Vormittag",
     "english": "late morning",
     "article": "der",
@@ -646,10 +573,7 @@
     "id": "nacht",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "time_expressions",
-      "daily_routine"
-    ],
+    "theme": ["time"],
     "german": "Nacht",
     "english": "night",
     "article": "die",
@@ -671,10 +595,7 @@
     "id": "kino",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "leisure",
-      "places"
-    ],
+    "theme": ["hotels_restaurants", "leisure"],
     "german": "Kino",
     "english": "cinema",
     "article": "das",
@@ -696,16 +617,12 @@
     "id": "sport",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "sports",
-      "daily_routine"
-    ],
+    "theme": ["sports"],
     "german": "Sport",
     "english": "sport / exercise",
     "article": "der",
     "plural": "—",
     "declensionType": "no_plural",
-    "nounGroupRule": "Activity noun often used without plural",
     "usage": [
       {
         "de": "Am Nachmittag macht Robert Sport.",
@@ -721,9 +638,7 @@
     "id": "pizza",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "food"
-    ],
+    "theme": ["food"],
     "german": "Pizza",
     "english": "pizza",
     "article": "die",
@@ -745,10 +660,7 @@
     "id": "termin",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "time_expressions",
-      "daily_routine"
-    ],
+    "theme": ["time"],
     "german": "Termin",
     "english": "appointment",
     "article": "der",
@@ -770,17 +682,14 @@
     "id": "kindergarten",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "education",
-      "places"
-    ],
+    "theme": ["education"],
     "german": "Kindergarten",
     "english": "kindergarten",
     "article": "der",
     "plural": "Kindergärten",
     "pluralPattern": "umlaut",
     "pluralPatternLabel": "Umlaut",
-    "nounGroupRule": "Irregular plural (umlaut only)",
+    "nounGroupRule": "Irregular plural — no pattern rule applies. Memorise.",
     "usage": [
       {
         "de": "Der Kindergarten ist bis 17 Uhr geöffnet.",
@@ -796,10 +705,7 @@
     "id": "geschaeft",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "shopping",
-      "places"
-    ],
+    "theme": ["shopping"],
     "german": "Geschäft",
     "english": "shop / business",
     "article": "das",
@@ -814,6 +720,160 @@
       {
         "de": "Die Geschäfte schließen früh.",
         "en": "The shops close early."
+      }
+    ]
+  }
+,
+  {
+    "id": "frueh",
+    "level": "A1",
+    "type": "nomen",
+    "theme": ["time"],
+    "german": "Früh",
+    "english": "early morning",
+    "article": "der",
+    "plural": "—",
+    "declensionType": "no_plural",
+    "usage": [
+      {
+        "de": "Am Früh ist es noch ruhig.",
+        "en": "Early in the morning it is still quiet."
+      },
+      {
+        "de": "Der Früh beginnt sehr zeitig.",
+        "en": "The early morning begins very early."
+      }
+    ]
+  },
+  {
+    "id": "bibliothek",
+    "level": "A1",
+    "type": "nomen",
+    "theme": ["education"],
+    "german": "Bibliothek",
+    "english": "library",
+    "article": "die",
+    "plural": "Bibliotheken",
+    "pluralPattern": "-en",
+    "pluralPatternLabel": "-en",
+    "usage": [
+      {
+        "de": "Ich lerne in der Bibliothek.",
+        "en": "I study in the library."
+      },
+      {
+        "de": "Die Bibliotheken sind am Sonntag geschlossen.",
+        "en": "The libraries are closed on Sunday."
+      }
+    ]
+  },
+  {
+    "id": "oeffnungszeiten",
+    "level": "A1",
+    "type": "nomen",
+    "theme": ["time"],
+    "german": "Öffnungszeiten",
+    "english": "opening hours",
+    "article": "die",
+    "plural": "Öffnungszeiten",
+    "pluralPattern": "-",
+    "pluralPatternLabel": "—",
+    "usage": [
+      {
+        "de": "Wie sind die Öffnungszeiten?",
+        "en": "What are the opening hours?"
+      },
+      {
+        "de": "Die Öffnungszeiten stehen an der Tür.",
+        "en": "The opening hours are written on the door."
+      }
+    ]
+  },
+  {
+    "id": "tag",
+    "level": "A1",
+    "type": "nomen",
+    "theme": ["time"],
+    "german": "Tag",
+    "english": "day",
+    "article": "der",
+    "plural": "Tage",
+    "pluralPattern": "-e",
+    "pluralPatternLabel": "-e",
+    "usage": [
+      {
+        "de": "Der Tag ist lang.",
+        "en": "The day is long."
+      },
+      {
+        "de": "Die Tage sind im Sommer warm.",
+        "en": "The days are warm in summer."
+      }
+    ]
+  },
+  {
+    "id": "beispiel",
+    "level": "A1",
+    "type": "nomen",
+    "theme": ["education"],
+    "german": "Beispiel",
+    "english": "example",
+    "article": "das",
+    "plural": "Beispiele",
+    "pluralPattern": "-e",
+    "pluralPatternLabel": "-e",
+    "usage": [
+      {
+        "de": "Das ist ein Beispiel.",
+        "en": "That is an example."
+      },
+      {
+        "de": "Die Beispiele sind einfach.",
+        "en": "The examples are easy."
+      }
+    ]
+  },
+  {
+    "id": "freund",
+    "level": "A1",
+    "type": "nomen",
+    "theme": ["male_people"],
+    "german": "Freund",
+    "english": "male friend / boyfriend",
+    "article": "der",
+    "plural": "Freunde",
+    "pluralPattern": "-e",
+    "pluralPatternLabel": "-e",
+    "usage": [
+      {
+        "de": "Mein Freund kommt heute.",
+        "en": "My male friend is coming today."
+      },
+      {
+        "de": "Die Freunde spielen Fußball.",
+        "en": "The friends are playing football."
+      }
+    ]
+  },
+  {
+    "id": "freundin",
+    "level": "A1",
+    "type": "nomen",
+    "theme": ["female_people"],
+    "german": "Freundin",
+    "english": "female friend / girlfriend",
+    "article": "die",
+    "plural": "Freundinnen",
+    "pluralPattern": "-nen",
+    "pluralPatternLabel": "-nen",
+    "usage": [
+      {
+        "de": "Meine Freundin lernt Deutsch.",
+        "en": "My female friend is learning German."
+      },
+      {
+        "de": "Die Freundinnen wohnen in Wien.",
+        "en": "The female friends live in Vienna."
       }
     ]
   }

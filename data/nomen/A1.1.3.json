@@ -3,10 +3,7 @@
     "id": "preis",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "shopping",
-      "money"
-    ],
+    "theme": ["shopping"],
     "german": "Preis",
     "english": "price",
     "article": "der",
@@ -28,17 +25,13 @@
     "id": "cent",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "shopping",
-      "money"
-    ],
+    "theme": ["currency"],
     "german": "Cent",
     "english": "cent",
     "article": "der",
     "plural": "Cent",
     "pluralPattern": "-",
     "pluralPatternLabel": "—",
-    "nounGroupRule": "Zero plural in everyday price expressions",
     "usage": [
       {
         "de": "Das kostet 45 Cent.",
@@ -54,9 +47,7 @@
     "id": "prospekt",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "shopping"
-    ],
+    "theme": ["shopping"],
     "german": "Prospekt",
     "english": "leaflet / brochure",
     "article": "der",
@@ -78,9 +69,7 @@
     "id": "sonderangebot",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "shopping"
-    ],
+    "theme": ["shopping"],
     "german": "Sonderangebot",
     "english": "special offer",
     "article": "das",
@@ -102,10 +91,7 @@
     "id": "broetchen",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "food",
-      "shopping"
-    ],
+    "theme": ["food"],
     "german": "Brötchen",
     "english": "bread roll",
     "article": "das",
@@ -127,16 +113,13 @@
     "id": "apfelkuchen",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "food"
-    ],
+    "theme": ["food"],
     "german": "Apfelkuchen",
     "english": "apple cake",
     "article": "der",
     "plural": "Apfelkuchen",
     "pluralPattern": "-",
     "pluralPatternLabel": "—",
-    "nounGroupRule": "Zero plural",
     "usage": [
       {
         "de": "Der Apfelkuchen kostet 1,39 Euro.",
@@ -152,17 +135,13 @@
     "id": "lebensmittel",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "food",
-      "shopping"
-    ],
+    "theme": ["food"],
     "german": "Lebensmittel",
     "english": "food / groceries",
     "article": "das",
     "plural": "Lebensmittel",
     "pluralPattern": "-",
     "pluralPatternLabel": "—",
-    "nounGroupRule": "Zero plural",
     "usage": [
       {
         "de": "Milch und Brot sind Lebensmittel.",
@@ -178,17 +157,13 @@
     "id": "kilo",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "shopping",
-      "quantities"
-    ],
+    "theme": ["scientific_units"],
     "german": "Kilo",
     "english": "kilo / kilogram",
     "article": "das",
     "plural": "Kilo",
     "pluralPattern": "-",
     "pluralPatternLabel": "—",
-    "nounGroupRule": "Zero plural in measure expressions",
     "usage": [
       {
         "de": "Ein Kilo Orangen kostet wenig.",
@@ -204,17 +179,13 @@
     "id": "gramm",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "shopping",
-      "quantities"
-    ],
+    "theme": ["scientific_units"],
     "german": "Gramm",
     "english": "gram",
     "article": "das",
     "plural": "Gramm",
     "pluralPattern": "-",
     "pluralPatternLabel": "—",
-    "nounGroupRule": "Zero plural in measure expressions",
     "usage": [
       {
         "de": "100 Gramm Käse kosten wenig.",
@@ -230,17 +201,13 @@
     "id": "pfund",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "shopping",
-      "quantities"
-    ],
+    "theme": ["scientific_units"],
     "german": "Pfund",
     "english": "pound",
     "article": "das",
     "plural": "Pfund",
     "pluralPattern": "-",
     "pluralPatternLabel": "—",
-    "nounGroupRule": "Zero plural in measure expressions",
     "usage": [
       {
         "de": "Ein Pfund Äpfel kostet nicht viel.",
@@ -256,17 +223,13 @@
     "id": "liter",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "shopping",
-      "quantities"
-    ],
+    "theme": ["scientific_units"],
     "german": "Liter",
     "english": "liter",
     "article": "der",
     "plural": "Liter",
     "pluralPattern": "-",
     "pluralPatternLabel": "—",
-    "nounGroupRule": "Zero plural in measure expressions",
     "usage": [
       {
         "de": "Ein Liter Milch kostet 75 Cent.",
@@ -282,10 +245,7 @@
     "id": "flasche",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "shopping",
-      "food"
-    ],
+    "theme": ["food"],
     "german": "Flasche",
     "english": "bottle",
     "article": "die",
@@ -307,10 +267,7 @@
     "id": "dose",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "shopping",
-      "food"
-    ],
+    "theme": ["food"],
     "german": "Dose",
     "english": "can / tin",
     "article": "die",
@@ -332,16 +289,12 @@
     "id": "sahne",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "food",
-      "ingredients"
-    ],
+    "theme": ["food"],
     "german": "Sahne",
     "english": "cream",
     "article": "die",
     "plural": "—",
     "declensionType": "no_plural",
-    "nounGroupRule": "Food/mass noun with no plural in general use",
     "usage": [
       {
         "de": "Ein Becher Sahne kostet 39 Cent.",
@@ -357,9 +310,7 @@
     "id": "wurst",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "food"
-    ],
+    "theme": ["food"],
     "german": "Wurst",
     "english": "sausage / cold cuts",
     "article": "die",
@@ -381,16 +332,12 @@
     "id": "hackfleisch",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "food",
-      "ingredients"
-    ],
+    "theme": ["food"],
     "german": "Hackfleisch",
     "english": "minced meat / ground meat",
     "article": "das",
     "plural": "—",
     "declensionType": "no_plural",
-    "nounGroupRule": "Food/mass noun with no plural in general use",
     "usage": [
       {
         "de": "Wie viel kostet ein Kilo Hackfleisch?",
@@ -406,10 +353,7 @@
     "id": "verkaeufer",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "shopping",
-      "jobs"
-    ],
+    "theme": ["male_people", "shopping"],
     "german": "Verkäufer",
     "english": "salesman / shop assistant",
     "article": "der",
@@ -431,17 +375,13 @@
     "id": "verkaeuferin",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "shopping",
-      "jobs"
-    ],
+    "theme": ["female_people", "shopping"],
     "german": "Verkäuferin",
     "english": "saleswoman / shop assistant",
     "article": "die",
     "plural": "Verkäuferinnen",
     "pluralPattern": "-nen",
     "pluralPatternLabel": "-nen",
-    "nounGroupRule": "Feminine person noun in -in",
     "usage": [
       {
         "de": "Die Verkäuferin ist freundlich.",
@@ -457,10 +397,7 @@
     "id": "kunde",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "shopping",
-      "people"
-    ],
+    "theme": ["male_people", "shopping"],
     "german": "Kunde",
     "english": "customer",
     "article": "der",
@@ -468,7 +405,6 @@
     "pluralPattern": "-n",
     "pluralPatternLabel": "-n",
     "declensionType": "weak_masc",
-    "nounGroupRule": "Weak masculine — all cases except Nom.sg add -n/-en",
     "usage": [
       {
         "de": "Ich bin Kunde.",
@@ -484,17 +420,13 @@
     "id": "kundin",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "shopping",
-      "people"
-    ],
+    "theme": ["female_people", "shopping"],
     "german": "Kundin",
     "english": "female customer",
     "article": "die",
     "plural": "Kundinnen",
     "pluralPattern": "-nen",
     "pluralPatternLabel": "-nen",
-    "nounGroupRule": "Feminine person noun in -in",
     "usage": [
       {
         "de": "Die Kundin möchte Birnen.",
@@ -510,17 +442,13 @@
     "id": "laden",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "shopping",
-      "places"
-    ],
+    "theme": ["shopping"],
     "german": "Laden",
     "english": "shop",
     "article": "der",
     "plural": "Läden",
     "pluralPattern": "umlaut-e",
     "pluralPatternLabel": "Umlaut + -e",
-    "nounGroupRule": "Irregular plural",
     "usage": [
       {
         "de": "Der Laden ist heute offen.",
@@ -536,16 +464,12 @@
     "id": "obst",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "food",
-      "shopping"
-    ],
+    "theme": ["food", "fruits"],
     "german": "Obst",
     "english": "fruit",
     "article": "das",
     "plural": "—",
     "declensionType": "no_plural",
-    "nounGroupRule": "Collective food noun with no plural in general use",
     "usage": [
       {
         "de": "Ich kaufe Obst.",
@@ -561,16 +485,12 @@
     "id": "gemuese",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "food",
-      "shopping"
-    ],
+    "theme": ["food"],
     "german": "Gemüse",
     "english": "vegetables",
     "article": "das",
     "plural": "—",
     "declensionType": "no_plural",
-    "nounGroupRule": "Collective food noun with no plural in general use",
     "usage": [
       {
         "de": "Sie möchten Gemüse kaufen.",
@@ -586,16 +506,14 @@
     "id": "baeckerei",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "shopping",
-      "places"
-    ],
+    "theme": ["shopping", "hotels_restaurants"],
     "german": "Bäckerei",
     "english": "bakery",
     "article": "die",
     "plural": "Bäckereien",
     "pluralPattern": "-en",
     "pluralPatternLabel": "-en",
+    "nounGroupRule": "Exception — most hotels_restaurants nouns are das, but this is die. Memorise.",
     "usage": [
       {
         "de": "In der Bäckerei kostet ein Brötchen 30 Cent.",
@@ -611,10 +529,7 @@
     "id": "rezept",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "food",
-      "recipes"
-    ],
+    "theme": ["food"],
     "german": "Rezept",
     "english": "recipe",
     "article": "das",
@@ -636,16 +551,12 @@
     "id": "wasser",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "food",
-      "ingredients"
-    ],
+    "theme": ["food"],
     "german": "Wasser",
     "english": "water",
     "article": "das",
     "plural": "—",
     "declensionType": "no_plural",
-    "nounGroupRule": "Material/mass noun with no plural in general use",
     "usage": [
       {
         "de": "Sie brauchen nur 100 ml Wasser.",
@@ -661,16 +572,12 @@
     "id": "pfeffer",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "food",
-      "ingredients"
-    ],
+    "theme": ["food"],
     "german": "Pfeffer",
     "english": "pepper",
     "article": "der",
     "plural": "—",
     "declensionType": "no_plural",
-    "nounGroupRule": "Spice/mass noun with no plural in general use",
     "usage": [
       {
         "de": "Sie brauchen Salz und Pfeffer.",
@@ -686,16 +593,12 @@
     "id": "schokolade",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "food",
-      "ingredients"
-    ],
+    "theme": ["food"],
     "german": "Schokolade",
     "english": "chocolate",
     "article": "die",
     "plural": "—",
     "declensionType": "no_plural",
-    "nounGroupRule": "Food/mass noun with no plural in general use",
     "usage": [
       {
         "de": "Ich esse gern Schokolade.",
@@ -711,9 +614,7 @@
     "id": "banane",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "food"
-    ],
+    "theme": ["fruits", "food"],
     "german": "Banane",
     "english": "banana",
     "article": "die",
@@ -735,16 +636,12 @@
     "id": "milch",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "food",
-      "ingredients"
-    ],
+    "theme": ["food"],
     "german": "Milch",
     "english": "milk",
     "article": "die",
     "plural": "—",
     "declensionType": "no_plural",
-    "nounGroupRule": "Food/mass noun with no plural in general use",
     "usage": [
       {
         "de": "Ich trinke Milch.",
@@ -760,9 +657,7 @@
     "id": "brot",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "food"
-    ],
+    "theme": ["food"],
     "german": "Brot",
     "english": "bread / loaf of bread",
     "article": "das",
@@ -784,16 +679,12 @@
     "id": "kaese",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "food",
-      "ingredients"
-    ],
+    "theme": ["food"],
     "german": "Käse",
     "english": "cheese",
     "article": "der",
     "plural": "—",
     "declensionType": "no_plural",
-    "nounGroupRule": "Food/mass noun with no plural in general use",
     "usage": [
       {
         "de": "Was kosten 100 Gramm Käse?",
@@ -809,16 +700,14 @@
     "id": "apfel",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "food"
-    ],
+    "theme": ["fruits", "food"],
     "german": "Apfel",
     "english": "apple",
     "article": "der",
     "plural": "Äpfel",
     "pluralPattern": "umlaut",
     "pluralPatternLabel": "Umlaut",
-    "nounGroupRule": "Irregular plural (umlaut only)",
+    "nounGroupRule": "Irregular plural — no pattern rule applies. Memorise.",
     "usage": [
       {
         "de": "Ich esse einen Apfel.",
@@ -834,16 +723,13 @@
     "id": "kuchen",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "food"
-    ],
+    "theme": ["food"],
     "german": "Kuchen",
     "english": "cake",
     "article": "der",
     "plural": "Kuchen",
     "pluralPattern": "-",
     "pluralPatternLabel": "—",
-    "nounGroupRule": "Zero plural",
     "usage": [
       {
         "de": "Der Kuchen ist sehr gut.",
@@ -859,9 +745,7 @@
     "id": "orange",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "food"
-    ],
+    "theme": ["fruits", "food"],
     "german": "Orange",
     "english": "orange",
     "article": "die",
@@ -883,10 +767,7 @@
     "id": "kartoffel",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "food",
-      "ingredients"
-    ],
+    "theme": ["food"],
     "german": "Kartoffel",
     "english": "potato",
     "article": "die",
@@ -908,10 +789,7 @@
     "id": "zwiebel",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "food",
-      "ingredients"
-    ],
+    "theme": ["food"],
     "german": "Zwiebel",
     "english": "onion",
     "article": "die",
@@ -933,19 +811,13 @@
     "id": "butter",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "food",
-      "ingredients"
-    ],
+    "theme": ["food"],
     "german": "Butter",
     "english": "butter",
     "article": "die",
     "plural": "—",
     "declensionType": "no_plural",
-    "nounGroupRule": "Food/mass noun with no plural in general use",
-    "exceptions": [
-      "Gender does not follow the usual -er pattern."
-    ],
+    "nounGroupRule": "Exception — ends in -er (usually der) but is die. Memorise.",
     "usage": [
       {
         "de": "Ich brauche Butter für den Kuchen.",
@@ -961,10 +833,7 @@
     "id": "ei",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "food",
-      "ingredients"
-    ],
+    "theme": ["food"],
     "german": "Ei",
     "english": "egg",
     "article": "das",
@@ -986,9 +855,7 @@
     "id": "fisch",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "food"
-    ],
+    "theme": ["animals", "food"],
     "german": "Fisch",
     "english": "fish",
     "article": "der",
@@ -1010,15 +877,12 @@
     "id": "fleisch",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "food"
-    ],
+    "theme": ["food"],
     "german": "Fleisch",
     "english": "meat",
     "article": "das",
     "plural": "—",
     "declensionType": "no_plural",
-    "nounGroupRule": "Food/mass noun with no plural in general use",
     "usage": [
       {
         "de": "Ich esse wenig Fleisch.",
@@ -1034,9 +898,7 @@
     "id": "birne",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "food"
-    ],
+    "theme": ["fruits", "food"],
     "german": "Birne",
     "english": "pear",
     "article": "die",
@@ -1058,10 +920,7 @@
     "id": "saft",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "food",
-      "drinks"
-    ],
+    "theme": ["plant_drinks", "food"],
     "german": "Saft",
     "english": "juice",
     "article": "der",
@@ -1083,16 +942,14 @@
     "id": "joghurt",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "food"
-    ],
+    "theme": ["food"],
     "german": "Joghurt",
     "english": "yogurt",
     "article": "der / das",
     "plural": "Joghurts",
     "pluralPattern": "-s",
     "pluralPatternLabel": "-s",
-    "nounGroupRule": "Two common article forms are used",
+    "nounGroupRule": "Exception — same noun has more than one accepted article form. Memorise.",
     "usage": [
       {
         "de": "Ich esse gern Joghurt.",
@@ -1108,10 +965,7 @@
     "id": "tomate",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "food",
-      "ingredients"
-    ],
+    "theme": ["food"],
     "german": "Tomate",
     "english": "tomato",
     "article": "die",
@@ -1133,16 +987,12 @@
     "id": "mineralwasser",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "drinks",
-      "food"
-    ],
+    "theme": ["food"],
     "german": "Mineralwasser",
     "english": "mineral water",
     "article": "das",
     "plural": "—",
     "declensionType": "no_plural",
-    "nounGroupRule": "Drink/mass noun with no plural in general use",
     "usage": [
       {
         "de": "Ich trinke Mineralwasser.",
@@ -1151,6 +1001,355 @@
       {
         "de": "Das Mineralwasser ist kalt.",
         "en": "The mineral water is cold."
+      }
+    ]
+  },
+  {
+    "id": "mehl",
+    "level": "A1",
+    "type": "nomen",
+    "theme": ["food"],
+    "german": "Mehl",
+    "english": "flour",
+    "article": "das",
+    "plural": "—",
+    "declensionType": "no_plural",
+    "usage": [
+      {
+        "de": "Ich brauche Mehl für den Kuchen.",
+        "en": "I need flour for the cake."
+      },
+      {
+        "de": "Das Mehl ist in der Küche.",
+        "en": "The flour is in the kitchen."
+      }
+    ]
+  },
+  {
+    "id": "zucker",
+    "level": "A1",
+    "type": "nomen",
+    "theme": ["food"],
+    "german": "Zucker",
+    "english": "sugar",
+    "article": "der",
+    "plural": "—",
+    "declensionType": "no_plural",
+    "usage": [
+      {
+        "de": "Ich nehme Zucker im Tee.",
+        "en": "I take sugar in my tea."
+      },
+      {
+        "de": "Der Zucker ist süß.",
+        "en": "The sugar is sweet."
+      }
+    ]
+  },
+  {
+    "id": "palatschinke",
+    "level": "A1",
+    "type": "nomen",
+    "theme": ["food"],
+    "german": "Palatschinke",
+    "english": "Austrian pancake / crêpe",
+    "article": "die",
+    "plural": "Palatschinken",
+    "pluralPattern": "-n",
+    "pluralPatternLabel": "-n",
+    "usage": [
+      {
+        "de": "Ich esse gern eine Palatschinke.",
+        "en": "I like eating a palatschinke."
+      },
+      {
+        "de": "Die Palatschinken sind sehr lecker.",
+        "en": "The palatschinken are very tasty."
+      }
+    ]
+  },
+  {
+    "id": "hunger",
+    "level": "A1",
+    "type": "nomen",
+    "theme": ["food"],
+    "german": "Hunger",
+    "english": "hunger",
+    "article": "der",
+    "plural": "—",
+    "declensionType": "no_plural",
+    "usage": [
+      {
+        "de": "Ich habe Hunger.",
+        "en": "I am hungry."
+      },
+      {
+        "de": "Der Hunger ist groß.",
+        "en": "The hunger is great."
+      }
+    ]
+  },
+  {
+    "id": "euro",
+    "level": "A1",
+    "type": "nomen",
+    "theme": ["currency"],
+    "german": "Euro",
+    "english": "euro",
+    "article": "der",
+    "plural": "Euro",
+    "pluralPattern": "-",
+    "pluralPatternLabel": "—",
+    "usage": [
+      {
+        "de": "Das kostet zwei Euro.",
+        "en": "That costs two euros."
+      },
+      {
+        "de": "Ein Euro ist hundert Cent.",
+        "en": "One euro is one hundred cents."
+      }
+    ]
+  },
+  {
+    "id": "bier",
+    "level": "A1",
+    "type": "nomen",
+    "theme": ["alcoholic_drinks", "food"],
+    "german": "Bier",
+    "english": "beer",
+    "article": "das",
+    "plural": "Biere",
+    "pluralPattern": "-e",
+    "pluralPatternLabel": "-e",
+    "nounGroupRule": "Exception — most alcoholic_drinks nouns are der, but this is das. Memorise.",
+    "usage": [
+      {
+        "de": "Ich trinke ein Bier.",
+        "en": "I drink a beer."
+      },
+      {
+        "de": "Die Biere sind kalt.",
+        "en": "The beers are cold."
+      }
+    ]
+  },
+  {
+    "id": "salz",
+    "level": "A1",
+    "type": "nomen",
+    "theme": ["food"],
+    "german": "Salz",
+    "english": "salt",
+    "article": "das",
+    "plural": "—",
+    "declensionType": "no_plural",
+    "usage": [
+      {
+        "de": "Ich brauche Salz für die Suppe.",
+        "en": "I need salt for the soup."
+      },
+      {
+        "de": "Das Salz steht auf dem Tisch.",
+        "en": "The salt is on the table."
+      }
+    ]
+  },
+  {
+    "id": "tee",
+    "level": "A1",
+    "type": "nomen",
+    "theme": ["plant_drinks", "food"],
+    "german": "Tee",
+    "english": "tea",
+    "article": "der",
+    "plural": "Tees",
+    "pluralPattern": "-s",
+    "pluralPatternLabel": "-s",
+    "usage": [
+      {
+        "de": "Ich trinke gern Tee.",
+        "en": "I like drinking tea."
+      },
+      {
+        "de": "Die Tees sind im Regal.",
+        "en": "The teas are on the shelf."
+      }
+    ]
+  },
+  {
+    "id": "wein",
+    "level": "A1",
+    "type": "nomen",
+    "theme": ["alcoholic_drinks", "food"],
+    "german": "Wein",
+    "english": "wine",
+    "article": "der",
+    "plural": "Weine",
+    "pluralPattern": "-e",
+    "pluralPatternLabel": "-e",
+    "usage": [
+      {
+        "de": "Er trinkt ein Glas Wein.",
+        "en": "He drinks a glass of wine."
+      },
+      {
+        "de": "Die Weine sind aus Österreich.",
+        "en": "The wines are from Austria."
+      }
+    ]
+  },
+  {
+    "id": "reis",
+    "level": "A1",
+    "type": "nomen",
+    "theme": ["food"],
+    "german": "Reis",
+    "english": "rice",
+    "article": "der",
+    "plural": "—",
+    "declensionType": "no_plural",
+    "usage": [
+      {
+        "de": "Ich esse Reis mit Gemüse.",
+        "en": "I eat rice with vegetables."
+      },
+      {
+        "de": "Der Reis ist schon fertig.",
+        "en": "The rice is already ready."
+      }
+    ]
+  },
+  {
+    "id": "kaffee",
+    "level": "A1",
+    "type": "nomen",
+    "theme": ["plant_drinks", "food"],
+    "german": "Kaffee",
+    "english": "coffee",
+    "article": "der",
+    "plural": "Kaffees",
+    "pluralPattern": "-s",
+    "pluralPatternLabel": "-s",
+    "usage": [
+      {
+        "de": "Ich trinke am Morgen Kaffee.",
+        "en": "I drink coffee in the morning."
+      },
+      {
+        "de": "Die Kaffees sind heiß.",
+        "en": "The coffees are hot."
+      }
+    ]
+  },
+  {
+    "id": "semmel",
+    "level": "A1",
+    "type": "nomen",
+    "theme": ["food"],
+    "german": "Semmel",
+    "english": "bread roll",
+    "article": "die",
+    "plural": "Semmeln",
+    "pluralPattern": "-n",
+    "pluralPatternLabel": "-n",
+    "usage": [
+      {
+        "de": "Ich kaufe zwei Semmeln.",
+        "en": "I buy two bread rolls."
+      },
+      {
+        "de": "Die Semmeln sind frisch.",
+        "en": "The bread rolls are fresh."
+      }
+    ]
+  },
+  {
+    "id": "wuerstel",
+    "level": "A1",
+    "type": "nomen",
+    "theme": ["food"],
+    "german": "Würstel",
+    "english": "small sausage",
+    "article": "das",
+    "plural": "Würstel",
+    "pluralPattern": "-",
+    "pluralPatternLabel": "—",
+    "usage": [
+      {
+        "de": "Ich esse ein Würstel mit Brot.",
+        "en": "I eat a sausage with bread."
+      },
+      {
+        "de": "Die Würstel sind heiß.",
+        "en": "The sausages are hot."
+      }
+    ]
+  },
+  {
+    "id": "paradeiser",
+    "level": "A1",
+    "type": "nomen",
+    "theme": ["food"],
+    "german": "Paradeiser",
+    "english": "tomato",
+    "article": "der",
+    "plural": "Paradeiser",
+    "pluralPattern": "-",
+    "pluralPatternLabel": "—",
+    "usage": [
+      {
+        "de": "In Österreich sagt man oft Paradeiser.",
+        "en": "In Austria people often say Paradeiser."
+      },
+      {
+        "de": "Die Paradeiser sind rot.",
+        "en": "The tomatoes are red."
+      }
+    ]
+  },
+  {
+    "id": "erdapfel",
+    "level": "A1",
+    "type": "nomen",
+    "theme": ["food"],
+    "german": "Erdapfel",
+    "english": "potato",
+    "article": "der",
+    "plural": "Erdäpfel",
+    "pluralPattern": "umlaut",
+    "pluralPatternLabel": "Umlaut",
+    "nounGroupRule": "Irregular plural — no pattern rule applies. Memorise.",
+    "usage": [
+      {
+        "de": "In Österreich sagt man oft Erdapfel.",
+        "en": "In Austria people often say Erdapfel."
+      },
+      {
+        "de": "Die Erdäpfel sind frisch.",
+        "en": "The potatoes are fresh."
+      }
+    ]
+  },
+  {
+    "id": "regal",
+    "level": "A1",
+    "type": "nomen",
+    "theme": ["home"],
+    "german": "Regal",
+    "english": "shelf",
+    "article": "das",
+    "plural": "Regale",
+    "pluralPattern": "-e",
+    "pluralPatternLabel": "-e",
+    "usage": [
+      {
+        "de": "Die Dosen stehen im Regal.",
+        "en": "The cans are on the shelf."
+      },
+      {
+        "de": "Die Regale sind voll.",
+        "en": "The shelves are full."
       }
     ]
   }

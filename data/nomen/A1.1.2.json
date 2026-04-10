@@ -1,322 +1,766 @@
 [
   {
-    "id": "tag",
+    "id": "park",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "time",
-      "daily_routine"
-    ],
-    "german": "Tag",
-    "english": "day",
+    "theme": ["places"],
+    "german": "Park",
+    "english": "park",
     "article": "der",
-    "plural": "Tage",
-    "pluralPattern": "-e",
-    "pluralPatternLabel": "-e",
+    "plural": "Parks",
+    "pluralPattern": "-s",
+    "pluralPatternLabel": "-s",
     "usage": [
-      {
-        "de": "Der Tag ist lang.",
-        "en": "The day is long."
-      },
-      {
-        "de": "Die Tage sind warm.",
-        "en": "The days are warm."
-      }
+      {"de": "Die Kinder spielen im Park.", "en": "The children are playing in the park."},
+      {"de": "Die Parks in Wien sind schön.", "en": "The parks in Vienna are beautiful."}
     ]
   },
   {
-    "id": "morgen",
+    "id": "pause",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "time"
-    ],
-    "german": "Morgen",
-    "english": "morning",
-    "article": "der",
-    "plural": "Morgen",
-    "pluralPattern": "-",
-    "pluralPatternLabel": "No change",
-    "usage": [
-      {
-        "de": "Am Morgen trinke ich Kaffee.",
-        "en": "In the morning I drink coffee."
-      },
-      {
-        "de": "Die Morgen sind kalt.",
-        "en": "The mornings are cold."
-      }
-    ]
-  },
-  {
-    "id": "abend",
-    "level": "A1",
-    "type": "nomen",
-    "theme": [
-      "time"
-    ],
-    "german": "Abend",
-    "english": "evening",
-    "article": "der",
-    "plural": "Abende",
-    "pluralPattern": "-e",
-    "pluralPatternLabel": "-e",
-    "usage": [
-      {
-        "de": "Am Abend lese ich ein Buch.",
-        "en": "In the evening I read a book."
-      },
-      {
-        "de": "Die Abende sind ruhig.",
-        "en": "The evenings are quiet."
-      }
-    ]
-  },
-  {
-    "id": "nacht",
-    "level": "A1",
-    "type": "nomen",
-    "theme": [
-      "time"
-    ],
-    "german": "Nacht",
-    "english": "night",
+    "theme": ["school", "daily_routine"],
+    "german": "Pause",
+    "english": "break",
     "article": "die",
-    "plural": "Nächte",
-    "pluralPattern": "umlaut-e",
-    "pluralPatternLabel": "Umlaut + -e",
-    "usage": [
-      {
-        "de": "Die Nacht ist ruhig.",
-        "en": "The night is quiet."
-      },
-      {
-        "de": "Die Nächte sind lang.",
-        "en": "The nights are long."
-      }
-    ]
-  },
-  {
-    "id": "uhr",
-    "level": "A1",
-    "type": "nomen",
-    "theme": [
-      "time"
-    ],
-    "german": "Uhr",
-    "english": "clock / o'clock",
-    "article": "die",
-    "plural": "Uhren",
-    "pluralPattern": "-en",
-    "pluralPatternLabel": "-en",
-    "usage": [
-      {
-        "de": "Es ist acht Uhr.",
-        "en": "It is eight o'clock."
-      },
-      {
-        "de": "Die Uhren sind neu.",
-        "en": "The clocks are new."
-      }
-    ]
-  },
-  {
-    "id": "woche",
-    "level": "A1",
-    "type": "nomen",
-    "theme": [
-      "time"
-    ],
-    "german": "Woche",
-    "english": "week",
-    "article": "die",
-    "plural": "Wochen",
+    "plural": "Pausen",
     "pluralPattern": "-n",
     "pluralPatternLabel": "-n",
     "usage": [
-      {
-        "de": "Die Woche ist kurz.",
-        "en": "The week is short."
-      },
-      {
-        "de": "Die Wochen gehen schnell.",
-        "en": "The weeks go quickly."
-      }
+      {"de": "Wir haben jetzt Pause.", "en": "We have a break now."},
+      {"de": "Die Pausen sind kurz.", "en": "The breaks are short."}
     ]
   },
   {
-    "id": "montag",
+    "id": "familie",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "time",
-      "calendar"
-    ],
-    "german": "Montag",
-    "english": "Monday",
-    "article": "der",
-    "plural": "Montage",
-    "pluralPattern": "-e",
-    "pluralPatternLabel": "-e",
+    "theme": ["family"],
+    "german": "Familie",
+    "english": "family",
+    "article": "die",
+    "plural": "Familien",
+    "pluralPattern": "-n",
+    "pluralPatternLabel": "-n",
     "usage": [
-      {
-        "de": "Am Montag arbeite ich.",
-        "en": "On Monday I work."
-      },
-      {
-        "de": "Die Montage sind stressig.",
-        "en": "Mondays are stressful."
-      }
+      {"de": "Das ist meine Familie.", "en": "That is my family."},
+      {"de": "Viele Familien wohnen hier.", "en": "Many families live here."}
     ]
   },
   {
-    "id": "dienstag",
+    "id": "vater",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "time",
-      "calendar"
-    ],
-    "german": "Dienstag",
-    "english": "Tuesday",
+    "theme": ["male_people", "family"],
+    "german": "Vater",
+    "english": "father",
     "article": "der",
-    "plural": "Dienstage",
-    "pluralPattern": "-e",
-    "pluralPatternLabel": "-e",
+    "plural": "Väter",
+    "pluralPattern": "umlaut-er",
+    "pluralPatternLabel": "Umlaut + -er",
+    "nounGroupRule": "Irregular plural — no pattern rule applies. Memorise.",
     "usage": [
-      {
-        "de": "Am Dienstag habe ich frei.",
-        "en": "On Tuesday I am free."
-      },
-      {
-        "de": "Die Dienstage sind ruhig.",
-        "en": "Tuesdays are calm."
-      }
+      {"de": "Mein Vater arbeitet viel.", "en": "My father works a lot."},
+      {"de": "Die Väter warten vor der Schule.", "en": "The fathers are waiting in front of the school."}
     ]
   },
   {
-    "id": "mittwoch",
+    "id": "grosseltern",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "time",
-      "calendar"
-    ],
-    "german": "Mittwoch",
-    "english": "Wednesday",
-    "article": "der",
-    "plural": "Mittwoche",
-    "pluralPattern": "-e",
-    "pluralPatternLabel": "-e",
+    "theme": ["family"],
+    "german": "Großeltern",
+    "english": "grandparents",
+    "article": "die",
+    "plural": "Großeltern",
+    "pluralPattern": "-",
+    "pluralPatternLabel": "—",
+    "declensionType": "no_plural",
     "usage": [
-      {
-        "de": "Am Mittwoch gehe ich ins Kino.",
-        "en": "On Wednesday I go to the cinema."
-      },
-      {
-        "de": "Die Mittwoche sind lang.",
-        "en": "Wednesdays are long."
-      }
+      {"de": "Meine Großeltern wohnen in Wien.", "en": "My grandparents live in Vienna."},
+      {"de": "Die Großeltern kommen am Sonntag.", "en": "The grandparents are coming on Sunday."}
     ]
   },
   {
-    "id": "donnerstag",
+    "id": "mutter",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "time",
-      "calendar"
-    ],
-    "german": "Donnerstag",
-    "english": "Thursday",
-    "article": "der",
-    "plural": "Donnerstage",
-    "pluralPattern": "-e",
-    "pluralPatternLabel": "-e",
+    "theme": ["female_people", "family"],
+    "german": "Mutter",
+    "english": "mother",
+    "article": "die",
+    "plural": "Mütter",
+    "pluralPattern": "umlaut-er",
+    "pluralPatternLabel": "Umlaut + -er",
+    "nounGroupRule": "Irregular plural — no pattern rule applies. Memorise.",
     "usage": [
-      {
-        "de": "Am Donnerstag lerne ich Deutsch.",
-        "en": "On Thursday I learn German."
-      },
-      {
-        "de": "Die Donnerstage sind voll.",
-        "en": "Thursdays are busy."
-      }
+      {"de": "Meine Mutter ist Lehrerin.", "en": "My mother is a teacher."},
+      {"de": "Die Mütter sprechen vor der Schule.", "en": "The mothers are talking in front of the school."}
     ]
   },
   {
-    "id": "freitag",
+    "id": "eltern",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "time",
-      "calendar"
-    ],
-    "german": "Freitag",
-    "english": "Friday",
-    "article": "der",
-    "plural": "Freitage",
-    "pluralPattern": "-e",
-    "pluralPatternLabel": "-e",
+    "theme": ["family"],
+    "german": "Eltern",
+    "english": "parents",
+    "article": "die",
+    "plural": "Eltern",
+    "pluralPattern": "-",
+    "pluralPatternLabel": "—",
+    "declensionType": "no_plural",
     "usage": [
-      {
-        "de": "Am Freitag gehe ich aus.",
-        "en": "On Friday I go out."
-      },
-      {
-        "de": "Die Freitage sind schön.",
-        "en": "Fridays are nice."
-      }
+      {"de": "Meine Eltern sind nett.", "en": "My parents are nice."},
+      {"de": "Die Eltern kommen am Abend.", "en": "The parents are coming in the evening."}
     ]
   },
   {
-    "id": "samstag",
+    "id": "bruder",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "time",
-      "calendar"
-    ],
-    "german": "Samstag",
-    "english": "Saturday",
+    "theme": ["male_people", "family"],
+    "german": "Bruder",
+    "english": "brother",
     "article": "der",
-    "plural": "Samstage",
-    "pluralPattern": "-e",
-    "pluralPatternLabel": "-e",
+    "plural": "Brüder",
+    "pluralPattern": "umlaut-er",
+    "pluralPatternLabel": "Umlaut + -er",
+    "nounGroupRule": "Irregular plural — no pattern rule applies. Memorise.",
     "usage": [
-      {
-        "de": "Am Samstag schlafe ich lange.",
-        "en": "On Saturday I sleep long."
-      },
-      {
-        "de": "Die Samstage sind frei.",
-        "en": "Saturdays are free."
-      }
+      {"de": "Mein Bruder heißt Jonas.", "en": "My brother is called Jonas."},
+      {"de": "Die Brüder spielen Fußball.", "en": "The brothers are playing football."}
     ]
   },
   {
-    "id": "sonntag",
+    "id": "geschwister",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "time",
-      "calendar"
-    ],
-    "german": "Sonntag",
-    "english": "Sunday",
-    "article": "der",
-    "plural": "Sonntage",
+    "theme": ["family"],
+    "german": "Geschwister",
+    "english": "siblings",
+    "article": "die",
+    "plural": "Geschwister",
+    "pluralPattern": "-",
+    "pluralPatternLabel": "—",
+    "declensionType": "no_plural",
+    "usage": [
+      {"de": "Hast du Geschwister?", "en": "Do you have siblings?"},
+      {"de": "Meine Geschwister wohnen in Graz.", "en": "My siblings live in Graz."}
+    ]
+  },
+  {
+    "id": "jahr",
+    "level": "A1",
+    "type": "nomen",
+    "theme": ["time"],
+    "german": "Jahr",
+    "english": "year",
+    "article": "das",
+    "plural": "Jahre",
     "pluralPattern": "-e",
     "pluralPatternLabel": "-e",
     "usage": [
-      {
-        "de": "Am Sonntag ruhe ich mich aus.",
-        "en": "On Sunday I rest."
-      },
-      {
-        "de": "Die Sonntage sind ruhig.",
-        "en": "Sundays are quiet."
-      }
+      {"de": "Das Kind ist fünf Jahre alt.", "en": "The child is five years old."},
+      {"de": "Die Jahre gehen schnell vorbei.", "en": "The years go by quickly."}
+    ]
+  },
+  {
+    "id": "enkel",
+    "level": "A1",
+    "type": "nomen",
+    "theme": ["male_people", "family"],
+    "german": "Enkel",
+    "english": "grandson",
+    "article": "der",
+    "plural": "Enkel",
+    "pluralPattern": "-",
+    "pluralPatternLabel": "—",
+    "usage": [
+      {"de": "Der Enkel besucht seine Großeltern.", "en": "The grandson visits his grandparents."},
+      {"de": "Die Enkel spielen im Garten.", "en": "The grandsons are playing in the garden."}
+    ]
+  },
+  {
+    "id": "enkelin",
+    "level": "A1",
+    "type": "nomen",
+    "theme": ["female_people", "family"],
+    "german": "Enkelin",
+    "english": "granddaughter",
+    "article": "die",
+    "plural": "Enkelinnen",
+    "pluralPattern": "-nen",
+    "pluralPatternLabel": "-nen",
+    "usage": [
+      {"de": "Die Enkelin wohnt in Linz.", "en": "The granddaughter lives in Linz."},
+      {"de": "Die Enkelinnen kommen am Wochenende.", "en": "The granddaughters are coming at the weekend."}
+    ]
+  },
+  {
+    "id": "tochter",
+    "level": "A1",
+    "type": "nomen",
+    "theme": ["female_people", "family"],
+    "german": "Tochter",
+    "english": "daughter",
+    "article": "die",
+    "plural": "Töchter",
+    "pluralPattern": "umlaut-er",
+    "pluralPatternLabel": "Umlaut + -er",
+    "nounGroupRule": "Irregular plural — no pattern rule applies. Memorise.",
+    "usage": [
+      {"de": "Meine Tochter ist in der Schule.", "en": "My daughter is at school."},
+      {"de": "Die Töchter lernen Deutsch.", "en": "The daughters are learning German."}
+    ]
+  },
+  {
+    "id": "sohn",
+    "level": "A1",
+    "type": "nomen",
+    "theme": ["male_people", "family"],
+    "german": "Sohn",
+    "english": "son",
+    "article": "der",
+    "plural": "Söhne",
+    "pluralPattern": "umlaut-e",
+    "pluralPatternLabel": "Umlaut + -e",
+    "nounGroupRule": "Irregular plural — no pattern rule applies. Memorise.",
+    "usage": [
+      {"de": "Mein Sohn spielt gern Fußball.", "en": "My son likes playing football."},
+      {"de": "Die Söhne sind im Park.", "en": "The sons are in the park."}
+    ]
+  },
+  {
+    "id": "schwester",
+    "level": "A1",
+    "type": "nomen",
+    "theme": ["female_people", "family"],
+    "german": "Schwester",
+    "english": "sister",
+    "article": "die",
+    "plural": "Schwestern",
+    "pluralPattern": "-n",
+    "pluralPatternLabel": "-n",
+    "usage": [
+      {"de": "Meine Schwester wohnt in Salzburg.", "en": "My sister lives in Salzburg."},
+      {"de": "Die Schwestern sprechen Englisch.", "en": "The sisters speak English."}
+    ]
+  },
+  {
+    "id": "oma",
+    "level": "A1",
+    "type": "nomen",
+    "theme": ["female_people", "family"],
+    "german": "Oma",
+    "english": "grandma",
+    "article": "die",
+    "plural": "Omas",
+    "pluralPattern": "-s",
+    "pluralPatternLabel": "-s",
+    "usage": [
+      {"de": "Meine Oma ist sehr nett.", "en": "My grandma is very nice."},
+      {"de": "Die Omas sitzen im Garten.", "en": "The grandmas are sitting in the garden."}
+    ]
+  },
+  {
+    "id": "mann",
+    "level": "A1",
+    "type": "nomen",
+    "theme": ["male_people"],
+    "german": "Mann",
+    "english": "man / husband",
+    "article": "der",
+    "plural": "Männer",
+    "pluralPattern": "umlaut-er",
+    "pluralPatternLabel": "Umlaut + -er",
+    "nounGroupRule": "Irregular plural — no pattern rule applies. Memorise.",
+    "usage": [
+      {"de": "Der Mann kommt aus Graz.", "en": "The man comes from Graz."},
+      {"de": "Die Männer warten hier.", "en": "The men are waiting here."}
+    ]
+  },
+  {
+    "id": "opa",
+    "level": "A1",
+    "type": "nomen",
+    "theme": ["male_people", "family"],
+    "german": "Opa",
+    "english": "grandpa",
+    "article": "der",
+    "plural": "Opas",
+    "pluralPattern": "-s",
+    "pluralPatternLabel": "-s",
+    "usage": [
+      {"de": "Mein Opa liest gern.", "en": "My grandpa likes reading."},
+      {"de": "Die Opas sprechen im Park.", "en": "The grandpas are talking in the park."}
+    ]
+  },
+  {
+    "id": "ehemann",
+    "level": "A1",
+    "type": "nomen",
+    "theme": ["male_people", "family"],
+    "german": "Ehemann",
+    "english": "husband",
+    "article": "der",
+    "plural": "Ehemänner",
+    "pluralPattern": "umlaut-er",
+    "pluralPatternLabel": "Umlaut + -er",
+    "nounGroupRule": "Irregular plural — no pattern rule applies. Memorise.",
+    "usage": [
+      {"de": "Das ist mein Ehemann.", "en": "That is my husband."},
+      {"de": "Die Ehemänner sind da.", "en": "The husbands are here."}
+    ]
+  },
+  {
+    "id": "ehefrau",
+    "level": "A1",
+    "type": "nomen",
+    "theme": ["female_people", "family"],
+    "german": "Ehefrau",
+    "english": "wife",
+    "article": "die",
+    "plural": "Ehefrauen",
+    "pluralPattern": "-en",
+    "pluralPatternLabel": "-en",
+    "usage": [
+      {"de": "Das ist meine Ehefrau.", "en": "That is my wife."},
+      {"de": "Die Ehefrauen sprechen zusammen.", "en": "The wives are talking together."}
+    ]
+  },
+  {
+    "id": "zahl",
+    "level": "A1",
+    "type": "nomen",
+    "theme": ["numbers_as_nouns"],
+    "german": "Zahl",
+    "english": "number",
+    "article": "die",
+    "plural": "Zahlen",
+    "pluralPattern": "-en",
+    "pluralPatternLabel": "-en",
+    "usage": [
+      {"de": "Die Zahl ist richtig.", "en": "The number is correct."},
+      {"de": "Die Zahlen sind nicht schwer.", "en": "The numbers are not difficult."}
+    ]
+  },
+  {
+    "id": "nummer",
+    "level": "A1",
+    "type": "nomen",
+    "theme": ["numbers_as_nouns", "personal_information"],
+    "german": "Nummer",
+    "english": "number",
+    "article": "die",
+    "plural": "Nummern",
+    "pluralPattern": "-n",
+    "pluralPatternLabel": "-n",
+    "usage": [
+      {"de": "Wie ist deine Nummer?", "en": "What is your number?"},
+      {"de": "Die Nummern stehen auf dem Blatt.", "en": "The numbers are on the sheet."}
+    ]
+  },
+  {
+    "id": "geburtsort",
+    "level": "A1",
+    "type": "nomen",
+    "theme": ["personal_information", "countries_cities"],
+    "german": "Geburtsort",
+    "english": "place of birth",
+    "article": "der",
+    "plural": "Geburtsorte",
+    "pluralPattern": "-e",
+    "pluralPatternLabel": "-e",
+    "usage": [
+      {"de": "Wien ist mein Geburtsort.", "en": "Vienna is my place of birth."},
+      {"de": "Die Geburtsorte sind verschieden.", "en": "The places of birth are different."}
+    ]
+  },
+  {
+    "id": "wohnort",
+    "level": "A1",
+    "type": "nomen",
+    "theme": ["personal_information", "countries_cities"],
+    "german": "Wohnort",
+    "english": "place of residence",
+    "article": "der",
+    "plural": "Wohnorte",
+    "pluralPattern": "-e",
+    "pluralPatternLabel": "-e",
+    "usage": [
+      {"de": "Graz ist mein Wohnort.", "en": "Graz is my place of residence."},
+      {"de": "Die Wohnorte sind in Österreich.", "en": "The places of residence are in Austria."}
+    ]
+  },
+  {
+    "id": "familienstand",
+    "level": "A1",
+    "type": "nomen",
+    "theme": ["personal_information"],
+    "german": "Familienstand",
+    "english": "marital status",
+    "article": "der",
+    "plural": "—",
+    "declensionType": "no_plural",
+    "usage": [
+      {"de": "Mein Familienstand ist verheiratet.", "en": "My marital status is married."},
+      {"de": "Der Familienstand steht im Formular.", "en": "The marital status is on the form."}
+    ]
+  },
+  {
+    "id": "alter",
+    "level": "A1",
+    "type": "nomen",
+    "theme": ["personal_information"],
+    "german": "Alter",
+    "english": "age",
+    "article": "das",
+    "plural": "—",
+    "declensionType": "no_plural",
+    "usage": [
+      {"de": "Wie ist dein Alter?", "en": "What is your age?"},
+      {"de": "Das Alter steht im Formular.", "en": "The age is on the form."}
+    ]
+  },
+  {
+    "id": "norden",
+    "level": "A1",
+    "type": "nomen",
+    "theme": ["directions"],
+    "german": "Norden",
+    "english": "north",
+    "article": "der",
+    "plural": "—",
+    "declensionType": "no_plural",
+    "usage": [
+      {"de": "Hamburg liegt im Norden.", "en": "Hamburg is in the north."},
+      {"de": "Der Norden ist kalt.", "en": "The north is cold."}
+    ]
+  },
+  {
+    "id": "osten",
+    "level": "A1",
+    "type": "nomen",
+    "theme": ["directions"],
+    "german": "Osten",
+    "english": "east",
+    "article": "der",
+    "plural": "—",
+    "declensionType": "no_plural",
+    "usage": [
+      {"de": "Wien liegt im Osten Österreichs.", "en": "Vienna is in the east of Austria."},
+      {"de": "Der Osten ist heute sonnig.", "en": "The east is sunny today."}
+    ]
+  },
+  {
+    "id": "sueden",
+    "level": "A1",
+    "type": "nomen",
+    "theme": ["directions"],
+    "german": "Süden",
+    "english": "south",
+    "article": "der",
+    "plural": "—",
+    "declensionType": "no_plural",
+    "usage": [
+      {"de": "Innsbruck liegt im Süden.", "en": "Innsbruck is in the south."},
+      {"de": "Der Süden ist warm.", "en": "The south is warm."}
+    ]
+  },
+  {
+    "id": "westen",
+    "level": "A1",
+    "type": "nomen",
+    "theme": ["directions"],
+    "german": "Westen",
+    "english": "west",
+    "article": "der",
+    "plural": "—",
+    "declensionType": "no_plural",
+    "usage": [
+      {"de": "Der Westen ist heute bewölkt.", "en": "The west is cloudy today."},
+      {"de": "Salzburg liegt nicht im Westen.", "en": "Salzburg is not in the west."}
+    ]
+  },
+  {
+    "id": "hauptstadt",
+    "level": "A1",
+    "type": "nomen",
+    "theme": ["countries_cities"],
+    "german": "Hauptstadt",
+    "english": "capital city",
+    "article": "die",
+    "plural": "Hauptstädte",
+    "pluralPattern": "umlaut-e",
+    "pluralPatternLabel": "Umlaut + -e",
+    "usage": [
+      {"de": "Wien ist die Hauptstadt von Österreich.", "en": "Vienna is the capital of Austria."},
+      {"de": "Die Hauptstädte in Europa sind interessant.", "en": "The capital cities in Europe are interesting."}
+    ]
+  },
+  {
+    "id": "fluss",
+    "level": "A1",
+    "type": "nomen",
+    "theme": ["german_rivers"],
+    "german": "Fluss",
+    "english": "river",
+    "article": "der",
+    "plural": "Flüsse",
+    "pluralPattern": "umlaut-e",
+    "pluralPatternLabel": "Umlaut + -e",
+    "usage": [
+      {"de": "Die Donau ist ein Fluss.", "en": "The Danube is a river."},
+      {"de": "Die Flüsse in Österreich sind schön.", "en": "The rivers in Austria are beautiful."}
+    ]
+  },
+  {
+    "id": "see",
+    "level": "A1",
+    "type": "nomen",
+    "theme": ["geography"],
+    "german": "See",
+    "english": "lake",
+    "article": "der",
+    "plural": "Seen",
+    "pluralPattern": "-en",
+    "pluralPatternLabel": "-en",
+    "nounGroupRule": "Different gender = different meaning: der See vs die See.",
+    "usage": [
+      {"de": "Der See ist sehr schön.", "en": "The lake is very beautiful."},
+      {"de": "Die Seen in Österreich sind bekannt.", "en": "The lakes in Austria are well known."}
+    ]
+  },
+  {
+    "id": "berg",
+    "level": "A1",
+    "type": "nomen",
+    "theme": ["mountains"],
+    "german": "Berg",
+    "english": "mountain",
+    "article": "der",
+    "plural": "Berge",
+    "pluralPattern": "-e",
+    "pluralPatternLabel": "-e",
+    "usage": [
+      {"de": "Der Berg ist hoch.", "en": "The mountain is high."},
+      {"de": "Die Berge in Österreich sind schön.", "en": "The mountains in Austria are beautiful."}
+    ]
+  },
+  {
+    "id": "lehrer",
+    "level": "A1",
+    "type": "nomen",
+    "theme": ["male_people", "education"],
+    "german": "Lehrer",
+    "english": "teacher",
+    "article": "der",
+    "plural": "Lehrer",
+    "pluralPattern": "-",
+    "pluralPatternLabel": "—",
+    "usage": [
+      {"de": "Der Lehrer ist nett.", "en": "The teacher is nice."},
+      {"de": "Die Lehrer sprechen mit den Eltern.", "en": "The teachers are talking with the parents."}
+    ]
+  },
+  {
+    "id": "lehrerin",
+    "level": "A1",
+    "type": "nomen",
+    "theme": ["female_people", "education"],
+    "german": "Lehrerin",
+    "english": "female teacher",
+    "article": "die",
+    "plural": "Lehrerinnen",
+    "pluralPattern": "-nen",
+    "pluralPatternLabel": "-nen",
+    "usage": [
+      {"de": "Die Lehrerin kommt aus Wien.", "en": "The teacher comes from Vienna."},
+      {"de": "Die Lehrerinnen arbeiten viel.", "en": "The female teachers work a lot."}
+    ]
+  },
+  {
+    "id": "oesterreicher",
+    "level": "A1",
+    "type": "nomen",
+    "theme": ["male_people", "countries_cities"],
+    "german": "Österreicher",
+    "english": "Austrian man",
+    "article": "der",
+    "plural": "Österreicher",
+    "pluralPattern": "-",
+    "pluralPatternLabel": "—",
+    "usage": [
+      {"de": "Er ist Österreicher.", "en": "He is Austrian."},
+      {"de": "Die Österreicher sprechen Deutsch.", "en": "The Austrian men speak German."}
+    ]
+  },
+  {
+    "id": "oesterreicherin",
+    "level": "A1",
+    "type": "nomen",
+    "theme": ["female_people", "countries_cities"],
+    "german": "Österreicherin",
+    "english": "Austrian woman",
+    "article": "die",
+    "plural": "Österreicherinnen",
+    "pluralPattern": "-nen",
+    "pluralPatternLabel": "-nen",
+    "usage": [
+      {"de": "Sie ist Österreicherin.", "en": "She is Austrian."},
+      {"de": "Die Österreicherinnen wohnen in Graz.", "en": "The Austrian women live in Graz."}
+    ]
+  },
+  {
+    "id": "wien",
+    "level": "A1",
+    "type": "nomen",
+    "theme": ["countries_cities"],
+    "german": "Wien",
+    "english": "Vienna",
+    "article": "das",
+    "plural": "—",
+    "declensionType": "no_plural",
+    "usage": [
+      {"de": "Wien ist die Hauptstadt von Österreich.", "en": "Vienna is the capital of Austria."},
+      {"de": "Wien ist sehr bekannt.", "en": "Vienna is very well known."}
+    ]
+  },
+  {
+    "id": "niederoesterreich",
+    "level": "A1",
+    "type": "nomen",
+    "theme": ["countries_cities"],
+    "german": "Niederösterreich",
+    "english": "Lower Austria",
+    "article": "das",
+    "plural": "—",
+    "declensionType": "no_plural",
+    "usage": [
+      {"de": "Niederösterreich ist ein Bundesland.", "en": "Lower Austria is a federal state."},
+      {"de": "Niederösterreich liegt im Osten.", "en": "Lower Austria lies in the east."}
+    ]
+  },
+  {
+    "id": "oberoesterreich",
+    "level": "A1",
+    "type": "nomen",
+    "theme": ["countries_cities"],
+    "german": "Oberösterreich",
+    "english": "Upper Austria",
+    "article": "das",
+    "plural": "—",
+    "declensionType": "no_plural",
+    "usage": [
+      {"de": "Oberösterreich ist ein Bundesland.", "en": "Upper Austria is a federal state."},
+      {"de": "Oberösterreich ist sehr schön.", "en": "Upper Austria is very beautiful."}
+    ]
+  },
+  {
+    "id": "steiermark",
+    "level": "A1",
+    "type": "nomen",
+    "theme": ["countries_cities"],
+    "german": "Steiermark",
+    "english": "Styria",
+    "article": "die",
+    "plural": "—",
+    "declensionType": "no_plural",
+    "nounGroupRule": "Exception — most countries_cities nouns are das, but this is die. Memorise.",
+    "usage": [
+      {"de": "Die Steiermark ist ein Bundesland.", "en": "Styria is a federal state."},
+      {"de": "Die Steiermark liegt im Süden.", "en": "Styria lies in the south."}
+    ]
+  },
+  {
+    "id": "kaernten",
+    "level": "A1",
+    "type": "nomen",
+    "theme": ["countries_cities"],
+    "german": "Kärnten",
+    "english": "Carinthia",
+    "article": "das",
+    "plural": "—",
+    "declensionType": "no_plural",
+    "usage": [
+      {"de": "Kärnten ist ein Bundesland.", "en": "Carinthia is a federal state."},
+      {"de": "Kärnten hat viele Seen.", "en": "Carinthia has many lakes."}
+    ]
+  },
+  {
+    "id": "salzburg",
+    "level": "A1",
+    "type": "nomen",
+    "theme": ["countries_cities"],
+    "german": "Salzburg",
+    "english": "Salzburg",
+    "article": "das",
+    "plural": "—",
+    "declensionType": "no_plural",
+    "usage": [
+      {"de": "Salzburg ist ein Bundesland.", "en": "Salzburg is a federal state."},
+      {"de": "Salzburg ist auch eine Stadt.", "en": "Salzburg is also a city."}
+    ]
+  },
+  {
+    "id": "tirol",
+    "level": "A1",
+    "type": "nomen",
+    "theme": ["countries_cities"],
+    "german": "Tirol",
+    "english": "Tyrol",
+    "article": "das",
+    "plural": "—",
+    "declensionType": "no_plural",
+    "usage": [
+      {"de": "Tirol liegt im Westen Österreichs.", "en": "Tyrol lies in the west of Austria."},
+      {"de": "Tirol hat viele Berge.", "en": "Tyrol has many mountains."}
+    ]
+  },
+  {
+    "id": "vorarlberg",
+    "level": "A1",
+    "type": "nomen",
+    "theme": ["countries_cities"],
+    "german": "Vorarlberg",
+    "english": "Vorarlberg",
+    "article": "das",
+    "plural": "—",
+    "declensionType": "no_plural",
+    "usage": [
+      {"de": "Vorarlberg liegt im Westen.", "en": "Vorarlberg lies in the west."},
+      {"de": "Vorarlberg ist klein.", "en": "Vorarlberg is small."}
+    ]
+  },
+  {
+    "id": "burgenland",
+    "level": "A1",
+    "type": "nomen",
+    "theme": ["countries_cities"],
+    "german": "Burgenland",
+    "english": "Burgenland",
+    "article": "das",
+    "plural": "—",
+    "declensionType": "no_plural",
+    "usage": [
+      {"de": "Burgenland liegt im Osten.", "en": "Burgenland lies in the east."},
+      {"de": "Burgenland ist ein Bundesland.", "en": "Burgenland is a federal state."}
+    ]
+  },
+  {
+    "id": "oberoesterreich",
+    "level": "A1",
+    "type": "nomen",
+    "theme": ["countries_cities"],
+    "german": "Oberösterreich",
+    "english": "Upper Austria",
+    "article": "das",
+    "plural": "—",
+    "declensionType": "no_plural",
+    "usage": [
+      {"de": "Oberösterreich liegt im Norden.", "en": "Upper Austria lies in the north."},
+      {"de": "Oberösterreich ist ein Bundesland.", "en": "Upper Austria is a federal state."}
     ]
   }
 ]

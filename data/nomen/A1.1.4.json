@@ -3,10 +3,7 @@
     "id": "wohnung",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "housing",
-      "home"
-    ],
+    "theme": ["home"],
     "german": "Wohnung",
     "english": "apartment / flat",
     "article": "die",
@@ -28,10 +25,7 @@
     "id": "lampe",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "home",
-      "furniture"
-    ],
+    "theme": ["home"],
     "german": "Lampe",
     "english": "lamp",
     "article": "die",
@@ -53,10 +47,7 @@
     "id": "zimmer",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "housing",
-      "rooms"
-    ],
+    "theme": ["home"],
     "german": "Zimmer",
     "english": "room",
     "article": "das",
@@ -78,10 +69,7 @@
     "id": "kueche",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "home",
-      "rooms"
-    ],
+    "theme": ["home"],
     "german": "Küche",
     "english": "kitchen",
     "article": "die",
@@ -103,10 +91,7 @@
     "id": "bad",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "home",
-      "rooms"
-    ],
+    "theme": ["home"],
     "german": "Bad",
     "english": "bathroom",
     "article": "das",
@@ -128,10 +113,7 @@
     "id": "flur",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "home",
-      "rooms"
-    ],
+    "theme": ["home"],
     "german": "Flur",
     "english": "hallway",
     "article": "der",
@@ -153,10 +135,7 @@
     "id": "toilette",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "home",
-      "rooms"
-    ],
+    "theme": ["home"],
     "german": "Toilette",
     "english": "toilet",
     "article": "die",
@@ -178,10 +157,7 @@
     "id": "balkon",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "housing",
-      "home"
-    ],
+    "theme": ["home"],
     "german": "Balkon",
     "english": "balcony",
     "article": "der",
@@ -203,10 +179,7 @@
     "id": "wohnzimmer",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "home",
-      "rooms"
-    ],
+    "theme": ["home"],
     "german": "Wohnzimmer",
     "english": "living room",
     "article": "das",
@@ -228,20 +201,13 @@
     "id": "haus",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "housing",
-      "home"
-    ],
+    "theme": ["home"],
     "german": "Haus",
     "english": "house",
     "article": "das",
     "plural": "Häuser",
     "pluralPattern": "umlaut-er",
     "pluralPatternLabel": "Umlaut + -er",
-    "nounGroupRule": "Irregular plural",
-    "exceptions": [
-      "Plural is Häuser."
-    ],
     "usage": [
       {
         "de": "Das ist das Haus.",
@@ -257,10 +223,7 @@
     "id": "monat",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "time",
-      "housing"
-    ],
+    "theme": ["months"],
     "german": "Monat",
     "english": "month",
     "article": "der",
@@ -282,10 +245,7 @@
     "id": "schrank",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "furniture",
-      "home"
-    ],
+    "theme": ["home"],
     "german": "Schrank",
     "english": "cupboard / cabinet",
     "article": "der",
@@ -307,10 +267,7 @@
     "id": "kuehlschrank",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "appliances",
-      "home"
-    ],
+    "theme": ["home"],
     "german": "Kühlschrank",
     "english": "refrigerator / fridge",
     "article": "der",
@@ -332,10 +289,7 @@
     "id": "sofa",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "furniture",
-      "home"
-    ],
+    "theme": ["home"],
     "german": "Sofa",
     "english": "sofa",
     "article": "das",
@@ -357,10 +311,7 @@
     "id": "tisch",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "furniture",
-      "home"
-    ],
+    "theme": ["home"],
     "german": "Tisch",
     "english": "table",
     "article": "der",
@@ -382,10 +333,7 @@
     "id": "fernseher",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "appliances",
-      "home"
-    ],
+    "theme": ["home"],
     "german": "Fernseher",
     "english": "television / TV set",
     "article": "der",
@@ -407,10 +355,7 @@
     "id": "dusche",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "home",
-      "rooms"
-    ],
+    "theme": ["home"],
     "german": "Dusche",
     "english": "shower",
     "article": "die",
@@ -432,10 +377,7 @@
     "id": "herd",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "appliances",
-      "kitchen"
-    ],
+    "theme": ["home"],
     "german": "Herd",
     "english": "stove",
     "article": "der",
@@ -457,10 +399,7 @@
     "id": "badewanne",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "home",
-      "rooms"
-    ],
+    "theme": ["home"],
     "german": "Badewanne",
     "english": "bathtub",
     "article": "die",
@@ -482,10 +421,7 @@
     "id": "teppich",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "furniture",
-      "home"
-    ],
+    "theme": ["home"],
     "german": "Teppich",
     "english": "carpet / rug",
     "article": "der",
@@ -507,10 +443,7 @@
     "id": "sessel",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "furniture",
-      "home"
-    ],
+    "theme": ["home"],
     "german": "Sessel",
     "english": "armchair",
     "article": "der",
@@ -532,17 +465,14 @@
     "id": "moebel",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "furniture",
-      "home"
-    ],
+    "theme": ["home"],
     "german": "Möbel",
     "english": "furniture",
     "article": "die",
-    "gender": "plural",
     "plural": "Möbel",
-    "declensionType": "plural_only",
-    "nounGroupRule": "Plural-only collective noun",
+    "pluralPattern": "-",
+    "pluralPatternLabel": "—",
+    "nounGroupRule": "Irregular plural — no pattern rule applies. Memorise.",
     "usage": [
       {
         "de": "Die Möbel sind sehr schön.",
@@ -558,10 +488,7 @@
     "id": "geraet",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "appliances",
-      "home"
-    ],
+    "theme": ["home"],
     "german": "Gerät",
     "english": "device / appliance",
     "article": "das",
@@ -583,16 +510,14 @@
     "id": "farbe",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "colors",
-      "home"
-    ],
+    "theme": ["colors_as_nouns"],
     "german": "Farbe",
     "english": "color",
     "article": "die",
     "plural": "Farben",
     "pluralPattern": "-n",
     "pluralPatternLabel": "-n",
+    "nounGroupRule": "Exception — most colors_as_nouns nouns are das, but this is die. Memorise.",
     "usage": [
       {
         "de": "Die Farbe ist sehr schön.",
@@ -608,10 +533,7 @@
     "id": "zentimeter",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "measurements",
-      "housing"
-    ],
+    "theme": ["scientific_units"],
     "german": "Zentimeter",
     "english": "centimeter",
     "article": "der",
@@ -633,10 +555,7 @@
     "id": "handy",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "communication",
-      "personal_information"
-    ],
+    "theme": ["communication"],
     "german": "Handy",
     "english": "mobile phone / cell phone",
     "article": "das",
@@ -658,15 +577,12 @@
     "id": "arbeit",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "work"
-    ],
+    "theme": ["work"],
     "german": "Arbeit",
     "english": "work",
     "article": "die",
     "plural": "—",
     "declensionType": "no_plural",
-    "nounGroupRule": "Abstract noun with no plural in general use",
     "usage": [
       {
         "de": "Meine Nummer bei der Arbeit ist neu.",
@@ -682,10 +598,7 @@
     "id": "anzeige",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "housing",
-      "apartment_search"
-    ],
+    "theme": ["communication", "home"],
     "german": "Anzeige",
     "english": "ad / advertisement",
     "article": "die",
@@ -707,10 +620,7 @@
     "id": "ehepaar",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "family",
-      "relationships"
-    ],
+    "theme": ["family"],
     "german": "Ehepaar",
     "english": "married couple",
     "article": "das",
@@ -732,17 +642,13 @@
     "id": "garten",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "housing",
-      "home"
-    ],
+    "theme": ["home"],
     "german": "Garten",
     "english": "garden",
     "article": "der",
     "plural": "Gärten",
     "pluralPattern": "umlaut-en",
     "pluralPatternLabel": "Umlaut + -en",
-    "nounGroupRule": "Irregular plural",
     "usage": [
       {
         "de": "Die Wohnung hat einen Garten.",
@@ -758,10 +664,7 @@
     "id": "apartment",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "housing",
-      "apartment_search"
-    ],
+    "theme": ["home"],
     "german": "Apartment",
     "english": "apartment / studio flat",
     "article": "das",
@@ -783,10 +686,7 @@
     "id": "raum",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "housing",
-      "rooms"
-    ],
+    "theme": ["home"],
     "german": "Raum",
     "english": "room / space",
     "article": "der",
@@ -808,20 +708,14 @@
     "id": "stock",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "housing",
-      "buildings"
-    ],
+    "theme": ["home"],
     "german": "Stock",
     "english": "floor / storey",
     "article": "der",
     "plural": "Stockwerke",
     "pluralPattern": "-e",
     "pluralPatternLabel": "-e",
-    "nounGroupRule": "Common full plural form is Stockwerke in housing context",
-    "exceptions": [
-      "In housing, floor is often expressed as 1. Stock; plural commonly appears as Stockwerke."
-    ],
+    "nounGroupRule": "Irregular plural — no pattern rule applies. Memorise.",
     "usage": [
       {
         "de": "Ich suche eine Wohnung im ersten Stock.",
@@ -837,9 +731,7 @@
     "id": "anruf",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "communication"
-    ],
+    "theme": ["communication"],
     "german": "Anruf",
     "english": "phone call",
     "article": "der",
@@ -861,10 +753,7 @@
     "id": "tv",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "appliances",
-      "home"
-    ],
+    "theme": ["communication", "home"],
     "german": "TV",
     "english": "TV",
     "article": "das",
@@ -886,10 +775,7 @@
     "id": "garage",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "housing",
-      "buildings"
-    ],
+    "theme": ["home"],
     "german": "Garage",
     "english": "garage",
     "article": "die",
@@ -911,10 +797,7 @@
     "id": "quadratmeter",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "measurements",
-      "housing"
-    ],
+    "theme": ["scientific_units"],
     "german": "Quadratmeter",
     "english": "square meter",
     "article": "der",
@@ -936,10 +819,7 @@
     "id": "miete",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "housing",
-      "money"
-    ],
+    "theme": ["home"],
     "german": "Miete",
     "english": "rent",
     "article": "die",
@@ -961,10 +841,7 @@
     "id": "computer",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "technology",
-      "home"
-    ],
+    "theme": ["home"],
     "german": "Computer",
     "english": "computer",
     "article": "der",
@@ -986,10 +863,7 @@
     "id": "schreibtisch",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "furniture",
-      "home"
-    ],
+    "theme": ["home"],
     "german": "Schreibtisch",
     "english": "desk",
     "article": "der",
@@ -1011,9 +885,7 @@
     "id": "meter",
     "level": "A1",
     "type": "nomen",
-    "theme": [
-      "measurements"
-    ],
+    "theme": ["scientific_units"],
     "german": "Meter",
     "english": "meter",
     "article": "der",

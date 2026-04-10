@@ -148,21 +148,121 @@ const GENDER_ENDING_RULES = [
   { pattern: /ig$/,         gender: 'der', rule: 'Nouns ending in -ig are usually masculine' },
 ];
 
-const GENDER_SEMANTIC_GROUPS = {
-  male_people:             { gender: 'der', rule: 'Male persons are always masculine' },
-  female_people:           { gender: 'die', rule: 'Female persons are always feminine' },
-  days_months_seasons:     { gender: 'der', rule: 'Days, months and seasons are always masculine' },
-  compass_weather:         { gender: 'der', rule: 'Weather phenomena are usually masculine' },
-  alcoholic_drinks:        { gender: 'der', rule: 'Alcoholic drinks are usually masculine' },
-  car_brands:              { gender: 'der', rule: 'Car brands are always masculine' },
-  numbers_as_nouns:        { gender: 'die', rule: 'Numbers used as nouns are feminine' },
-  ships_aircraft:          { gender: 'die', rule: 'Ships and aircraft are usually feminine' },
-  trees_flowers:           { gender: 'die', rule: 'Most trees and flowers are feminine' },
-  metals_elements:         { gender: 'das', rule: 'Metals and chemical elements are usually neuter' },
-  languages:               { gender: 'das', rule: 'Languages used as nouns are always neuter' },
-  infinitives_as_nouns:    { gender: 'das', rule: 'Infinitives used as nouns are always neuter' },
-  young_animals:           { gender: 'das', rule: 'Young animals are usually neuter' },
-  countries_cities:        { gender: 'das', rule: 'Most countries and cities are neuter (no article in normal use)' },
+const THEME_GENDER_MAP = {
+  // MASCULINE
+  animals:              'der',
+  cars:                 'der',
+  currency:             'der',
+  calendar:             'der',
+  days_months_seasons:  'der',
+  seasons:              'der',
+  months:               'der',
+  directions:           'der',
+  alcoholic_drinks:     'der',
+  plant_drinks:         'der',
+  male_people:          'der',
+  mountains:            'der',
+  rivers_non_german:    'der',
+  outer_space:          'der',
+  rocks_minerals:       'der',
+  weather:              'der',
+  // FEMININE
+  female_people:        'die',
+  ships_aircraft:       'die',
+  motorcycles:          'die',
+  trees_flowers:        'die',
+  fruits:               'die',
+  german_rivers:        'die',
+  numbers_as_nouns:     'die',
+  // NEUTER
+  languages:            'das',
+  colors_as_nouns:      'das',
+  infinitives_as_nouns: 'das',
+  metals_elements:      'das',
+  scientific_units:     'das',
+  young_animals:        'das',
+  young_people:         'das',
+  countries_cities:     'das',
+  continents:           'das',
+  letters_notes:        'das',
+  hotels_restaurants:   'das',
+};
+
+const THEME_GENDER_RULES = {
+  animals:              'Most animals are masculine — exceptions: die Katze, das Pferd, das Schaf',
+  cars:                 'Car brands and types are always masculine',
+  currency:             'Currency units are always masculine (der Euro, der Dollar, der Cent)',
+  calendar:             'Days, months and seasons are always masculine',
+  days_months_seasons:  'Days, months and seasons are always masculine',
+  seasons:              'Seasons are always masculine (der Frühling, der Sommer)',
+  months:               'Months are always masculine (der Januar, der März)',
+  directions:           'Compass directions are always masculine (der Norden, der Süden)',
+  alcoholic_drinks:     'Alcoholic drinks are usually masculine (der Wein, der Whisky)',
+  plant_drinks:         'Plant-based drinks are usually masculine (der Kaffee, der Tee)',
+  male_people:          'Male persons are always masculine',
+  mountains:            'Mountains and mountain ranges are usually masculine',
+  rivers_non_german:    'Non-German rivers are usually masculine (der Nil, der Amazonas)',
+  outer_space:          'Celestial bodies are usually masculine (der Mond, der Stern)',
+  rocks_minerals:       'Rocks and minerals are usually masculine (der Stein, der Granit)',
+  weather:              'Weather phenomena are usually masculine (der Regen, der Schnee, der Wind)',
+  female_people:        'Female persons are always feminine',
+  ships_aircraft:       'Airplane, motorcycle and ship makes/models are always feminine',
+  motorcycles:          'Motorcycle brands are always feminine',
+  trees_flowers:        'Most trees, fruits and flowers are feminine (die Rose, die Eiche)',
+  fruits:               'Most fruits are feminine — exceptions: der Apfel, das Obst',
+  german_rivers:        'Rivers in Germany, Austria and Switzerland are always feminine (die Donau)',
+  numbers_as_nouns:     'Numerals used as nouns are feminine (die Eins, die Million)',
+  languages:            'Languages used as nouns are always neuter (das Deutsch, das Englisch)',
+  colors_as_nouns:      'Colours used as nouns are always neuter (das Rot, das Blau)',
+  infinitives_as_nouns: 'Gerunds and infinitives used as nouns are always neuter (das Essen)',
+  metals_elements:      'Metals and chemical elements are usually neuter (das Gold, das Eisen)',
+  scientific_units:     'Scientific units are usually neuter (das Gramm, das Watt) — exception: der Meter',
+  young_animals:        'Young and baby animals are always neuter (das Kalb, das Küken)',
+  young_people:         'Young persons are always neuter (das Kind, das Baby, das Mädchen)',
+  countries_cities:     'Continents, cities and most countries are neuter — no article in normal use',
+  continents:           'Continents are always neuter — no article in normal use',
+  letters_notes:        'Alphabet letters and music notes are always neuter (das A, das B)',
+  hotels_restaurants:   'Hotels, cafes and restaurants are usually neuter (das Hilton, das Ritz)',
+};
+
+const THEME_GENDER_CONFIDENCE = {
+  // High
+  male_people:          'high',
+  female_people:        'high',
+  languages:            'high',
+  days_months_seasons:  'high',
+  calendar:             'high',
+  seasons:              'high',
+  months:               'high',
+  directions:           'high',
+  infinitives_as_nouns: 'high',
+  young_people:         'high',
+  letters_notes:        'high',
+  colors_as_nouns:      'high',
+  german_rivers:        'high',
+  rivers_non_german:    'high',
+  ships_aircraft:       'high',
+  motorcycles:          'high',
+  numbers_as_nouns:     'high',
+  continents:           'high',
+  countries_cities:     'high',
+  // Medium
+  currency:             'medium',
+  weather:              'medium',
+  rocks_minerals:       'medium',
+  outer_space:          'medium',
+  metals_elements:      'medium',
+  scientific_units:     'medium',
+  young_animals:        'medium',
+  trees_flowers:        'medium',
+  hotels_restaurants:   'medium',
+  mountains:            'medium',
+  alcoholic_drinks:     'medium',
+  plant_drinks:         'medium',
+  // Low — show rule but never flag exception
+  animals:              'low',
+  fruits:               'low',
+  cars:                 'low',
 };
 
 const PLURAL_ENDING_RULES = [
@@ -427,22 +527,33 @@ function generateAdjectiveForms(w) {
 
 // ── Gender & Plural detection ─────────────────
 function detectNounGender(w) {
-  const lower = w.german.toLowerCase();
-
-  // 1. Semantic group — highest confidence
-  if (w.semanticGroup) {
-    const sg = GENDER_SEMANTIC_GROUPS[w.semanticGroup];
-    if (sg) return { predictedArticle: sg.gender, rule: sg.rule, source: 'semantic' };
-  }
-
-  // 2. Ending rules — medium confidence
-  for (const rule of GENDER_ENDING_RULES) {
-    if (rule.pattern.test(lower)) {
-      return { predictedArticle: rule.gender, rule: rule.rule, source: 'ending' };
+  // 1. Theme-based — check all themes
+  const themes = getThemesArray(w);
+  for (const t of themes) {
+    if (THEME_GENDER_MAP[t]) {
+      return {
+        predictedArticle: THEME_GENDER_MAP[t],
+        rule: THEME_GENDER_RULES[t] || `Words in theme "${t}" are usually ${THEME_GENDER_MAP[t]}`,
+        confidence: THEME_GENDER_CONFIDENCE[t] || 'medium',
+        source: 'theme'
+      };
     }
   }
 
-  return null; // no rule — unknown
+  // 2. Ending rules — medium confidence
+  const lower = w.german.toLowerCase();
+  for (const rule of GENDER_ENDING_RULES) {
+    if (rule.pattern.test(lower)) {
+      return {
+        predictedArticle: rule.gender,
+        rule: rule.rule,
+        confidence: 'medium',
+        source: 'ending'
+      };
+    }
+  }
+
+  return null;
 }
 
 function detectNounPlural(w) {
@@ -459,21 +570,33 @@ function detectNounPlural(w) {
 }
 
 function analyseNoun(w) {
-  // Gender analysis
+  // ── Gender analysis ───────────────────────────
   const genderResult = detectNounGender(w);
   if (genderResult) {
     if (genderResult.predictedArticle === w.article) {
+      // Matches rule
       w._genderRule    = genderResult.rule;
       w._genderSource  = genderResult.source;
       w._genderMatch   = true;
     } else {
-      w._genderMatch     = false;
-      w._genderRule      = genderResult.rule;
-      w._genderException = `Rule predicts ${genderResult.predictedArticle} (${genderResult.rule}) — but is ${w.article}. Memorise this exception.`;
+      // Mismatch
+      if (genderResult.confidence === 'low') {
+        // Low confidence — show rule but don't flag exception
+        w._genderRule   = genderResult.rule;
+        w._genderMatch  = true; // informational only
+      } else {
+        // Medium or high — flag as exception
+        w._genderMatch     = false;
+        w._genderRule      = genderResult.rule;
+        w._genderException = `Rule predicts ${genderResult.predictedArticle} — but is ${w.article}. Memorise this exception.`;
+        if (genderResult.confidence === 'medium') {
+          w._genderException += ' (rule has some exceptions)';
+        }
+      }
     }
   }
 
-  // Plural analysis
+  // ── Plural analysis ───────────────────────────
   const pluralResult = detectNounPlural(w);
   if (pluralResult) {
     if (pluralResult.predictedPlural === w.plural) {
@@ -513,9 +636,9 @@ function analyseVerb(w) {
 
     if (exceptions.length) {
       w._conjugationExceptions = exceptions;
-      w._verbRule = 'Weak verb — but has irregular forms (see exceptions below)';
+      w._verbRule = 'Weak verb — but has irregular forms (see below)';
     } else {
-      w._verbRule = 'Regular weak verb — all forms follow standard pattern';
+      w._verbRule        = 'Regular weak verb — all forms follow standard pattern';
       w._verbFollowsRule = true;
     }
   }
@@ -547,34 +670,29 @@ function analyseVerb(w) {
     }
   }
 
-  // ── 3. Auxiliary check ───────────────────────
+  // ── 3. Auxiliary check ────────────────────────
+  const infAux = w.german.toLowerCase();
   if (w.auxiliary === 'sein') {
-    const inf = w.german.toLowerCase();
-    const expectedSein = SEIN_VERBS_HINTS.some(v => inf.includes(v));
+    const expectedSein = SEIN_VERBS_HINTS.some(v => infAux.includes(v));
     if (!expectedSein) {
-      w._auxiliaryNote = `Uses sein — check: does this verb express movement or change of state?`;
+      w._auxiliaryNote = 'Uses sein — verb expresses movement or change of state';
     }
   } else if (w.auxiliary === 'haben') {
-    const inf = w.german.toLowerCase();
-    const isSeinVerb = SEIN_VERBS_HINTS.some(v => inf === v || inf.endsWith(v));
+    const isSeinVerb = SEIN_VERBS_HINTS.some(v => infAux === v || infAux.endsWith(v));
     if (isSeinVerb) {
       w._auxiliaryException = `Expected sein (motion/change verb) — but uses haben. Memorise.`;
     }
   }
 
-  // ── 4. Prefix validation ─────────────────────
+  // ── 4. Prefix validation ──────────────────────
   const inf = w.german.toLowerCase();
-  if (w.separablePrefix) {
-    if (!SEPARABLE_PREFIXES.includes(w.separablePrefix)) {
-      w._prefixNote = `Prefix "${w.separablePrefix}" — verify separability`;
-    }
-  } else if (!w.inseparable) {
+  if (!w.separablePrefix && !w.inseparable) {
     const matchedInsep = INSEPARABLE_PREFIXES.find(p => inf.startsWith(p));
     const matchedSep   = SEPARABLE_PREFIXES.find(p => inf.startsWith(p));
     if (matchedInsep) {
-      w._prefixNote = `Starts with inseparable prefix "${matchedInsep}" — no -ge- in Partizip II`;
+      w._prefixNote = `Inseparable prefix "${matchedInsep}" — no -ge- in Partizip II`;
     } else if (matchedSep) {
-      w._prefixNote = `Starts with separable prefix "${matchedSep}" — check if separable`;
+      w._prefixNote = `Possible separable prefix "${matchedSep}" — verify`;
     }
   }
 }
@@ -1603,7 +1721,6 @@ function buildNomenCard(w) {
   let endingSection = '';
 
   if (w.endingRule) {
-    // Manually stored rule (old format)
     endingSection = `<div class="section">
       <div class="section-label">Noun group rule</div>
       <div class="ending-rule">
@@ -1616,33 +1733,31 @@ function buildNomenCard(w) {
     </div>`;
 
   } else if (w._genderMatch === false) {
-    // Gender exception
     endingSection = `<div class="section">
       <div class="section-label">Gender rule</div>
       <div class="ending-rule">
-        <div class="ending-bubble exc-bubble" style="background:rgba(255,107,107,0.15);color:var(--c2)">!</div>
+        <div class="ending-bubble exc-bubble"
+          style="background:rgba(255,107,107,0.15);color:var(--c2)">!</div>
         <div>
           <div class="ending-rule-text" style="color:var(--c2)">Exception</div>
           <div class="ending-rule-sub">${w._genderException}</div>
+          ${w._genderRule ? `<div class="ending-rule-sub" style="margin-top:4px;color:var(--text3)">Rule: ${w._genderRule}</div>` : ''}
         </div>
       </div>
     </div>`;
 
   } else if (w._genderRule) {
-    // Gender follows rule
-    const icon = w._genderSource === 'semantic' ? '📚' : '';
     endingSection = `<div class="section">
       <div class="section-label">Gender rule</div>
       <div class="ending-rule">
         <div class="ending-bubble" style="background:${gbg};color:${gc}">${w.article}</div>
         <div>
-          <div class="ending-rule-text" style="color:${gc}">${icon} ${w._genderRule}</div>
+          <div class="ending-rule-text" style="color:${gc}">${w._genderRule}</div>
         </div>
       </div>
     </div>`;
 
   } else if (w.nounGroupRule) {
-    // Manually stored rule, no ending bubble
     endingSection = `<div class="section">
       <div class="section-label">Gender rule</div>
       <div class="ending-rule">
@@ -1660,7 +1775,7 @@ function buildNomenCard(w) {
         <div>${w._pluralException}</div>
       </div>`
     : w._pluralRule && w._pluralMatch
-      ? `<div class="rule-note" style="margin-top:8px;font-size:12px;color:var(--text3)">${w._pluralRule}</div>`
+      ? `<div class="rule-note" style="margin-top:6px">${w._pluralRule}</div>`
       : '';
 
   return `<div class="word-card">
